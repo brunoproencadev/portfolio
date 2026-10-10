@@ -1,4 +1,5 @@
 # Conteúdo editorial
+
 Nome: Bruno Proença Silva.
 Posicionamento: Desenvolvedor em formação · Software, visão computacional & robótica.
 Hero: Construir. Observar. Evoluir.
