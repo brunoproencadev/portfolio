@@ -8,3 +8,5 @@ playwright-report/
 coverage/
 *.tsbuildinfo
 .DS_Store
+.audit/
+next-env.d.ts
