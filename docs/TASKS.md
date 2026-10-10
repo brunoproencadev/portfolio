@@ -30,4 +30,4 @@
 - Cases/conteúdo definitivo de publicação exigem revisão de assets e atualização das fontes.
 - Footer usa o ano do build; atualizar o build na virada do ano ou revisar revalidação no gate de produção.
 
-Fases 1/2 originalmente tinham apenas documentação inicial; a auditoria corrigiu essa lacuna. Check nesta lista significa entrega da fase no escopo descrito, não aprovação de produção nem conclusão da interface.
+Fases 1/2 originalmente tinham apenas documentação inicial; a auditoria corrigiu essa lacuna. Check nesta lista significa entrega da fase no escopo descrito, não aprovação de produção nem conclusão do produto final.

@@ -1,6 +1,6 @@
 # Handoff — Fase 4 concluída
 
-Workspace: `D:\projects\portifolio`. Origin: https://github.com/brunoproencadev/myportifolio.git. Branch: main. Consulta remota inicial sem HEAD/referências; não repetida neste fechamento. .git existente preservado; nenhum arquivo ou alteração do usuário substituído.
+Workspace: `D:\projects\portifolio`. Origin: https://github.com/brunoproencadev/myportifolio.git. Branch: main. Push e SHA remoto verificados na abertura da Fase 4, conforme registro abaixo. .git existente preservado; nenhum arquivo ou alteração do usuário substituído.
 
 ## Estado e gate
 
@@ -23,8 +23,9 @@ Fase 4 concluída em 2026-10-10, autorizada explicitamente: “Dê sequência pa
 - c700cc6: home editorial, projetos/dados confirmados, diagramas e primeira validação da Fase 4.
 - cf1ffe5: cápsula acessível/contextual, navegação sem JS e regressões de teclado/foco/hash.
 - c328f40: QA ampliado, zoom nativo, foco/resize, alvos de toque e contenção dos diagramas.
+- d0b5cf1: fechamento documental da Fase 4, arquitetura/contratos sincronizados e gate da Fase 5.
 
-Fechamento documental da Fase 4 sucede estes; seu SHA será registrado no commit seguinte. O último commit apenas registra o SHA, consultável com git log -1 --oneline, evitando autorreferência.
+O último commit registra o SHA do fechamento e esclarece continuidade; seu próprio SHA é consultável com git log -1 --oneline, evitando autorreferência.
 
 ## Execução e prova
 
@@ -39,7 +40,7 @@ Referências A/B/C inspecionadas na auditoria, com 13 capturas citadas e limites
 Home/layout/diagramas no servidor; src/data/portfolio.ts separa dados e fontes da apresentação. Somente SiteNavigation usa cliente: useSyncExternalStore preserva navegação SSR, estado React/disclosure, IntersectionObserver/contexto e listeners com cleanup. Feedback CSS nesta fase; GSAP/Motion permanecem instalados sem imports em src. Nenhuma dependência nova, WebGL, backend, CMS ou analytics.
 Ano do footer é o ano do build; atualizar na virada do ano ou revisar revalidação na publicação. Nenhum domínio inventado; noindex/nofollow preservados. Formação/prêmios continuam omitidos. Firefox/Safari/dispositivo físico, leitor de tela e Lighthouse aguardam QA final; axe não certifica acessibilidade.
 
-Próxima fase proposta (não iniciada): Fase 5, intro curta/pulável, sequências/reveals GSAP/ScrollTrigger e microinterações. Contratos: conteúdo sempre visível, sem body lock; alvo 1,2s e timeout 2,2s independente; cancelamento, storage negado, falha de biblioteca, alteração de reduced motion e cleanup testados. Avaliar animação de estado da cápsula sem alterar semântica/foco. Exige confirmação explícita.
+Próxima fase proposta (não iniciada): Fase 5, intro curta/pulável, sequências/reveals GSAP/ScrollTrigger e microinterações. Contratos: conteúdo sempre visível, sem body lock; alvo 1,2s e timeout 2,2s independente. Testar cancelamento, storage negado, falha de biblioteca, alteração de reduced motion e cleanup. Avaliar animação de estado da cápsula sem alterar semântica/foco. Exige confirmação explícita.
 Cases/assets reais e erro/404 autorais pertencem à Fase 6; Lighthouse/QA amplo à 7; domínio/SEO final à 8.
 Push dos commits anteriores autorizado e realizado; os incrementos novos da Fase 4 permanecem locais. Sem deploy autorizado ou realizado.
 
