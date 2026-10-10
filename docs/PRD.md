@@ -1,37 +1,72 @@
 # PRD — Bruno Proença Silva
 
-## 1. Problema e valor
+Revisão de auditoria: 2026-10-09. Fonte de escopo; mudanças entre fases exigem aprovação. A aplicação atual é uma fundação, não o produto final.
 
-Visitantes precisam compreender rapidamente o perfil de um desenvolvedor em formação e avaliar projetos reais. Um portfólio editorial conecta interfaces, sistemas e percepção com evidências, decisões e limites explícitos.
+## 1. Problema e proposta de valor
 
-## 2. Público
+Um perfil de desenvolvedor em formação precisa demonstrar competência sem depender de senioridade ou números inventados. O portfólio deve tornar legíveis o problema, a decisão técnica e a evidência de cada projeto. Promessa: projetos reais, experimentação documentada e limites explícitos.
 
-Recrutadores procuram clareza e contato; desenvolvedores procuram código e arquitetura; professores e pesquisadores procuram método, limitações e aprendizados.
+## 2. Público e necessidades
 
-## 3. Objetivos e métricas
+| Público                 | Pergunta prioritária               | Resposta do produto                                                      |
+| ----------------------- | ---------------------------------- | ------------------------------------------------------------------------ |
+| Recrutador              | Quem é Bruno e o que constrói?     | Nome, posicionamento, três trabalhos e contato visíveis                  |
+| Desenvolvedor           | Como foi construído?               | Tecnologias usadas, arquitetura, código e decisões                       |
+| Professor/pesquisador   | O resultado sustenta a afirmação?  | Fonte, condições de avaliação, limitações e próximos passos              |
+| Avaliador universitário | Qual foi o contexto e aprendizado? | Contexto educacional confirmado e síntese técnica, sem inferir matrícula |
 
-Identidade e CTA na primeira dobra; três projetos verificáveis; acesso a contato em até duas interações. Metas de laboratório: LCP ≤2,5s, CLS ≤0,1, Lighthouse preferencialmente >90 em quatro categorias. INP ≤200ms é meta de campo, não conclusão de Lighthouse. Sem analytics no MVP.
+## 3. Objetivos e avaliação
 
-## 4. Jornada
+- Em uma inspeção da primeira dobra, nome, condição de desenvolvedor em formação, áreas e CTA devem estar legíveis.
+- Três projetos priorizados; cada um com repositório e estado explícito. Qualidade de evidência prevalece sobre quantidade.
+- Contato em até duas ações a partir da home ou de um case.
+- Metas de laboratório: LCP ≤2,5s, CLS ≤0,1; Lighthouse preferencialmente >90 nas quatro categorias. Medir produção local, Chromium, perfil mobile, três execuções e mediana, registrando máquina/versões/throttling. Não usar resultado da página mínima como desempenho final.
+- INP ≤200ms é meta de campo: exige interações/telemetria apropriada após publicação. TBT de Lighthouse não equivale a INP.
+- Sem rastreadores no MVP. Clareza e navegação serão avaliadas manualmente; não declarar conversão ou compreensão de visitantes sem estudo.
 
-Hero → projetos → estudo de caso → evidência/repositório → contato. Sobre e competências complementam a avaliação.
+## 4. Jornada e informação
+
+Home: início → projetos selecionados → sobre/processo → competências → contato → footer.
+Projetos aparecem antes da biografia longa para permitir avaliação rápida.
+Cases: contexto/problema → abordagem/arquitetura → decisões/desafios → evidências → limites/aprendizados → próximos passos → repositório/contato.
+Experiência/conquistas específicas só entram se confirmadas; o contexto educacional do Industry Week pode integrar o case, sem criar uma carreira fictícia.
 
 ## 5. MVP
 
-Home em português; navbar cápsula contextual; intro breve pulável; três estudos de caso; sobre; competências por evidência; contato público; footer; 404; SEO condicional ao domínio confirmado; testes e documentação.
+Home em português, cápsula de navegação contextual, intro curta pulável, três cases estáticos, competências por evidência, contato por links, footer, 404 própria e tratamento de erro. Metadados por rota, favicon, OG, sitemap/robots/canonical no gate de produção com domínio confirmado. Conteúdo e navegação básica devem continuar disponíveis sem animação ou JavaScript.
 
-## 6. Futuro
+Rotas planejadas: /, /projetos/robosense-lab, /projetos/industry-week-senai, /projetos/atelie-ingrid-xavier. URLs não são links ativos até as páginas existirem.
 
-Trajetória acadêmica confirmada, novas evidências e tradução humana. 3D somente com função narrativa demonstrada.
+## 6. Futuro e exclusões
 
-## 7. Requisitos
+Futuro condicionado a evidência: formação/conquistas, novos cases e tradução humana.
+Fora do MVP: login, banco, CMS, backend dedicado, formulário, blog, chatbot, analytics, cópia de interfaces de referência e 3D sem função. GSAP e Motion têm responsabilidades distintas; Anime/React Spring/Lenis não são necessários.
 
-Next App Router, React, TypeScript strict; conteúdo estático no servidor; animação isolada; cleanup; teclado e WCAG AA; 320/375/768/1440px sem overflow; reduced motion; conteúdo disponível sem animações ou JavaScript; nenhum segredo/rastreador.
+## 7. Requisitos funcionais e não funcionais
 
-## 8. Aceitação
+| ID  | Requisito verificável                                                                                   | Fase responsável    | Prova esperada                                                              |
+| --- | ------------------------------------------------------------------------------------------------------- | ------------------- | --------------------------------------------------------------------------- |
+| R01 | Nome, posicionamento e CTA claros                                                                       | 4                   | Revisão da primeira dobra em 375/1440px                                     |
+| R02 | Navegação por links reais; cápsula abre/fecha, Escape retorna foco, saída de foco/clique externo fecham | 4                   | Playwright mouse/teclado e sem JS                                           |
+| R03 | Seção ativa indica localização sem depender só de cor; âncoras não ficam sob navbar                     | 4                   | Scroll e URL com hash em desktop/mobile                                     |
+| R04 | Projetos com estado, stack usada e fontes; nenhum link interno futuro quebrado                          | 4/6                 | Unitário de dados/URLs e revisão editorial                                  |
+| R05 | Intro não bloqueia conteúdo/scroll; duração normal alvo 1,2s, limite de segurança 2,2s; pular funciona  | 5                   | Testar cancelamento, falha de biblioteca, storage negado e navegação direta |
+| R06 | Reduced motion imediato, inclusive alteração da preferência em execução                                 | 4/5                 | Playwright e revisão manual, sem suavização/parallax                        |
+| R07 | 320/375/768/1440px sem overflow; zoom 200%, toque ≥44px, foco e contraste AA                            | 4/7                 | E2E, axe e inspeção manual; axe não certifica WCAG                          |
+| R08 | Cases completos, imagens com origem/alt/dimensões; erro e 404 úteis                                     | 6                   | URLs diretas, slug inválido e falhas de recursos                            |
+| R09 | Contato GitHub/LinkedIn/e-mail; footer funcional                                                        | 4                   | URLs permitidas e teclado; não enviar mensagens em testes                   |
+| R10 | Build reproduzível, strict, lint, formatação, unitários e E2E                                           | 3 e cada incremento | npm ci + gates; árvore de peers válida                                      |
+| R11 | Performance sem loops gratuitos, imagens/fontes otimizadas e cleanup                                    | 5/7                 | Bundle/rede, desmontagem e Lighthouse documentado                           |
+| R12 | Preview noindex; produção com SEO e domínio validados, sem segredos                                     | 3/8                 | Metadata/cabeçalhos, audit, links e checklist de lançamento                 |
 
-Lint, typecheck, unitários, E2E e build passam. Menu abre/fecha, Escape devolve foco, clique externo fecha, seção ativa indicada. Intro encerra em até 2,2s, pode ser pulada, não bloqueia scroll nem conteúdo. Testar links, cases, 404, reduced motion, console e acessibilidade. Screenshots e Lighthouse reais com condições documentadas.
+## 8. Critérios de aceitação e gates
 
-## 9. Riscos, restrições e exclusões
+A Fase 3 demonstra somente R10 e parte da infraestrutura R07/R12. Aprovação dessa fase não comprova a UI, todas as preferências de movimento ou performance do produto.
+Cada fase encerra com diff revisado, checks pertinentes, commits explícitos e HANDOFF atualizado; a próxima aguarda confirmação do usuário. Falhas/pendências não podem aparecer como concluídas.
+Produção exige cases revisados, matriz R01–R12 coberta, build e QA completos; nenhum push/deploy está autorizado por este documento.
 
-LinkedIn bloqueado; formação e prêmios específicos não confirmados. Domínio público desconhecido: não inventar canonical. Referências visuais dependem de navegador disponível. Sem backend, formulário, CMS, banco, autenticação, analytics ou 3D pesado. Nenhum deploy/push autorizado.
+## 9. Riscos e dependências
+
+LinkedIn bloqueado; formação e prêmios específicos sem confirmação. E-mail confirmado no README público. Domínio não informado; não inventar canonical.
+A pesquisa de referências é amostral, sem certificação de desempenho/acessibilidade externa. Conteúdo dos projetos deve ser ancorado nas fontes registradas em PROFILE_RESEARCH.
+ESLint 9 compatível, mas fora de suporte; cadeia braces com alertas de desenvolvimento sem patch disponível. Reavaliar no gate 7/8. Mudança para ESLint 10 exige suporte dos plugins, não apenas do pacote principal.

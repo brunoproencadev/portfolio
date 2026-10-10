@@ -1,13 +1,50 @@
-# Arquitetura
+# Arquitetura e decisões
 
-Next.js App Router, React e TypeScript strict. Páginas e dados no servidor; ilhas client somente para nav e motion. Dados locais tipados: sem CMS/backend.
-Tailwind com tokens CSS customizados. GSAP/ScrollTrigger possui hero e revelações; Motion possui expansão do menu; CSS possui hover/focus. Não disputar propriedades no mesmo elemento.
-Sem Three/R3F/Drei: diagrama SVG entrega a narrativa sem WebGL ou loop contínuo. Sem Anime/React Spring: responsabilidade já atendida.
-Testes: Vitest para integridade dos dados/URLs; Playwright + axe para fluxos e layout; Lighthouse de produção local. ESLint/Prettier.
-SEO: metadata por rota, favicon e imagem OG próprios. SITE_URL somente domínio HTTPS confirmado; sem canonical/sitemap com URL inventada. Sem rastreadores ou credenciais.
+## Estado implementado
 
-## Fundação da Fase 3
+Next 16.4.0, React 19.3.0, App Router, TypeScript strict e Tailwind 4. Home e layout são Server Components. Página mínima; não há navbar, cases, hooks, data layer ou animação implementados.
+Preservar src/app e src/styles. Não criar diretórios vazios ou abstrações para componentes inexistentes.
 
-Next 16.4.0 e React 19.3.0 consultados no npm oficial. GSAP 3.15.0/Motion 14.1.0 reservados às responsabilidades já definidas, ainda sem integração visual. Versões resolvidas no lockfile.
-Cabeçalhos: nosniff, Referrer-Policy, DENY para frames e Permissions-Policy sem câmera/microfone/geolocalização. CSP precisa ser avaliada com a interface final; não simular proteção incompleta.
-A home mínima valida infraestrutura; não representa o design final. Sem favicon/cases/SEO final nesta fase.
+## Fronteiras para as próximas fases
+
+| Responsabilidade                          | Local/dono                               | Limite                                                                                          |
+| ----------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Composição de páginas, metadata e JSON-LD | src/app                                  | Servidor; não colocar use client no layout/home inteiros                                        |
+| Identidade, URLs e projetos               | src/config e src/data, quando consumidos | Objetos locais tipados; fonte editorial em CONTENT; testes verificam slugs, protocolos e origem |
+| Navegação contextual                      | src/components/navigation                | Uma ilha client para estado/observer; links semânticos; cleanup                                 |
+| Seções e cartões                          | src/components/sections e projects       | Servidor por padrão; reusar composição existente antes de extrair                               |
+| Intro/reveals                             | src/components/motion                    | Escopo local, cancelamento e fallback visível                                                   |
+| Tokens/layout/feedback simples            | src/styles/globals.css                   | CSS é dono de foco, hover, cores e espaços                                                      |
+
+Cases usarão /projetos/[slug], generateStaticParams e notFound para slugs desconhecidos; resolver em dados próprios sem acesso inseguro a propriedades herdadas. Nenhum banco ou API é necessário. Adicionar tipo/helper apenas quando existir consumidor.
+
+## Dependências e responsabilidades
+
+- Next/React: rotas, SSR/prerender e metadata. Sem export estático obrigatório: headers atuais precisam do servidor/plataforma compatível.
+- Tailwind: composição com tokens semânticos; globals é a fonte de valores. Breakpoints explícitos sm=600px e lg=900px, sem duplicar outros nomes.
+- GSAP 3.15.0/ScrollTrigger: sequências e revelações da Fase 5. Sem import no layout ou loop próprio; criar contexto local e revert no cleanup. Não usar ScrollTrigger.getAll().kill(), pois afetaria outros componentes.
+- Motion 14.1.0: estado de expansão da cápsula. LazyMotion/m ou import localizado se reduzir bundle sem complicar a solução. Não animar o mesmo transform/opacity com GSAP e Motion.
+- CSS: feedback simples. Sem Three/R3F/Drei, Anime, React Spring ou Lenis: SVG/CSS e scroll nativo atendem à proposta.
+- Bibliotecas de movimento instaladas, ainda não importadas em src: instalação não implica uso nem custo integral no bundle.
+- Vitest: dados e regressões úteis; Playwright/axe: comportamento em produção local. Lighthouse é ferramenta de laboratório, não telemetria.
+- ESLint 9.39.5 fixado por compatibilidade de todos os peers. A consulta apenas a eslint-config-next permitia ESLint 10, mas import/react/jsx-a11y não. Atualizar conjuntamente quando suportado; não usar force/legacy-peer-deps. Risco residual de suporte e braces em AUDIT.
+
+## Invariantes de UX e performance
+
+Conteúdo renderizado antes do movimento; nunca usar opacity:0 global no SSR esperando JS. Intro é aprimoramento cancelável, não requisito de carregamento. Sem bloquear body/scroll. Preferência reduzida elimina intro/parallax e animação de layout; a preferência também deve cancelar timelines em execução.
+Menu é disclosure não modal: sem focus trap, sem body lock. Links normais funcionam sem JS; o estado melhorado só esconde opções após hidratação.
+Hero e imagens têm espaço reservado; imagens significativas usam next/image e dimensões. Não carregar vídeos/iframes externos automaticamente. Diagrama conceitual precisa de legenda distinta de evidência real.
+Orçamentos iniciais para avaliar na Fase 7: imagem de hero ≤250 KiB e fontes adicionais ≤120 KiB transferidas. Atualmente fontes de sistema, sem download. Ajustar somente com medição e justificativa.
+Ano em conteúdo pré-renderizado depende do build: incluir atualização anual no checklist, ou definir revalidação na implementação do footer.
+
+## Segurança e publicação
+
+Nosniff, Referrer-Policy, X-Frame-Options DENY e Permissions-Policy já configurados; não equivalem a uma auditoria de segurança completa.
+Preview tem robots noindex/nofollow. Gate 8 deve substituir essa política somente com aprovação de publicação e domínio HTTPS confirmado; SITE_URL será validada e usada em canonical/OG/sitemap. Variável ainda não implementada nem necessária para executar localmente.
+Links de conteúdo aceitam somente https e mailto nos destinos confirmados; URL externa com target blank usa noopener noreferrer. Não expor tokens em NEXT_PUBLIC. Sem trackers, formulários ou políticas jurídicas inventadas.
+CSP será avaliada com scripts/fontes finais; não adicionar unsafe-inline genérico para simular proteção.
+
+## Reprodutibilidade
+
+Node 24; npm ci usa package-lock. npm run typecheck executa next typegen antes do tsc. next-env.d.ts é gerado, ignorado pelo Git. .editorconfig/.gitattributes padronizam UTF-8/LF; scripts PowerShell devem usar -Encoding utf8 ou File.ReadAllText/WriteAllText explícitos.
+Lint falha também em avisos. Teste de tooling exercita regras React e alt-text em um exemplo inválido; seu timeout de 60s acomoda cold start dos plugins no Windows, sem desabilitar regras.
