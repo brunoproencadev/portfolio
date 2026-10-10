@@ -1,6 +1,6 @@
 # Design system — contrato para implementação
 
-Fonte dos tokens/layout implementados: src/styles/globals.css. Home e cápsula implementadas na Fase 4; coreografia/intro e cases seguem nas Fases 5/6.
+Fonte dos tokens/layout implementados: src/styles/globals.css. Home/cápsula implementadas na Fase 4; coreografia/intro na Fase 5. Cases seguem na Fase 6.
 
 ## Cor e contraste
 
@@ -33,7 +33,7 @@ Disclosure não modal: nav com nome acessível, botão nativo, aria-expanded e a
 Fechada: marca curta, seção atual e botão. Aberta: mesmos elementos mais links completos. Largura máxima min(28rem, calc(100vw - 2*gutter)); altura do painel limitada ao viewport com rolagem interna quando necessário. Conteúdo essencial nunca depende de hover.
 Enter/Espaço acionam o botão; Tab segue ordem DOM; Escape fecha e retorna foco ao botão. Clique fora ou foco saindo fecham sem roubar foco do novo destino. Seleção de link fecha e move foco para o título da seção (tabindex -1); não devolver ao botão nessa ação.
 Sem JS: links continuam visíveis/utilizáveis; botão só aparece após hidratação, via useSyncExternalStore. Seção ativa usa IntersectionObserver dos limites das seções: última seção em ordem DOM cujo início chegou à faixa de leitura até 40% da altura. Observer é recriado no resize e desconectado no cleanup; hash também atualiza contexto. aria-current=location e texto “Atual”/marca lateral distinguem localização, sem live region a cada scroll.
-Menu suporta redimensionamento, orientação e reduced motion; link focado é trazido para a área visível após resize. Não prender foco nem scroll da página. Fase 4 usa estado imediato e feedback CSS, sem importar Motion/GSAP; animação de expansão será avaliada na Fase 5 sem alterar este contrato.
+Menu suporta redimensionamento, orientação e reduced motion; link focado é trazido para a área visível após resize. Não prender foco nem scroll da página. Fase 5 adiciona entrada CSS de 8px/280ms aos links; ao focá-los a animação cessa, e hidden fecha imediatamente. Sem animação de altura, atraso de saída ou import de Motion na cápsula.
 
 ## Demais componentes e limites
 
@@ -45,6 +45,6 @@ Menu suporta redimensionamento, orientação e reduced motion; link focado é tr
 
 ## Movimento e fallback
 
-CSS --motion-fast 180ms e --motion-state 280ms; --ease-out cubic-bezier(0.22,1,0.36,1). Motion: painel/estado do menu, usando camada interna para opacity/transform e dimensão reservada quando possível. GSAP: hero/reveal 600–900ms, stagger ≤100ms, deslocamento discreto 16–32px; parallax somente se sustentado pela revisão visual.
-Intro alvo 1,2s, timeout de segurança 2,2s independente da timeline; texto real, sem porcentagem/progresso fictício. Pular por botão/teclado; nenhum foco ou scroll retido; não repetir na navegação entre cases. Storage negado não impede conclusão.
-Reduced motion: tokens CSS zerados; componentes devem usar matchMedia/useReducedMotion para não iniciar GSAP e cancelar sequências ativas. Nenhum CSS global deve esconder conteúdo até hidratação. Blur grande/efeito luminoso e animação de width/height contínua não são padrão.
+CSS --motion-fast 180ms e --motion-state 280ms; --ease-out cubic-bezier(0.22,1,0.36,1). CSS atende o feedback simples da cápsula; Motion permanece instalado, dispensado do bundle. GSAP: identificação/diagrama com 16px, trechos de 600–900ms e stagger de 100ms; reveals com 24px/700ms, uma vez. Sem opacidade de texto. Anéis permanecem estáticos para preservar a contenção em todos os frames. Sem parallax, scrub/pin ou loops: revisão não mostrou necessidade.
+Intro nominal/diagrama com alvo 1,2s e timeout de segurança 2,2s independente da timeline/import; texto real, sem porcentagem/progresso fictício. Botão Pular intro integrado ao hero; Enter/Espaço e Escape funcionam. Nenhum foco ou scroll retido; foco só retorna ao h1 se estava no botão removido. Hash/scroll inicial evitam a intro; gesto de scroll, foco no conteúdo, hash, pagehide ou mudança de preferência a cancelam. sessionStorage opcional e guarda em memória por documento evitam repetição; storage negado não impede conclusão. Fluxo entre cases será testado quando as rotas existirem.
+Reduced motion: tokens CSS zerados e matchMedia evitam carregar GSAP/ScrollTrigger inicialmente e revertem sequências ativas. Alterar de volta para no-preference não reinicia a animação na mesma montagem. Nenhum CSS global esconde conteúdo até hidratação; falhas/imports tardios deixam composição estática. Blur grande/efeito luminoso e animação de width/height contínua não são padrão.

@@ -1,6 +1,6 @@
 # Plano e gates
 
-Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fase 4 autorizada e concluída em 2026-10-10, após envio dos commits anteriores ao GitHub. Fase 5 autorizada explicitamente em 2026-10-10; Fase 6 aguarda seu próprio gate.
+Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fases 4/5 autorizadas e concluídas em 2026-10-10, após envio dos commits anteriores ao GitHub. Fase 6 aguarda seu próprio gate.
 
 | Fase          | Entrega                                                     | Gate de saída                                                                             |
 | ------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -24,3 +24,11 @@ Regra: Plan → Implement → Validate → Review → Commit → Document → Co
 
 A Fase 4 pode usar transição de estado simples do menu. Intro e coreografia cinematográfica pertencem à Fase 5. Não criar case vazio nem CTA “ver case” antes da Fase 6.
 Cada incremento tem staging explícito, gate pertinente e commit próprio; não acumular uma fase inteira em um commit. Sem reescrever os commits iniciais para simular uma granularidade que não existiu.
+
+## Incrementos concluídos da Fase 5
+
+1. Intro nominal/diagrama pulável, timeline de 1,2s e timeout externo 2,2s; storage opcional, import cancelável e conteúdo SSR disponível.
+2. Reveals locais GSAP/ScrollTrigger, entrada CSS da cápsula e cancelamento imediato por preferência/foco/saída; Motion dispensado do bundle por suficiência do CSS.
+3. Regressões de falha/import atrasado/teclado/reduced motion e revisão de frames; 33 E2E e 3 unitários, gates e commits locais documentados.
+
+Próximo gate: Fase 6 — três cases estáticos com contexto, decisões, evidências e limites, revisão da origem/dimensões/alt dos assets, URLs diretas/slug inválido, erro/404 úteis e links para repositório/contato. Confirmar fontes atuais e disponibilidade de imagens antes de publicar alegações; não inventar evidência faltante. Navegação entre cases deverá exercitar desmontagem e não repetição da intro. Exige autorização explícita; não iniciada.

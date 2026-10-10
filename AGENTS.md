@@ -12,7 +12,7 @@ TypeScript strict; dados separados da apresentação; HTML semântico; foco vis�
 
 Concluir a fase atual com implementação, testes relevantes, documentação e commits atômicos. Dentro de uma fase aprovada, trabalhar autonomamente sem pedir aprovação por tarefa ou commit.
 Ao encerrar: resumir entregas, listar SHAs, testes e resultados, limitações e decisões pendentes; explicar a próxima fase. NÃO iniciar a próxima fase sem confirmação explícita do usuário. Aprovação de comando/sandbox não equivale a aprovação da próxima fase.
-Estado atual: Fase 5 autorizada explicitamente em 2026-10-10: “Dê início a fase 5”. Concluir seus incrementos autonomamente e aguardar confirmação explícita antes da Fase 6. Novos commits permanecem locais.
+Estado atual: Fase 5 autorizada explicitamente em 2026-10-10: “Dê início a fase 5”, e concluída com intro, reveals, microinterações e fallbacks validados. Aguardar confirmação explícita antes da Fase 6. Novos commits permanecem locais.
 
 ## Cuidados comprovados pela auditoria
 

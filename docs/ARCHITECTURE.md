@@ -2,7 +2,7 @@
 
 ## Estado implementado
 
-Next 16.4.0, React 19.3.0, App Router, TypeScript strict e Tailwind 4. Home/layout/diagramas são Server Components; somente SiteNavigation é client. Dados editoriais tipados em src/data/portfolio.ts, consumidos pela home e navegação. Sem cases ou timelines implementados.
+Next 16.4.0, React 19.3.0, App Router, TypeScript strict e Tailwind 4. Home/layout/diagramas são Server Components; SiteNavigation e HomeMotion são ilhas client. Dados editoriais tipados em src/data/portfolio.ts, consumidos pela home e navegação. Intro/reveals entregues na Fase 5; cases ainda não implementados.
 CSS global é dono dos tokens, layout e feedback; classes próprias como page-container evitam colisão com utilitários do Tailwind. Não criar diretórios vazios ou abstrações para componentes inexistentes.
 
 ## Fronteiras para as próximas fases
@@ -22,10 +22,10 @@ Cases usarão /projetos/[slug], generateStaticParams e notFound para slugs desco
 
 - Next/React: rotas, SSR/prerender e metadata. Sem export estático obrigatório: headers atuais precisam do servidor/plataforma compatível.
 - Tailwind: composição com tokens semânticos; globals é a fonte de valores. Breakpoints explícitos sm=600px e lg=900px, sem duplicar outros nomes.
-- GSAP 3.15.0/ScrollTrigger: sequências e revelações da Fase 5. Sem import no layout ou loop próprio; criar contexto local e revert no cleanup. Não usar ScrollTrigger.getAll().kill(), pois afetaria outros componentes.
-- Motion 14.1.0: selecionado para a animação de estado da cápsula na Fase 5, se ela trouxer benefício visual. Fase 4 usa React/CSS e não o importa. Import localizado; não animar o mesmo transform/opacity com GSAP e Motion.
+- GSAP 3.15.0/ScrollTrigger: HomeMotion importa home-sequence/home-reveals sob demanda, com contextos limitados ao main. Intro tem timeout externo, sessionStorage opcional e guarda por documento; reveals usam gatilhos locais uma vez por alvo. Cleanup por preferência/foco/hash/pagehide/unmount usa context.revert e guarda contra imports tardios. Não usar ScrollTrigger.getAll().kill(), pois afetaria outros componentes.
+- Motion 14.1.0: instalado, sem import. Avaliação da Fase 5 manteve CSS na cápsula: deslocamento simples de 8px/280ms, sem animação de altura/saída nem alteração de hidden/foco. Um runtime adicional não trouxe benefício suficiente. GSAP não atua na cápsula.
 - CSS: feedback simples. Sem Three/R3F/Drei, Anime, React Spring ou Lenis: SVG/CSS e scroll nativo atendem à proposta.
-- Bibliotecas de movimento instaladas, ainda não importadas em src: instalação não implica uso nem custo integral no bundle.
+- Movimento reduzido inicial evita imports dos módulos de animação; ativá-lo durante execução reverte efeitos e não os reinicia automaticamente ao voltar a no-preference. Textos nunca têm opacity reduzida; nenhum estado SSR fica esperando JavaScript.
 - Vitest: dados e regressões úteis; Playwright/axe: comportamento em produção local. Lighthouse é ferramenta de laboratório, não telemetria.
 - ESLint 9.39.5 fixado por compatibilidade de todos os peers. A consulta apenas a eslint-config-next permitia ESLint 10, mas import/react/jsx-a11y não. Atualizar conjuntamente quando suportado; não usar force/legacy-peer-deps. Risco residual de suporte e braces em AUDIT.
 
