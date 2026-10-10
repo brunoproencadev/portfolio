@@ -1,6 +1,6 @@
 # Conteúdo editorial verificado
 
-Fonte factual: PROFILE_RESEARCH.md. Textos da home/projetos/competências implementados em src/data/portfolio.ts na Fase 4, mantendo estes limites e fontes. Os cases abaixo seguem como base editorial para Fase 6. Não são dados vindos de CMS.
+Fonte factual: PROFILE_RESEARCH.md. Textos da home/projetos/competências implementados em src/data/portfolio.ts na Fase 4, mantendo estes limites e fontes. Os cases abaixo foram implementados em src/data/case-studies.ts na Fase 6, com links de evidência por SHA. Não são dados vindos de CMS.
 
 ## Home
 

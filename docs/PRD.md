@@ -1,6 +1,6 @@
 # PRD — Bruno Proença Silva
 
-Revisão de auditoria: 2026-10-09; home e movimento entregues nas Fases 4/5 em 2026-10-10. Fonte de escopo; mudanças entre fases exigem aprovação. O produto ainda depende de cases, QA final e SEO/publicação nos gates seguintes.
+Revisão de auditoria: 2026-10-09; home, movimento e cases entregues nas Fases 4–6 em 2026-10-10. Fonte de escopo; mudanças entre fases exigem aprovação. O produto ainda depende de QA final e SEO/publicação nos gates seguintes.
 
 ## 1. Problema e proposta de valor
 
@@ -35,7 +35,7 @@ Experiência/conquistas específicas só entram se confirmadas; o contexto educa
 
 Home em português, cápsula de navegação contextual, intro curta pulável, três cases estáticos, competências por evidência, contato por links, footer, 404 própria e tratamento de erro. Metadados por rota, favicon, OG, sitemap/robots/canonical no gate de produção com domínio confirmado. Conteúdo e navegação básica devem continuar disponíveis sem animação ou JavaScript.
 
-Rotas planejadas: /, /projetos/robosense-lab, /projetos/industry-week-senai, /projetos/atelie-ingrid-xavier. URLs não são links ativos até as páginas existirem.
+Rotas implementadas: /, /projetos/robosense-lab, /projetos/industry-week-senai, /projetos/atelie-ingrid-xavier. Três cases estáticos, links ativos na home e entre cases; slugs desconhecidos retornam 404 autoral. Fontes/limites e diagramas autorais documentados; fotografias externas ainda dependem de autorização/origem.
 
 ## 6. Futuro e exclusões
 

@@ -1,6 +1,6 @@
 # Design system — contrato para implementação
 
-Fonte dos tokens/layout implementados: src/styles/globals.css. Home/cápsula implementadas na Fase 4; coreografia/intro na Fase 5. Cases seguem na Fase 6.
+Fonte dos tokens/layout implementados: src/styles/globals.css. Home/cápsula implementadas na Fase 4; coreografia/intro na Fase 5; cases/erro/404 na Fase 6.
 
 ## Cor e contraste
 
@@ -38,13 +38,14 @@ Menu suporta redimensionamento, orientação e reduced motion; link focado é tr
 ## Demais componentes e limites
 
 - Link/botão: texto explícito, hover de cor/linha, focus-visible 2px com offset 4px; active com feedback discreto. Sem cursor customizado obrigatório.
-- Card: índice, categoria, título, síntese, stack e estado sempre legíveis. Link de case separado do link GitHub, sem links aninhados. Enquanto case não existir, usar somente destino existente.
+- Card: índice, categoria, título, síntese, stack e estado sempre legíveis. Link Ler case separado do link GitHub, sem links aninhados. Os três destinos de case existem e foram testados.
 - Diagrama/imagem: proporção reservada, alt significativo ou decoração aria-hidden; legenda diferencia conceito/evidência.
 - Contato: links reais GitHub/LinkedIn/mailto; sem formulário.
-- Erro/404: mensagem objetiva e retorno à home previstos na Fase 6; ainda não são componentes autorais.
+- Case: cabeçalho com retorno aos projetos, h1/estado/stack/contato, diagrama conceitual e seis seções. Coluna única em mobile, título/texto em 5/7 colunas acima de 900px; fontes por links sublinhados, leitura até 64ch. Outros cases e contato fecham a página.
+- Erro/404: mensagens autorais objetivas, retorno ao início/projetos; erro foca h1 e oferece nova tentativa por botão nativo. Mesmo contraste/foco e alvos de 44px, sem revelar detalhes de exceção.
 
 ## Movimento e fallback
 
 CSS --motion-fast 180ms e --motion-state 280ms; --ease-out cubic-bezier(0.22,1,0.36,1). CSS atende o feedback simples da cápsula; Motion permanece instalado, dispensado do bundle. GSAP: identificação/diagrama com 16px, trechos de 600–900ms e stagger de 100ms; reveals com 24px/700ms, uma vez. Sem opacidade de texto. Anéis permanecem estáticos para preservar a contenção em todos os frames. Sem parallax, scrub/pin ou loops: revisão não mostrou necessidade.
-Intro nominal/diagrama com alvo 1,2s e timeout de segurança 2,2s independente da timeline/import; texto real, sem porcentagem/progresso fictício. Botão Pular intro integrado ao hero; Enter/Espaço e Escape funcionam. Nenhum foco ou scroll retido; foco só retorna ao h1 se estava no botão removido. Hash/scroll inicial evitam a intro; gesto de scroll, foco no conteúdo, hash, pagehide ou mudança de preferência a cancelam. sessionStorage opcional e guarda em memória por documento evitam repetição; storage negado não impede conclusão. Fluxo entre cases será testado quando as rotas existirem.
+Intro nominal/diagrama com alvo 1,2s e timeout de segurança 2,2s independente da timeline/import; texto real, sem porcentagem/progresso fictício. Botão Pular intro integrado ao hero; Enter/Espaço e Escape funcionam. Nenhum foco ou scroll retido; foco só retorna ao h1 se estava no botão removido. Hash/scroll inicial evitam a intro; gesto de scroll, foco no conteúdo, hash, pagehide ou mudança de preferência a cancelam. sessionStorage opcional e guarda em memória por documento evitam repetição; storage negado não impede conclusão. Fase 6 testou descarte ao trocar a rota e retorno à home sem replay, além de navegação entre cases.
 Reduced motion: tokens CSS zerados e matchMedia evitam carregar GSAP/ScrollTrigger inicialmente e revertem sequências ativas. Alterar de volta para no-preference não reinicia a animação na mesma montagem. Nenhum CSS global esconde conteúdo até hidratação; falhas/imports tardios deixam composição estática. Blur grande/efeito luminoso e animação de width/height contínua não são padrão.

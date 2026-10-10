@@ -1,6 +1,6 @@
 # Plano e gates
 
-Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fases 4/5 autorizadas e concluídas em 2026-10-10, após envio dos commits anteriores ao GitHub. Fase 6 aguarda seu próprio gate.
+Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fases 4–6 autorizadas e concluídas em 2026-10-10, após envio dos commits anteriores ao GitHub. Fase 7 aguarda seu próprio gate.
 
 | Fase          | Entrega                                                     | Gate de saída                                                                             |
 | ------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -31,4 +31,10 @@ Cada incremento tem staging explícito, gate pertinente e commit próprio; não 
 2. Reveals locais GSAP/ScrollTrigger, entrada CSS da cápsula e cancelamento imediato por preferência/foco/saída; Motion dispensado do bundle por suficiência do CSS.
 3. Regressões de falha/import atrasado/teclado/reduced motion e revisão de frames; 33 E2E e 3 unitários, gates e commits locais documentados.
 
-Próximo gate: Fase 6 — três cases estáticos com contexto, decisões, evidências e limites, revisão da origem/dimensões/alt dos assets, URLs diretas/slug inválido, erro/404 úteis e links para repositório/contato. Confirmar fontes atuais e disponibilidade de imagens antes de publicar alegações; não inventar evidência faltante. Navegação entre cases deverá exercitar desmontagem e não repetição da intro. Exige autorização explícita; não iniciada.
+## Incrementos concluídos da Fase 6
+
+1. Cases estáticos, dados/fontes por SHA e diagramas autorais acessíveis; links na home e 404 para slugs desconhecidos/nomes herdados.
+2. Recuperação de erro com foco, nova tentativa e retorno; falha de conteúdo RSC injetada somente nos testes, sem endpoint de QA na aplicação.
+3. Fontes reconferidas, revisão editorial/visual, 50/50 E2E e 5/5 unitários, tipos/lint/formato/build e registros de assets/commits atualizados. Desmontagem da home e não repetição da intro entre rotas comprovadas.
+
+Próximo gate: Fase 7 — QA/otimização do produto completo, Lighthouse de produção local com três execuções mobile e mediana, orçamentos/rede/links, revisão de acessibilidade e dependências. Registrar ambiente, resultados e limitações; TBT não é INP e testes automatizados não certificam acessibilidade. Não atualizar dependências por force nem declarar produção publicada. Exige autorização explícita; não iniciada. Fotos/vídeos adicionais continuam condicionados a origem/autorização, sem inventar evidências.

@@ -2,7 +2,7 @@
 
 ## Estado implementado
 
-Next 16.4.0, React 19.3.0, App Router, TypeScript strict e Tailwind 4. Home/layout/diagramas são Server Components; SiteNavigation e HomeMotion são ilhas client. Dados editoriais tipados em src/data/portfolio.ts, consumidos pela home e navegação. Intro/reveals entregues na Fase 5; cases ainda não implementados.
+Next 16.4.0, React 19.3.0, App Router, TypeScript strict e Tailwind 4. Home/layout/cases/diagramas são Server Components; SiteNavigation e HomeMotion são ilhas client. Dados editoriais em src/data/portfolio.ts e case-studies.ts. app/error.tsx é a fronteira client de recuperação, independente das ilhas. Intro/reveals e três cases entregues nas Fases 5/6.
 CSS global é dono dos tokens, layout e feedback; classes próprias como page-container evitam colisão com utilitários do Tailwind. Não criar diretórios vazios ou abstrações para componentes inexistentes.
 
 ## Fronteiras para as próximas fases
@@ -16,7 +16,7 @@ CSS global é dono dos tokens, layout e feedback; classes próprias como page-co
 | Intro/reveals                             | src/components/motion                    | Escopo local, cancelamento e fallback visível                                                   |
 | Tokens/layout/feedback simples            | src/styles/globals.css                   | CSS é dono de foco, hover, cores e espaços                                                      |
 
-Cases usarão /projetos/[slug], generateStaticParams e notFound para slugs desconhecidos; resolver em dados próprios sem acesso inseguro a propriedades herdadas. Nenhum banco ou API é necessário. Adicionar tipo/helper apenas quando existir consumidor.
+Cases usam /projetos/[slug], generateStaticParams, dynamicParams=false e notFound. getCaseStudy combina projeto/texto por find, sem acesso a propriedades herdadas. Conteúdo SSR/SSG com metadados por case e noindex herdado; links Next permitem navegar entre cases e voltar à home sem replay da intro. Fontes públicas por blob/SHA, diagramas inline com role img/title/dimensões. app/not-found.tsx retorna mensagem e links úteis; error.tsx foca o título, mantém erro interno fora da UI e oferece refresh/reset ou retorno ao início. Nenhum banco, API ou endpoint de teste é necessário.
 
 ## Dependências e responsabilidades
 
