@@ -37,6 +37,10 @@ export function SiteNavigation() {
     const observe = () => {
       observer?.disconnect();
       updateActive();
+      const focused = document.activeElement;
+      if (focused instanceof HTMLElement && nav.current?.contains(focused)) {
+        focused.scrollIntoView({ block: "nearest", inline: "nearest" });
+      }
       if (!("IntersectionObserver" in window)) return;
       observer = new IntersectionObserver(updateActive, {
         rootMargin: `-96px 0px -${Math.max(0, Math.round(innerHeight * 0.6))}px 0px`,
