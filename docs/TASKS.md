@@ -5,12 +5,19 @@
 - [x] Fase 2: direção de arte e design system especificados; A/B/C observadas em desktop/mobile e contraste medido.
 - [x] Fase 3: fundação Next/strict/ferramentas, noindex de preview e testes.
 - [x] Auditoria 0–3: peers de lint corrigidos; tipos regenerados; tokens/contratos e rastreabilidade corrigidos.
-- [ ] Gate obrigatório: confirmação explícita do usuário para iniciar Fase 4.
+- [x] Gate Fase 4: usuário autorizou em 2026-10-10; push anterior concluído e SHA remoto confirmado.
 - [ ] Fase 4: navbar, hero, galeria, sobre, competências, contato/footer e responsividade.
 - [ ] Fase 5: intro, GSAP/ScrollTrigger, microinterações e fallbacks.
 - [ ] Fase 6: cases, imagens/evidências, erro/404 e links.
 - [ ] Fase 7: QA completo, screenshots da interface, Lighthouse e segurança.
 - [ ] Fase 8: SEO final, domínio/canonical/sitemap/OG e checklist de publicação.
+
+## Incrementos da Fase 4 autorizada
+
+- [x] Home editorial e dados confirmados; diagramas conceituais, contatos e footer.
+- [ ] Cápsula contextual: disclosure, foco, Escape, clique externo e fallback sem JS.
+- [ ] QA 320/375/768/1440, zoom/reduced motion/teclado, fontes e links.
+- [ ] Fechamento: documentação, revisão e commits locais; gate da Fase 5.
 
 ## Limites ainda abertos
 

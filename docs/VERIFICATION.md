@@ -47,3 +47,11 @@ Ambiente confirmado: Windows/PowerShell, Node 24.15.0/npm 11.12.1. Código-base 
 
 A falha de inicialização do sandbox (helper_unknown_error: setup refresh had errors) ocorreu antes da execução dos comandos; os gates foram executados com escalonamento aprovado. Não foi falha da aplicação.
 As capturas de referências e os resultados históricos de pesquisa não foram refeitos nesta retomada. Não houve Lighthouse, teste de produção publicada, revalidação de LinkedIn, domínio, push ou deploy. A Fase 4 continua aguardando confirmação explícita.
+
+## Fase 4 — 2026-10-10
+
+Autorizada após envio dos commits anteriores. Push confirmado em origin/main: e54c0c75363a3f09efe8bba84c0e4ae661ce3701. Primeira tentativa falhou por falta de credencial/prompt de terminal; Git Credential Manager instalado foi usado apenas neste comando, com login concluído pelo usuário. Configuração global preservada.
+
+Primeiro incremento: home e dados editoriais. Typegen/TypeScript strict, lint sem avisos, formatação, 3/3 unitários, build e 9/9 E2E passaram. Zero violações axe. Nome, posicionamento, áreas e CTA inteiros na primeira dobra em 375x812/1440x900; conteúdo SSR, fontes/estados/destinos e ausência de overflow em quatro larguras cobertos. Capturas de primeira dobra revisadas.
+Revisão visual detectou colisão da classe container com a classe homônima de Tailwind: limitava o desktop a 900px. Renomeada para page-container; build/E2E repetidos, 9/9 passaram. Nenhuma falha de teste foi ocultada. Diagramas CSS/SVG são autorais, decorativos com legenda conceitual; não são evidências de execução dos projetos.
+Cápsula contextual e QA ampliado ainda pendentes neste incremento.

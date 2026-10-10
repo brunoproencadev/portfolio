@@ -12,7 +12,7 @@ TypeScript strict; dados separados da apresentação; HTML semântico; foco vis�
 
 Concluir a fase atual com implementação, testes relevantes, documentação e commits atômicos. Dentro de uma fase aprovada, trabalhar autonomamente sem pedir aprovação por tarefa ou commit.
 Ao encerrar: resumir entregas, listar SHAs, testes e resultados, limitações e decisões pendentes; explicar a próxima fase. NÃO iniciar a próxima fase sem confirmação explícita do usuário. Aprovação de comando/sandbox não equivale a aprovação da próxima fase.
-Estado atual: Fase 3 concluída; auditoria das Fases 0–3 autorizada e documentada em docs/AUDIT.md. Aguardar confirmação explícita antes de iniciar a Fase 4.
+Estado atual: Fase 4 autorizada explicitamente em 2026-10-10, após o push dos commits concluídos. Concluir esta fase; aguardar confirmação explícita antes da Fase 5.
 
 ## Cuidados comprovados pela auditoria
 

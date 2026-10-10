@@ -4,7 +4,7 @@ Workspace: `D:\projects\portifolio`. Origin: https://github.com/brunoproencadev/
 
 ## Estado e gate
 
-Fundação local e auditoria das Fases 0–3 concluídas; página mínima, sem interface final. Retomada em 2026-10-10 para fechar relatório, evidências e continuidade da auditoria interrompida. Próxima ação: aguardar confirmação explícita para Fase 4. Aprovação de sandbox não autoriza mudança de fase.
+Fundação e auditoria das Fases 0–3 concluídas. Fase 4 autorizada explicitamente em 2026-10-10: “Dê sequência para a fase quatro, antes, envie esses commits para o github.” Push concluído antes da implementação; origin/main confirmado em e54c0c75363a3f09efe8bba84c0e4ae661ce3701. Login via Git Credential Manager; nenhuma configuração global alterada. Fase 4 em andamento; aguardar confirmação antes de iniciar Fase 5.
 
 ## Commits locais
 
@@ -34,4 +34,10 @@ Referências A/B/C já inspecionadas na auditoria, com 13 capturas citadas e lim
 Direção: caderno de engenharia dark-first, acento verde, diagramas SVG próprios; sem WebGL/backend/CMS. GSAP para sequências/scroll, Motion para menu, CSS para feedback, sem disputar propriedades.
 
 Fase 4 proposta: navbar cápsula acessível/contextual, hero, sobre, galeria e contato; layout 320/375/768/desktop, teclado e CTAs. Motion cinematográfico detalhado pertence à Fase 5; cases à Fase 6.
-Sem push/deploy autorizado ou realizado.
+Push dos commits anteriores autorizado e realizado; os incrementos novos da Fase 4 permanecem locais. Sem deploy autorizado ou realizado.
+
+## Plano da Fase 4
+
+Aceitação: R01–R04/R06/R07/R09 aplicáveis. Implementar home com dados editoriais locais, diagramas próprios rotulados, navegação acessível/contextual e contato por links. Preservar App Router/Server Components; somente a navegação necessita de estado no cliente.
+Incrementos: (1) composição/links/dados com teste de integridade e primeira dobra; (2) cápsula/foco/observer com E2E de comportamento; (3) revisão visual e QA em quatro larguras, zoom, preferência reduzida e teclado; (4) documentação e gate da Fase 5.
+Intro/coreografia, cases, erro/404 autorais, assets reais e SEO final pertencem às fases seguintes. Não criar destinos internos antes de existirem.
