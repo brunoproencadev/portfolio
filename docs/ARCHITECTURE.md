@@ -2,8 +2,8 @@
 
 ## Estado implementado
 
-Next 16.4.0, React 19.3.0, App Router, TypeScript strict e Tailwind 4. Home e layout são Server Components. Página mínima; não há navbar, cases, hooks, data layer ou animação implementados.
-Preservar src/app e src/styles. Não criar diretórios vazios ou abstrações para componentes inexistentes.
+Next 16.4.0, React 19.3.0, App Router, TypeScript strict e Tailwind 4. Home/layout/diagramas são Server Components; somente SiteNavigation é client. Dados editoriais tipados em src/data/portfolio.ts, consumidos pela home e navegação. Sem cases ou timelines implementados.
+CSS global é dono dos tokens, layout e feedback; classes próprias como page-container evitam colisão com utilitários do Tailwind. Não criar diretórios vazios ou abstrações para componentes inexistentes.
 
 ## Fronteiras para as próximas fases
 
@@ -23,7 +23,7 @@ Cases usarão /projetos/[slug], generateStaticParams e notFound para slugs desco
 - Next/React: rotas, SSR/prerender e metadata. Sem export estático obrigatório: headers atuais precisam do servidor/plataforma compatível.
 - Tailwind: composição com tokens semânticos; globals é a fonte de valores. Breakpoints explícitos sm=600px e lg=900px, sem duplicar outros nomes.
 - GSAP 3.15.0/ScrollTrigger: sequências e revelações da Fase 5. Sem import no layout ou loop próprio; criar contexto local e revert no cleanup. Não usar ScrollTrigger.getAll().kill(), pois afetaria outros componentes.
-- Motion 14.1.0: estado de expansão da cápsula. LazyMotion/m ou import localizado se reduzir bundle sem complicar a solução. Não animar o mesmo transform/opacity com GSAP e Motion.
+- Motion 14.1.0: selecionado para a animação de estado da cápsula na Fase 5, se ela trouxer benefício visual. Fase 4 usa React/CSS e não o importa. Import localizado; não animar o mesmo transform/opacity com GSAP e Motion.
 - CSS: feedback simples. Sem Three/R3F/Drei, Anime, React Spring ou Lenis: SVG/CSS e scroll nativo atendem à proposta.
 - Bibliotecas de movimento instaladas, ainda não importadas em src: instalação não implica uso nem custo integral no bundle.
 - Vitest: dados e regressões úteis; Playwright/axe: comportamento em produção local. Lighthouse é ferramenta de laboratório, não telemetria.
@@ -32,7 +32,7 @@ Cases usarão /projetos/[slug], generateStaticParams e notFound para slugs desco
 ## Invariantes de UX e performance
 
 Conteúdo renderizado antes do movimento; nunca usar opacity:0 global no SSR esperando JS. Intro é aprimoramento cancelável, não requisito de carregamento. Sem bloquear body/scroll. Preferência reduzida elimina intro/parallax e animação de layout; a preferência também deve cancelar timelines em execução.
-Menu é disclosure não modal: sem focus trap, sem body lock. Links normais funcionam sem JS; o estado melhorado só esconde opções após hidratação.
+Menu é disclosure não modal: sem focus trap, sem body lock. Links normais funcionam sem JS; useSyncExternalStore distingue servidor/hidratação e só esconde opções no cliente. Navegação por âncoras nativas, foco programático no título sem substituir URL/scroll; Escape retorna ao botão, saída de foco/clique externo fecham sem roubar foco. Observer/listeners têm cleanup, sem loop de animação ou listener contínuo de scroll.
 Hero e imagens têm espaço reservado; imagens significativas usam next/image e dimensões. Não carregar vídeos/iframes externos automaticamente. Diagrama conceitual precisa de legenda distinta de evidência real.
 Orçamentos iniciais para avaliar na Fase 7: imagem de hero ≤250 KiB e fontes adicionais ≤120 KiB transferidas. Atualmente fontes de sistema, sem download. Ajustar somente com medição e justificativa.
 Ano em conteúdo pré-renderizado depende do build: incluir atualização anual no checklist, ou definir revalidação na implementação do footer.

@@ -1,6 +1,6 @@
 # Plano e gates
 
-Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fase 4 autorizada em 2026-10-10, após envio dos commits anteriores ao GitHub. Fase 5 ainda não autorizada.
+Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fase 4 autorizada e concluída em 2026-10-10, após envio dos commits anteriores ao GitHub. Fase 5 ainda não autorizada.
 
 | Fase          | Entrega                                                     | Gate de saída                                                                             |
 | ------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -15,7 +15,7 @@ Regra: Plan → Implement → Validate → Review → Commit → Document → Co
 | 7             | QA e otimização                                             | R07/R10/R11; Lighthouse real, revisão manual e audit                                      |
 | 8             | SEO e preparação de publicação                              | R12; domínio, canonical/OG/sitemap, retirada aprovada de noindex, checklist               |
 
-## Incrementos da Fase 4 autorizada
+## Incrementos concluídos da Fase 4
 
 1. Compor layout e dados tipados a partir de CONTENT; tokens existentes; hero com nome/posicionamento/CTA.
 2. Implementar cápsula como disclosure acessível e estado contextual; fallback de navegação sem JS.

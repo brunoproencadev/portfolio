@@ -1,6 +1,6 @@
 # PRD — Bruno Proença Silva
 
-Revisão de auditoria: 2026-10-09. Fonte de escopo; mudanças entre fases exigem aprovação. A aplicação atual é uma fundação, não o produto final.
+Revisão de auditoria: 2026-10-09; home entregue na Fase 4 em 2026-10-10. Fonte de escopo; mudanças entre fases exigem aprovação. O produto ainda depende de intro/coreografia, cases, QA final e SEO/publicação nos gates seguintes.
 
 ## 1. Problema e proposta de valor
 

@@ -12,7 +12,7 @@ Assimetria desktop: título e narrativa ocupam 7 colunas, representação de pro
 
 ## Regra para imagens e diagramas
 
-Cada projeto recebe linguagem própria, sob o mesmo grid: percepção/contornos no RoboSense, sequência de eras no Industry Week, fotografia/catálogo no Ateliê. Esses são conceitos de apresentação, ainda não assets implementados.
+Cada projeto recebe linguagem própria, sob o mesmo grid: percepção/contornos no RoboSense, sequência de eras no Industry Week e catálogo/atendimento no Ateliê. A Fase 4 implementou SVGs autorais rotulados como esquemas conceituais; fotografias e evidências reais aguardam revisão de origem na Fase 6.
 Diagramas autorais são rotulados “esquema conceitual”; screenshots/resultados usam a fonte real e condições da captura. Não fabricar detector, painel de métricas, produto ou resultado.
 
 ## Referências interpretadas

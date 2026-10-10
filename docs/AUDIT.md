@@ -4,6 +4,8 @@ Data: 2026-10-09; fechamento retomado em 2026-10-10 (America/Sao_Paulo). Baselin
 
 ## Conclusão
 
+Este relatório descreve a auditoria anterior à Fase 4. Autorização posterior, entrega e estado atual estão em HANDOFF/TASKS; a Fase 4 foi autorizada e concluída em 2026-10-10, sem alterar os achados históricos abaixo.
+
 A arquitetura é proporcional e deve ser preservada. O maior defeito técnico era a árvore inválida de lint; o maior risco de retrabalho era uma especificação visual ainda sem evidência e estados suficientes. A fundação não representa a interface final. Não há achado crítico identificado neste escopo pequeno.
 
 ## Achados classificados

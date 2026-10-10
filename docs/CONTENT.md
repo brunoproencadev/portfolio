@@ -1,6 +1,6 @@
 # Conteúdo editorial verificado
 
-Fonte factual: PROFILE_RESEARCH.md. Estes são os textos-base para a interface; a implementação em src/data ainda não existe. Quando criada na Fase 4/6, deve manter correspondência editorial com este documento. Não são dados vindos de CMS.
+Fonte factual: PROFILE_RESEARCH.md. Textos da home/projetos/competências implementados em src/data/portfolio.ts na Fase 4, mantendo estes limites e fontes. Os cases abaixo seguem como base editorial para Fase 6. Não são dados vindos de CMS.
 
 ## Home
 
