@@ -1,14 +1,25 @@
 import type { ProjectSlug } from "@/data/portfolio";
 
-export function ProjectIllustration({ slug }: { slug: ProjectSlug }) {
+export function ProjectIllustration({
+  slug,
+  description,
+}: {
+  slug: ProjectSlug;
+  description?: string;
+}) {
   return (
     <svg
       viewBox="0 0 480 260"
+      width="480"
+      height="260"
       fill="none"
       className="project-illustration"
-      aria-hidden="true"
+      role={description ? "img" : undefined}
+      aria-labelledby={description ? `diagram-${slug}` : undefined}
+      aria-hidden={description ? undefined : true}
       focusable="false"
     >
+      {description && <title id={`diagram-${slug}`}>{description}</title>}
       {slug === "robosense-lab" && (
         <>
           <path d="M40 50h50M40 50v50m400-50h-50m50 0v50M40 210h50m-50 0v-50m400 50h-50m50 0v-50" />

@@ -38,12 +38,11 @@ test("projects show sources and limits and all internal links resolve", async ({
     await expect(card).toContainText("Estado");
     await expect(card).toContainText("Fonte");
     await expect(card).toContainText("Esquema conceitual");
-    await expect(card.getByRole("link")).toHaveAttribute(
-      "href",
-      /^https:\/\/github\.com\/brunoproencadev\//,
-    );
+    await expect(
+      card.getByRole("link", { name: `Ver repositório de ${name}` }),
+    ).toHaveAttribute("href", /^https:\/\/github\.com\/brunoproencadev\//);
   }
-  expect(await page.locator('a[href^="/projetos/"]').count()).toBe(0);
+  expect(await page.locator('a[href^="/projetos/"]').count()).toBe(3);
   expect(
     await page.evaluate(() =>
       [...document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')].every(

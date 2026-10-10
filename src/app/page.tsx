@@ -1,6 +1,7 @@
 import { ProjectIllustration } from "@/components/projects/project-illustration";
 import { SiteNavigation } from "@/components/navigation/site-navigation";
 import { HomeMotion } from "@/components/motion/home-motion";
+import Link from "next/link";
 import { profile, projects, skills } from "@/data/portfolio";
 
 export default function Home() {
@@ -114,6 +115,14 @@ export default function Home() {
                   >
                     Ver repositório <span aria-hidden="true">↗</span>
                   </a>
+                  <Link
+                    className="button-link"
+                    href={`/projetos/${project.slug}`}
+                    prefetch={false}
+                    aria-label={`Ler case de ${project.name}`}
+                  >
+                    Ler case <span aria-hidden="true">↗</span>
+                  </Link>
                 </div>
               </article>
             ))}

@@ -9,7 +9,7 @@
 - [x] Fase 4: navbar, hero, galeria, sobre, competências, contato/footer e responsividade.
 - [x] Gate Fase 5: usuário autorizou explicitamente em 2026-10-10.
 - [x] Fase 5: intro, GSAP/ScrollTrigger, microinterações e fallbacks.
-- [ ] Gate obrigatório: confirmação explícita antes da Fase 6.
+- [x] Gate Fase 6: usuário autorizou explicitamente em 2026-10-10.
 - [ ] Fase 6: cases, imagens/evidências, erro/404 e links.
 - [ ] Fase 7: QA completo, screenshots da interface, Lighthouse e segurança.
 - [ ] Fase 8: SEO final, domínio/canonical/sitemap/OG e checklist de publicação.
@@ -28,6 +28,15 @@
 - [x] Regressões de falha, storage negado, hash, cancelamento e revisão visual; commits/documentação e gate da Fase 6.
 
 ## Pendências preservadas
+
+## Incrementos da Fase 6 autorizada
+
+- [x] Três cases estáticos, dados editoriais, evidências vinculadas a SHAs e links ativos na home.
+- [x] Diagramas autorais com descrição/dimensões; fontes públicas reconferidas; 404 para slugs inválidos.
+- [ ] Recuperação de erro com foco, nova tentativa e retorno ao início; falhas reais de recurso testadas.
+- [ ] Revisão, suíte completa, commits/documentação e gate da Fase 7.
+
+## Limites preservados
 
 - A09: ESLint compatível fora de suporte; cinco alertas high de desenvolvimento por braces sem patch compatível confirmado. Runtime auditado separadamente.
 - LinkedIn bloqueado; formação/conquistas aguardam confirmação e ficam omitidas.

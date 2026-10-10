@@ -38,6 +38,8 @@ LinkedIn retornou HTTP 999 na pesquisa inicial; sem contornar autenticação. Fo
 
 ## Links e recursos
 
+Reconferência da Fase 6, 2026-10-10: git ls-remote confirmou os mesmos heads P2/P3/P4; README de RoboSense/Industry Week e VERIFICATION do Ateliê relidos nas revisões fixas acima. Nenhum resultado de outro projeto reexecutado. Cases usam links blob com SHA, não fontes mutáveis em main. Os diagramas são autorais do portfólio, com origem registrada em docs/ASSETS.md; fotografias e vídeos externos não foram incorporados.
+
 - GitHub dos projetos: repositórios públicos consultados com sucesso; head main registrado acima.
 - Demo Industry Week: https://brunoproencadev.github.io/industry-week-senai-prj/ respondeu HTTP 200 a HEAD nesta auditoria; isso verifica disponibilidade, não QA funcional.
 - RoboSense: demonstrações em artifacts/m3 no próprio repositório; sem site público independente confirmado.

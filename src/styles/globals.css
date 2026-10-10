@@ -585,6 +585,102 @@ h3 {
   color: var(--muted);
   font-size: 0.875rem;
 }
+.case-header {
+  display: flex;
+  min-height: 96px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.case-main {
+  padding-top: 32px;
+}
+.case-intro {
+  max-width: 800px;
+}
+.case-intro h1,
+.recovery-page h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin-block: 24px;
+  overflow-wrap: anywhere;
+}
+.case-intro .tag-list {
+  margin-block: 24px;
+}
+.case-status {
+  color: var(--muted);
+  padding: 20px;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+}
+.case-status strong {
+  color: var(--foreground);
+}
+.case-diagram {
+  margin-block: 48px;
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+}
+.case-diagram .project-illustration {
+  max-width: 640px;
+  margin-inline: auto;
+}
+.case-section {
+  display: grid;
+  gap: 24px;
+  border-top: 1px solid var(--divider);
+  padding-block: 48px;
+}
+.case-section > p,
+.case-section > div > p,
+.case-list {
+  color: var(--muted);
+  max-width: 64ch;
+}
+.case-section h2 {
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+}
+.case-list {
+  padding-left: 24px;
+  margin-block: 24px 0;
+}
+.case-list li + li {
+  margin-top: 16px;
+}
+.case-sources {
+  list-style: none;
+  padding: 0;
+  margin-block: 24px;
+}
+.case-next-heading {
+  margin-block: 24px 12px;
+  font-size: 1.25rem;
+}
+.case-other-projects {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-block: 48px;
+  border-top: 1px solid var(--divider);
+}
+.case-other-projects > p {
+  width: 100%;
+}
+.recovery-page {
+  min-height: 70vh;
+  padding-block: 64px;
+  max-width: 800px;
+}
+.recovery-page > p {
+  max-width: 54ch;
+  color: var(--muted);
+}
+button.button-link {
+  cursor: pointer;
+  font: inherit;
+}
 
 @media (min-width: 600px) {
   .page-container {
@@ -599,6 +695,11 @@ h3 {
   }
 }
 @media (min-width: 900px) {
+  .case-section {
+    grid-template-columns: 5fr 7fr;
+    gap: 64px;
+    padding-block: 64px;
+  }
   .page-container {
     width: min(1280px, calc(100% - 128px));
   }
