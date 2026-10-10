@@ -1,0 +1,348 @@
+{
+  "date": "2026-10-10T00:23:53.260Z",
+  "browser": "Playwright Chromium",
+  "report": [
+    {
+      "id": "a",
+      "url": "https://personal-site-kit-v2.21st.app/",
+      "size": "desktop",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "observed": {
+        "title": "Your Name • Full-Stack Engineer",
+        "headings": [
+          {
+            "text": "Your Name",
+            "font": "Newsreader, \"Newsreader Fallback\"",
+            "size": "24px"
+          },
+          {
+            "text": "Experience",
+            "font": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, -apple-system, sans-serif",
+            "size": "16px"
+          },
+          {
+            "text": "Open-Source",
+            "font": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, -apple-system, sans-serif",
+            "size": "16px"
+          },
+          {
+            "text": "Tech Stack",
+            "font": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, -apple-system, sans-serif",
+            "size": "16px"
+          }
+        ],
+        "controls": [],
+        "overflow": false
+      }
+    },
+    {
+      "id": "a",
+      "url": "https://personal-site-kit-v2.21st.app/",
+      "size": "mobile",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "observed": {
+        "title": "Your Name • Full-Stack Engineer",
+        "headings": [
+          {
+            "text": "Your Name",
+            "font": "Newsreader, \"Newsreader Fallback\"",
+            "size": "21px"
+          },
+          {
+            "text": "Experience",
+            "font": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, -apple-system, sans-serif",
+            "size": "14px"
+          },
+          {
+            "text": "Open-Source",
+            "font": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, -apple-system, sans-serif",
+            "size": "14px"
+          },
+          {
+            "text": "Tech Stack",
+            "font": "Inter, \"Inter Fallback\", ui-sans-serif, system-ui, -apple-system, sans-serif",
+            "size": "14px"
+          }
+        ],
+        "controls": [],
+        "overflow": false
+      }
+    },
+    {
+      "id": "b",
+      "url": "https://t3code-cinematic-dark-saas-landing-page-template-v2.21st.app/",
+      "size": "desktop",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "observed": {
+        "title": "Next.js SaaS Landing Page Template",
+        "headings": [
+          {
+            "text": "Brand",
+            "font": "Syne, \"Syne Fallback\"",
+            "size": "18px"
+          },
+          {
+            "text": "Build fasterScale smarter",
+            "font": "Syne, \"Syne Fallback\"",
+            "size": "80px"
+          },
+          {
+            "text": "Seamless integrations.",
+            "font": "Syne, \"Syne Fallback\"",
+            "size": "48px"
+          },
+          {
+            "text": "Ready to elevate your digital experience?",
+            "font": "Syne, \"Syne Fallback\"",
+            "size": "36px"
+          }
+        ],
+        "controls": [],
+        "overflow": false
+      }
+    },
+    {
+      "id": "b",
+      "url": "https://t3code-cinematic-dark-saas-landing-page-template-v2.21st.app/",
+      "size": "mobile",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "observed": {
+        "title": "Next.js SaaS Landing Page Template",
+        "headings": [
+          {
+            "text": "Brand",
+            "font": "Syne, \"Syne Fallback\"",
+            "size": "18px"
+          },
+          {
+            "text": "Build fasterScale smarter",
+            "font": "Syne, \"Syne Fallback\"",
+            "size": "30px"
+          },
+          {
+            "text": "Seamless integrations.",
+            "font": "Syne, \"Syne Fallback\"",
+            "size": "30px"
+          },
+          {
+            "text": "Ready to elevate your digital experience?",
+            "font": "Syne, \"Syne Fallback\"",
+            "size": "24px"
+          }
+        ],
+        "controls": [],
+        "overflow": false
+      }
+    },
+    {
+      "id": "c",
+      "url": "https://www.syahrilarfianalmazril.my.id/",
+      "size": "desktop",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "observed": {
+        "title": "Arfazrll | AI & Software Engineer",
+        "headings": [
+          {
+            "text": "AI & DATA",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "158.4px"
+          },
+          {
+            "text": "SOFTWARE",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "158.4px"
+          },
+          {
+            "text": "ENGINEER",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "158.4px"
+          },
+          {
+            "text": "\"Applied AI. Scalable Data. Robust software engineering.\"",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "88px"
+          },
+          {
+            "text": "Data that speaks. AI that reasons.",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "60px"
+          },
+          {
+            "text": "Software that ships.",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "60px"
+          },
+          {
+            "text": "Three disciplines, one engineer",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "60px"
+          },
+          {
+            "text": "and the numbers behind the work.",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "60px"
+          }
+        ],
+        "controls": [
+          {
+            "text": "21:23:46",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "Home",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "About",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "Contact",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "",
+            "label": "Focus mode",
+            "expanded": null
+          },
+          {
+            "text": "",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "",
+            "label": "Toggle language",
+            "expanded": null
+          },
+          {
+            "text": "Toggle theme",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "",
+            "label": "Toggle menu",
+            "expanded": null
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "id": "c",
+      "url": "https://www.syahrilarfianalmazril.my.id/",
+      "size": "mobile",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "observed": {
+        "title": "Arfazrll | AI & Software Engineer",
+        "headings": [
+          {
+            "text": "AI & DATA",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "48px"
+          },
+          {
+            "text": "SOFTWARE",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "48px"
+          },
+          {
+            "text": "ENGINEER",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "48px"
+          },
+          {
+            "text": "\"Applied AI. Scalable Data. Robust software engineering.\"",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "32px"
+          },
+          {
+            "text": "Data that speaks. AI that reasons.",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "30px"
+          },
+          {
+            "text": "Software that ships.",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "30px"
+          },
+          {
+            "text": "Three disciplines, one engineer",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "30px"
+          },
+          {
+            "text": "and the numbers behind the work.",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "30px"
+          }
+        ],
+        "controls": [
+          {
+            "text": "21:23:51",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "Home",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "About",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "Contact",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "",
+            "label": "Focus mode",
+            "expanded": null
+          },
+          {
+            "text": "",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "",
+            "label": "Toggle language",
+            "expanded": null
+          },
+          {
+            "text": "Toggle theme",
+            "label": null,
+            "expanded": null
+          },
+          {
+            "text": "",
+            "label": "Toggle menu",
+            "expanded": null
+          }
+        ],
+        "overflow": false
+      }
+    }
+  ]
+}

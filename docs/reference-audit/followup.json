@@ -1,0 +1,50 @@
+{
+  "a": {
+    "note": "Screenshot 600ms after Escape; clicked capsule to open first.",
+    "keyboardTarget": {
+      "tag": "BODY",
+      "text": "Your Name_Full-Stack EngineerCtrlKSectionsHomeExperienceOpen-SourceTech StackThe"
+    }
+  },
+  "b": {
+    "scrollY": 0,
+    "scrollHeight": 3420
+  },
+  "contrast": [
+    {
+      "foreground": "foreground",
+      "background": "background",
+      "ratio": 16.54
+    },
+    {
+      "foreground": "muted",
+      "background": "background",
+      "ratio": 8.55
+    },
+    {
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 7.73
+    },
+    {
+      "foreground": "background",
+      "background": "accent",
+      "ratio": 15.2
+    },
+    {
+      "foreground": "accent",
+      "background": "surface",
+      "ratio": 13.75
+    },
+    {
+      "foreground": "control-border",
+      "background": "surface",
+      "ratio": 4.37
+    },
+    {
+      "foreground": "divider",
+      "background": "surface",
+      "ratio": 1.56
+    }
+  ]
+}
