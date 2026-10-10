@@ -18,8 +18,9 @@ Fundação local e auditoria das Fases 0–3 concluídas; página mínima, sem i
 - 0c34350: conteúdo ligado a fontes verificáveis e limites de cada projeto.
 - 672e3c0: referências observadas, direção visual e contratos de interação.
 - ffcf055: requisitos R01–R12, arquitetura e gates por fase.
+- 8f2dd31: fechamento da auditoria, instruções/README/tarefas sincronizados e resultados atuais registrados.
 
-Commit de fechamento documental sucede estes; obter seu SHA com git log -1 --oneline (evita autorreferência no próprio commit).
+O commit seguinte apenas registra o SHA deste fechamento no HANDOFF; obter seu próprio SHA com git log -1 --oneline (evita autorreferência no próprio commit).
 
 ## Execução e prova
 
