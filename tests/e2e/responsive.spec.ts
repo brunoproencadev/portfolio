@@ -94,7 +94,12 @@ test("panel survives resizing and scrolls in short landscape viewports", async (
 
 test("reduced motion updates immediately and keyboard focus stays visible", async ({
   page,
+  browserName,
 }, testInfo) => {
+  test.skip(
+    browserName === "webkit" && process.platform === "win32",
+    "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+  );
   await page.emulateMedia({ reducedMotion: "no-preference" });
   await page.goto("/");
   await page.keyboard.press("Tab");
@@ -133,7 +138,13 @@ test("reduced motion updates immediately and keyboard focus stays visible", asyn
   await expect(page.locator("#contato")).toBeFocused();
 });
 
-test("real Chromium zoom at 200 percent keeps navigation and content usable", async ({}, testInfo) => {
+test("real Chromium zoom at 200 percent keeps navigation and content usable", async ({
+  browserName,
+}, testInfo) => {
+  test.skip(
+    browserName !== "chromium",
+    "Native zoom uses a Chromium extension.",
+  );
   const extensionPath = testInfo.outputPath("zoom-extension");
   await mkdir(extensionPath, { recursive: true });
   await writeFile(

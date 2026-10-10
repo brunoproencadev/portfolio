@@ -63,8 +63,18 @@ export function SiteNavigation() {
       if (event.target instanceof Node && !nav.current?.contains(event.target))
         setOpen(false);
     };
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape" || event.defaultPrevented) return;
+      setOpen(false);
+      toggle.current?.focus();
+    };
     document.addEventListener("pointerdown", closeOutside);
-    return () => document.removeEventListener("pointerdown", closeOutside);
+    // Pointer activation in WebKit can leave focus outside the disclosure.
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("pointerdown", closeOutside);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
   }, [open]);
 
   return (
@@ -85,13 +95,6 @@ export function SiteNavigation() {
         onBlur={(event) => {
           if (!event.currentTarget.contains(event.relatedTarget))
             setOpen(false);
-        }}
-        onKeyDown={(event) => {
-          if (event.key === "Escape" && open) {
-            event.stopPropagation();
-            setOpen(false);
-            toggle.current?.focus();
-          }
         }}
       >
         <div className="capsule-heading" hidden={!enhanced}>

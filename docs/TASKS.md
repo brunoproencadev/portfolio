@@ -11,7 +11,7 @@
 - [x] Fase 5: intro, GSAP/ScrollTrigger, microinterações e fallbacks.
 - [x] Gate Fase 6: usuário autorizou explicitamente em 2026-10-10.
 - [x] Fase 6: cases, diagramas/evidências, erro/404 e links.
-- [ ] Gate obrigatório: confirmação explícita antes da Fase 7.
+- [x] Gate Fase 7: usuário autorizou explicitamente em 2026-10-10; commits anteriores enviados até c8878a6.
 - [ ] Fase 7: QA completo, screenshots da interface, Lighthouse e segurança.
 - [ ] Fase 8: SEO final, domínio/canonical/sitemap/OG e checklist de publicação.
 
@@ -34,6 +34,13 @@
 - [x] Diagramas autorais com descrição/dimensões; fontes públicas reconferidas; 404 para slugs inválidos.
 - [x] Recuperação de erro com foco, nova tentativa e retorno ao início; falhas reais de recurso testadas.
 - [x] Revisão, suíte completa, commits/documentação e gate da Fase 7.
+
+## Incrementos da Fase 7 autorizada
+
+- [x] Instalação reproduzível, árvore de peers e reauditoria de segurança.
+- [ ] QA em Chromium/Firefox/WebKit, revisão visual e correções comprovadas.
+- [ ] Lighthouse mobile de produção local: três execuções por rota, medianas, rede e ambiente.
+- [ ] Gates finais, decisões, commits locais e documentação; aguardar Fase 8.
 
 ## Limites preservados
 

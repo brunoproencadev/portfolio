@@ -3,7 +3,12 @@ import { expect, test } from "@playwright/test";
 
 test("disclosure follows keyboard order and Escape returns focus", async ({
   page,
+  browserName,
 }) => {
+  test.skip(
+    browserName === "webkit" && process.platform === "win32",
+    "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+  );
   await page.goto("/");
   const toggle = page.getByRole("button", { name: "Menu", exact: true });
   await toggle.focus();
@@ -33,7 +38,12 @@ test("disclosure follows keyboard order and Escape returns focus", async ({
 
 test("outside click and leaving focus close without stealing the new focus", async ({
   page,
+  browserName,
 }) => {
+  test.skip(
+    browserName === "webkit" && process.platform === "win32",
+    "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+  );
   await page.goto("/");
   await page.getByRole("button", { name: "Menu", exact: true }).click();
   await page.getByRole("heading", { name: "Bruno Proença Silva" }).click();
@@ -52,6 +62,20 @@ test("outside click and leaving focus close without stealing the new focus", asy
   await expect(
     page.getByRole("button", { name: "Menu", exact: true }),
   ).toHaveAttribute("aria-expanded", "false");
+});
+
+test("pointer opening keeps Escape available and returns focus to the toggle", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Menu", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "Fechar", exact: true }),
+  ).toHaveAttribute("aria-expanded", "true");
+  await page.keyboard.press("Escape");
+  const toggle = page.getByRole("button", { name: "Menu", exact: true });
+  await expect(toggle).toBeFocused();
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
 });
 
 for (const width of [375, 1440]) {

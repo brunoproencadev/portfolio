@@ -1,14 +1,16 @@
-# Handoff — Fase 6 concluída
+# Handoff — Fase 7 em execução
 
 Workspace: `D:\projects\portifolio`. Origin: https://github.com/brunoproencadev/myportifolio.git. Branch: main. Push e SHA remoto verificados na abertura da Fase 4, conforme registro abaixo. .git existente preservado; nenhum arquivo ou alteração do usuário substituído.
 
 ## Estado e gate
 
-Fase 6 autorizada em 2026-10-10: “Dê início a fase 6”, e concluída. Baseline limpo 6665b80. Entrega: três cases estáticos/dados/fontes/diagramas/404, recuperação de erro e QA/documentação. **Aguardar confirmação explícita antes da Fase 7; novos commits permanecem locais.**
+Fase 7 autorizada em 2026-10-10: “Dê início a fase 7”. Baseline limpo c8878a6. Plano: instalação/peers/audit; QA multibrowser e correções; Lighthouse mobile em três execuções por rota; documentação e commits locais. Fase 8 exige confirmação explícita.
+
+Fase 6 autorizada em 2026-10-10: “Dê início a fase 6”, e concluída. Baseline limpo 6665b80. Entrega: três cases estáticos/dados/fontes/diagramas/404, recuperação de erro e QA/documentação.
 
 Histórico: Fase 5 autorizada em 2026-10-10: “Dê início a fase 5”, e concluída. Baseline limpo 0f89939. Entrega: intro nominal/diagrama do hero, reveals locais e microinterações, com falhas/cancelamento/reduced motion cobertos. Sem novas dependências.
 
-Histórico: Fase 4 concluída em 2026-10-10, autorizada explicitamente: “Dê sequência para a fase quatro, antes, envie esses commits para o github.” Push concluído antes daquela implementação; origin/main confirmado em e54c0c75363a3f09efe8bba84c0e4ae661ce3701. Login via Git Credential Manager; nenhuma configuração global alterada. Os commits das Fases 4–6 não foram enviados; a autorização anterior não inclui novos pushes.
+Histórico: Fase 4 concluída em 2026-10-10, autorizada explicitamente: “Dê sequência para a fase quatro, antes, envie esses commits para o github.” Push concluído antes daquela implementação; origin/main confirmado em e54c0c75363a3f09efe8bba84c0e4ae661ce3701. Login via Git Credential Manager; nenhuma configuração global alterada. Antes da Fase 7, o usuário pediu “Primeiramente, envie todos os commits pendentes ao github”: 11 commits das Fases 4–6 enviados e remoto confirmado em c8878a6cbb9037da15ea53533d599044d907bfdc. Novos commits da Fase 7 ficam locais.
 
 ## Commits locais
 
