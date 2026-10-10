@@ -1,5 +1,6 @@
 import { ProjectIllustration } from "@/components/projects/project-illustration";
 import { SiteNavigation } from "@/components/navigation/site-navigation";
+import { HomeMotion } from "@/components/motion/home-motion";
 import { profile, projects, skills } from "@/data/portfolio";
 
 export default function Home() {
@@ -42,6 +43,7 @@ export default function Home() {
               <span className="orbit-note note-two">contexto</span>
               <span className="orbit-note note-three">evidência</span>
             </div>
+            <HomeMotion />
             <p className="notebook-caption">
               Da ideia à evidência.
               <br />

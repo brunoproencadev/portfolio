@@ -7,7 +7,7 @@
 - [x] Auditoria 0–3: peers de lint corrigidos; tipos regenerados; tokens/contratos e rastreabilidade corrigidos.
 - [x] Gate Fase 4: usuário autorizou em 2026-10-10; push anterior concluído e SHA remoto confirmado.
 - [x] Fase 4: navbar, hero, galeria, sobre, competências, contato/footer e responsividade.
-- [ ] Gate obrigatório: confirmação explícita antes da Fase 5.
+- [x] Gate Fase 5: usuário autorizou explicitamente em 2026-10-10.
 - [ ] Fase 5: intro, GSAP/ScrollTrigger, microinterações e fallbacks.
 - [ ] Fase 6: cases, imagens/evidências, erro/404 e links.
 - [ ] Fase 7: QA completo, screenshots da interface, Lighthouse e segurança.
@@ -20,7 +20,13 @@
 - [x] QA 320/375/768/1440, zoom/reduced motion/teclado, fontes e links.
 - [x] Fechamento: documentação, revisão e commits locais; gate da Fase 5.
 
-## Limites ainda abertos
+## Incrementos da Fase 5 autorizada
+
+- [x] Intro integrada ao diagrama, pulável, 1,2s/timeout independente 2,2s; sem bloquear conteúdo, foco ou scroll.
+- [ ] Reveals GSAP/ScrollTrigger e avaliação da cápsula; cleanup local e reduced motion em execução.
+- [ ] Regressões de falha, storage negado, hash, cancelamento e revisão visual; commits/documentação e gate da Fase 6.
+
+## Pendências preservadas
 
 - A09: ESLint compatível fora de suporte; cinco alertas high de desenvolvimento por braces sem patch compatível confirmado. Runtime auditado separadamente.
 - LinkedIn bloqueado; formação/conquistas aguardam confirmação e ficam omitidas.

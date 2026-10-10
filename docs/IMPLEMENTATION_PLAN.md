@@ -1,6 +1,6 @@
 # Plano e gates
 
-Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fase 4 autorizada e concluída em 2026-10-10, após envio dos commits anteriores ao GitHub. Fase 5 ainda não autorizada.
+Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fase 4 autorizada e concluída em 2026-10-10, após envio dos commits anteriores ao GitHub. Fase 5 autorizada explicitamente em 2026-10-10; Fase 6 aguarda seu próprio gate.
 
 | Fase          | Entrega                                                     | Gate de saída                                                                             |
 | ------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------- |

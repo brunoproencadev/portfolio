@@ -1,8 +1,10 @@
-# Handoff — Fase 4 concluída
+# Handoff — Fase 5 em execução
 
 Workspace: `D:\projects\portifolio`. Origin: https://github.com/brunoproencadev/myportifolio.git. Branch: main. Push e SHA remoto verificados na abertura da Fase 4, conforme registro abaixo. .git existente preservado; nenhum arquivo ou alteração do usuário substituído.
 
 ## Estado e gate
+
+Fase 5 autorizada em 2026-10-10: “Dê início a fase 5”. Baseline limpo 0f89939. Escopo: intro integrada ao diagrama do hero, reveals locais e microinterações, com falhas/cancelamento/reduced motion cobertos. Sem novas dependências; não iniciar Fase 6 nem enviar novos commits sem autorização. Registros da Fase 4 abaixo são históricos.
 
 Fase 4 concluída em 2026-10-10, autorizada explicitamente: “Dê sequência para a fase quatro, antes, envie esses commits para o github.” Push concluído antes da implementação; origin/main confirmado em e54c0c75363a3f09efe8bba84c0e4ae661ce3701. Login via Git Credential Manager; nenhuma configuração global alterada. Os novos commits desta fase são locais; aguardar confirmação antes de iniciar Fase 5.
 

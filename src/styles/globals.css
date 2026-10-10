@@ -295,11 +295,27 @@ a:hover {
   border-color: var(--foreground);
 }
 .hero-notebook {
+  position: relative;
   border: 1px solid var(--divider);
   border-radius: 8px;
   padding: 24px;
   background: var(--surface);
   align-self: center;
+}
+.intro-skip {
+  position: absolute;
+  top: 52px;
+  right: 24px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--control-border);
+  border-radius: 4px;
+  color: var(--foreground);
+  background: var(--surface);
+  cursor: pointer;
+}
+.intro-skip:hover {
+  color: var(--accent);
 }
 .notebook-orbit {
   position: relative;

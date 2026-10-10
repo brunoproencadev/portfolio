@@ -1,0 +1,180 @@
+import { expect, test, type Page, type Route } from "@playwright/test";
+
+async function interceptSequence(
+  page: Page,
+  handle: (route: Route) => Promise<void>,
+) {
+  await page.route("**/_next/static/chunks/*.js", async (route) => {
+    const response = await route.fetch();
+    if ((await response.text()).includes('".orbit-note"')) await handle(route);
+    else await route.fulfill({ response });
+  });
+}
+
+async function freezeClock(page: Page) {
+  const now = new Date();
+  await page.clock.install({ time: now });
+  await page.clock.pauseAt(now);
+}
+
+test("intro completes in 1.2s, keeps content available and does not replay", async ({
+  page,
+}, testInfo) => {
+  await freezeClock(page);
+  await page.goto("/");
+  const skip = page.getByRole("button", { name: "Pular intro" });
+  await expect(skip).toBeVisible();
+  await expect(page.locator(".orbit-center")).toHaveAttribute(
+    "style",
+    /translate/,
+  );
+  await page.clock.runFor(32);
+  await expect(page.locator(".orbit-center")).toHaveAttribute(
+    "style",
+    /transform/,
+  );
+  await expect(page.locator("#inicio")).toBeVisible();
+  expect(
+    await page
+      .locator("body")
+      .evaluate((element) => getComputedStyle(element).overflow),
+  ).not.toBe("hidden");
+  await page.clock.runFor(400);
+  await page.screenshot({ path: testInfo.outputPath("intro-400ms.png") });
+  await expect(skip).toBeVisible();
+  await page.clock.runFor(900);
+  await expect(skip).toBeHidden();
+  await expect(page.locator(".orbit-center")).not.toHaveAttribute(
+    "style",
+    /transform/,
+  );
+  await page.screenshot({ path: testInfo.outputPath("intro-complete.png") });
+  await page.reload();
+  await expect(
+    page.getByRole("button", { name: "Menu", exact: true }),
+  ).toBeVisible();
+  await expect(skip).toBeHidden();
+});
+
+test("keyboard skip and Escape cancel without trapping or losing focus", async ({
+  page,
+}) => {
+  await freezeClock(page);
+  await page.goto("/");
+  const skip = page.getByRole("button", { name: "Pular intro" });
+  await expect(skip).toBeVisible();
+  await skip.focus();
+  await page.keyboard.press("Enter");
+  await expect(skip).toBeHidden();
+  await expect(page.locator("#inicio")).toBeFocused();
+  await page.evaluate(() => sessionStorage.clear());
+  await page.reload();
+  await expect(skip).toBeVisible();
+  await page.getByRole("button", { name: "Menu", exact: true }).focus();
+  await page.keyboard.press("Escape");
+  await expect(skip).toBeHidden();
+  await expect(
+    page.getByRole("button", { name: "Menu", exact: true }),
+  ).toBeFocused();
+});
+
+test("denied storage does not stop the intro from completing", async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(window, "sessionStorage", {
+      get() {
+        throw new DOMException("Denied", "SecurityError");
+      },
+    });
+  });
+  await freezeClock(page);
+  await page.goto("/");
+  await expect(page.locator(".orbit-center")).toHaveAttribute(
+    "style",
+    /translate/,
+  );
+  await page.clock.runFor(32);
+  await expect(page.locator(".orbit-center")).toHaveAttribute(
+    "style",
+    /transform/,
+  );
+  await page.clock.runFor(1300);
+  await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator("#inicio")).toBeVisible();
+});
+
+test("failed animation chunk restores the static page", async ({ page }) => {
+  let intercepted = false;
+  await interceptSequence(page, async (route) => {
+    intercepted = true;
+    await route.abort();
+  });
+  await page.goto("/");
+  await expect.poll(() => intercepted).toBe(true);
+  await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator("#inicio")).toBeVisible();
+  await page.getByRole("link", { name: "Explorar projetos" }).click();
+  await expect(page).toHaveURL(/#projetos$/);
+});
+
+test("independent 2.2s timeout rejects a late animation import", async ({
+  page,
+}) => {
+  let intercepted = false;
+  let release!: () => void;
+  const delayed = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await interceptSequence(page, async (route) => {
+    intercepted = true;
+    await delayed;
+    await route.continue();
+  });
+  await freezeClock(page);
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  await expect.poll(() => intercepted).toBe(true);
+  await page.clock.runFor(2199);
+  await expect(page.getByRole("button", { name: "Pular intro" })).toBeVisible();
+  await page.clock.runFor(1);
+  await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  release();
+  await page.waitForLoadState("networkidle");
+  await page.clock.runFor(1500);
+  await expect(page.locator(".orbit-center")).not.toHaveAttribute(
+    "style",
+    /transform/,
+  );
+});
+
+test("direct hashes and live reduced motion bypass or cancel the intro", async ({
+  page,
+}) => {
+  await page.goto("/#sobre");
+  await expect(
+    page.getByRole("button", { name: "Menu", exact: true }),
+  ).toBeVisible();
+  await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator("#sobre")).toBeInViewport();
+  await page.evaluate(() => sessionStorage.clear());
+  await freezeClock(page);
+  await page.goto("/");
+  await expect(page.locator(".orbit-center")).toHaveAttribute(
+    "style",
+    /translate/,
+  );
+  await page.clock.runFor(32);
+  await expect(page.locator(".orbit-center")).toHaveAttribute(
+    "style",
+    /transform/,
+  );
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator(".orbit-center")).not.toHaveAttribute(
+    "style",
+    /transform/,
+  );
+  await page.emulateMedia({ reducedMotion: "no-preference" });
+  await page.clock.runFor(2500);
+  await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+});
