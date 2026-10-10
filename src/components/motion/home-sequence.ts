@@ -6,8 +6,13 @@ export function startIntro(root: HTMLElement, onComplete: () => void) {
     context.add(() => {
       gsap
         .timeline({ onComplete, defaults: { ease: "power2.out" } })
-        .from(".orbit-ring, .orbit-center", { y: 16, duration: 0.9 })
-        .from(".orbit-note", { x: -16, duration: 0.6, stagger: 0.1 }, 0.4);
+        .from(".orbit-center", { y: 16, duration: 0.9 })
+        .from(".orbit-note", { x: 16, duration: 0.6, stagger: 0.1 }, 0.4)
+        .from(
+          ".hero-copy > .eyebrow, .hero-copy h1, .hero-headline",
+          { y: 16, duration: 0.7, stagger: 0.1 },
+          0,
+        );
     });
   } catch (error) {
     context.revert();

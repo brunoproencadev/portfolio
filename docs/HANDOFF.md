@@ -10,6 +10,8 @@ Fase 4 concluída em 2026-10-10, autorizada explicitamente: “Dê sequência pa
 
 ## Commits locais
 
+- 7c0a966: intro integrada/pulável com timeout externo, fallback de import/storage e seis regressões de movimento. Commit validado por lint/build e 14 E2E focados; formatação documental corrigida no incremento seguinte (ver VERIFICATION).
+
 - a53add1: auditoria, instruções e documentos fundamentais.
 - 9044ef4: regra obrigatória de aprovação entre fases.
 - ab45591: fundação Next/strict/configurações/lockfile.

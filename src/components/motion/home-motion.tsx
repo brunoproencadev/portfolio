@@ -8,6 +8,33 @@ export function HomeMotion() {
   const skip = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
+    const root = skip.current?.closest("main");
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+    if (!root || reduced.matches || location.hash) return;
+    let stopped = false;
+    let revert: (() => void) | undefined;
+    const finish = () => {
+      stopped = true;
+      revert?.();
+      revert = undefined;
+      reduced.removeEventListener("change", finish);
+      root.removeEventListener("focusin", finish);
+      window.removeEventListener("hashchange", finish);
+      window.removeEventListener("pagehide", finish);
+    };
+    reduced.addEventListener("change", finish);
+    root.addEventListener("focusin", finish);
+    window.addEventListener("hashchange", finish);
+    window.addEventListener("pagehide", finish);
+    void import("./home-reveals")
+      .then(({ startReveals }) => {
+        if (!stopped) revert = startReveals(root);
+      })
+      .catch(finish);
+    return finish;
+  }, []);
+
+  useEffect(() => {
     const button = skip.current;
     const root = button?.closest("main");
     if (!button || !root) return;
@@ -29,6 +56,14 @@ export function HomeMotion() {
       stopped = true;
       clearTimeout(timeout);
       revert?.();
+      button.removeEventListener("click", finish);
+      document.removeEventListener("keydown", onKey);
+      root.removeEventListener("focusin", onFocus);
+      window.removeEventListener("hashchange", finish);
+      window.removeEventListener("pagehide", finish);
+      window.removeEventListener("wheel", finish);
+      window.removeEventListener("touchstart", finish);
+      reduced.removeEventListener("change", finish);
       if (document.activeElement === button)
         root
           .querySelector<HTMLElement>("#inicio")
@@ -38,10 +73,14 @@ export function HomeMotion() {
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") finish();
     };
+    const onFocus = (event: FocusEvent) => {
+      if (event.target !== button) finish();
+    };
     button.hidden = false;
     const timeout = window.setTimeout(finish, 2200);
     button.addEventListener("click", finish);
     document.addEventListener("keydown", onKey);
+    root.addEventListener("focusin", onFocus);
     window.addEventListener("hashchange", finish);
     window.addEventListener("pagehide", finish);
     window.addEventListener("wheel", finish, { passive: true });
@@ -54,16 +93,7 @@ export function HomeMotion() {
       })
       .catch(finish);
 
-    return () => {
-      finish();
-      button.removeEventListener("click", finish);
-      document.removeEventListener("keydown", onKey);
-      window.removeEventListener("hashchange", finish);
-      window.removeEventListener("pagehide", finish);
-      window.removeEventListener("wheel", finish);
-      window.removeEventListener("touchstart", finish);
-      reduced.removeEventListener("change", finish);
-    };
+    return finish;
   }, []);
 
   return (

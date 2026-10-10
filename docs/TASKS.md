@@ -23,7 +23,7 @@
 ## Incrementos da Fase 5 autorizada
 
 - [x] Intro integrada ao diagrama, pulável, 1,2s/timeout independente 2,2s; sem bloquear conteúdo, foco ou scroll.
-- [ ] Reveals GSAP/ScrollTrigger e avaliação da cápsula; cleanup local e reduced motion em execução.
+- [x] Reveals GSAP/ScrollTrigger e avaliação da cápsula; cleanup local e reduced motion em execução.
 - [ ] Regressões de falha, storage negado, hash, cancelamento e revisão visual; commits/documentação e gate da Fase 6.
 
 ## Pendências preservadas

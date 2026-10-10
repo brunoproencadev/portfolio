@@ -209,6 +209,18 @@ svg {
 .capsule[data-enhanced] .capsule-links {
   display: grid;
   gap: 4px;
+  animation: capsule-enter var(--motion-state) var(--ease-out);
+}
+.capsule[data-enhanced] .capsule-links:focus-within {
+  animation: none;
+}
+@keyframes capsule-enter {
+  from {
+    transform: translateY(-8px);
+  }
+  to {
+    transform: none;
+  }
 }
 .capsule[data-enhanced] .capsule-links a {
   display: flex;
