@@ -1,33 +1,49 @@
-# Pesquisa de perfil — 2026-10-09
+# Pesquisa de perfil — revisão da auditoria 2026-10-09
 
-## Método e fontes
+## Método e proveniência
 
-Consulta atual via conector GitHub aos README públicos:
+Leitura pública via conector GitHub; conferência dos heads com git ls-remote. Fontes mutáveis foram lidas em main; SHAs abaixo identificam o estado consultado no mesmo período. Resultados dos outros projetos não foram reexecutados nesta auditoria.
 
-- https://github.com/brunoproencadev/brunoproencadev/blob/main/README.md
-- https://github.com/brunoproencadev/robosense-lab/blob/main/README.md
-- https://github.com/brunoproencadev/industry-week-senai-prj/blob/main/README.md
-- https://github.com/brunoproencadev/industry-week-senai-prj/blob/main/index.html
-- https://github.com/brunoproencadev/atelie-ingridxavier/blob/main/README.md
+| ID  | Repositório / head main                                                                                                   | Arquivos e fatos sustentados                                                                                                                                                           |
+| --- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| P1  | [Perfil](https://github.com/brunoproencadev/brunoproencadev/tree/f72066beeddc0657c7ef7738da3f6bb19f555535)                | README: aspiring software engineer, interesses Java/Spring e Python/AI/ML/visão, robótica e e-mail público. Autodeclaração não comprova domínio ou prêmio específico.                  |
+| P2  | [RoboSense](https://github.com/brunoproencadev/robosense-lab/tree/593768ee3d3f2f861f15beb83459131579e85104)               | README, pyproject.toml, docs/architecture.md: Python >=3.11, NumPy/OpenCV/PySerial; pipeline separado do controle GIGA; simulação M1/M2, gravações M3 e ensaios ao vivo experimentais. |
+| P3  | [Industry Week](https://github.com/brunoproencadev/industry-week-senai-prj/tree/68ab01a95b770f28d66a8f76fb6f138e4c8edbd6) | README, package.json, index.html e src/App.tsx: React/TypeScript/Vite/Tailwind, GSAP/Motion/Lenis usados; capítulos históricos, tema, mídia e painéis.                                 |
+| P4  | [Ateliê](https://github.com/brunoproencadev/atelie-ingridxavier/tree/66969cf8354c3063807a98069354d78303defdf7)            | README, package.json, docs/VERIFICATION.md: Next/React/TypeScript, catálogo local e WhatsApp; evidências de QA local, sem CMS/checkout/deploy confirmado.                              |
 
-## Fatos confirmados
+Identidade “Bruno Proença Silva”, objetivo de desenvolvedor em formação e URLs GitHub/LinkedIn foram fornecidos diretamente pelo usuário. E-mail brunoproencasilva@gmail.com consta no README público P1; a configuração privada do Git não foi usada como autorização de publicação de contato.
 
-Perfil declara aspiring software engineer; interesses em Java/Spring, Python/AI/ML/visão e robótica. E-mail público: brunoproencasilva@gmail.com. Nome e LinkedIn fornecidos pelo usuário.
-RoboSense: Python/OpenCV; simulação M1/M2; tracking em vídeos reais M3; ensaio ao vivo experimental, falsos alvos e perdas; Raspberry Pi sem validação; controle GIGA separado.
-Ateliê: frontend Next/React/TypeScript de catálogo com WhatsApp, sem checkout; Fase 2 local validada segundo documentação pública; CMS e deploy futuros.
-Industry Week: experiência de evolução industrial para evento SESI/SENAI; index.html importa /src/main.tsx. README tem instruções estáticas conflitantes; stack precisa de package.json/código antes de texto final.
+## Matriz de afirmações
 
-## Lacunas e cautelas
+| Afirmação                                   | Evidência                         | Uso editorial                                                             |
+| ------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------- |
+| Desenvolvedor em formação                   | Briefing + P1                     | Permitido na hero; sem senioridade inferida                               |
+| Uso de Python/OpenCV e TypeScript/React     | P2/P3/P4                          | Competências utilizadas, sem porcentagem                                  |
+| Java/Spring e IA/ML                         | Autodeclaração P1                 | Interesse/estudo declarado; não listar como domínio comprovado            |
+| Experiência relacionada a evento SESI/SENAI | README P3                         | Contexto do projeto; não comprova matrícula, emprego ou certificação      |
+| Tracking em vídeo real                      | P2                                | Descrever como vídeo gravado, distinto de hardware ao vivo                |
+| Raspberry Pi validada / motores integrados  | P2 declara limites                | Não publicar como realizado                                               |
+| Ateliê passou em testes                     | P4 VERIFICATION                   | Atribuir à execução documentada, não dizer “retestado por esta auditoria” |
+| Agendamento funcional no Industry Week      | App.tsx P3 contradiz essa leitura | Não afirmar: handleRegister apenas atualiza estado local/feedback         |
+| Premiações específicas/formação/emprego     | Sem evidência suficiente          | Omitir até confirmação                                                    |
 
-LinkedIn retornou HTTP 999; sem tentativa de contornar autenticação. Formação, datas, empregos e premiações específicas não confirmados. Perfil autodeclara medalhista, mas não há modalidade/data/evidência suficiente: omitir conquista específica.
-README não equivale a execução independente. Não reproduzir resultados quantitativos sem inspeção da evidência. Nenhum nível de domínio atribuído.
+## Contradições resolvidas e lacunas
 
-## Referências
+Industry Week: README mistura instruções antigas para index.html com stack React. index.html importa /src/main.tsx e App.tsx confirma implementação React; prevalece o código. Dependência instalada não implica feature; nenhuma integração de IA foi inferida de @google/genai.
+Formulário de visita no App.tsx mostra sucesso local e mensagem de contato futuro sem persistência comprovada. Os textos do portfólio descrevem a experiência histórica, não agendamento real.
+RoboSense: evitar “IA treinada” ou “detecção validada de bola infravermelha”; detector HSV de bola laranja e pipeline experimental são as descrições sustentadas.
+Ateliê: métricas registradas de testes e catálogo existem na fonte, mas cartões não as usam como prova de desempenho comercial.
 
-A: ferramenta web declarou URL inacessível. B e C: extração textual disponível, sem evidência visual. Navegador IAB indisponível e inventário de navegadores vazio. Não afirmar análise de scroll/transições/desktop/mobile. Reavaliar com navegador de testes, se disponível.
+LinkedIn retornou HTTP 999 na pesquisa inicial; sem contornar autenticação. Formação, datas acadêmicas, competições, empregos e conquistas permanecem sem confirmação. O perfil declara medalhista; faltam modalidade, evento, data e evidência específica. A omissão dessas informações permite continuar sem inventá-las.
 
-## Inspeção complementar de código
+## Links e recursos
 
-Industry Week: package.json confirma React 19, Vite 6, TypeScript e Tailwind 4; index.html importa src/main.tsx. Não inferir uso efetivo de toda dependência listada. README está parcialmente desatualizado.
-Ateliê: package.json confirma Next 16.3.8/React 19.3.0/TypeScript 5.9.3 e scripts de QA.
-RoboSense: pyproject.toml confirma Python >=3.11, NumPy, OpenCV headless e PySerial; docs/architecture.md descreve contrato Camera, validação temporal e separação de controle. Inspeção documental, sem executar esses projetos nesta sessão.
+- GitHub dos projetos: repositórios públicos consultados com sucesso; head main registrado acima.
+- Demo Industry Week: https://brunoproencadev.github.io/industry-week-senai-prj/ respondeu HTTP 200 a HEAD nesta auditoria; isso verifica disponibilidade, não QA funcional.
+- RoboSense: demonstrações em artifacts/m3 no próprio repositório; sem site público independente confirmado.
+- Ateliê: URL pública não confirmada; linkar código.
+- Fotografias/screenshots públicos não devem ser tratados como ativos livres sem verificar origem/autorização para publicação.
+
+## Referências de design
+
+Ver REFERENCES.md. Histórico: A indisponível na extração web e IAB sem navegador conectado; B/C inicialmente só texto. Nesta auditoria, Chromium de testes acessou A/B/C com HTTP 200 e capturas reais desktop/mobile. Não confundir essa observação com benchmark, análise de código interno ou certificação de acessibilidade.
