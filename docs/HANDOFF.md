@@ -12,6 +12,8 @@ Histórico: Fase 4 concluída em 2026-10-10, autorizada explicitamente: “Dê s
 
 ## Commits locais
 
+- a8f72ca: três cases SSG, dados/fontes por SHA, diagramas acessíveis, home com links de case, 404 útil e regressões de navegação/layout/cleanup.
+
 - 7c0a966: intro integrada/pulável com timeout externo, fallback de import/storage e seis regressões de movimento. Commit validado por lint/build e 14 E2E focados; formatação documental corrigida no incremento seguinte (ver VERIFICATION).
 - 6795a5b: reveals GSAP/ScrollTrigger, intro nominal, feedback CSS da cápsula, cleanup e 12 regressões de movimento; correções visuais e suíte completa 33/33.
 

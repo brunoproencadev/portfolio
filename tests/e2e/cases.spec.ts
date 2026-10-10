@@ -181,13 +181,7 @@ test("client navigation discards home motion and does not replay the intro", asy
   });
   await page.goto("/");
   await expect
-    .poll(() =>
-      page.evaluate(
-        () =>
-          (window as Window & { motionListenerCount: number })
-            .motionListenerCount,
-      ),
-    )
+    .poll(() => page.evaluate(() => Reflect.get(window, "motionListenerCount")))
     .toBeGreaterThan(0);
   await page
     .getByRole("link", { name: "Ler case de RoboSense Lab" })
@@ -197,13 +191,7 @@ test("client navigation discards home motion and does not replay the intro", asy
     page.getByRole("heading", { level: 1, name: "RoboSense Lab" }),
   ).toBeVisible();
   await expect
-    .poll(() =>
-      page.evaluate(
-        () =>
-          (window as Window & { motionListenerCount: number })
-            .motionListenerCount,
-      ),
-    )
+    .poll(() => page.evaluate(() => Reflect.get(window, "motionListenerCount")))
     .toBe(0);
   await page
     .getByRole("navigation", { name: "Outros cases" })

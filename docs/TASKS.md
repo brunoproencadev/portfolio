@@ -27,13 +27,11 @@
 - [x] Reveals GSAP/ScrollTrigger e avaliação da cápsula; cleanup local e reduced motion em execução.
 - [x] Regressões de falha, storage negado, hash, cancelamento e revisão visual; commits/documentação e gate da Fase 6.
 
-## Pendências preservadas
-
 ## Incrementos da Fase 6 autorizada
 
 - [x] Três cases estáticos, dados editoriais, evidências vinculadas a SHAs e links ativos na home.
 - [x] Diagramas autorais com descrição/dimensões; fontes públicas reconferidas; 404 para slugs inválidos.
-- [ ] Recuperação de erro com foco, nova tentativa e retorno ao início; falhas reais de recurso testadas.
+- [x] Recuperação de erro com foco, nova tentativa e retorno ao início; falhas reais de recurso testadas.
 - [ ] Revisão, suíte completa, commits/documentação e gate da Fase 7.
 
 ## Limites preservados
