@@ -19,6 +19,8 @@ Fundação e auditoria das Fases 0–3 concluídas. Fase 4 autorizada explicitam
 - 672e3c0: referências observadas, direção visual e contratos de interação.
 - ffcf055: requisitos R01–R12, arquitetura e gates por fase.
 - 8f2dd31: fechamento da auditoria, instruções/README/tarefas sincronizados e resultados atuais registrados.
+- e54c0c7: registro do fechamento da auditoria; último commit enviado ao GitHub antes da Fase 4.
+- c700cc6: home editorial, projetos/dados confirmados, diagramas e primeira validação da Fase 4.
 
 O commit seguinte apenas registra o SHA deste fechamento no HANDOFF; obter seu próprio SHA com git log -1 --oneline (evita autorreferência no próprio commit).
 

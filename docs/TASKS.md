@@ -15,7 +15,7 @@
 ## Incrementos da Fase 4 autorizada
 
 - [x] Home editorial e dados confirmados; diagramas conceituais, contatos e footer.
-- [ ] Cápsula contextual: disclosure, foco, Escape, clique externo e fallback sem JS.
+- [x] Cápsula contextual: disclosure, foco, Escape, clique externo e fallback sem JS.
 - [ ] QA 320/375/768/1440, zoom/reduced motion/teclado, fontes e links.
 - [ ] Fechamento: documentação, revisão e commits locais; gate da Fase 5.
 

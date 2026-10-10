@@ -54,4 +54,8 @@ Autorizada após envio dos commits anteriores. Push confirmado em origin/main: e
 
 Primeiro incremento: home e dados editoriais. Typegen/TypeScript strict, lint sem avisos, formatação, 3/3 unitários, build e 9/9 E2E passaram. Zero violações axe. Nome, posicionamento, áreas e CTA inteiros na primeira dobra em 375x812/1440x900; conteúdo SSR, fontes/estados/destinos e ausência de overflow em quatro larguras cobertos. Capturas de primeira dobra revisadas.
 Revisão visual detectou colisão da classe container com a classe homônima de Tailwind: limitava o desktop a 900px. Renomeada para page-container; build/E2E repetidos, 9/9 passaram. Nenhuma falha de teste foi ocultada. Diagramas CSS/SVG são autorais, decorativos com legenda conceitual; não são evidências de execução dos projetos.
-Cápsula contextual e QA ampliado ainda pendentes neste incremento.
+Cápsula contextual e QA ampliado ainda pendentes naquele primeiro incremento.
+
+Segundo incremento: cápsula não modal. Lint sem avisos, typecheck, build e 14/14 E2E passaram; axe sem violações com painel aberto/fechado. Cobertura: Enter/Espaço/Tab/Escape, retorno ao botão, foco saindo sem roubo, clique externo, seleção com foco no título, hash/destino sem oclusão, contexto por scroll e link direto em 375/1440, cinco links sem JS. Nenhum bloqueio de scroll ou foco; observer/listeners têm cleanup.
+Rodada intermediária teve 3 falhas: teste usava locator “Menu” após nome mudar para “Fechar”; observer de headings ativava a próxima seção cedo; teste scrollIntoViewIfNeeded não necessariamente rolava uma heading já visível. Corrigidos locator, observer para limites das seções e teste para scroll explícito sem clique/hash. Resultado final 14/14, sem retries nem regras desabilitadas.
+Estado visual nesta fase usa CSS, sem timeline de Motion/GSAP; conteúdo permanece disponível antes de hidratação. React useSyncExternalStore diferencia SSR/hidratação para só ocultar os links no cliente. QA ampliado ainda pendente.

@@ -1,5 +1,6 @@
 import { ProjectIllustration } from "@/components/projects/project-illustration";
-import { profile, projects, sections, skills } from "@/data/portfolio";
+import { SiteNavigation } from "@/components/navigation/site-navigation";
+import { profile, projects, skills } from "@/data/portfolio";
 
 export default function Home() {
   return (
@@ -7,22 +8,7 @@ export default function Home() {
       <a className="skip-link" href="#conteudo">
         Pular para o conteúdo
       </a>
-      <header className="site-header page-container">
-        <a
-          className="wordmark"
-          href="#inicio"
-          aria-label="Bruno Proença — início"
-        >
-          BP<span aria-hidden="true">/</span>
-        </a>
-        <nav aria-label="Navegação principal" className="static-navigation">
-          {sections.map((section) => (
-            <a key={section.id} href={`#${section.id}`}>
-              {section.label}
-            </a>
-          ))}
-        </nav>
-      </header>
+      <SiteNavigation />
       <main id="conteudo" tabIndex={-1}>
         <section className="hero page-container" aria-labelledby="inicio">
           <div className="hero-copy">
