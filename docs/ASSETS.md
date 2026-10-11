@@ -1,5 +1,9 @@
 # Assets dos cases — Fase 6
 
+## Identidade e compartilhamento — Fase 8
+
+src/app/icon.svg é um monograma BP/ autoral (viewBox 64×64). src/app/apple-icon.tsx gera PNG 180×180 e src/app/opengraph-image.tsx gera PNG 1200×630 com next/og, fonte padrão incorporada e dados confirmados de profile. Cores seguem o design system. Sem downloads de fontes, fotografias, marcas externas ou novas dependências. Card e Apple revisados visualmente; formatos e dimensões verificados por HTTP e cabeçalho PNG nos testes SEO. OG tem alt descritivo; imagem comum às quatro rotas.
+
 Os três cases reutilizam os SVGs autorais de src/components/projects/project-illustration.tsx, criados para este portfólio na Fase 4. Origem: commit c700cc6; descrições acessíveis e dimensões explícitas adicionadas na Fase 6. Não derivam das capturas de referência nem de fotografias dos projetos.
 
 | Case                 | Representação                                | Dimensões intrínsecas | Uso acessível                                                                   |
