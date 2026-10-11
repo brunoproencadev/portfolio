@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ProjectIllustration } from "@/components/projects/project-illustration";
 import { getCaseStudy } from "@/data/case-studies";
 import { profile, projects } from "@/data/portfolio";
+import { pageMetadata } from "@/config/site";
 
 export const dynamicParams = false;
 
@@ -18,10 +19,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const study = getCaseStudy((await params).slug);
   if (!study) notFound();
-  return {
-    title: `${study.name} | Bruno Proença Silva`,
-    description: study.summary,
-  };
+  return pageMetadata(
+    `${study.name} | Bruno Proença Silva`,
+    study.summary,
+    `/projetos/${study.slug}`,
+  );
 }
 
 export default async function ProjectPage({

@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/config/site";
 import "@/styles/globals.css";
-export const metadata: Metadata = {
-  // Preview remains unindexed until the production gate is approved.
-  robots: { index: false, follow: false },
-  title: "Bruno Proença Silva | Portfólio",
-  description:
-    "Software, visão computacional e robótica. Projetos de Bruno Proença Silva.",
-};
+export const metadata = pageMetadata(
+  "Bruno Proença Silva | Portfólio",
+  "Software, visão computacional e robótica. Projetos de Bruno Proença Silva.",
+  "/",
+);
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
