@@ -128,3 +128,17 @@ Doze rodadas Lighthouse finais de produção local/mobile (três por rota): medi
 Treze destinos internos/âncoras HTTP 200; GitHub/perfil/repositórios 200; dez fontes fixas 200 no endpoint raw. Páginas blob GitHub 429/503 e LinkedIn 999, sem contornar autenticação nem alegar prova humana. Sem envio de mensagens. Servidores/navegadores locais de QA encerrados, artefatos em .audit/test-results ignorados.
 
 Commits de implementação: 8bfb393 e 8599818; fechamento documental registrado em HANDOFF. Novos commits permanecem locais. Fase 8 (domínio/SEO/preparação de publicação) não iniciada; aguardar autorização explícita. Safari real/teclado, leitor de tela, dispositivos físicos, HTTPS/hospedagem e métricas de campo permanecem sem comprovação.
+
+# Fase 8 — prova de preparação local (2026-10-11)
+
+Baseline db00672 limpo; usuário autorizou a Fase 8 e escolheu Vercel/nome brunoproencasilva. Disponibilidade e titularidade do endereço não verificadas: MCP Vercel ausente no catálogo de ferramentas. Nenhum push/deploy.
+
+Formato, lint sem avisos, next typegen, TypeScript strict, build e 7/7 unitários aprovados. Primeira tentativa tinha erro de tipagem no teste por NODE_ENV obrigatório de ProcessEnv: corrigido usando mapa de strings na função pura. Prettier não tem parser SVG inferível; arquivo excluído do comando específico, formato geral aprovado. Nenhum commit foi feito com essas falhas pendentes.
+
+Preview completo: 154 aprovados, cinco exclusões, zero falhas, Playwright nos três motores/2 workers/sem retries. Seis contratos adicionais verificam as quatro rotas, titles/descrições/OG/Twitter, indexação e sitemap, HTTP/content type/dimensões PNG. Perfil indexável local inicialmente falhou nas três asserções de home por barra final: Next emite origem sem barra; teste corrigido para comparar URLs normalizadas. Reexecução 6/6 passou. Preview Vercel herdando SITE_INDEXABLE=true: build e 6/6 passaram mantendo noindex/disallow/sitemap vazio. Build padrão restaurado, gates repetidos e SEO focado 6/6 passou.
+
+PNG OG 1200×630 (~43,2 kB) e Apple 180×180 (~3,2 kB) revisados visualmente; favicon SVG com BP/. Assets gerados nativamente sem fontes externas/dependências. Copias e relatórios ignorados em .audit/phase8; testes substituem test-results a cada rodada.
+
+Lighthouse 13.5.0, Chromium instalado 156.0.8078.4, produção local 127.0.0.1:3100, perfil mobile padrão, somente categoria SEO, uma execução por rota no perfil indexável simulado: home/RoboSense/Industry Week/Ateliê = 100, nenhum audit SEO reprovado. Ambiente Windows/Node e limites de laboratório conforme QA_PHASE7. Não revalidou medianas de performance, HTTPS, destino público, compartilhamento real ou INP. Servidor e Chromium encerrados após coleta.
+
+Reaudit: npm audit --omit=dev zero; completo cinco high na cadeia braces, GHSA-vfj7-8cjw-p6xm; fix automático propõe eslint-config-next 14.2.35 incompatível com a stack. Não aplicado; lockfile intacto. Preview sem SITE_URL mantém warning Next de metadataBase/localhost; LAUNCH exige origem real antes de publicar. Riscos/etapas externas explícitos, sem declarar produção validada.

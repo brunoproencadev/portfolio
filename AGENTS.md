@@ -12,7 +12,7 @@ TypeScript strict; dados separados da apresentação; HTML semântico; foco vis�
 
 Concluir a fase atual com implementação, testes relevantes, documentação e commits atômicos. Dentro de uma fase aprovada, trabalhar autonomamente sem pedir aprovação por tarefa ou commit.
 Ao encerrar: resumir entregas, listar SHAs, testes e resultados, limitações e decisões pendentes; explicar a próxima fase. NÃO iniciar a próxima fase sem confirmação explícita do usuário. Aprovação de comando/sandbox não equivale a aprovação da próxima fase.
-Estado atual: Fase 7 autorizada explicitamente em 2026-10-10: “Dê início a fase 7”, concluída em 2026-10-11. QA multibrowser, Lighthouse e reauditoria documentados em docs/QA_PHASE7.md, com limites explícitos. Commits anteriores enviados até c8878a6; commits da Fase 7 permanecem locais. Aguardar confirmação explícita antes da Fase 8.
+Estado atual: Fase 8 autorizada explicitamente em 2026-10-11: “Dê início a Fase 8”. Preparação local de SEO e publicação concluída; hospedagem Vercel escolhida e endereço desejado brunoproencasilva.vercel.app ainda sem verificação. Commits enviados até c8878a6; Fases 7/8 permanecem locais. Push/deploy/indexação pública exigem autorização explícita. Checklist em docs/LAUNCH.md.
 
 ## Cuidados comprovados pela auditoria
 

@@ -1,6 +1,6 @@
 # PRD — Bruno Proença Silva
 
-Revisão de auditoria: 2026-10-09; home, movimento e cases entregues nas Fases 4–6 em 2026-10-10. QA local da Fase 7 concluído em 2026-10-11, com resultados e limites em QA_PHASE7. Fonte de escopo; mudanças entre fases exigem aprovação. SEO/domínio e preparação de publicação aguardam o gate da Fase 8.
+Revisão de auditoria: 2026-10-09; home, movimento e cases entregues nas Fases 4–6 em 2026-10-10. QA local da Fase 7 concluído em 2026-10-11, com resultados e limites em QA_PHASE7. Fonte de escopo; mudanças entre fases exigem aprovação. Fase 8 autorizada em 2026-10-11; SEO/assets e preparação local implementados. Validação de domínio e publicação na Vercel permanecem pendentes, conforme LAUNCH.
 
 ## 1. Problema e proposta de valor
 
@@ -67,6 +67,6 @@ Produção exige cases revisados, matriz R01–R12 coberta, build e QA completos
 
 ## 9. Riscos e dependências
 
-LinkedIn bloqueado; formação e prêmios específicos sem confirmação. E-mail confirmado no README público. Domínio não informado; não inventar canonical.
+LinkedIn bloqueado; formação e prêmios específicos sem confirmação. E-mail confirmado no README público. Endereço desejado brunoproencasilva.vercel.app, na Vercel; disponibilidade e titularidade não verificadas. Não tratar como domínio confirmado.
 A pesquisa de referências é amostral, sem certificação de desempenho/acessibilidade externa. Conteúdo dos projetos deve ser ancorado nas fontes registradas em PROFILE_RESEARCH.
 ESLint 9 compatível, mas fora de suporte; cadeia braces com alertas de desenvolvimento sem patch disponível. Reavaliar no gate 7/8. Mudança para ESLint 10 exige suporte dos plugins, não apenas do pacote principal.

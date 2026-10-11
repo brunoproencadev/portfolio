@@ -1,12 +1,22 @@
-# Handoff — Fase 7 concluída
+# Handoff — Fase 8: preparação local concluída
 
 Workspace: D:/projects/portifolio. Origin: https://github.com/brunoproencadev/myportifolio.git. Branch main. Arquivos do usuário preservados; sem reescrita de histórico.
 
 ## Estado e gate
 
+Fase 8 autorizada em 2026-10-11: “Dê início a Fase 8”. Preparação local concluída: favicon/Apple/OG autorais, metadata por rota, canonical condicionado à origem, robots/sitemap e indexação explicitamente controlada. Hospedagem escolhida: Vercel; endereço desejado interpretado como https://brunoproencasilva.vercel.app, ainda sem disponibilidade/titularidade verificadas. MCP Vercel não exposto entre as ferramentas desta sessão. Nenhum push/deploy; build final restaurado ao preview sem variáveis.
+
+Commits da Fase 8: **f4004af**, assets nativos e proveniência; **8f8904b**, configuração/SEO e testes. Commit documental de fechamento identificado por `git log -1 --oneline` após este registro, evitando autorreferência. Fechamento da Fase 7: db00672. Todos após c8878a6 permanecem locais.
+
+Prova Fase 8: formato/lint/typegen/strict/build aprovados, 7/7 unitários e 154 E2E aprovados com cinco exclusões já documentadas, zero falhas na rodada de preview. SEO focado: 6/6 em perfil indexável local; 6/6 em preview Vercel herdando true; 6/6 após restaurar preview sem variáveis. Lighthouse 13.5.0, mobile local, somente SEO, uma execução por rota: 100 nas quatro. Não é nova medição de performance ou comprovação na hospedagem. Assets PNG revisados e formatos/dimensões verificados por HTTP nos três browsers. Audit de 2026-10-11: runtime zero, cinco high de desenvolvimento por braces persistem; lock/dependências preservados.
+
+Próximo gate é a publicação: confirmar projeto/origem na Vercel e obter autorização explícita de push/deploy/indexação, então validar HTTPS/cabeçalhos/SEO/compartilhamento no destino. Checklist e rollback em [LAUNCH](LAUNCH.md). Safari/dispositivos/leitor de tela/INP de campo continuam pendentes. A preparação local da Fase 8 não comprova lançamento público.
+
+## Histórico da Fase 7
+
 Fase 7 autorizada em 2026-10-10: “Dê início a fase 7”; concluída em 2026-10-11 após retomada com “Continue”. Baseline limpo c8878a6. Entregas: QA multibrowser, correção de Escape e nome acessível do monograma, instalação/peers/audit, links/fontes, revisão visual e Lighthouse do produto completo. Relatório: [QA_PHASE7](QA_PHASE7.md); histórico de provas/falhas: [VERIFICATION](VERIFICATION.md).
 
-**Aguardar confirmação explícita antes da Fase 8.** Próximo escopo: domínio e ambiente de publicação confirmados, canonical/OG/favicon/sitemap/robots, SEO/cabeçalhos/HTTPS no destino e checklist de lançamento. Noindex/nofollow só saem com autorização de publicação. Nenhum deploy realizado.
+O gate da Fase 8 foi posteriormente aprovado conforme estado acima. Noindex/nofollow só saem com autorização de publicação. Nenhum deploy realizado.
 
 O pedido anterior “Primeiramente, envie todos os commits pendentes ao github” foi atendido antes desta fase: 11 commits das Fases 4–6 enviados e origin/main confirmado em c8878a6cbb9037da15ea53533d599044d907bfdc. Git Credential Manager por comando, sem alterar configuração global. **Commits da Fase 7 permanecem locais; novo push exige autorização.**
 
@@ -42,4 +52,4 @@ Safari real com navegação por teclado, leitor de tela, dispositivos físicos, 
 
 npm run dev abre desenvolvimento em http://127.0.0.1:3000. Produção local: npm run build e npm run start. Instalar browsers com npx playwright install chromium firefox webkit; E2E com npm run test:e2e -- --workers=2, servidor próprio na porta 3100. Gates e método Lighthouse no README/QA_PHASE7.
 
-Fase 8 não iniciada. A aprovação de um comando/sandbox não libera a próxima fase nem a publicação.
+Preparação local da Fase 8 concluída; seguir LAUNCH para o gate de publicação. A aprovação de um comando/sandbox não autoriza push/deploy/indexação pública.

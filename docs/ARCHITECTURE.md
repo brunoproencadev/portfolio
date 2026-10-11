@@ -42,7 +42,7 @@ Escape é ouvido no documento somente enquanto a cápsula está aberta: cliques 
 ## Segurança e publicação
 
 Nosniff, Referrer-Policy, X-Frame-Options DENY e Permissions-Policy já configurados; não equivalem a uma auditoria de segurança completa.
-Preview tem robots noindex/nofollow. Gate 8 deve substituir essa política somente com aprovação de publicação e domínio HTTPS confirmado; SITE_URL será validada e usada em canonical/OG/sitemap. Variável ainda não implementada nem necessária para executar localmente.
+src/config/site.ts valida SITE_URL e centraliza metadata/canonical/OG e SITE_INDEXABLE. Sem URL, não cria canonical. Indexação exige true e origem HTTPS; previews Vercel permanecem noindex/nofollow com robots disallow e sitemap vazio. Rotas metadata são estáticas: variáveis exigem novo build. Política pública só muda com autorização de publicação e domínio confirmado; checklist em LAUNCH.md.
 Links de conteúdo aceitam somente https e mailto nos destinos confirmados; URL externa com target blank usa noopener noreferrer. Não expor tokens em NEXT_PUBLIC. Sem trackers, formulários ou políticas jurídicas inventadas.
 CSP será avaliada com scripts/fontes finais; não adicionar unsafe-inline genérico para simular proteção.
 
