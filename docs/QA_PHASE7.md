@@ -27,7 +27,7 @@ Primeira rodada: 143 passaram, cinco falharam em WebKit e dois não aplicáveis 
 
 Capturas revisadas: menu Firefox 320px, intro Firefox em 400ms, case RoboSense WebKit desktop, primeira dobra da home Chromium em 375/1440px e case mobile. Sem cortes ou sobreposições inesperadas observados; diagramas e estados/limites mantêm leitura. A revisão é amostral, não um estudo com usuários.
 
-Tentativa intermediária: focar o botão no clique resolveu Escape, mas causou fechamento por blur antes da seleção dos links no WebKit (146 passaram, dois falharam, cinco não executados). Descartada. Com o listener de Escape limitado ao estado aberto, lint/build/TypeScript passaram e o gate focado de navegação/responsividade terminou em 34 aprovados e cinco não executados. A suíte anterior já havia validado os demais fluxos; revisão completa final será registrada abaixo. Unitários: 5/5 na instalação limpa.
+Tentativa intermediária: focar o botão no clique resolveu Escape, mas causou fechamento por blur antes da seleção dos links no WebKit (146 passaram, dois falharam, cinco não executados). Descartada. Com o listener de Escape limitado ao estado aberto, lint/build/TypeScript passaram e o gate focado de navegação/responsividade terminou em 34 aprovados e cinco não executados. A suíte anterior já havia validado os demais fluxos; revisão completa final registrada abaixo. Unitários: 5/5 na instalação limpa.
 
 Gates finais em 2026-10-11: formatação, lint sem avisos, next typegen/TypeScript strict, 5/5 unitários e build estático passaram. Suíte completa: **148 aprovados, cinco não executados, zero falhas** (153 entradas, dois workers, sem retries). Chromium 51; Firefox 50 e um zoom não aplicável; WebKit 47 e quatro exclusões acima. Inclui axe com a regra experimental ativada nos cases, quatro larguras, sem JS, foco/âncoras, zoom 200%, reduced motion, falhas/cancelamento/desmontagem e recuperação de erro. Nenhuma asserção foi retirada para acomodar falhas da aplicação.
 
@@ -43,8 +43,39 @@ Perfil mobile 412×823, DPR 1,75; throttling simulado: RTT 150ms, throughput 163
 npx lighthouse http://127.0.0.1:3101/ --chrome-flags="--headless" --form-factor=mobile --throttling-method=simulate --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=.audit/home-1.json
 ```
 
+Resultados finais em 2026-10-11, após as duas correções; primeira coleta 14:44:57 UTC, benchmarkIndex 3099,5. Notas de acessibilidade/boas práticas **100/100** e SEO **60** nas 12 execuções. A única falha de SEO foi is-crawlable, esperada pelo noindex. A regra do monograma não falhou em nenhuma execução final.
+
+| Rota                           | Performance (3 rodadas) | Mediana | LCP (3 rodadas, ms) | LCP mediano | CLS mediano | TBT mediano | Transferência total |
+| ------------------------------ | ----------------------- | ------- | ------------------- | ----------- | ----------- | ----------- | ------------------- |
+| /                              | 99 / 98 / 99            | 99      | 2070 / 2102 / 2088  | 2,088s      | 0,03435     | 85,7ms      | 204,6 KiB           |
+| /projetos/robosense-lab        | 98 / 100 / 100          | 100     | 2068 / 1506 / 1506  | 1,506s      | 0           | 68ms        | 166,8 KiB           |
+| /projetos/industry-week-senai  | 99 / 99 / 99            | 99      | 2063 / 2063 / 2064  | 2,063s      | 0           | 58ms        | 166,6 KiB           |
+| /projetos/atelie-ingrid-xavier | 100 / 100 / 100         | 100     | 1507 / 1507 / 1506  | 1,507s      | 0           | 60ms        | 166,6 KiB           |
+
+Metas LCP ≤2,5s e CLS ≤0,1 atendidas em todas as rodadas. Os valores são de laboratório local; cache/renderização e tarefas de fundo podem variar. A melhora numérica entre rodadas não é atribuída à alteração do aria-label. O SEO preferencial >90 não é atingido neste preview por decisão explícita de noindex, preservada até o gate de publicação.
+
+Rede final: 13 requests por rota; home com 11 scripts/196.562 bytes transferidos, HTML 7.662 e CSS 5.238 bytes. Cases com nove scripts/153.468 bytes, mais HTML/CSS e duas requisições locais de framework. Zero requests de imagem, fontes, mídia ou terceiros. Os SVGs são inline e seu peso integra HTML; não são imagens de tamanho zero. Orçamentos de imagem de hero ≤250 KiB e fontes adicionais ≤120 KiB atendidos sem downloads desses recursos.
+
+O Lighthouse ainda sugere ~53 KiB de JavaScript não usado na carga inicial da home (~29 KiB nos cases), ~14 KiB de código legado e economia estimada de ~150ms no CSS bloqueante. Parte do JS pertence ao runtime React; uma navegação inicial não exercita todos os fluxos testados. Houve alerta de reflow sem atribuição (65ms na primeira home) e pequeno deslocamento do main na hidratação. Não declarar ausência de long tasks/reflows. Com as metas atendidas e os fallbacks preservados, não reescrever o framework, retirar CSS crítico ou ocultar conteúdo SSR para perseguir nota 100. Reavaliar se crescer o conteúdo ou surgirem regressões medidas.
+
 ## Links e rede
 
 Varredura dos links renderizados nas quatro rotas: 13 destinos internos/âncoras com HTTP 200 e IDs existentes; perfil GitHub e três repositórios com HTTP 200. LinkedIn retornou 999 (bloqueio à consulta automatizada). As páginas blob de dez fontes GitHub retornaram 429/503, sem conclusão sobre sua disponibilidade em navegação humana. Os dez arquivos correspondentes nas revisões fixas responderam 200 no endpoint público raw em 2026-10-11. E-mail validado apenas como mailto; nenhuma mensagem enviada. Fontes não são prova de reexecução dos projetos externos.
 
-Medições Lighthouse e revisão final em andamento. Noindex/nofollow serão preservados; SEO de publicação depende da Fase 8 e de domínio confirmado. INP é meta de campo: não será inferido de TBT.
+## Rastreabilidade e limites de aceitação
+
+| Requisitos | Prova local                                                                                                                                |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| R01        | Primeira dobra 375/1440, identidade e CTA; home.spec e capturas revisadas                                                                  |
+| R02–R03    | Disclosure, Escape, foco, hashes/observer e fallback sem JS; navigation.spec, com limite de Tab WebKit descrito acima                      |
+| R04/R08    | Unitários de dados, três cases × quatro larguras, fontes fixas, 404 e recuperação RSC; cases.spec/error.spec                               |
+| R05–R06    | Intro/timeout, skip, imports/storage com falha, reduced motion ativo, desmontagem e não repetição; motion.spec/cases.spec nos três motores |
+| R07        | 320/375/768/1440, toque ≥44px, contraste/axe, foco, orientação e zoom Chromium 200%; não certifica WCAG ou Safari/dispositivo físico       |
+| R09        | Contato em links reais e destinos conferidos, sem enviar mensagens; LinkedIn 999 permanece sem validação humana                            |
+| R10        | ci pelo lockfile, peers de lint, formatação, strict, unitários, build e E2E completos no escopo declarado                                  |
+| R11        | Lighthouse de produção local, rede e cleanup; métricas de campo ainda não medidas                                                          |
+| R12        | Preview noindex/nofollow e cabeçalhos locais preservados; SEO/domínio/HTTPS/hospedagem dependem da Fase 8                                  |
+
+Não foram executados leitor de tela, Safari/macOS ou iPhone/Android físicos, pesquisa com visitantes, INP/telemetria de campo, deploy nem testes dos projetos externos apresentados. As cinco exclusões E2E são explícitas; a nota Lighthouse não substitui essas validações. Fotografias de terceiros, formação, prêmios e domínio permanecem condicionados a dados/autorização reais.
+
+Fase 7 concluída no escopo de QA local, com riscos/exclusões registrados. Noindex/nofollow preservados; Fase 8 exige confirmação explícita e domínio real. Commits desta fase permanecem locais; nenhum deploy realizado.

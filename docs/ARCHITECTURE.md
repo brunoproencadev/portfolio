@@ -34,8 +34,10 @@ Cases usam /projetos/[slug], generateStaticParams, dynamicParams=false e notFoun
 Conteúdo renderizado antes do movimento; nunca usar opacity:0 global no SSR esperando JS. Intro é aprimoramento cancelável, não requisito de carregamento. Sem bloquear body/scroll. Preferência reduzida elimina intro/parallax e animação de layout; a preferência também deve cancelar timelines em execução.
 Menu é disclosure não modal: sem focus trap, sem body lock. Links normais funcionam sem JS; useSyncExternalStore distingue servidor/hidratação e só esconde opções no cliente. Navegação por âncoras nativas, foco programático no título sem substituir URL/scroll; Escape retorna ao botão, saída de foco/clique externo fecham sem roubar foco. Observer/listeners têm cleanup, sem loop de animação ou listener contínuo de scroll.
 Hero e imagens têm espaço reservado; imagens significativas usam next/image e dimensões. Não carregar vídeos/iframes externos automaticamente. Diagrama conceitual precisa de legenda distinta de evidência real.
-Orçamentos iniciais para avaliar na Fase 7: imagem de hero ≤250 KiB e fontes adicionais ≤120 KiB transferidas. Atualmente fontes de sistema, sem download. Ajustar somente com medição e justificativa.
+Orçamentos verificados na Fase 7: imagem de hero ≤250 KiB e fontes adicionais ≤120 KiB. Zero requisições de imagem/fonte/mídia; SVG inline contabilizado no HTML e fontes de sistema. Lighthouse mobile: home ~204,6 KiB totais e cases ~166,6–166,8 KiB, LCP mediano ≤2,09s/CLS ≤0,035. Sem orçamento rígido de JS inventado após a medição; manter ilhas pequenas/imports sob demanda e repetir as métricas quando a interface mudar. Detalhes/limites em QA_PHASE7.
 Ano em conteúdo pré-renderizado depende do build: incluir atualização anual no checklist, ou definir revalidação na implementação do footer.
+
+Escape é ouvido no documento somente enquanto a cápsula está aberta: cliques no WebKit podem manter foco fora do nav. O efeito remove keydown/pointerdown no fechamento e unmount. Não forçar foco no botão ao abri-lo por ponteiro; isso interferiu no clique de links no WebKit. O retorno de foco ao fechar por Escape é preservado. Monogramas incluem BP/ no nome acessível para corresponder ao texto visível.
 
 ## Segurança e publicação
 

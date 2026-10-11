@@ -1,6 +1,6 @@
 # Bruno Proença Silva — Portfólio
 
-Portfólio Next.js diretamente em `D:\projects\portifolio`. Fase 6 concluída: home, movimento, três cases com fontes verificáveis e erro/404 úteis. Próximo gate: aprovação da Fase 7 (QA e otimização). Estado e evidências: [HANDOFF](docs/HANDOFF.md), [AUDIT](docs/AUDIT.md) e [VERIFICATION](docs/VERIFICATION.md).
+Portfólio Next.js diretamente em `D:\projects\portifolio`. Fase 7 concluída: home, movimento, três cases, erro/404 e QA local multibrowser/Lighthouse. Próximo gate: aprovação da Fase 8 (SEO/domínio e preparação de publicação). Estado e evidências: [HANDOFF](docs/HANDOFF.md), [QA da Fase 7](docs/QA_PHASE7.md) e [VERIFICATION](docs/VERIFICATION.md).
 
 ## Executar
 
@@ -21,22 +21,22 @@ npm run lint
 npm run typecheck
 npm test
 npm run build
-npx playwright install chromium
-npm run test:e2e
+npx playwright install chromium firefox webkit
+npm run test:e2e -- --workers=2
 npm audit --omit=dev
 ```
 
-Typecheck gera os tipos do Next antes de executar TypeScript. E2E exige build anterior, inicia e encerra servidor próprio em 127.0.0.1:3100; não reutiliza um servidor antigo. Screenshots/traces ficam em test-results, ignorados e substituídos a cada rodada. Chromium já foi instalado nesta máquina, mas deve ser instalado em um novo ambiente. O teste de zoom usa Chromium completo, um perfil isolado e uma extensão temporária para aplicar zoom nativo de 200%; não modifica o navegador pessoal.
+Typecheck gera os tipos do Next antes de executar TypeScript. E2E exige build anterior, inicia e encerra servidor próprio em 127.0.0.1:3100; não reutiliza um servidor antigo. Screenshots/traces ficam em test-results, ignorados e substituídos a cada rodada. Instale os três navegadores em um novo ambiente; para uma rodada focada, use `--project=chromium`. O zoom usa Chromium completo, um perfil isolado e extensão temporária para aplicar 200%; não modifica o navegador pessoal. Três provas de Tab ficam não executadas em WebKit/Windows devido ao comportamento nativo do runner, reproduzido em HTML mínimo; detalhes em QA_PHASE7.
 
 ## Organização e limites
 
 src/app compõe layout/home e cases estáticos no servidor; src/data/portfolio.ts e case-studies.ts separam conteúdo da apresentação. Duas ilhas client: navegação em src/components/navigation e intro/reveals em src/components/motion, com GSAP/ScrollTrigger sob demanda e cleanup local. app/error.tsx é a fronteira client de recuperação. src/styles contém tokens/layout e feedback CSS; src/components/projects contém os SVGs conceituais, com origem registrada em [ASSETS](docs/ASSETS.md). Navegação básica e conteúdo funcionam sem JavaScript. Contato por links reais; sem formulário ou rastreadores.
-Validação atual: 5 unitários e 50 E2E, incluindo teclado/foco, quatro larguras, sem JS, movimento reduzido em execução, zoom 200%, links, axe, falha de biblioteca/storage, cancelamento/desmontagem, cases/404 e recuperação de erro. Consulte os limites da prova em VERIFICATION.
-Preview contém noindex/nofollow. SEO final e remoção dessa proteção exigem o gate de produção. Commits anteriores enviados ao GitHub até e54c0c7, antes da Fase 4; incrementos das Fases 4–6 permanecem locais. Sem deploy.
+Validação atual: 5 unitários e 148 E2E aprovados, cinco exclusões documentadas e zero falhas. Inclui quatro larguras, sem JS, reduced motion, foco, zoom, axe, falhas/cleanup, cases/404 e recuperação de erro. Lighthouse mobile (três rodadas por rota): medianas de performance 99–100, acessibilidade/boas práticas 100, LCP ≤2,09s e CLS ≤0,035. Prova local, sem INP de campo nem certificação de acessibilidade.
+Preview contém noindex/nofollow; por isso o SEO Lighthouse é 60. SEO final e remoção dessa proteção exigem o gate de produção. Commits anteriores enviados ao GitHub até c8878a6, antes da Fase 7; incrementos da Fase 7 permanecem locais. Sem deploy.
 ESLint 9.39.5 mantém os peers compatíveis, mas está fora de suporte; cinco alertas de desenvolvimento na cadeia braces permanecem documentados em AUDIT. Não executar audit fix --force.
-A pesquisa de design contém capturas documentais em docs/reference-audit; não são assets do portfólio nem trabalho de Bruno. Os diagramas exibidos são próprios e rotulados como conceituais; as evidências dos cases apontam a revisões fixas dos repositórios. Fotos/vídeos externos dependem de origem e autorização confirmadas. QA final e SEO seguem seus gates.
+A pesquisa de design contém capturas documentais em docs/reference-audit; não são assets do portfólio nem trabalho de Bruno. Os diagramas exibidos são próprios e rotulados como conceituais; as evidências dos cases apontam a revisões fixas dos repositórios. Fotos/vídeos externos dependem de origem e autorização confirmadas. Safari real/teclado, leitor de tela, dispositivos físicos e hospedagem não foram validados.
 
 ## Continuidade
 
 Leia [PRD](docs/PRD.md), [conteúdo](docs/CONTENT.md), [pesquisa](docs/PROFILE_RESEARCH.md), [design system](docs/DESIGN_SYSTEM.md), [referências](docs/REFERENCES.md) e [arquitetura](docs/ARCHITECTURE.md).
-AGENTS.md determina staging explícito, commits pequenos, validação e aprovação obrigatória entre fases. CODEX.md complementa as instruções. A Fase 6 foi autorizada explicitamente e concluída; a Fase 7 aguarda confirmação.
+AGENTS.md determina staging explícito, commits pequenos, validação e aprovação obrigatória entre fases. CODEX.md complementa as instruções. A Fase 7 foi autorizada explicitamente e concluída; a Fase 8 aguarda confirmação.

@@ -112,3 +112,19 @@ Typecheck completo identificou duas asserções de tipo indevidas na leitura de 
 Recuperação: erro RSC no conteúdo do case, título focado e mensagem genérica sem o detalhe privado simulado; nova tentativa por Tab/Enter após remover a falha restaura o case; com falha persistente, retorno ao início por teclado funciona. Capturas mobile/desktop dos três cases e fontes mobile revisadas; estados/limites/links legíveis, sem cortes observados. Metadados por rota e noindex preservados. Nenhuma foto de terceiros, dependência, backend ou endpoint de teste acrescentado.
 
 Limites da fase: fontes e disponibilidade foram conferidas, mas aplicações externas/hardware não foram reexecutados. SVG inline elimina dependência de imagem externa; para incluir fotografias/vídeos, confirmar autorização e origem. Fallback de raiz/layout não foi injetado; o layout atual é estático, e a fronteira testada cobre conteúdo/navegação. Lighthouse, métricas de campo, Firefox/WebKit, leitor de tela, dispositivo físico e reauditoria de dependências permanecem para a Fase 7. Sem npm ci repetido, push ou deploy.
+
+## Fase 7 — QA e fechamento, 2026-10-10/11
+
+Autorização explícita em 2026-10-10, baseline limpo c8878a6; os 11 commits das Fases 4–6 foram enviados antes do início, por pedido separado do usuário. Relatório completo, ambiente, métodos, falhas intermediárias, limites e matriz R01–R12: [QA_PHASE7](QA_PHASE7.md).
+
+Instalação reproduzível pelo lockfile e peers do lint conferidos; runtime audit zero vulnerabilidades, cinco high de desenvolvimento por braces e ESLint compatível fora de suporte preservados como riscos. Sem downgrade major/force nem novas dependências.
+
+Correções: Escape do disclosure passou a ser ouvido no documento somente enquanto aberto, com cleanup; nome acessível BP/ passou a conter o monograma visível. Nova regressão clique/Escape nos três motores e regra axe experimental label-content-name-mismatch ativada nos cases. Primeira rodada multibrowser: 143 aprovados/cinco falhas/dois não aplicáveis. A tentativa de forçar foco no clique foi descartada após duas falhas de seleção de link. Diagnóstico em HTML mínimo confirmou que o runner WebKit/Windows pula links no Tab; três provas dependentes dessa capacidade ficam explicitamente não executadas nesse ambiente, sem substituir Tab por foco programático.
+
+Gates finais em 2026-10-11: formatação, lint sem avisos, typegen/TypeScript strict, 5/5 unitários e build passaram. E2E: **148 aprovados, cinco não executados, zero falhas** em Chromium/Firefox/WebKit, sem retries. Exclusões: dois zooms não Chromium e três Tab WebKit/Windows. Axe passou nas páginas/estados exercitados, incluindo a regra experimental dos cases. Revisão de capturas desktop/mobile, menu, frame de intro e case sem cortes inesperados; não é certificação WCAG nem pesquisa com visitantes.
+
+Doze rodadas Lighthouse finais de produção local/mobile (três por rota): medianas performance 99/100/99/100, acessibilidade/boas práticas 100, SEO 60 por noindex. LCP mediano home 2,088s, RoboSense 1,506s, Industry Week 2,063s, Ateliê 1,507s; CLS 0,03435 na home e zero nos cases. Metas LCP/CLS atendidas em todas as rodadas. JS não usado/CSS bloqueante/reflow continuam oportunidades documentadas; nenhum resultado de INP de campo foi inferido.
+
+Treze destinos internos/âncoras HTTP 200; GitHub/perfil/repositórios 200; dez fontes fixas 200 no endpoint raw. Páginas blob GitHub 429/503 e LinkedIn 999, sem contornar autenticação nem alegar prova humana. Sem envio de mensagens. Servidores/navegadores locais de QA encerrados, artefatos em .audit/test-results ignorados.
+
+Commits de implementação: 8bfb393 e 8599818; fechamento documental registrado em HANDOFF. Novos commits permanecem locais. Fase 8 (domínio/SEO/preparação de publicação) não iniciada; aguardar autorização explícita. Safari real/teclado, leitor de tela, dispositivos físicos, HTTPS/hospedagem e métricas de campo permanecem sem comprovação.

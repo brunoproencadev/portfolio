@@ -12,7 +12,8 @@
 - [x] Gate Fase 6: usuário autorizou explicitamente em 2026-10-10.
 - [x] Fase 6: cases, diagramas/evidências, erro/404 e links.
 - [x] Gate Fase 7: usuário autorizou explicitamente em 2026-10-10; commits anteriores enviados até c8878a6.
-- [ ] Fase 7: QA completo, screenshots da interface, Lighthouse e segurança.
+- [x] Fase 7: QA do produto, screenshots, Lighthouse e segurança, com limites registrados em QA_PHASE7.
+- [ ] Gate obrigatório: confirmação explícita antes da Fase 8.
 - [ ] Fase 8: SEO final, domínio/canonical/sitemap/OG e checklist de publicação.
 
 ## Incrementos da Fase 4 autorizada
@@ -38,9 +39,9 @@
 ## Incrementos da Fase 7 autorizada
 
 - [x] Instalação reproduzível, árvore de peers e reauditoria de segurança.
-- [ ] QA em Chromium/Firefox/WebKit, revisão visual e correções comprovadas.
-- [ ] Lighthouse mobile de produção local: três execuções por rota, medianas, rede e ambiente.
-- [ ] Gates finais, decisões, commits locais e documentação; aguardar Fase 8.
+- [x] QA em Chromium/Firefox/WebKit, revisão visual e correções comprovadas; 148 E2E passaram, cinco exclusões documentadas.
+- [x] Lighthouse mobile de produção local: três execuções por rota, medianas, rede e ambiente; metas LCP/CLS atendidas.
+- [x] Gates finais, decisões, commits locais e documentação; aguardar Fase 8.
 
 ## Limites preservados
 
@@ -48,7 +49,7 @@
 - LinkedIn bloqueado; formação/conquistas aguardam confirmação e ficam omitidas.
 - Domínio final e publicação não aprovados.
 - Scroll cinematográfico da referência B não foi comprovado; não copiar comportamento presumido.
-- Composição/coreografia próprias renderizadas e revisadas nas Fases 4/5; QA final segue na Fase 7.
+- Composição/coreografia próprias revisadas; QA local concluído. Safari real/Tab, dispositivos físicos, leitor de tela e métricas de campo permanecem sem comprovação.
 - Cases implementados com fontes fixas reconferidas e diagramas autorais; novas fotos/vídeos exigem origem/autorização confirmadas. Revisar novamente as fontes antes de publicar.
 - Footer usa o ano do build; atualizar o build na virada do ano ou revisar revalidação no gate de produção.
 

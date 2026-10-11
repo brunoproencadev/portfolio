@@ -1,6 +1,6 @@
 # PRD — Bruno Proença Silva
 
-Revisão de auditoria: 2026-10-09; home, movimento e cases entregues nas Fases 4–6 em 2026-10-10. Fonte de escopo; mudanças entre fases exigem aprovação. O produto ainda depende de QA final e SEO/publicação nos gates seguintes.
+Revisão de auditoria: 2026-10-09; home, movimento e cases entregues nas Fases 4–6 em 2026-10-10. QA local da Fase 7 concluído em 2026-10-11, com resultados e limites em QA_PHASE7. Fonte de escopo; mudanças entre fases exigem aprovação. SEO/domínio e preparação de publicação aguardam o gate da Fase 8.
 
 ## 1. Problema e proposta de valor
 

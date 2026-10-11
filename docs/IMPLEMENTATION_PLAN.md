@@ -1,6 +1,6 @@
 # Plano e gates
 
-Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fases 4–6 autorizadas e concluídas em 2026-10-10, após envio dos commits anteriores ao GitHub. Fase 7 aguarda seu próprio gate.
+Regra: Plan → Implement → Validate → Review → Commit → Document → Continue. Cada fase depende de confirmação explícita; Fases 4–6 concluídas em 2026-10-10. Fase 7 autorizada em 2026-10-10 e concluída em 2026-10-11, após envio dos commits anteriores até c8878a6. Fase 8 aguarda seu próprio gate; commits da Fase 7 permanecem locais.
 
 | Fase          | Entrega                                                     | Gate de saída                                                                             |
 | ------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -37,4 +37,10 @@ Cada incremento tem staging explícito, gate pertinente e commit próprio; não 
 2. Recuperação de erro com foco, nova tentativa e retorno; falha de conteúdo RSC injetada somente nos testes, sem endpoint de QA na aplicação.
 3. Fontes reconferidas, revisão editorial/visual, 50/50 E2E e 5/5 unitários, tipos/lint/formato/build e registros de assets/commits atualizados. Desmontagem da home e não repetição da intro entre rotas comprovadas.
 
-Próximo gate: Fase 7 — QA/otimização do produto completo, Lighthouse de produção local com três execuções mobile e mediana, orçamentos/rede/links, revisão de acessibilidade e dependências. Registrar ambiente, resultados e limitações; TBT não é INP e testes automatizados não certificam acessibilidade. Não atualizar dependências por force nem declarar produção publicada. Exige autorização explícita; não iniciada. Fotos/vídeos adicionais continuam condicionados a origem/autorização, sem inventar evidências.
+## Incrementos concluídos da Fase 7
+
+1. Instalação pelo lockfile, peers completos do lint, reauditoria runtime/desenvolvimento e revisão de links/fontes.
+2. Chromium/Firefox/WebKit; correção de Escape após clique e do nome acessível do monograma. 148 E2E e cinco unitários aprovados; cinco exclusões E2E e riscos de dependências documentados.
+3. Doze medições Lighthouse finais (três por rota), medianas de desempenho 99–100, LCP ≤2,09s e CLS ≤0,035. Sem requisições de imagens/fontes/mídia externas; revisão visual, documentação e commits locais. Prova detalhada em QA_PHASE7.
+
+Próximo gate: Fase 8 — confirmar domínio/ambiente de publicação, implementar canonical/OG/favicon/sitemap/robots e validar SEO/cabeçalhos/HTTPS no destino aprovado. Retirar noindex somente com autorização de publicação. Reavaliar dependências e limites de QA; não alegar INP de campo nem certificação de acessibilidade. **Não iniciada: exige confirmação explícita.** Fotos/vídeos adicionais continuam condicionados a origem/autorização, sem inventar evidências.
