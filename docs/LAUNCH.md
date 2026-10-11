@@ -1,6 +1,17 @@
 # Preparação de publicação — Fase 8
 
-Autorizada pelo usuário em 2026-10-11. Hospedagem escolhida: Vercel. Endereço desejado interpretado do nome `brunoproencasilva`: https://brunoproencasilva.vercel.app. Disponibilidade, projeto e titularidade ainda não verificados; nenhum MCP Vercel está exposto nesta sessão. Nenhum push/deploy autorizado nesta fase.
+Fase 8 publicada em 2026-10-11: https://brunoproencasilva.vercel.app. Usuário autorizou finalizar a publicação quando o MCP estivesse conectado, confirmou login GitHub e autorizou Vercel a acessar myportifolio. Os seis commits pendentes já haviam sido enviados por pedido explícito, com remoto confirmado em 0272dea.
+
+## Lançamento confirmado
+
+- Equipe BPS (bps-a015), projeto brunoproencasilva, preset Next.js, Node 24.x, npm ci e npm run build. Repositório privado brunoproencadev/myportifolio vinculado; apenas o site é publicado.
+- Produção READY: dpl_9W75f4TbTM89PGMXKuSZcMDBwYLN, commit 0272dea2505c9d69e30f7097ce74ed6a22e96878. Build concluído em 31s, estado READY após cerca de 43s. Domínio associado/verificado, sem erro de alias.
+- SITE_URL=https://brunoproencasilva.vercel.app em Production/Preview; SITE_INDEXABLE=true apenas em Production e false em Preview. Proteção padrão Vercel mantida para URLs de deployment; domínio público respondeu sem login.
+- Chromium real/headless no destino, viewport 375×900/reduced motion: quatro rotas HTTP 200, h1 visível, sem overflow, titles/canonical/OG/Twitter corretos e imagens na origem pública. Screenshot de home revisado. Robots permite crawl, sitemap contém exatamente quatro URLs; PNGs OG/Apple com dimensões corretas, favicon SVG HTTP 200; 404 confirmado.
+- HTTPS validado sem ignorar certificados, redirecionamento HTTP→HTTPS e HSTS presentes. Nosniff, Referrer-Policy, X-Frame-Options DENY, Permissions-Policy e ausência de X-Powered-By confirmados nas quatro páginas.
+- Logs de build concluídos; avisos de ESLint sem suporte e allowScripts de unrs-resolver, sem falha de build. Consulta runtime error/fatal nos últimos cinco minutos não encontrou registros. Primeira consulta de uma hora foi recusada por retenção Hobby; não equivale a prova de ausência contínua de erros. Nenhum drain configurado; sem rastreadores ou monitoramento adicional instalado.
+
+Provas brutas ignoradas em .audit/phase8/live-verification.json e live-home.png. Compartilhamento real em redes sociais, Safari/dispositivos/leitor de tela e INP de campo ainda não verificados. Nenhuma alteração de código ou dependência necessária ao deploy. Registro documental de lançamento em commit local, não enviado sem novo pedido de push.
 
 ## Decisões implementadas
 

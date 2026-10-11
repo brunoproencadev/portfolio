@@ -1,8 +1,14 @@
-# Handoff — Fase 8: preparação local concluída
+# Handoff — Fase 8 publicada na Vercel
 
 Workspace: D:/projects/portifolio. Origin: https://github.com/brunoproencadev/myportifolio.git. Branch main. Arquivos do usuário preservados; sem reescrita de histórico.
 
 ## Estado e gate
+
+**Estado atual (2026-10-11):** https://brunoproencasilva.vercel.app publicado e verificado. Usuário autorizou finalizar as pendências com MCP conectado e confirmou as conexões GitHub/Vercel. Projeto brunoproencasilva na equipe BPS; produção READY dpl_9W75f4TbTM89PGMXKuSZcMDBwYLN, commit 0272dea2505c9d69e30f7097ce74ed6a22e96878. Push anterior dos seis commits confirmado nesse SHA. Código/dependências preservados. Registro documental deste lançamento permanece local; identificar SHA com git log -1 --oneline após commit, evitando autorreferência.
+
+Quatro rotas/metadata/assets/robots/sitemap/404/HTTPS/cabeçalhos verificados no destino em Chromium 375×900/reduced motion. Home revisada visualmente; domínio público sem autenticação, previews continuam protegidos/noindex. Logs error/fatal na janela de cinco minutos sem registros; janela inicial de uma hora recusada pelo plano. Sem drains/analytics adicionais; não comprova estabilidade contínua, compartilhamento real, Safari/teclado/dispositivos/leitor de tela ou INP. Checklist, projeto e provas em LAUNCH. A fase está concluída no escopo publicado; novos trabalhos exigem confirmação explícita.
+
+## Histórico da preparação local da Fase 8
 
 Fase 8 autorizada em 2026-10-11: “Dê início a Fase 8”. Preparação local concluída: favicon/Apple/OG autorais, metadata por rota, canonical condicionado à origem, robots/sitemap e indexação explicitamente controlada. Hospedagem escolhida: Vercel; endereço desejado interpretado como https://brunoproencasilva.vercel.app, ainda sem disponibilidade/titularidade verificadas. MCP Vercel não exposto entre as ferramentas desta sessão. Nenhum push/deploy; build final restaurado ao preview sem variáveis.
 

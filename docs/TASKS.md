@@ -15,7 +15,7 @@
 - [x] Fase 7: QA do produto, screenshots, Lighthouse e segurança, com limites registrados em QA_PHASE7.
 - [x] Gate Fase 8: usuário autorizou explicitamente em 2026-10-11.
 - [x] Fase 8: preparação local de canonical/OG/favicon/sitemap/robots, perfis preview/indexável e checklist de publicação.
-- [ ] Gate de publicação: verificar projeto/domínio Vercel, autorizar push/deploy/indexação e validar HTTPS/SEO no destino.
+- [x] Gate de publicação: usuário autorizou finalizar; projeto/domínio Vercel, produção/indexação e HTTPS/SEO no destino verificados em 2026-10-11 (LAUNCH).
 
 ## Incrementos da Fase 4 autorizada
 
@@ -48,7 +48,7 @@
 
 - A09: ESLint compatível fora de suporte; cinco alertas high de desenvolvimento por braces sem patch compatível confirmado. Runtime auditado separadamente.
 - LinkedIn bloqueado; formação/conquistas aguardam confirmação e ficam omitidas.
-- Vercel escolhida; endereço desejado brunoproencasilva.vercel.app ainda sem disponibilidade/titularidade verificadas. Push/deploy/indexação pública não aprovados.
+- Vercel publicada em https://brunoproencasilva.vercel.app, commit 0272dea. Novas ações externas exigem autorização; registro documental posterior permanece local.
 - Scroll cinematográfico da referência B não foi comprovado; não copiar comportamento presumido.
 - Composição/coreografia próprias revisadas; QA local concluído. Safari real/Tab, dispositivos físicos, leitor de tela e métricas de campo permanecem sem comprovação.
 - Cases implementados com fontes fixas reconferidas e diagramas autorais; novas fotos/vídeos exigem origem/autorização confirmadas. Revisar novamente as fontes antes de publicar.
