@@ -14,6 +14,8 @@ Histórico: Fase 4 concluída em 2026-10-10, autorizada explicitamente: “Dê s
 
 ## Commits locais
 
+- 8bfb393: Escape no documento somente enquanto a cápsula está aberta, cleanup e regressão de clique/Escape; configuração multibrowser e diagnóstico documentado do Tab no WebKit/Windows.
+
 - a8f72ca: três cases SSG, dados/fontes por SHA, diagramas acessíveis, home com links de case, 404 útil e regressões de navegação/layout/cleanup.
 - e20f17d: fronteira de erro com foco, refresh/reset e saída por teclado, duas regressões de recuperação e correção de tipos da instrumentação; gates completos 50 E2E/5 unitários.
 

@@ -43,7 +43,9 @@ for (const recovery of ["retry", "home"] as const) {
       await expect(
         page.getByRole("heading", { level: 1, name: "Industry Week SENAI" }),
       ).toBeVisible();
-      await page.getByRole("link", { name: "Bruno Proença — início" }).click();
+      await page
+        .getByRole("link", { name: "BP/ — Bruno Proença — início" })
+        .click();
     } else {
       await page.getByRole("link", { name: "Voltar ao início" }).focus();
       await page.keyboard.press("Enter");

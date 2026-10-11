@@ -67,9 +67,15 @@ for (const project of projects) {
         ),
       ).toEqual([]);
       if (width === 320 || width === 1440)
-        expect((await new AxeBuilder({ page }).analyze()).violations).toEqual(
-          [],
-        );
+        expect(
+          (
+            await new AxeBuilder({ page })
+              .options({
+                rules: { "label-content-name-mismatch": { enabled: true } },
+              })
+              .analyze()
+          ).violations,
+        ).toEqual([]);
       if (width === 375 || width === 1440)
         await page.screenshot({
           path: testInfo.outputPath(`${project.slug}-${width}.png`),
@@ -200,7 +206,9 @@ test("client navigation discards home motion and does not replay the intro", asy
   await expect(
     page.getByRole("heading", { level: 1, name: "Industry Week SENAI" }),
   ).toBeVisible();
-  await page.getByRole("link", { name: "Bruno Proença — início" }).click();
+  await page
+    .getByRole("link", { name: "BP/ — Bruno Proença — início" })
+    .click();
   await expect(
     page.getByRole("button", { name: "Menu", exact: true }),
   ).toBeVisible();

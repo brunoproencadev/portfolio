@@ -37,6 +37,9 @@ test("server content remains available without JavaScript", async ({
       page.getByRole("heading", { name: "Bruno Proença Silva" }),
     ).toBeVisible();
     await expect(page.getByRole("main")).toContainText("robótica");
+    await expect(page.locator(".wordmark")).toHaveAccessibleName(
+      "BP/ — Bruno Proença — início",
+    );
   } finally {
     await context.close();
   }

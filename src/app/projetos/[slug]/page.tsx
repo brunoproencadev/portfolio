@@ -37,7 +37,11 @@ export default async function ProjectPage({
         Pular para o conteúdo
       </a>
       <header className="case-header page-container">
-        <Link href="/" className="wordmark" aria-label="Bruno Proença — início">
+        <Link
+          href="/"
+          className="wordmark"
+          aria-label="BP/ — Bruno Proença — início"
+        >
           BP<span aria-hidden="true">/</span>
         </Link>
         <Link href="/#projetos" className="text-link">

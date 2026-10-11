@@ -82,7 +82,7 @@ export function SiteNavigation() {
       <a
         className="wordmark"
         href="#inicio"
-        aria-label="Bruno Proença — início"
+        aria-label="BP/ — Bruno Proença — início"
         hidden={enhanced}
       >
         BP<span aria-hidden="true">/</span>
