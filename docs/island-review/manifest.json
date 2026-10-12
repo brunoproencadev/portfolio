@@ -1,0 +1,107 @@
+[
+  {
+    "file": "closed-1440.jpg",
+    "bytes": 88810,
+    "sha256": "17c285bf1588a7873752ebff801b301b0ea8b26ab45d77617a5a91ce96a06254"
+  },
+  {
+    "file": "closed-1920.jpg",
+    "bytes": 111297,
+    "sha256": "3a0c0d62d36a71c51472d247878e4eee970485813808408bb2d544987cd95000"
+  },
+  {
+    "file": "closed-320.jpg",
+    "bytes": 40026,
+    "sha256": "463ba56cd78cfe97d540ddd443e6ab462a2a16eb5be771256c4e642e511f3d82"
+  },
+  {
+    "file": "closed-375.jpg",
+    "bytes": 44798,
+    "sha256": "48ecca0dfe54070a3cb227a7fb41f32df53f2ef0563f144f157877ac608f145c"
+  },
+  {
+    "file": "closed-768.jpg",
+    "bytes": 52744,
+    "sha256": "b1d49551077721e9aea55a971c9b5715df440826b0b57f8a541a90eef9a3c1dc"
+  },
+  {
+    "file": "controlled-sequence.jpg",
+    "bytes": 115689,
+    "sha256": "44270da7ebca3eabff71ca86ac35e937aa31cc4e4b2f174f3bcfb106eb7fd4e9"
+  },
+  {
+    "file": "open-1440.jpg",
+    "bytes": 94005,
+    "sha256": "b745138eea213cce12a7fa48a66a1d58ed678fb5bd101761649c669f76e1738b"
+  },
+  {
+    "file": "open-1920.jpg",
+    "bytes": 116505,
+    "sha256": "a097178c4466a9a7c10961c8b2ba72e301bd8bcbc3a77e95f0aad112134ec048"
+  },
+  {
+    "file": "open-320.jpg",
+    "bytes": 27907,
+    "sha256": "aa0162141f16886437c9d76625e437e1a000be4001c40a5ba3750116e7513eea"
+  },
+  {
+    "file": "open-375.jpg",
+    "bytes": 30031,
+    "sha256": "653b64b5c57f3a70c0488b48ddb04f24dda5b9dab8ce7917f7fe198b8a4a2928"
+  },
+  {
+    "file": "open-768.jpg",
+    "bytes": 55202,
+    "sha256": "43315499dab44dc7599df981cbc9a16d1fc0daf604385010ef3f02d7c2b4aee3"
+  },
+  {
+    "file": "open-progress-0.jpg",
+    "bytes": 7710,
+    "sha256": "a115612de71b512476a98a3548c0e21213ea11ca4e97e894b6a7a2e0a331748c"
+  },
+  {
+    "file": "open-progress-100.jpg",
+    "bytes": 17364,
+    "sha256": "fc26a04a1f1e792814512c6ce24117f0b670841f98370830cbc49ba563c7f157"
+  },
+  {
+    "file": "open-progress-25.jpg",
+    "bytes": 9421,
+    "sha256": "49c76349033a640ce381f32cad80fadabbce0b9e6a3c99dc1f7bc5570e0de953"
+  },
+  {
+    "file": "open-progress-50.jpg",
+    "bytes": 13621,
+    "sha256": "20e0518c9369bc118d2d8935b84cf63f1fd5135df34ac2361f2a1666e0a394f0"
+  },
+  {
+    "file": "open-progress-75.jpg",
+    "bytes": 17215,
+    "sha256": "6c7b970138fc4e5b77a3f5eb896a9236115aa39260eb3838a05d533676d942cb"
+  },
+  {
+    "file": "recorded-sequence-1440.jpg",
+    "bytes": 256157,
+    "sha256": "b94c3f31f4ea40047d4c669dedf0e12215f71aed6d72c6d3779e33b91fcf12fe"
+  },
+  {
+    "file": "recorded-sequence-375.jpg",
+    "bytes": 481018,
+    "sha256": "5d8fb0c69aa7b2ecf5c345bb0f8124cb9d7c1c95de9ed95410ad0fa5224f94d5"
+  },
+  {
+    "file": "results.json",
+    "bytes": 80517,
+    "sha256": "cb16bd922da67fd38da31c61a56a6a4e350cd2f3a78136113dd729dc64bb5d99"
+  },
+  {
+    "file": "states-contact-sheet.jpg",
+    "bytes": 314232,
+    "sha256": "cdfe05fde1ef3af6e67e7dd8371e8e80083ebe6e439a8e594eb2cdb06af4643f"
+  },
+  {
+    "file": "verification.json",
+    "bytes": 22840,
+    "sha256": "df95d2f000f880c00aae711bbae8fe55a6f532e85efa1d1d8c3f3b9ae1e79b3f"
+  }
+]

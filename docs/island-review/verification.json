@@ -1,0 +1,769 @@
+{
+  "sourceCommit": "d7e377f",
+  "stats": {
+    "startTime": "2026-10-12T18:16:49.129Z",
+    "duration": 82950.544,
+    "expected": 103,
+    "skipped": 5,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation serves accessible preview content without runtime errors",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "server content remains available without JavaScript",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 320px with reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 375px with reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 768px with reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 1440px with reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation serves accessible preview content without runtime errors",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "server content remains available without JavaScript",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 320px with reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 375px with reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 768px with reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 1440px with reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation serves accessible preview content without runtime errors",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "server content remains available without JavaScript",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 320px with reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 375px with reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 768px with reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 1440px with reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "one surface interpolates dimensions with a stable center and unscaled avatar",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "reversal responds during motion and exiting links are immediately inert",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "keyboard focus and runtime reduced motion finish clipped transitions immediately",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "outside pointer resolves panel focus without taking the destination focus",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "a failed animation still exposes every destination",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "one surface interpolates dimensions with a stable center and unscaled avatar",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "reversal responds during motion and exiting links are immediately inert",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "keyboard focus and runtime reduced motion finish clipped transitions immediately",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "outside pointer resolves panel focus without taking the destination focus",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "a failed animation still exposes every destination",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "one surface interpolates dimensions with a stable center and unscaled avatar",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "reversal responds during motion and exiting links are immediately inert",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "keyboard focus and runtime reduced motion finish clipped transitions immediately",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "outside pointer resolves panel focus without taking the destination focus",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "a failed animation still exposes every destination",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "intro completes in 1.2s, keeps content available and does not replay",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "reveals move once, keep text opaque and release inline transforms",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "active reveals revert and stay stopped after reduced",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "active reveals revert and stay stopped after pagehide",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "active reveals revert and stay stopped after focus",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "reveal chunk failure leaves sections and keyboard navigation usable",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "initial reduced motion avoids animation chunks and capsule motion",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "keyboard skip and Escape cancel without trapping or losing focus",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "denied storage does not stop the intro from completing",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "failed animation chunk restores the static page",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "independent 2.2s timeout rejects a late animation import",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "direct hashes and live reduced motion bypass or cancel the intro",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "intro completes in 1.2s, keeps content available and does not replay",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "reveals move once, keep text opaque and release inline transforms",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "active reveals revert and stay stopped after reduced",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "active reveals revert and stay stopped after pagehide",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "active reveals revert and stay stopped after focus",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "reveal chunk failure leaves sections and keyboard navigation usable",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "initial reduced motion avoids animation chunks and capsule motion",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "keyboard skip and Escape cancel without trapping or losing focus",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "denied storage does not stop the intro from completing",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "failed animation chunk restores the static page",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "independent 2.2s timeout rejects a late animation import",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "direct hashes and live reduced motion bypass or cancel the intro",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "intro completes in 1.2s, keeps content available and does not replay",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "reveals move once, keep text opaque and release inline transforms",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "active reveals revert and stay stopped after reduced",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "active reveals revert and stay stopped after pagehide",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "active reveals revert and stay stopped after focus",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "reveal chunk failure leaves sections and keyboard navigation usable",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "initial reduced motion avoids animation chunks and capsule motion",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "keyboard skip and Escape cancel without trapping or losing focus",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "denied storage does not stop the intro from completing",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "failed animation chunk restores the static page",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "independent 2.2s timeout rejects a late animation import",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "direct hashes and live reduced motion bypass or cancel the intro",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "disclosure follows keyboard order and Escape returns focus",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "outside click and leaving focus close without stealing the new focus",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "pointer opening keeps Escape available and returns focus to the toggle",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "navigation links remain usable without JavaScript",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "disclosure follows keyboard order and Escape returns focus",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "outside click and leaving focus close without stealing the new focus",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "pointer opening keeps Escape available and returns focus to the toggle",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "navigation links remain usable without JavaScript",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "disclosure follows keyboard order and Escape returns focus",
+      "project": "webkit",
+      "status": "skipped",
+      "results": ["skipped"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "outside click and leaving focus close without stealing the new focus",
+      "project": "webkit",
+      "status": "skipped",
+      "results": ["skipped"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "pointer opening keeps Escape available and returns focus to the toggle",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "navigation links remain usable without JavaScript",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 375px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 768px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 1440px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "panel survives resizing and scrolls in short landscape viewports",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "reduced motion updates immediately and keyboard focus stays visible",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "chromium",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 375px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 768px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 1440px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "panel survives resizing and scrolls in short landscape viewports",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "reduced motion updates immediately and keyboard focus stays visible",
+      "project": "firefox",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "firefox",
+      "status": "skipped",
+      "results": ["skipped"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 375px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 768px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 1440px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "panel survives resizing and scrolls in short landscape viewports",
+      "project": "webkit",
+      "status": "expected",
+      "results": ["passed"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "reduced motion updates immediately and keyboard focus stays visible",
+      "project": "webkit",
+      "status": "skipped",
+      "results": ["skipped"]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "webkit",
+      "status": "skipped",
+      "results": ["skipped"]
+    }
+  ]
+}
