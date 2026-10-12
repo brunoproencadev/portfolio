@@ -1,21 +1,27 @@
-# Marca — caderno de engenharia
+# Marca — da ideia ao experimento
 
-## Personalidade e voz
+Direção proposta na Fase B, autorizada em 2026-10-11. Substitui o antigo caderno verde; a aplicação publicada permanece intacta. Referências e timestamps em [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md).
 
-Curioso, preciso e em formação. Bruno constrói e observa; o portfólio mostra o que funciona e onde a validação termina. Português direto, termos técnicos somente com função. Evitar títulos de senioridade, slogans corporativos, estrelas, depoimentos e métricas sem origem.
+## Identidade e voz
 
-## Linguagem visual própria
+Bruno Proença Silva, desenvolvedor em formação. Aprende construindo aplicações e experimentos em software, visão computacional e robótica. Português direto; dizer o que existe e onde termina a validação. Não atribuir senioridade, emprego, prêmios ou resultados sem evidência.
 
-Dark-first em carvão esverdeado, off-white e acento verde ácido pontual. A identidade vem da composição de caderno: índices 01/02/03, margens amplas, linhas finas e legendas de evidência, combinados com títulos de escala editorial. A cor não representa status de disponibilidade profissional sem confirmação.
-Sans para informação; serif em itálico apenas em uma palavra editorial ou comentário; mono para legenda técnica. Corpo nunca em mono nem texto essencial em tamanho minúsculo.
-Assimetria desktop: título e narrativa ocupam 7 colunas, representação de projeto 5; leitura linear no mobile. O nome e posicionamento são legíveis antes de qualquer figura.
+## Direção de arte
 
-## Regra para imagens e diagramas
+Preto quase absoluto como palco, tipografia geométrica clara e arco elíptico com borda branca e luz violeta voltada para dentro. Cápsula no eixo central. Nome em duas linhas no desktop; primeiro trabalho real surge abaixo do arco. A luz cria profundidade, não representa medição ou sistema físico de Bruno.
 
-Cada projeto recebe linguagem própria, sob o mesmo grid: percepção/contornos no RoboSense, sequência de eras no Industry Week e catálogo/atendimento no Ateliê. A Fase 4 implementou SVGs autorais rotulados como esquemas conceituais; fotografias e evidências reais aguardam revisão de origem na Fase 6.
-Diagramas autorais são rotulados “esquema conceitual”; screenshots/resultados usam a fonte real e condições da captura. Não fabricar detector, painel de métricas, produto ou resultado.
+RoboSense usa frame real em grande escala sobre preto; Industry Week ganha faixa editorial clara com screenshot íntegro; Ateliê usa composição assimétrica que preserva as cores originais das peças. Repetir o mesmo card para todos está descartado.
 
-## Referências interpretadas
+Dark-first decorre do brief e das gravações. Contraste AA deve sustentar leitura também em ambiente claro. Sem ruído aleatório, partículas contínuas, estatísticas decorativas, cursor obrigatório ou glassmorphism generalizado.
 
-Ver REFERENCES.md e capturas em reference-audit. A oferece a continuidade entre cápsula e painel; B oferece ritmo e escala; C oferece entrada tipográfica e composição assimétrica. Não reproduzir o arco luminoso roxo, o conteúdo comercial, palavras quebradas arbitrariamente ou a duração prolongada da intro.
-O acento verde e o caderno de evidências permanecem. Uma referência visual não prova acessibilidade, performance nem adequação de seu código.
+## Tipografia e mídia
+
+Manrope variável para títulos, corpo e interface: desenho geométrico aberto, legibilidade pequena e largura adequada ao nome central. Pesos 400–800 em um WOFF2 latino local, SIL OFL 1.1. Sem segunda família decorativa. A saudação “olá” em E será traço original, não assinatura atribuída a Bruno.
+
+Avatar: leão ilustrado idêntico ao GitHub, não retrato humano. Fotografias pessoais só com origem/contexto; até lá a seção pessoal é editorial e textual, sem stock, IA ou espaço vazio.
+
+Screenshots preservam proporção, cores e conteúdo. Molduras ficam fora da imagem. Frame M3 não comprova robô autônomo; screenshot local não comprova publicação. Diagramas conceituais continuam úteis nos cases, com rótulo próprio.
+
+## Assinatura e alcance
+
+Uma cápsula que muda de dimensões, abertura manuscrita curta e passagem de luz para trabalho concreto. Scroll nativo, reversão, teclado e reduced motion fazem parte da composição. Home é experiência; cases são leitura e dispensam arco/intro/pins. Erro/404 conservam recuperação simples. A identidade factual e controles são consistentes em todas as rotas.

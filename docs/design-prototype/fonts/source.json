@@ -1,0 +1,20 @@
+{
+  "retrieved": "2026-10-11",
+  "family": "Manrope",
+  "cssUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap",
+  "subset": "latin, includes Portuguese",
+  "records": [
+    {
+      "file": "manrope-latin-variable.woff2",
+      "url": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "file": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    }
+  ]
+}
