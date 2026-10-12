@@ -1,6 +1,10 @@
-# Handoff — redesign cinematográfico, Fase C
+# Handoff — redesign cinematográfico, Fase D
 
-## Estado vigente C — 2026-10-12
+## Estado vigente D
+
+C aprovada e D autorizada pelo “Continue” em resposta ao pedido explícito de aprovação de C/início do hero. Baseline limpo e63bb7d; branch/remoto preservados. D em implementação: escopo, justificativa, referências e invariantes em [PHASE_D_PLAN](PHASE_D_PLAN.md). E–I e publicação continuam sem autorização. Fechamento C: e63bb7d.
+
+## Histórico C — 2026-10-12
 
 B aprovada e C autorizada pelo usuário com “Continue” em resposta ao pedido explícito de aprovação de B e início de C. A retomada confirmou que implementaria somente C. Baseline limpo a7955bf; branch redesign/cinematic-portfolio e origin preservados. Nenhum push/deploy autorizado. D–I aguardam gates individuais.
 

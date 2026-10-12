@@ -13,7 +13,8 @@
 - [x] Fechar revisão B, evidências e commits; ship no escopo estático, dois P3 resolvidos.
 - [x] Gate C: B aprovada e C autorizada pelo “Continue” em resposta ao pedido explícito do gate, 2026-10-12.
 - [x] C: ilha dimensional, assets locais, regressões, gravações/comparação e revisão independente ship; evidências em PHASE_C_REVIEW e commits em HANDOFF.
-- [ ] D: hero cinematográfico; gate próprio após C.
+- [x] Gate D: autorizado pelo “Continue” em resposta ao pedido explícito C/D.
+- [ ] D: hero cinematográfico em implementação/validação; escopo em PHASE_D_PLAN.
 - [ ] E: intro; gate próprio após D.
 - [ ] F: scroll narrativo e mídia real; gate próprio após E.
 - [ ] G: conteúdo/cases/fotos confirmadas e avatar favicon; gate próprio após F.
