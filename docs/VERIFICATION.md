@@ -1,5 +1,39 @@
 # Verificação — Fase 3 e auditoria
 
+## Redesign Fase A — evidência vigente, 2026-10-11
+
+Escopo autorizado: auditoria, pesquisa, vídeos e especificações, sem alterar UI/código/dependências. Baseline limpo aa70f4c73008f85731e4f45e528ac2c7f8737d0f na branch já existente redesign/cinematic-portfolio; remoto correto preservado. “Continue” não autoriza B. Histórico abaixo mantém resultados das fases anteriores; não confundir testes antigos com execução atual.
+
+### Referências reais e ferramentas
+
+`1.mp4`, `2.mp4`, `3.mp4` em D:/aNova pasta/Desktop/coisas after/references confirmados visualmente como ilha, arco T3 Code e intro/scroll Syahril. Todos 1920×1080/60fps; 1694/1088/2467 frames, 28,233/18,133/41,117s. OpenCV 4.14.0 e FFmpeg 7.1 já instalados em ambiente local foram reutilizados somente para leitura/análise; não houve instalação ou modificação de outro projeto. FFprobe indisponível no PATH/pacote encontrado; metadados cruzados entre alternativas existentes. FFmpeg mínimo do Playwright recusou MP4, mas FFmpeg completo decodificou os três inteiros com exit 0. A primeira chamada de metadados sem destino retornou 1 por ausência de output, não falha de integridade.
+
+Método: 16 frames distribuídos por vídeo para mapeamento; oito sequências de transição em intervalos 100–300ms; 40 frames consecutivos a 60fps na abertura da ilha. Superfície medida aproximadamente 322×54→404×368 mantendo centro/topo; amostras 3,817s=326×73, 3,867s=358×189, 4,017s=390×322, 4,167s=404×368. São pixels de gravação, não CSS/DPR confirmado. SHA-256 dos três originais reconferido após extração, sem alterações. Oito pranchas selecionadas e manifesto em docs/reference-video-audit; telas de OBS/abas foram excluídas das cópias versionadas.
+
+### Baseline de aplicação e testes
+
+Produção local do build existente de 2026-10-11, Chromium 156.0.8078.4, viewport 1440×900 e 375×812. Não foi produzido build novo nem atribuído hash de build por manifesto. `src`, testes, lock e configurações permanecem idênticos ao baseline; isso não substitui prova de rebuild. Capturas de hero/menu/projetos e gravações de interação em .audit/phase-a; cinco JPEGs documentais selecionados versionados.
+
+- Detector Impeccable `detect --json src/app src/components`: `[]`, exit 0, uma execução. Zero achados mecânicos não prova composição, fidelidade ou todos os estilos CSS. Nenhum overlay/live-server do detector foi usado.
+- `node node_modules/vitest/vitest.mjs run`: **6 passaram e 1 falhou por timeout** em `tests/unit/tooling.test.ts`, limite 60s, execução observada 71,9s, rodada 82,65s. Repetição isolada com mesmo limite: **1 passou**, rodada 3,95s, lint interno 3,26s. Falha fria preservada; nenhuma asserção/timeout foi relaxado e nenhuma causa definitiva foi inferida.
+- `node node_modules/@playwright/test/cli.js test tests/e2e/navigation.spec.ts tests/e2e/motion.spec.ts --project=chromium --workers=2 --output=.audit/phase-a/e2e-results`: **18/18 passaram em 33,3s**. Inclui navegação/teclado/no-JS, falha/import atrasado, storage negado, hash, watchdog e mudança de preferência. Registro `.last-run.json` indica passed sem failedTests.
+- Captura adicional: Escape retorna ao botão Menu; Projetos atualiza hash, contexto e foco no título; reduced motion sem intro/overflow; zero pageerrors e zero violações axe no menu aberto nas duas larguras. Medidas da cápsula: 448×70→448×383,97 desktop, 335×70→335×367,95 mobile; largura constante.
+- Revisão visual independente A e técnica B, sintetizada com vídeos: hero orbital verde/caixa lateral, menu com mudança imediata de painel, cartões conceituais repetidos e reveals pontuais explicam divergência do novo brief. Não foi alegada falha funcional pelo simples fato de a composição ser diferente.
+
+CUA sem navegador disponível; Playwright foi a alternativa. Servidor temporário Next PID 36552/porta 3101 foi encerrado com verificação do comando; servidor E2E também encerrado. Navegadores de coleta fechados. Evidências temporárias foram preservadas em .audit ignorada, não apagadas nem versionadas integralmente.
+
+### Pesquisa e integridade de mídia
+
+GitHub público: heads dos três projetos reconferidos; README, arquitetura/validação M3, verificação do Ateliê e package/App.tsx do Industry Week consultados. Não reexecutados testes/hardware desses projetos. Industry Week HTTP 200, fontes/imagens/vídeos prontos, tema e navegação de eras exercitados em 1440×900 e 390×844, sem enviar formulário. Deployment Pages consultado aponta b22aa4b, distinto do main 68ab01a; screenshots documentam URL observada. Primeira tentativa de selecionar link mobile falhou por diferença do menu; roteiro corrigido para item visível e estados finais capturados. Mobile tem texto comprimido/controle cortado visíveis, apesar de não exceder largura do documento.
+
+RoboSense M3 e Ateliê têm imagens autênticas baixadas das revisões fixas, HTTP 200; nenhum deploy independente confirmado para eles. Avatar público PNG 460×460 é leão ilustrado, salvo byte a byte; favicon não alterado. LinkedIn retornou authwall/999, sem publicações acessíveis e sem contorno de restrição. Manifesto em docs/media-audit registra URLs/hashes/dimensões e cópias documentais; URL de authwall com parâmetros transitórios e inventários privados não foram versionados.
+
+### Validação documental e limites
+
+Prettier nos arquivos modificados, `git diff --check`/`git diff --cached --check`, resolução de links Markdown locais, parsing de manifestos, existência de imagens e hashes dos três vídeos originais conferidos antes dos commits. Validador local ignorado `.audit/phase-a/check-documentation.mjs` também exige diff vazio de aplicação/config/testes contra aa70f4c. Staging explícito: somente documentos e evidências selecionadas, sem .audit/MP4/WebM/build/segredos.
+
+Sem novo build, suíte multibrowser completa, Lighthouse, npm audit, dispositivos físicos, leitor de tela ou INP. Segurança/dependências e métricas anteriores são históricas; deverão ser atualizadas nas fases próprias. Não houve implementação de B, integração de mídia em produção, push ou deploy. Pendências: fotos/contexto LinkedIn, revisão de direitos de mídia e tolerâncias visuais finais em B; timeout frio de tooling permanece explicitamente registrado.
+
 O registro original abaixo descreve a Fase 3 antes da auditoria. A seção de retomada ao final registra o estado atual e substitui a conclusão antiga sobre compatibilidade do ESLint.
 
 ## Ambiente

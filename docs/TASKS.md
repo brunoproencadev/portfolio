@@ -1,5 +1,27 @@
 # Tarefas e gate atual
 
+## Redesign cinematográfico — estado vigente
+
+- [x] Fase A autorizada em 2026-10-11: workspace/Git/arquitetura/documentação inspecionados, status inicial limpo em aa70f4c, branch redesign/cinematic-portfolio preservada.
+- [x] Três MP4 reais analisados; mapeamento, hashes, duração/resolução, keyframes sequenciais e limites em REFERENCE_ANALYSIS.
+- [x] Baseline navegador desktop/mobile e auditoria KEEP/IMPROVE/REBUILD/REMOVE; causas do desvio e invariantes em REDESIGN_AUDIT.
+- [x] Mídia pública pesquisada: avatar, deployment Industry Week e screenshots reais dos três projetos; LinkedIn bloqueado documentado, sem fabricação.
+- [x] MOTION_SPEC, VISUAL_REDESIGN_PLAN, VISUAL_ACCEPTANCE_CRITERIA e MEDIA_ASSETS entregues; instruções/pesquisa/continuidade atualizadas.
+- [x] Provas focadas e revisão documental; commits locais em HANDOFF, sem push/deploy/UI.
+- [ ] Gate B: aguardar aprovação explícita dos resultados da Fase A.
+- [ ] B: direção de arte, BRAND/DESIGN_SYSTEM, componentes/protótipos desktop/mobile.
+- [ ] C: Dynamic Island; gate próprio após B.
+- [ ] D: hero cinematográfico; gate próprio após C.
+- [ ] E: intro; gate próprio após D.
+- [ ] F: scroll narrativo e mídia real; gate próprio após E.
+- [ ] G: conteúdo/cases/fotos confirmadas e avatar favicon; gate próprio após F.
+- [ ] H: QA completo/performance/comparação; gate próprio após G.
+- [ ] I: prontidão de produção; gate próprio após H, sem push/deploy implícito.
+
+Pendências de fonte: originais e contexto das fotografias pessoais; consideração de direitos de marca/fotos do Ateliê antes de publicação proeminente. Manter timeout frio de tooling registrado (isolado passou); não alterar testes/dependências em A. Critérios de referência não medidos (mobile/easing exato/INP) permanecem explícitos.
+
+## Histórico das fases 0–8
+
 - [x] Fase 0: workspace/Git/remoto preservados; ignores, instruções e commits locais.
 - [x] Fase 1: PRD e fontes revisados; conteúdo-base de três projetos com limites e proveniência.
 - [x] Fase 2: direção de arte e design system especificados; A/B/C observadas em desktop/mobile e contraste medido.

@@ -1,6 +1,30 @@
-# Handoff — Fase 8 publicada na Vercel
+# Handoff — redesign cinematográfico, Fase A
 
-Workspace: D:/projects/portifolio. Origin: https://github.com/brunoproencadev/myportifolio.git. Branch main. Arquivos do usuário preservados; sem reescrita de histórico.
+Workspace: D:/projects/portifolio. Origin: https://github.com/brunoproencadev/myportifolio.git. Branch atual: redesign/cinematic-portfolio. Arquivos do usuário preservados; sem reescrita de histórico.
+
+## Estado vigente — 2026-10-11
+
+Usuário autorizou **somente a Fase A** do master prompt cinematográfico; “Continue” retoma a mesma fase. Auditoria/análise/especificações concluídas; Fase B ainda exige confirmação explícita. Nenhuma alteração em src/tests/configs/dependências/UI/favicon, nenhum push ou deploy. Baseline limpo aa70f4c73008f85731e4f45e528ac2c7f8737d0f; branch de redesign já existia e foi preservada. Os registros de lançamento abaixo são históricos, não autorização de nova publicação.
+
+Entregas: [auditoria](REDESIGN_AUDIT.md), [análise dos vídeos](REFERENCE_ANALYSIS.md), [especificação de movimento](MOTION_SPEC.md), [plano A–I](VISUAL_REDESIGN_PLAN.md), [aceitação/comparação](VISUAL_ACCEPTANCE_CRITERIA.md), [inventário de mídia](MEDIA_ASSETS.md), pesquisa/conteúdo e instruções persistentes atualizados. Oito pranchas temporais e cinco screenshots de baseline em docs/reference-video-audit; sete cópias documentais de mídia em docs/media-audit, com manifestos de origem/hash/dimensões. MP4s de referência, gravações WebM, scripts e datasets temporários ficam fora do Git em .audit/phase-a.
+
+Diagnóstico principal: o contrato anterior excluía arco roxo, transição dimensional da cápsula e scrub/pin; o código seguiu essa direção simplificada. Preservar arquitetura SSR/dados/SEO, semântica/foco e ciclo de vida robusto. Reconstruir apresentação da ilha, hero, coreografias e showcases nas fases respectivas. BRAND/DESIGN_SYSTEM antigos descrevem o produto existente; serão revisados em B, sem bloquear o novo brief com proibições antigas.
+
+Provas: vídeos 1/2/3 mapeados visualmente, 1920×1080/60fps, 28,233/18,133/41,117s; decodificação FFmpeg completa e hashes de originais preservados. Chromium desktop/mobile, zero pageerrors/axe no menu aberto; 18/18 E2E focados de navegação/motion passaram. Rodada unitária completa: seis passaram e tooling teve timeout de 60s; repetição isolada com mesmo limite passou. Não declarar a rodada integral limpa. Detector Impeccable retornou zero achados; isso não comprova fidelidade. Build local existente usado para captura/E2E, sem novo build/Lighthouse/multibrowser; detalhes em REDESIGN_AUDIT e VERIFICATION. Servidores temporários encerrados.
+
+Mídia: avatar GitHub autêntico é leão ilustrado, já baixado como documentação, ainda não favicon. Industry Week online com capturas/interações reais; SHA de Pages difere de main e mobile tem limitações visíveis. RoboSense possui frames de gravações M3; Ateliê possui screenshots de repositório, sem deploy confirmado. LinkedIn devolveu authwall/999; faltam arquivos originais/URLs/contexto das experiências e consideração de terceiros para F/G. Não inventar conteúdo para compensar essa lacuna.
+
+Commits locais desta fase:
+
+- `49baf4663f3ccfe44dcb985ead637820f90b027a` — `docs: analyze cinematic video references`: instruções persistentes, análise temporal, metadados/hashes e evidências selecionadas.
+- `43dcad8f4c240832f1c5ffb6acdfd1fa3abd51c1` — `docs: audit portfolio and verify authentic media`: classificação/causas, pesquisa reconferida e inventário/cópias de mídia.
+- Fechamento `docs: specify cinematic redesign and close phase A`: este registro, especificações/critérios/plano, decisões e continuidade. Consultar o SHA com `git log -1 --format="%h %s"` após o commit; o próprio hash não pode ser incluído no conteúdo que o gera.
+
+Nenhum commit desta fase tem autorização de push. Antes do fechamento, validação documental conferiu links locais, oito pranchas, três hashes originais e sete registros de mídia, além do diff vazio de implementação.
+
+Próxima fase proposta: **B — direção de arte/design system e protótipos revisáveis**, definindo tipografia licenciada, violeta/neutros/luz, composição desktop/mobile e estados/cenas. Não começar B nem implementar C antes dos gates próprios. Favicon foi alocado explicitamente em G, com verificação em I; avatar pode integrar C quando aprovado.
+
+## Histórico anterior — publicação da Fase 8
 
 ## Estado e gate
 

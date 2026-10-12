@@ -1,5 +1,7 @@
 # Auditoria das referências — 2026-10-09
 
+Registro histórico. Para o redesign autorizado em 2026-10-11, prevalece [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md), baseado nos três vídeos locais reais e sequências de frames. A decisão antiga de excluir arco violeta e simplificar movimento foi superada pelo novo brief; screenshots/web desta página são evidência complementar, não substituem a análise dos MP4.
+
 Método: Playwright Chromium 156, páginas públicas, desktop 1440x900 e mobile 375x812. Capturas após DOMContentLoaded e após espera de 2,5s; C também após 10s. Abertura da cápsula A por clique e Escape observado após 600ms. JSONs registram status HTTP, headings/fontes computadas e dimensões. Observação amostral, não avaliação integral nem benchmark.
 
 | Referência                                                                 | Observado                                                                                                                                                                                                                                                                      | Decisão autoral                                                                                                                                                                         |
