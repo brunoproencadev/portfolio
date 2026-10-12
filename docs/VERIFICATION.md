@@ -1,5 +1,11 @@
 # Verificação — Fase 3 e auditoria
 
+## Redesign Fase D — evidência vigente, 2026-10-12
+
+Fonte7d4d018, evidênciase6126eb. Formato de código alterado/lint integral/strict/build aprovados; Vitest7/7. E2E amplo154 aprovados/5 skips/3 falhas no novo teste antes do primeiro RAF; sincronização corrigida e hero9/9 no rerun Chromium/Firefox/WebKit. Não alegar rodada integral limpa. As cinco exclusões preexistentes e falhas anteriores estão em [PHASE_D_REVIEW](PHASE_D_REVIEW.md) e hero-review/verification.json.
+
+Cinco larguras320–1920 sem overflow/pageerrors/axe; gravações reais desktop/mobile25fps,100 amostras RAF e estados controlados. Revisão independente ship restrita a D. Lighthouse13.5 mobile local, três execuções: performance mediana98, LCP2387ms, CLS0,03888, TBT73,80ms; a11y/boas práticas100 e SEO66/noindex. Ambiente, números individuais e limites no relatório. Não é INP/produção/dispositivo físico/leitor de tela. E–I e push/deploy continuam sem autorização.
+
 ## Redesign Fase C — evidência vigente, 2026-10-12
 
 Fonte d7e377f. Formato/lint integral/strict/build aprovados; Vitest7/7. Playwright final103 aprovados/5 exclusões preexistentes/0 falhas, em108 casos nos três motores,82,95s. Testes de ilha/navegação/responsividade/motion/foundation; zoom200% Chromium, viewport curto, no-JS, reduced em execução, reversão e falha de animação. Relatório e histórico de correções em [PHASE_C_REVIEW](PHASE_C_REVIEW.md); [resultados](island-review/verification.json).

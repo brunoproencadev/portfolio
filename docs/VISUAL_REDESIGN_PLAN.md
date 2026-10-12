@@ -1,12 +1,12 @@
 # Plano do redesign — gates A–I
 
-Autorização vigente: **C**, aprovada pelo “Continue” em resposta ao gate explícito de B/C, em 2026-10-12. A/B concluídas; C entregue para revisão em [PHASE_C_REVIEW](PHASE_C_REVIEW.md). D–I exigem confirmação individual. Workspace D:/projects/portifolio, branch redesign/cinematic-portfolio e origin preservados. Fonte C validada d7e377f. Nenhum push/deploy autorizado; publicação anterior em LAUNCH não autoriza publicar o redesign.
+Autorização vigente: **D**, pelo “Continue” em resposta ao gate C/D. A–C concluídas/aprovadas; D entregue para revisão em [PHASE_D_REVIEW](PHASE_D_REVIEW.md). Fonte7d4d018, evidênciase6126eb. E–I exigem confirmação individual. Workspace D:/projects/portifolio, branch redesign/cinematic-portfolio e origin preservados. Nenhum push/deploy autorizado.
 
 ## Problema e direção exigida
 
 A fundação funciona, mas o contrato anterior retirou justamente os elementos centrais das referências: arco, transformação dimensional e cenas de scroll. A solução é reconstruir apresentação/coreografia onde elas pertencem, mantendo arquitetura, conteúdo, rotas, SEO e mecanismos de acessibilidade/falha. Justificativas por componente em [REDESIGN_AUDIT](REDESIGN_AUDIT.md).
 
-O brief fixa dark-first, neutros/violeta, composição cinematográfica, navegação contínua e mídia real. A Fase A descreve comportamentos observados e critérios; **não escolhe ainda fontes finais, paleta hexadecimal, layout final ou protótipos de B**. BRAND/DESIGN_SYSTEM foram aprovados em B; C aplica essa direção somente à navegação. Demais superfícies continuam anteriores até seus gates. Em conflito, prevalecem AGENTS atualizado e o pedido do usuário.
+O brief fixa dark-first, neutros/violeta, composição cinematográfica, navegação contínua e mídia real. A Fase A descreve comportamentos observados e critérios; **não escolhe ainda fontes finais, paleta hexadecimal, layout final ou protótipos de B**. BRAND/DESIGN_SYSTEM foram aprovados em B; C aplica essa direção à navegação e D ao hero/entrada. Demais superfícies continuam anteriores até seus gates. Em conflito, prevalecem AGENTS atualizado e o pedido do usuário.
 
 ## Plano por gate
 
@@ -15,7 +15,7 @@ O brief fixa dark-first, neutros/violeta, composição cinematográfica, navega�
 | A — concluída      | Auditoria, vídeos, mídia candidata, especificações e continuidade                | Docs/AGENTS e evidências documentais                      | Evidência revisada, critérios mensuráveis, commits locais; solicitar B |
 | B — concluída      | Arte, tipografia/licenças, luz, grid, mobile, estados da ilha e layouts de cenas | BRAND, DESIGN_SYSTEM e protótipos locais apropriados      | Aprovação visual concreta desktop/mobile; nenhum conteúdo fictício     |
 | C — concluída      | Ilha compacta/expandida e transformação                                          | SiteNavigation, CSS, Motion, regressões nav               | C01–C04, vídeo/frames e teclado/reduced/no-JS; solicitar D             |
-| D — não autorizada | Hero cinematográfico e entrada                                                   | page.tsx, CSS, wrapper de motion/GSAP                     | D01–D03, composição/CTA e observação de custo; solicitar E             |
+| D — concluída | Hero cinematográfico e entrada                                                   | page.tsx, CSS, wrapper de motion/GSAP                     | D01–D03, composição/CTA e observação de custo; solicitar E             |
 | E — não autorizada | Saudação manuscrita e passagem ao hero                                           | HomeMotion, home-sequence, CSS/asset próprio              | E01–E02, watchdog/falhas e gravação; solicitar F                       |
 | F — não autorizada | Scroll narrativo e showcases reais                                               | home-reveals, composição de projetos, imagens verificadas | F01–F03, mídia íntegra, reversão/mobile/foco/performance; solicitar G  |
 | G — não autorizada | Conteúdo/cases, fotos confirmadas, avatar e favicon                              | src/data, cases, public/images, ícones/metadata           | G01–G03, fontes/limites e verificação de ícones; solicitar H           |

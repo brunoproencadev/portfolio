@@ -1,6 +1,6 @@
 # Design system — proposta da Fase B
 
-Revisão2026-10-12: direção B aprovada; ilha C implementada com tokens/fonte locais em src. Outras superfícies permanecem anteriores e aguardam D–I. [Protótipo](design-prototype/index.html), [componentes](COMPONENT_SPEC.md), [direção](VISUAL_DIRECTION.md) e [prova C](PHASE_C_REVIEW.md). Baseline anterior recuperável em72d5877.
+Revisão2026-10-12: direção B aprovada; ilha C e hero/entrada D aplicados localmente. Manrope compartilhada, paleta violeta/neutra escopada. Demais superfícies preservam o sistema anterior até seus gates. [Prova D](PHASE_D_REVIEW.md), [prova C](PHASE_C_REVIEW.md), [componentes](COMPONENT_SPEC.md), [direção](VISUAL_DIRECTION.md). Baseline anterior recuperável em72d5877.
 
 ## Cores
 

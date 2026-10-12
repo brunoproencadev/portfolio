@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-10-12T23:19:37.000Z",
-  "title": "Design System: Bruno Proença Silva — direção B e ilha C",
+  "title": "Design System: Bruno Proença Silva — direção B, ilha C e hero D",
   "extensions": {
-    "scope": "B aprovada; C autorizada em 2026-10-12 e implementada somente na navegação local (d7e377f). Primitivos e snippets preservam B; appliedNavigation registra C. Demais superfícies de src permanecem anteriores; D–I e push/deploy exigem autorização explícita.",
-    "authority": "docs/DESIGN_SYSTEM.md; snapshot B extraído de docs/design-prototype/style.css e index.html. Extensão C conferida em src/components/navigation/site-navigation.tsx, use-island-motion.ts e CSS .capsule de src/styles/globals.css.",
+    "scope": "B/C aprovadas; D autorizada no gate C/D e implementada localmente (7d4d018), entregue para revisão do usuário. Primitivos/snippets B preservados; tokens hero-* e appliedHero registram D, appliedNavigation registra C. Seções posteriores e cases permanecem legados. E–I exigem confirmação individual; nenhum push/deploy autorizado.",
+    "authority": "docs/DESIGN_SYSTEM.md; snapshot B extraído de docs/design-prototype/style.css e index.html. Extensão C conferida em src/components/navigation/site-navigation.tsx, use-island-motion.ts e CSS .capsule de src/styles/globals.css. D conferida em src/components/sections/cinematic-hero.tsx, src/components/motion/home-sequence.ts, src/fonts/manrope.ts e CSS do hero/header em src/styles/globals.css; contrato docs/PHASE_D_PLAN.md.",
     "tonalRampNote": "Amostras OKLCH sintetizadas para o painel com chroma/hue constantes e luz de 15% a 95%; não são tokens aprovados nem cores usadas no protótipo. Extremos podem sofrer gamut mapping.",
-    "fontNote": "Manrope local licenciada no protótipo e integrada por next/font/local somente à navegação C, pesos 400–800 e swap. Snippets B usam fallback quando a família não está carregada. Não representa migração tipográfica do app inteiro.",
+    "fontNote": "Manrope local licenciada, compartilhada por navegação C e hero D via src/fonts/manrope.ts e next/font/local, pesos 400–800 e swap. Snippets B usam fallback quando a família não está carregada. Não representa migração tipográfica do app inteiro.",
     "appliedNavigation": {
       "sourceCommit": "d7e377f",
       "authorizationCommit": "c8d28ee",
@@ -27,7 +27,7 @@
       "focus": "Contorno accent de 3px, offset −3px interno para evitar recorte pelo overflow da cápsula; B mantém offset externo de 4px",
       "motion": "motion/mini: dimensões/raio 420ms abertura e 340ms fechamento, cubic-bezier(0.22,1,0.36,1); filhos 160ms, delay 80ms, stagger 30ms, y 8px; saída 100ms. Sem scale de texto/avatar ou disputa com GSAP",
       "fallbacks": "Reduced motion em execução e foco no painel resolvem geometria imediatamente; no-JS mantém links em fluxo; cleanup de animações, observers e listeners",
-      "limits": "Revisão local da cápsula; não certifica WCAG nem publicação. Hero, intro e outras superfícies preservam UI anterior; snippets abaixo continuam sendo amostras estáticas de B."
+      "limits": "Revisão local da cápsula; não certifica WCAG nem publicação. Hero D é registrado em appliedHero; seções posteriores e cases preservam UI anterior. Snippets abaixo continuam amostras estáticas de B."
     },
     "colorMeta": {
       "background": {
@@ -223,6 +223,38 @@
       "caption": {
         "displayName": "Legenda",
         "purpose": "Contexto e limites das mídias."
+      },
+      "hero-display-mobile": {
+        "displayName": "hero-display-mobile",
+        "purpose": "Nome em duas linhas no hero D mobile."
+      },
+      "hero-position": {
+        "displayName": "hero-position",
+        "purpose": "Posicionamento factual do hero D desktop."
+      },
+      "hero-position-mobile": {
+        "displayName": "hero-position-mobile",
+        "purpose": "Posicionamento factual do hero D mobile."
+      },
+      "hero-description": {
+        "displayName": "hero-description",
+        "purpose": "Introdução factual do hero D desktop."
+      },
+      "hero-description-mobile": {
+        "displayName": "hero-description-mobile",
+        "purpose": "Introdução factual do hero D mobile."
+      },
+      "hero-label": {
+        "displayName": "hero-label",
+        "purpose": "Links de ação do hero D."
+      },
+      "hero-end": {
+        "displayName": "hero-end",
+        "purpose": "Fechamento editorial do hero D desktop."
+      },
+      "hero-end-mobile": {
+        "displayName": "hero-end-mobile",
+        "purpose": "Fechamento editorial do hero D mobile."
       }
     },
     "shadows": [
@@ -238,7 +270,7 @@
       }
     ],
     "motion": [],
-    "motionNote": "B e seus snippets permanecem estáticos; movimento aplicado à ilha C está em appliedNavigation.motion. Novos movimentos de hero/intro/scroll continuam futuros em docs/MOTION_SPEC.md, sujeitos aos respectivos gates.",
+    "motionNote": "B e seus snippets permanecem estáticos; movimento da ilha C em appliedNavigation.motion e entrada D em appliedHero.motion. Saudação E e storytelling avançado F continuam futuros e dependem dos respectivos gates.",
     "breakpoints": [
       {
         "name": "mobile-max",
@@ -263,7 +295,31 @@
       "dark": "var(--accent)",
       "light": "var(--ink)"
     },
-    "mediaProvenance": "docs/MEDIA_ASSETS.md e docs/media-audit; nenhum raster sintético incluído no sidecar."
+    "mediaProvenance": "docs/MEDIA_ASSETS.md e docs/media-audit; nenhum raster sintético incluído no sidecar.",
+    "appliedHero": {
+      "sourceCommit": "7d4d018",
+      "authorizationCommit": "f24cd81",
+      "evidenceCommit": "e6126eb",
+      "reviewDisposition": "ship, somente hero/composição/entrada D; aprovação do usuário ainda pendente",
+      "evidence": [
+        "docs/PHASE_D_REVIEW.md",
+        "docs/hero-review/finish-review.md",
+        "docs/hero-review/results.json",
+        "docs/hero-review/recorded-sequence-1440.jpg",
+        "docs/hero-review/recorded-sequence-375.jpg"
+      ],
+      "palette": "background/foreground/muted/accent locais; accent-deep/accent/foreground no SVG, ink no CTA principal e surface no hover secundário. Header da home usa background; tokens globais legados preservados.",
+      "font": "Manrope local compartilhada com C, 400–800, swap; nome usa display e hero-display-mobile. Outros papéis hero-* preservam line-height 1.6 herdado, sem migrar body/headline/title de B globalmente.",
+      "desktop": "Header 96px em fluxo; hero min-height 664px, padding 68px 20px 60px. Arco top -15px, height 700px; decoração inset -96px 0 0 com clip local. Título em duas linhas; descrição max-width 48ch.",
+      "wide": "A partir de 1600px: hero min-height 734px e padding-top 108px; arco height 770px.",
+      "mobile": "Até 599px: hero min-height 524px, padding 58px 20px 24px; arco top 34px, height 555px, width 220%, left -60%. Descrição max-width 33ch. Ações flex-wrap, gap 8px: duas linhas em 320px e lado a lado em 375px observados; conteúdo pode aumentar altura.",
+      "actions": "Links reais #projetos e GitHub, min-height 48px, raio 8px, padding 12px 20px e gap 20px; mobile padding 12px 16px/gap 12px. SVG 18px/traço 1.5px; foco accent 3px/offset 4px. Hover principal accent/ink; secundário surface/accent.",
+      "closing": "Fechamento em muted com margin-top auto, padding-top 100px (mobile 116px), segunda linha com margin-top 4px; typography.hero-end e hero-end-mobile.",
+      "light": "Três paths SVG de B, traços 55/14/2px, opacity 0.65/0.8/0.9 e blur estático 24/7. aria-hidden, sem interação; transform-origin 50% 85%; nenhum filtro full-screen animado.",
+      "motion": "GSAP, timeline 1s, power2.out: arco 0–800ms (y30px/scale1.04/opacity0.25 até repouso e borda 12→2px); título 120–860ms (yPercent110, duração640ms, stagger100ms); posição400–750ms/y12px; descrição500–900ms/y10px; ações640–1000ms/y10px; fechamento600–1000ms. Apoios entram com opacity. Timings autorais orientados pela ordem R2, não easing original conhecido; Motion mantém a ilha C.",
+      "fallbacks": "Server Component e SSR/no-JS completos; HomeMotion preserva sessão, import dinâmico, pular, watchdog2.2s, cancelamento por foco/gesto/hash/reduced/pagehide e cleanup via context.revert. Reduced motion em execução resolve estado; sem pin/scrub.",
+      "limits": "Revisor inspecionou arquivos/capturas, sem navegador próprio ou reprodução direta dos WebM. Não comprova 60fps, WCAG, hardware mobile ou redesign completo. Navbar aberta sobrepõe temporariamente nome. Verde/cards e demais seções legadas aguardam fases posteriores. Não inclui saudação/loading E, storytelling F nem publicação."
+    }
   },
   "components": [
     {

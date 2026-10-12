@@ -14,7 +14,8 @@
 - [x] Gate C: B aprovada e C autorizada pelo “Continue” em resposta ao pedido explícito do gate, 2026-10-12.
 - [x] C: ilha dimensional, assets locais, regressões, gravações/comparação e revisão independente ship; evidências em PHASE_C_REVIEW e commits em HANDOFF.
 - [x] Gate D: autorizado pelo “Continue” em resposta ao pedido explícito C/D.
-- [ ] D: hero cinematográfico em implementação/validação; escopo em PHASE_D_PLAN.
+- [x] D: hero cinematográfico, entrada, regressões, capturas/gravações, Lighthouse e revisão independente ship; PHASE_D_REVIEW e commits em HANDOFF.
+- [ ] Gate E: aguardar aprovação de D e autorização explícita da saudação/intro.
 - [ ] E: intro; gate próprio após D.
 - [ ] F: scroll narrativo e mídia real; gate próprio após E.
 - [ ] G: conteúdo/cases/fotos confirmadas e avatar favicon; gate próprio após F.

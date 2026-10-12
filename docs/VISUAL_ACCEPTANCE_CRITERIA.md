@@ -1,6 +1,6 @@
 # Aceitação visual e funcional — redesign A–I
 
-Status2026-10-12: B01 aprovado no gate B/C. C01–C04 implementados e validados no escopo de [PHASE_C_REVIEW](PHASE_C_REVIEW.md), fonte d7e377f; aguardam revisão final do usuário. D–I não autorizados/implementados no redesign. [Referências](REFERENCE_ANALYSIS.md), [movimento](MOTION_SPEC.md), [plano](VISUAL_REDESIGN_PLAN.md).
+Status2026-10-12: B/C aprovadas. D01–D03 implementados e validados no escopo de [PHASE_D_REVIEW](PHASE_D_REVIEW.md), fonte7d4d018, revisão independente ship; aguardam aprovação visual do usuário. E–I não autorizados. [Referências](REFERENCE_ANALYSIS.md), [movimento](MOTION_SPEC.md), [plano](VISUAL_REDESIGN_PLAN.md).
 
 ## Método de comparação
 

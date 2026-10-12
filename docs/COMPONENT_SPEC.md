@@ -1,6 +1,6 @@
 # Componentes — especificação B
 
-Direção B aprovada. Ilha C implementada e validada em [PHASE_C_REVIEW](PHASE_C_REVIEW.md); demais componentes abaixo aguardam seus gates. [Tokens](DESIGN_SYSTEM.md), [movimento](MOTION_SPEC.md), [direção](VISUAL_DIRECTION.md). Protótipos preservam a composição aprovada; não comprovam as timelines futuras.
+Direção B aprovada. Ilha C e hero/entrada D implementados e validados em [PHASE_C_REVIEW](PHASE_C_REVIEW.md) e [PHASE_D_REVIEW](PHASE_D_REVIEW.md). Demais componentes aguardam seus gates. Hero usa h1 único em duas máscaras, arco SVG decorativo, posição18px/16px mobile, descrição16px/14px mobile, botões48px e tipografia64–96px/36–58px mobile. Ações quebram em320px; conteúdo tem altura natural. [Tokens](DESIGN_SYSTEM.md), [movimento](MOTION_SPEC.md), [direção](VISUAL_DIRECTION.md).
 
 ## Ilha / C
 

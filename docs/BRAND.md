@@ -1,6 +1,6 @@
 # Marca — da ideia ao experimento
 
-Direção B aprovada; C aplica a identidade à navegação local em2026-10-12. A aplicação publicada permanece intacta. Demais componentes dependem dos próximos gates. Referências/timestamps em [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md).
+Direção B aprovada; C aplica a identidade à navegação e D ao hero/entrada local em2026-10-12. A aplicação publicada permanece intacta. Demais componentes dependem dos próximos gates. Referências/timestamps em [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md).
 
 ## Identidade e voz
 

@@ -1,8 +1,23 @@
 # Handoff — redesign cinematográfico, Fase D
 
-## Estado vigente D
+## Estado vigente D — concluída para revisão, 2026-10-12
 
-C aprovada e D autorizada pelo “Continue” em resposta ao pedido explícito de aprovação de C/início do hero. Baseline limpo e63bb7d; branch/remoto preservados. D em implementação: escopo, justificativa, referências e invariantes em [PHASE_D_PLAN](PHASE_D_PLAN.md). E–I e publicação continuam sem autorização. Fechamento C: e63bb7d.
+C aprovada e D autorizada pelo “Continue” em resposta ao gate C/D. Baseline limpoe63bb7d; branch redesign/cinematic-portfolio. Hero cinematográfico implementado e revisão independente **ship**, sem material fixes. [Relatório e evidências](PHASE_D_REVIEW.md). E não autorizada; próximo passo é obter aprovação de D/início de E. Nenhum push/deploy.
+
+Commits locais:
+
+- `f24cd81` — docs: authorize cinematic hero and define phase D scope.
+- `7d4d018` — feat: compose cinematic hero with sequenced arc and typography; componente servidor, luz/entrada, fonte compartilhada, regressões e arquitetura/proveniência.
+- `e6126eb` — test: record cinematic hero motion and performance evidence; capturas, gravações amostradas, resultados, Lighthouse e revisão independente.
+- O commit documental de fechamento `docs: close phase D and gate intro experience` sucede esses SHAs; consultar `git log -1 --oneline` para evitar autorreferência.
+
+Prova: formato dos arquivos de código alterados/lint integral/strict/build aprovados, Vitest7/7. Rodada ampla154 aprovados/5 skips/3 falhas de sincronização RAF no novo teste. Corrigida a espera pelo primeiro frame; rerun focado hero9/9 nos três motores. Não houve nova rodada integral limpa; histórico inicial também preservado. Cinco exclusões preexistentes de zoom/Tab WebKit em PHASE_D_REVIEW. Cinco larguras sem overflow/pageerror/axe; entrada desktop/mobile filmada25fps e100 amostras RAF.
+
+Lighthouse mobile local, três execuções: mediana performance98, LCP2387ms, CLS0,03888, TBT73,80ms; acessibilidade/boas práticas100, SEO66 por noindex. Não prova INP, dispositivos reais ou produção. Fonte/manifestações em hero-review; gravações brutas em .audit/phase-d fora do Git. Build mantém aviso metadataBase de preview. Navbar C/rotas/SEO/dados/dependências e scroll existente preservados. Verde/cards antigos sob o hero aguardam F; saudação E/fotos/favicon não implementados aqui.
+
+Servidor local3101 iniciado para esta validação foi encerrado; navegadores dos scripts também foram fechados.
+
+Retomada E: ler PHASE_D_REVIEW, MOTION_SPEC/M03, COMPONENT_SPEC e os frames R3 já analisados. Conservar cancelamento, watchdog2,2s, reduced em execução, no-JS e cleanup; novo loading não pode bloquear conteúdo ou inventar progresso. Publicação requer autorização separada.
 
 ## Histórico C — 2026-10-12
 

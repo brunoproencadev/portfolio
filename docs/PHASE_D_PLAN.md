@@ -27,3 +27,7 @@ Reusar HomeMotion: sessão, import dinâmico, botão pular, limite2,2s, cancelam
 ## Prova e gate
 
 D01–D03 em VISUAL_ACCEPTANCE_CRITERIA: capturas320/375/768/1440/1920, entrada gravada e frames antes/durante/depois; comparação R2/B, teclado, reduced em execução, no-JS, falha/import lento, zoom e regressão C/cases. Formato/lint/strict/build, testes pertinentes e observação de desempenho real. Refinar defeitos, commits atômicos, revisão independente e documentação. Ao encerrar D, pedir autorização de E; não avançar automaticamente.
+
+## Fechamento
+
+D entregue para revisão em PHASE_D_REVIEW.md: fonte7d4d018, evidênciase6126eb, revisão independente ship. Implementação restrita aos limites acima. Próximo gate: aprovação de D/autorização de E; não iniciar automaticamente.
