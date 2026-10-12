@@ -1,6 +1,14 @@
 # Verificação — Fase 3 e auditoria
 
-## Redesign Fase B — evidência vigente, 2026-10-12
+## Redesign Fase C — evidência vigente, 2026-10-12
+
+Fonte d7e377f. Formato/lint integral/strict/build aprovados; Vitest7/7. Playwright final103 aprovados/5 exclusões preexistentes/0 falhas, em108 casos nos três motores,82,95s. Testes de ilha/navegação/responsividade/motion/foundation; zoom200% Chromium, viewport curto, no-JS, reduced em execução, reversão e falha de animação. Relatório e histórico de correções em [PHASE_C_REVIEW](PHASE_C_REVIEW.md); [resultados](island-review/verification.json).
+
+Capturas cinco larguras, dez estados: zero axe/pageerrors/overflow. Gravações desktop/mobile e367 amostras RAF preservam centro/topo/avatar. Revisor independente ship limitado à cápsula; evidências não autorizam D/publicação. Sem Lighthouse novo/leitor de tela/dispositivo físico/INP; vídeos25fps e amostragem não comprovam fluidez em todo hardware. OFL conserva whitespace upstream; preview sem SITE_URL emite aviso metadataBase existente.
+
+Infraestrutura: sandbox padrão falhou na inicialização; comandos passaram pela revisão de escalonamento. Uma operação documental foi interrompida por limite de uso da revisão automática e retomada após “Continue”, sem bypass. Nenhuma falha de teste foi ocultada.
+
+## Redesign Fase B — histórico, 2026-10-12
 
 B autorizada por “Pode começar a fase B”. Baseline72d5877; aplicação/produção preservadas. Commits de marca/fonte5736a4f e protótiposf2a7cbf, sem push/deploy. Relatório completo: [PHASE_B_REVIEW](PHASE_B_REVIEW.md); dados: [results.json](design-review/results.json); proveniência/hashes: [manifest.json](design-review/manifest.json).
 

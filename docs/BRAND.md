@@ -1,6 +1,6 @@
 # Marca — da ideia ao experimento
 
-Direção proposta na Fase B, autorizada em 2026-10-11. Substitui o antigo caderno verde; a aplicação publicada permanece intacta. Referências e timestamps em [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md).
+Direção B aprovada; C aplica a identidade à navegação local em2026-10-12. A aplicação publicada permanece intacta. Demais componentes dependem dos próximos gates. Referências/timestamps em [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md).
 
 ## Identidade e voz
 

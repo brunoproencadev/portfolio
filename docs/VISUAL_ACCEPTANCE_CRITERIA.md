@@ -1,6 +1,6 @@
 # Aceitação visual e funcional — redesign A–I
 
-Status em 2026-10-12: critérios propostos em A; B entregou direção, tokens, especificações e protótipos estáticos em PHASE_B_REVIEW. B01 aguarda aprovação visual do usuário; C–I não implementados. A Fase A comprova análise e baseline; não marca navbar/hero/intro/storytelling novos como entregues. [Referências](REFERENCE_ANALYSIS.md), [movimento](MOTION_SPEC.md) e [plano](VISUAL_REDESIGN_PLAN.md) delimitam a avaliação.
+Status2026-10-12: B01 aprovado no gate B/C. C01–C04 implementados e validados no escopo de [PHASE_C_REVIEW](PHASE_C_REVIEW.md), fonte d7e377f; aguardam revisão final do usuário. D–I não autorizados/implementados no redesign. [Referências](REFERENCE_ANALYSIS.md), [movimento](MOTION_SPEC.md), [plano](VISUAL_REDESIGN_PLAN.md).
 
 ## Método de comparação
 
@@ -39,6 +39,8 @@ Comparar geometria normalizada pelo viewport/conteúdo, não fazer pixel diff en
 B não exige código de produção. C/D/E/F encerram cada componente com capturas/gravação, testes focados e commits, sem avançar automaticamente. Se um critério não puder ser comprovado, registrar pendência e efeito no próximo gate; não alterar definição de sucesso silenciosamente.
 
 ## Log inicial referência → implementação
+
+Histórico de A. A linha da ilha foi resolvida em C, com comparação/medidas/gravações em PHASE_C_REVIEW; demais discrepâncias permanecem nos gates correspondentes.
 
 | Item       | Referência                                    | Baseline aa70f4c                                        | Discrepância / ação futura                                 | Estado                |
 | ---------- | --------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------- | --------------------- |

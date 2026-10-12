@@ -1,6 +1,6 @@
 # Design system — proposta da Fase B
 
-Revisão 2026-10-12. Especificação do redesign a implementar por gates C–I. `src` ainda usa o sistema anterior, recuperável no commit 72d5877. [Protótipo](design-prototype/index.html), [componentes](COMPONENT_SPEC.md) e [direção](VISUAL_DIRECTION.md) são documentação revisável, não componentes de produção.
+Revisão2026-10-12: direção B aprovada; ilha C implementada com tokens/fonte locais em src. Outras superfícies permanecem anteriores e aguardam D–I. [Protótipo](design-prototype/index.html), [componentes](COMPONENT_SPEC.md), [direção](VISUAL_DIRECTION.md) e [prova C](PHASE_C_REVIEW.md). Baseline anterior recuperável em72d5877.
 
 ## Cores
 

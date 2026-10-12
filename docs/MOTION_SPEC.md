@@ -1,6 +1,6 @@
 # Especificação de movimento — observações A e decisões B
 
-Base observada: [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md). Status: nenhuma timeline nova implementada. DESIGN_SYSTEM/COMPONENT_SPEC registram os valores iniciais escolhidos em B (420ms abertura, 340ms fechamento, 1000ms hero e 1450ms intro), ainda sujeitos à aprovação visual do usuário e validação C–F. Faixas abaixo registram a proposta original A, não medições exatas. ARCHITECTURE descreve o código preservado; DESIGN_SYSTEM agora é o contrato proposto do redesign.
+Base observada: [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md). B aprovada; M01 implementado e validado em C, fonte d7e377f: abertura420ms/fechamento340ms, filhos160ms/delay80ms/stagger30ms/y8px e saída100ms. Motion mini mede dimensões naturais; reduced/foco/resize/falha terminam imediatamente. [Evidências e limites](PHASE_C_REVIEW.md). M02–M05 continuam propostas para D–G; hero1000ms e intro1450ms não estão implementados. Faixas abaixo preservam a proposta A, sem alegar easing original conhecido.
 
 ## Responsabilidades e invariantes
 

@@ -4,7 +4,22 @@
 
 B aprovada e C autorizada pelo usuário com “Continue” em resposta ao pedido explícito de aprovação de B e início de C. A retomada confirmou que implementaria somente C. Baseline limpo a7955bf; branch redesign/cinematic-portfolio e origin preservados. Nenhum push/deploy autorizado. D–I aguardam gates individuais.
 
-C em validação/revisão: preserva destinos/observer/semântica e implementa cápsula dimensional com Motion mini já instalado, avatar autêntico e fonte local licenciada. Hero, intro, projetos, favicon, SEO, conteúdo e dependências preservados. Alterações parciais herdadas desta mesma tarefa foram completadas, sem incorporar trabalho alheio. A evidência final e os SHAs serão registrados ao encerrar C.
+**C concluída para revisão do usuário.** Cápsula dimensional, Motion mini já instalado, avatar autêntico/fonte local e preservação de destinos/observer/semântica. Hero, intro, projetos, favicon, SEO, conteúdo e dependências preservados. Alterações parciais herdadas desta mesma tarefa foram completadas sem incorporar trabalho alheio. Relatório: [PHASE_C_REVIEW](PHASE_C_REVIEW.md).
+
+Commits locais:
+
+- `c8d28ee` — docs: record phase C authorization and boundaries.
+- `d7e377f` — feat: implement continuous dynamic island navigation; código, assets/proveniência e regressões.
+- `3b47d0a` — test: record island reference comparisons and browser evidence; capturas/manifestações/relatório.
+- Fechamento: `docs: close phase C and gate cinematic hero`; consultar o SHA em git log após commit, evitando autorreferência.
+
+Provas: formato/lint integral/strict/build aprovados; Vitest7/7; E2E103 aprovados/5 exclusões preexistentes/0 falhas, Chromium/Firefox/WebKit. Dez estados em cinco larguras sem axe/pageerrors/overflow; zoom200% Chromium e viewport curto aprovados. Geometria322×60→404×365 desktop; centro/topo/avatar40 constantes nas367 amostras RAF. Revisor independente ship para a cápsula; documenter sincronizou DESIGN.md/sidecar preservando B. Relatório registra primeira rodada com falhas e correções, sem relaxar asserções.
+
+Evidências versionadas em docs/island-review; vídeos completos locais em `.audit/phase-c/island-1440.webm` e `island-375.webm`, fora do Git. Scripts temporários de captura/análise também ignorados. Fonte/artifacts correspondem a d7e377f; commits posteriores são documentais. OFL mantém whitespace upstream conhecido. Default sandbox falhou; escalonamentos revisados permitiram ferramentas. Interrupção por limite de uso foi retomada após “Continue”, sem bypass. Servidor de captura3101 e navegadores encerrados; 67 links locais dos documentos finais e hashes do manifesto conferidos.
+
+Limites: vídeo25fps/RAF durante automação não é benchmark de hardware. Sem Lighthouse novo/INP/leitor de tela/Safari real/aparelhos físicos; cinco exclusões detalhadas no relatório. LinkedIn/fotos continuam indisponíveis; favicon fica em G/I. Sem push/deploy.
+
+**Aguardar aprovação de C e autorização explícita de D.** Próxima fase: hero/arco violeta, composição e entrada tipográfica R2; nenhuma alteração de D foi iniciada. Ao retomar, conferir Git e ler COMPONENT_SPEC, MOTION_SPEC, PHASE_C_REVIEW e VISUAL_ACCEPTANCE_CRITERIA.
 
 ## Histórico B — estado ao encerrar 2026-10-12
 

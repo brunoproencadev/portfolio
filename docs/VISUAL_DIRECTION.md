@@ -1,6 +1,6 @@
 # Direção visual B — horizonte e evidência
 
-Fase B autorizada por “Pode começar a fase B”, em 2026-10-11; proposta para revisão. Aprovação visual e fase C pendentes. O brief fixa referências/linguagem; não foi aberto concurso de estilos incompatíveis. Impeccable calibrou contexto e craft; seed 8f29411f não substitui os vídeos por metáforas de catálogo. HTML/CSS permite revisar mídia real; sem imagens generativas ou preferência de workflow inventada.
+Direção B aprovada pelo gate B/C; C entregue em 2026-10-12, conforme [PHASE_C_REVIEW](PHASE_C_REVIEW.md). O contrato abaixo permanece alvo das fases seguintes, sem autorizar D–I. Impeccable calibrou contexto/craft; vídeos reais têm precedência. HTML/CSS documental usa mídia autêntica, sem imagens generativas.
 
 ## Direction contract
 

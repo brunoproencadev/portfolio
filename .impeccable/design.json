@@ -1,12 +1,34 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-12T12:52:55.408Z",
-  "title": "Design System: Bruno Proença Silva — protótipo B",
+  "generatedAt": "2026-10-12T23:19:37.000Z",
+  "title": "Design System: Bruno Proença Silva — direção B e ilha C",
   "extensions": {
-    "scope": "Proposta B aguardando aprovação visual; não representa src nem produção.",
-    "authority": "docs/DESIGN_SYSTEM.md; snapshot extraído de docs/design-prototype/style.css e index.html.",
+    "scope": "B aprovada; C autorizada em 2026-10-12 e implementada somente na navegação local (d7e377f). Primitivos e snippets preservam B; appliedNavigation registra C. Demais superfícies de src permanecem anteriores; D–I e push/deploy exigem autorização explícita.",
+    "authority": "docs/DESIGN_SYSTEM.md; snapshot B extraído de docs/design-prototype/style.css e index.html. Extensão C conferida em src/components/navigation/site-navigation.tsx, use-island-motion.ts e CSS .capsule de src/styles/globals.css.",
     "tonalRampNote": "Amostras OKLCH sintetizadas para o painel com chroma/hue constantes e luz de 15% a 95%; não são tokens aprovados nem cores usadas no protótipo. Extremos podem sofrer gamut mapping.",
-    "fontNote": "Manrope local licenciada no protótipo; snippets usam fallback quando a família não está carregada. Não comprova integração no app.",
+    "fontNote": "Manrope local licenciada no protótipo e integrada por next/font/local somente à navegação C, pesos 400–800 e swap. Snippets B usam fallback quando a família não está carregada. Não representa migração tipográfica do app inteiro.",
+    "appliedNavigation": {
+      "sourceCommit": "d7e377f",
+      "authorizationCommit": "c8d28ee",
+      "reviewDisposition": "ship, somente cápsula C",
+      "evidence": [
+        "docs/island-review/results.json",
+        "docs/island-review/states-contact-sheet.jpg",
+        "docs/island-review/recorded-sequence-1440.jpg"
+      ],
+      "palette": "Mesmos surface, surface-hover, foreground, muted, accent e rule de B; escopo local da cápsula.",
+      "compact": "min(322px, viewport−32px) × 60px; raio 30px",
+      "expanded": "min(404px, viewport−32px); raio 28px; altura natural observada 365px em 768/1440/1920px e 385px em 320/375px, sem altura fixa de conteúdo",
+      "position": "Centro horizontal fixo; topo 32px em min-width 900px e 16px abaixo, mais safe-area; painel limitado à altura disponível com scroll interno",
+      "identity": "Avatar GitHub exato de 40px; nome curto 14px/600; subtítulo da seção atual 12px/1.5",
+      "note": "Posicionamento sob os destinos, 12px/20px, muted; quebra em duas linhas nos mobiles observados",
+      "links": "Alvo mínimo 48px, padding 10px 12px, raio 12px (B: 10px); Atual em accent e 11px (B: muted e 12px)",
+      "icons": "SVG inline, traço 1.5px, 18px nos destinos e 22px no botão de 44px",
+      "focus": "Contorno accent de 3px, offset −3px interno para evitar recorte pelo overflow da cápsula; B mantém offset externo de 4px",
+      "motion": "motion/mini: dimensões/raio 420ms abertura e 340ms fechamento, cubic-bezier(0.22,1,0.36,1); filhos 160ms, delay 80ms, stagger 30ms, y 8px; saída 100ms. Sem scale de texto/avatar ou disputa com GSAP",
+      "fallbacks": "Reduced motion em execução e foco no painel resolvem geometria imediatamente; no-JS mantém links em fluxo; cleanup de animações, observers e listeners",
+      "limits": "Revisão local da cápsula; não certifica WCAG nem publicação. Hero, intro e outras superfícies preservam UI anterior; snippets abaixo continuam sendo amostras estáticas de B."
+    },
     "colorMeta": {
       "background": {
         "role": "neutral",
@@ -216,7 +238,7 @@
       }
     ],
     "motion": [],
-    "motionNote": "B não implementa animações. Motion/GSAP e timings são propostas futuras em docs/MOTION_SPEC.md.",
+    "motionNote": "B e seus snippets permanecem estáticos; movimento aplicado à ilha C está em appliedNavigation.motion. Novos movimentos de hero/intro/scroll continuam futuros em docs/MOTION_SPEC.md, sujeitos aos respectivos gates.",
     "breakpoints": [
       {
         "name": "mobile-max",

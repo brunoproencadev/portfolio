@@ -1,6 +1,6 @@
 ---
-name: "Bruno Proença Silva — protótipo B"
-description: "Snapshot documental de horizonte e evidência; proposta B aguardando aprovação visual."
+name: "Bruno Proença Silva — direção B e ilha C"
+description: "Tokens do protótipo B aprovado; aplicação C restrita à navegação no código local."
 colors:
   background: "#08090d"
   surface: "#202024"
@@ -95,7 +95,7 @@ components:
     width: "404px"
 ---
 
-# Design System: Bruno Proença Silva — protótipo B
+# Design System: Bruno Proença Silva — direção B e ilha C
 
 ## Overview
 
@@ -103,7 +103,7 @@ components:
 
 Nome sob uma borda de luz conduz a trabalho verificável, transformando curiosidade em evidência visual. Preto profundo, luz violeta interior, Manrope aberta, cápsula cinza e faixas de projeto com escalas distintas sustentam essa direção.
 
-**Proposta B aguardando aprovação visual; não representa src nem produção.** Este arquivo é índice e snapshot dos tokens do [protótipo estático B](docs/design-prototype/index.html), extraídos de [style.css](docs/design-prototype/style.css) e do SVG da home. O frontmatter descreve esses valores observados; a especificação detalhada e os contratos futuros permanecem em [DESIGN_SYSTEM](docs/DESIGN_SYSTEM.md), [COMPONENT_SPEC](docs/COMPONENT_SPEC.md) e [VISUAL_DIRECTION](docs/VISUAL_DIRECTION.md). Não importar o CSS documental no app nem tratar este snapshot como autorização para migrar tokens ou fontes.
+**B aprovada; C autorizada em 2026-10-12 e implementada somente na navegação local (`d7e377f`).** Este arquivo preserva o snapshot de tokens do [protótipo estático B](docs/design-prototype/index.html), extraídos de [style.css](docs/design-prototype/style.css) e do SVG da home. O frontmatter continua descrevendo B; as diferenças efetivamente aplicadas à ilha C estão abaixo e no sidecar. Hero, intro, projetos e demais superfícies de src preservam o ciclo anterior; o redesign dessas superfícies depende dos gates D–I. Não há push/deploy autorizado. A especificação detalhada permanece em [DESIGN_SYSTEM](docs/DESIGN_SYSTEM.md), [COMPONENT_SPEC](docs/COMPONENT_SPEC.md) e [VISUAL_DIRECTION](docs/VISUAL_DIRECTION.md). Não importar o CSS documental no app nem migrar tokens globalmente a partir deste snapshot.
 
 **Key Characteristics:**
 
@@ -112,7 +112,7 @@ Nome sob uma borda de luz conduz a trabalho verificável, transformando curiosid
 - Projetos em escalas distintas, preservando as proporções das mídias.
 - Navegação e leitura disponíveis sem JavaScript.
 
-A revisão independente retornou `ship` somente no escopo estático B, sem achados materiais. [Resultados](docs/design-review/results.json) registram cinco larguras, fonte/imagens carregadas, ausência de overflow e zero violações axe nos estados avaliados. Isso não equivale a aprovação visual do usuário, certificação WCAG, validação de produção ou entrega de animações.
+A revisão independente de B retornou `ship` no escopo estático; [resultados B](docs/design-review/results.json) registram cinco larguras, fonte/imagens carregadas, ausência de overflow e zero violações axe nos estados avaliados. A revisão independente de C também retornou `ship`, restrito à cápsula. [Resultados C](docs/island-review/results.json), [estados](docs/island-review/states-contact-sheet.jpg) e [sequência gravada](docs/island-review/recorded-sequence-1440.jpg) sustentam a extensão; não certificam WCAG, publicação nem conversão visual do produto inteiro.
 
 ## Colors
 
@@ -129,7 +129,7 @@ Pares calculados estão nos resultados da revisão. Rampas tonais do sidecar sã
 
 ## Typography
 
-Manrope Latin variável local, com Arial/sans-serif como fallback, carrega apenas no protótipo documental. Licença SIL OFL 1.1 e origem estão em [fonts/source.json](docs/design-prototype/fonts/source.json); `font-display: swap` preserva leitura. A integração de produção e a medição de CLS continuam futuras.
+Manrope Latin variável local, com Arial/sans-serif como fallback no protótipo documental. Licença SIL OFL 1.1 e origem estão em [fonts/source.json](docs/design-prototype/fonts/source.json); `font-display: swap` preserva leitura. C integra a mesma família via `next/font/local`, pesos 400–800 e swap, somente na navegação. A tipografia das outras superfícies e a medição de CLS do redesign completo continuam futuras.
 
 O frontmatter registra os papéis observados: nome (`display`), seção (`headline`), projeto (`title`), leitura (`body`), CTA (`label`) e legenda (`caption`). São extrações do CSS, não uma nova escala para o app. No mobile, o nome usa clamp(36px, 10.5vw, 58px); seções usam 40px, contato 36px e projetos 36px. O apoio central tem largura máxima de 48ch, reduzida para 33ch no mobile.
 
@@ -137,7 +137,7 @@ O frontmatter registra os papéis observados: nome (`display`), seção (`headli
 
 ## Layout
 
-Container até 1280px, com margens de 64px em desktop, 32px abaixo de 900px e 20px abaixo de 600px. O CSS também ajusta composição em 1100px e expande a cena a partir de 1600px. A cápsula compacta mede até 322px; aberta chega a 404px, limitada pela viewport. A abertura é um disclosure nativo instantâneo.
+No protótipo B: container até 1280px, com margens de 64px em desktop, 32px abaixo de 900px e 20px abaixo de 600px. O CSS também ajusta composição em 1100px e expande a cena a partir de 1600px. A cápsula compacta mede até 322px; aberta chega a 404px, limitada pela viewport. A abertura de B é um disclosure nativo instantâneo; C implementa o comportamento descrito em Components.
 
 Hero de 760px, com padding superior de 164px no conteúdo; em telas largas, 830px e padding de 204px. Mobile usa cena de 620px e padding de 154px. O arco móvel usa largura de 220% e posição esquerda de −60%, recortando apenas decoração.
 
@@ -147,7 +147,7 @@ RoboSense usa imagem ampla e texto lateral; Industry Week intercala uma faixa cl
 
 A cápsula recebe sombra ambiente; a captura do Industry Week tem sombra discreta sobre papel. O restante depende de espaço, escala e contraste tonal. O arco tem três traços SVG e blur estático localizado, sem filtro animado em tela cheia. Valores de sombra e trechos renderizáveis estão no sidecar.
 
-Não há animações implementadas em B. Motion, GSAP, FLIP, intro e storytelling de scroll são contratos futuros de [MOTION_SPEC](docs/MOTION_SPEC.md), dependentes dos gates correspondentes.
+B permanece estático. Em C, `motion/mini` interpola dimensões/raio da cápsula e opacity/translateY dos filhos; não escala letras/avatar. Os novos movimentos de hero, intro e storytelling de scroll permanecem contratos futuros de [MOTION_SPEC](docs/MOTION_SPEC.md), dependentes dos gates correspondentes.
 
 ## Shapes
 
@@ -155,14 +155,17 @@ Cápsula contínua com raio compacto e aberto próprios, avatar circular, CTAs d
 
 ## Components
 
-- **Ilha:** identidade constante, avatar GitHub exato e cinco destinos. `details/summary` oferece abertura por teclado sem JS; Escape, observer, fechamento contextual e transição dimensional ainda pertencem à fase C.
+- **Ilha B:** snapshot estático com identidade constante, avatar GitHub exato e cinco destinos; `details/summary` permite abertura por teclado sem JS.
+- **Ilha C aplicada:** mesma paleta aprovada (`surface`, `surface-hover`, `foreground`, `muted`, `accent`, `rule`), sombra e Manrope, restritas à navegação. Nome curto e avatar exato (40px); subtítulo de 12px indica a seção atual. A nota de posicionamento fica sob os destinos, em 12px/20px. Ícones SVG geométricos têm traço de 1,5px, 18px nos links e 22px no botão de 44px.
+- **Geometria C:** compacta até 322×60px, largura limitada a viewport−32px; aberta até 404px. Altura natural observada de 365px em 768/1440/1920px e 385px em 320/375px pela quebra da nota, sem altura fixa para esconder conteúdo. Centro/topo permanecem estáveis: 32px a partir de 900px, 16px abaixo, acrescidos de safe-area. Painel alto tem scroll interno. Itens usam raio de 12px (B: 10px), alvo mínimo de 48px; “Atual” usa 11px e violeta (B: 12px e cinza). O foco usa contorno violeta de 3px com offset −3px, voltado para dentro para evitar recorte pelo overflow da cápsula (B: offset externo de 4px).
+- **Interação C:** abertura 420ms e fechamento 340ms, curva (0.22, 1, 0.36, 1); filhos entram em 160ms após 80ms, stagger de 30ms e deslocamento de 8px, saem em 100ms. Novo comando reverte sem fila; foco em um destino resolve imediatamente a geometria. Escape retorna ao botão; clique externo/saída de foco fecham; links focam destinos. Reduced motion em execução aplica estados imediatos; no-JS preserva links visíveis em fluxo. Observers, listeners e animações têm cleanup. Os timings são escolhas de implementação, não easing extraído do vídeo.
 - **CTA principal e discreto:** links reais, altura mínima de 48px; hover do principal muda para violeta preservando tinta escura.
 - **Link de case/contato:** sublinhado e alvo mínimo de 44px; foco visível com contorno de 3px e offset de 4px. Na faixa clara o contorno usa tinta.
 - **Projetos:** imagens reais de [media-audit](docs/media-audit), com dimensões, alt e legenda. Origem, contexto e permissões em [MEDIA_ASSETS](docs/MEDIA_ASSETS.md).
 - **Competências:** lista sem porcentagens, cada grupo acompanhado por evidência de uso.
 - **Arco:** SVG decorativo oculto da árvore acessível; não substitui conteúdo nem controla a navegação.
 
-O sidecar reproduz apenas exemplos existentes; não acrescenta inputs, formulários, chips ou cards ao produto. Seus snippets são amostras do protótipo, não componentes prontos para integrar ao React.
+O sidecar preserva os snippets de B como amostras documentais e registra a aplicação C em `extensions.appliedNavigation`; não acrescenta inputs, formulários, chips ou cards ao produto. Snippets não são componentes prontos para integrar ao React. As diferenças de hero/paleta geral visíveis atrás da ilha são o código anterior preservado, fora do escopo C.
 
 ## Do's and Don'ts
 

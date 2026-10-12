@@ -1,8 +1,10 @@
 # Componentes — especificação B
 
-Propostas dependentes da revisão B. [Tokens](DESIGN_SYSTEM.md), [movimento](MOTION_SPEC.md), [direção](VISUAL_DIRECTION.md). Protótipos não substituem componentes existentes.
+Direção B aprovada. Ilha C implementada e validada em [PHASE_C_REVIEW](PHASE_C_REVIEW.md); demais componentes abaixo aguardam seus gates. [Tokens](DESIGN_SYSTEM.md), [movimento](MOTION_SPEC.md), [direção](VISUAL_DIRECTION.md). Protótipos preservam a composição aprovada; não comprovam as timelines futuras.
 
 ## Ilha / C
+
+Resultado medido:322×60→404×365 desktop;320px:288×385 aberta;375px:343×385. Altura intrínseca. Subtítulo mostra seção atual; papel profissional fica na nota12px/20px. Foco3px interno (offset−3px) preserva visibilidade dentro do clipping. Demais alvos da tabela foram mantidos.
 
 | Estado    | Desktop≥900 px                                          | Mobile320–599 px                                               |
 | --------- | ------------------------------------------------------- | -------------------------------------------------------------- |
@@ -15,7 +17,7 @@ Mesma superfície e cabeçalho, centro/topo invariantes. Não esticar letras/ava
 
 Início/Projetos/Sobre/Competências/Contato correspondem aos IDs existentes. Ativo tem fundo, texto “Atual” e aria-current=location. SVGs geométricos traço1,5 px, sem nova biblioteca. Botão com nome/aria-expanded/controls, não role menu.
 
-Clique/toque/Enter/Espaço alternam. Escape fecha e retorna foco; link fecha/foca destino; saída de foco/clique externo não roubam foco. Resolver foco antes de inert. Comando reverte animação sem fila. Sem trap/body lock. Reduced imediato; no-JS mantém destinos. Reusar handlers/observer existentes. B usa details/summary instantâneo para geometria; contratos Escape/observer/FLIP serão C.
+Clique/toque/Enter/Espaço alternam. Escape fecha e retorna foco; link fecha/foca destino; saída de foco/clique externo não roubam foco. Resolver foco antes de inert. Comando reverte animação sem fila. Sem trap/body lock. Reduced imediato; no-JS mantém destinos. Reusar handlers/observer existentes. B usa details/summary instantâneo para geometria; C implementa os contratos de interação com medição dimensional/Motion, sem FLIP com scale.
 
 ## Hero / D
 

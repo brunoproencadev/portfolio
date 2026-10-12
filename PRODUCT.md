@@ -16,7 +16,7 @@ Portfólio pessoal de um desenvolvedor em formação que aprende construindo apl
 
 ## Capabilities and Constraints
 
-Preservar o projeto Next/React existente, três cases, dados separados, SEO, links e acessibilidade. Redesign por gates A–I; B autorizada por “Pode começar a fase B”. Nesta fase apenas direção de arte, especificações e protótipos documentais isolados. Nenhum push/deploy autorizado.
+Preservar o projeto Next/React existente, três cases, dados separados, SEO, links e acessibilidade. Redesign por gates A–I; B aprovada e C autorizada pelo gate explícito, concluída em2026-10-12. Navegação dimensional validada; demais superfícies aguardam D–I. Nenhum push/deploy autorizado.
 
 ## Brand Commitments
 
