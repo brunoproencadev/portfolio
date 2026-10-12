@@ -1,6 +1,12 @@
-# Handoff — redesign cinematográfico, Fase B
+# Handoff — redesign cinematográfico, Fase C
 
-## Estado vigente — 2026-10-12
+## Estado vigente C — 2026-10-12
+
+B aprovada e C autorizada pelo usuário com “Continue” em resposta ao pedido explícito de aprovação de B e início de C. A retomada confirmou que implementaria somente C. Baseline limpo a7955bf; branch redesign/cinematic-portfolio e origin preservados. Nenhum push/deploy autorizado. D–I aguardam gates individuais.
+
+C em validação/revisão: preserva destinos/observer/semântica e implementa cápsula dimensional com Motion mini já instalado, avatar autêntico e fonte local licenciada. Hero, intro, projetos, favicon, SEO, conteúdo e dependências preservados. Alterações parciais herdadas desta mesma tarefa foram completadas, sem incorporar trabalho alheio. A evidência final e os SHAs serão registrados ao encerrar C.
+
+## Histórico B — estado ao encerrar 2026-10-12
 
 B autorizada explicitamente por “Pode começar a fase B”. Baseline limpo 72d5877, branch redesign/cinematic-portfolio, origin preservado. Protótipos documentais em docs/design-prototype; fonte Manrope local licenciada. Produção/src/testes/config/lock intactos; nenhum push/deploy. C–I não autorizados.
 

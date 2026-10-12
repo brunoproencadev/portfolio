@@ -1,6 +1,6 @@
 # Continuidade
 
-Redesign vigente: A concluída em 72d5877; B autorizada por “Pode começar a fase B”, em 2026-10-11. Ler AGENTS.md, docs/HANDOFF.md, docs/VISUAL_DIRECTION.md, docs/COMPONENT_SPEC.md, docs/PHASE_B_REVIEW.md, docs/REFERENCE_ANALYSIS.md e docs/MOTION_SPEC.md. BRAND/DESIGN_SYSTEM especificam o redesign proposto; a aplicação permanece anterior. B concluída para revisão do usuário; protótipos em docs/design-prototype, evidências em docs/PHASE_B_REVIEW.md. Aguardar aprovação visual e autorização explícita de C. C–I exigem gates individuais; sem push/deploy autorizado.
+Redesign vigente: A concluída em 72d5877; B autorizada por “Pode começar a fase B”, em 2026-10-11. Ler AGENTS.md, docs/HANDOFF.md, docs/VISUAL_DIRECTION.md, docs/COMPONENT_SPEC.md, docs/PHASE_B_REVIEW.md, docs/REFERENCE_ANALYSIS.md e docs/MOTION_SPEC.md. BRAND/DESIGN_SYSTEM especificam a direção aprovada; somente a navegação migra em C. B aprovada e C autorizada pelo “Continue” em resposta ao gate explícito, em 2026-10-12; protótipos em docs/design-prototype, evidências B em docs/PHASE_B_REVIEW.md. C em implementação/validação; D–I exigem gates individuais. Sem push/deploy autorizado.
 
 Fonte de produto: docs/PRD.md. Pesquisa: docs/PROFILE_RESEARCH.md. Conteúdo: docs/CONTENT.md.
 Fonte de estado: docs/TASKS.md e docs/HANDOFF.md. Evidências: docs/VERIFICATION.md.

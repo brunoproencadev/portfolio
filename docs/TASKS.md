@@ -11,8 +11,8 @@
 - [x] Gate B: autorizado pelo usuário em 2026-10-11, “Pode começar a fase B”.
 - [x] B: direção, fonte licenciada, BRAND/DESIGN_SYSTEM, especificações e protótipos desktop/mobile.
 - [x] Fechar revisão B, evidências e commits; ship no escopo estático, dois P3 resolvidos.
-- [ ] Gate C: aguardar aprovação visual de B e autorização explícita para implementar a ilha.
-- [ ] C: Dynamic Island; gate próprio após B.
+- [x] Gate C: B aprovada e C autorizada pelo “Continue” em resposta ao pedido explícito do gate, 2026-10-12.
+- [ ] C: Dynamic Island implementada, em validação final e revisão independente; fechar evidências/commits.
 - [ ] D: hero cinematográfico; gate próprio após C.
 - [ ] E: intro; gate próprio após D.
 - [ ] F: scroll narrativo e mídia real; gate próprio após E.
