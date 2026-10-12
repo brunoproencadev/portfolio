@@ -3,14 +3,8 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { profile, sections, type SectionId } from "@/data/portfolio";
 import Image from "next/image";
-import localFont from "next/font/local";
+import { manrope } from "@/fonts/manrope";
 import { useIslandMotion } from "./use-island-motion";
-
-const manrope = localFont({
-  src: "../../fonts/manrope-latin-variable.woff2",
-  display: "swap",
-  weight: "400 800",
-});
 
 const icons: Record<SectionId, string> = {
   inicio: "m3 11 9-8 9 8M5 9v12h5v-7h4v7h5V9",

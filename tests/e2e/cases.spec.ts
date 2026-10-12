@@ -213,7 +213,7 @@ test("client navigation discards home motion and does not replay the intro", asy
     page.getByRole("button", { name: "Menu", exact: true }),
   ).toBeVisible();
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
-  await expect(page.locator(".orbit-center")).not.toHaveAttribute(
+  await expect(page.locator(".hero-arc")).not.toHaveAttribute(
     "style",
     /transform/,
   );

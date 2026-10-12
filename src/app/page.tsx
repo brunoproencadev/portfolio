@@ -1,6 +1,6 @@
 import { ProjectIllustration } from "@/components/projects/project-illustration";
 import { SiteNavigation } from "@/components/navigation/site-navigation";
-import { HomeMotion } from "@/components/motion/home-motion";
+import { CinematicHero } from "@/components/sections/cinematic-hero";
 import Link from "next/link";
 import { profile, projects, skills } from "@/data/portfolio";
 
@@ -12,52 +12,7 @@ export default function Home() {
       </a>
       <SiteNavigation />
       <main id="conteudo" tabIndex={-1}>
-        <section className="hero page-container" aria-labelledby="inicio">
-          <div className="hero-copy">
-            <p className="eyebrow">{profile.position}</p>
-            <h1 id="inicio" tabIndex={-1}>
-              {profile.name}
-            </h1>
-            <p className="hero-headline">
-              Construir. Observar. <em>Evoluir.</em>
-            </p>
-            <p className="hero-fields">{profile.fields}</p>
-            <p className="hero-introduction">{profile.introduction}</p>
-            <div className="link-row">
-              <a className="button-link button-primary" href="#projetos">
-                Explorar projetos <span aria-hidden="true">↘</span>
-              </a>
-              <a className="text-link" href={profile.links[0].href}>
-                GitHub <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-          <figure className="hero-notebook">
-            <figcaption className="eyebrow">
-              Caderno de engenharia / 01
-            </figcaption>
-            <div className="notebook-orbit" aria-hidden="true">
-              <div className="orbit-ring orbit-one" />
-              <div className="orbit-ring orbit-two" />
-              <span className="orbit-center">observar</span>
-              <span className="orbit-note note-one">entrada</span>
-              <span className="orbit-note note-two">contexto</span>
-              <span className="orbit-note note-three">evidência</span>
-            </div>
-            <HomeMotion />
-            <p className="notebook-caption">
-              Da ideia à evidência.
-              <br />
-              <span>Esquema conceitual autoral</span>
-            </p>
-          </figure>
-          <div className="hero-footnote">
-            <span>Software / Percepção / Experimentação</span>
-            <a className="text-link" href="#projetos">
-              Conheça os trabalhos <span aria-hidden="true">↓</span>
-            </a>
-          </div>
-        </section>
+        <CinematicHero />
 
         <section className="section page-container" aria-labelledby="projetos">
           <div className="section-heading">

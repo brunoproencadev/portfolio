@@ -127,7 +127,7 @@ test("outside pointer resolves panel focus without taking the destination focus"
   const nav = page.locator(".capsule");
   await nav.locator("button").click();
   await nav.getByRole("link", { name: "Contato", exact: true }).focus();
-  await page.getByRole("heading", { name: "Bruno Proença Silva" }).click();
+  await page.locator(".hero-end").click();
   await expect(nav.locator("button")).toHaveAttribute("aria-expanded", "false");
   expect(
     await page

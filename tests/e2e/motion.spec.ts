@@ -3,7 +3,7 @@ import { expect, test, type Page, type Route } from "@playwright/test";
 async function interceptSequence(
   page: Page,
   handle: (route: Route) => Promise<void>,
-  marker = '".orbit-note"',
+  marker = '".hero-title-line"',
 ) {
   await page.route("**/_next/static/chunks/*.js", async (route) => {
     const response = await route.fetch();
@@ -18,22 +18,16 @@ async function freezeClock(page: Page) {
   await page.clock.pauseAt(now);
 }
 
-test("intro completes in 1.2s, keeps content available and does not replay", async ({
+test("hero entrance completes within 1.2s, keeps content available and does not replay", async ({
   page,
 }, testInfo) => {
   await freezeClock(page);
   await page.goto("/");
   const skip = page.getByRole("button", { name: "Pular intro" });
   await expect(skip).toBeVisible();
-  await expect(page.locator(".orbit-center")).toHaveAttribute(
-    "style",
-    /translate/,
-  );
+  await expect(page.locator(".hero-arc")).toHaveAttribute("style", /translate/);
   await page.clock.runFor(32);
-  await expect(page.locator(".orbit-center")).toHaveAttribute(
-    "style",
-    /transform/,
-  );
+  await expect(page.locator(".hero-arc")).toHaveAttribute("style", /transform/);
   await expect(page.locator("#inicio")).toBeVisible();
   expect(
     await page
@@ -45,7 +39,7 @@ test("intro completes in 1.2s, keeps content available and does not replay", asy
   await expect(skip).toBeVisible();
   await page.clock.runFor(900);
   await expect(skip).toBeHidden();
-  await expect(page.locator(".orbit-center")).not.toHaveAttribute(
+  await expect(page.locator(".hero-arc")).not.toHaveAttribute(
     "style",
     /transform/,
   );
@@ -153,7 +147,7 @@ test("initial reduced motion avoids animation chunks and capsule motion", async 
     const response = await route.fetch();
     const body = await response.text();
     loadedAnimation ||=
-      body.includes('".orbit-note"') ||
+      body.includes('".hero-title-line"') ||
       body.includes('".project-artwork, .about-copy, .skill-row"');
     await route.fulfill({ response });
   });
@@ -202,15 +196,9 @@ test("denied storage does not stop the intro from completing", async ({
   });
   await freezeClock(page);
   await page.goto("/");
-  await expect(page.locator(".orbit-center")).toHaveAttribute(
-    "style",
-    /translate/,
-  );
+  await expect(page.locator(".hero-arc")).toHaveAttribute("style", /translate/);
   await page.clock.runFor(32);
-  await expect(page.locator(".orbit-center")).toHaveAttribute(
-    "style",
-    /transform/,
-  );
+  await expect(page.locator(".hero-arc")).toHaveAttribute("style", /transform/);
   await page.clock.runFor(1300);
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
   await expect(page.locator("#inicio")).toBeVisible();
@@ -253,7 +241,7 @@ test("independent 2.2s timeout rejects a late animation import", async ({
   release();
   await page.waitForLoadState("networkidle");
   await page.clock.runFor(1500);
-  await expect(page.locator(".orbit-center")).not.toHaveAttribute(
+  await expect(page.locator(".hero-arc")).not.toHaveAttribute(
     "style",
     /transform/,
   );
@@ -271,18 +259,12 @@ test("direct hashes and live reduced motion bypass or cancel the intro", async (
   await page.evaluate(() => sessionStorage.clear());
   await freezeClock(page);
   await page.goto("/");
-  await expect(page.locator(".orbit-center")).toHaveAttribute(
-    "style",
-    /translate/,
-  );
+  await expect(page.locator(".hero-arc")).toHaveAttribute("style", /translate/);
   await page.clock.runFor(32);
-  await expect(page.locator(".orbit-center")).toHaveAttribute(
-    "style",
-    /transform/,
-  );
+  await expect(page.locator(".hero-arc")).toHaveAttribute("style", /transform/);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
-  await expect(page.locator(".orbit-center")).not.toHaveAttribute(
+  await expect(page.locator(".hero-arc")).not.toHaveAttribute(
     "style",
     /transform/,
   );

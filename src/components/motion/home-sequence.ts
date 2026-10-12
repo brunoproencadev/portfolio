@@ -6,13 +6,25 @@ export function startIntro(root: HTMLElement, onComplete: () => void) {
     context.add(() => {
       gsap
         .timeline({ onComplete, defaults: { ease: "power2.out" } })
-        .from(".orbit-center", { y: 16, duration: 0.9 })
-        .from(".orbit-note", { x: 16, duration: 0.6, stagger: 0.1 }, 0.4)
         .from(
-          ".hero-copy > .eyebrow, .hero-copy h1, .hero-headline",
-          { y: 16, duration: 0.7, stagger: 0.1 },
+          ".hero-arc",
+          { y: 30, scale: 1.04, opacity: 0.25, duration: 0.8 },
           0,
-        );
+        )
+        .from(
+          ".hero-arc-edge",
+          { attr: { "stroke-width": 12 }, duration: 0.8 },
+          0,
+        )
+        .from(
+          ".hero-title-line",
+          { yPercent: 110, duration: 0.64, stagger: 0.1 },
+          0.12,
+        )
+        .from(".hero-position", { y: 12, opacity: 0, duration: 0.35 }, 0.4)
+        .from(".hero-description", { y: 10, opacity: 0, duration: 0.4 }, 0.5)
+        .from(".hero-actions", { y: 10, opacity: 0, duration: 0.36 }, 0.64)
+        .from(".hero-end", { opacity: 0, duration: 0.4 }, 0.6);
     });
   } catch (error) {
     context.revert();

@@ -47,7 +47,7 @@ test("outside click and leaving focus close without stealing the new focus", asy
   );
   await page.goto("/");
   await page.getByRole("button", { name: "Menu", exact: true }).click();
-  await page.getByRole("heading", { name: "Bruno Proença Silva" }).click();
+  await page.locator(".hero-end").click();
   await expect(
     page.getByRole("button", { name: "Menu", exact: true }),
   ).toHaveAttribute("aria-expanded", "false");

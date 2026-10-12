@@ -1,6 +1,12 @@
 # Especificação de movimento — observações A e decisões B
 
-Base observada: [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md). B aprovada; M01 implementado e validado em C, fonte d7e377f: abertura420ms/fechamento340ms, filhos160ms/delay80ms/stagger30ms/y8px e saída100ms. Motion mini mede dimensões naturais; reduced/foco/resize/falha terminam imediatamente. [Evidências e limites](PHASE_C_REVIEW.md). M02–M05 continuam propostas para D–G; hero1000ms e intro1450ms não estão implementados. Faixas abaixo preservam a proposta A, sem alegar easing original conhecido.
+## Entrada D implementada
+
+Timeline total1000ms, ease power2.out: arco HTML y30/scale1,04/opacity0,25→estado final em800ms; borda SVG stroke-width12→2 no mesmo intervalo. Linhas do h1 yPercent110→0 em640ms, início120ms e stagger100ms. Posição400–750ms, descrição500–900ms, ações640–1000ms; fechamento editorial600–1000ms. As durações são autorais fundamentadas na ordem R2, não easing original medido.
+
+HomeMotion preserva cancelamento por interação/foco/hash/reduced/pagehide, skip, sessão e fallback sem biblioteca. Contexto GSAP é revertido ao terminar/cancelar; não deixa transforms inline residuais. Mobile mantém a entrada curta; reduced usa composição estática. Saudação e passagem E ainda não existem. Frames controlados e gravações reais em hero-review, testes em hero.spec/motion.spec.
+
+Base observada: [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md). B aprovada; M01 implementado e validado em C, fonte d7e377f: abertura420ms/fechamento340ms, filhos160ms/delay80ms/stagger30ms/y8px e saída100ms. Motion mini mede dimensões naturais; reduced/foco/resize/falha terminam imediatamente. [Evidências e limites](PHASE_C_REVIEW.md). M02 entrada do hero implementada em D; M03–M05 e transição de scroll continuam propostas E–G. Faixas abaixo preservam a proposta A, sem alegar easing original conhecido.
 
 ## Responsabilidades e invariantes
 

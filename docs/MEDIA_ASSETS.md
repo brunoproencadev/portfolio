@@ -1,5 +1,11 @@
 # Inventário de mídia — auditoria A e protótipo B
 
+## Hero — Fase D, 2026-10-12
+
+Manrope local já licenciada em C agora também serve o hero, com declaração compartilhada src/fonts/manrope.ts; arquivo/licença/hash permanecem iguais. Arco SVG de três paths é decoração autoral geométrica derivada do estudo B/R2, não screenshot, evidência de projeto ou imagem pessoal. Ícones de setas SVG também são autorais. Nenhum download ou asset de terceiros adicionado em D.
+
+hero-review/*.jpg são capturas reais do build local em Chromium; pranchas recorded-sequence usam frames de vídeos reais25fps com labels/resize apenas para comparação. entry-* são estados com relógio controlado. WebMs originais em .audit/phase-d permanecem locais, fora do Git; manifesto registra caminhos/hashes. Imagens documentais não são importadas pela aplicação.
+
 Pesquisa em 2026-10-11, GitHub público e Chromium 156.0.8078.4. Nenhuma mídia nova integrada à aplicação. Cópias em `docs/media-audit` são evidência de auditoria; futuros assets de produção usarão `public/images/profile`, `experiences` e `projects/<projeto>` quando a fase correspondente for aprovada. Não criar esses diretórios vazios antecipadamente.
 
 [Manifesto durável](media-audit/manifest.json): SHAs dos repos/arquivos, URLs exatas de download, dimensões, bytes e SHA-256 das cópias originais. PNGs/gravações completas e relatórios brutos permanecem em `.audit/phase-a/media`, ignorados. Cópias documentais JPEG q85 preservam aspecto (até 960px de largura/2400px de altura), sem modificar interface/fotos. Não são os arquivos finais para servir em produção; gerar WebP/AVIF responsivos a partir da fonte original posteriormente.

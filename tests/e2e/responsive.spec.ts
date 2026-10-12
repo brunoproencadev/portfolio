@@ -22,17 +22,9 @@ for (const width of [320, 375, 768, 1440]) {
       "data-animating",
     );
     await expectNoOverflow(page);
-    expect(
-      await page.locator(".notebook-orbit").evaluate((element) => {
-        const frame = element.getBoundingClientRect();
-        return [...element.querySelectorAll(".orbit-ring")].every((ring) => {
-          const bounds = ring.getBoundingClientRect();
-          return (
-            bounds.top >= frame.top - 1 && bounds.bottom <= frame.bottom + 1
-          );
-        });
-      }),
-    ).toBe(true);
+    const light = await page.locator(".hero-light").boundingBox();
+    expect(light!.x).toBeGreaterThanOrEqual(0);
+    expect(light!.x + light!.width).toBeLessThanOrEqual(width);
     expect(
       await page.locator("a, button").evaluateAll((elements) =>
         elements

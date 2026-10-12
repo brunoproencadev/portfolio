@@ -1,5 +1,11 @@
 # Arquitetura e decisões
 
+## Hero cinematográfico — D, 2026-10-12
+
+CinematicHero é Server Component; mantém profile, h1 único, #inicio e CTAs. HomeMotion continua a ilha client responsável por elegibilidade, import dinâmico, sessão, cancelamento e watchdog2,2s. startIntro usa GSAP context/revert no wrapper HTML do arco e nas linhas/apoios; Motion permanece exclusivo da cápsula. Fonte local Manrope compartilhada em src/fonts/manrope.ts, sem duplicar declaração ou adicionar dependências.
+
+O caderno orbital foi removido porque sua composição contradizia R2/B; somente esse markup/CSS e a entrada foram reconstruídos. Luz SVG em três camadas, blur estático e stroke-width animado, clipping local. Header mantém96px no fluxo para estabilidade de hidratação. Conteúdo SSR legível e natural; min-height não recorta texto. Dados, SEO, rotas, estilo dos cases e home-reveals preservados. Storytelling e mídia de projetos aguardam F.
+
 ## Ilha dimensional — C, 2026-10-12
 
 SiteNavigation preserva estado React, destinos, observer da seção, âncoras e fallback SSR/no-JS. useIslandMotion possui o ref e o ciclo de vida local; Motion mini (dependência existente) interpola width/height/radius e opacity/translateY dos filhos. Medição antes do paint usa altura natural e painel com largura expandida estável; o texto/avatar nunca recebe scale. Custo de layout restrito à pequena superfície fixa, sem listener de scroll nem loop permanente.
