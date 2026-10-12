@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-12T12:52:55.408Z",
+  "title": "Design System: Bruno Proença Silva — protótipo B",
+  "extensions": {
+    "scope": "Proposta B aguardando aprovação visual; não representa src nem produção.",
+    "authority": "docs/DESIGN_SYSTEM.md; snapshot extraído de docs/design-prototype/style.css e index.html.",
+    "tonalRampNote": "Amostras OKLCH sintetizadas para o painel com chroma/hue constantes e luz de 15% a 95%; não são tokens aprovados nem cores usadas no protótipo. Extremos podem sofrer gamut mapping.",
+    "fontNote": "Manrope local licenciada no protótipo; snippets usam fallback quando a família não está carregada. Não comprova integração no app.",
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Negro de fundo",
+        "tonalRamp": [
+          "oklch(15.00% 0.00902 273.17)",
+          "oklch(26.43% 0.00902 273.17)",
+          "oklch(37.86% 0.00902 273.17)",
+          "oklch(49.29% 0.00902 273.17)",
+          "oklch(60.71% 0.00902 273.17)",
+          "oklch(72.14% 0.00902 273.17)",
+          "oklch(83.57% 0.00902 273.17)",
+          "oklch(95.00% 0.00902 273.17)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Cinza da cápsula",
+        "tonalRamp": [
+          "oklch(15.00% 0.00752 285.83)",
+          "oklch(26.43% 0.00752 285.83)",
+          "oklch(37.86% 0.00752 285.83)",
+          "oklch(49.29% 0.00752 285.83)",
+          "oklch(60.71% 0.00752 285.83)",
+          "oklch(72.14% 0.00752 285.83)",
+          "oklch(83.57% 0.00752 285.83)",
+          "oklch(95.00% 0.00752 285.83)"
+        ]
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Cinza de interação",
+        "tonalRamp": [
+          "oklch(15.00% 0.01242 285.66)",
+          "oklch(26.43% 0.01242 285.66)",
+          "oklch(37.86% 0.01242 285.66)",
+          "oklch(49.29% 0.01242 285.66)",
+          "oklch(60.71% 0.01242 285.66)",
+          "oklch(72.14% 0.01242 285.66)",
+          "oklch(83.57% 0.01242 285.66)",
+          "oklch(95.00% 0.01242 285.66)"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Branco de leitura",
+        "tonalRamp": [
+          "oklch(15.00% 0.01606 293.76)",
+          "oklch(26.43% 0.01606 293.76)",
+          "oklch(37.86% 0.01606 293.76)",
+          "oklch(49.29% 0.01606 293.76)",
+          "oklch(60.71% 0.01606 293.76)",
+          "oklch(72.14% 0.01606 293.76)",
+          "oklch(83.57% 0.01606 293.76)",
+          "oklch(95.00% 0.01606 293.76)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Cinza lavanda",
+        "tonalRamp": [
+          "oklch(15.00% 0.02268 294.47)",
+          "oklch(26.43% 0.02268 294.47)",
+          "oklch(37.86% 0.02268 294.47)",
+          "oklch(49.29% 0.02268 294.47)",
+          "oklch(60.71% 0.02268 294.47)",
+          "oklch(72.14% 0.02268 294.47)",
+          "oklch(83.57% 0.02268 294.47)",
+          "oklch(95.00% 0.02268 294.47)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Violeta de foco",
+        "tonalRamp": [
+          "oklch(15.00% 0.12950 295.87)",
+          "oklch(26.43% 0.12950 295.87)",
+          "oklch(37.86% 0.12950 295.87)",
+          "oklch(49.29% 0.12950 295.87)",
+          "oklch(60.71% 0.12950 295.87)",
+          "oklch(72.14% 0.12950 295.87)",
+          "oklch(83.57% 0.12950 295.87)",
+          "oklch(95.00% 0.12950 295.87)"
+        ]
+      },
+      "accent-deep": {
+        "role": "primary",
+        "displayName": "Violeta do halo",
+        "tonalRamp": [
+          "oklch(15.00% 0.19566 290.37)",
+          "oklch(26.43% 0.19566 290.37)",
+          "oklch(37.86% 0.19566 290.37)",
+          "oklch(49.29% 0.19566 290.37)",
+          "oklch(60.71% 0.19566 290.37)",
+          "oklch(72.14% 0.19566 290.37)",
+          "oklch(83.57% 0.19566 290.37)",
+          "oklch(95.00% 0.19566 290.37)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel claro",
+        "tonalRamp": [
+          "oklch(15.00% 0.00806 293.91)",
+          "oklch(26.43% 0.00806 293.91)",
+          "oklch(37.86% 0.00806 293.91)",
+          "oklch(49.29% 0.00806 293.91)",
+          "oklch(60.71% 0.00806 293.91)",
+          "oklch(72.14% 0.00806 293.91)",
+          "oklch(83.57% 0.00806 293.91)",
+          "oklch(95.00% 0.00806 293.91)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta escura",
+        "tonalRamp": [
+          "oklch(15.00% 0.01769 289.88)",
+          "oklch(26.43% 0.01769 289.88)",
+          "oklch(37.86% 0.01769 289.88)",
+          "oklch(49.29% 0.01769 289.88)",
+          "oklch(60.71% 0.01769 289.88)",
+          "oklch(72.14% 0.01769 289.88)",
+          "oklch(83.57% 0.01769 289.88)",
+          "oklch(95.00% 0.01769 289.88)"
+        ]
+      },
+      "paper-muted": {
+        "role": "neutral",
+        "displayName": "Legenda no papel",
+        "tonalRamp": [
+          "oklch(15.00% 0.02154 299.57)",
+          "oklch(26.43% 0.02154 299.57)",
+          "oklch(37.86% 0.02154 299.57)",
+          "oklch(49.29% 0.02154 299.57)",
+          "oklch(60.71% 0.02154 299.57)",
+          "oklch(72.14% 0.02154 299.57)",
+          "oklch(83.57% 0.02154 299.57)",
+          "oklch(95.00% 0.02154 299.57)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Separador discreto",
+        "tonalRamp": [
+          "oklch(15.00% 0.01758 289.97)",
+          "oklch(26.43% 0.01758 289.97)",
+          "oklch(37.86% 0.01758 289.97)",
+          "oklch(49.29% 0.01758 289.97)",
+          "oklch(60.71% 0.01758 289.97)",
+          "oklch(72.14% 0.01758 289.97)",
+          "oklch(83.57% 0.01758 289.97)",
+          "oklch(95.00% 0.01758 289.97)"
+        ]
+      },
+      "control": {
+        "role": "neutral",
+        "displayName": "Limite de controle",
+        "tonalRamp": [
+          "oklch(15.00% 0.02455 299.92)",
+          "oklch(26.43% 0.02455 299.92)",
+          "oklch(37.86% 0.02455 299.92)",
+          "oklch(49.29% 0.02455 299.92)",
+          "oklch(60.71% 0.02455 299.92)",
+          "oklch(72.14% 0.02455 299.92)",
+          "oklch(83.57% 0.02455 299.92)",
+          "oklch(95.00% 0.02455 299.92)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Nome",
+        "purpose": "Nome completo no hero."
+      },
+      "headline": {
+        "displayName": "Seção",
+        "purpose": "Títulos de seção."
+      },
+      "title": {
+        "displayName": "Projeto",
+        "purpose": "Nome dos projetos."
+      },
+      "body": {
+        "displayName": "Corpo",
+        "purpose": "Leitura corrente."
+      },
+      "label": {
+        "displayName": "CTA",
+        "purpose": "Links com aparência de botão."
+      },
+      "caption": {
+        "displayName": "Legenda",
+        "purpose": "Contexto e limites das mídias."
+      }
+    },
+    "shadows": [
+      {
+        "name": "island",
+        "value": "0 16px 48px #0007",
+        "purpose": "Elevação ambiente da cápsula."
+      },
+      {
+        "name": "industry-image",
+        "value": "0 16px 36px #18172028",
+        "purpose": "Captura real sobre a faixa clara."
+      }
+    ],
+    "motion": [],
+    "motionNote": "B não implementa animações. Motion/GSAP e timings são propostas futuras em docs/MOTION_SPEC.md.",
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "599px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "899px"
+      },
+      {
+        "name": "composition-max",
+        "value": "1100px"
+      },
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      }
+    ],
+    "focus": {
+      "width": "3px",
+      "offset": "4px",
+      "dark": "var(--accent)",
+      "light": "var(--ink)"
+    },
+    "mediaProvenance": "docs/MEDIA_ASSETS.md e docs/media-audit; nenhum raster sintético incluído no sidecar."
+  },
+  "components": [
+    {
+      "name": "CTA principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Link do hero para os projetos, no protótipo B.",
+      "html": "<a class=\"ds-button ds-primary\" href=\"#projetos\">Explorar projetos <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4v16m-6-6 6 6 6-6\"/></svg></a>",
+      "css": ".ds-button{min-height:48px;padding:12px 20px;display:inline-flex;align-items:center;gap:20px;border-radius:8px;text-decoration:none;font:600 14px/1.7 Manrope,Arial,sans-serif}.ds-button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.ds-button:focus-visible{outline:3px solid var(--accent,#bda4ff);outline-offset:4px}.ds-primary{background:var(--foreground,#f5f3ff);color:var(--ink,#181720)}.ds-primary:hover{background:var(--accent,#bda4ff);color:var(--ink,#181720)}"
+    },
+    {
+      "name": "CTA discreto",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Link secundário do hero para o GitHub.",
+      "html": "<a class=\"ds-button ds-quiet\" href=\"https://github.com/brunoproencadev\">GitHub <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
+      "css": ".ds-button{min-height:48px;padding:12px 20px;display:inline-flex;align-items:center;gap:20px;border-radius:8px;text-decoration:none;font:600 14px/1.7 Manrope,Arial,sans-serif}.ds-button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.ds-button:focus-visible{outline:3px solid var(--accent,#bda4ff);outline-offset:4px}.ds-quiet{padding-inline:12px;color:var(--foreground,#f5f3ff)}.ds-quiet:hover{color:var(--accent,#bda4ff)}"
+    },
+    {
+      "name": "Destino atual da ilha",
+      "kind": "nav",
+      "refersTo": "navigation-item-current",
+      "description": "Amostra do item atual; estado inclui texto além da cor.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a href=\"#inicio\" aria-current=\"location\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m3 11 9-8 9 8M5 9v12h5v-7h4v7h5V9\"/></svg>Início <small>Atual</small></a></nav>",
+      "css": ".ds-nav{max-width:380px;padding:8px 12px;background:var(--surface,#202024);font:400 14px/1.7 Manrope,Arial,sans-serif}.ds-nav a{min-height:48px;padding:10px 12px;display:flex;gap:14px;align-items:center;border-radius:10px;text-decoration:none;color:var(--foreground,#f5f3ff)}.ds-nav a:hover,.ds-nav a[aria-current]{background:var(--surface-hover,#303037)}.ds-nav a:focus-visible{outline:3px solid var(--accent,#bda4ff);outline-offset:4px}.ds-nav svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.ds-nav small{margin-left:auto;font-size:12px;color:var(--muted,#b8b5c5)}"
+    },
+    {
+      "name": "Link de case",
+      "kind": "custom",
+      "description": "Link sublinhado de leitura do projeto.",
+      "html": "<a class=\"ds-text-link\" href=\"https://brunoproencasilva.vercel.app/projetos/robosense-lab\">Ler o case</a>",
+      "css": ".ds-text-link{display:inline-flex;align-items:center;min-height:44px;margin:16px 20px 0 0;font:400 14px/1.7 Manrope,Arial,sans-serif;color:var(--foreground,#f5f3ff);text-underline-offset:4px}.ds-text-link:hover{color:var(--accent,#bda4ff)}.ds-text-link:focus-visible{outline:3px solid var(--accent,#bda4ff);outline-offset:4px}"
+    },
+    {
+      "name": "Competência com contexto",
+      "kind": "custom",
+      "description": "Linha de definição que associa tecnologia a evidência real.",
+      "html": "<dl class=\"ds-skills\"><div><dt>Percepção e experimentação</dt><dd>Python · NumPy · OpenCV · PySerial<span>Detecção e tracking experimental no RoboSense Lab.</span></dd></div></dl>",
+      "css": ".ds-skills{margin:0;color:var(--foreground,#f5f3ff);font:400 16px/1.7 Manrope,Arial,sans-serif}.ds-skills>div{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-block:28px;border-top:1px solid var(--rule,#34333d)}.ds-skills dt{font-size:20px}.ds-skills dd{margin:0}.ds-skills span{display:block;margin-top:8px;font-size:14px;color:var(--muted,#b8b5c5)}@media(max-width:599px){.ds-skills>div{grid-template-columns:1fr;gap:12px}.ds-skills dt{font-size:18px}}"
+    },
+    {
+      "name": "Borda de luz estática",
+      "kind": "custom",
+      "description": "Geometria decorativa do protótipo B; não implementa entrada ou scroll.",
+      "html": "<div class=\"ds-light\"><svg viewBox=\"0 0 1440 700\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><filter id=\"ds-halo\" x=\"-30%\" y=\"-100%\" width=\"160%\" height=\"300%\"><feGaussianBlur stdDeviation=\"24\"/></filter><filter id=\"ds-edge\" x=\"-30%\" y=\"-100%\" width=\"160%\" height=\"300%\"><feGaussianBlur stdDeviation=\"7\"/></filter></defs><path d=\"M-80 344 Q720 824 1520 344\" stroke=\"#7350d6\" stroke-width=\"55\" opacity=\".65\" filter=\"url(#ds-halo)\"/><path d=\"M-80 361 Q720 841 1520 361\" stroke=\"#bda4ff\" stroke-width=\"14\" opacity=\".8\" filter=\"url(#ds-edge)\"/><path d=\"M-80 365 Q720 845 1520 365\" stroke=\"#f5f3ff\" stroke-width=\"2\" opacity=\".9\"/></svg></div>",
+      "css": ".ds-light{background:var(--background,#08090d);overflow:clip}.ds-light svg{display:block;width:100%;height:auto;fill:none}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Horizonte e evidência",
+    "overview": "Nome sob uma borda de luz conduz a trabalho verificável, transformando curiosidade em evidência visual. Preto profundo, luz violeta interior, Manrope aberta, cápsula cinza e faixas de projeto com escalas distintas sustentam essa direção.",
+    "keyCharacteristics": [
+      "Identidade real e conteúdo em português, sustentados por evidência.",
+      "Composição escura com luz violeta e uma faixa editorial clara.",
+      "Projetos em escalas distintas, preservando as proporções das mídias.",
+      "Navegação e leitura disponíveis sem JavaScript."
+    ],
+    "rules": [
+      {
+        "name": "The Legibility Rule",
+        "body": "Texto não cruza a borda luminosa; indicação atual inclui texto e forma além da cor.",
+        "section": "colors"
+      },
+      {
+        "name": "The Real Name Rule",
+        "body": "O nome completo permanece um único h1 semântico; quebras visuais respeitam palavras inteiras.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Preservar nome, avatar exato, mídias reais, proporções e legendas com contexto.",
+      "Manter semântica, teclado, foco visível e leitura sem JavaScript.",
+      "Consultar docs/DESIGN_SYSTEM.md e os contratos de fase antes de implementar."
+    ],
+    "donts": [
+      "Inventar experiência, métricas, prêmios, disponibilidade, fotografias ou interfaces de projetos.",
+      "Tratar storyboard, snippets ou revisão estática como animações entregues.",
+      "Aplicar este snapshot a src ou produção sem autorização da fase correspondente."
+    ]
+  }
+}

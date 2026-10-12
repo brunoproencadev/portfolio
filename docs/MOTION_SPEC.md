@@ -1,6 +1,6 @@
-# Especificação de movimento — proposta da Fase A
+# Especificação de movimento — observações A e decisões B
 
-Base observada: [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md). Status: especificação para revisão; nenhuma timeline nova implementada. Valores propostos abaixo não são medições das referências nem tokens aprovados da Fase B. Sem alteração do código, o contrato implementado continua descrito em DESIGN_SYSTEM/ARCHITECTURE.
+Base observada: [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md). Status: nenhuma timeline nova implementada. DESIGN_SYSTEM/COMPONENT_SPEC registram os valores iniciais escolhidos em B (420ms abertura, 340ms fechamento, 1000ms hero e 1450ms intro), ainda sujeitos à aprovação visual do usuário e validação C–F. Faixas abaixo registram a proposta original A, não medições exatas. ARCHITECTURE descreve o código preservado; DESIGN_SYSTEM agora é o contrato proposto do redesign.
 
 ## Responsabilidades e invariantes
 

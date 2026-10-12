@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-12",
+  "kind": "Screenshots of static Phase B prototype; not motion evidence",
+  "source": "../design-prototype/index.html and states.html; authentic media provenance in ../media-audit/manifest.json",
+  "artifacts": [
+    {
+      "file": "index.html",
+      "sha256": "960c851cb8d8d6c1aa94ba38d6a51544b198326830219495c5e65fd63e53e1fa"
+    },
+    {
+      "file": "states.html",
+      "sha256": "a45bb6e4dd17c1916dd79afed32fd334b4514bf27ab7b2529b6ea633dfb6279a"
+    },
+    {
+      "file": "style.css",
+      "sha256": "824b50961bbb59abc9f28b91bd4b983b8717ea2e1a92aa86cff272c846996fe2"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "about-1440.jpg",
+      "bytes": 54888,
+      "sha256": "d4f38825f4d1008acf7be8e7b3e8761aadb0baa9554f1f82f22bae274ddebb14"
+    },
+    {
+      "file": "atelier-1440.jpg",
+      "bytes": 119052,
+      "sha256": "07f2a3dec3649b5e73293daf1a0b08b27e8c298a43bfe578308324ae630713a7"
+    },
+    {
+      "file": "contact-1440.jpg",
+      "bytes": 39001,
+      "sha256": "291b82ea09ede79e35fb5005c5bb42725532460eae0a5500448516de9ba48661"
+    },
+    {
+      "file": "home-1440.jpg",
+      "bytes": 93245,
+      "sha256": "dac3dbf69d7ffc1d73f15d0764bb7521b404e5fa60636195b8e0c0353875af0a"
+    },
+    {
+      "file": "home-1920.jpg",
+      "bytes": 127822,
+      "sha256": "83c68f07a72b427c55dfa32de43e17a1f0264718f33986b53d66405d48318628"
+    },
+    {
+      "file": "home-375-full.jpg",
+      "bytes": 288303,
+      "sha256": "fb4b738ffa751224d94687bb9b0242633abb0e4ec31404132cd87a672c7e2451"
+    },
+    {
+      "file": "home-375.jpg",
+      "bytes": 49376,
+      "sha256": "e38c363fdcd810eb68078abf51a0fd3d05f440dc6049599a6bcb0ab080b16ff9"
+    },
+    {
+      "file": "industry-1440.jpg",
+      "bytes": 127351,
+      "sha256": "136e55054e8bbd0af312acb529115de25646a05025d65aece72b6ebb663ee6ce"
+    },
+    {
+      "file": "island-open-1440.jpg",
+      "bytes": 90602,
+      "sha256": "5ea418c0fd19356761ce2ee1f3e7e11e48a04a6962c1552b9b012ae285e3caeb"
+    },
+    {
+      "file": "island-open-375.jpg",
+      "bytes": 45056,
+      "sha256": "70373ae55fac620e36618334f76eb87e185b11867904afc37b41c1f6c84744d0"
+    },
+    {
+      "file": "skills-1440.jpg",
+      "bytes": 61650,
+      "sha256": "f4f2a33b467b85240c0d89634a7662616999b5a3e6e270e17533dd7d76286604"
+    },
+    {
+      "file": "states-1440.jpg",
+      "bytes": 180042,
+      "sha256": "eb3ca69fa2194f887f451a7035866c954ca0f91254c14100755beb50e9ac92c0"
+    },
+    {
+      "file": "states-375.jpg",
+      "bytes": 156373,
+      "sha256": "5456650dab4cd3b1a40324298779bd2eadea775c40950e74485446b58ee7a456"
+    }
+  ]
+}

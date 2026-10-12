@@ -1,4 +1,4 @@
-# Inventário de mídia — Fase A
+# Inventário de mídia — auditoria A e protótipo B
 
 Pesquisa em 2026-10-11, GitHub público e Chromium 156.0.8078.4. Nenhuma mídia nova integrada à aplicação. Cópias em `docs/media-audit` são evidência de auditoria; futuros assets de produção usarão `public/images/profile`, `experiences` e `projects/<projeto>` quando a fase correspondente for aprovada. Não criar esses diretórios vazios antecipadamente.
 
@@ -47,3 +47,11 @@ Mídia adicional localizada, não baixada para produção: `gh-preview.gif` do I
 Registrar para cada asset final: origem imutável quando possível, hash/dimensões/bytes, transformações de otimização, contexto, autorização/limites, alt e consumidor real. Usar `next/image` com tamanho reservado e `sizes`, formatos modernos e carregamento tardio fora da primeira dobra. Não deformar screenshot nem remover defeito para representar função inexistente. Não carregar iframe/vídeo externo automaticamente. Alt proposto deve descrever o conteúdo verificável, por exemplo “Frame de gravação M3 com bola laranja marcada no setor Front”, sem promessa de hardware validado.
 
 Faltam as fotos pessoais e seus contextos. A pesquisa disponível está concluída; a integração dessas fotos permanece pendente para F/G, com solicitação de originais ao usuário. Não declarar esse requisito atendido apenas pela existência do avatar.
+
+## Uso documental na Fase B — 2026-10-12
+
+O protótipo em design-prototype reutiliza diretamente avatar GitHub, frame RoboSense M3, industry-week-1440-hero.jpg e atelie-repository-desktop.jpg deste inventário, sem novas cópias, filtros ou alteração dos pixels. Não integra mídia à produção e não concede direitos adicionais. Fontes, dimensões e contexto permanecem no manifesto A. Ateliê exige revisão de publicação antes de destaque público; fotos LinkedIn seguem indisponíveis.
+
+Manrope Latin variável: [WOFF2](design-prototype/fonts/manrope-latin-variable.woff2), 24.836 bytes; [licença SIL OFL 1.1](design-prototype/fonts/OFL.txt); [origem/hash](design-prototype/fonts/source.json). Fonte e licença obtidas em 2026-10-11 de Google Fonts/Google Fonts GitHub. Distribuição/embedding permitidos pela licença; não alegar autoria da fonte. OFL byte a byte, incluindo whitespace original. Única família, carregamento local, sem request a Google em runtime. Em C/D usar next/font/local e reavaliar CLS.
+
+Pranchas JPEG em design-review são capturas reais do protótipo B, qualidade85–88, sem edição da UI. [Resultados](design-review/results.json) registram Chromium/viewports. Saudação SVG é linework original do estudo, não assinatura de Bruno nem foto/resultado real. Não há imagem gerada por IA.

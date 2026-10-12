@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Prancha de estados — Fase B</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="board container">
+      <a class="text-link" href="index.html">Voltar ao estudo da home</a>
+      <h1>Forma, luz<br />e continuidade.</h1>
+      <p>
+        Prancha estática para revisão da Fase B. As sequências abaixo
+        especificam estados; não demonstram uma animação implementada.
+      </p>
+      <section aria-labelledby="nav-title">
+        <h2 id="nav-title">Uma superfície. Dois estados.</h2>
+        <div class="state-pair">
+          <div>
+            <details class="island">
+              <summary>
+                <img
+                  src="../media-audit/github-avatar.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                /><span class="identity"
+                  ><strong>Bruno Proença</strong
+                  ><span>Desenvolvedor em formação</span></span
+                ><span class="toggle"
+                  ><span class="sr-only">Navegação compacta</span
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 9h14M5 15h14" /></svg
+                ></span>
+              </summary>
+              <nav aria-label="Destinos do estado compacto">
+                <a href="index.html#inicio">Início</a
+                ><a href="index.html#projetos">Projetos</a
+                ><a href="index.html#sobre">Sobre</a
+                ><a href="index.html#competencias">Competências</a
+                ><a href="index.html#contato">Contato</a>
+              </nav>
+            </details>
+            <p>322×60px · centro e topo preservados.</p>
+          </div>
+          <div>
+            <details class="island" open>
+              <summary>
+                <img
+                  src="../media-audit/github-avatar.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                /><span class="identity"
+                  ><strong>Bruno Proença</strong
+                  ><span>Desenvolvedor em formação</span></span
+                ><span class="toggle"
+                  ><span class="sr-only">Navegação expandida</span
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m6 6 12 12M6 18 18 6" /></svg
+                ></span>
+              </summary>
+              <nav aria-label="Destinos do estado expandido">
+                <a href="index.html#inicio" aria-current="location"
+                  >Início<small>Atual</small></a
+                ><a href="index.html#projetos">Projetos</a
+                ><a href="index.html#sobre">Sobre</a
+                ><a href="index.html#competencias">Competências</a
+                ><a href="index.html#contato">Contato</a>
+              </nav>
+              <p class="island-note">
+                Software, visão computacional e robótica.
+              </p>
+            </details>
+            <p>Até 404 px · largura adaptada no mobile.</p>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="intro-title">
+        <h2 id="intro-title">Uma breve saudação.</h2>
+        <div class="frames">
+          <figure>
+            <div class="frame partial">
+              <svg viewBox="0 0 150 90" aria-hidden="true">
+                <path
+                  d="M27 47C4 34 7 76 26 60S23 30 18 43M28 57C55 68 79 2 63 12S36 82 64 56"
+                />
+                <path
+                  d="M88 42C70 27 55 69 76 61C84 58 87 45 88 40L83 57C80 71 96 60 103 54M94 28l9-12"
+                />
+              </svg>
+            </div>
+            <figcaption>
+              0–850ms · escrita progressiva. Forma ilustrativa, não assinatura
+              real.
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="frame">
+              <svg viewBox="0 0 150 90" aria-hidden="true">
+                <path
+                  d="M27 47C4 34 7 76 26 60S23 30 18 43M28 57C55 68 79 2 63 12S36 82 64 56M88 42C70 27 55 69 76 61C84 58 87 45 88 40L83 57C80 71 96 60 103 54M94 28l9-12"
+                />
+              </svg>
+            </div>
+            <figcaption>
+              850–1000ms · “olá” completo. Sem porcentagem ou espera de rede
+              fictícia.
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="frame cut">
+              <p class="mini-name">Bruno<br />Proença Silva</p>
+            </div>
+            <figcaption>
+              1000–1450ms · camada preta sobe e revela o hero. Watchdog
+              independente:2200ms.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section aria-labelledby="scroll-title">
+        <h2 id="scroll-title">Da luz ao trabalho real.</h2>
+        <div class="frames">
+          <figure>
+            <div class="frame">
+              <p class="mini-name">Bruno<br />Proença Silva</p>
+            </div>
+            <figcaption>
+              p0 · título, apoio e CTA legíveis. Arco definido na home.
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="frame scroll-middle">
+              <img
+                src="../media-audit/robosense-m3-preview.jpg"
+                width="960"
+                height="540"
+                alt="Frame real RoboSense, estado intermediário proposto."
+              />
+            </div>
+            <figcaption>
+              p0,35 · mídia sobe enquanto o título deixa a área de sobreposição.
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="frame">
+              <img
+                src="../media-audit/robosense-m3-preview.jpg"
+                width="960"
+                height="540"
+                alt="Frame RoboSense em leitura, estado final proposto."
+              />
+            </div>
+            <figcaption>
+              p0,7–1 · imagem/contexto em leitura e retorno ao fluxo de
+              projetos.
+            </figcaption>
+          </figure>
+        </div>
+        <p class="secondary">
+          Mobile, reduced motion ou viewport baixo: conteúdo sequencial, sem pin
+          ou deslocamento lateral. A home deste estudo já apresenta essa ordem
+          de leitura; movimentos serão implementados e gravados nas fases D–F.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
