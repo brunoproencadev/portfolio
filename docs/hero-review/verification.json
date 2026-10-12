@@ -1,0 +1,37 @@
+{
+  "source": "7d4d018",
+  "checks": {
+    "build": "passed; existing preview metadataBase warning",
+    "lint": "passed, zero warnings",
+    "typescript": "passed",
+    "formatChangedCode": "passed",
+    "vitest": "7 passed"
+  },
+  "runs": {
+    "e2e-initial": {
+      "startTime": "2026-10-12T23:33:13.023Z",
+      "duration": 152343.981,
+      "expected": 144,
+      "skipped": 5,
+      "unexpected": 4,
+      "flaky": 0
+    },
+    "e2e-final": {
+      "startTime": "2026-10-12T23:38:14.827Z",
+      "duration": 128558.582,
+      "expected": 154,
+      "skipped": 5,
+      "unexpected": 3,
+      "flaky": 0
+    },
+    "hero-tests": {
+      "startTime": "2026-10-12T23:41:15.398Z",
+      "duration": 14311.365,
+      "expected": 9,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "note": "Broad run154 passed/5 skipped/3 timeline assertion failures. Fixed RAF synchronization; focused hero9/9 passed. No claim of a single clean full run. Five exclusions predate D: native zoom Chromium only and three WebKit Windows Tab limitations."
+}

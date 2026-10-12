@@ -1,0 +1,114 @@
+{
+  "source": "7d4d018",
+  "reference": "2.mp4,2.6â€“4.8s; docs/reference-video-audit/r2-hero.jpg",
+  "files": [
+    {
+      "path": "docs/hero-review/entry-1000.jpg",
+      "bytes": 83600,
+      "sha256": "3441a4cc15e11104e766e4bcad0ca054245bb7d26ef5d864f6128055b21dfffc",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/entry-1250.jpg",
+      "bytes": 81912,
+      "sha256": "ddd4ce88a330c39aa40cef549270f97e4e1bb181fbc0f0af595e79980637586d",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/entry-150.jpg",
+      "bytes": 35958,
+      "sha256": "df90e9fd3ea6070f7262309c152079fe9b148ae762bbe9445d3692d7db5ba3ab",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/entry-32.jpg",
+      "bytes": 31669,
+      "sha256": "616ae85bff1c437da858409951c57204c1f7a8b16f380fe5aa167a05b2e5c142",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/entry-350.jpg",
+      "bytes": 51776,
+      "sha256": "d079316253f7d82806707594a6b734af6ff43a40f5b4788b98d2ea9c65482586",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/entry-650.jpg",
+      "bytes": 72275,
+      "sha256": "377c091c59134bc58cefa364c5ca32aa29cbedd5639fcf2c469a6acfd084d4f5",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/hero-1440.jpg",
+      "bytes": 81912,
+      "sha256": "ddd4ce88a330c39aa40cef549270f97e4e1bb181fbc0f0af595e79980637586d",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/hero-1920.jpg",
+      "bytes": 116057,
+      "sha256": "df3e93bfea35f53df63753b1916ed9b97b2fd1cab14beedd2dbb827f40a5d6d4",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/hero-320.jpg",
+      "bytes": 42002,
+      "sha256": "b9d47f50361d22bd0fbf41ea289a535081fe31b4b5a82962b10bbed628f97c91",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/hero-375.jpg",
+      "bytes": 51158,
+      "sha256": "8dafc231735e72e2e36198feb8f8c9f042129520074f0d577d2bdb583bbbb32a",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/hero-768.jpg",
+      "bytes": 56446,
+      "sha256": "676e4339ea4b2636579c04549347a433ed425210c0ab372167c47e4d896be320",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/island-open-1440.jpg",
+      "bytes": 76330,
+      "sha256": "c6f3e0202bd4969d4491e9baf1d416e36fdf701821da80d4c87f35a30ca5b66f",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/island-open-375.jpg",
+      "bytes": 41812,
+      "sha256": "65cc975c1e0dcb69526f0df9cc8abb2d37425c40e50058ba00fc1a7201e64880",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/recorded-sequence-1440.jpg",
+      "bytes": 196757,
+      "sha256": "d111d9fe1df0d2146f98ed4c25b2ab6b6c82cb30f78f53eb4f73ff8d9070aeee",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/recorded-sequence-375.jpg",
+      "bytes": 645599,
+      "sha256": "4b0a8f5a3c3163a154e59e6e9bcde56d2b5797180eabeed53394dd7638f2c277",
+      "tracked": true
+    },
+    {
+      "path": "docs/hero-review/results.json",
+      "bytes": 53163,
+      "sha256": "e0a5cd739a9aa9f3acf20af342cc0dfa51aa385b0182b2b00bfc0f67252ef8d9",
+      "tracked": true
+    },
+    {
+      "path": ".audit/phase-d/hero-entry-1440.webm",
+      "bytes": 441227,
+      "sha256": "705f6d2f1d1edb680ce0eebc28ac6ce02100553e6cc4f1fab141d1000258e70c",
+      "tracked": false
+    },
+    {
+      "path": ".audit/phase-d/hero-entry-375.webm",
+      "bytes": 205096,
+      "sha256": "f64ec1a09d8eae5b0822ae7187728b20eb163d1231c4e5e111e372a0a91575c6",
+      "tracked": false
+    }
+  ]
+}
