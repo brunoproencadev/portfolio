@@ -1,5 +1,13 @@
 # Conteúdo editorial verificado
 
+## Redesign — atualização da Fase A, 2026-10-11
+
+Texto implementado preservado nesta fase. Direção visual antiga não é aprovação do novo redesign; consulte VISUAL_REDESIGN_PLAN. Pesquisa reconferida em PROFILE_RESEARCH; capturas/origens em MEDIA_ASSETS.
+
+Para a futura revisão: Industry Week tem deployment efetivamente observado em desktop/mobile, com tema e navegação exercitados, porém SHA de Pages difere do main e a captura mobile tem limitações. RoboSense possui frames/vídeos M3 de gravações; não apresentar como transmissão ao vivo ou Pi validada. Ateliê possui screenshots de repositório de frontend local; publicação continua não confirmada. Nenhuma fotografia/conquista LinkedIn foi recuperada; não preencher trajetória com fatos presumidos. Avatar GitHub é ilustração de leão e não equivale a retrato pessoal.
+
+Legendas futuras devem indicar “captura do deployment público”, “captura de validação local do repositório” ou “frame de vídeo gravado M3”, conforme a origem. Diagramas continuam identificados como conceitos. Não introduzir estatísticas, testemunhos, cargos, prêmios ou funcionalidades para preencher os novos layouts. Todos os links/cases/slugs existentes serão preservados.
+
 Fonte factual: PROFILE_RESEARCH.md. Textos da home/projetos/competências implementados em src/data/portfolio.ts na Fase 4, mantendo estes limites e fontes. Os cases abaixo foram implementados em src/data/case-studies.ts na Fase 6, com links de evidência por SHA. Não são dados vindos de CMS.
 
 ## Home

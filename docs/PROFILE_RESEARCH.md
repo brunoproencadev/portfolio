@@ -1,5 +1,19 @@
 # Pesquisa de perfil — revisão da auditoria 2026-10-09
 
+## Atualização verificada — redesign Fase A, 2026-10-11
+
+Pesquisa pública refeita: README dos três projetos/perfil, arquitetura e validação M3 do RoboSense, VERIFICATION do Ateliê, package.json/App.tsx do Industry Week. API pública confirmou os mesmos heads P2/P3/P4 da tabela histórica abaixo. Não foram executados os testes/hardware desses projetos. Fontes e cópias de mídia agora têm manifesto em [MEDIA_ASSETS](MEDIA_ASSETS.md).
+
+- **Industry Week:** aplicação real acessada em Chromium 1440×900 e 390×844, HTTP 200, sem pageerrors. Fontes/imagens/vídeos carregados, tema claro e navegação “4 Eras” exercitados. Último deployment Pages consultado: `b22aa4b46d934fa9f164df3508c55d64cdb19156`, distinto do main `68ab01a95b770f28d66a8f76fb6f138e4c8edbd6`. Screenshots documentam deployment observado; não atribuir automaticamente a ele toda característica de main. Mobile capturado tem tipografia comprimida e controle cortado; não alegar QA integral ou responsividade perfeita. Sem envio de formulário.
+- **RoboSense:** README/arquitetura/validation-m3 reconfirmam pipeline de percepção e associação em vídeos gravados; mídia M3 autêntica disponível no repositório. `has_pages=false`, homepage vazia e consulta de deployments sem entradas; nenhum site independente confirmado. Artefatos não comprovam execução física na Pi nem integração GIGA/motores. Resultados quantitativos M3 são da execução documentada, com 79 anotações aproximadas/sem holdout; não são novo benchmark desta auditoria.
+- **Ateliê:** README e VERIFICATION mantêm frontend local validado, sem deploy/CMS confirmado. Capturas reais `docs/screenshots/home-desktop.png` e `home-mobile.png` acessíveis na revisão P4. Homepage vazia, Pages desativado, deployments consultados vazios; não declarar inexistência universal de hospedagem. Direitos sobre marca/fotos permanecem reservados no README.
+- **Avatar:** fonte pública GitHub `https://avatars.githubusercontent.com/u/271389368?v=4`, PNG 460×460, atualmente leão ilustrado. É a identidade exata a usar no futuro favicon, não fotografia humana. Download local e hash registrados; nenhum ícone foi alterado em A.
+- **LinkedIn:** tentativa pública redirecionou para authwall com HTTP 999. Não foram acessados posts nem confirmadas fotografias/experiências específicas. Manter URL do perfil; pedir originais/URLs/contexto para F/G. Nenhum login/antibot contornado.
+
+Triagem adicional de repositórios **públicos**: `pov-journal` tem README de plataforma editorial Next/Prisma/NextAuth, mas execução/deploy/resultado não foram demonstrados; `workshop-springboot4-jpa` tem README apenas com título, insuficiente para elevar a projeto principal; `ingrid-virtualassistant` declara planejamento de hackathon e automação ainda não implementada/integrada/testada. Não ampliar a seleção principal para inflar quantidade; não transformar o planejamento do Ingrid em produto operacional. Conteúdo de repositórios privados não integra esta pesquisa publicável.
+
+Os três projetos prioritários continuam sendo a seleção mais sustentada nesta auditoria. O conteúdo implementado foi preservado; revisão editorial/mídia ocorre nas fases aprovadas. As seções seguintes são histórico de pesquisa, complementado por esta atualização.
+
 ## Método e proveniência
 
 Leitura pública via conector GitHub; conferência dos heads com git ls-remote. Fontes mutáveis foram lidas em main; SHAs abaixo identificam o estado consultado no mesmo período. Resultados dos outros projetos não foram reexecutados nesta auditoria.

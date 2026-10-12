@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-11T20:42:53.829Z",
+  "browser": "156.0.8078.4",
+  "purpose": "Phase A documentary evidence only; not integrated into public portfolio",
+  "repositories": [
+    {
+      "name": "robosense-lab",
+      "head": "593768ee3d3f2f861f15beb83459131579e85104",
+      "has_pages": false,
+      "homepage": null,
+      "deployments": []
+    },
+    {
+      "name": "industry-week-senai-prj",
+      "head": "68ab01a95b770f28d66a8f76fb6f138e4c8edbd6",
+      "has_pages": true,
+      "homepage": null,
+      "deployments": [
+        {
+          "id": 4827869354,
+          "environment": "github-pages",
+          "sha": "b22aa4b46d934fa9f164df3508c55d64cdb19156",
+          "statuses": [
+            {
+              "state": "success",
+              "environment_url": "https://brunoproencadev.github.io/industry-week-senai-prj/",
+              "created_at": "2026-05-26T23:00:59Z"
+            }
+          ]
+        },
+        {
+          "id": 4827837906,
+          "environment": "github-pages",
+          "sha": "760f3e938d75bd30a62e47ee8dcbf3d23c08a395",
+          "statuses": [
+            {
+              "state": "inactive",
+              "environment_url": "",
+              "created_at": "2026-05-26T23:01:00Z"
+            }
+          ]
+        },
+        {
+          "id": 4827746740,
+          "environment": "github-pages",
+          "sha": "b22aa4b46d934fa9f164df3508c55d64cdb19156",
+          "statuses": [
+            {
+              "state": "inactive",
+              "environment_url": "",
+              "created_at": "2026-05-26T22:56:47Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "atelie-ingridxavier",
+      "head": "66969cf8354c3063807a98069354d78303defdf7",
+      "has_pages": false,
+      "homepage": null,
+      "deployments": []
+    }
+  ],
+  "avatar_url": "https://avatars.githubusercontent.com/u/271389368?v=4",
+  "downloads": [
+    {
+      "repo": "robosense-lab",
+      "head": "593768ee3d3f2f861f15beb83459131579e85104",
+      "path": "artifacts/m3/WIN_20261005_14_19_38_Pro-preview.jpg",
+      "blobSha": "28c300bb8be253546b7159f2e18b39116501131c",
+      "size": 131916,
+      "url": "https://raw.githubusercontent.com/brunoproencadev/robosense-lab/593768ee3d3f2f861f15beb83459131579e85104/artifacts/m3/WIN_20261005_14_19_38_Pro-preview.jpg",
+      "status": 200,
+      "localPath": ".audit/phase-a/media/robosense-m3-preview.jpg"
+    },
+    {
+      "repo": "atelie-ingridxavier",
+      "head": "66969cf8354c3063807a98069354d78303defdf7",
+      "path": "docs/screenshots/home-desktop.png",
+      "blobSha": "bd270b753ea54d300450594896634904d20aa45d",
+      "size": 1284682,
+      "url": "https://raw.githubusercontent.com/brunoproencadev/atelie-ingridxavier/66969cf8354c3063807a98069354d78303defdf7/docs/screenshots/home-desktop.png",
+      "status": 200,
+      "localPath": ".audit/phase-a/media/atelie-repository-desktop.png"
+    },
+    {
+      "repo": "atelie-ingridxavier",
+      "head": "66969cf8354c3063807a98069354d78303defdf7",
+      "path": "docs/screenshots/home-mobile.png",
+      "blobSha": "db169779f3d462ea44e7c72dd6ec0a7362ad163b",
+      "size": 932983,
+      "url": "https://raw.githubusercontent.com/brunoproencadev/atelie-ingridxavier/66969cf8354c3063807a98069354d78303defdf7/docs/screenshots/home-mobile.png",
+      "status": 200,
+      "localPath": ".audit/phase-a/media/atelie-repository-mobile.png"
+    }
+  ],
+  "files": [
+    {
+      "source_file": "github-avatar.png",
+      "documentary_file": "github-avatar.png",
+      "source_sha256": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672",
+      "source_dimensions": [460, 460],
+      "source_bytes": 101669,
+      "documentary_dimensions": [460, 460],
+      "documentary_bytes": 101669,
+      "optimization": "original bytes, no conversion"
+    },
+    {
+      "source_file": "industry-week-1440-hero.png",
+      "documentary_file": "industry-week-1440-hero.jpg",
+      "source_sha256": "7150a4bdefa6b6b1eb103daf728287aa9bc399ba59f4047dbcde5203f095f82e",
+      "source_dimensions": [1440, 900],
+      "source_bytes": 727218,
+      "documentary_dimensions": [960, 600],
+      "documentary_bytes": 103724,
+      "optimization": "documentary resize, aspect preserved, JPEG quality 85"
+    },
+    {
+      "source_file": "industry-week-1440-eras.png",
+      "documentary_file": "industry-week-1440-eras.jpg",
+      "source_sha256": "e17c1018a742db247ccd17522d60584c3d20ffd7b618f3d4ad5388cc763f55fb",
+      "source_dimensions": [1440, 900],
+      "source_bytes": 855891,
+      "documentary_dimensions": [960, 600],
+      "documentary_bytes": 82900,
+      "optimization": "documentary resize, aspect preserved, JPEG quality 85"
+    },
+    {
+      "source_file": "industry-week-390-hero.png",
+      "documentary_file": "industry-week-390-hero.jpg",
+      "source_sha256": "a441780600f9f47974cef8a1f8201027e6590ec27376d12505abf8b9b07d8925",
+      "source_dimensions": [390, 844],
+      "source_bytes": 251324,
+      "documentary_dimensions": [390, 844],
+      "documentary_bytes": 74017,
+      "optimization": "documentary resize, aspect preserved, JPEG quality 85"
+    },
+    {
+      "source_file": "robosense-m3-preview.jpg",
+      "documentary_file": "robosense-m3-preview.jpg",
+      "source_sha256": "f05d6557b62bab4bdb3e7ba8e909348c9f3883c3a11ed591d03cd3acbb2f8388",
+      "source_dimensions": [960, 540],
+      "source_bytes": 131916,
+      "documentary_dimensions": [960, 540],
+      "documentary_bytes": 70328,
+      "optimization": "documentary resize, aspect preserved, JPEG quality 85"
+    },
+    {
+      "source_file": "atelie-repository-desktop.png",
+      "documentary_file": "atelie-repository-desktop.jpg",
+      "source_sha256": "3b38723977bcd664e2767d76bf9f6508ff075d6d3061ebd06f604b582718ef1d",
+      "source_dimensions": [1440, 5075],
+      "source_bytes": 1284682,
+      "documentary_dimensions": [681, 2400],
+      "documentary_bytes": 150830,
+      "optimization": "documentary resize, aspect preserved, JPEG quality 85"
+    },
+    {
+      "source_file": "atelie-repository-mobile.png",
+      "documentary_file": "atelie-repository-mobile.jpg",
+      "source_sha256": "55dce287ae9402c818bc12e86000acc01a1879e20943c596a28f51137bca84ae",
+      "source_dimensions": [390, 7446],
+      "source_bytes": 932983,
+      "documentary_dimensions": [126, 2400],
+      "documentary_bytes": 57603,
+      "optimization": "documentary resize, aspect preserved, JPEG quality 85"
+    }
+  ],
+  "linkedin": {
+    "url": "https://www.linkedin.com/in/brunoproencasilva",
+    "status": 999,
+    "destination": "https://www.linkedin.com/authwall",
+    "post_urls": []
+  }
+}
