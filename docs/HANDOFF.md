@@ -1,8 +1,26 @@
-# Handoff — redesign cinematográfico, Fase A
+# Handoff — redesign cinematográfico, Fase B
+
+## Estado vigente — 2026-10-12
+
+B autorizada explicitamente por “Pode começar a fase B”. Baseline limpo 72d5877, branch redesign/cinematic-portfolio, origin preservado. Protótipos documentais em docs/design-prototype; fonte Manrope local licenciada. Produção/src/testes/config/lock intactos; nenhum push/deploy. C–I não autorizados.
+
+Primeiro checkpoint: **5736a4f** — design: define cinematic brand and license portfolio typography. BRAND, PRODUCT e fonte/OFL/origem. Hash da fonte e licença conferidos. OFL preserva bytes originais, incluindo um espaço final upstream na linha 21; a exceção de whitespace é documental, não escondida.
+
+Segundo checkpoint: **f2a7cbf** — design: add reviewed cinematic portfolio prototypes. Home/estados estáticos, tokens/especificações, origem de mídia, 13 capturas reais, resultados e manifesto. DESIGN.md/sidecar são snapshot B, não autoridade sobre a UI publicada.
+
+**B concluída para revisão do usuário.** Direção/componentes em VISUAL_DIRECTION/COMPONENT_SPEC/DESIGN_SYSTEM; evidências e comparação em PHASE_B_REVIEW. Revisor independente: ship no escopo estático; dois detalhes P3 corrigidos e confirmados resolvidos. Cinco larguras (320/375/768/1440/1920), sem overflow/pageerrors, imagens/fonte prontas; axe zero em dez estados. Disclosure Enter/Espaço e no-JS aprovados; reduced estático sem animação. Não comprova as futuras timelines.
+
+Validação documental: 20 documentos, 136 links locais, 13 capturas, hashes de fonte/licença; diff de produção vazio contra72d5877. Formatação dos arquivos alterados e git diff --check aprovados no fechamento, exceto whitespace original da licença já registrado. Scripts temporários em .audit/phase-b; resultados/manifestos duráveis em docs. Servidores/browsers de teste encerrados.
+
+Limites: fotos LinkedIn ainda ausentes, direitos Ateliê a revisar para publicação, nenhum novo build/Lighthouse/teste da aplicação, zoom/leitor de tela/dispositivos físicos não executados em B. Sem fonte/avatar/favicon integrados ao app.
+
+**Próximo passo exige aprovação visual de B e autorização explícita de C.** C implementa somente ilha dimensional, preservando handlers/destinos/foco/observer; usar protótipos como alvo de geometria, Motion já instalado para layout e validar vídeo/teclado/reduced/no-JS. Não implementar hero/intro/scroll automaticamente. Nenhum push/deploy autorizado. Commit documental de fechamento: localizar por título `docs: close phase B and gate island implementation`, pois o hash não pode constar no próprio conteúdo que o gera.
+
+## Histórico da Fase A
 
 Workspace: D:/projects/portifolio. Origin: https://github.com/brunoproencadev/myportifolio.git. Branch atual: redesign/cinematic-portfolio. Arquivos do usuário preservados; sem reescrita de histórico.
 
-## Estado vigente — 2026-10-11
+## Estado ao encerrar A — 2026-10-11
 
 Usuário autorizou **somente a Fase A** do master prompt cinematográfico; “Continue” retoma a mesma fase. Auditoria/análise/especificações concluídas; Fase B ainda exige confirmação explícita. Nenhuma alteração em src/tests/configs/dependências/UI/favicon, nenhum push ou deploy. Baseline limpo aa70f4c73008f85731e4f45e528ac2c7f8737d0f; branch de redesign já existia e foi preservada. Os registros de lançamento abaixo são históricos, não autorização de nova publicação.
 

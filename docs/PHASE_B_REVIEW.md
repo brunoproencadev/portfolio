@@ -59,7 +59,7 @@ Duas passagens próprias de composição: corrigidos arco mobile muito fechado, 
 
 Detector Impeccable executado uma vez: um warning de contraste em hover foi corrigido com `.skip:hover` em ink. Cinco warnings de cramped-padding não correspondem ao render: margem do container interno em Industry Week, padding-block de112px em Sobre e28px nas linhas de competências. Revisor conferiu capturas/CSS, sem pedir remoção desses espaçamentos. Detector não equivale a aprovação visual.
 
-Revisor independente `impeccable_finish_reviewer`: **ship no escopo estático B**, sem bloqueios materiais. Inspecionou 13 capturas, quatro pranchas reais R1/R2/R3, HTML/CSS, contratos e resultados. Dois detalhes P3 corrigidos: legenda da ilha passou a indicar “Até404px; adaptada no mobile”; estado aberto da home agora usa X como a prancha. Correções recapturadas; esse parecer não aprova C ou publicação.
+Revisor independente `impeccable_finish_reviewer`: **ship no escopo estático B**, sem bloqueios materiais. Inspecionou 13 capturas, quatro pranchas reais R1/R2/R3, HTML/CSS, contratos e resultados. Dois detalhes P3 corrigidos: legenda da ilha passou a indicar “Até404px; adaptada no mobile”; estado aberto da home agora usa X como a prancha. Correções recapturadas e verificadas pelo mesmo revisor: ambos resolvidos. Esse parecer não aprova C ou publicação.
 
 Falhas preservadas: primeira aquisição de fonte retornou TTF com user-agent incompleto; repetição com identificação completa obteve WOFF2. Primeira execução axe exigiu browser.newContext; harness corrigido, sem relaxar asserções. Interrupção de ferramenta por limite da revisão automática impediu atualização documental; retomada conferiu arquivos antes de continuar.
 

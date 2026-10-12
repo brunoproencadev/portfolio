@@ -1,6 +1,18 @@
 # Verificação — Fase 3 e auditoria
 
-## Redesign Fase A — evidência vigente, 2026-10-11
+## Redesign Fase B — evidência vigente, 2026-10-12
+
+B autorizada por “Pode começar a fase B”. Baseline72d5877; aplicação/produção preservadas. Commits de marca/fonte5736a4f e protótiposf2a7cbf, sem push/deploy. Relatório completo: [PHASE_B_REVIEW](PHASE_B_REVIEW.md); dados: [results.json](design-review/results.json); proveniência/hashes: [manifest.json](design-review/manifest.json).
+
+Chromium156.0.8078.4, Windows/Playwright, HTML/CSS documental em localhost3102. Cinco larguras320/375/768/1440/1920 sem overflow/pageerrors, fontes/imagens prontas; axe zero em dez estados. Disclosure nativo com Enter/Espaço; no-JS utilizável. Reduced motion confirma ausência de animação neste protótipo, não cancelamento das timelines futuras. Treze capturas revisadas. Revisão independente ship para B; legenda móvel/ícone aberto corrigidos, ambos confirmados resolvidos.
+
+Duas passagens de composição e recapturas delimitadas por artefato de skip link e achados do revisor. Detector uma vez: hover de skip corrigido, cinco warnings de padding não confirmados no render/CSS. Não alegar detector limpo nem fidelidade de movimento. Primeira aquisição de fonte retornou TTF, segunda WOFF2 válido; primeira execução axe falhou por ausência de newContext, corrigida sem relaxar checks. Uma atualização documental foi bloqueada por limite da revisão automática de ferramenta, retomada após conferir o estado.
+
+Documentação: links locais/HTML âncoras, hashes WOFF2/OFL, JPEGs/manifesto, formato e diff de produção conferidos. OFL preservada com whitespace upstream conhecido. Nenhum build/unit/E2E do app, Lighthouse, zoom200%, leitor de tela ou dispositivo físico nesta fase; app não alterado. Resultados da aplicação abaixo são históricos, incluindo timeout frio de tooling da Fase A. Scripts em .audit/phase-b são locais ignorados; navegador/servidor encerrados em finally.
+
+Fase C e publicação não autorizadas.
+
+## Redesign Fase A — histórico, 2026-10-11
 
 Escopo autorizado: auditoria, pesquisa, vídeos e especificações, sem alterar UI/código/dependências. Baseline limpo aa70f4c73008f85731e4f45e528ac2c7f8737d0f na branch já existente redesign/cinematic-portfolio; remoto correto preservado. “Continue” não autoriza B. Histórico abaixo mantém resultados das fases anteriores; não confundir testes antigos com execução atual.
 

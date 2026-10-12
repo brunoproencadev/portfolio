@@ -1,6 +1,6 @@
 # Aceitação visual e funcional — redesign A–I
 
-Status em 2026-10-11: critérios propostos na Fase A, implementação futura. A Fase A comprova análise e baseline; não marca navbar/hero/intro/storytelling novos como entregues. [Referências](REFERENCE_ANALYSIS.md), [movimento](MOTION_SPEC.md) e [plano](VISUAL_REDESIGN_PLAN.md) delimitam a avaliação.
+Status em 2026-10-12: critérios propostos em A; B entregou direção, tokens, especificações e protótipos estáticos em PHASE_B_REVIEW. B01 aguarda aprovação visual do usuário; C–I não implementados. A Fase A comprova análise e baseline; não marca navbar/hero/intro/storytelling novos como entregues. [Referências](REFERENCE_ANALYSIS.md), [movimento](MOTION_SPEC.md) e [plano](VISUAL_REDESIGN_PLAN.md) delimitam a avaliação.
 
 ## Método de comparação
 

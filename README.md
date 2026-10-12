@@ -1,6 +1,6 @@
 # Bruno Proença Silva — Portfólio
 
-Portfólio Next.js diretamente em `D:\projects\portifolio`, com publicação anterior na Vercel. Redesign cinematográfico: Fase A documental concluída, UI preservada; próxima etapa exige aprovação explícita da Fase B. Consulte [auditoria](docs/REDESIGN_AUDIT.md), [vídeos analisados](docs/REFERENCE_ANALYSIS.md), [plano A–I](docs/VISUAL_REDESIGN_PLAN.md), [HANDOFF](docs/HANDOFF.md) e [VERIFICATION](docs/VERIFICATION.md).
+Portfólio Next.js diretamente em `D:\projects\portifolio`, com publicação anterior na Vercel. Redesign: Fases A/B entregues como documentação e protótipos; UI de produção preservada. Revise a [proposta B](docs/PHASE_B_REVIEW.md), o [protótipo local](docs/design-prototype/index.html) e a [prancha de estados](docs/design-prototype/states.html). A Fase C exige aprovação explícita. Continuidade em [HANDOFF](docs/HANDOFF.md), [VERIFICATION](docs/VERIFICATION.md) e [plano A–I](docs/VISUAL_REDESIGN_PLAN.md).
 
 ## Executar
 

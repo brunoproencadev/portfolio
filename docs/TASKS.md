@@ -8,8 +8,10 @@
 - [x] Mídia pública pesquisada: avatar, deployment Industry Week e screenshots reais dos três projetos; LinkedIn bloqueado documentado, sem fabricação.
 - [x] MOTION_SPEC, VISUAL_REDESIGN_PLAN, VISUAL_ACCEPTANCE_CRITERIA e MEDIA_ASSETS entregues; instruções/pesquisa/continuidade atualizadas.
 - [x] Provas focadas e revisão documental; commits locais em HANDOFF, sem push/deploy/UI.
-- [ ] Gate B: aguardar aprovação explícita dos resultados da Fase A.
-- [ ] B: direção de arte, BRAND/DESIGN_SYSTEM, componentes/protótipos desktop/mobile.
+- [x] Gate B: autorizado pelo usuário em 2026-10-11, “Pode começar a fase B”.
+- [x] B: direção, fonte licenciada, BRAND/DESIGN_SYSTEM, especificações e protótipos desktop/mobile.
+- [x] Fechar revisão B, evidências e commits; ship no escopo estático, dois P3 resolvidos.
+- [ ] Gate C: aguardar aprovação visual de B e autorização explícita para implementar a ilha.
 - [ ] C: Dynamic Island; gate próprio após B.
 - [ ] D: hero cinematográfico; gate próprio após C.
 - [ ] E: intro; gate próprio após D.

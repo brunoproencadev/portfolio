@@ -1,6 +1,6 @@
 # PRD — Bruno Proença Silva
 
-Atualização de precedência, 2026-10-11: o master prompt de redesign autoriza somente a Fase A e define gates A–I em VISUAL_REDESIGN_PLAN. REFERENCE_ANALYSIS/MOTION_SPEC/VISUAL_ACCEPTANCE_CRITERIA complementam e substituem decisões visuais incompatíveis deste ciclo anterior. Conteúdo factual, rotas, segurança/SEO e fallbacks continuam válidos. O texto abaixo descreve o produto entregue anteriormente; não autoriza implementar outra fase nem repetir publicação. Estado vigente em HANDOFF.
+Atualização de precedência, 2026-10-11: o master prompt iniciou a Fase A, concluída em 72d5877; o usuário autorizou explicitamente B por “Pode começar a fase B” e mantém gates A–I em VISUAL_REDESIGN_PLAN. REFERENCE_ANALYSIS/MOTION_SPEC/VISUAL_ACCEPTANCE_CRITERIA complementam e substituem decisões visuais incompatíveis deste ciclo anterior. Conteúdo factual, rotas, segurança/SEO e fallbacks continuam válidos. O texto abaixo descreve o produto entregue anteriormente; não autoriza implementar outra fase nem repetir publicação. Estado vigente em HANDOFF.
 
 Revisão de auditoria: 2026-10-09; home, movimento e cases entregues nas Fases 4–6 em 2026-10-10. QA local da Fase 7 concluído em 2026-10-11, com resultados e limites em QA_PHASE7. Fonte de escopo; mudanças entre fases exigem aprovação. Fase 8 publicada na Vercel em 2026-10-11 por autorização do usuário; domínio/HTTPS/SEO confirmados em LAUNCH. Validações humanas e de campo permanecem limitadas conforme registros.
 

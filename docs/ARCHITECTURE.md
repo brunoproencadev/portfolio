@@ -4,6 +4,10 @@
 
 Preservar esta arquitetura e as invariantes de conteúdo/segurança/acessibilidade. Nenhum código foi alterado. O novo brief exige reconstruir apresentação e coreografia, não framework/rotas/dados. Motion instalado passa a ser candidato para transformação dimensional da ilha em C; GSAP/ScrollTrigger continuam donos de intro/cenas em D/E/F, sem disputar propriedades. Propostas e fronteiras em MOTION_SPEC/REDESIGN_AUDIT; gates A–I em VISUAL_REDESIGN_PLAN. A ausência de pin/scrub e o uso somente de CSS na cápsula abaixo descrevem o estado existente, não restrição para o redesign aprovado futuramente.
 
+## Protótipos documentais B
+
+HTML/CSS em docs/design-prototype, sem framework/build/roteador ou import em src. Uma fonte local licenciada e mídias documentais A. details nativo demonstra estados instantâneos; não substitui handlers do SiteNavigation. Tokens B em DESIGN_SYSTEM são proposta, não descrição do globals.css atual. Implementação em C–F continuará nas fronteiras existentes, sem biblioteca adicional.
+
 ## Estado implementado
 
 Next 16.4.0, React 19.3.0, App Router, TypeScript strict e Tailwind 4. Home/layout/cases/diagramas são Server Components; SiteNavigation e HomeMotion são ilhas client. Dados editoriais em src/data/portfolio.ts e case-studies.ts. app/error.tsx é a fronteira client de recuperação, independente das ilhas. Intro/reveals e três cases entregues nas Fases 5/6.
