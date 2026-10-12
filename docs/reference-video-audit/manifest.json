@@ -1,0 +1,89 @@
+{
+  "method": "OpenCV 4.14.0; decoded-frame sampling; RGB preserved; resize and timestamp labels only; source files read-only",
+  "sheets": [
+    {
+      "file": "r1-open.jpg",
+      "source": "1.mp4",
+      "times_seconds": [3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.6],
+      "crop_source_pixels": [720, 110, 1240, 570]
+    },
+    {
+      "file": "r1-close.jpg",
+      "source": "1.mp4",
+      "times_seconds": [7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.0, 8.1],
+      "crop_source_pixels": [720, 110, 1240, 570]
+    },
+    {
+      "file": "r2-hero.jpg",
+      "source": "2.mp4",
+      "times_seconds": [2.6, 2.8, 3.2, 3.6, 3.8, 4.0, 4.4, 4.8],
+      "crop_source_pixels": [0, 80, 1920, 1055]
+    },
+    {
+      "file": "r2-scroll.jpg",
+      "source": "2.mp4",
+      "times_seconds": [6.3, 6.6, 6.75, 6.9, 7.05, 7.5, 8.1, 8.7],
+      "crop_source_pixels": [0, 80, 1920, 1055]
+    },
+    {
+      "file": "r3-intro.jpg",
+      "source": "3.mp4",
+      "times_seconds": [
+        2.1, 2.7, 3.3, 3.9, 4.5, 5.1, 6.0, 6.3, 6.6, 6.9, 7.05, 7.2
+      ],
+      "crop_source_pixels": [0, 80, 1920, 1055]
+    },
+    {
+      "file": "r3-photo.jpg",
+      "source": "3.mp4",
+      "times_seconds": [11.5, 11.9, 12.3, 12.7, 13.1, 13.3, 13.5, 13.7],
+      "crop_source_pixels": [0, 80, 1920, 1055]
+    },
+    {
+      "file": "r3-projects.jpg",
+      "source": "3.mp4",
+      "times_seconds": [
+        21.6, 21.9, 22.5, 22.8, 23.1, 23.4, 24.0, 24.3, 24.6, 24.9, 25.2, 25.5
+      ],
+      "crop_source_pixels": [0, 80, 1920, 1055]
+    },
+    {
+      "file": "r3-gallery.jpg",
+      "source": "3.mp4",
+      "times_seconds": [33.8, 34.1, 34.4, 34.7, 35.0, 35.3, 35.6, 35.9],
+      "crop_source_pixels": [0, 80, 1920, 1055]
+    }
+  ],
+  "sources": [
+    {
+      "file": "1.mp4",
+      "bytes": 8848026,
+      "sha256": "6f4cb6361880ce525033acbb2b4f8dae3b922b5f18cd15732070721662f0dbbe",
+      "fps": 60.0,
+      "frames": 1694,
+      "duration_seconds": 28.233333333333334,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "file": "2.mp4",
+      "bytes": 5671661,
+      "sha256": "b48144ca3ce0f4186e0f0091e5d4ca85de34159b0135a2290ad5ed61479feb77",
+      "fps": 60.0,
+      "frames": 1088,
+      "duration_seconds": 18.133333333333333,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "file": "3.mp4",
+      "bytes": 12898649,
+      "sha256": "70c73a02bf6f0379c2e6bbb3a86fcc4b12fabd9fbd308a4cee8dd1c6917058bc",
+      "fps": 60.0,
+      "frames": 2467,
+      "duration_seconds": 41.11666666666667,
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

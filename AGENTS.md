@@ -17,3 +17,16 @@ Estado atual: Fase 8 publicada em 2026-10-11 na Vercel, por autorização “Se 
 ## Cuidados comprovados pela auditoria
 
 No PowerShell, ler texto com -Encoding utf8 ou File.ReadAllText; preservar UTF-8/LF. Validar a árvore completa de peers ao alterar lint, não somente eslint-config-next. next-env.d.ts é gerado por next typegen e não deve ser versionado. Consulte docs/AUDIT.md e docs/REFERENCES.md antes da próxima fase.
+
+## Redesign cinematográfico — contrato de 2026-10-11
+
+- A raiz é o workspace atual D:\projects\portifolio; não criar outra aplicação aninhada. Preservar código útil, dados, SEO, rotas, mudanças do usuário e histórico Git.
+- Branch preferida: redesign/cinematic-portfolio. Commits locais pequenos, atômicos, Conventional Commits, staging explícito e validação antes de cada commit. Push/deploy só com autorização explícita separada.
+- Autorizada somente a Fase A: auditoria, análise dos vídeos, pesquisa e especificações documentais. Não modificar UI, favicon ou dependências nesta fase. B–I exigem confirmação individual.
+- Fontes visuais prioritárias: vídeos reais em D:\aNova pasta\Desktop\coisas after\references, somente leitura. Analisar estados consecutivos/timestamps; não deduzir movimento de um screenshot. Priorizar fidelidade aos comportamentos observados.
+- O novo brief substitui as antigas proibições de arco violeta, transição dimensional da cápsula e storytelling de scroll. BRAND/DESIGN_SYSTEM ainda descrevem a implementação anterior; sua revisão pertence à Fase B. Consulte REFERENCE_ANALYSIS, MOTION_SPEC, VISUAL_REDESIGN_PLAN e VISUAL_ACCEPTANCE_CRITERIA em docs antes de implementar.
+- Usar avatar GitHub exato, screenshots reais e fotografias pessoais com contexto/origem verificáveis. Não fabricar UI, experiência, métricas, prêmios ou fotos. LinkedIn inacessível exige originais/contexto do usuário; não contornar restrições. Registrar proveniência e permissões em docs/MEDIA_ASSETS.md.
+- Validar interface em navegador real com capturas e gravações de interação, comparando geometria, sequência e tempos. Build/testes funcionais não comprovam fidelidade visual. Manter log de comparação, discrepâncias e limites.
+- Preservar semântica, teclado/foco, no-JS, reduced motion em execução, conteúdo disponível em falha, cleanup e separação dados/apresentação. GSAP e Motion não devem controlar a mesma propriedade do mesmo elemento.
+- Manter docs/TASKS.md, docs/HANDOFF.md, docs/VERIFICATION.md e decisões sincronizados. CODEX.md é apoio explicitamente referenciado, não substitui estas instruções.
+- Fluxo do redesign: Analyze → Specify → Plan → Prototype → Implement → Test → Compare → Refine → Commit → Review → Request Approval. Ao fechar a fase, relatar entregas, SHAs, provas, limitações e próxima fase; parar até aprovação explícita.
