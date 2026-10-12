@@ -18,6 +18,9 @@ for (const width of [320, 375, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/");
     await page.getByRole("button", { name: "Menu", exact: true }).click();
+    await expect(page.locator(".capsule")).not.toHaveAttribute(
+      "data-animating",
+    );
     await expectNoOverflow(page);
     expect(
       await page.locator(".notebook-orbit").evaluate((element) => {
@@ -54,6 +57,9 @@ for (const width of [320, 375, 768, 1440]) {
       path: testInfo.outputPath(`menu-open-${width}.png`),
     });
     await page.getByRole("button", { name: "Fechar", exact: true }).click();
+    await expect(page.locator(".capsule")).not.toHaveAttribute(
+      "data-animating",
+    );
     await page.screenshot({
       path: testInfo.outputPath(`home-full-${width}.png`),
       fullPage: true,
@@ -115,7 +121,7 @@ test("reduced motion updates immediately and keyboard focus stays visible", asyn
   ).toBe("solid");
   expect(
     await button.evaluate((element) => getComputedStyle(element).outlineWidth),
-  ).toBe("2px");
+  ).toBe("3px");
   await page.screenshot({ path: testInfo.outputPath("keyboard-focus.png") });
   await button.click();
   await page.emulateMedia({ reducedMotion: "reduce" });

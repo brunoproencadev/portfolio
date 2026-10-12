@@ -2,6 +2,23 @@
 
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { profile, sections, type SectionId } from "@/data/portfolio";
+import Image from "next/image";
+import localFont from "next/font/local";
+import { useIslandMotion } from "./use-island-motion";
+
+const manrope = localFont({
+  src: "../../fonts/manrope-latin-variable.woff2",
+  display: "swap",
+  weight: "400 800",
+});
+
+const icons: Record<SectionId, string> = {
+  inicio: "m3 11 9-8 9 8M5 9v12h5v-7h4v7h5V9",
+  projetos: "M3 6h18v15H3zM8 6V3h8v3M3 12h18",
+  sobre: "M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0M4 22v-3a8 8 0 0 1 16 0v3",
+  competencias: "m7 6-6 6 6 6m10-12 6 6-6 6M14 3l-4 18",
+  contato: "M2 5h20v14H2zM2 6l10 7L22 6",
+};
 
 const subscribeToHydration = () => () => {};
 
@@ -13,8 +30,8 @@ export function SiteNavigation() {
   );
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<SectionId>("inicio");
-  const nav = useRef<HTMLElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
+  const nav = useIslandMotion(enhanced, open);
 
   useEffect(() => {
     if (!enhanced) return;
@@ -55,13 +72,20 @@ export function SiteNavigation() {
       window.removeEventListener("resize", observe);
       window.removeEventListener("hashchange", updateActive);
     };
-  }, [enhanced]);
+  }, [enhanced, nav]);
 
   useEffect(() => {
     if (!open) return;
     const closeOutside = (event: PointerEvent) => {
-      if (event.target instanceof Node && !nav.current?.contains(event.target))
+      if (
+        event.target instanceof Node &&
+        !nav.current?.contains(event.target)
+      ) {
+        const focused = document.activeElement;
+        if (focused instanceof HTMLElement && nav.current?.contains(focused))
+          focused.blur();
         setOpen(false);
+      }
     };
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key !== "Escape" || event.defaultPrevented) return;
@@ -75,7 +99,7 @@ export function SiteNavigation() {
       document.removeEventListener("pointerdown", closeOutside);
       document.removeEventListener("keydown", closeOnEscape);
     };
-  }, [open]);
+  }, [open, nav]);
 
   return (
     <header className="site-header page-container">
@@ -89,8 +113,9 @@ export function SiteNavigation() {
       </a>
       <nav
         ref={nav}
-        className="capsule"
+        className={`capsule ${manrope.className}`}
         data-enhanced={enhanced || undefined}
+        data-open={open || undefined}
         aria-label="Navegação principal"
         onBlur={(event) => {
           if (!event.currentTarget.contains(event.relatedTarget))
@@ -98,9 +123,14 @@ export function SiteNavigation() {
         }}
       >
         <div className="capsule-heading" hidden={!enhanced}>
-          <span className="capsule-monogram" aria-hidden="true">
-            BP/
-          </span>
+          <Image
+            className="capsule-avatar"
+            src="/images/profile/github-avatar.png"
+            width={40}
+            height={40}
+            alt=""
+            priority
+          />
           <div className="capsule-identity">
             <span className="capsule-name">{profile.shortName}</span>
             <span className="capsule-current">
@@ -112,22 +142,23 @@ export function SiteNavigation() {
             type="button"
             aria-expanded={open}
             aria-controls="navigation-links"
-            onClick={() => setOpen(!open)}
+            aria-label={open ? "Fechar" : "Menu"}
+            onClick={() => setOpen((value) => !value)}
             className="capsule-toggle"
           >
-            {open ? "Fechar" : "Menu"}
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d={open ? "m6 6 12 12M6 18 18 6" : "M5 9h14M5 15h14"} />
+            </svg>
           </button>
         </div>
         <div
           id="navigation-links"
           className="capsule-panel"
-          hidden={enhanced && !open}
+          inert={enhanced && !open}
+          aria-hidden={enhanced && !open ? true : undefined}
         >
-          <p className="capsule-panel-label" hidden={!enhanced}>
-            Percorrer o caderno
-          </p>
           <ul className="capsule-links">
-            {sections.map((section, index) => (
+            {sections.map((section) => (
               <li key={section.id}>
                 <a
                   href={`#${section.id}`}
@@ -151,13 +182,13 @@ export function SiteNavigation() {
                       ?.focus({ preventScroll: true });
                   }}
                 >
-                  <span
-                    className="capsule-link-index"
-                    hidden={!enhanced}
+                  <svg
+                    className="capsule-link-icon"
+                    viewBox="0 0 24 24"
                     aria-hidden="true"
                   >
-                    0{index + 1}
-                  </span>
+                    <path d={icons[section.id]} />
+                  </svg>
                   {section.label}
                   <span
                     className="capsule-link-current"
@@ -169,6 +200,9 @@ export function SiteNavigation() {
               </li>
             ))}
           </ul>
+          <p className="capsule-note" hidden={!enhanced}>
+            {profile.position}. Software, visão e robótica.
+          </p>
         </div>
       </nav>
     </header>

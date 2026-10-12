@@ -1,5 +1,13 @@
 # Arquitetura e decisões
 
+## Ilha dimensional — C, 2026-10-12
+
+SiteNavigation preserva estado React, destinos, observer da seção, âncoras e fallback SSR/no-JS. useIslandMotion possui o ref e o ciclo de vida local; Motion mini (dependência existente) interpola width/height/radius e opacity/translateY dos filhos. Medição antes do paint usa altura natural e painel com largura expandida estável; o texto/avatar nunca recebe scale. Custo de layout restrito à pequena superfície fixa, sem listener de scroll nem loop permanente.
+
+Comandos revertem a geometria corrente; revisão invalida conclusões antigas. Resize, fonte pronta, foco no painel, pagehide/visibilidade e reduced motion encerram a transição no estado legível. ResizeObserver/listeners/animações recebem cleanup. Falha de animação cai no estado final. Links fechados/saindo ficam inert e aria-hidden imediatamente; Escape devolve foco, clique externo resolve foco interno antes de ocultar sem capturar o destino externo. Sem body lock/focus trap. GSAP não toca esses nós.
+
+Fonte Manrope e avatar locais usados somente na cápsula. Tokens B são locais nessa migração; o restante do produto mantém o sistema anterior até seus gates. Nenhuma dependência, rota, dado, SEO ou favicon alterado em C. Provas e limites em PHASE_C_REVIEW.
+
 ## Decisão da auditoria de redesign — Fase A, 2026-10-11
 
 Preservar esta arquitetura e as invariantes de conteúdo/segurança/acessibilidade. Nenhum código foi alterado. O novo brief exige reconstruir apresentação e coreografia, não framework/rotas/dados. Motion instalado passa a ser candidato para transformação dimensional da ilha em C; GSAP/ScrollTrigger continuam donos de intro/cenas em D/E/F, sem disputar propriedades. Propostas e fronteiras em MOTION_SPEC/REDESIGN_AUDIT; gates A–I em VISUAL_REDESIGN_PLAN. A ausência de pin/scrub e o uso somente de CSS na cápsula abaixo descrevem o estado existente, não restrição para o redesign aprovado futuramente.

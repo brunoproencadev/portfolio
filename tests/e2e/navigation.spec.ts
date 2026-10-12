@@ -33,6 +33,7 @@ test("disclosure follows keyboard order and Escape returns focus", async ({
   await expect(
     page.getByRole("button", { name: "Fechar", exact: true }),
   ).toHaveAttribute("aria-expanded", "true");
+  await expect(page.locator(".capsule")).not.toHaveAttribute("data-animating");
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
 });
 
