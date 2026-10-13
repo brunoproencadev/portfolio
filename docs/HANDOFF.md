@@ -1,8 +1,23 @@
 # Handoff — redesign cinematográfico, Fase E
 
-## Estado vigente E
+## Estado vigente E — concluída para revisão, 2026-10-13
 
-D aprovada e E autorizada explicitamente por “Aprovo e autorizo”. Baseline limpo c976322. Implementar somente saudação/retirada e coordenação com hero conforme PHASE_E_PLAN. F–I/push/deploy não autorizados. Fechamento D: c976322.
+D aprovada e E autorizada por “Aprovo e autorizo”. Baseline limpo c976322, branch redesign/cinematic-portfolio preservada. Saudação manuscrita, retirada e integração com hero entregues; revisão independente **ship**, sem correções materiais. [Relatório](PHASE_E_REVIEW.md), evidências em intro-review. F–I/push/deploy não autorizados. Próximo passo: aprovação de E e autorização de F pelo usuário.
+
+Commits locais:
+
+- `0ab2720` — docs: authorize intro phase and define safe transition scope.
+- `75ba951` — feat: add skippable handwritten intro and hero transition; owner/fallbacks, coordenação GSAP, regressões e decisões.
+- `a3d3126` — test: record intro reference comparison and browser evidence;20 estados, vídeos amostrados, métricas/manifestos e parecer independente.
+- O commit `docs: close phase E and gate scroll storytelling` encerra a documentação após esses SHAs; consultar `git log -1 --oneline` para evitar autorreferência.
+
+Prova: build/lint/strict/formato dos arquivos de código alterados aprovados; Playwright96 focados+112 regressões,208 passes em duas rodadas disjuntas/5 skips preexistentes/0 falhas. Vitest6 passaram; tooling excedeu timeout na carga inicial e passou isolado sem mudar limite. Não alegar rodada unitária integral limpa. Cinco estados finais sem axe,20 capturas sem overflow/pageerror e220 amostras RAF; gravações locais25fps em .audit/phase-e fora do Git. Sequência real amostrada≈1,86s; watchdog independente2,2s. Lighthouse3 mobile: mediana98, LCP2393ms, CLS0,03888, TBT74,5ms; a11y/boas práticas100, SEO66/noindex. Ambiente/histórico/limites no relatório.
+
+HomeMotion usa camada hidden SSR e só a mostra após cancelamentos instalados/import pronto; qualquer interação/foco relevante encerra. Movimento D começa850ms, conjunto termina1850ms. Navbar/hero/dados/SEO/dependências e scroll anterior preservados. Sem foto/assinatura fictícia, nova fonte ou percentuais de loading. LinkedIn/fotos, favicon e mídia/storytelling aguardam gates posteriores.
+
+Servidor local3101 usado para capturas/medições foi encerrado. Scripts concluídos fecharam seus navegadores.
+
+Retomada F: ler PHASE_E_REVIEW, MOTION_SPEC/M04, COMPONENT_SPEC, MEDIA_ASSETS e vídeos reais R3/R2 já analisados. Trabalhar com screenshots autênticos e limites de deploy/fontes; prever mobile/reduced/no-JS, âncoras/foco e cleanup de pin/scrub. Não inferir autorização de F a partir de sandbox/compilação. Publicação exige autorização separada.
 
 ## Histórico D — concluída, 2026-10-12
 

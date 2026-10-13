@@ -1,6 +1,6 @@
 # Design system — proposta da Fase B
 
-Revisão2026-10-12: direção B aprovada; ilha C e hero/entrada D aplicados localmente. Manrope compartilhada, paleta violeta/neutra escopada. Demais superfícies preservam o sistema anterior até seus gates. [Prova D](PHASE_D_REVIEW.md), [prova C](PHASE_C_REVIEW.md), [componentes](COMPONENT_SPEC.md), [direção](VISUAL_DIRECTION.md). Baseline anterior recuperável em72d5877.
+Revisão2026-10-13: direção B aprovada; ilha C, hero D e saudação/passagem E aplicados localmente. Manrope compartilhada, paleta violeta/neutra escopada, desenho original branco/preto na intro. Demais superfícies preservam o sistema anterior até seus gates. [Prova E](PHASE_E_REVIEW.md), [prova D](PHASE_D_REVIEW.md), [componentes](COMPONENT_SPEC.md), [direção](VISUAL_DIRECTION.md).
 
 ## Cores
 

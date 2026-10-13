@@ -4,7 +4,7 @@
 
 SVG inline em src/components/motion/home-motion.tsx reutiliza exatamente o linework original “olá” de docs/design-prototype/states.html, aprovado B. Quatro paths separados apenas para ordem de escrita, viewBox120×80 recorta o espaço externo; não altera a forma. Decoração aria-hidden, não assinatura atribuída a Bruno nem fotografia. Nenhuma fonte manuscrita/asset externo/download foi adicionado.
 
-Capturas intro-review/*.jpg mostram a aplicação real local. intro-*-*.jpg usa relógio controlado em milissegundos; recorded-sequence-* deriva dos WebMs reais locais em .audit/phase-e, não versionados. Pranchas podem conter resize e timestamp para análise, sem redesenho da interface. Manifesto e condições de captura serão registrados no fechamento E.
+Capturas intro-review/*.jpg mostram a aplicação real local. intro-*-*.jpg usa relógio controlado em milissegundos; recorded-sequence-* deriva dos WebMs reais locais em .audit/phase-e, não versionados. Pranchas podem conter resize e timestamp para análise, sem redesenho da interface. Manifesto intro-review/manifest.json, fonte75ba951 e condições de captura em PHASE_E_REVIEW registram a entrega E; evidências commitadas em a3d3126.
 
 ## Hero — Fase D, 2026-10-12
 

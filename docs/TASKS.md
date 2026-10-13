@@ -16,7 +16,8 @@
 - [x] Gate D: autorizado pelo “Continue” em resposta ao pedido explícito C/D.
 - [x] D: hero cinematográfico, entrada, regressões, capturas/gravações, Lighthouse e revisão independente ship; PHASE_D_REVIEW e commits em HANDOFF.
 - [x] Gate E: D aprovada e E autorizada explicitamente por “Aprovo e autorizo”.
-- [ ] E: intro manuscrita e transição em implementação; escopo em PHASE_E_PLAN.
+- [x] E: saudação manuscrita/retirada, cancelamento/fallbacks, regressões, vídeo/capturas, Lighthouse e revisão independente ship; PHASE_E_REVIEW e commits em HANDOFF.
+- [ ] Gate F: aguardar aprovação de E e autorização explícita de scroll storytelling.
 - [ ] F: scroll narrativo e mídia real; gate próprio após E.
 - [ ] G: conteúdo/cases/fotos confirmadas e avatar favicon; gate próprio após F.
 - [ ] H: QA completo/performance/comparação; gate próprio após G.

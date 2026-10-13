@@ -1,6 +1,6 @@
 # Componentes — especificação B
 
-Direção B aprovada. Ilha C e hero/entrada D implementados e validados em [PHASE_C_REVIEW](PHASE_C_REVIEW.md) e [PHASE_D_REVIEW](PHASE_D_REVIEW.md). Demais componentes aguardam seus gates. Hero usa h1 único em duas máscaras, arco SVG decorativo, posição18px/16px mobile, descrição16px/14px mobile, botões48px e tipografia64–96px/36–58px mobile. Ações quebram em320px; conteúdo tem altura natural. [Tokens](DESIGN_SYSTEM.md), [movimento](MOTION_SPEC.md), [direção](VISUAL_DIRECTION.md).
+Direção B aprovada. Ilha C, hero D e intro E implementados e validados em PHASE_C_REVIEW, PHASE_D_REVIEW e [PHASE_E_REVIEW](PHASE_E_REVIEW.md). Demais componentes aguardam seus gates. Hero mantém composição e geometria D; intro usa seu wrapper irmão para escapar do isolamento visual, sem portal/gerenciador novo. [Tokens](DESIGN_SYSTEM.md), [movimento](MOTION_SPEC.md), [direção](VISUAL_DIRECTION.md).
 
 ## Ilha / C
 
@@ -25,7 +25,7 @@ Nome real h1, “Desenvolvedor em formação”, software/visão/robótica, CTA 
 
 ## Intro / E
 
-“olá” branco manuscrito, original, não assinatura atribuída a Bruno. 850 ms desenho+150 ms pausa+450 ms retração; watchdog2200 ms. B mostra forma/estados, tracing real em E. Sem porcentagem ou bloqueio SSR. Pular sempre operável; interação/hash/foco/reduced/falha cancelam. Não repetir na navegação da sessão.
+Implementado: “olá” branco manuscrito original B, não assinatura atribuída a Bruno. Quatro paths normalizados,850ms desenho proporcional ao comprimento+150ms pausa+450ms retirada; SVG104–144px/viewBox120×80/stroke1,6. Entrada D inicia850ms, conjunto1850ms; watchdog2200ms. Pular fixo inferior/direita24px+safe-area, acima da camada pointer-events none. Hidden/aria-hidden no SSR, import falho/tardio não bloqueia conteúdo. Interação/foco no documento/navbar, hash/reduced/falha cancelam; sem replay na sessão. Prova em PHASE_E_REVIEW.
 
 ## Projetos / F
 

@@ -1,5 +1,13 @@
 # Verificação — Fase 3 e auditoria
 
+## Redesign Fase E — evidência vigente, 2026-10-13
+
+Fonte75ba951, evidênciasa3d3126. Build/lint/strict/formato de código alterado aprovados. E2E96 focados+112 regressões aprovados em duas rodadas disjuntas,5 skips preexistentes,0 falhas. Unitários6 passaram; tooling.test excedeu60s inicialmente (104088ms) e passou isolado, sem aumento de timeout,22,59s total/15,80s teste. Não alegar execução integral unitária limpa. [Relatório completo](PHASE_E_REVIEW.md), [resumo](intro-review/verification.json).
+
+20 estados/5 larguras sem overflow/pageerrors; axe zero nos5 estados finais. Vídeos25fps/220 amostras RAF reais e relógio controlado distinguem escrita, pausa, retirada e encerramento. Maior intervalo amostrado32,5ms desktop/18,2ms mobile; não prova60fps em todo hardware. Revisão independente ship restrita a E. Lighthouse13.5 mobile local3rodadas: mediana98/LCP2393ms/CLS0,03888/TBT74,5ms, a11y/boas práticas100 e SEO66/noindex. Sem INP/dispositivo físico/Safari real/leitor de tela.
+
+Uma execução unitária inicialmente não foi iniciada porque a revisão automática de comandos atingiu limite de uso. Após o usuário retomar, o acesso foi restabelecido e as provas continuaram, sem contorno de aprovação. A primeira coleta visual foi interrompida porque axe aguardava o relógio pausado; corrigido o script, captura final regenerada. Build mantém aviso metadataBase de preview. Nenhum push/deploy; F aguarda autorização.
+
 ## Redesign Fase D — evidência vigente, 2026-10-12
 
 Fonte7d4d018, evidênciase6126eb. Formato de código alterado/lint integral/strict/build aprovados; Vitest7/7. E2E amplo154 aprovados/5 skips/3 falhas no novo teste antes do primeiro RAF; sincronização corrigida e hero9/9 no rerun Chromium/Firefox/WebKit. Não alegar rodada integral limpa. As cinco exclusões preexistentes e falhas anteriores estão em [PHASE_D_REVIEW](PHASE_D_REVIEW.md) e hero-review/verification.json.

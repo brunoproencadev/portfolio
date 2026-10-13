@@ -1,6 +1,6 @@
 # PRD — Bruno Proença Silva
 
-Atualização de precedência2026-10-12: A–C concluídas/aprovadas; D autorizada no gate explícito C/D e entregue para revisão em PHASE_D_REVIEW. E–I exigem confirmação individual. REFERENCE_ANALYSIS/MOTION_SPEC/VISUAL_ACCEPTANCE_CRITERIA substituem decisões visuais incompatíveis do ciclo anterior. Conteúdo factual, rotas, segurança/SEO e fallbacks continuam válidos. O texto abaixo é histórico; estado vigente em HANDOFF. Nenhum novo push/deploy autorizado.
+Atualização de precedência2026-10-13: A–D concluídas/aprovadas; E autorizada explicitamente no gate D/E e entregue para revisão em PHASE_E_REVIEW. F–I exigem confirmação individual. REFERENCE_ANALYSIS/MOTION_SPEC/VISUAL_ACCEPTANCE_CRITERIA substituem decisões visuais incompatíveis do ciclo anterior. Conteúdo factual, rotas, segurança/SEO e fallbacks continuam válidos. O texto abaixo é histórico; estado vigente em HANDOFF. Nenhum novo push/deploy autorizado.
 
 Revisão de auditoria: 2026-10-09; home, movimento e cases entregues nas Fases 4–6 em 2026-10-10. QA local da Fase 7 concluído em 2026-10-11, com resultados e limites em QA_PHASE7. Fonte de escopo; mudanças entre fases exigem aprovação. Fase 8 publicada na Vercel em 2026-10-11 por autorização do usuário; domínio/HTTPS/SEO confirmados em LAUNCH. Validações humanas e de campo permanecem limitadas conforme registros.
 

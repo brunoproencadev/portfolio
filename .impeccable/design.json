@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-12T23:19:37.000Z",
-  "title": "Design System: Bruno Proença Silva — direção B, ilha C e hero D",
+  "generatedAt": "2026-10-13T11:32:16Z",
+  "title": "Design System: Bruno Proença Silva — direção B e superfícies C/D/E",
   "extensions": {
-    "scope": "B/C aprovadas; D autorizada no gate C/D e implementada localmente (7d4d018), entregue para revisão do usuário. Primitivos/snippets B preservados; tokens hero-* e appliedHero registram D, appliedNavigation registra C. Seções posteriores e cases permanecem legados. E–I exigem confirmação individual; nenhum push/deploy autorizado.",
-    "authority": "docs/DESIGN_SYSTEM.md; snapshot B extraído de docs/design-prototype/style.css e index.html. Extensão C conferida em src/components/navigation/site-navigation.tsx, use-island-motion.ts e CSS .capsule de src/styles/globals.css. D conferida em src/components/sections/cinematic-hero.tsx, src/components/motion/home-sequence.ts, src/fonts/manrope.ts e CSS do hero/header em src/styles/globals.css; contrato docs/PHASE_D_PLAN.md.",
+    "scope": "B/C/D aprovadas; E autorizada por “Aprovo e autorizo”, fonte 75ba951 e evidências a3d3126, entregue para revisão do usuário. Primitivos/snippets B preservados; appliedNavigation C, appliedHero D e appliedIntro E registram superfícies aplicadas. Seções posteriores e cases permanecem legados. F–I exigem confirmação individual; nenhum push/deploy autorizado.",
+    "authority": "docs/DESIGN_SYSTEM.md; snapshot B extraído de docs/design-prototype/style.css e index.html. Extensão C conferida em src/components/navigation/site-navigation.tsx, use-island-motion.ts e CSS .capsule de src/styles/globals.css. D conferida em src/components/sections/cinematic-hero.tsx, src/components/motion/home-sequence.ts, src/fonts/manrope.ts e CSS do hero/header em src/styles/globals.css; contrato docs/PHASE_D_PLAN.md. E conferida em src/components/motion/home-motion.tsx, home-sequence.ts, src/app/page.tsx e CSS .intro-* em src/styles/globals.css; contrato docs/PHASE_E_PLAN.md e evidências docs/PHASE_E_REVIEW.md.",
     "tonalRampNote": "Amostras OKLCH sintetizadas para o painel com chroma/hue constantes e luz de 15% a 95%; não são tokens aprovados nem cores usadas no protótipo. Extremos podem sofrer gamut mapping.",
-    "fontNote": "Manrope local licenciada, compartilhada por navegação C e hero D via src/fonts/manrope.ts e next/font/local, pesos 400–800 e swap. Snippets B usam fallback quando a família não está carregada. Não representa migração tipográfica do app inteiro.",
+    "fontNote": "Manrope local licenciada, compartilhada por navegação C, hero D e botão Pular E via src/fonts/manrope.ts e next/font/local, pesos 400–800 e swap. Snippets B usam fallback quando a família não está carregada. Não representa migração tipográfica do app inteiro.",
     "appliedNavigation": {
       "sourceCommit": "d7e377f",
       "authorizationCommit": "c8d28ee",
@@ -270,7 +270,7 @@
       }
     ],
     "motion": [],
-    "motionNote": "B e seus snippets permanecem estáticos; movimento da ilha C em appliedNavigation.motion e entrada D em appliedHero.motion. Saudação E e storytelling avançado F continuam futuros e dependem dos respectivos gates.",
+    "motionNote": "B e seus snippets permanecem estáticos; movimento aplicado em appliedNavigation C, appliedHero D e appliedIntro E. GSAP controla intro/hero; Motion controla a ilha, sem disputa de propriedades. Storytelling F não implementado.",
     "breakpoints": [
       {
         "name": "mobile-max",
@@ -300,7 +300,7 @@
       "sourceCommit": "7d4d018",
       "authorizationCommit": "f24cd81",
       "evidenceCommit": "e6126eb",
-      "reviewDisposition": "ship, somente hero/composição/entrada D; aprovação do usuário ainda pendente",
+      "reviewDisposition": "ship, somente hero/composição/entrada D; D aprovada pelo usuário no gate D/E",
       "evidence": [
         "docs/PHASE_D_REVIEW.md",
         "docs/hero-review/finish-review.md",
@@ -316,9 +316,34 @@
       "actions": "Links reais #projetos e GitHub, min-height 48px, raio 8px, padding 12px 20px e gap 20px; mobile padding 12px 16px/gap 12px. SVG 18px/traço 1.5px; foco accent 3px/offset 4px. Hover principal accent/ink; secundário surface/accent.",
       "closing": "Fechamento em muted com margin-top auto, padding-top 100px (mobile 116px), segunda linha com margin-top 4px; typography.hero-end e hero-end-mobile.",
       "light": "Três paths SVG de B, traços 55/14/2px, opacity 0.65/0.8/0.9 e blur estático 24/7. aria-hidden, sem interação; transform-origin 50% 85%; nenhum filtro full-screen animado.",
-      "motion": "GSAP, timeline 1s, power2.out: arco 0–800ms (y30px/scale1.04/opacity0.25 até repouso e borda 12→2px); título 120–860ms (yPercent110, duração640ms, stagger100ms); posição400–750ms/y12px; descrição500–900ms/y10px; ações640–1000ms/y10px; fechamento600–1000ms. Apoios entram com opacity. Timings autorais orientados pela ordem R2, não easing original conhecido; Motion mantém a ilha C.",
-      "fallbacks": "Server Component e SSR/no-JS completos; HomeMotion preserva sessão, import dinâmico, pular, watchdog2.2s, cancelamento por foco/gesto/hash/reduced/pagehide e cleanup via context.revert. Reduced motion em execução resolve estado; sem pin/scrub.",
-      "limits": "Revisor inspecionou arquivos/capturas, sem navegador próprio ou reprodução direta dos WebM. Não comprova 60fps, WCAG, hardware mobile ou redesign completo. Navbar aberta sobrepõe temporariamente nome. Verde/cards e demais seções legadas aguardam fases posteriores. Não inclui saudação/loading E, storytelling F nem publicação."
+      "motion": "GSAP, timeline 1s, power2.out: arco 0–800ms (y30px/scale1.04/opacity0.25 até repouso e borda 12→2px); título 120–860ms (yPercent110, duração640ms, stagger100ms); posição400–750ms/y12px; descrição500–900ms/y10px; ações640–1000ms/y10px; fechamento600–1000ms. Apoios entram com opacity. Timings autorais orientados pela ordem R2, não easing original conhecido; Motion mantém a ilha C. Em E, os offsets permanecem relativos a D: início deslocado para 850ms, fim 1850ms da sequência conjunta.",
+      "fallbacks": "Server Component e SSR/no-JS completos; HomeMotion preserva sessão, import dinâmico, pular, watchdog2.2s, cancelamento por foco/gesto/hash/reduced/pagehide e cleanup via context.revert. Reduced motion em execução resolve estado; sem pin/scrub. E move HomeMotion para irmão de CinematicHero dentro de main para sair do isolamento do hero; foco/pointerdown no documento também cancelam a intro, inclusive na navbar.",
+      "limits": "Revisor inspecionou arquivos/capturas, sem navegador próprio ou reprodução direta dos WebM. Não comprova 60fps, WCAG, hardware mobile ou redesign completo. Navbar aberta sobrepõe temporariamente nome. Verde/cards e demais seções legadas aguardam fases posteriores. Saudação/retirada E está documentada separadamente em appliedIntro. Não inclui storytelling F nem publicação."
+    },
+    "appliedIntro": {
+      "sourceCommit": "75ba951",
+      "authorizationCommit": "0ab2720",
+      "evidenceCommit": "a3d3126",
+      "reviewDisposition": "ship, somente saudação/retirada/integração E; aprovação do usuário ainda pendente",
+      "evidence": [
+        "docs/PHASE_E_REVIEW.md",
+        "docs/intro-review/finish-review.md",
+        "docs/intro-review/results.json",
+        "docs/intro-review/controlled-sequence.jpg",
+        "docs/intro-review/recorded-sequence-1440.jpg",
+        "docs/intro-review/recorded-sequence-375.jpg",
+        "docs/intro-review/manifest.json"
+      ],
+      "authority": "Quatro paths originais de olá do estudo B em docs/design-prototype/states.html. R3 orienta escrita, pausa e retirada de baixo para cima; idioma/tempos adaptados, sem atribuição de assinatura ou progresso de rede.",
+      "palette": "Camada background; traços foreground. Pular surface/foreground, borda control, hover/foco accent; mesmos valores B, sem migração global.",
+      "geometry": "Camada fixed/inset 0/z-index 30, grid/place-items: center; SVG viewBox=\"0 0 120 80\", width clamp(104px, 10vw, 144px), height auto. Stroke-width1.6 em unidades SVG, linecap/linejoin round; pathLength1/dasharray 1/dashoffset 0 no repouso.",
+      "skip": "Manrope local; fixed/z-index 40, bottom max(24px, env(safe-area-inset-bottom)) e right max(24px, env(safe-area-inset-right)); min-height 44px, padding 8px 12px, border 1px control, radius 8px; hover accent, focus-visible outline 3px accent/offset 4px.",
+      "motion": "GSAP: quatro traços sequenciais lineares 0–850 ms, duração proporcional ao comprimento; pausa 850–1000 ms; greeting opacity 1→0 em 1000–1150 ms/power2.out; camada yPercent 0→−100 em 1000–1450 ms/power3.inOut. D inicia 850 ms e termina 1850 ms; watchdog independente 2200 ms desde elegibilidade, incluindo import.",
+      "ownership": "HomeMotion é irmão de CinematicHero dentro de main para escapar do stacking context isolado do hero. Mesmo dono de elegibilidade/sessão/import/skip/cleanup, sem portal ou gerenciador novo. GSAP intro/hero e Motion ilha têm alvos separados.",
+      "interaction": "Focusin do documento fora de Pular e pointerdown fora do botão cancelam, incluindo conteúdo/navbar; Escape, wheel, touchstart, hashchange, pagehide e reduced em execução também. Pular retorna foco ao h1 somente se estava focado. Interação durante import impede abertura tardia.",
+      "fallbacks": "SSR hidden/aria-hidden e pointer-events none; camada mostrada só após listeners/watchdog e import bem-sucedido. No-JS/reduced inicial/sessão vista/hash/scroll inicial preservam conteúdo completo. Storage negado mantém guarda por documento. Finish/cleanup esconde camada e reverte contexto GSAP; import falho/tardio e timeline estagnada têm watchdog. Sem body lock/inert/focus trap.",
+      "validation": "20 estados controlados em 320/375/768/1440/1920 px sem overflow/pageerror; zero axe nos cinco finais. Gravações reais desktop/mobile e 220 amostras RAF. E2E 96+112 passes em duas rodadas disjuntas, 5 skips preexistentes. Lighthouse local 3 rodadas: mediana 98/LCP 2393.03 ms/CLS 0.03888/TBT 74.50 ms.",
+      "limits": "Revisor abriu 20 capturas/pranchas; sem navegador próprio ou reprodução contínua WebM. Relógio controlado, frames reais e testes têm provas separadas. Não certifica 60 fps em todo hardware, WCAG, mobile físico, INP/desempenho de campo, pixel-perfect R3 ou publicação. F–I e superfícies legadas continuam pendentes dos gates."
     }
   },
   "components": [

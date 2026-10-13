@@ -1,6 +1,6 @@
 # Direção visual B — horizonte e evidência
 
-Direção B aprovada; C e D entregues em2026-10-12, conforme [PHASE_C_REVIEW](PHASE_C_REVIEW.md) e [PHASE_D_REVIEW](PHASE_D_REVIEW.md). O contrato abaixo permanece alvo das fases seguintes, sem autorizar E–I. Vídeos reais têm precedência. Protótipos documentais usam mídia autêntica, sem imagens generativas.
+Direção B aprovada; C/D aplicadas e aprovadas, E entregue em2026-10-13, conforme [PHASE_E_REVIEW](PHASE_E_REVIEW.md). O contrato abaixo permanece alvo das fases seguintes, sem autorizar F–I. Vídeos reais têm precedência. Protótipos documentais usam mídia autêntica, sem imagens generativas.
 
 ## Direction contract
 

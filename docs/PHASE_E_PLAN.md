@@ -19,3 +19,7 @@ Alcance: HomeMotion movido para irmão do hero dentro de main (a camada fixed pr
 ## Validação e fechamento
 
 E01–E02: estados escrita/parcial/completa/retirada/hero em320/375/768/1440/1920; vídeo real desktop/mobile e frames controlados, comparação R3/B. Teclado/foco/navbar, cancelamento em cada estágio, toque/wheel/hash/pagehide, reduced inicial/em execução, storage negado, import falho/tardio, watchdog mesmo com timeline parada, reentrada/no-JS. Testes dos callers preservados. Strict/lint/format/unit/build e E2E pertinente; Lighthouse local para verificar impacto da nova intro. Revisão independente, documentação e commits pequenos. Pedir aprovação antes de F.
+
+## Fechamento
+
+E entregue para revisão em PHASE_E_REVIEW.md: fonte75ba951, evidênciasa3d3126, revisão independente ship. Próximo gate: aprovação de E/autorização de F; não avançar automaticamente.
