@@ -1,6 +1,10 @@
-# Handoff — redesign cinematográfico, Fase D
+# Handoff — redesign cinematográfico, Fase E
 
-## Estado vigente D — concluída para revisão, 2026-10-12
+## Estado vigente E
+
+D aprovada e E autorizada explicitamente por “Aprovo e autorizo”. Baseline limpo c976322. Implementar somente saudação/retirada e coordenação com hero conforme PHASE_E_PLAN. F–I/push/deploy não autorizados. Fechamento D: c976322.
+
+## Histórico D — concluída, 2026-10-12
 
 C aprovada e D autorizada pelo “Continue” em resposta ao gate C/D. Baseline limpoe63bb7d; branch redesign/cinematic-portfolio. Hero cinematográfico implementado e revisão independente **ship**, sem material fixes. [Relatório e evidências](PHASE_D_REVIEW.md). E não autorizada; próximo passo é obter aprovação de D/início de E. Nenhum push/deploy.
 
