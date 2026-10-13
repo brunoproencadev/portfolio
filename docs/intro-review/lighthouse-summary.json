@@ -1,0 +1,124 @@
+[
+  {
+    "slug": "home",
+    "run": 1,
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "lcp": 2484.6,
+    "cls": 0.03888213851761847,
+    "tbt": 59.07999999999993,
+    "bytes": 251762,
+    "failures": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.67,
+        "value": "200 ms"
+      },
+      {
+        "id": "unused-javascript",
+        "score": 0,
+        "value": "Est savings of 52 KiB"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "score": 0,
+        "value": "Est savings of 14 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "value": "Est savings of 340 ms"
+      }
+    ]
+  },
+  {
+    "slug": "home",
+    "run": 2,
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "lcp": 2393.0308750000004,
+    "cls": 0.03888213851761847,
+    "tbt": 82.5,
+    "bytes": 251762,
+    "failures": [
+      {
+        "id": "unused-javascript",
+        "score": 0,
+        "value": "Est savings of 52 KiB"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "score": 0,
+        "value": "Est savings of 14 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "value": "Est savings of 300 ms"
+      }
+    ]
+  },
+  {
+    "slug": "home",
+    "run": 3,
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+    },
+    "lcp": 2383.697,
+    "cls": 0.03888213851761847,
+    "tbt": 74.5,
+    "bytes": 251762,
+    "failures": [
+      {
+        "id": "unused-javascript",
+        "score": 0,
+        "value": "Est savings of 52 KiB"
+      },
+      {
+        "id": "is-crawlable",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "score": 0,
+        "value": "Est savings of 14 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "value": "Est savings of 290 ms"
+      }
+    ]
+  }
+]

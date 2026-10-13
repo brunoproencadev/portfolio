@@ -1,0 +1,39 @@
+{
+  "source": "75ba951",
+  "build": "pass; existing preview metadataBase warning",
+  "lint": "pass, zero warnings",
+  "typecheck": "pass",
+  "formatChangedCode": "pass",
+  "unit": {
+    "initial": {
+      "passed": 6,
+      "failed": 1,
+      "reason": "tooling.test.ts exceeded60000ms;104088ms recorded in cold run"
+    },
+    "focusedRerun": {
+      "file": "tests/unit/tooling.test.ts",
+      "passed": 1,
+      "failed": 0,
+      "durationMs": 22590,
+      "testMs": 15800
+    }
+  },
+  "e2e": {
+    "focused": {
+      "startTime": "2026-10-13T00:04:11.227Z",
+      "duration": 109814.66100000001,
+      "expected": 96,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "regressions": {
+      "startTime": "2026-10-13T11:23:48.519Z",
+      "duration": 102091.279,
+      "expected": 112,
+      "skipped": 5,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  }
+}

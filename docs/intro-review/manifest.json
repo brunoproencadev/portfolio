@@ -1,0 +1,192 @@
+{
+  "source": "75ba951",
+  "reference": "3.mp4 read-only; docs/reference-video-audit/r3-intro.jpg; B states.html original olá",
+  "files": [
+    {
+      "path": "docs/intro-review/controlled-sequence.jpg",
+      "bytes": 112425,
+      "sha256": "b4c84227873bb39ecf1452b3830494cd1c39c770a8f4e65c614aa0a22f436d10",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1440-1100.jpg",
+      "bytes": 12427,
+      "sha256": "576aef763b886444ea6d842e71104d8e000ac44650860d4476f7f7b993b8350b",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1440-1250.jpg",
+      "bytes": 46877,
+      "sha256": "dcf1b8c2de3afd51d745fb0c5349a673b5ab81d5397f9b49f42bcdc2a9f4d29f",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1440-1500.jpg",
+      "bytes": 72211,
+      "sha256": "9bef90323ad04846c03035b6971e991a3336a51b5984b3dd571d5da3fb7d892a",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1440-1950.jpg",
+      "bytes": 81914,
+      "sha256": "190dd7dcdef44631f3be00335f9c46b8773e3e6a221152b1442e4672ff5a0c56",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1440-250.jpg",
+      "bytes": 11237,
+      "sha256": "ba3d44599039e4fd0555080ebdb3ef64ef8e1db16ebb04f3422850750ceee24b",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1440-32.jpg",
+      "bytes": 10622,
+      "sha256": "d83c5551ab55cdfad469792363b2b419070060aca3ca64cd4838c5aa33303d83",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1440-550.jpg",
+      "bytes": 12416,
+      "sha256": "152b02f5eb817d0a05eed0ba987e145beefd1464f0f84b65cc09de8ec65ba65b",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1440-900.jpg",
+      "bytes": 13404,
+      "sha256": "206e6548581efd5600fe32893e20ecc651dbcf43f6633984dc969681c190109c",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1920-1250.jpg",
+      "bytes": 80167,
+      "sha256": "678dfe56acab8feab7472d5308d0e945bd9237a9a2f1a788b0d93e62f16db424",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1920-1950.jpg",
+      "bytes": 116057,
+      "sha256": "df3e93bfea35f53df63753b1916ed9b97b2fd1cab14beedd2dbb827f40a5d6d4",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-1920-900.jpg",
+      "bytes": 17744,
+      "sha256": "e8fb4bceba4f07b8a4848b26d0ec1c21e99b991366bef60623eaea8b415f92fb",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-320-1250.jpg",
+      "bytes": 13443,
+      "sha256": "ef96b78670b77abdb583622404494d3ac8b7c2c4afe98558f461034a2bbf76c6",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-320-1950.jpg",
+      "bytes": 42002,
+      "sha256": "b9d47f50361d22bd0fbf41ea289a535081fe31b4b5a82962b10bbed628f97c91",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-320-900.jpg",
+      "bytes": 6422,
+      "sha256": "cb79c99a4d1bfaafb0751473a0f84062a02664114c844e0136721cb8697724b0",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-375-1250.jpg",
+      "bytes": 21372,
+      "sha256": "c4289aab01c354849509363f862e90a8cb62d101f93a856eb571bfc9cfa8f92a",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-375-1950.jpg",
+      "bytes": 51158,
+      "sha256": "8dafc231735e72e2e36198feb8f8c9f042129520074f0d577d2bdb583bbbb32a",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-375-900.jpg",
+      "bytes": 6683,
+      "sha256": "8cc3931c7c0853d1c0ed14ee02684768429faa5a32903a17f98e8062b4a02559",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-768-1250.jpg",
+      "bytes": 26396,
+      "sha256": "e65e5ecb322139fb09dde2571372886df6738dda0fd5289681e595bd5296704e",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-768-1950.jpg",
+      "bytes": 56446,
+      "sha256": "676e4339ea4b2636579c04549347a433ed425210c0ab372167c47e4d896be320",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/intro-768-900.jpg",
+      "bytes": 8564,
+      "sha256": "71b420810a9aef26cd8454ba6c7ef144e5eb9ada947b15b69b66ee5bb6f8da7b",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/recorded-sequence-1440.jpg",
+      "bytes": 197029,
+      "sha256": "701647f998d66cc463579c8cf6f1445c65b4692550290d9ffc8b0590ec26ab28",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/recorded-sequence-375.jpg",
+      "bytes": 450060,
+      "sha256": "309e9cb5b0ce21893c983a1c56741783ac207ab68631dc5fbf73066d74ac8eef",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/states-1440.jpg",
+      "bytes": 75569,
+      "sha256": "1adab1a065bab1036f5d365b827d1415a588c76048cfed5bf5d87409862078bb",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/states-1920.jpg",
+      "bytes": 76681,
+      "sha256": "0276c1171ee993a836c4f9bae031ee12e7fe82a21c20400c0c4bc61935a72369",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/states-320.jpg",
+      "bytes": 97305,
+      "sha256": "78b3f73222c2aa97d7a5245e2a383f3e16f0cf9e2099428baf00a7be7e0951ee",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/states-375.jpg",
+      "bytes": 123776,
+      "sha256": "07ee515719d5e2e43d88da2618bfefc3bbd7fb0c1141a53ab0c7bc1dfe19ccce",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/states-768.jpg",
+      "bytes": 113389,
+      "sha256": "3329f4baf12f1c645ee7d21f116359f40c0c71a9fae53ce144136d7ac282c153",
+      "tracked": true
+    },
+    {
+      "path": "docs/intro-review/results.json",
+      "bytes": 99016,
+      "sha256": "64a762bf53da964fd61344a6835c68f7a9632acb0705bbc42931838528875d26",
+      "tracked": true
+    },
+    {
+      "path": ".audit/phase-e/intro-1440.webm",
+      "bytes": 401586,
+      "sha256": "c81f74a1c83c6854ba13587b4865f383b04ff4e3968e3f5e85fc33360431911a",
+      "tracked": false
+    },
+    {
+      "path": ".audit/phase-e/intro-375.webm",
+      "bytes": 220614,
+      "sha256": "a6593588be2164decbda312c5533f93f3594a61ac04f9652bb3ba1d05ee603b5",
+      "tracked": false
+    }
+  ]
+}
