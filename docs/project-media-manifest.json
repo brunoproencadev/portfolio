@@ -1,0 +1,46 @@
+[
+  {
+    "source": "robosense-m3-preview.jpg",
+    "file": "public/images/projects/robosense-lab/m3.webp",
+    "source_sha256": "f05d6557b62bab4bdb3e7ba8e909348c9f3883c3a11ed591d03cd3acbb2f8388",
+    "sha256": "655c204888dda75ffae19a6afde0e1aadc1cd9c0131176f62cbddf7a98948aed",
+    "bytes": 39644,
+    "width": 960,
+    "height": 540,
+    "optimization": "WebP quality85 effort6, resize only; full aspect, no crop or fabricated pixels",
+    "provenance": "docs/media-audit/manifest.json"
+  },
+  {
+    "source": "industry-week-1440-hero.png",
+    "file": "public/images/projects/industry-week/hero.webp",
+    "source_sha256": "7150a4bdefa6b6b1eb103daf728287aa9bc399ba59f4047dbcde5203f095f82e",
+    "sha256": "b2af75dca5da6d9035a650f7d144f6bb98194346b1ae098170861151b5ad8d30",
+    "bytes": 133324,
+    "width": 1440,
+    "height": 900,
+    "optimization": "WebP quality85 effort6, resize only; full aspect, no crop or fabricated pixels",
+    "provenance": "docs/media-audit/manifest.json"
+  },
+  {
+    "source": "industry-week-1440-eras.png",
+    "file": "public/images/projects/industry-week/eras.webp",
+    "source_sha256": "e17c1018a742db247ccd17522d60584c3d20ffd7b618f3d4ad5388cc763f55fb",
+    "sha256": "575258a1d12d5f736333fc493050d573a5f5ee590048177cf64fb7bd93a25105",
+    "bytes": 92008,
+    "width": 1440,
+    "height": 900,
+    "optimization": "WebP quality85 effort6, resize only; full aspect, no crop or fabricated pixels",
+    "provenance": "docs/media-audit/manifest.json"
+  },
+  {
+    "source": "atelie-repository-desktop.png",
+    "file": "public/images/projects/atelie-ingrid/catalog.webp",
+    "source_sha256": "3b38723977bcd664e2767d76bf9f6508ff075d6d3061ebd06f604b582718ef1d",
+    "sha256": "687dfda6e71feba6ff1be661c79e53478e4ac685fbb81bbd56237cdbdd3ceeee",
+    "bytes": 163240,
+    "width": 1000,
+    "height": 3524,
+    "optimization": "WebP quality85 effort6, resize only; full aspect, no crop or fabricated pixels",
+    "provenance": "docs/media-audit/manifest.json"
+  }
+]

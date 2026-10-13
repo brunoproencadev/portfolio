@@ -1,3 +1,15 @@
+# Mídias integradas na Fase F
+
+Cópias locais para home, geradas dos originais auditados em A. SHA-256 de cada original conferido antes da conversão. [Manifesto otimizado](project-media-manifest.json) registra arquivos, dimensões, bytes e hashes; [manifesto de origem](media-audit/manifest.json) contém URLs imutáveis e contexto.
+
+| Arquivo sob public/images/projects | Origem / uso na home | Verificação e direitos |
+| --- | --- | --- |
+| robosense-lab/m3.webp | Frame M3, repositório593768e; showcase RoboSense | Vídeo gravado, não streaming/hardware. Métrica desenhada pertence ao frame original; não novo benchmark. |
+| industry-week/hero.webp e eras.webp | Capturas desktop do GitHub Pages em2026-10-11; sequência Industry Week | Duas telas reais1440×900; deploymentb22aa4b distinto do main68ab01a. Não afirmar captura recente sem nova navegação. |
+| atelie-ingrid/catalog.webp | Screenshot integral do repositório66969cf, home-desktop.png; coluna Ateliê | Execução local documentada; não deployment público. Marca/fotos reservadas pelo README; revisar permissão antes de publicação proeminente. |
+
+WebP qualidade85; somente resize proporcional, sem crop/edição da UI. Total428.216bytes em disco; Next Image fornece tamanhos responsivos/lazy. Originais não commitados. Fotos pessoais continuam pendentes de originais/contexto; nenhuma substituição fabricada.
+
 # Inventário de mídia — auditoria A e protótipo B
 
 ## Saudação — Fase E, 2026-10-13
