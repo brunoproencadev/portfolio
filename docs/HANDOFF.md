@@ -1,3 +1,7 @@
+# Estado vigente F — em implementação, 2026-10-13
+
+E aprovada e F autorizada pelo “continue” no gate E/F. Baseline6881228 limpo. Escopo/justificativa em PHASE_F_PLAN. G–I/push/deploy não autorizados. Histórico E abaixo preservado.
+
 # Handoff — redesign cinematográfico, Fase E
 
 ## Estado vigente E — concluída para revisão, 2026-10-13
