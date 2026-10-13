@@ -170,3 +170,32 @@ for (const fallback of ["no-js", "reduced", "hash"] as const) {
     }
   });
 }
+
+test("pinned media stays below navigation in wide short viewports", async ({
+  page,
+}) => {
+  await openStory(page);
+  for (const viewport of [
+    { width: 900, height: 700 },
+    { width: 1440, height: 700 },
+    { width: 1920, height: 700 },
+    { width: 2560, height: 900 },
+  ]) {
+    await page.setViewportSize(viewport);
+    await expect(page.locator(".pin-spacer")).toHaveCount(1);
+    await page.waitForTimeout(250); // ScrollTrigger debounces viewport refresh.
+    const start = await pinStart(page);
+    await page.evaluate((start) => scrollTo(0, start + 300), start);
+    await expect
+      .poll(
+        async () => (await page.locator(".industry-stage").boundingBox())!.y,
+      )
+      .toBeCloseTo(112, 0);
+    await expect
+      .poll(async () => {
+        const band = await page.locator(".industry-band").boundingBox();
+        return band!.y >= 112 && band!.y + band!.height <= viewport.height;
+      })
+      .toBe(true);
+  }
+});

@@ -1071,6 +1071,9 @@ button.button-link {
     opacity: 0;
   }
   .story-enhanced .industry-window {
+    width: 100%;
+    max-width: calc((100svh - 240px) * 1.384615);
+    justify-self: center;
     aspect-ratio: 1440 / 1040;
     overflow: hidden;
   }
