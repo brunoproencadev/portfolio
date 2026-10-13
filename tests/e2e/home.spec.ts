@@ -11,14 +11,15 @@ for (const viewport of [
     await page.goto("/");
     for (const locator of [
       page.getByRole("heading", { name: "Bruno Proença Silva", level: 1 }),
-      page.getByText("Desenvolvedor em formação", { exact: true }),
-      page.getByText("Software, visão computacional e robótica.", {
-        exact: true,
-      }),
+      page.getByText("Desenvolvedor em formação.", { exact: true }),
+      page.locator(".hero-end"),
       page.getByRole("link", { name: "Explorar projetos" }),
     ]) {
       await expect(locator).toBeInViewport({ ratio: 1 });
     }
+    await expect(page.locator(".hero-end")).toContainText(
+      "Software, visão computacional e robótica.",
+    );
     await page.screenshot({
       path: testInfo.outputPath(`home-fold-${viewport.width}.png`),
     });
@@ -37,7 +38,8 @@ test("projects show sources and limits and all internal links resolve", async ({
     const card = page.getByRole("article", { name });
     await expect(card).toContainText("Estado");
     await expect(card).toContainText("Fonte");
-    await expect(card).toContainText("Esquema conceitual");
+    await expect(card.locator("figure img").first()).toBeVisible();
+    await expect(card.locator("figcaption").first()).not.toBeEmpty();
     await expect(
       card.getByRole("link", { name: `Ver repositório de ${name}` }),
     ).toHaveAttribute("href", /^https:\/\/github\.com\/brunoproencadev\//);

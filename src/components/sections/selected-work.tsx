@@ -1,0 +1,178 @@
+import Image from "next/image";
+import Link from "next/link";
+import { projects } from "@/data/portfolio";
+import { projectMedia } from "@/data/project-media";
+
+type Project = (typeof projects)[number];
+
+function Arrow() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      aria-hidden="true"
+    >
+      <path d="M5 19 19 5M5 5h14v14" />
+    </svg>
+  );
+}
+
+function ProjectLinks({ project }: { project: Project }) {
+  return (
+    <div className="work-links">
+      <Link
+        href={`/projetos/${project.slug}`}
+        prefetch={false}
+        aria-label={`Ler case de ${project.name}`}
+      >
+        Ler case <Arrow />
+      </Link>
+      <a
+        className="project-link"
+        href={project.repository}
+        aria-label={`Ver repositório de ${project.name}`}
+      >
+        Ver repositório <Arrow />
+      </a>
+      {project.slug === "industry-week-senai" && (
+        <a href={projectMedia.industryLive}>
+          Abrir demonstração <Arrow />
+        </a>
+      )}
+    </div>
+  );
+}
+
+function ProjectDetails({ project }: { project: Project }) {
+  return (
+    <div className="work-details">
+      <p className="work-summary">{project.summary}</p>
+      <ul className="work-stack" aria-label={`Tecnologias de ${project.name}`}>
+        {project.stack.map((technology) => (
+          <li key={technology}>{technology}</li>
+        ))}
+      </ul>
+      <dl className="work-evidence">
+        <div>
+          <dt>Estado</dt>
+          <dd>{project.status}</dd>
+        </div>
+        <div>
+          <dt>Fonte</dt>
+          <dd>{project.evidence}</dd>
+        </div>
+      </dl>
+    </div>
+  );
+}
+
+export function SelectedWork() {
+  const [robo, industry, atelie] = projects;
+  return (
+    <section className="selected-work" aria-labelledby="projetos">
+      <div className="work-introduction page-container">
+        <h2 id="projetos" tabIndex={-1}>
+          Ideias em <em>construção.</em>
+        </h2>
+        <p>O problema, as escolhas e até onde cada resultado foi validado.</p>
+      </div>
+      <article
+        className="work-robo page-container"
+        aria-labelledby={`titulo-${robo.slug}`}
+      >
+        <div className="work-title">
+          <h3 id={`titulo-${robo.slug}`}>{robo.name}</h3>
+          <p>{robo.category}</p>
+        </div>
+        <figure className="robo-frame">
+          <div className="robo-media">
+            <Image
+              src={projectMedia.robo.src}
+              alt={projectMedia.robo.alt}
+              width={projectMedia.robo.width}
+              height={projectMedia.robo.height}
+              sizes="(min-width: 1440px) 1280px, 90vw"
+            />
+          </div>
+          <figcaption>{projectMedia.robo.caption}</figcaption>
+        </figure>
+        <div className="work-context">
+          <ProjectDetails project={robo} />
+          <ProjectLinks project={robo} />
+        </div>
+      </article>
+      <article
+        className="work-industry"
+        aria-labelledby={`titulo-${industry.slug}`}
+      >
+        <div className="industry-stage">
+          <div className="industry-background" aria-hidden="true">
+            {projectMedia.industry.map((media, index) => (
+              <Image
+                key={media.src}
+                src={media.src}
+                alt=""
+                fill
+                sizes="100vw"
+                className={`industry-backdrop industry-backdrop-${index}`}
+              />
+            ))}
+          </div>
+          <div className="industry-band">
+            <div className="industry-title">
+              <h3 id={`titulo-${industry.slug}`}>{industry.name}</h3>
+              <p>{industry.category}</p>
+            </div>
+            <div className="industry-window">
+              <div className="industry-track">
+                {projectMedia.industry.map((media) => (
+                  <figure className="industry-slide" key={media.src}>
+                    <Image
+                      src={media.src}
+                      alt={media.alt}
+                      width={media.width}
+                      height={media.height}
+                      sizes="(min-width: 900px) 48vw, 90vw"
+                    />
+                    <figcaption>{media.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+            <ProjectLinks project={industry} />
+          </div>
+        </div>
+        <div className="industry-context page-container">
+          <ProjectDetails project={industry} />
+        </div>
+      </article>
+      <article
+        className="work-atelie page-container"
+        aria-labelledby={`titulo-${atelie.slug}`}
+      >
+        <div className="atelie-copy">
+          <div className="work-title">
+            <h3 id={`titulo-${atelie.slug}`}>{atelie.name}</h3>
+            <p>{atelie.category}</p>
+          </div>
+          <ProjectDetails project={atelie} />
+          <ProjectLinks project={atelie} />
+        </div>
+        <figure className="atelie-frame">
+          <Image
+            src={projectMedia.atelie.src}
+            width={projectMedia.atelie.width}
+            height={projectMedia.atelie.height}
+            alt={projectMedia.atelie.alt}
+            sizes="(min-width: 900px) 42vw, 90vw"
+          />
+          <figcaption>{projectMedia.atelie.caption}</figcaption>
+        </figure>
+      </article>
+    </section>
+  );
+}

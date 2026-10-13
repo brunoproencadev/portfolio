@@ -1,13 +1,13 @@
-import { ProjectIllustration } from "@/components/projects/project-illustration";
+import { SelectedWork } from "@/components/sections/selected-work";
+import { manrope } from "@/fonts/manrope";
 import { SiteNavigation } from "@/components/navigation/site-navigation";
 import { CinematicHero } from "@/components/sections/cinematic-hero";
 import { HomeMotion } from "@/components/motion/home-motion";
-import Link from "next/link";
-import { profile, projects, skills } from "@/data/portfolio";
+import { profile, skills } from "@/data/portfolio";
 
 export default function Home() {
   return (
-    <>
+    <div className={`home-page ${manrope.className}`}>
       <a className="skip-link" href="#conteudo">
         Pular para o conteúdo
       </a>
@@ -16,75 +16,7 @@ export default function Home() {
         <CinematicHero />
         <HomeMotion />
 
-        <section className="section page-container" aria-labelledby="projetos">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">01 / Projetos selecionados</p>
-              <h2 id="projetos" tabIndex={-1}>
-                Ideias em <em>construção.</em>
-              </h2>
-            </div>
-            <p>
-              O problema, as escolhas e até onde cada resultado foi validado.
-            </p>
-          </div>
-          <div className="project-grid">
-            {projects.map((project, index) => (
-              <article
-                className="project-card"
-                key={project.slug}
-                aria-labelledby={`titulo-${project.slug}`}
-              >
-                <figure className={`project-artwork artwork-${project.slug}`}>
-                  <div className="artwork-index" aria-hidden="true">
-                    0{index + 1} / {project.category}
-                  </div>
-                  <ProjectIllustration slug={project.slug} />
-                  <figcaption>
-                    <span>Esquema conceitual</span>
-                    {project.visualCaption}
-                  </figcaption>
-                </figure>
-                <div className="project-content">
-                  <p className="eyebrow">{project.category}</p>
-                  <h3 id={`titulo-${project.slug}`}>{project.name}</h3>
-                  <p>{project.summary}</p>
-                  <ul
-                    className="tag-list"
-                    aria-label={`Tecnologias de ${project.name}`}
-                  >
-                    {project.stack.map((technology) => (
-                      <li key={technology}>{technology}</li>
-                    ))}
-                  </ul>
-                  <p className="project-status">
-                    <span>Estado</span>
-                    {project.status}
-                  </p>
-                  <p className="project-evidence">
-                    <span>Fonte</span>
-                    {project.evidence}
-                  </p>
-                  <a
-                    className="project-link"
-                    href={project.repository}
-                    aria-label={`Ver repositório de ${project.name}`}
-                  >
-                    Ver repositório <span aria-hidden="true">↗</span>
-                  </a>
-                  <Link
-                    className="button-link"
-                    href={`/projetos/${project.slug}`}
-                    prefetch={false}
-                    aria-label={`Ler case de ${project.name}`}
-                  >
-                    Ler case <span aria-hidden="true">↗</span>
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
+        <SelectedWork />
 
         <section
           className="section page-container about-section"
@@ -180,6 +112,6 @@ export default function Home() {
           Voltar ao início <span aria-hidden="true">↑</span>
         </a>
       </footer>
-    </>
+    </div>
   );
 }

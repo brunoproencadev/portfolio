@@ -53,68 +53,6 @@ test("greeting and hero entrance complete within 2s, keeps content available and
   await expect(page.locator(".intro-curtain")).toBeHidden();
 });
 
-test("reveals move once, keep text opaque and release inline transforms", async ({
-  page,
-}, testInfo) => {
-  await freezeClock(page);
-  await page.goto("/");
-  await page.waitForLoadState("networkidle");
-  await page.clock.runFor(1950);
-  const artwork = page.locator(".project-artwork").first();
-  await artwork.evaluate((element) =>
-    window.scrollTo(
-      0,
-      element.getBoundingClientRect().top + scrollY - innerHeight * 0.8,
-    ),
-  );
-  await page.clock.runFor(150);
-  await expect(artwork).toHaveAttribute("style", /transform/);
-  const during = await artwork.boundingBox();
-  await expect(artwork).toHaveCSS("opacity", "1");
-  await page.screenshot({ path: testInfo.outputPath("reveal-150ms.png") });
-  await page.clock.runFor(750);
-  await expect(artwork).not.toHaveAttribute("style", /transform/);
-  const after = await artwork.boundingBox();
-  expect(during!.y).toBeGreaterThan(after!.y);
-  await page.screenshot({ path: testInfo.outputPath("reveal-complete.png") });
-  await page.evaluate(() => scrollTo(0, 0));
-  await page.clock.runFor(100);
-  await artwork.evaluate((element) => element.scrollIntoView());
-  await page.clock.runFor(100);
-  await expect(artwork).not.toHaveAttribute("style", /transform/);
-});
-
-for (const cancellation of ["reduced", "pagehide", "focus"] as const) {
-  test(`active reveals revert and stay stopped after ${cancellation}`, async ({
-    page,
-  }) => {
-    await freezeClock(page);
-    await page.goto("/");
-    await page.waitForLoadState("networkidle");
-    const artwork = page.locator(".project-artwork").first();
-    await artwork.evaluate((element) => element.scrollIntoView());
-    await page.clock.runFor(100);
-    await expect(artwork).toHaveAttribute("style", /transform/);
-    if (cancellation === "reduced")
-      await page.emulateMedia({ reducedMotion: "reduce" });
-    else if (cancellation === "pagehide")
-      await page.evaluate(() =>
-        dispatchEvent(new PageTransitionEvent("pagehide")),
-      );
-    else await page.locator(".project-link").first().focus();
-    await expect(artwork).not.toHaveAttribute("style", /transform/);
-    await page
-      .locator(".skill-row")
-      .first()
-      .evaluate((element) => element.scrollIntoView());
-    await page.clock.runFor(100);
-    await expect(page.locator(".skill-row").first()).not.toHaveAttribute(
-      "style",
-      /transform/,
-    );
-  });
-}
-
 test("reveal chunk failure leaves sections and keyboard navigation usable", async ({
   page,
 }) => {
@@ -125,7 +63,7 @@ test("reveal chunk failure leaves sections and keyboard navigation usable", asyn
       intercepted = true;
       await route.abort();
     },
-    '".project-artwork, .about-copy, .skill-row"',
+    '".industry-track"',
   );
   await page.goto("/");
   await expect.poll(() => intercepted).toBe(true);
@@ -149,8 +87,7 @@ test("initial reduced motion avoids animation chunks and capsule motion", async 
     const response = await route.fetch();
     const body = await response.text();
     loadedAnimation ||=
-      body.includes('".hero-title-line"') ||
-      body.includes('".project-artwork, .about-copy, .skill-row"');
+      body.includes('".hero-title-line"') || body.includes('".industry-track"');
     await route.fulfill({ response });
   });
   await page.emulateMedia({ reducedMotion: "reduce" });

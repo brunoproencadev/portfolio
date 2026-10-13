@@ -1,3 +1,9 @@
+## F — implementação validada, evidência visual em fechamento
+
+Build/lint/strict/formato alterado/diff-check aprovados. Unitários7/7. Playwright integral244 passes,5 skips preexistentes,0 falhas; três engines/workers3. Resultados/histórico em story-review/test-results.json; primeira rodada56/19falhas, rerun63/12, diagnóstico focado15/12 e Chromium9/0. Falhas corrigidas: cleanup de identity transform após refresh/revert; testes antigos de copy do hero D e arredondamento subpixel WebKit. Não ocultar histórico.
+
+Capturas cinco larguras320/375/768/1440/1920: axe0, overflow0, pageerrors0; conteúdo/mídias nos estados Industry20/50/85% e fluxo reduzido. Gravações/performance/revisão independente ainda em fechamento. F não publicada; G não autorizada.
+
 # Verificação — Fase 3 e auditoria
 
 ## Redesign Fase E — evidência vigente, 2026-10-13
