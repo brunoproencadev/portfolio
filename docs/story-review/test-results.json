@@ -59,5 +59,21 @@
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
+  },
+  "perf-regressions": {
+    "startTime": "2026-10-13T21:43:48.113Z",
+    "duration": 111905.636,
+    "expected": 122,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "webkit-retry": {
+    "startTime": "2026-10-13T21:46:14.968Z",
+    "duration": 2746.1040000000003,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
   }
 }

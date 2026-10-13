@@ -199,3 +199,27 @@ test("pinned media stays below navigation in wide short viewports", async ({
       .toBe(true);
   }
 });
+
+test("mobile defers scroll code until an eligible desktop resize", async ({
+  page,
+}) => {
+  let scrollChunkRequested = false;
+  await page.setViewportSize({ width: 375, height: 812 });
+  await page.addInitScript(() =>
+    sessionStorage.setItem("portfolio-intro-seen", "true"),
+  );
+  await page.route("**/_next/static/chunks/*.js", async (route) => {
+    const response = await route.fetch();
+    if ((await response.text()).includes('".industry-track"'))
+      scrollChunkRequested = true;
+    await route.fulfill({ response });
+  });
+  await page.goto("/");
+  await page.waitForLoadState("networkidle");
+  expect(scrollChunkRequested).toBe(false);
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await expect(page.locator(".story-enhanced")).toHaveCount(1);
+  expect(scrollChunkRequested).toBe(true);
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(page.locator(".pin-spacer")).toHaveCount(0);
+});

@@ -2,7 +2,7 @@
 
 SelectedWork é componente servidor: dados factuais continuam em portfolio.ts; mídia e legenda de evidência ficam em project-media.ts. Next Image usa dimensões explícitas, sizes e lazy loading. Sem novo estado React, rede runtime externa ou dependência.
 
-HomeMotion continua responsável pela elegibilidade/cancelamento/import; home-reveals usa um único gsap.matchMedia, que possui os ScrollTriggers. O pin só existe após enhancement, conteúdo SSR já é legível. ClearProps no cleanup libera propriedades sob ownership exclusivo, preservando estilos estruturais do Next Image. Links ficam fora do track mascarado. A home aplica Manrope/paleta neutra com escopo home-page; os cases mantêm estilos/diagramas existentes.
+HomeMotion continua responsável pela elegibilidade/cancelamento/import; F adia o módulo de scroll até uma viewport≥900×700, escutando resize até o primeiro import ou cancelamento. Mobile não baixa ScrollTrigger sem precisar; home-reveals usa um único gsap.matchMedia, que possui os ScrollTriggers. O pin só existe após enhancement, conteúdo SSR já é legível. ClearProps no cleanup libera propriedades sob ownership exclusivo, preservando estilos estruturais do Next Image. Links ficam fora do track mascarado. A home aplica Manrope/paleta neutra com escopo home-page; os cases mantêm estilos/diagramas existentes.
 
 # Arquitetura e decisões
 

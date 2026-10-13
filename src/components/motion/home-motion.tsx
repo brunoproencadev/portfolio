@@ -13,10 +13,13 @@ export function HomeMotion() {
     const root = skip.current?.closest("main");
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
     if (!root || reduced.matches || location.hash) return;
+    const desktop = matchMedia("(min-width: 900px) and (min-height: 700px)");
+    let requested = false;
     let stopped = false;
     let revert: (() => void) | undefined;
     const finish = () => {
       stopped = true;
+      desktop.removeEventListener("change", load);
       revert?.();
       revert = undefined;
       reduced.removeEventListener("change", finish);
@@ -28,11 +31,17 @@ export function HomeMotion() {
     root.addEventListener("focusin", finish);
     window.addEventListener("hashchange", finish);
     window.addEventListener("pagehide", finish);
-    void import("./home-reveals")
-      .then(({ startReveals }) => {
-        if (!stopped) revert = startReveals(root);
-      })
-      .catch(finish);
+    function load() {
+      if (stopped || requested || !desktop.matches) return;
+      requested = true;
+      void import("./home-reveals")
+        .then(({ startReveals }) => {
+          if (!stopped) revert = startReveals(root!);
+        })
+        .catch(finish);
+    }
+    desktop.addEventListener("change", load);
+    load();
     return finish;
   }, []);
 
