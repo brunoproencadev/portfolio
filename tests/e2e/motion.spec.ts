@@ -18,7 +18,7 @@ async function freezeClock(page: Page) {
   await page.clock.pauseAt(now);
 }
 
-test("hero entrance completes within 1.2s, keeps content available and does not replay", async ({
+test("greeting and hero entrance complete within 2s, keeps content available and does not replay", async ({
   page,
 }, testInfo) => {
   await freezeClock(page);
@@ -37,8 +37,9 @@ test("hero entrance completes within 1.2s, keeps content available and does not 
   await page.clock.runFor(400);
   await page.screenshot({ path: testInfo.outputPath("intro-400ms.png") });
   await expect(skip).toBeVisible();
-  await page.clock.runFor(900);
+  await page.clock.runFor(1500);
   await expect(skip).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
   await expect(page.locator(".hero-arc")).not.toHaveAttribute(
     "style",
     /transform/,
@@ -49,6 +50,7 @@ test("hero entrance completes within 1.2s, keeps content available and does not 
     page.getByRole("button", { name: "Menu", exact: true }),
   ).toBeVisible();
   await expect(skip).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
 });
 
 test("reveals move once, keep text opaque and release inline transforms", async ({
@@ -57,7 +59,7 @@ test("reveals move once, keep text opaque and release inline transforms", async 
   await freezeClock(page);
   await page.goto("/");
   await page.waitForLoadState("networkidle");
-  await page.clock.runFor(1300);
+  await page.clock.runFor(1950);
   const artwork = page.locator(".project-artwork").first();
   await artwork.evaluate((element) =>
     window.scrollTo(
@@ -159,6 +161,7 @@ test("initial reduced motion avoids animation chunks and capsule motion", async 
     "0s",
   );
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
   expect(loadedAnimation).toBe(false);
 });
 
@@ -172,6 +175,7 @@ test("keyboard skip and Escape cancel without trapping or losing focus", async (
   await skip.focus();
   await page.keyboard.press("Enter");
   await expect(skip).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
   await expect(page.locator("#inicio")).toBeFocused();
   await page.evaluate(() => sessionStorage.clear());
   await page.reload();
@@ -179,6 +183,7 @@ test("keyboard skip and Escape cancel without trapping or losing focus", async (
   await page.getByRole("button", { name: "Menu", exact: true }).focus();
   await page.keyboard.press("Escape");
   await expect(skip).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
   await expect(
     page.getByRole("button", { name: "Menu", exact: true }),
   ).toBeFocused();
@@ -199,8 +204,9 @@ test("denied storage does not stop the intro from completing", async ({
   await expect(page.locator(".hero-arc")).toHaveAttribute("style", /translate/);
   await page.clock.runFor(32);
   await expect(page.locator(".hero-arc")).toHaveAttribute("style", /transform/);
-  await page.clock.runFor(1300);
+  await page.clock.runFor(1950);
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
   await expect(page.locator("#inicio")).toBeVisible();
 });
 
@@ -213,6 +219,7 @@ test("failed animation chunk restores the static page", async ({ page }) => {
   await page.goto("/");
   await expect.poll(() => intercepted).toBe(true);
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
   await expect(page.locator("#inicio")).toBeVisible();
   await page.getByRole("link", { name: "Explorar projetos" }).click();
   await expect(page).toHaveURL(/#projetos$/);
@@ -238,6 +245,7 @@ test("independent 2.2s timeout rejects a late animation import", async ({
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeVisible();
   await page.clock.runFor(1);
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
   release();
   await page.waitForLoadState("networkidle");
   await page.clock.runFor(1500);
@@ -255,6 +263,7 @@ test("direct hashes and live reduced motion bypass or cancel the intro", async (
     page.getByRole("button", { name: "Menu", exact: true }),
   ).toBeVisible();
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
   await expect(page.locator("#sobre")).toBeInViewport();
   await page.evaluate(() => sessionStorage.clear());
   await freezeClock(page);
@@ -264,6 +273,7 @@ test("direct hashes and live reduced motion bypass or cancel the intro", async (
   await expect(page.locator(".hero-arc")).toHaveAttribute("style", /transform/);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
   await expect(page.locator(".hero-arc")).not.toHaveAttribute(
     "style",
     /transform/,
@@ -271,4 +281,5 @@ test("direct hashes and live reduced motion bypass or cancel the intro", async (
   await page.emulateMedia({ reducedMotion: "no-preference" });
   await page.clock.runFor(2500);
   await expect(page.getByRole("button", { name: "Pular intro" })).toBeHidden();
+  await expect(page.locator(".intro-curtain")).toBeHidden();
 });

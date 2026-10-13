@@ -407,20 +407,42 @@ a:hover {
   display: block;
   margin-top: 4px;
 }
+.intro-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  background: #08090d;
+}
+.intro-greeting {
+  width: clamp(104px, 10vw, 144px);
+  height: auto;
+  stroke: #f5f3ff;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .intro-skip {
-  position: absolute;
-  top: 8px;
-  right: 24px;
+  position: fixed;
+  z-index: 40;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  right: max(24px, env(safe-area-inset-right));
   min-height: 44px;
   padding: 8px 12px;
   border: 1px solid #858090;
   border-radius: 8px;
-  color: var(--foreground);
+  color: #f5f3ff;
   background: #202024;
   cursor: pointer;
 }
 .intro-skip:hover {
-  color: var(--accent);
+  color: #bda4ff;
+}
+.intro-skip:focus-visible {
+  outline: 3px solid #bda4ff;
+  outline-offset: 4px;
 }
 @media (min-width: 1600px) {
   .hero {
@@ -463,10 +485,6 @@ a:hover {
   .hero-end {
     padding-top: 116px;
     font-size: 13px;
-  }
-  .intro-skip {
-    top: 4px;
-    right: 20px;
   }
 }
 .link-row {
@@ -846,6 +864,9 @@ button.button-link {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .intro-curtain {
+    display: none;
+  }
   .capsule-toggle {
     transition: none;
   }

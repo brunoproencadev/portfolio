@@ -1,4 +1,3 @@
-import { HomeMotion } from "@/components/motion/home-motion";
 import { profile } from "@/data/portfolio";
 import { manrope } from "@/fonts/manrope";
 
@@ -87,7 +86,6 @@ export function CinematicHero() {
         {profile.fields}
         <span>Construir. Observar. Evoluir.</span>
       </p>
-      <HomeMotion />
     </section>
   );
 }

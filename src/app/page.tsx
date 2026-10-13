@@ -1,6 +1,7 @@
 import { ProjectIllustration } from "@/components/projects/project-illustration";
 import { SiteNavigation } from "@/components/navigation/site-navigation";
 import { CinematicHero } from "@/components/sections/cinematic-hero";
+import { HomeMotion } from "@/components/motion/home-motion";
 import Link from "next/link";
 import { profile, projects, skills } from "@/data/portfolio";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <SiteNavigation />
       <main id="conteudo" tabIndex={-1}>
         <CinematicHero />
+        <HomeMotion />
 
         <section className="section page-container" aria-labelledby="projetos">
           <div className="section-heading">

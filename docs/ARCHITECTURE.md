@@ -1,5 +1,13 @@
 # Arquitetura e decisões
 
+## Saudação e passagem — E, 2026-10-13
+
+HomeMotion volta a ser irmão de CinematicHero dentro de main: a camada fixed precisa ficar fora do stacking context isolado do hero para cobrir também a navegação. Continua uma única ilha client, sem portal ou outro gerenciador. A camada é hidden/aria-hidden no SSR e só aparece após instalação de todos os encerramentos e sucesso do import. Pular usa Manrope compartilhada e fica fixo no canto inferior com safe-area, acima da camada.
+
+O owner usa um ref para a camada e sempre a oculta antes de reverter GSAP. Foco/ponteiro no documento encerram a intro inclusive ao usar navbar/skip link; botão Pular permanece exceção até click/Enter. Listeners globais só existem durante a entrada, recebem cleanup e não cancelam eventos. Sem body lock, inert de conteúdo ou fake progress. requestAnimationFrame é responsabilidade do GSAP; sem loops adicionais de produção.
+
+home-sequence mede quatro paths do traçado B, distribui850ms por comprimento e anima stroke-dashoffset sequencialmente. Timeline E retira o wrapper HTML em1000–1450ms e inicia a entrada D em850ms: total1850ms. Watchdog2200ms preservado, independente do sucesso/término da animação. Reduced/falha/hash/sessão mantêm a página estática. Sem mudanças de dependências, conteúdo, rotas, SEO ou scroll F.
+
 ## Hero cinematográfico — D, 2026-10-12
 
 CinematicHero é Server Component; mantém profile, h1 único, #inicio e CTAs. HomeMotion continua a ilha client responsável por elegibilidade, import dinâmico, sessão, cancelamento e watchdog2,2s. startIntro usa GSAP context/revert no wrapper HTML do arco e nas linhas/apoios; Motion permanece exclusivo da cápsula. Fonte local Manrope compartilhada em src/fonts/manrope.ts, sem duplicar declaração ou adicionar dependências.

@@ -63,7 +63,7 @@ test("hero reveals title lines before support and actions, then restores static 
   await expect(arc).toHaveAttribute("style", /translate/);
   await page.clock.runFor(32);
   await expect(arc).toHaveAttribute("style", /transform/);
-  await page.clock.runFor(300);
+  await page.clock.runFor(1150);
   const offsets = await page
     .locator(".hero-title-line")
     .evaluateAll((lines) =>

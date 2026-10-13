@@ -14,7 +14,7 @@ HomeMotion já possui elegibilidade, import, skip, sessão, cleanup e watchdog: 
 
 GSAP controla somente traços/retirada e a sequência D, com context/revert; Motion permanece na ilha. Sem novas dependências/fontes/mídia externa, sem loops. CSS contém a camada no viewport, safe areas no botão e reduced motion defensivo. Conteúdo no-JS estático. Cleanup sempre esconde a camada, restaura estilos e foco de Pular ao h1 quando necessário; não roubar foco da navegação.
 
-Alcance: HomeMotion markup/lifecycle, home-sequence coordenação, CSS intro, testes motion/hero/cases que dependem de timings e nova cobertura da camada. Não reconstruir navbar/hero, alterar dados/rotas/SEO, introduzir pin/mídia F nem favicon G.
+Alcance: HomeMotion movido para irmão do hero dentro de main (a camada fixed precisa sair do stacking context do hero), markup/lifecycle, home-sequence coordenação, CSS intro, testes motion/hero/cases que dependem de timings e nova cobertura da camada. Não reconstruir navbar/hero, alterar dados/rotas/SEO, introduzir pin/mídia F nem favicon G.
 
 ## Validação e fechamento
 
