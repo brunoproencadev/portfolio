@@ -27,25 +27,31 @@ async function progress(page: Page, start: number, value: number) {
     .toBeLessThan(1.1);
 }
 
-test("one bounded scene swaps real screenshots vertically and reverses", async ({
+test("one bounded scene swaps distinct projects, titles and backgrounds and reverses", async ({
   page,
 }) => {
   await openStory(page);
   const start = await pinStart(page);
-  const track = page.locator(".industry-track");
+  const track = page.locator(".story-track");
   const y = () =>
     track.evaluate(
       (el) => new DOMMatrixReadOnly(getComputedStyle(el).transform).m42,
     );
   await progress(page, start, 0.15);
   await expect.poll(y).toBe(0);
-  const first = await page.locator(".industry-window").boundingBox();
+  await expect(page.locator(".story-title").first()).toContainText(
+    "Industry Week",
+  );
+  await expect(page.locator(".story-stage a")).toHaveCount(0);
+  const first = await page.locator(".story-window").boundingBox();
   await progress(page, start, 0.5);
   await expect.poll(y).toBeLessThan(-50);
   const mid = await y();
   await progress(page, start, 0.85);
   await expect.poll(y).toBeLessThan(mid - 50);
-  const second = await page.locator(".industry-window").boundingBox();
+  await expect(page.locator(".story-title").last()).toContainText("Ateliê");
+  await expect(page.locator(".story-backdrop-1")).toHaveCSS("opacity", "0.22");
+  const second = await page.locator(".story-window").boundingBox();
   expect(Math.abs(first!.y - second!.y)).toBeLessThan(2);
   await progress(page, start, 0.15);
   await expect.poll(y).toBe(0);
@@ -82,13 +88,13 @@ for (const reason of ["focus", "hash", "reduced", "pagehide"] as const) {
       );
     await expect(page.locator(".pin-spacer")).toHaveCount(0);
     await expect(page.locator(".story-enhanced")).toHaveCount(0);
-    await expect(page.locator(".industry-track")).not.toHaveAttribute(
+    await expect(page.locator(".story-track")).not.toHaveAttribute(
       "style",
       /transform/,
     );
     expect(
       await page
-        .locator(".industry-window")
+        .locator(".story-window")
         .evaluate((el) => getComputedStyle(el).overflow),
     ).toBe("visible");
     if (reason === "focus")
@@ -187,13 +193,11 @@ test("pinned media stays below navigation in wide short viewports", async ({
     const start = await pinStart(page);
     await page.evaluate((start) => scrollTo(0, start + 300), start);
     await expect
-      .poll(
-        async () => (await page.locator(".industry-stage").boundingBox())!.y,
-      )
+      .poll(async () => (await page.locator(".story-stage").boundingBox())!.y)
       .toBeCloseTo(112, 0);
     await expect
       .poll(async () => {
-        const band = await page.locator(".industry-band").boundingBox();
+        const band = await page.locator(".story-window").boundingBox();
         return band!.y >= 112 && band!.y + band!.height <= viewport.height;
       })
       .toBe(true);
@@ -210,7 +214,7 @@ test("mobile defers scroll code until an eligible desktop resize", async ({
   );
   await page.route("**/_next/static/chunks/*.js", async (route) => {
     const response = await route.fetch();
-    if ((await response.text()).includes('".industry-track"'))
+    if ((await response.text()).includes('".story-track"'))
       scrollChunkRequested = true;
     await route.fulfill({ response });
   });
@@ -222,4 +226,87 @@ test("mobile defers scroll code until an eligible desktop resize", async ({
   expect(scrollChunkRequested).toBe(true);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(page.locator(".pin-spacer")).toHaveCount(0);
+});
+
+for (const path of ["cta", "menu", "direct-hash"] as const) {
+  test(`${path} navigation releases the destination and subsequent wheel restores storytelling`, async ({
+    page,
+  }) => {
+    await openStory(page);
+    if (path === "cta")
+      await page.getByRole("link", { name: "Explorar projetos" }).click();
+    else if (path === "menu") {
+      await page.getByRole("button", { name: "Menu", exact: true }).click();
+      await page.getByRole("link", { name: "Sobre", exact: true }).click();
+    } else await page.goto("/#sobre");
+    const target = page.locator(path === "cta" ? "#projetos" : "#sobre");
+    await expect(target).toBeInViewport();
+    await expect(page.locator(".pin-spacer")).toHaveCount(0);
+    const before = (await target.boundingBox())!.y;
+    await page.mouse.wheel(0, 50);
+    await expect(page.locator(".pin-spacer")).toHaveCount(1);
+    await expect
+      .poll(async () => Math.abs((await target.boundingBox())!.y - before))
+      .toBeLessThan(100);
+    await progress(page, await pinStart(page), 0.85);
+    await expect(page.locator(".story-backdrop-1")).toHaveCSS(
+      "opacity",
+      "0.22",
+    );
+  });
+}
+
+test("live preference and BFCache restore one scene without accumulating pins", async ({
+  page,
+}) => {
+  await openStory(page);
+  for (let i = 0; i < 2; i++) {
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await expect(page.locator(".pin-spacer")).toHaveCount(0);
+    await page.emulateMedia({ reducedMotion: "no-preference" });
+    await expect(page.locator(".pin-spacer")).toHaveCount(1);
+    await page.evaluate(() =>
+      dispatchEvent(new PageTransitionEvent("pagehide", { persisted: true })),
+    );
+    await expect(page.locator(".pin-spacer")).toHaveCount(0);
+    await page.evaluate(() =>
+      dispatchEvent(new PageTransitionEvent("pageshow", { persisted: true })),
+    );
+    await expect(page.locator(".pin-spacer")).toHaveCount(1);
+  }
+});
+
+test("hero handoff and editorial passages follow scroll and clean up together", async ({
+  page,
+}) => {
+  await openStory(page);
+  await page.evaluate(() => scrollTo(0, 400));
+  await expect
+    .poll(() =>
+      page
+        .locator(".hero-content")
+        .evaluate((el) =>
+          parseFloat(getComputedStyle(el).filter.replace("blur(", "")),
+        ),
+    )
+    .toBeGreaterThan(1);
+  for (const selector of [".about-copy", ".skill-row", ".contact-ribbon"]) {
+    await expect(page.locator(selector).first()).toHaveAttribute(
+      "style",
+      /transform/,
+    );
+  }
+  await page.locator(".skill-row .text-link").first().focus();
+  await expect(page.locator(".skill-row .text-link").first()).toBeInViewport();
+  for (const selector of [
+    ".hero-content",
+    ".about-copy",
+    ".skill-row",
+    ".contact-ribbon",
+  ]) {
+    await expect(page.locator(selector).first()).not.toHaveAttribute(
+      "style",
+      /transform|filter|opacity/,
+    );
+  }
 });

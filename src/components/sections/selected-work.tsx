@@ -72,8 +72,24 @@ function ProjectDetails({ project }: { project: Project }) {
 
 export function SelectedWork() {
   const [robo, industry, atelie] = projects;
+  const scenes = [
+    { project: industry, media: projectMedia.industry[0] },
+    { project: atelie, media: projectMedia.atelie },
+  ];
   return (
     <section className="selected-work" aria-labelledby="projetos">
+      <figure className="robo-frame page-container">
+        <div className="robo-media">
+          <Image
+            src={projectMedia.robo.src}
+            alt={projectMedia.robo.alt}
+            width={projectMedia.robo.width}
+            height={projectMedia.robo.height}
+            sizes="(min-width: 1440px) 1280px, 90vw"
+          />
+        </div>
+        <figcaption>{projectMedia.robo.caption}</figcaption>
+      </figure>
       <div className="work-introduction page-container">
         <h2 id="projetos" tabIndex={-1}>
           Ideias em <em>construção.</em>
@@ -88,66 +104,67 @@ export function SelectedWork() {
           <h3 id={`titulo-${robo.slug}`}>{robo.name}</h3>
           <p>{robo.category}</p>
         </div>
-        <figure className="robo-frame">
-          <div className="robo-media">
-            <Image
-              src={projectMedia.robo.src}
-              alt={projectMedia.robo.alt}
-              width={projectMedia.robo.width}
-              height={projectMedia.robo.height}
-              sizes="(min-width: 1440px) 1280px, 90vw"
-            />
-          </div>
-          <figcaption>{projectMedia.robo.caption}</figcaption>
-        </figure>
         <div className="work-context">
           <ProjectDetails project={robo} />
           <ProjectLinks project={robo} />
         </div>
       </article>
-      <article
-        className="work-industry"
-        aria-labelledby={`titulo-${industry.slug}`}
-      >
-        <div className="industry-stage">
-          <div className="industry-background" aria-hidden="true">
-            {projectMedia.industry.map((media, index) => (
-              <Image
-                key={media.src}
-                src={media.src}
-                alt=""
-                fill
-                sizes="100vw"
-                className={`industry-backdrop industry-backdrop-${index}`}
-              />
-            ))}
-          </div>
-          <div className="industry-band">
-            <div className="industry-title">
-              <h3 id={`titulo-${industry.slug}`}>{industry.name}</h3>
-              <p>{industry.category}</p>
-            </div>
-            <div className="industry-window">
-              <div className="industry-track">
-                {projectMedia.industry.map((media) => (
-                  <figure className="industry-slide" key={media.src}>
+      <div className="story-stage" role="region" aria-label="Projetos em foco">
+        <div className="story-background" aria-hidden="true">
+          {scenes.map(({ media }, index) => (
+            <Image
+              key={media.src}
+              src={media.src}
+              alt=""
+              fill
+              sizes="100vw"
+              className={`story-backdrop story-backdrop-${index}`}
+            />
+          ))}
+        </div>
+        <div className="story-window">
+          <div className="story-track">
+            {scenes.map(({ project, media }, index) => (
+              <div className="story-band" key={media.src}>
+                <div className="story-title">
+                  <p>{project.name}</p>
+                  <span>{project.category}</span>
+                </div>
+                <figure className="story-slide">
+                  <div className="story-image">
                     <Image
                       src={media.src}
                       alt={media.alt}
                       width={media.width}
                       height={media.height}
-                      sizes="(min-width: 900px) 48vw, 90vw"
+                      sizes="(min-width: 900px) 42vw, 90vw"
                     />
-                    <figcaption>{media.caption}</figcaption>
-                  </figure>
-                ))}
+                  </div>
+                  <figcaption>
+                    {index === 1
+                      ? "Recorte superior do catálogo · captura integral abaixo."
+                      : media.caption}
+                  </figcaption>
+                </figure>
+                <p className="story-category">{project.status}</p>
               </div>
-            </div>
-            <ProjectLinks project={industry} />
+            ))}
           </div>
         </div>
+      </div>
+      <article
+        className="work-industry"
+        aria-labelledby={`titulo-${industry.slug}`}
+      >
         <div className="industry-context page-container">
-          <ProjectDetails project={industry} />
+          <div className="work-title">
+            <h3 id={`titulo-${industry.slug}`}>{industry.name}</h3>
+            <p>{industry.category}</p>
+          </div>
+          <div className="work-context">
+            <ProjectDetails project={industry} />
+            <ProjectLinks project={industry} />
+          </div>
         </div>
       </article>
       <article

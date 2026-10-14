@@ -63,7 +63,7 @@ test("reveal chunk failure leaves sections and keyboard navigation usable", asyn
       intercepted = true;
       await route.abort();
     },
-    '".industry-track"',
+    '".story-track"',
   );
   await page.goto("/");
   await expect.poll(() => intercepted).toBe(true);
@@ -87,7 +87,7 @@ test("initial reduced motion avoids animation chunks and capsule motion", async 
     const response = await route.fetch();
     const body = await response.text();
     loadedAnimation ||=
-      body.includes('".hero-title-line"') || body.includes('".industry-track"');
+      body.includes('".hero-title-line"') || body.includes('".story-track"');
     await route.fulfill({ response });
   });
   await page.emulateMedia({ reducedMotion: "reduce" });

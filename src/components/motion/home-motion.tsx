@@ -12,37 +12,91 @@ export function HomeMotion() {
   useEffect(() => {
     const root = skip.current?.closest("main");
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
-    if (!root || reduced.matches || location.hash) return;
+    if (!root) return;
+    const storyRoot = root;
     const desktop = matchMedia("(min-width: 900px) and (min-height: 700px)");
-    let requested = false;
+    let pending = false;
     let stopped = false;
+    let suspended = Boolean(location.hash);
     let revert: (() => void) | undefined;
-    const finish = () => {
-      stopped = true;
-      desktop.removeEventListener("change", load);
+    const release = () => {
+      suspended = true;
       revert?.();
       revert = undefined;
-      reduced.removeEventListener("change", finish);
-      root.removeEventListener("focusin", finish);
-      window.removeEventListener("hashchange", finish);
-      window.removeEventListener("pagehide", finish);
     };
-    reduced.addEventListener("change", finish);
-    root.addEventListener("focusin", finish);
-    window.addEventListener("hashchange", finish);
-    window.addEventListener("pagehide", finish);
+    const navigate = () => {
+      release();
+      const target = document.getElementById(location.hash.slice(1));
+      target?.scrollIntoView({ block: "start" });
+    };
+    const focus = (event: FocusEvent) => {
+      release();
+      if (event.target instanceof HTMLElement)
+        event.target.scrollIntoView({ block: "nearest" });
+    };
+    const resume = () => {
+      suspended = false;
+      load();
+    };
+    const preference = () => {
+      if (reduced.matches) release();
+      else resume();
+    };
+    const restore = (event: PageTransitionEvent) => {
+      if (event.persisted) resume();
+    };
     function load() {
-      if (stopped || requested || !desktop.matches) return;
-      requested = true;
+      if (
+        stopped ||
+        suspended ||
+        pending ||
+        revert ||
+        reduced.matches ||
+        !desktop.matches
+      )
+        return;
+      pending = true;
       void import("./home-reveals")
         .then(({ startReveals }) => {
-          if (!stopped) revert = startReveals(root!);
+          if (stopped || suspended || reduced.matches || !desktop.matches)
+            return;
+          // Preserve the visible reading position when the pin is reinstated upstream.
+          const anchor = Array.from(
+            storyRoot.querySelectorAll<HTMLElement>(
+              "h2, h3, .work-context, .skill-row",
+            ),
+          ).find((element) => element.getBoundingClientRect().bottom > 112);
+          const before = anchor?.getBoundingClientRect().top;
+          revert = startReveals(storyRoot);
+          if (anchor && before !== undefined && scrollY > 0)
+            scrollBy(0, anchor.getBoundingClientRect().top - before);
         })
-        .catch(finish);
+        .catch(release)
+        .finally(() => {
+          pending = false;
+        });
     }
+    reduced.addEventListener("change", preference);
+    root.addEventListener("focusin", focus);
+    window.addEventListener("hashchange", navigate);
+    window.addEventListener("pagehide", release);
+    window.addEventListener("pageshow", restore);
+    window.addEventListener("wheel", resume, { passive: true });
+    window.addEventListener("touchstart", resume, { passive: true });
     desktop.addEventListener("change", load);
     load();
-    return finish;
+    return () => {
+      stopped = true;
+      release();
+      desktop.removeEventListener("change", load);
+      reduced.removeEventListener("change", preference);
+      root.removeEventListener("focusin", focus);
+      window.removeEventListener("hashchange", navigate);
+      window.removeEventListener("pagehide", release);
+      window.removeEventListener("pageshow", restore);
+      window.removeEventListener("wheel", resume);
+      window.removeEventListener("touchstart", resume);
+    };
   }, []);
 
   useEffect(() => {

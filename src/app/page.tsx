@@ -22,8 +22,7 @@ export default function Home() {
           className="section page-container about-section"
           aria-labelledby="sobre"
         >
-          <div>
-            <p className="eyebrow">02 / Sobre & processo</p>
+          <div className="about-heading">
             <h2 id="sobre" tabIndex={-1}>
               Aprender,
               <br />
@@ -44,12 +43,11 @@ export default function Home() {
         </section>
 
         <section
-          className="section page-container"
+          className="section page-container skills-section"
           aria-labelledby="competencias"
         >
           <div className="section-heading">
             <div>
-              <p className="eyebrow">03 / Competências</p>
               <h2 id="competencias" tabIndex={-1}>
                 Ferramentas com <em>contexto.</em>
               </h2>
@@ -83,11 +81,18 @@ export default function Home() {
           </p>
         </section>
 
+        <div className="contact-passage" aria-hidden="true">
+          <div className="contact-ribbon">
+            Construir. Observar. Evoluir. Construir. Observar. Evoluir.
+          </div>
+          <div className="contact-ribbon">
+            Interfaces. Percepção. Robótica. Interfaces. Percepção. Robótica.
+          </div>
+        </div>
         <section
           className="section page-container contact-section"
           aria-labelledby="contato"
         >
-          <p className="eyebrow">04 / Contato</p>
           <h2 id="contato" tabIndex={-1}>
             {profile.contact}
           </h2>
