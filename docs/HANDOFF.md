@@ -1,4 +1,10 @@
-# Estado vigente F — concluída localmente para revisão, 2026-10-14
+# Estado vigente — F reaberta após rejeição visual, 2026-10-14
+
+Usuário questionou scroll fraco e discrepância de animações frente aos vídeos. Diagnóstico em PHASE_F_GAP_ANALYSIS: coreografia foi reduzida a2momentos; CTA/menu por foco/hash desliga permanentemente o enhancement. Bug reproduzido em Chromium1440×900(1→0→0cenas). UI não alterada neste turno de diagnóstico. Retomar correção dentro de F; G–I/push/deploy não autorizados. O fechamento e ship históricos abaixo não são aprovação da F pelo usuário.
+
+O commit documental `docs: reopen phase F after scroll fidelity rejection` registra esta retomada; consultar git log -1 para SHA.
+
+# Histórico da entrega F rejeitada — 2026-10-14
 
 E aprovada e F autorizada pelo “continue” no gate E/F. Baseline6881228 limpo; branch redesign/cinematic-portfolio. [Relatório F](PHASE_F_REVIEW.md). Somente F concluída; aguardar aprovação de F e autorização de G. G–I/push/deploy não autorizados.
 

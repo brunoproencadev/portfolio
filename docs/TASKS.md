@@ -18,7 +18,7 @@
 - [x] Gate E: D aprovada e E autorizada explicitamente por “Aprovo e autorizo”.
 - [x] E: saudação manuscrita/retirada, cancelamento/fallbacks, regressões, vídeo/capturas, Lighthouse e revisão independente ship; PHASE_E_REVIEW e commits em HANDOFF.
 - [x] Gate F: E aprovada e F autorizada pelo “continue”, 2026-10-13.
-- [x] F: cenas autênticas, scroll/fallbacks, capturas/gravações, medições e correções revisadas; PHASE_F_REVIEW. Fechamento local2026-10-14; aguardar aprovação F/autorização G.
+- [ ] F reaberta: entrega9921190 rejeitada pelo usuário pelo scroll insuficiente. Corrigir lifecycle CTA/hash e lacunas de coreografia em PHASE_F_GAP_ANALYSIS; comparar gravações contínuas antes de novo fechamento.
 - [ ] G: conteúdo/cases/fotos confirmadas e avatar favicon; gate próprio após F.
 - [ ] H: QA completo/performance/comparação; gate próprio após G.
 - [ ] I: prontidão de produção; gate próprio após H, sem push/deploy implícito.
