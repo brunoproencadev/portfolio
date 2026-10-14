@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-13T11:32:16Z",
-  "title": "Design System: Bruno Proença Silva — direção B e superfícies C/D/E",
+  "generatedAt": "2026-10-13T21:48:54.760Z",
+  "title": "Design System: Bruno Proença Silva — direção B e superfícies C/D/E/F",
   "extensions": {
-    "scope": "B/C/D aprovadas; E autorizada por “Aprovo e autorizo”, fonte 75ba951 e evidências a3d3126, entregue para revisão do usuário. Primitivos/snippets B preservados; appliedNavigation C, appliedHero D e appliedIntro E registram superfícies aplicadas. Seções posteriores e cases permanecem legados. F–I exigem confirmação individual; nenhum push/deploy autorizado.",
-    "authority": "docs/DESIGN_SYSTEM.md; snapshot B extraído de docs/design-prototype/style.css e index.html. Extensão C conferida em src/components/navigation/site-navigation.tsx, use-island-motion.ts e CSS .capsule de src/styles/globals.css. D conferida em src/components/sections/cinematic-hero.tsx, src/components/motion/home-sequence.ts, src/fonts/manrope.ts e CSS do hero/header em src/styles/globals.css; contrato docs/PHASE_D_PLAN.md. E conferida em src/components/motion/home-motion.tsx, home-sequence.ts, src/app/page.tsx e CSS .intro-* em src/styles/globals.css; contrato docs/PHASE_E_PLAN.md e evidências docs/PHASE_E_REVIEW.md.",
+    "scope": "A–E aprovadas; F autorizada pelo “continue” no gate E/F e aplicada localmente, em revisão. Primitivos/snippets B e snapshots appliedNavigation C, appliedHero D e appliedIntro E preservados; appliedProjects F descreve o código observado e seu carregamento condicional validado em regressões específicas. Home herda Manrope/paleta scoped; estruturas posteriores e cases permanecem anteriores. G–I exigem gates individuais; nenhum push/deploy autorizado. Os limites históricos C/D/E referem-se aos snapshots dessas fases, superados por appliedProjects quanto a F.",
+    "authority": "docs/DESIGN_SYSTEM.md; snapshot B extraído de docs/design-prototype/style.css e index.html. Extensão C conferida em src/components/navigation/site-navigation.tsx, use-island-motion.ts e CSS .capsule de src/styles/globals.css. D conferida em src/components/sections/cinematic-hero.tsx, src/components/motion/home-sequence.ts, src/fonts/manrope.ts e CSS do hero/header em src/styles/globals.css; contrato docs/PHASE_D_PLAN.md. E conferida em src/components/motion/home-motion.tsx, home-sequence.ts, src/app/page.tsx e CSS .intro-* em src/styles/globals.css; contrato docs/PHASE_E_PLAN.md e evidências docs/PHASE_E_REVIEW.md. F conferida em SelectedWork, project-media.ts, home-reveals.ts, HomeMotion, page.tsx e globals.css; contrato PHASE_F_PLAN, MOTION_SPEC e MEDIA_ASSETS. Primitivos f-* adicionais no frontmatter registram diferenças da aplicação sem substituir B.",
     "tonalRampNote": "Amostras OKLCH sintetizadas para o painel com chroma/hue constantes e luz de 15% a 95%; não são tokens aprovados nem cores usadas no protótipo. Extremos podem sofrer gamut mapping.",
-    "fontNote": "Manrope local licenciada, compartilhada por navegação C, hero D e botão Pular E via src/fonts/manrope.ts e next/font/local, pesos 400–800 e swap. Snippets B usam fallback quando a família não está carregada. Não representa migração tipográfica do app inteiro.",
+    "fontNote": "Manrope local licenciada, compartilhada por C/D/E e pelo wrapper .home-page em F via src/fonts/manrope.ts e next/font/local, pesos400–800 e swap. Regras locais serif/mono permanecem; cases mantêm tipografia anterior. Snippets B usam fallback quando a família não está carregada.",
     "appliedNavigation": {
       "sourceCommit": "d7e377f",
       "authorizationCommit": "c8d28ee",
@@ -197,6 +197,174 @@
           "oklch(83.57% 0.02455 299.92)",
           "oklch(95.00% 0.02455 299.92)"
         ]
+      },
+      "f-background": {
+        "role": "neutral",
+        "displayName": "Fundo da home F",
+        "tonalRamp": [
+          "oklch(15.00% 0.00322 285.88)",
+          "oklch(26.43% 0.00322 285.88)",
+          "oklch(37.86% 0.00322 285.88)",
+          "oklch(49.29% 0.00322 285.88)",
+          "oklch(60.71% 0.00322 285.88)",
+          "oklch(72.14% 0.00322 285.88)",
+          "oklch(83.57% 0.00322 285.88)",
+          "oklch(95.00% 0.00322 285.88)"
+        ]
+      },
+      "f-surface": {
+        "role": "neutral",
+        "displayName": "Superfície herdada da home F",
+        "tonalRamp": [
+          "oklch(15.00% 0.00815 285.55)",
+          "oklch(26.43% 0.00815 285.55)",
+          "oklch(37.86% 0.00815 285.55)",
+          "oklch(49.29% 0.00815 285.55)",
+          "oklch(60.71% 0.00815 285.55)",
+          "oklch(72.14% 0.00815 285.55)",
+          "oklch(83.57% 0.00815 285.55)",
+          "oklch(95.00% 0.00815 285.55)"
+        ]
+      },
+      "f-foreground": {
+        "role": "neutral",
+        "displayName": "Texto principal F",
+        "tonalRamp": [
+          "oklch(15.00% 0.00265 286.35)",
+          "oklch(26.43% 0.00265 286.35)",
+          "oklch(37.86% 0.00265 286.35)",
+          "oklch(49.29% 0.00265 286.35)",
+          "oklch(60.71% 0.00265 286.35)",
+          "oklch(72.14% 0.00265 286.35)",
+          "oklch(83.57% 0.00265 286.35)",
+          "oklch(95.00% 0.00265 286.35)"
+        ]
+      },
+      "f-muted": {
+        "role": "neutral",
+        "displayName": "Texto secundário F",
+        "tonalRamp": [
+          "oklch(15.00% 0.01569 290.19)",
+          "oklch(26.43% 0.01569 290.19)",
+          "oklch(37.86% 0.01569 290.19)",
+          "oklch(49.29% 0.01569 290.19)",
+          "oklch(60.71% 0.01569 290.19)",
+          "oklch(72.14% 0.01569 290.19)",
+          "oklch(83.57% 0.01569 290.19)",
+          "oklch(95.00% 0.01569 290.19)"
+        ]
+      },
+      "f-accent": {
+        "role": "primary",
+        "displayName": "Acento violeta F",
+        "tonalRamp": [
+          "oklch(15.00% 0.10129 293.57)",
+          "oklch(26.43% 0.10129 293.57)",
+          "oklch(37.86% 0.10129 293.57)",
+          "oklch(49.29% 0.10129 293.57)",
+          "oklch(60.71% 0.10129 293.57)",
+          "oklch(72.14% 0.10129 293.57)",
+          "oklch(83.57% 0.10129 293.57)",
+          "oklch(95.00% 0.10129 293.57)"
+        ]
+      },
+      "f-divider": {
+        "role": "neutral",
+        "displayName": "Divisor da home F",
+        "tonalRamp": [
+          "oklch(15.00% 0.01412 291.32)",
+          "oklch(26.43% 0.01412 291.32)",
+          "oklch(37.86% 0.01412 291.32)",
+          "oklch(49.29% 0.01412 291.32)",
+          "oklch(60.71% 0.01412 291.32)",
+          "oklch(72.14% 0.01412 291.32)",
+          "oklch(83.57% 0.01412 291.32)",
+          "oklch(95.00% 0.01412 291.32)"
+        ]
+      },
+      "f-control": {
+        "role": "neutral",
+        "displayName": "Limite de controle F",
+        "tonalRamp": [
+          "oklch(15.00% 0.01802 293.52)",
+          "oklch(26.43% 0.01802 293.52)",
+          "oklch(37.86% 0.01802 293.52)",
+          "oklch(49.29% 0.01802 293.52)",
+          "oklch(60.71% 0.01802 293.52)",
+          "oklch(72.14% 0.01802 293.52)",
+          "oklch(83.57% 0.01802 293.52)",
+          "oklch(95.00% 0.01802 293.52)"
+        ]
+      },
+      "f-paper": {
+        "role": "neutral",
+        "displayName": "Papel Industry F",
+        "tonalRamp": [
+          "oklch(15.00% 0.00413 301.42)",
+          "oklch(26.43% 0.00413 301.42)",
+          "oklch(37.86% 0.00413 301.42)",
+          "oklch(49.29% 0.00413 301.42)",
+          "oklch(60.71% 0.00413 301.42)",
+          "oklch(72.14% 0.00413 301.42)",
+          "oklch(83.57% 0.00413 301.42)",
+          "oklch(95.00% 0.00413 301.42)"
+        ]
+      },
+      "f-ink": {
+        "role": "neutral",
+        "displayName": "Tinta Industry F",
+        "tonalRamp": [
+          "oklch(15.00% 0.01220 300.51)",
+          "oklch(26.43% 0.01220 300.51)",
+          "oklch(37.86% 0.01220 300.51)",
+          "oklch(49.29% 0.01220 300.51)",
+          "oklch(60.71% 0.01220 300.51)",
+          "oklch(72.14% 0.01220 300.51)",
+          "oklch(83.57% 0.01220 300.51)",
+          "oklch(95.00% 0.01220 300.51)"
+        ]
+      },
+      "f-paper-muted": {
+        "role": "neutral",
+        "displayName": "Legenda Industry F",
+        "tonalRamp": [
+          "oklch(15.00% 0.01642 294.88)",
+          "oklch(26.43% 0.01642 294.88)",
+          "oklch(37.86% 0.01642 294.88)",
+          "oklch(49.29% 0.01642 294.88)",
+          "oklch(60.71% 0.01642 294.88)",
+          "oklch(72.14% 0.01642 294.88)",
+          "oklch(83.57% 0.01642 294.88)",
+          "oklch(95.00% 0.01642 294.88)"
+        ]
+      },
+      "f-paper-accent": {
+        "role": "primary",
+        "displayName": "Acento Industry F",
+        "tonalRamp": [
+          "oklch(15.00% 0.13471 302.91)",
+          "oklch(26.43% 0.13471 302.91)",
+          "oklch(37.86% 0.13471 302.91)",
+          "oklch(49.29% 0.13471 302.91)",
+          "oklch(60.71% 0.13471 302.91)",
+          "oklch(72.14% 0.13471 302.91)",
+          "oklch(83.57% 0.13471 302.91)",
+          "oklch(95.00% 0.13471 302.91)"
+        ]
+      },
+      "f-paper-control": {
+        "role": "neutral",
+        "displayName": "Limite Industry F",
+        "tonalRamp": [
+          "oklch(15.00% 0.01389 301.12)",
+          "oklch(26.43% 0.01389 301.12)",
+          "oklch(37.86% 0.01389 301.12)",
+          "oklch(49.29% 0.01389 301.12)",
+          "oklch(60.71% 0.01389 301.12)",
+          "oklch(72.14% 0.01389 301.12)",
+          "oklch(83.57% 0.01389 301.12)",
+          "oklch(95.00% 0.01389 301.12)"
+        ]
       }
     },
     "typographyMeta": {
@@ -255,6 +423,30 @@
       "hero-end-mobile": {
         "displayName": "hero-end-mobile",
         "purpose": "Fechamento editorial do hero D mobile."
+      },
+      "f-headline": {
+        "displayName": "Introdução dos trabalhos F",
+        "purpose": "Título de seção da home aplicada."
+      },
+      "f-title": {
+        "displayName": "Nome do trabalho F",
+        "purpose": "Títulos RoboSense e Ateliê."
+      },
+      "f-industry-title": {
+        "displayName": "Título Industry F",
+        "purpose": "Nome do projeto na faixa clara."
+      },
+      "f-summary": {
+        "displayName": "Resumo F",
+        "purpose": "Resumo factual de cada trabalho, máximo55ch."
+      },
+      "f-body": {
+        "displayName": "Corpo F",
+        "purpose": "Leitura corrente e links fora da faixa Industry desktop."
+      },
+      "f-caption": {
+        "displayName": "Legenda F",
+        "purpose": "Origem e limites das mídias reais."
       }
     },
     "shadows": [
@@ -269,8 +461,19 @@
         "purpose": "Captura real sobre a faixa clara."
       }
     ],
-    "motion": [],
-    "motionNote": "B e seus snippets permanecem estáticos; movimento aplicado em appliedNavigation C, appliedHero D e appliedIntro E. GSAP controla intro/hero; Motion controla a ilha, sem disputa de propriedades. Storytelling F não implementado.",
+    "motion": [
+      {
+        "name": "f-robo-scroll",
+        "value": "y64→0;scale0.88→1;inset6%→0;top bottom→top18%;scrub:true;ease:none",
+        "purpose": "Aproximação da mídia RoboSense apenas em desktop elegível."
+      },
+      {
+        "name": "f-industry-scroll",
+        "value": "pin top112px;distance1.2×innerHeight;read0–0.35;transition0.35–0.65;read0.65–1",
+        "purpose": "Dois estados verificados Industry no mesmo projeto; sem duração temporal fixa."
+      }
+    ],
+    "motionNote": "B e seus snippets permanecem estáticos; appliedNavigation C, appliedHero D, appliedIntro E e appliedProjects F registram os comportamentos aplicados. Motion controla ilha; GSAP controla intro/hero e GSAP/ScrollTrigger os wrappers exclusivos F, sem disputa de propriedades e sem nova dependência.",
     "breakpoints": [
       {
         "name": "mobile-max",
@@ -287,6 +490,14 @@
       {
         "name": "wide-min",
         "value": "1600px"
+      },
+      {
+        "name": "story-desktop-min",
+        "value": "900px"
+      },
+      {
+        "name": "story-height-min",
+        "value": "700px"
       }
     ],
     "focus": {
@@ -324,7 +535,7 @@
       "sourceCommit": "75ba951",
       "authorizationCommit": "0ab2720",
       "evidenceCommit": "a3d3126",
-      "reviewDisposition": "ship, somente saudação/retirada/integração E; aprovação do usuário ainda pendente",
+      "reviewDisposition": "ship, somente saudação/retirada/integração E; E aprovada pelo usuário no gate E/F",
       "evidence": [
         "docs/PHASE_E_REVIEW.md",
         "docs/intro-review/finish-review.md",
@@ -344,6 +555,50 @@
       "fallbacks": "SSR hidden/aria-hidden e pointer-events none; camada mostrada só após listeners/watchdog e import bem-sucedido. No-JS/reduced inicial/sessão vista/hash/scroll inicial preservam conteúdo completo. Storage negado mantém guarda por documento. Finish/cleanup esconde camada e reverte contexto GSAP; import falho/tardio e timeline estagnada têm watchdog. Sem body lock/inert/focus trap.",
       "validation": "20 estados controlados em 320/375/768/1440/1920 px sem overflow/pageerror; zero axe nos cinco finais. Gravações reais desktop/mobile e 220 amostras RAF. E2E 96+112 passes em duas rodadas disjuntas, 5 skips preexistentes. Lighthouse local 3 rodadas: mediana 98/LCP 2393.03 ms/CLS 0.03888/TBT 74.50 ms.",
       "limits": "Revisor abriu 20 capturas/pranchas; sem navegador próprio ou reprodução contínua WebM. Relógio controlado, frames reais e testes têm provas separadas. Não certifica 60 fps em todo hardware, WCAG, mobile físico, INP/desempenho de campo, pixel-perfect R3 ou publicação. F–I e superfícies legadas continuam pendentes dos gates."
+    },
+    "appliedProjects": {
+      "sourceCommits": [
+        "5c49407",
+        "b8d2f04",
+        "dbaae0e"
+      ],
+      "authorization": "E aprovada e F autorizada pelo “continue” no gate E/F em 2026-10-13; G–I e push/deploy não autorizados.",
+      "reviewDisposition": "Em revisão local; sem aceite visual final ou aprovação do usuário para concluir F.",
+      "sources": [
+        "src/components/sections/selected-work.tsx",
+        "src/components/motion/home-reveals.ts",
+        "src/components/motion/home-motion.tsx",
+        "src/styles/globals.css",
+        "src/data/project-media.ts",
+        "src/app/page.tsx"
+      ],
+      "evidence": [
+        "docs/PHASE_F_PLAN.md",
+        "docs/MOTION_SPEC.md",
+        "docs/MEDIA_ASSETS.md",
+        "docs/project-media-manifest.json",
+        "docs/story-review/capture-results.json",
+        "docs/story-review/motion-samples.json",
+        "docs/story-review/recordings.json",
+        "docs/story-review/test-results.json",
+        "docs/story-review/wide-short-results.json",
+        "docs/PHASE_F_REVIEW.md"
+      ],
+      "palette": "Primitivos f-* no frontmatter descrevem valores aplicados em .home-page e .industry-band; preservam os primitivos B sem prefixo. A paleta scoped alcança as seções herdadas da home; C/D/E mantêm suas regras locais e :root/cases não migram.",
+      "font": "Manrope local em .home-page via next/font/local; papéis f-* extraídos da implementação. Regras serif/mono locais das seções herdadas permanecem. Título Robo/Ateliê peso500; título Industry550; resumo máximo55ch e evidência65ch.",
+      "structure": "SelectedWork é Server Component. Dados factuais em portfolio, mídia separada em project-media.ts. Section com h2 e três articles/h3/figure/figcaption; stack em lista, estado/fonte em dl. Links case/repositório e demonstração Industry sempre fora das máscaras e disponíveis no DOM.",
+      "layout": "Container até1280px; gutters20/32/64px em <600/600–899/≥900px. Desktop: introdução7:4/gap64px; contexto Robo7:3/gap10%; faixa Industry1:2.5:1/gap32px e padding40px clamp(32px,4.5vw,88px); Ateliê5:6/gap9%. Mobile progride verticalmente.",
+      "wideShort": "Palco aprimorado height calc(100svh - 112px). Janela aspect-ratio1440/1040 com largura máxima calc((100svh - 240px) * 1.384615), incluindo legenda, para a faixa caber sob a ilha em desktops largos e baixos. Evidência adicional1920×700 em Chromium/WebKit em wide-short-results.json.",
+      "robo": "Frame M3 real960×540. GSAP scrub linear: y64→0, scale0.88→1 e inset6%→0 em top bottom→top18%. Preserva anotação original; vídeo gravado não prova hardware ao vivo.",
+      "industry": "Duas capturas1440×900 do site público em11/10/2026, deploymentb22aa4b distinto do main68ab01a. Um único pin top112px; extensão1.2×innerHeight (alvo120svh), somente≥900×700/no-preference. Progresso0–0.35 lê hero;0.35–0.65 track yPercent−50 e crossfade;0.65–1 lê eras. Apenas mídia muda, título/links permanecem imóveis. R3 troca projetos; F mostra dois estados do mesmo projeto, sem equivalência integral.",
+      "backdrop": "Derivado das mesmas capturas, decorativo aria-hidden/alt vazio, object-fit cover, blur8px e brightness0.65 estáticos, scale1.08 e opacidade base0.22; segunda camada inicia0 e anima até1 durante troca. Sem sombra B na mídia F.",
+      "atelie": "WebP1000×3524 integral, screenshot do repositório66969cf, execução local documentada. Sem segundo pin; publicação não confirmada. Marca/fotografias exigem revisão de direitos antes de destaque público.",
+      "links": "Alvo mínimo48px, padding12px 0, gap16px e border-bottom1px control; SVG18px. Hover accent160ms, removido em reduced; foco herdado2px/offset4px com accent local, distinto do foco B3px. Links Industry desktop14px.",
+      "loading": "HomeMotion registra cancelamentos antes de importar; aguarda viewport≥900×700 para home-reveals. Reduced inicial e hash direto preservam fluxo sem import de scroll. Requisição única, import tardio ignora estado encerrado; falha mantém conteúdo legível. Carregamento condicional commitado em dbaae0e; build/lint/strict e regressões específicas executados.",
+      "cleanup": "Foco em main/hashchange/pagehide/alteração de reduced encerram F. gsap.matchMedia reverte timelines/pin/classe ao mudar elegibilidade; cleanup libera transform/clipPath de wrappers exclusivos e opacity do backdrop, inclusive identity transform residual após refresh. Remove listeners. D/E e Motion/ilha têm alvos separados.",
+      "fallbacks": "SSR/no-JS/mobile/viewport baixo/reduced/hash direto/falha de import: duas capturas Industry consecutivas e todos os links em fluxo. Sem autoplay, loop, biblioteca adicional ou bloqueio do scroll.",
+      "validation": "Baseline5c49407:244 E2E passes/5 skips/0 falhas e7 unitários. Correção wide confirmada em3 passes. Após dbaae0e:build/lint/strict aprovados; regressões storytelling/motion/intro122 passes e1 crash de worker WebKit, seguido por1 passe isolado sem alteração. Não houve nova rodada integral após5c49407. Lighthouse local3 rodadas pós-ajuste:medianas97/100/100/66(noindex),LCP2623ms(meta2500 pendente),CLS0.03888,TBT42ms; bytes331348→312974. PHASE_F_REVIEW registra condições/limites; métricas não representam campo.",
+      "limits": "Parecer independente de encerramento ainda pendente; o revisor confirmou a correção wide em6 capturas. Sem declarar fidelidade integral R2/R3,60fps,WCAG,hardware mobile,INP de campo ou publicação. Meta local LCP ainda não atingida. Fotos pessoais LinkedIn indisponíveis; nenhuma substituição fabricada. G–I aguardam gates individuais."
     }
   },
   "components": [
@@ -391,6 +646,22 @@
       "description": "Geometria decorativa do protótipo B; não implementa entrada ou scroll.",
       "html": "<div class=\"ds-light\"><svg viewBox=\"0 0 1440 700\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><filter id=\"ds-halo\" x=\"-30%\" y=\"-100%\" width=\"160%\" height=\"300%\"><feGaussianBlur stdDeviation=\"24\"/></filter><filter id=\"ds-edge\" x=\"-30%\" y=\"-100%\" width=\"160%\" height=\"300%\"><feGaussianBlur stdDeviation=\"7\"/></filter></defs><path d=\"M-80 344 Q720 824 1520 344\" stroke=\"#7350d6\" stroke-width=\"55\" opacity=\".65\" filter=\"url(#ds-halo)\"/><path d=\"M-80 361 Q720 841 1520 361\" stroke=\"#bda4ff\" stroke-width=\"14\" opacity=\".8\" filter=\"url(#ds-edge)\"/><path d=\"M-80 365 Q720 845 1520 365\" stroke=\"#f5f3ff\" stroke-width=\"2\" opacity=\".9\"/></svg></div>",
       "css": ".ds-light{background:var(--background,#08090d);overflow:clip}.ds-light svg{display:block;width:100%;height:auto;fill:none}"
+    },
+    {
+      "name": "Link de projeto F — escuro",
+      "kind": "custom",
+      "refersTo": "f-work-link-dark",
+      "description": "Link nativo aplicado nas cenas F, disponível fora de máscaras e animações.",
+      "html": "<div class=\"ds-f-links\"><a href=\"/projetos/robosense-lab\" aria-label=\"Ler case de RoboSense Lab\">Ler case <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a></div>",
+      "css": ".ds-f-links{--background:#050506;--foreground:#f5f5f7;--accent:#c4b5fd;--control-border:#85838f;padding:20px;background:var(--background);color:var(--foreground);font:400 16px/1.6 Manrope,Arial,sans-serif}.ds-f-links a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;padding:12px 0;border-bottom:1px solid var(--control-border);color:inherit;text-decoration:none;transition:color 160ms}.ds-f-links a:hover{color:var(--accent)}.ds-f-links a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.ds-f-links svg{width:18px;height:18px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.5}@media(prefers-reduced-motion:reduce){.ds-f-links a{transition:none}}"
+    },
+    {
+      "name": "Link de projeto F — faixa clara",
+      "kind": "custom",
+      "refersTo": "f-work-link-light",
+      "description": "Variante Industry com contraste, hover e foco próprios da faixa clara.",
+      "html": "<div class=\"ds-f-links ds-f-links-light\"><a href=\"/projetos/industry-week-senai\" aria-label=\"Ler case de Industry Week — SENAI\">Ler case <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a></div>",
+      "css": ".ds-f-links{--background:#050506;--foreground:#f5f5f7;--accent:#c4b5fd;--control-border:#85838f;padding:20px;background:var(--background);color:var(--foreground);font:400 16px/1.6 Manrope,Arial,sans-serif}.ds-f-links a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;padding:12px 0;border-bottom:1px solid var(--control-border);color:inherit;text-decoration:none;transition:color 160ms}.ds-f-links a:hover{color:var(--accent)}.ds-f-links a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.ds-f-links svg{width:18px;height:18px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.5}@media(prefers-reduced-motion:reduce){.ds-f-links a{transition:none}}.ds-f-links-light{--background:#eeedf0;--foreground:#17151b;--accent:#684195;--control-border:#827f88}@media(min-width:900px){.ds-f-links-light{font-size:14px}}"
     }
   ],
   "narrative": {
