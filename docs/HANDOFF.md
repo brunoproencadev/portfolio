@@ -1,4 +1,25 @@
-# Estado vigente — F reaberta após rejeição visual, 2026-10-14
+# Estado vigente — correção F disponível para revisão, 2026-10-14
+
+“Continue a fase F” autorizou corrigir o diagnóstico após a rejeição visual. Implementação, provas e revisão local concluídas; **aguardar aceite visual do usuário**. G–I/push/deploy continuam sem autorização. [Relatório vigente](PHASE_F_CORRECTION_REVIEW.md); a primeira entrega e seu ship abaixo permanecem históricos.
+
+Entregue: passagem hero→RoboSense com wrappers de scroll separados da entrada; faixa alterna Industry Week/Ateliê com títulos e fundos; painel Sobre, sequência de competências e faixas de contato; foco/hash libera e roda/toque retoma sem salto de âncora. Links ficam fora da máscara; mobile/reduced/no-JS e casos preservados. Sem dependências novas ou mídia inventada.
+
+Commits locais desta continuação:
+
+- `b46ae07f26faa33db79ae2aa6d912e07c1f815c8` — plano de correção F.
+- `f1c78d96e02491e3649ff9745d1d0f35d323f88c` — coreografia/lifecycle e regressões.
+- `0592565cd22c1ef2ef76fa87fb4d6f243fe42af6` —36 capturas, duas pranchas de gravações, hashes e resultados.
+- Fechamento documental `docs: close phase F correction for visual review`; consultar `git log -1 --oneline` após o commit para obter seu SHA, evitando autorreferência.
+
+Provas: build/strict, lint alterado, formato/diff-check e7/7 unitários aprovados. Confirmação E2E166 passes/5 skips preexistentes/0 falhas, Chromium/Firefox/WebKit, dois workers/sem retries. Primeira rodada27/3falhas: salto de âncora em dois testes e ERR_NO_BUFFER_SPACE em outro; primeiro build teve erro de narrowing; axe inicial acusou contraste do hero. Todos registrados em PHASE_F_CORRECTION_REVIEW/verification.json, com correções e confirmação. Capturas cinco larguras320/375/768/1440/1920:0 overflow/pageerrors/axe. Gravações desktop/mobile20,4s/20s,25fps,894/987 amostrasRAF; p95desktop33,3ms, não comprova60fps/INP. Manifesto41 arquivos validado, incluindo JSON e pranchas. Revisão do próprio executor; sem parecer independente nesta continuação.
+
+Limites: fotos/mosaico e objeto3D ausentes; adaptação textual explicitada frente a R3. Sem novo Lighthouse/Safari real/leitor de tela/dispositivo físico; LCP2623ms é histórico e pode ter mudado. Marca/fotos do Ateliê exigem revisão antes de publicação proeminente. Scripts/WebMs brutos ficam em .audit/phase-f-correction, ignorados. A indisponibilidade temporária da revisão automática por limite de uso foi superada após nova instrução do usuário, sem contorno de aprovação.
+
+Próximo gate: revisão visual de F e, somente se autorizado, G (narrativa/cases, originais pessoais se fornecidos e avatar favicon). Não inferir aprovação de resultados técnicos ou de comandos de sandbox.
+
+Servidores temporários encerrados; nenhum listener3100/3101 na conferência final. Para revisar localmente: build existente validado e `npm run start`; gravações indicadas no relatório permanecem disponíveis em .audit.
+
+# Histórico — F reaberta após rejeição visual, 2026-10-14
 
 Usuário questionou scroll fraco e discrepância de animações frente aos vídeos. Diagnóstico em PHASE_F_GAP_ANALYSIS: coreografia foi reduzida a2momentos; CTA/menu por foco/hash desliga permanentemente o enhancement. Bug reproduzido em Chromium1440×900(1→0→0cenas). UI não alterada neste turno de diagnóstico. Retomar correção dentro de F; G–I/push/deploy não autorizados. O fechamento e ship históricos abaixo não são aprovação da F pelo usuário.
 

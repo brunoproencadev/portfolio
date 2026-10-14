@@ -1,4 +1,12 @@
-## F — implementação e evidências, 2026-10-13
+## F corrigida após rejeição — 2026-10-14
+
+Fontef1c78d9, plano b46ae07, evidências0592565. Build/strict, lint dos arquivos alterados, formato/diff-check e7/7 unitários aprovados. E2E166 passes/5 skips preexistentes/0 falhas nos três engines, dois workers, sem retries. Cobre storytelling/navigation/motion/hero/intro/responsive: CTA/menu/hash seguido de roda, foco, reduced, resize, ida/volta de case, falha de chunk e no-JS. Eventos pageshow/pagehide sintéticos não comprovam BFCache real em toda plataforma.
+
+Histórico de falhas: narrowing do main no primeiro build; primeira rodada Chromium27passes/3falhas (duas âncoras saltavam1030px e uma navegação ERR_NO_BUFFER_SPACE); primeira captura axe contrastes no texto esmaecido. Correções: referência não nula, refresh antes de preservar âncora e retirada da opacidade do texto. Confirmação posterior limpa. [Resumo durável](story-correction-review/verification.json) e [relatório](PHASE_F_CORRECTION_REVIEW.md).
+
+36 capturas/5 larguras,0 overflow/pageerror/axe; gravações25fps desktop20,4s/mobile20s,894/987 amostrasRAF, p95desktop33,3ms e máximo50ms. Pranchas inspecionadas com frames R2/R3; não equivalência integral ou prova60fps/INP. Detector12 achados preexistentes fora do diff. Revisão própria, sem parecer independente.41 hashes conferidos. Nenhuma publicação, novo Lighthouse ou teste de dispositivo físico; valor de LCP anterior não é medição deste commit.
+
+## Histórico F — implementação e evidências, 2026-10-13
 
 Build/lint/strict/formato alterado/diff-check aprovados. Unitários7/7. Playwright integral244 passes,5 skips preexistentes,0 falhas; três engines/workers3. Resultados/histórico em story-review/test-results.json; primeira rodada56/19falhas, rerun63/12, diagnóstico focado15/12 e Chromium9/0. Falhas corrigidas: cleanup de identity transform após refresh/revert; testes antigos de copy do hero D e arredondamento subpixel WebKit. Não ocultar histórico.
 

@@ -1,5 +1,7 @@
 # Fase F — rejeição do usuário e diagnóstico de fidelidade
 
+Continuação posterior autorizada e implementada em f1c78d9, com provas0592565: [correção e diferenças restantes](PHASE_F_CORRECTION_REVIEW.md). O diagnóstico abaixo registra o estado anterior; não é descrição da implementação corrigida nem aprovação visual do usuário.
+
 2026-10-14. O usuário questionou o scroll fraco e a quantidade/qualidade de animações frente às referências. A entrega9921190 não está aprovada. F reaberta; G–I continuam sem autorização. Este turno responde ao motivo e registra evidências; não altera a UI nem declara correções implementadas.
 
 ## Causa do desvio

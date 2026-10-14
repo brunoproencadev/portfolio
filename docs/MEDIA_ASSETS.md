@@ -1,5 +1,7 @@
 # Mídias integradas na Fase F
 
+Correção2026-10-14: nenhum asset/fonte foi fabricado ou substituído. A faixa usa industry-week/hero.webp e o recorte superior via CSS de atelie-ingrid/catalog.webp, identificado na legenda; a captura integral do Ateliê continua no fluxo. industry-week/eras.webp permanece no inventário, mas deixou de integrar a faixa da home. Fundo decorativo deriva das mesmas imagens. Hashes/origens abaixo preservados; provas novas em story-correction-review.
+
 Cópias locais para home, geradas dos originais auditados em A. SHA-256 de cada original conferido antes da conversão. [Manifesto otimizado](project-media-manifest.json) registra arquivos, dimensões, bytes e hashes; [manifesto de origem](media-audit/manifest.json) contém URLs imutáveis e contexto.
 
 | Arquivo sob public/images/projects | Origem / uso na home | Verificação e direitos |

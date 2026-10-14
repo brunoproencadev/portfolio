@@ -1,4 +1,10 @@
-## Extensão F — cenas reais da home
+## Correção F — retomada de scroll e coreografia, 2026-10-14
+
+HomeMotion separa suspensão reversível (foco/hash/reduced/pagehide) de desmontagem. Roda/toque retoma somente quando desktop e no-preference permitem; pending evita imports simultâneos. Uma referência visual em fluxo preserva a leitura ao reinserir o pin. startReveals finaliza ScrollTrigger.refresh antes de devolver o cleanup; medir antes desse refresh deixava salto equivalente à extensão do pin. pageshow só retoma quando persisted; o evento inicial não anula a proteção do hash direto.
+
+GSAP scroll possui hero-content/hero-light, enquanto entrada D/E possui filhos; Motion continua exclusivo da cápsula. Faixa story-stage alterna Industry e Ateliê com títulos/mídias/fundos, sem links no track. Detalhes/cases/repositórios permanecem em fluxo. Painel Sobre, índices/linhas de competências e faixas de contato usam o mesmo contexto GSAP e cleanup; nenhum estado React por frame. Um pin de120svh; mobile/baixo/reduced/no-JS são sequenciais. Contrato e limites em PHASE_F_CORRECTION_REVIEW.
+
+## Histórico da extensão F — cenas reais da home
 
 SelectedWork é componente servidor: dados factuais continuam em portfolio.ts; mídia e legenda de evidência ficam em project-media.ts. Next Image usa dimensões explícitas, sizes e lazy loading. Sem novo estado React, rede runtime externa ou dependência.
 

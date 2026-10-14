@@ -1,5 +1,7 @@
 # Componentes — especificação B
 
+Extensão F corrigida em2026-10-14: SelectedWork contém frame RoboSense antes da abertura editorial, faixa story-stage sem links mascarados (Industry→Ateliê) e artigos de contexto/links em fluxo. Sobre ganha painel claro; competências/faixas de contato participam da coreografia existente. Tokens B e componentes C–E permanecem. PHASE_F_CORRECTION_REVIEW/MOTION_SPEC descrevem implementação/provas e diferenças frente à referência; G–I ainda exigem gate.
+
 Direção B aprovada. Ilha C, hero D e intro E implementados e validados em PHASE_C_REVIEW, PHASE_D_REVIEW e [PHASE_E_REVIEW](PHASE_E_REVIEW.md). Demais componentes aguardam seus gates. Hero mantém composição e geometria D; intro usa seu wrapper irmão para escapar do isolamento visual, sem portal/gerenciador novo. [Tokens](DESIGN_SYSTEM.md), [movimento](MOTION_SPEC.md), [direção](VISUAL_DIRECTION.md).
 
 ## Ilha / C

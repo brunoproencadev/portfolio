@@ -1,5 +1,7 @@
 # Fase F — scroll storytelling e mídia autêntica
 
+**Entrega abaixo rejeitada pelo usuário em2026-10-14.** O diagnóstico está em [PHASE_F_GAP_ANALYSIS](PHASE_F_GAP_ANALYSIS.md); a continuação/correção e suas provas estão em [PHASE_F_CORRECTION_REVIEW](PHASE_F_CORRECTION_REVIEW.md). Este histórico não representa aprovação visual.
+
 Fechamento em2026-10-14. Entrega local autorizada pelo “continue” no gate E/F, em2026-10-13. Branch redesign/cinematic-portfolio. G–I/push/deploy continuam sem autorização.
 
 ## Resultado

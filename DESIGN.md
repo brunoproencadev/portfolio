@@ -209,6 +209,8 @@ components:
 
 ## Overview
 
+**Correção F —2026-10-14:** a entrega original foi rejeitada. A implementação vigente acrescenta passagem composta hero→RoboSense e alterna dois projetos distintos (Industry/Ateliê) na faixa. Sobre usa painel claro com as cores f-paper/f-ink/f-paper-muted já existentes; competências e duas faixas de contato participam da sequência. As faixas usam Manrope clamp(1rem,2.2vw,2rem), superfície e acento existentes. Geometria ativa: janela clamp(330px,44svh,450px), três colunas1:2:1, pin120svh. Detalhes/links ficam fora da máscara. PHASE_F_CORRECTION_REVIEW/MOTION_SPEC registram a prova e os limites atuais. Descrições F abaixo e o sidecar preservam o snapshot da primeira entrega; não são autoridade sobre esta correção. Cases e identidade C–E preservados; G–I não autorizados.
+
 **Creative North Star: "Horizonte e evidência"**
 
 Nome sob uma borda de luz conduz a trabalho verificável, transformando curiosidade em evidência visual. Preto profundo, luz violeta interior, Manrope aberta, cápsula cinza e faixas de projeto com escalas distintas sustentam essa direção.

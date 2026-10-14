@@ -1,4 +1,14 @@
-## Aplicação F — 2026-10-13
+## Correção F — 2026-10-14
+
+O plano anterior foi rejeitado por insuficiência coreográfica. PHASE_F_CORRECTION_REVIEW passa a registrar a implementação vigente. R2: hero-content y0→130/blur0→6px e hero-light y0→240/opacity1→0, top top→bottom20%; filhos da entrada D/E não são controlados por scroll. RoboSense abre máscara8→0%, scale0,66→1/y−180→0, top bottom→top18%. Título dos projetos x−100→0/scale1,08→1. Não há redução de opacidade do texto do hero, corrigindo falha de contraste detectada por axe.
+
+Faixa story-stage: entrada scaleX0,86→1 e máscara vertical35→0%; um pin120svh/top112px. Track troca Industry Week por Ateliê em35–65%, yPercent0→−50; título/estado/imagem viajam juntos. Fundos cruzam0,22→0 e0→0,22. Leitura ocupa70% do intervalo; links/detalhes ficam sempre fora da máscara. Recorte superior do Ateliê identificado, imagem integral no fluxo.
+
+Sobre: título x−80→0, painel scale0,88→1/rotation−3→0/y70→0. Competências: linhas x±64→0, índices rotation−90→0/scale1,4→1 em progressão local. Contato: faixas xPercent−18→0 e12→−8, rotações−9→−4 e9→4. Scrub linear, nenhum loop ou segundo pin. Fotos/mosaico/objeto3D não implementados.
+
+Foco/hash suspende e libera destinos; próximo wheel/touchstart pode retomar. Refresh síncrono precede compensação da posição de leitura. Reduced limpa imediatamente; no-preference restaura apenas scroll, nunca intro. Pagehide limpa/pageshow persisted restaura. Viewport estreito/baixo, no-JS e falha de chunk mantêm composição legível e sequencial. Todos os efeitos têm revert e limpeza das propriedades de seus wrappers.
+
+## Histórico da aplicação F — 2026-10-13
 
 M04 implementado em SelectedWork/home-reveals. RoboSense abre máscara6→0%, escala0,88→1 e y64→0 durante top bottom→top18%; scrub linear. Industry Week tem um pin de120svh, top112px, somente≥900×700/no-preference. Timeline0–0,35 mantém hero;0,35–0,65 translada track em -50% e troca fundo;0,65–1 mantém eras. O viewport da mídia limita a largura por (100svh−240px)×1440/1040, preservando margem para ilha e padding mesmo em1920×700. Apenas as mídias se movem, rótulos/links ficam imóveis. Ateliê é imagem vertical integral em fluxo. Diferença R3: dois estados do mesmo projeto, não troca de projetos distintos; sem inventar duração/easing do vídeo.
 

@@ -16,6 +16,8 @@ Portfólio pessoal de um desenvolvedor em formação que aprende construindo apl
 
 ## Capabilities and Constraints
 
+Correção F em2026-10-14 após rejeição visual: hero→RoboSense coordenado, faixa troca Industry por Ateliê, passagens textuais em Sobre/competências/contato; foco/hash suspendem e gesto seguinte retoma scroll. Sem fotografias novas, objeto3D, favicon ou mudanças nos cases. Estado/provas vigentes: docs/PHASE_F_CORRECTION_REVIEW.md; o parágrafo abaixo registra a primeira aplicação F, superada pela correção.
+
 Preservar o projeto Next/React existente, três cases, dados separados, SEO, links e acessibilidade. Redesign por gates A–I; A–E concluídas/aprovadas; F autorizada pelo “continue” no gate E/F e aplicada localmente em2026-10-13. Navegação dimensional, hero, saudação/passagem e cenas de projetos com mídia real. RoboSense aproxima em fluxo; Industry troca dois estados verificados no mesmo projeto (adaptações R2/R3, sem equivalência integral); Ateliê usa screenshot vertical do repositório. G–I exigem gates individuais. Nenhum push/deploy autorizado.
 
 ## Brand Commitments

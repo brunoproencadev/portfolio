@@ -1,5 +1,7 @@
 # Aceitação visual e funcional — redesign A–I
 
+Estado vigente2026-10-14: F reaberta e correção autorizada; relatório PHASE_F_CORRECTION_REVIEW. A tabela de requisitos permanece; a correção exige comprovar CTA/menu→scroll e continuidade hero→mídia→troca de projetos→editorial→contato. Fotografias/3D ausentes são diferenças explícitas, não requisitos concluídos. Status datado abaixo é histórico; G–I continuam sem autorização.
+
 Status2026-10-13: B/C/D aprovadas. E01–E02 implementados e validados em [PHASE_E_REVIEW](PHASE_E_REVIEW.md), fonte75ba951, revisão independente ship; aguardam aprovação do usuário. F–I não autorizados. [Referências](REFERENCE_ANALYSIS.md), [movimento](MOTION_SPEC.md), [plano](VISUAL_REDESIGN_PLAN.md).
 
 ## Método de comparação
