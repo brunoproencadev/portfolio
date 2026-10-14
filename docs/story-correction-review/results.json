@@ -1,0 +1,330 @@
+{
+  "date": "2026-10-14T22:38:39.008Z",
+  "browser": "156.0.8078.4",
+  "states": [
+    {
+      "label": "hero",
+      "width": 320,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "robo",
+      "width": 320,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 320,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "about",
+      "width": 320,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "skills",
+      "width": 320,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "contact",
+      "width": 320,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "axe": []
+    },
+    {
+      "label": "hero",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "robo",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "about",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "skills",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "contact",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "axe": []
+    },
+    {
+      "label": "hero",
+      "width": 768,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "robo",
+      "width": 768,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 768,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "about",
+      "width": 768,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "skills",
+      "width": 768,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "contact",
+      "width": 768,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "axe": []
+    },
+    {
+      "label": "hero",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "handoff",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "robo",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "swap",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "atelie",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "about",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "skills",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "contact",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "axe": []
+    },
+    {
+      "label": "hero",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "handoff",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "robo",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "swap",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "atelie",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "about",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "skills",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "contact",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "axe": []
+    }
+  ],
+  "recordings": [
+    {
+      "file": ".audit\\phase-f-correction\\scroll-v2-1440.webm",
+      "fps": 25.0,
+      "duration": 20.4,
+      "bytes": 6794357,
+      "sha256": "b255d6b5949f35403e6127b2fee9eec23112433bbbbd90ffddb4ca4cba49e536",
+      "sample_times": [
+        1.02,
+        2.652,
+        4.896,
+        6.528,
+        7.956,
+        9.18,
+        10.608,
+        12.24,
+        13.872,
+        15.3,
+        16.932,
+        18.564
+      ],
+      "samples": 894,
+      "raf_median_ms": 16.699999999999818,
+      "raf_p95_ms": 33.299999999999955,
+      "raf_max_ms": 50.0
+    },
+    {
+      "file": ".audit\\phase-f-correction\\scroll-v2-375.webm",
+      "fps": 25.0,
+      "duration": 20.0,
+      "bytes": 2573783,
+      "sha256": "6bb1fa514363058bb6c81298cd48650241b1eb3ba5dc88aae0617f810fd5ef28",
+      "sample_times": [
+        1.0,
+        2.6,
+        4.8,
+        6.4,
+        7.8,
+        9.0,
+        10.4,
+        12.0,
+        13.6,
+        15.0,
+        16.6,
+        18.2
+      ],
+      "samples": 987,
+      "raf_median_ms": 16.69999999999891,
+      "raf_p95_ms": 16.700000000000728,
+      "raf_max_ms": 16.80000000000109
+    }
+  ]
+}

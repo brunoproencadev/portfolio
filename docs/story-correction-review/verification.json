@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-14T22:40:43.388Z",
+  "sourceCommit": "f1c78d96e02491e3649ff9745d1d0f35d323f88c",
+  "reports": [
+    {
+      "name": "e2e-initial",
+      "stats": {
+        "startTime": "2026-10-14T09:22:16.675Z",
+        "duration": 30793.868000000002,
+        "expected": 27,
+        "skipped": 0,
+        "unexpected": 3,
+        "flaky": 0
+      },
+      "projects": [
+        "chromium",
+        "firefox",
+        "webkit"
+      ],
+      "failures": [
+        {
+          "title": "cta navigation releases the destination and subsequent wheel restores storytelling",
+          "tests": [
+            {
+              "project": "chromium",
+              "results": [
+                {
+                  "status": "failed",
+                  "error": "Error: page.goto: net::ERR_NO_BUFFER_SPACE at http://127.0.0.1:3100/\nCall log:\n  - navigating to \"http://127.0.0.1:3100/\", waiting until \"load\"\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "menu navigation releases the destination and subsequent wheel restores storytelling",
+          "tests": [
+            {
+              "project": "chromium",
+              "results": [
+                {
+                  "status": "failed",
+                  "error": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 100\nReceived:   1030\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "direct-hash navigation releases the destination and subsequent wheel restores storytelling",
+          "tests": [
+            {
+              "project": "chromium",
+              "results": [
+                {
+                  "status": "failed",
+                  "error": "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 100\nReceived:   1030\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "e2e-final",
+      "stats": {
+        "startTime": "2026-10-14T22:33:40.785Z",
+        "duration": 241347.367,
+        "expected": 166,
+        "skipped": 5,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "projects": [
+        "chromium",
+        "firefox",
+        "webkit"
+      ],
+      "failures": []
+    }
+  ],
+  "initialCapture": {
+    "states": 41,
+    "failures": [
+      {
+        "width": 1440,
+        "axe": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".hero-title-mask:nth-child(1) > .hero-title-line"
+              ],
+              [
+                ".hero-title-mask:nth-child(2) > .hero-title-line"
+              ],
+              [
+                ".hero-position"
+              ],
+              [
+                ".hero-description"
+              ],
+              [
+                ".hero-primary"
+              ],
+              [
+                ".hero-secondary"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "width": 1920,
+        "axe": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".hero-title-mask:nth-child(1) > .hero-title-line"
+              ],
+              [
+                ".hero-title-mask:nth-child(2) > .hero-title-line"
+              ],
+              [
+                ".hero-position"
+              ],
+              [
+                ".hero-description"
+              ],
+              [
+                ".hero-primary"
+              ],
+              [
+                ".hero-secondary"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "build": "passed; preview metadataBase warning retained",
+  "lint": "passed, changed files",
+  "unit": {
+    "files": 5,
+    "passed": 7
+  },
+  "review": "self-review; not independent or user approval",
+  "detector": {
+    "findings": 12,
+    "newDiffFindings": 0,
+    "note": "Preexisting CSS rules, inspected once"
+  }
+}
