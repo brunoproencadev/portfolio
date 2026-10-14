@@ -19,7 +19,7 @@
 - [x] E: saudação manuscrita/retirada, cancelamento/fallbacks, regressões, vídeo/capturas, Lighthouse e revisão independente ship; PHASE_E_REVIEW e commits em HANDOFF.
 - [x] Gate F: E aprovada e F autorizada pelo “continue”, 2026-10-13.
 - [x] Corrigir F após rejeição da entrega9921190: lifecycle CTA/hash retomável, hero→mídia, troca de projetos e passagens editoriais; fontef1c78d9/provas0592565, relatório PHASE_F_CORRECTION_REVIEW.166 E2E passam/5 skips;36 capturas/duas gravações. Diferenças e falhas iniciais documentadas.
-- [ ] Gate F: aguardar revisão visual do usuário; fotos/mosaico e objeto3D continuam ausentes. Não tratar validação técnica como aprovação ou iniciar G automaticamente.
+- [ ] F rejeitada novamente após teste do usuário: scroll duro/distante das referências; navbar é a parte satisfatória. Retomar na semana seguinte com protótipo isolado hero→projeto, preservando navbar e limitando custo; obter aceite visual antes de integração. Fotos/mosaico/objeto3D continuam ausentes. G não autorizado.
 - [ ] G: conteúdo/cases/fotos confirmadas e avatar favicon; gate próprio após F.
 - [ ] H: QA completo/performance/comparação; gate próprio após G.
 - [ ] I: prontidão de produção; gate próprio após H, sem push/deploy implícito.

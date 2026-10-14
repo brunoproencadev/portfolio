@@ -1,4 +1,14 @@
-# Estado vigente — correção F disponível para revisão, 2026-10-14
+# Estado vigente — F rejeitada novamente; backup GitHub autorizado, 2026-10-14
+
+Após experimentar a correção, o usuário rejeitou novamente o scroll: considerou a navbar a única parte satisfatória e o movimento duro/distante das referências. Os testes abaixo continuam sendo provas técnicas, não aprovação visual. Trabalho de implementação interrompido a pedido do usuário, para retomar na semana seguinte com orçamento de tokens limitado. G–I e deploy continuam sem autorização.
+
+Próxima proposta, ainda não implementada: protótipo isolado de uma única passagem hero→projeto, com mídia real e trecho/timestamps de referência, preservando a navbar. Experimentar e obter aceite visual antes de integrar ou replicar para outras seções. Não repetir uma reforma ampla baseada apenas em testes verdes.
+
+Pedido explícito “manda o que puder para o github” autoriza o backup da branch redesign/cinematic-portfolio, sem merge em main ou deploy manual. Pré-push: árvore limpa;32 commits pendentes até b362f9a, incluindo implementaçãof1c78d9 e evidências0592565. Git remoto reconferido em origin/main0272dea; auditoria dos commits não encontrou padrões de credenciais nem .audit/env privado/builds/vídeos brutos versionados. .env.example contém somente instruções/valor de indexação. Provas de código já registradas abaixo; esta atualização é documental, validada por diff-check.
+
+Este registro acompanha o push em commit documental próprio; obter SHA com git log e confirmar a ponta remota após o envio. Git Credential Manager usado por comando, sem alteração global. Produção Vercel consultada antes do backup: READY no deploymentdpl_9W75f4TbTM89PGMXKuSZcMDBwYLN; nenhum comando de deploy/promote solicitado.
+
+# Histórico — correção F disponível para revisão, 2026-10-14
 
 “Continue a fase F” autorizou corrigir o diagnóstico após a rejeição visual. Implementação, provas e revisão local concluídas; **aguardar aceite visual do usuário**. G–I/push/deploy continuam sem autorização. [Relatório vigente](PHASE_F_CORRECTION_REVIEW.md); a primeira entrega e seu ship abaixo permanecem históricos.
 
