@@ -563,7 +563,7 @@
         "dbaae0e"
       ],
       "authorization": "E aprovada e F autorizada pelo “continue” no gate E/F em 2026-10-13; G–I e push/deploy não autorizados.",
-      "reviewDisposition": "Em revisão local; sem aceite visual final ou aprovação do usuário para concluir F.",
+      "reviewDisposition": "ship restrito aos dois achados pontuados (contenção wide-short e persistência), resolvidos no verdict pass independente de2026-10-14. F entregue para revisão do usuário; G–I não autorizados.",
       "sources": [
         "src/components/sections/selected-work.tsx",
         "src/components/motion/home-reveals.ts",
@@ -598,7 +598,7 @@
       "cleanup": "Foco em main/hashchange/pagehide/alteração de reduced encerram F. gsap.matchMedia reverte timelines/pin/classe ao mudar elegibilidade; cleanup libera transform/clipPath de wrappers exclusivos e opacity do backdrop, inclusive identity transform residual após refresh. Remove listeners. D/E e Motion/ilha têm alvos separados.",
       "fallbacks": "SSR/no-JS/mobile/viewport baixo/reduced/hash direto/falha de import: duas capturas Industry consecutivas e todos os links em fluxo. Sem autoplay, loop, biblioteca adicional ou bloqueio do scroll.",
       "validation": "Baseline5c49407:244 E2E passes/5 skips/0 falhas e7 unitários. Correção wide confirmada em3 passes. Após dbaae0e:build/lint/strict aprovados; regressões storytelling/motion/intro122 passes e1 crash de worker WebKit, seguido por1 passe isolado sem alteração. Não houve nova rodada integral após5c49407. Lighthouse local3 rodadas pós-ajuste:medianas97/100/100/66(noindex),LCP2623ms(meta2500 pendente),CLS0.03888,TBT42ms; bytes331348→312974. PHASE_F_REVIEW registra condições/limites; métricas não representam campo.",
-      "limits": "Parecer independente de encerramento ainda pendente; o revisor confirmou a correção wide em6 capturas. Sem declarar fidelidade integral R2/R3,60fps,WCAG,hardware mobile,INP de campo ou publicação. Meta local LCP ainda não atingida. Fotos pessoais LinkedIn indisponíveis; nenhuma substituição fabricada. G–I aguardam gates individuais."
+      "limits": "Parecer de encerramento ship restrito aos dois achados pontuados; não nova auditoria integral. Sem declarar fidelidade integral R2/R3,60fps,WCAG,hardware mobile,INP de campo ou publicação. Meta local LCP ainda não atingida. Fotos pessoais LinkedIn indisponíveis; nenhuma substituição fabricada. G–I aguardam gates individuais."
     }
   },
   "components": [

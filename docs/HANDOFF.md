@@ -1,10 +1,31 @@
-# Estado vigente F — em implementação, 2026-10-13
+# Estado vigente F — concluída localmente para revisão, 2026-10-14
 
-E aprovada e F autorizada pelo “continue” no gate E/F. Baseline6881228 limpo. Escopo/justificativa em PHASE_F_PLAN. Plano commitado em e933461; mídias verificadas/otimizadas em57dee8b. Implementação5c49407, correção de enquadramento largo/baixo b8d2f04. G–I/push/deploy não autorizados. Histórico E abaixo preservado.
+E aprovada e F autorizada pelo “continue” no gate E/F. Baseline6881228 limpo; branch redesign/cinematic-portfolio. [Relatório F](PHASE_F_REVIEW.md). Somente F concluída; aguardar aprovação de F e autorização de G. G–I/push/deploy não autorizados.
+
+Commits locais:
+
+- e933461 — plano/autorização F.
+- 57dee8b — assets autênticos otimizados, hashes/proveniência.
+- 5c49407 — três cenas servidor, scroll reversível, fallbacks/testes.
+- b8d2f04 — mídia contida em viewports largos/baixos.
+- dbaae0e — módulo de scroll adiado até desktop elegível.
+- 4026c99 — PRODUCT/DESIGN e sidecar sincronizados, snapshots C/D/E preservados (E agora aprovada).
+- 661734a — evidências de navegador, vídeos amostrados, métricas e parecer independente.
+- O commit posterior `docs: close phase F and gate content review` fecha estado/gates e corrige o hash documental de recordings.json para os bytes LF armazenados pelo Git; consultar git log -1 para seu SHA, evitando autorreferência.
+
+Verificação: build/lint/strict/formato código/diff-check e7/7 unitários aprovados. E2E integral no núcleo F244 passes/5 skips preexistentes/0 falhas. Após correções: geometria3/3; regressões de carregamento122 passes/1 crash workerWebKit, mesmo teste isolado1/1. Não nova rodada integral após dbaae0e. Histórico de falhas/correções em story-review/test-results.json. Cinco larguras sem overflow/pageerrors/axe; sequência25fps desktop/mobile e712/764 amostrasRAF. Limites: p95 desktop33,3ms/máximo50,1ms com recorder; não prova60fps/INP/hardware.
+
+Lighthouse3 final:97, LCP2623ms (meta2500 pendente), CLS0,03888,TBT42ms; a11y/boas práticas100,SEO66/noindex. Import condicional removeu18.374bytes mobile, sem ganho relevante demonstrado de LCP. Ambiente, capturas, origem e diferenças R2/R3 no relatório. A faixa Industry é mais alta e troca dois estados do mesmo projeto; RoboSense aproxima em fluxo, não recria toda a sobreposição de R2.
+
+Revisão independente inicial fix; duas correções resolvidas. Verdict pass final **ship restrito aos achados pontuados**, não nova auditoria integral. Reviewer/documenter foram interrompidos por limite de uso; escrita documental validada pelo executor; novo revisor independente confirmou as correções em2026-10-14. Evidência em story-review/independent-review.md. JSON/tokens/UTF8 e44 hashes do manifesto conferidos contra blobs normalizados do Git.
+
+Fotos pessoais não recebidas/LinkedIn bloqueado; sem substituto fabricado. Revisar direitos de marca/fotos Ateliê antes de publicação proeminente. Favicon atual ainda aguarda G/I; nenhuma publicação ocorreu. Nenhum listener3100/3101 na confirmação final. WebMs e scripts brutos permanecem .audit/phase-f (ignorados); pranchas/hashes duráveis em docs/story-review.
+
+Retomada: inspecionar status e aprovação do usuário antes de G; revisar conteúdo/cases, fotografias verificadas se fornecidas e avatar favicon. Não repetir implementação C–F nem inferir aprovação de G de resultados técnicos.
 
 # Handoff — redesign cinematográfico, Fase E
 
-## Estado vigente E — concluída para revisão, 2026-10-13
+## Histórico E — concluída para revisão, 2026-10-13
 
 D aprovada e E autorizada por “Aprovo e autorizo”. Baseline limpo c976322, branch redesign/cinematic-portfolio preservada. Saudação manuscrita, retirada e integração com hero entregues; revisão independente **ship**, sem correções materiais. [Relatório](PHASE_E_REVIEW.md), evidências em intro-review. F–I/push/deploy não autorizados. Próximo passo: aprovação de E e autorização de F pelo usuário.
 

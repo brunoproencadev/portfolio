@@ -18,10 +18,12 @@
 - [x] Gate E: D aprovada e E autorizada explicitamente por “Aprovo e autorizo”.
 - [x] E: saudação manuscrita/retirada, cancelamento/fallbacks, regressões, vídeo/capturas, Lighthouse e revisão independente ship; PHASE_E_REVIEW e commits em HANDOFF.
 - [x] Gate F: E aprovada e F autorizada pelo “continue”, 2026-10-13.
-- [ ] F: implementar PHASE_F_PLAN, validar mídia/scroll/fallbacks, comparar/gravar e fechar gate G.
+- [x] F: cenas autênticas, scroll/fallbacks, capturas/gravações, medições e correções revisadas; PHASE_F_REVIEW. Fechamento local2026-10-14; aguardar aprovação F/autorização G.
 - [ ] G: conteúdo/cases/fotos confirmadas e avatar favicon; gate próprio após F.
 - [ ] H: QA completo/performance/comparação; gate próprio após G.
 - [ ] I: prontidão de produção; gate próprio após H, sem push/deploy implícito.
+
+Pendência de desempenho para H: mediana LCP local2623ms, acima da meta2500ms; INP/dispositivos reais não medidos.
 
 Pendências de fonte: originais e contexto das fotografias pessoais; consideração de direitos de marca/fotos do Ateliê antes de publicação proeminente. Manter timeout frio de tooling registrado (isolado passou); não alterar testes/dependências em A. Critérios de referência não medidos (mobile/easing exato/INP) permanecem explícitos.
 

@@ -62,6 +62,7 @@ Próxima fase G, somente após aprovação explícita: revisar narrativa factual
 - dbaae0e — import condicional do scroll.
 
 - 4026c99 — design system e produto sincronizados com F aplicada.
+- 661734a — capturas, gravações amostradas, métricas e parecer independente.
 
 [Revisão independente](story-review/independent-review.md): **ship restrito às duas correções pontuadas**, ambas resolvidas. Sessões do reviewer/documenter foram interrompidas por limite de uso; escrita documental validada pelo executor e verdict pass retomado por novo revisor independente. Não houve nova auditoria integral no verdict pass. Commits de evidência/fechamento registrados em HANDOFF.
 
