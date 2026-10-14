@@ -1,5 +1,21 @@
 # Fase F — cenas de projetos e scroll
 
+## Correção autorizada — 2026-10-14
+
+“Continue a fase F” retoma o diagnóstico PHASE_F_GAP_ANALYSIS no baseline a745789. O plano histórico abaixo foi insuficiente e é substituído nos seguintes pontos:
+
+- Momento focal: hero perde definição e arco desce enquanto o frame RoboSense sobe, cresce e abre a máscara. Wrappers externos exclusivos de scroll preservam a entrada D/E.
+- Continuidade: título de abertura desloca; faixa fixa troca Industry Week por Ateliê, com imagem, título e fundo sincronizados. Links e contexto permanecem fora da máscara. Captura integral do Ateliê continua no fluxo; a faixa identifica seu recorte superior.
+- Editorial: painel textual de Sobre se acomoda enquanto o título atravessa; competências alternam deslocamentos e orientação dos índices em uma sequência; duas faixas diagonais conduzem ao contato. Sem fotografia ou objeto 3D inventado.
+- Navegação: foco/hash libera imediatamente cenas; roda/toque subsequente retoma com posição de leitura preservada. Reduced é reativo; pagehide limpa e pageshow restaura. Mobile/viewport baixo continuam sequenciais.
+- Orçamento: um pin de120svh; transforms/opacidade, uma máscara e blur de6px apenas no bloco do título do hero; sem loop, vídeo automático ou dependência nova.
+- Alcance: HomeMotion/home-reveals, SelectedWork, page/CSS, storytelling/motion e documentação. Casos, dados factuais, ilha e intro não mudam.
+- Prova: regressão CTA/menu→scroll, hash direto, foco, reduced, resize/back-forward, falha de chunk; gravações contínuas normal/reversa/rápida e capturas em cinco larguras com comparação R2/R3. Não declarar equivalência integral, performance ou aprovação humana a partir de testes.
+
+G–I, push e deploy continuam fora da autorização.
+
+## Plano histórico rejeitado
+
 Autorizada pelo “continue” em resposta ao gate E/F, 2026-10-13. Baseline limpo6881228. Apenas F; G–I e publicação exigem autorização separada.
 
 ## Preservar / reconstruir
