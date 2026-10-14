@@ -1,8 +1,8 @@
-## F — implementação validada, evidência visual em fechamento
+## F — implementação e evidências, 2026-10-13
 
 Build/lint/strict/formato alterado/diff-check aprovados. Unitários7/7. Playwright integral244 passes,5 skips preexistentes,0 falhas; três engines/workers3. Resultados/histórico em story-review/test-results.json; primeira rodada56/19falhas, rerun63/12, diagnóstico focado15/12 e Chromium9/0. Falhas corrigidas: cleanup de identity transform após refresh/revert; testes antigos de copy do hero D e arredondamento subpixel WebKit. Não ocultar histórico.
 
-Capturas cinco larguras320/375/768/1440/1920: axe0, overflow0, pageerrors0; conteúdo/mídias nos estados Industry20/50/85% e fluxo reduzido. Gravações/performance/revisão independente ainda em fechamento. F não publicada; G não autorizada.
+Capturas cinco larguras320/375/768/1440/1920: axe0, overflow0, pageerrors0; conteúdo/mídias nos estados Industry20/50/85% e fluxo reduzido. Gravações25fps desktop/mobile:712/764 amostrasRAF, p95 33,3/16,8ms. Correção wide-short validada3/3 após1 falha de sincronização; otimização122 passes/1 crash de workerWebKit e rerun isolado1pass. Não afirmar novo E2E integral limpo após dbaae0e. Lighthouse3 final:97, LCP2623ms (meta2500 pendente), CLS0,03888,TBT42ms, a11y/boas práticas100,SEO66/noindex. Relatório PHASE_F_REVIEW, detalhes story-review. Revisão final em story-review/independent-review: ship restrito a2correções, ambas resolvidas; não nova auditoria integral. F não publicada; G não autorizada.
 
 # Verificação — Fase 3 e auditoria
 

@@ -8,6 +8,8 @@ Cópias locais para home, geradas dos originais auditados em A. SHA-256 de cada 
 | industry-week/hero.webp e eras.webp | Capturas desktop do GitHub Pages em2026-10-11; sequência Industry Week | Duas telas reais1440×900; deploymentb22aa4b distinto do main68ab01a. Não afirmar captura recente sem nova navegação. |
 | atelie-ingrid/catalog.webp | Screenshot integral do repositório66969cf, home-desktop.png; coluna Ateliê | Execução local documentada; não deployment público. Marca/fotos reservadas pelo README; revisar permissão antes de publicação proeminente. |
 
+Evidências locais F em docs/story-review: capturas da aplicação, pranchas derivadas de gravações25fps e manifesto com hashes. WebMs completos ficam em .audit/phase-f, ignorados; nenhuma imagem documental é importada pela aplicação. Capturas padrão/gravações correspondem5c49407; wide-short após dbaae0e.
+
 WebP qualidade85; somente resize proporcional, sem crop/edição da UI. Total428.216bytes em disco; Next Image fornece tamanhos responsivos/lazy. Originais não commitados. Fotos pessoais continuam pendentes de originais/contexto; nenhuma substituição fabricada.
 
 # Inventário de mídia — auditoria A e protótipo B

@@ -1,0 +1,86 @@
+[
+  {
+    "engine": "chromium",
+    "viewport": {
+      "width": 1920,
+      "height": 700
+    },
+    "progress": 0.2,
+    "band": {
+      "x": 0,
+      "y": 135.921875,
+      "width": 1920,
+      "height": 539.984375
+    }
+  },
+  {
+    "engine": "chromium",
+    "viewport": {
+      "width": 1920,
+      "height": 700
+    },
+    "progress": 0.5,
+    "band": {
+      "x": 0,
+      "y": 135.921875,
+      "width": 1920,
+      "height": 539.984375
+    }
+  },
+  {
+    "engine": "chromium",
+    "viewport": {
+      "width": 1920,
+      "height": 700
+    },
+    "progress": 0.85,
+    "band": {
+      "x": 0,
+      "y": 135.921875,
+      "width": 1920,
+      "height": 539.984375
+    }
+  },
+  {
+    "engine": "webkit",
+    "viewport": {
+      "width": 1920,
+      "height": 700
+    },
+    "progress": 0.2,
+    "band": {
+      "x": 0,
+      "y": 135.921875,
+      "width": 1920,
+      "height": 539.984375
+    }
+  },
+  {
+    "engine": "webkit",
+    "viewport": {
+      "width": 1920,
+      "height": 700
+    },
+    "progress": 0.5,
+    "band": {
+      "x": 0,
+      "y": 135.921875,
+      "width": 1920,
+      "height": 539.984375
+    }
+  },
+  {
+    "engine": "webkit",
+    "viewport": {
+      "width": 1920,
+      "height": 700
+    },
+    "progress": 0.85,
+    "band": {
+      "x": 0,
+      "y": 135.921875,
+      "width": 1920,
+      "height": 539.984375
+    }
+  }
+]

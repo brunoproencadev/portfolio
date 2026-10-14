@@ -1,0 +1,461 @@
+{
+  "before": {
+    "runs": [
+      {
+        "slug": "home",
+        "run": 1,
+        "scores": {
+          "performance": 96,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "lcp": 2653.33,
+        "cls": 0.03888213851761847,
+        "tbt": 55.5,
+        "bytes": 331348,
+        "failures": [
+          {
+            "id": "largest-contentful-paint",
+            "score": 0.86,
+            "value": "2.7 s"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.8,
+            "value": "160 ms"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "value": "Est savings of 52 KiB"
+          },
+          {
+            "id": "is-crawlable",
+            "score": 0
+          },
+          {
+            "id": "legacy-javascript-insight",
+            "score": 0,
+            "value": "Est savings of 14 KiB"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "value": "Est savings of 290 ms"
+          }
+        ]
+      },
+      {
+        "slug": "home",
+        "run": 2,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "lcp": 2629.8671249999998,
+        "cls": 0.03888213851761847,
+        "tbt": 46.5,
+        "bytes": 331348,
+        "failures": [
+          {
+            "id": "largest-contentful-paint",
+            "score": 0.87,
+            "value": "2.6 s"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.86,
+            "value": "140 ms"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "value": "Est savings of 52 KiB"
+          },
+          {
+            "id": "is-crawlable",
+            "score": 0
+          },
+          {
+            "id": "legacy-javascript-insight",
+            "score": 0,
+            "value": "Est savings of 14 KiB"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "value": "Est savings of 290 ms"
+          }
+        ]
+      },
+      {
+        "slug": "home",
+        "run": 3,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "lcp": 2619.5126250000003,
+        "cls": 0.03888213851761847,
+        "tbt": 41.5,
+        "bytes": 331348,
+        "failures": [
+          {
+            "id": "largest-contentful-paint",
+            "score": 0.87,
+            "value": "2.6 s"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.89,
+            "value": "130 ms"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "value": "Est savings of 52 KiB"
+          },
+          {
+            "id": "is-crawlable",
+            "score": 0
+          },
+          {
+            "id": "legacy-javascript-insight",
+            "score": 0,
+            "value": "Est savings of 14 KiB"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "value": "Est savings of 290 ms"
+          }
+        ]
+      }
+    ],
+    "environment": {
+      "node": "v24.15.0",
+      "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+      "ram": 29953048576,
+      "os": "Windows 11 Pro",
+      "browser": "156.0.8078.4",
+      "lighthouse": "13.5.0",
+      "settings": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+        "benchmarkIndex": 2249,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "fetchTime": "2026-10-13T16:59:09.540Z"
+    },
+    "medians": {
+      "lcp": 2629.8671249999998,
+      "cls": 0.03888213851761847,
+      "tbt": 46.5,
+      "bytes": 331348
+    }
+  },
+  "after": {
+    "runs": [
+      {
+        "slug": "home",
+        "run": 1,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "lcp": 2610.02,
+        "cls": 0.03888213851761847,
+        "tbt": 32.5,
+        "bytes": 312978,
+        "failures": [
+          {
+            "id": "largest-contentful-paint",
+            "score": 0.87,
+            "value": "2.6 s"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "value": "Est savings of 52 KiB"
+          },
+          {
+            "id": "is-crawlable",
+            "score": 0
+          },
+          {
+            "id": "legacy-javascript-insight",
+            "score": 0,
+            "value": "Est savings of 14 KiB"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "value": "Est savings of 300 ms"
+          }
+        ]
+      },
+      {
+        "slug": "home",
+        "run": 2,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "lcp": 2622.751375,
+        "cls": 0.03888213851761847,
+        "tbt": 42,
+        "bytes": 312974,
+        "failures": [
+          {
+            "id": "largest-contentful-paint",
+            "score": 0.87,
+            "value": "2.6 s"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.88,
+            "value": "130 ms"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "value": "Est savings of 52 KiB"
+          },
+          {
+            "id": "is-crawlable",
+            "score": 0
+          },
+          {
+            "id": "legacy-javascript-insight",
+            "score": 0,
+            "value": "Est savings of 14 KiB"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "value": "Est savings of 300 ms"
+          }
+        ]
+      },
+      {
+        "slug": "home",
+        "run": 3,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 66
+        },
+        "lcp": 2627.6085000000003,
+        "cls": 0.03888213851761847,
+        "tbt": 43,
+        "bytes": 312974,
+        "failures": [
+          {
+            "id": "largest-contentful-paint",
+            "score": 0.87,
+            "value": "2.6 s"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.88,
+            "value": "140 ms"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "value": "Est savings of 52 KiB"
+          },
+          {
+            "id": "is-crawlable",
+            "score": 0
+          },
+          {
+            "id": "forced-reflow-insight",
+            "score": 0
+          },
+          {
+            "id": "legacy-javascript-insight",
+            "score": 0,
+            "value": "Est savings of 14 KiB"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "value": "Est savings of 300 ms"
+          }
+        ]
+      }
+    ],
+    "environment": {
+      "node": "v24.15.0",
+      "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+      "ram": 29953048576,
+      "os": "Windows 11 Pro",
+      "browser": "156.0.8078.4",
+      "lighthouse": "13.5.0",
+      "settings": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+        "benchmarkIndex": 2970.5,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "fetchTime": "2026-10-13T21:46:42.895Z"
+    },
+    "medians": {
+      "lcp": 2622.751375,
+      "cls": 0.03888213851761847,
+      "tbt": 42,
+      "bytes": 312974
+    }
+  }
+}

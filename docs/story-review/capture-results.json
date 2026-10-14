@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-13T16:55:05.387Z",
+  "browser": "156.0.8078.4",
+  "states": [
+    {
+      "label": "robo",
+      "width": 320,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 320,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "atelie",
+      "width": 320,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "axe": []
+    },
+    {
+      "label": "robo",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "atelie",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "axe": []
+    },
+    {
+      "label": "robo",
+      "width": 768,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 768,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "atelie",
+      "width": 768,
+      "height": 812,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "axe": []
+    },
+    {
+      "label": "robo",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "atelie",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "pinned",
+      "width": 1440,
+      "p": 0.2,
+      "geometry": {
+        "x": 373.765625,
+        "y": 255.75,
+        "width": 692.453125,
+        "height": 500.09375
+      },
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "label": "pinned",
+      "width": 1440,
+      "p": 0.5,
+      "geometry": {
+        "x": 373.765625,
+        "y": 255.75,
+        "width": 692.453125,
+        "height": 500.09375
+      },
+      "transform": "matrix(1, 0, 0, 1, 0, -250.047)"
+    },
+    {
+      "label": "pinned",
+      "width": 1440,
+      "p": 0.85,
+      "geometry": {
+        "x": 373.765625,
+        "y": 255.75,
+        "width": 692.453125,
+        "height": 500.09375
+      },
+      "transform": "matrix(1, 0, 0, 1, 0, -500.094)"
+    },
+    {
+      "width": 1440,
+      "axe": []
+    },
+    {
+      "label": "robo",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "industry",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "atelie",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "label": "pinned",
+      "width": 1920,
+      "p": 0.2,
+      "geometry": {
+        "x": 492.4375,
+        "y": 258.25,
+        "width": 935.109375,
+        "height": 675.34375
+      },
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "label": "pinned",
+      "width": 1920,
+      "p": 0.5,
+      "geometry": {
+        "x": 492.4375,
+        "y": 258.25,
+        "width": 935.109375,
+        "height": 675.34375
+      },
+      "transform": "matrix(1, 0, 0, 1, 0, -337.672)"
+    },
+    {
+      "label": "pinned",
+      "width": 1920,
+      "p": 0.85,
+      "geometry": {
+        "x": 492.4375,
+        "y": 258.25,
+        "width": 935.109375,
+        "height": 675.34375
+      },
+      "transform": "matrix(1, 0, 0, 1, 0, -675.344)"
+    },
+    {
+      "width": 1920,
+      "axe": []
+    }
+  ]
+}

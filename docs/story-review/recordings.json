@@ -1,0 +1,24 @@
+[
+  {
+    "file": ".audit\\phase-f\\scroll-1440.webm",
+    "fps": 25.0,
+    "duration": 17.2,
+    "bytes": 5213595,
+    "sha256": "adc5d69a6f3b956518a2bb9b83539f2b617671965152ff36fe0ffdf4fdfed6d7",
+    "samples": 712,
+    "raf_median_ms": 16.699999999999818,
+    "raf_p95_ms": 33.29999999999927,
+    "raf_max_ms": 50.100000000000364
+  },
+  {
+    "file": ".audit\\phase-f\\scroll-375.webm",
+    "fps": 25.0,
+    "duration": 16.4,
+    "bytes": 1948703,
+    "sha256": "893568a112535462268143952079e224cc0b980ad4f49557f20ed386dacb87a1",
+    "samples": 764,
+    "raf_median_ms": 16.699999999999818,
+    "raf_p95_ms": 16.799999999999272,
+    "raf_max_ms": 16.80000000000109
+  }
+]
