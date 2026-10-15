@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-15",
+  "source": "4acc9775a3c1205f96050da17015c9d80dd05386",
+  "checks": {
+    "build": "pass, including TypeScript strict",
+    "lint": "pass, entire repository",
+    "format": "pass, changed source and tests",
+    "unit": {
+      "passed": 7,
+      "failed": 0
+    },
+    "diffCheck": "pass"
+  },
+  "e2e": {
+    "uniqueHomePassed": 172,
+    "preexistingSkipped": 5,
+    "unresolvedFailures": 0,
+    "prototypeChromiumPassed": 6,
+    "retries": 0,
+    "runs": [
+      {
+        "scope": "Initial Chromium: hero-tools/storytelling/hero/intro/motion/navigation/responsive",
+        "passed": 58,
+        "failed": 1,
+        "skipped": 0
+      },
+      {
+        "scope": "Corrected tool entry, all three engines",
+        "passed": 6,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "scope": "Firefox/WebKit: storytelling/hero/intro/motion/navigation/responsive",
+        "passed": 106,
+        "failed": 3,
+        "skipped": 5
+      },
+      {
+        "scope": "Corrected clock: hero/intro/motion, all three engines",
+        "passed": 84,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "scope": "Shared prototype route, Chromium",
+        "passed": 6,
+        "failed": 0,
+        "skipped": 0
+      }
+    ]
+  },
+  "failuresResolved": [
+    "TypeScript rejected root narrowing in a nested function declaration. Use a const callback after the null guard.",
+    "Staggered fromTo did not hide every tool initially after refresh. Set all initial styles in the GSAP context before the staggered to tween.",
+    "Three Firefox tests failed before navigation: clock.pauseAt Cannot fast-forward to the past. Install the clock 10 seconds before its pause target; animation thresholds unchanged."
+  ],
+  "captures": {
+    "screenshots": 36,
+    "viewports": [
+      [
+        1440,
+        900
+      ],
+      [
+        1920,
+        1080
+      ],
+      [
+        375,
+        812
+      ]
+    ],
+    "pageErrors": 0,
+    "overflowStates": 0,
+    "axeViolations": 0,
+    "axeScope": "one menu-resume state per viewport, plus existing E2E assertions"
+  },
+  "limits": [
+    "E2E coverage is scoped to changed home behavior, not the entire repository suite.",
+    "Capture and video use the development server; E2E uses a local production build.",
+    "Video is encoded at 25fps; not a performance benchmark or proof of 60fps/INP.",
+    "375px viewport video is encoded at 374px width; screenshots retain 375px.",
+    "Synthetic pageshow/pagehide tests are not proof of BFCache on every device.",
+    "No new Lighthouse, physical device, real Safari or screen-reader pass.",
+    "Visual approval covers only the prior hero passage; tools and remaining home await user review.",
+    "No push or deployment."
+  ]
+}

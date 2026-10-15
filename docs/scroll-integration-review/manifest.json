@@ -1,0 +1,222 @@
+[
+  {
+    "file": "about-1440.jpg",
+    "bytes": 122648,
+    "sha256": "61ab45143a59bf607bfb6350d11f450937bf4779380fcbefc9d69bead3297da2"
+  },
+  {
+    "file": "about-1920.jpg",
+    "bytes": 132813,
+    "sha256": "9e3ff259384e369574bf39745771ec84d5f4a52a66a4a3baedcfbbafffc058c7"
+  },
+  {
+    "file": "about-375.jpg",
+    "bytes": 48689,
+    "sha256": "1ae211e058750b17075ca6f04216c99e74ec62ac92174d556e7efda7407396a4"
+  },
+  {
+    "file": "about-entry-1440.jpg",
+    "bytes": 99327,
+    "sha256": "b42246a88005a5be4afe7c8217557f8d11171770155519f8f3c1a2aabe502f28"
+  },
+  {
+    "file": "about-entry-1920.jpg",
+    "bytes": 131402,
+    "sha256": "0a8a6dea1f47e7186c7389587efd45fd15f3efe2031c60a7e9aefab0217de936"
+  },
+  {
+    "file": "about-entry-375.jpg",
+    "bytes": 48643,
+    "sha256": "94babf332c046ac74f43261ed1e1812d87d7ca84c95e908b10afc9ed2d80e5e9"
+  },
+  {
+    "file": "atelie-band-1440.jpg",
+    "bytes": 46261,
+    "sha256": "55ebdfe6a240b40ad9ed9ef7fd8d536bb10250c865a7f0ba4894a1d2fc54afa7"
+  },
+  {
+    "file": "atelie-band-1920.jpg",
+    "bytes": 53587,
+    "sha256": "bb4d627ab59f2dd8b33ad02e10161574af5f52de24cc4bcceebe7f3da48da899"
+  },
+  {
+    "file": "band-reverse-1440.jpg",
+    "bytes": 62304,
+    "sha256": "d6ca929ebb9b16717b02cae87bbbf1dce1c618a16efb306cc80a74645e34a54d"
+  },
+  {
+    "file": "band-reverse-1920.jpg",
+    "bytes": 79201,
+    "sha256": "d52108ce8c072b42cecc1c2e98a4fb8e816446a8fc54949c8cff78cc7352275b"
+  },
+  {
+    "file": "band-sequence.jpg",
+    "bytes": 157338,
+    "sha256": "2b1a55559275a66dab798ca26ed4f7a846c0a03c96ca16b290e9497b8e5b2937"
+  },
+  {
+    "file": "capture-results.json",
+    "bytes": 8301,
+    "sha256": "192ce44f21f258adaa19717d1ba183133ce5532426dbbdc41f8a51e89f76413c"
+  },
+  {
+    "file": "contact-1440.jpg",
+    "bytes": 80407,
+    "sha256": "0305efecd7bd7b142f71d4f669aa132ce6156d1c2ea01745c1fce84f719131af"
+  },
+  {
+    "file": "contact-1920.jpg",
+    "bytes": 94349,
+    "sha256": "4be2b63fb233517203761bad0f0a89365439f4ae9c7a0a4d1b3243ccf4dc862b"
+  },
+  {
+    "file": "contact-375.jpg",
+    "bytes": 37346,
+    "sha256": "f5f723f6974cb3d02fdee980e5d88174b65b8bdd93b7ed7eb6102fb6e75aa1b7"
+  },
+  {
+    "file": "editorial-sequence.jpg",
+    "bytes": 278136,
+    "sha256": "159da374b368bb1bf72b6b8f91e854fbe7b44c2d181d11b93b7ca80165d7d11a"
+  },
+  {
+    "file": "footer-1440.jpg",
+    "bytes": 77194,
+    "sha256": "5807774b1578ef02a85525311a4632679eacd22234da50ee651078a2b15bf3d9"
+  },
+  {
+    "file": "footer-1920.jpg",
+    "bytes": 89230,
+    "sha256": "f58d4c772b72e0fe50df661c55188cc9ea9c6c050d1153fa47fb382d7f97523a"
+  },
+  {
+    "file": "footer-375.jpg",
+    "bytes": 37238,
+    "sha256": "e3c9f48299021df10e7d4a613b733ff0617feef38099c572edc0237b6cd16d5f"
+  },
+  {
+    "file": "hero-1440.jpg",
+    "bytes": 67165,
+    "sha256": "25c7da7c17620d0c2337700264b324428d328cdf6829e6ab99ca3fd02aab0744"
+  },
+  {
+    "file": "hero-1920.jpg",
+    "bytes": 81112,
+    "sha256": "c30300911f82b57c2857eb14d8c7c61d67d935d6f519a0a1b37da81e2af3ec31"
+  },
+  {
+    "file": "hero-375.jpg",
+    "bytes": 42117,
+    "sha256": "06e3ba45432f7d765379dce09bfb3a24e26142874e2944b611f2d7d6dc97b85d"
+  },
+  {
+    "file": "industry-1440.jpg",
+    "bytes": 62304,
+    "sha256": "d6ca929ebb9b16717b02cae87bbbf1dce1c618a16efb306cc80a74645e34a54d"
+  },
+  {
+    "file": "industry-1920.jpg",
+    "bytes": 79201,
+    "sha256": "d52108ce8c072b42cecc1c2e98a4fb8e816446a8fc54949c8cff78cc7352275b"
+  },
+  {
+    "file": "industry-375.jpg",
+    "bytes": 46043,
+    "sha256": "ddb360d382ea0c6ebc42b17c950220f4ff7275900fd1c1caae3b7c295df5bf5e"
+  },
+  {
+    "file": "menu-resume-1440.jpg",
+    "bytes": 127338,
+    "sha256": "d6232776ecff3093112591bcebd1fe43e1b2cac164acc17592545951b6007890"
+  },
+  {
+    "file": "menu-resume-1920.jpg",
+    "bytes": 134952,
+    "sha256": "b92c9170740df6e853effe852a99b1ec7bb036fb534ef68533961a185f23eecc"
+  },
+  {
+    "file": "menu-resume-375.jpg",
+    "bytes": 51523,
+    "sha256": "fdb1db56bc89d27c3e25d613e4d239618544d6b97acaae893507566ee2935097"
+  },
+  {
+    "file": "recordings.json",
+    "bytes": 1514,
+    "sha256": "86dd84d59776fea9c95030f5d0827aa9e14623e06214fa8c2736b144479f856d"
+  },
+  {
+    "file": "reference-band.jpg",
+    "bytes": 125634,
+    "sha256": "4adbceb710192dc016d88d9f04ec3816e0eaa5efeae3dec8922bde88e52990f1"
+  },
+  {
+    "file": "reference-tools.jpg",
+    "bytes": 108047,
+    "sha256": "7d3562e134f47aba1549e81c83eddb07aa7c12fd1f35a1fb9251c0022f34adbb"
+  },
+  {
+    "file": "reverse-1440.jpg",
+    "bytes": 67165,
+    "sha256": "25c7da7c17620d0c2337700264b324428d328cdf6829e6ab99ca3fd02aab0744"
+  },
+  {
+    "file": "reverse-1920.jpg",
+    "bytes": 81112,
+    "sha256": "c30300911f82b57c2857eb14d8c7c61d67d935d6f519a0a1b37da81e2af3ec31"
+  },
+  {
+    "file": "skills-1440.jpg",
+    "bytes": 60385,
+    "sha256": "1772111a5522d4d543567dba25acf04c7453641f345c88dd972f98e6b66fdd72"
+  },
+  {
+    "file": "skills-1920.jpg",
+    "bytes": 78526,
+    "sha256": "62fb9cd8299d66e8df4b5ea64533b0ba33a96af1d27b5aa0c4fc5df6569372f7"
+  },
+  {
+    "file": "skills-375.jpg",
+    "bytes": 37310,
+    "sha256": "db65822d0ce2780b8c2a1eae926bbd6a4123ae5ac6b80198784edce3837b6274"
+  },
+  {
+    "file": "skills-last-1440.jpg",
+    "bytes": 76721,
+    "sha256": "f2aac927f4af3eb3f7c88d6215fdc53a9db4c6a0ed519f71dd1e216245412c6b"
+  },
+  {
+    "file": "skills-last-1920.jpg",
+    "bytes": 91672,
+    "sha256": "734642c4cb1a38d4a830ef700761c1d3a7948f5c8b05072c1b024c1a91b9ee47"
+  },
+  {
+    "file": "skills-last-375.jpg",
+    "bytes": 37239,
+    "sha256": "a8241e2a2f86f0b9e3c74154ae0f7c497cc9f72f95eba4290c3c7e54ff8ef46b"
+  },
+  {
+    "file": "tools-1440.jpg",
+    "bytes": 73011,
+    "sha256": "78f93d7151c4f54e28e6dd5188adf30a4345c1b387ea478fbfe456c3f7db9973"
+  },
+  {
+    "file": "tools-1920.jpg",
+    "bytes": 79140,
+    "sha256": "45fd7ddcf9889a5698c5ae7f5ab476fb8c3e88cc6ddcb0ef950adba7138ef2e6"
+  },
+  {
+    "file": "tools-375.jpg",
+    "bytes": 40204,
+    "sha256": "b818ad8a90a6a7da75426e4bafe3ddba536f7a8a8a66ccab3a861e5ddb51bdbb"
+  },
+  {
+    "file": "tools-sequence.jpg",
+    "bytes": 173022,
+    "sha256": "df4ad0d3ce5389aeb7148da4ba602139391b0cf2157f01e7ff0cff935c249e1f"
+  },
+  {
+    "file": "verification.json",
+    "bytes": 2763,
+    "sha256": "c37666b75892e16af24723ae1bf8243f5fc71afb9aa7fb89645e5d24d867923e"
+  }
+]

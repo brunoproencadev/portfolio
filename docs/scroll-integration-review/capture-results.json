@@ -1,0 +1,399 @@
+{
+  "date": "2026-10-15T19:41:37.316Z",
+  "browser": "156.0.8078.4",
+  "runs": [
+    {
+      "width": 1440,
+      "height": 900,
+      "marks": [
+        {
+          "label": "hero",
+          "milliseconds": 661
+        },
+        {
+          "label": "tools",
+          "milliseconds": 7550
+        },
+        {
+          "label": "reverse",
+          "milliseconds": 12612
+        },
+        {
+          "label": "industry",
+          "milliseconds": 18200
+        },
+        {
+          "label": "atelie-band",
+          "milliseconds": 22114
+        },
+        {
+          "label": "band-reverse",
+          "milliseconds": 26402
+        },
+        {
+          "label": "about-entry",
+          "milliseconds": 30163
+        },
+        {
+          "label": "about",
+          "milliseconds": 33690
+        },
+        {
+          "label": "skills",
+          "milliseconds": 38089
+        },
+        {
+          "label": "skills-last",
+          "milliseconds": 42560
+        },
+        {
+          "label": "contact",
+          "milliseconds": 46831
+        },
+        {
+          "label": "footer",
+          "milliseconds": 50569
+        },
+        {
+          "label": "menu-resume",
+          "milliseconds": 52131
+        }
+      ],
+      "states": [
+        {
+          "label": "hero",
+          "scrollY": 0,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "tools",
+          "scrollY": 1260,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "reverse",
+          "scrollY": 0,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "industry",
+          "scrollY": 3175,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "atelie-band",
+          "scrollY": 3931,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "band-reverse",
+          "scrollY": 3175,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "about-entry",
+          "scrollY": 7918,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "about",
+          "scrollY": 8272,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "skills",
+          "scrollY": 9014,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "skills-last",
+          "scrollY": 9714,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "contact",
+          "scrollY": 10164,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "footer",
+          "scrollY": 10379,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "menu-resume",
+          "scrollY": 8113,
+          "overflow": false,
+          "pins": 1
+        }
+      ],
+      "errors": [],
+      "axe": [],
+      "recording": ".audit/phase-f-integration/home-1440.webm"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "marks": [
+        {
+          "label": "hero",
+          "milliseconds": 672
+        },
+        {
+          "label": "tools",
+          "milliseconds": 7920
+        },
+        {
+          "label": "reverse",
+          "milliseconds": 14039
+        },
+        {
+          "label": "industry",
+          "milliseconds": 21174
+        },
+        {
+          "label": "atelie-band",
+          "milliseconds": 27193
+        },
+        {
+          "label": "band-reverse",
+          "milliseconds": 33231
+        },
+        {
+          "label": "about-entry",
+          "milliseconds": 37736
+        },
+        {
+          "label": "about",
+          "milliseconds": 41834
+        },
+        {
+          "label": "skills",
+          "milliseconds": 45939
+        },
+        {
+          "label": "skills-last",
+          "milliseconds": 50380
+        },
+        {
+          "label": "contact",
+          "milliseconds": 54962
+        },
+        {
+          "label": "footer",
+          "milliseconds": 58336
+        },
+        {
+          "label": "menu-resume",
+          "milliseconds": 59904
+        }
+      ],
+      "states": [
+        {
+          "label": "hero",
+          "scrollY": 0,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "tools",
+          "scrollY": 1512,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "reverse",
+          "scrollY": 0,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "industry",
+          "scrollY": 3660,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "atelie-band",
+          "scrollY": 4567,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "band-reverse",
+          "scrollY": 3660,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "about-entry",
+          "scrollY": 8768,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "about",
+          "scrollY": 9121,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "skills",
+          "scrollY": 9888,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "skills-last",
+          "scrollY": 10557,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "contact",
+          "scrollY": 11037,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "footer",
+          "scrollY": 11075,
+          "overflow": false,
+          "pins": 1
+        },
+        {
+          "label": "menu-resume",
+          "scrollY": 8963,
+          "overflow": false,
+          "pins": 1
+        }
+      ],
+      "errors": [],
+      "axe": [],
+      "recording": ".audit/phase-f-integration/home-1920.webm"
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "marks": [
+        {
+          "label": "hero",
+          "milliseconds": 654
+        },
+        {
+          "label": "tools",
+          "milliseconds": 3760
+        },
+        {
+          "label": "industry",
+          "milliseconds": 6845
+        },
+        {
+          "label": "about-entry",
+          "milliseconds": 9942
+        },
+        {
+          "label": "about",
+          "milliseconds": 13162
+        },
+        {
+          "label": "skills",
+          "milliseconds": 16244
+        },
+        {
+          "label": "skills-last",
+          "milliseconds": 19339
+        },
+        {
+          "label": "contact",
+          "milliseconds": 22423
+        },
+        {
+          "label": "footer",
+          "milliseconds": 25595
+        },
+        {
+          "label": "menu-resume",
+          "milliseconds": 26745
+        }
+      ],
+      "states": [
+        {
+          "label": "hero",
+          "scrollY": 0,
+          "overflow": false,
+          "pins": 0
+        },
+        {
+          "label": "tools",
+          "scrollY": 519,
+          "overflow": false,
+          "pins": 0
+        },
+        {
+          "label": "industry",
+          "scrollY": 1968,
+          "overflow": false,
+          "pins": 0
+        },
+        {
+          "label": "about-entry",
+          "scrollY": 5919,
+          "overflow": false,
+          "pins": 0
+        },
+        {
+          "label": "about",
+          "scrollY": 6145,
+          "overflow": false,
+          "pins": 0
+        },
+        {
+          "label": "skills",
+          "scrollY": 6754,
+          "overflow": false,
+          "pins": 0
+        },
+        {
+          "label": "skills-last",
+          "scrollY": 7608,
+          "overflow": false,
+          "pins": 0
+        },
+        {
+          "label": "contact",
+          "scrollY": 8081,
+          "overflow": false,
+          "pins": 0
+        },
+        {
+          "label": "footer",
+          "scrollY": 8315,
+          "overflow": false,
+          "pins": 0
+        },
+        {
+          "label": "menu-resume",
+          "scrollY": 6114,
+          "overflow": false,
+          "pins": 0
+        }
+      ],
+      "errors": [],
+      "axe": [],
+      "recording": ".audit/phase-f-integration/home-375.webm"
+    }
+  ]
+}
