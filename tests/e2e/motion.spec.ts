@@ -14,7 +14,7 @@ async function interceptSequence(
 
 async function freezeClock(page: Page) {
   const now = new Date();
-  await page.clock.install({ time: now });
+  await page.clock.install({ time: new Date(now.getTime() - 10_000) });
   await page.clock.pauseAt(now);
 }
 

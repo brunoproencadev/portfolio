@@ -2,7 +2,8 @@ import { expect, test, type Page } from "@playwright/test";
 
 async function startFrozen(page: Page) {
   const now = new Date();
-  await page.clock.install({ time: now });
+  // Leave room for protocol latency before freezing the clock, before navigation.
+  await page.clock.install({ time: new Date(now.getTime() - 10_000) });
   await page.clock.pauseAt(now);
   await page.goto("/");
   await expect(page.locator(".intro-curtain")).toBeVisible();

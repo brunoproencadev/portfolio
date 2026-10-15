@@ -56,7 +56,7 @@ test("hero reveals title lines before support and actions, then restores static 
   page,
 }) => {
   const now = new Date();
-  await page.clock.install({ time: now });
+  await page.clock.install({ time: new Date(now.getTime() - 10_000) });
   await page.clock.pauseAt(now);
   await page.goto("/");
   const arc = page.locator(".hero-arc");
