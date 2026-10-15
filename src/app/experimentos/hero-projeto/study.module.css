@@ -1,0 +1,84 @@
+.study {
+  background: #08090d;
+}
+
+.frame {
+  width: min(960px, calc(100% - 40px));
+  margin: 32px auto 0;
+}
+
+.frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.frame figcaption {
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #b8b5c5;
+}
+
+.context {
+  padding-block: 80px;
+}
+
+.context h2 {
+  max-width: 22ch;
+  margin-bottom: 32px;
+}
+
+.context p,
+.review p {
+  max-width: 65ch;
+  margin-block: 16px;
+}
+
+.review {
+  padding-block: 32px;
+  border-block: 1px solid #34333d;
+  color: #b8b5c5;
+}
+
+.enhanced {
+  height: 240svh;
+  margin-top: -96px;
+}
+
+.enhanced .canvas {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: clip;
+  isolation: isolate;
+}
+
+.enhanced :global(.hero) {
+  min-height: 100svh;
+  padding-top: 164px;
+}
+
+.enhanced :global(.hero-light) {
+  inset: 0;
+}
+
+.enhanced :global(.hero-arc) {
+  top: 0;
+  height: max(700px, 80svh);
+}
+
+.enhanced .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(960px, 72vw, calc((100svh - 260px) * 16 / 9));
+  margin: 0;
+  z-index: 1;
+}
+
+@media (max-width: 599px) {
+  .context {
+    padding-block: 48px;
+  }
+}
