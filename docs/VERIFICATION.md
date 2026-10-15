@@ -1,4 +1,12 @@
-## F corrigida após rejeição — 2026-10-14
+## Protótipo F isolado — 2026-10-15
+
+Fonte e941dd5; evidências dac0825. [Relatório](PHASE_F_PROTOTYPE_REVIEW.md), [resultados](scroll-prototype-review/verification.json), [comparação](scroll-prototype-review/comparison.jpg). Lint do repositório, build/TypeScript, formato/diff-check e 7/7 unitários passam. E2E específico: 15/15 principais +3/3 import bloqueado nos três engines; reconfirmação responsiva final 3/3 incluindo 1920×700. Sem retries/skips. Primeiro teste de geometria falhou (imagem cortada), depois corrigido; primeiro lint exigiu Link, corrigido.
+
+15 JPEGs, três gravações reais locais, cinco progressos por desktop1440/1920 e comparação R2 por timestamp. Zero pageerrors nas capturas e zero axe em estados inicial desktop/leitura mobile dos três browsers. Fallback mobile/baixo/reduced/no-JS/import, CTA/menu/hash/foco/reversão exercitados. Limite 1440×800 mantém ações/fechamento do hero. Smoke de produção local: home/case/sitemap200, estudo404 e ausente no sitemap. Aviso metadataBase/localhost no build local registrado.
+
+Não é QA integral da home, benchmark de fluidez, dispositivo real, zoom real ou certificação WCAG. Sem Lighthouse/INP novo. Não é aceite visual: F permanece aberta; integrar somente após avaliação do usuário. Comandos: `node node_modules/@playwright/test/cli.js test --config tests/prototype.config.ts`; servidor e gravações em PHASE_F_PROTOTYPE_REVIEW.
+
+## Histórico — F corrigida após rejeição — 2026-10-14
 
 Fontef1c78d9, plano b46ae07, evidências0592565. Build/strict, lint dos arquivos alterados, formato/diff-check e7/7 unitários aprovados. E2E166 passes/5 skips preexistentes/0 falhas nos três engines, dois workers, sem retries. Cobre storytelling/navigation/motion/hero/intro/responsive: CTA/menu/hash seguido de roda, foco, reduced, resize, ida/volta de case, falha de chunk e no-JS. Eventos pageshow/pagehide sintéticos não comprovam BFCache real em toda plataforma.
 

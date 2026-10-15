@@ -1,4 +1,10 @@
-## Correção F — 2026-10-14
+## Protótipo isolado F — 2026-10-15
+
+Somente `/experimentos/hero-projeto`, fonte e941dd5; não altera a home descrita abaixo. Uma cena sticky nativa de 240svh (140 adicionais), somente ≥900×800/no-preference. ScrollTrigger top top→bottom bottom, scrub0,35s, uma timeline normalizada. Hero-content y0→−48/opacity1→0/blur0→6px em p0,04–0,38; fechamento sai em p0–0,12; arco y0→52vh/opacity1→0 em p0–0,48. Frame integral y65vh→0/scale0,55→1/opacity0→1 em p0,10–0,68, power2.out; xPercent/yPercent−50 centralizam sem disputar translate CSS. Legenda aparece em p0,64–0,76; restante é leitura. Arco mede max(700px,80svh). Escala/curva são decisões experimentais, não medições do easing original.
+
+Âncoras seguem ao conteúdo em fluxo; foco no hero/retorno ao início acomodam imediatamente a timeline no estado inicial. Não há interceptação de wheel/touch, pin-spacer ou smooth scroll global. MatchMedia reverte estilos/classe ao sair de elegibilidade; imports tardios e desmontagem têm cleanup. Mobile/baixo/reduced/no-JS/falha ficam sequenciais. Uma imagem e legenda sem duplicatas, navbar existente fora do owner GSAP. [Prova, discrepâncias e gate visual](PHASE_F_PROTOTYPE_REVIEW.md).
+
+## Histórico — correção F — 2026-10-14
 
 O plano anterior foi rejeitado por insuficiência coreográfica. PHASE_F_CORRECTION_REVIEW passa a registrar a implementação vigente. R2: hero-content y0→130/blur0→6px e hero-light y0→240/opacity1→0, top top→bottom20%; filhos da entrada D/E não são controlados por scroll. RoboSense abre máscara8→0%, scale0,66→1/y−180→0, top bottom→top18%. Título dos projetos x−100→0/scale1,08→1. Não há redução de opacidade do texto do hero, corrigindo falha de contraste detectada por axe.
 

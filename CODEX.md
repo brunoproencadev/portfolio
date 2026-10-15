@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização2026-10-15: “Continue o projeto” retomou F com protótipo isolado hero→RoboSense; fonte e941dd5, evidências dac0825, relatório docs/PHASE_F_PROTOTYPE_REVIEW.md. Rota local /experimentos/hero-projeto em desenvolvimento (porta3102); 404 no build de produção. Navbar/hero/dados reutilizados, home intacta. 18 casos E2E distintos +3 reconfirmações, 7 unitários e lint/build/strict aprovados. Aguardar aceite visual antes da integração ou ampliação; G–I/push/deploy não autorizados. Estado e próximos passos em HANDOFF; registros abaixo são históricos.
+
 Atualização2026-10-14: usuário rejeitou novamente F após testar o scroll; navbar aprovada como parte satisfatória. Implementação interrompida para retomar na semana seguinte. Próxima proposta é somente protótipo hero→projeto isolado, com referência temporal e validação visual antes de integração. Pedido posterior autoriza backup GitHub na branch redesign/cinematic-portfolio; sem merge main/deploy/G–I. Estado detalhado em HANDOFF. As descrições de “pronta para revisão” abaixo são históricas, não aceite do usuário.
 
 Estado vigente2026-10-14: correção F autorizada por “Continue a fase F” implementada e validada, fontef1c78d9, evidências0592565, plano b46ae07. Relatório docs/PHASE_F_CORRECTION_REVIEW.md; HANDOFF/TASKS/VERIFICATION atualizados. Aguardar revisão visual do usuário. Fotos/mosaico/3D continuam ausentes; G–I/push/deploy não autorizados. A narrativa abaixo registra a primeira entrega e sua rejeição, sem substituir este estado.

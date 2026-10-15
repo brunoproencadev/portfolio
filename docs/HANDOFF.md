@@ -1,4 +1,18 @@
-# Estado vigente — F rejeitada novamente; backup GitHub autorizado, 2026-10-14
+# Estado vigente — protótipo isolado F para revisão, 2026-10-15
+
+“Continue o projeto” retomou a correção F pela abordagem já registrada: somente uma passagem hero→RoboSense isolada, antes da integração. [Relatório e instruções](PHASE_F_PROTOTYPE_REVIEW.md). Disponível em http://127.0.0.1:3102/experimentos/hero-projeto com servidor de desenvolvimento. Reutiliza hero/navbar/dados sem modificar a home; uma timeline com sticky nativo, 140svh adicionais e leitura final. Desktop ≥900×800; demais condições em fluxo. Build de produção responde 404 para o estudo.
+
+Commits desta continuação:
+
+- `e941dd570768c9fdb114781876d4d93bcc693a9c` — rota local, movimento isolado e testes específicos.
+- `dac0825130231a32e1447588a9692b09d82d834f` — capturas comparativas, geometria, histórico de falhas e smoke de produção local.
+- Registro documental desta seção: consultar `git log -1 -- docs/HANDOFF.md`; seu próprio hash não é embutido no arquivo.
+
+Provas: 18 casos distintos aprovados nos três engines (15 principais +3 import bloqueado), mais reconfirmação responsiva final 3/3; 7/7 unitários; lint/build/TypeScript/formato/diff-check. Mídia integral, anchors/teclado/no-JS/reduced/resize. 15 JPEGs e três gravações locais; referência R2 6,30–8,70s com hash conferido. [Resultados](scroll-prototype-review/verification.json). Falhas iniciais corrigidas: centralização da imagem e link interno. Sem QA integral da home, novo Lighthouse ou hardware físico.
+
+**Aguardar aceite visual do usuário antes de integrar ou ampliar o protótipo.** F não está aprovada. G–I não iniciadas. Nenhum push/deploy nesta continuação; o backup anterior não autoriza novo envio. Próximo incremento possível: integrar somente a passagem aprovada à home e validar junto da intro/storytelling. Vídeos e comparação reproduzível local em `.audit/phase-f-prototype/review.html`; imagens/resultados duráveis em `docs/scroll-prototype-review`.
+
+# Histórico — F rejeitada novamente; backup GitHub autorizado, 2026-10-14
 
 Após experimentar a correção, o usuário rejeitou novamente o scroll: considerou a navbar a única parte satisfatória e o movimento duro/distante das referências. Os testes abaixo continuam sendo provas técnicas, não aprovação visual. Trabalho de implementação interrompido a pedido do usuário, para retomar na semana seguinte com orçamento de tokens limitado. G–I e deploy continuam sem autorização.
 
