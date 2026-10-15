@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-15",
+  "sourceCommit": "e941dd570768c9fdb114781876d4d93bcc693a9c",
+  "scope": "Isolated development-only hero-to-RoboSense prototype; home implementation unchanged",
+  "checks": {
+    "eslintWholeRepository": "pass",
+    "nextBuildIncludingTypeScript": "pass",
+    "prettierChangedSource": "pass",
+    "gitDiffCheck": "pass",
+    "unit": { "passed": 7, "failed": 0 },
+    "prototypeE2E": {
+      "engines": ["chromium", "firefox", "webkit"],
+      "distinctCasesPassed": 18,
+      "runs": [
+        {
+          "scope": "geometry, reversal, anchors, keyboard, preference/resize, responsive, no-JS",
+          "passed": 15,
+          "failed": 0
+        },
+        { "scope": "blocked GSAP chunk fallback", "passed": 3, "failed": 0 },
+        {
+          "scope": "responsive confirmation including 1920x700 fallback after final height guard",
+          "passed": 3,
+          "failed": 0
+        }
+      ],
+      "retries": 0,
+      "skips": 0,
+      "axe": "zero violations at initial desktop and mobile reading states in all three engines"
+    },
+    "heightBoundary800": "hero actions and ending remain inside viewport",
+    "productionSmoke": "home/case/sitemap 200; study 404; no study in sitemap",
+    "referenceHash": "verified against original 2.mp4",
+    "visualReview": "self-review of timestamped frames; continuous real wheel/CTA/menu recordings available; user acceptance pending"
+  },
+  "initialFailures": [
+    "Initial Chromium run: 4 passed, 1 failed. CSS translate and animated y placed image bottom at 990px in a 900px viewport. Centering transferred to GSAP xPercent/yPercent; subsequent geometry assertions pass.",
+    "Initial lint: internal home anchor required Next Link. Corrected; final whole-repository lint passes."
+  ],
+  "warnings": [
+    "Build reports metadataBase fallback to localhost:3000 in the local non-indexable configuration."
+  ],
+  "notVerified": [
+    "full home E2E suite",
+    "new Lighthouse or INP",
+    "physical touch devices",
+    "real browser zoom",
+    "continuous perceptual equivalence",
+    "user visual acceptance",
+    "public deployment"
+  ]
+}

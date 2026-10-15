@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15T17:31:49.668Z",
+  "responses": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/projetos/robosense-lab",
+      "status": 200
+    },
+    {
+      "path": "/experimentos/hero-projeto",
+      "status": 404
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200
+    }
+  ],
+  "sitemapIncludesStudy": false
+}

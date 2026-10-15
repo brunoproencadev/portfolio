@@ -1,0 +1,7 @@
+{
+  "source": "2.mp4",
+  "sha256": "b48144ca3ce0f4186e0f0091e5d4ca85de34159b0135a2290ad5ed61479feb77",
+  "clip_seconds": [6.3, 8.7],
+  "crop": [0, 80, 1920, 1000],
+  "comparison": "States paired by narrative role; not matched scroll distance or speed. Only browser chrome cropped from reference. Original unchanged."
+}
