@@ -10,8 +10,8 @@ export function startReveals(root: HTMLElement) {
       () => {
         const stage = root.querySelector<HTMLElement>(".story-stage");
         const track = root.querySelector<HTMLElement>(".story-track");
-        const frame = root.querySelector<HTMLElement>(".robo-frame");
-        if (!stage || !track || !frame) return;
+        if (!stage || !track) return;
+        root.classList.add("editorial-enhanced");
         const scroll = (
           trigger: string | HTMLElement,
           start: string,
@@ -20,26 +20,10 @@ export function startReveals(root: HTMLElement) {
           trigger,
           start,
           end,
-          scrub: true,
+          scrub: 0.35,
           invalidateOnRefresh: true,
         });
 
-        // Entrance D/E owns the children; scroll owns only their outer wrappers.
-        gsap
-          .timeline({ scrollTrigger: scroll(".hero", "top top", "bottom 20%") })
-          .to(".hero-content", { y: 130, filter: "blur(6px)", ease: "none" }, 0)
-          .to(".hero-light", { y: 240, opacity: 0, ease: "none" }, 0);
-        gsap.fromTo(
-          ".robo-media",
-          { y: -180, scale: 0.66, clipPath: "inset(8% 8% 8% 8%)" },
-          {
-            y: 0,
-            scale: 1,
-            clipPath: "inset(0% 0% 0% 0%)",
-            ease: "none",
-            scrollTrigger: scroll(frame, "top bottom", "top 18%"),
-          },
-        );
         gsap.fromTo(
           ".work-introduction h2",
           { x: -100, scale: 1.08 },
@@ -58,7 +42,7 @@ export function startReveals(root: HTMLElement) {
         stage.classList.add("story-enhanced");
         gsap.fromTo(
           ".story-window",
-          { scaleX: 0.86, clipPath: "inset(35% 0% 35% 0%)" },
+          { scaleX: 0.92, clipPath: "inset(35% 0% 35% 0%)" },
           {
             scaleX: 1,
             clipPath: "inset(0% 0% 0% 0%)",
@@ -74,11 +58,15 @@ export function startReveals(root: HTMLElement) {
               start: "top 112px",
               end: () => `+=${innerHeight * 1.2}`,
               pin: true,
-              scrub: true,
+              scrub: 0.35,
               invalidateOnRefresh: true,
             },
           })
-          .to(track, { yPercent: -50, duration: 0.3, ease: "none" }, 0.35)
+          .to(
+            track,
+            { yPercent: -50, duration: 0.3, ease: "power2.inOut" },
+            0.35,
+          )
           .to(
             ".story-backdrop-0",
             { opacity: 0, duration: 0.3, ease: "none" },
@@ -98,30 +86,27 @@ export function startReveals(root: HTMLElement) {
           .fromTo(".about-heading", { x: -80 }, { x: 0, ease: "none" }, 0)
           .fromTo(
             ".about-copy",
-            { scale: 0.88, rotation: -3, y: 70 },
-            { scale: 1, rotation: 0, y: 0, ease: "none" },
+            { scale: 0.84, y: 110 },
+            { scale: 1, y: 0, ease: "power2.out" },
+            0,
+          )
+          .fromTo(
+            ".about-sweep",
+            { xPercent: 10 },
+            { xPercent: -12, ease: "none" },
             0,
           );
-        const skills = gsap.timeline({
-          scrollTrigger: scroll(".skills-section", "top 75%", "bottom 80%"),
+        root.querySelectorAll<HTMLElement>(".skill-row").forEach((row) => {
+          gsap.fromTo(
+            row,
+            { y: 64 },
+            {
+              y: 0,
+              ease: "power2.out",
+              scrollTrigger: scroll(row, "top 90%", "top 45%"),
+            },
+          );
         });
-        root
-          .querySelectorAll<HTMLElement>(".skill-row")
-          .forEach((row, index) => {
-            skills
-              .fromTo(
-                row,
-                { x: index % 2 ? 64 : -64 },
-                { x: 0, duration: 1, ease: "none" },
-                index * 0.6,
-              )
-              .fromTo(
-                row.querySelector(".skill-index"),
-                { rotation: -90, scale: 1.4 },
-                { rotation: 0, scale: 1, duration: 1, ease: "none" },
-                index * 0.6,
-              );
-          });
         gsap
           .timeline({
             scrollTrigger: scroll(
@@ -144,9 +129,10 @@ export function startReveals(root: HTMLElement) {
           );
         return () => {
           stage.classList.remove("story-enhanced");
+          root.classList.remove("editorial-enhanced");
           // Refresh may leave identity transforms on these exclusively owned wrappers.
           gsap.set(
-            ".hero-content, .hero-light, .robo-media, .work-introduction h2, .story-window, .story-track, .about-heading, .about-copy, .skill-row, .skill-index, .contact-ribbon",
+            ".work-introduction h2, .story-window, .story-track, .about-heading, .about-copy, .about-sweep, .skill-row, .contact-ribbon",
             {
               clearProps: "transform,clipPath,filter,opacity",
             },

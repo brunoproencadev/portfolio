@@ -78,18 +78,6 @@ export function SelectedWork() {
   ];
   return (
     <section className="selected-work" aria-labelledby="projetos">
-      <figure className="robo-frame page-container">
-        <div className="robo-media">
-          <Image
-            src={projectMedia.robo.src}
-            alt={projectMedia.robo.alt}
-            width={projectMedia.robo.width}
-            height={projectMedia.robo.height}
-            sizes="(min-width: 1440px) 1280px, 90vw"
-          />
-        </div>
-        <figcaption>{projectMedia.robo.caption}</figcaption>
-      </figure>
       <div className="work-introduction page-container">
         <h2 id="projetos" tabIndex={-1}>
           Ideias em <em>construção.</em>

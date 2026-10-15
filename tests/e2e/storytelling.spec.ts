@@ -148,7 +148,9 @@ for (const fallback of ["no-js", "reduced", "hash"] as const) {
         "http://127.0.0.1:3100/" + (fallback === "hash" ? "#projetos" : ""),
       );
       await expect(page.locator(".pin-spacer")).toHaveCount(0);
-      for (const img of await page.locator(".selected-work figure img").all()) {
+      for (const img of await page
+        .locator(".robo-frame img, .selected-work figure img")
+        .all()) {
         await img.scrollIntoViewIfNeeded();
         await expect
           .poll(() =>
@@ -276,7 +278,7 @@ test("live preference and BFCache restore one scene without accumulating pins", 
   }
 });
 
-test("hero handoff and editorial passages follow scroll and clean up together", async ({
+test("editorial passages release independently and keyboard restores the approved hero", async ({
   page,
 }) => {
   await openStory(page);
@@ -298,15 +300,13 @@ test("hero handoff and editorial passages follow scroll and clean up together", 
   }
   await page.locator(".skill-row .text-link").first().focus();
   await expect(page.locator(".skill-row .text-link").first()).toBeInViewport();
-  for (const selector of [
-    ".hero-content",
-    ".about-copy",
-    ".skill-row",
-    ".contact-ribbon",
-  ]) {
+  for (const selector of [".about-copy", ".skill-row", ".contact-ribbon"]) {
     await expect(page.locator(selector).first()).not.toHaveAttribute(
       "style",
       /transform|filter|opacity/,
     );
   }
+  await page.locator(".hero-primary").focus();
+  await expect(page.locator(".hero-content")).toHaveCSS("opacity", "1");
+  await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
 });

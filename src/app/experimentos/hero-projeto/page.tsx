@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteNavigation } from "@/components/navigation/site-navigation";
-import { CinematicHero } from "@/components/sections/cinematic-hero";
+import { HeroProject } from "@/components/sections/hero-project";
 import { profile, projects, skills } from "@/data/portfolio";
-import { projectMedia } from "@/data/project-media";
 import { manrope } from "@/fonts/manrope";
-import { ScrollStudy } from "./scroll-study";
 import styles from "./study.module.css";
 
 export const metadata: Metadata = {
@@ -19,7 +16,6 @@ export default function HeroProjectStudy() {
   // This disposable review surface must not be served by production builds.
   if (process.env.NODE_ENV !== "development") notFound();
   const project = projects[0];
-  const media = projectMedia.robo;
 
   return (
     <div className={`home-page ${manrope.className} ${styles.study}`}>
@@ -28,20 +24,7 @@ export default function HeroProjectStudy() {
       </a>
       <SiteNavigation />
       <main>
-        <ScrollStudy>
-          <CinematicHero />
-          <figure className={styles.frame}>
-            <Image
-              src={media.src}
-              alt={media.alt}
-              width={media.width}
-              height={media.height}
-              sizes="(min-width: 900px) 960px, 90vw"
-              priority
-            />
-            <figcaption>{media.caption}</figcaption>
-          </figure>
-        </ScrollStudy>
+        <HeroProject />
         <section className={`page-container ${styles.context}`}>
           <h2 id="projetos" tabIndex={-1}>
             {project.name}

@@ -82,10 +82,12 @@ export function CinematicHero() {
           </a>
         </div>
       </div>
-      <p className="hero-end">
-        {profile.fields}
-        <span>Construir. Observar. Evoluir.</span>
-      </p>
+      <div className="hero-outro">
+        <p className="hero-end">
+          {profile.fields}
+          <span>Construir. Observar. Evoluir.</span>
+        </p>
+      </div>
     </section>
   );
 }

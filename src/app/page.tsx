@@ -1,7 +1,7 @@
 import { SelectedWork } from "@/components/sections/selected-work";
 import { manrope } from "@/fonts/manrope";
 import { SiteNavigation } from "@/components/navigation/site-navigation";
-import { CinematicHero } from "@/components/sections/cinematic-hero";
+import { HeroProject } from "@/components/sections/hero-project";
 import { HomeMotion } from "@/components/motion/home-motion";
 import { profile, skills } from "@/data/portfolio";
 
@@ -13,7 +13,7 @@ export default function Home() {
       </a>
       <SiteNavigation />
       <main id="conteudo" tabIndex={-1}>
-        <CinematicHero />
+        <HeroProject />
         <HomeMotion />
 
         <SelectedWork />
@@ -30,6 +30,9 @@ export default function Home() {
             </h2>
           </div>
           <div className="about-copy">
+            <div className="about-sweep" aria-hidden="true">
+              {profile.fields}
+            </div>
             <p className="large-copy">{profile.about}</p>
             <div className="process-note">
               <span aria-hidden="true">↳</span>

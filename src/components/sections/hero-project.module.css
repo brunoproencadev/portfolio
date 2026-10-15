@@ -1,0 +1,113 @@
+.frame {
+  width: min(960px, calc(100% - 40px));
+  margin: 32px auto 0;
+}
+
+.frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.frame figcaption {
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #b8b5c5;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0 20px;
+  margin: 32px auto;
+  color: #f5f3ff;
+  font-size: 13px;
+}
+
+.tools li {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.symbol {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #eeedf3;
+  color: #181720;
+  font-size: 22px;
+  font-weight: 650;
+}
+
+.enhanced {
+  height: 240svh;
+  margin-top: -96px;
+}
+
+.enhanced .canvas {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: clip;
+  isolation: isolate;
+}
+
+.enhanced :global(.hero) {
+  min-height: 100svh;
+  padding-top: 164px;
+}
+
+.enhanced :global(.hero-light) {
+  inset: 0;
+}
+
+.enhanced :global(.hero-arc) {
+  top: 0;
+  height: max(700px, 80svh);
+}
+
+.enhanced .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(960px, 72vw, calc((100svh - 260px) * 16 / 9));
+  margin: 0;
+  z-index: 1;
+}
+
+.enhanced .tools {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.enhanced .tools li {
+  position: absolute;
+  width: 96px;
+}
+
+.enhanced .tools li:nth-child(odd) {
+  left: max(24px, calc((100% - 960px) / 2 - 132px));
+}
+
+.enhanced .tools li:nth-child(even) {
+  right: max(24px, calc((100% - 960px) / 2 - 132px));
+}
+
+.enhanced .tools li:nth-child(-n + 2) {
+  top: 24%;
+}
+
+.enhanced .tools li:nth-child(n + 3) {
+  bottom: 22%;
+}
