@@ -1,4 +1,16 @@
-## Protótipo F isolado — 2026-10-15
+## Integração F — 2026-10-15
+
+Fonte 4acc977; relógio de testes 7c518f4; evidências 83e07cc. [Relatório](PHASE_F_INTEGRATION_REVIEW.md) e [resultados](scroll-integration-review/verification.json). Build/TypeScript strict, lint completo, formato dos arquivos alterados, diff-check e 7/7 unitários passam.
+
+172 casos E2E distintos da home passam nos três engines, 5 skips preexistentes, sem falhas pendentes; 6/6 do estudo compartilhado em Chromium. Escopo: hero/tools/intro/motion/storytelling/navigation/responsive. Não é execução integral de todos os testes do repositório. Cobertura inclui zoom200% real no Chromium, foco/hash/menu, reduced em execução, resize, import falho, no-JS, desmontagem e ida/volta de case. BFCache foi exercitado por eventos sintéticos.
+
+Falhas iniciais preservadas: build com narrowing de root; Chromium58pass/1falha de visibilidade inicial das ferramentas; Firefox/WebKit106pass/3falhas no relógio antes da navegação/5skips. Correções: callback após guarda não nula, gsap.set antes do stagger, relógio instalado10s antes do instante de pausa. Confirmação das ferramentas6/6; confirmação dos testes com relógio84/84, sem aumentar timeouts da animação. Não somar reconfirmações ao total distinto.
+
+36 estados capturados em1440×900/1920×1080/375×812 sem overflow/pageerrors; axe zero no estado após menu/retomada por viewport e asserções E2E existentes. 41 JPEGs incluem cinco pranchas temporais. Três gravações25fps de56,84s/64,28s/29,88s; vídeo mobile codificado374px, viewport/capturas375px. [Manifesto](scroll-integration-review/manifest.json) com44 arquivos conferido contra bytes staged UTF-8/LF. Capturas usam desenvolvimento; E2E principal usa build de produção local.
+
+Revisão visual/diff pelo próprio executor; sem parecer independente. Sem novo Lighthouse/INP, Safari real, dispositivo físico ou leitor de tela. Vídeo25fps não prova60fps. Passagem anterior aprovada; ferramentas/restante ainda dependem de avaliação do usuário. Nenhum push/deploy ou início de G–I.
+
+## Histórico — protótipo F isolado — 2026-10-15
 
 Fonte e941dd5; evidências dac0825. [Relatório](PHASE_F_PROTOTYPE_REVIEW.md), [resultados](scroll-prototype-review/verification.json), [comparação](scroll-prototype-review/comparison.jpg). Lint do repositório, build/TypeScript, formato/diff-check e 7/7 unitários passam. E2E específico: 15/15 principais +3/3 import bloqueado nos três engines; reconfirmação responsiva final 3/3 incluindo 1920×700. Sem retries/skips. Primeiro teste de geometria falhou (imagem cortada), depois corrigido; primeiro lint exigiu Link, corrigido.
 

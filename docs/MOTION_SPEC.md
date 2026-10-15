@@ -1,4 +1,14 @@
-## Protótipo isolado F — 2026-10-15
+## Integração F após aprovação da passagem — 2026-10-15
+
+O usuário aprovou hero→RoboSense e solicitou ferramentas e revisão do restante. Fonte4acc977; [relatório](PHASE_F_INTEGRATION_REVIEW.md). `HeroProject/HeroProjectMotion` compartilham a mesma passagem entre home e estudo local, preservando a geometria e timeline do protótipo abaixo. Ferramentas reais entram em p0,68: y28→0, scale0,55→1, opacity0→1, duration0,12, stagger0,025, power3.out. Todas acomodadas em p0,875; leitura até p1. Estado inicial de todas é aplicado por gsap.set dentro do contexto antes do tween, garantindo reversão e cleanup.
+
+Responsabilidades: intro controla `.hero-end`; passagem controla `.hero-outro` e os wrappers externos `.hero-content/.hero-light`, frame/legenda/ferramentas. `HomeMotion/home-reveals` fica apenas com conteúdo posterior. Nenhum transform é compartilhado com Motion da navbar. Imports da passagem só iniciam em ≥900×800/no-preference; `matchMedia` e desmontagem revertem. Foco em controles do hero/retorno #inicio acomodam imediatamente o estado inicial.
+
+Restante permanece elegível em ≥900×700/no-preference. Todos os scrubs agora0,35s. Faixa: altura clamp(280px,34svh,360px), entrada scaleX0,92→1; único pin120svh/top112px. Troca em35–65%, yPercent0→−50 com power2.inOut; fundos cruzam0,22. Sobre: scale0,84→1/y110→0, power2.out; texto factual aria-hidden xPercent10→−12, sem tilt. Competências: título sticky/top144px no fluxo, linhas y64→0, power2.out; nenhum pin extra. Contato conserva trajetória anterior e recebe scrub amortecido.
+
+Foco/hash libera os efeitos editoriais; roda/toque retoma preservando a leitura. A limpeza não apaga propriedades da passagem independente. Mobile/reduced/baixo/no-JS/falha de import mantém conteúdo no fluxo; ferramentas estáticas e texto decorativo oculto em mobile/reduced. Curvas e distâncias são decisões locais, não medições exatas das referências.
+
+## Histórico — protótipo isolado F — 2026-10-15
 
 Somente `/experimentos/hero-projeto`, fonte e941dd5; não altera a home descrita abaixo. Uma cena sticky nativa de 240svh (140 adicionais), somente ≥900×800/no-preference. ScrollTrigger top top→bottom bottom, scrub0,35s, uma timeline normalizada. Hero-content y0→−48/opacity1→0/blur0→6px em p0,04–0,38; fechamento sai em p0–0,12; arco y0→52vh/opacity1→0 em p0–0,48. Frame integral y65vh→0/scale0,55→1/opacity0→1 em p0,10–0,68, power2.out; xPercent/yPercent−50 centralizam sem disputar translate CSS. Legenda aparece em p0,64–0,76; restante é leitura. Arco mede max(700px,80svh). Escala/curva são decisões experimentais, não medições do easing original.
 
@@ -45,7 +55,8 @@ Base observada: [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md). B aprovada; M01 imp
 | `SiteNavigation` + Motion já instalado | Estado/layout/entrada e saída da ilha           | Disclosure não modal, links reais, foco, Escape, clique externo, seção ativa, no-JS, cleanup                         |
 | `HomeMotion`                           | Elegibilidade, cancelamento, imports e watchdog | Storage opcional, guarda por documento, hash/scroll inicial, reduced motion em execução, imports tardios inofensivos |
 | `home-sequence` + GSAP                 | Intro e entrada coordenada do hero              | Contexto local e retorno de função de limpeza                                                                        |
-| `home-reveals` + ScrollTrigger         | Progressão hero→projetos e cenas de trabalho    | SSR legível, âncoras nativas, conteúdo alcançável por foco, desmontagem/revert                                       |
+| `HeroProjectMotion` + ScrollTrigger    | Passagem hero→RoboSense e ferramentas           | Sticky nativo, foco no hero legível, reduced/no-JS, import tardio e desmontagem/revert                              |
+| `home-reveals` + ScrollTrigger         | Faixa de projetos e passagens editoriais        | SSR legível, âncoras nativas, conteúdo alcançável por foco, desmontagem/revert                                       |
 | CSS                                    | Layout estático, foco, hover e fallback         | Sem ocultação global aguardando JS, contraste e dimensões reservadas                                                 |
 
 Nenhum elemento terá GSAP e Motion controlando o mesmo transform/dimensão. Separar wrappers por responsabilidade quando necessário; não criar outro motor, gerenciador global ou abstração de cenas sem consumidor. Não instalar Three/R3F/Lenis: os comportamentos prioritários observados podem ser prototipados com a stack existente.

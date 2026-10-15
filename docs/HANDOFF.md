@@ -1,4 +1,23 @@
-# Estado vigente — protótipo isolado F para revisão, 2026-10-15
+# Estado vigente — passagem aprovada e home integrada para revisão, 2026-10-15
+
+O usuário aprovou o trecho hero→RoboSense (“de resto, essa parte está aprovada”), pediu pop-ups das ferramentas e revisão do scroll no restante da página. Essa aprovação satisfez o gate de integração do protótipo. Trabalho autorizado dentro de F concluído para nova avaliação visual; G–I, push e deploy não autorizados.
+
+[Relatório vigente](PHASE_F_INTEGRATION_REVIEW.md). Revisar a home em http://127.0.0.1:3102/; servidor de desenvolvimento mantido disponível. Gravações locais em `.audit/phase-f-integration/review.html`. O estudo `/experimentos/hero-projeto` compartilha a mesma passagem e continua restrito a desenvolvimento.
+
+Entregue: passagem aprovada integrada; Python, NumPy, OpenCV e PySerial entram ao redor do frame; faixa Industry/Ateliê mais horizontal, troca suavizada e fundo coordenado; Sobre como painel editorial; título de Competências acompanha a leitura; faixas de contato amortecidas. Navbar, dados, mídias e cases preservados. Intro e scroll têm wrappers distintos; fluxo estático em mobile/baixo/reduced/no-JS, cleanup e navegação verificados.
+
+Commits locais deste incremento:
+
+- `4acc9775a3c1205f96050da17015c9d80dd05386` — integração, continuidade do scroll e regressões.
+- `7c518f41c9de3aa0a0a11eb6626701475d0d81e6` — elimina corrida do relógio dos testes antes da navegação.
+- `83e07cc1dbd26172e4f2f7fb8dcfffdab89a3745` — 36 capturas, 5 pranchas temporais, resultados e hashes.
+- Registro documental desta seção: `docs: record approved passage and integrated phase F review`; consultar `git log -1 -- docs/HANDOFF.md`, sem autorreferência de SHA.
+
+Provas: 172 casos distintos da home aprovados em Chromium/Firefox/WebKit, 5 skips preexistentes; 6/6 do estudo em Chromium; 7/7 unitários, build/strict, lint completo, formato e diff-check. A confirmação do relógio corrigido passou 84/84; não somar essas repetições como casos distintos. Histórico inicial de falhas e correções em [verification.json](scroll-integration-review/verification.json). Capturas 1440/1920/375: zero overflow/pageerrors e axe zero nos estados examinados. Três WebMs a25fps: 56,84s/64,28s/29,88s. Manifesto de44 arquivos conferido contra os bytes staged, em UTF-8/LF.
+
+Decisões/limites: etiquetas tipográficas, sem logotipos inventados; sem fotos/mosaico/3D substitutos. A faixa permanece mais alta que a referência para preservar nomes/legendas. Revisão do próprio executor; testes e quadros não são aceite perceptual. Sem novo Lighthouse/INP, dispositivo físico, Safari real ou leitor de tela. Próximo passo: usuário avaliar ferramentas e restante da home; somente depois de aceite global de F e autorização iniciar G (conteúdo/cases e mídia factual disponível). Nenhum envio/publicação neste incremento.
+
+# Histórico — protótipo isolado F para revisão, 2026-10-15
 
 “Continue o projeto” retomou a correção F pela abordagem já registrada: somente uma passagem hero→RoboSense isolada, antes da integração. [Relatório e instruções](PHASE_F_PROTOTYPE_REVIEW.md). Disponível em http://127.0.0.1:3102/experimentos/hero-projeto com servidor de desenvolvimento. Reutiliza hero/navbar/dados sem modificar a home; uma timeline com sticky nativo, 140svh adicionais e leitura final. Desktop ≥900×800; demais condições em fluxo. Build de produção responde 404 para o estudo.
 
