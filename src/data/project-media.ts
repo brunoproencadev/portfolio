@@ -1,4 +1,11 @@
 // Provenance, original hashes and publication limits: docs/MEDIA_ASSETS.md.
+export const toolIcons = {
+  Python: "/images/tools/python.svg",
+  NumPy: "/images/tools/numpy.svg",
+  OpenCV: "/images/tools/opencv.svg",
+  PySerial: "/images/tools/pyserial.png",
+} as const;
+
 export const projectMedia = {
   robo: {
     src: "/images/projects/robosense-lab/m3.webp",

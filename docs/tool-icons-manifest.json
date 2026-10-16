@@ -1,0 +1,41 @@
+{
+  "assets": [
+    {
+      "file": "public/images/tools/python.svg",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      "retrieved": "2026-10-15",
+      "license": "MIT; public/images/tools/devicon-LICENSE.txt",
+      "bytes": 2300,
+      "sha256": "71493b4a732f0532b3a03a7a95da3ee11a65766367c8303b901ffbe7bf91a3a2"
+    },
+    {
+      "file": "public/images/tools/numpy.svg",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg",
+      "retrieved": "2026-10-15",
+      "license": "MIT; public/images/tools/devicon-LICENSE.txt",
+      "bytes": 758,
+      "sha256": "efd53b9bf8637500d43ece39fe7ac43c972066f7166e408c5fd13e7cb73d7a05"
+    },
+    {
+      "file": "public/images/tools/opencv.svg",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg",
+      "retrieved": "2026-10-15",
+      "license": "MIT; public/images/tools/devicon-LICENSE.txt",
+      "bytes": 1238,
+      "sha256": "a7adfae29bdb714195ea9b31b4f6f3ff7cf21fb448ab244f6110987280bd7b7e"
+    },
+    {
+      "file": "public/images/tools/pyserial.png",
+      "source": "https://pyserial.readthedocs.io/en/latest/_static/pyserial.png",
+      "retrieved": "2026-10-15",
+      "license": "BSD-3-Clause; public/images/tools/pyserial-LICENSE.txt",
+      "bytes": 4984,
+      "sha256": "52f1686cfca00a919a0d680d7e965afe0457c765682d6353df79de2c9d99b468"
+    }
+  ],
+  "licenseSources": {
+    "devicon": "https://raw.githubusercontent.com/devicons/devicon/master/LICENSE",
+    "pyserial": "https://raw.githubusercontent.com/pyserial/pyserial/master/LICENSE.txt"
+  },
+  "transform": "SVG/license UTF-8 LF normalization only; no visual modifications; original PNG bytes."
+}

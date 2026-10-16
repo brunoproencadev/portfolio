@@ -30,6 +30,11 @@ test("real tools enter after the approved handoff, stay outside media and revers
   for (const [index, tool] of (await tools.all()).entries()) {
     await expect(tool).toHaveCSS("opacity", "1");
     await expect(tool).toContainText(projects[0].stack[index]);
+    const icon = tool.locator("img");
+    await expect(icon).toHaveAttribute("alt", "");
+    await expect
+      .poll(() => icon.evaluate((el) => (el as HTMLImageElement).naturalWidth))
+      .toBeGreaterThan(0);
   }
   for (const viewport of [
     { width: 900, height: 800 },
