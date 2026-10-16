@@ -2,8 +2,31 @@ import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/portfolio";
 import { projectMedia } from "@/data/project-media";
+import type { ReactNode } from "react";
 
 type Project = (typeof projects)[number];
+
+function ProjectWindow({
+  title,
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="project-window">
+      <div className="window-bar" aria-hidden="true">
+        <span className="window-lights">
+          <span />
+          <span />
+          <span />
+        </span>
+        <span>{title}</span>
+      </div>
+      {children}
+    </div>
+  );
+}
 
 function Arrow() {
   return (
@@ -119,18 +142,20 @@ export function SelectedWork() {
                   <span>{project.category}</span>
                 </div>
                 <figure className="story-slide">
-                  <div className="story-image">
-                    <Image
-                      src={media.src}
-                      alt={media.alt}
-                      width={media.width}
-                      height={media.height}
-                      sizes="(min-width: 900px) 42vw, 90vw"
-                    />
-                  </div>
+                  <ProjectWindow title={project.name}>
+                    <div className="story-image">
+                      <Image
+                        src={media.src}
+                        alt={media.alt}
+                        width={media.width}
+                        height={media.height}
+                        sizes="(min-width: 900px) 42vw, 90vw"
+                      />
+                    </div>
+                  </ProjectWindow>
                   <figcaption>
                     {index === 1
-                      ? "Recorte superior do catálogo · captura integral abaixo."
+                      ? "Prévia do catálogo · detalhes e captura completa a seguir."
                       : media.caption}
                   </figcaption>
                 </figure>
@@ -168,14 +193,23 @@ export function SelectedWork() {
           <ProjectLinks project={atelie} />
         </div>
         <figure className="atelie-frame">
-          <Image
-            src={projectMedia.atelie.src}
-            width={projectMedia.atelie.width}
-            height={projectMedia.atelie.height}
-            alt={projectMedia.atelie.alt}
-            sizes="(min-width: 900px) 42vw, 90vw"
-          />
-          <figcaption>{projectMedia.atelie.caption}</figcaption>
+          <ProjectWindow title={atelie.name}>
+            <div className="atelie-preview">
+              <Image
+                src={projectMedia.atelie.src}
+                width={projectMedia.atelie.width}
+                height={projectMedia.atelie.height}
+                alt="Prévia do catálogo do Ateliê Ingrid Xavier. Captura completa disponível no link abaixo."
+                sizes="(min-width: 900px) 42vw, 90vw"
+              />
+            </div>
+          </ProjectWindow>
+          <figcaption>
+            {projectMedia.atelie.caption}
+            <a className="text-link" href={projectMedia.atelie.src}>
+              Abrir captura completa <span aria-hidden="true">↗</span>
+            </a>
+          </figcaption>
         </figure>
       </article>
     </section>

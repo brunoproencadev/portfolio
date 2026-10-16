@@ -30,9 +30,14 @@ export function HomeMotion() {
       target?.scrollIntoView({ block: "start" });
     };
     const focus = (event: FocusEvent) => {
-      release();
-      if (event.target instanceof HTMLElement)
-        event.target.scrollIntoView({ block: "nearest" });
+      if (
+        event.target instanceof HTMLElement &&
+        event.target.matches(":focus-visible")
+      ) {
+        const bounds = event.target.getBoundingClientRect();
+        if (bounds.top < 112 || bounds.bottom > innerHeight)
+          event.target.scrollIntoView({ block: "center" });
+      }
     };
     const resume = () => {
       suspended = false;

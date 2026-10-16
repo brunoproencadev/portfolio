@@ -27,34 +27,34 @@ async function progress(page: Page, start: number, value: number) {
     .toBeLessThan(1.1);
 }
 
-test("one bounded scene swaps distinct projects, titles and backgrounds and reverses", async ({
+test("one bounded scene moves projects horizontally, changes backgrounds and reverses", async ({
   page,
 }) => {
   await openStory(page);
   const start = await pinStart(page);
   const track = page.locator(".story-track");
-  const y = () =>
+  const x = () =>
     track.evaluate(
-      (el) => new DOMMatrixReadOnly(getComputedStyle(el).transform).m42,
+      (el) => new DOMMatrixReadOnly(getComputedStyle(el).transform).m41,
     );
   await progress(page, start, 0.15);
-  await expect.poll(y).toBe(0);
+  await expect.poll(x).toBe(0);
   await expect(page.locator(".story-title").first()).toContainText(
     "Industry Week",
   );
   await expect(page.locator(".story-stage a")).toHaveCount(0);
   const first = await page.locator(".story-window").boundingBox();
   await progress(page, start, 0.5);
-  await expect.poll(y).toBeLessThan(-50);
-  const mid = await y();
+  await expect.poll(x).toBeLessThan(-50);
+  const mid = await x();
   await progress(page, start, 0.85);
-  await expect.poll(y).toBeLessThan(mid - 50);
+  await expect.poll(x).toBeLessThan(mid - 50);
   await expect(page.locator(".story-title").last()).toContainText("Ateliê");
   await expect(page.locator(".story-backdrop-1")).toHaveCSS("opacity", "0.22");
   const second = await page.locator(".story-window").boundingBox();
   expect(Math.abs(first!.y - second!.y)).toBeLessThan(2);
   await progress(page, start, 0.15);
-  await expect.poll(y).toBe(0);
+  await expect.poll(x).toBe(0);
   expect(await page.locator(".pin-spacer").count()).toBe(1);
   const added = await page
     .locator(".pin-spacer")
@@ -66,17 +66,13 @@ test("one bounded scene swaps distinct projects, titles and backgrounds and reve
   ).toBeInViewport();
 });
 
-for (const reason of ["focus", "hash", "reduced", "pagehide"] as const) {
+for (const reason of ["hash", "reduced", "pagehide"] as const) {
   test(`scene releases on ${reason} with every image and link available`, async ({
     page,
   }) => {
     await openStory(page);
     await progress(page, await pinStart(page), 0.5);
-    if (reason === "focus")
-      await page
-        .getByRole("link", { name: "Ler case de Ateliê Ingrid Xavier" })
-        .focus();
-    else if (reason === "hash")
+    if (reason === "hash")
       await page.evaluate(() => {
         location.hash = "contato";
       });
@@ -97,10 +93,6 @@ for (const reason of ["focus", "hash", "reduced", "pagehide"] as const) {
         .locator(".story-window")
         .evaluate((el) => getComputedStyle(el).overflow),
     ).toBe("visible");
-    if (reason === "focus")
-      await expect(
-        page.getByRole("link", { name: "Ler case de Ateliê Ingrid Xavier" }),
-      ).toBeInViewport();
     if (reason === "hash")
       await expect(page.locator("#contato")).toBeInViewport();
   });
@@ -278,7 +270,7 @@ test("live preference and BFCache restore one scene without accumulating pins", 
   }
 });
 
-test("editorial passages release independently and keyboard restores the approved hero", async ({
+test("content focus keeps scene geometry and keyboard restores the approved hero", async ({
   page,
 }) => {
   await openStory(page);
@@ -292,7 +284,7 @@ test("editorial passages release independently and keyboard restores the approve
         ),
     )
     .toBeGreaterThan(1);
-  for (const selector of [".about-copy", ".skill-row", ".contact-ribbon"]) {
+  for (const selector of [".about-copy", ".contact-ribbon"]) {
     await expect(page.locator(selector).first()).toHaveAttribute(
       "style",
       /transform/,
@@ -300,12 +292,7 @@ test("editorial passages release independently and keyboard restores the approve
   }
   await page.locator(".skill-row .text-link").first().focus();
   await expect(page.locator(".skill-row .text-link").first()).toBeInViewport();
-  for (const selector of [".about-copy", ".skill-row", ".contact-ribbon"]) {
-    await expect(page.locator(selector).first()).not.toHaveAttribute(
-      "style",
-      /transform|filter|opacity/,
-    );
-  }
+  await expect(page.locator(".pin-spacer")).toHaveCount(1);
   await page.locator(".hero-primary").focus();
   await expect(page.locator(".hero-content")).toHaveCSS("opacity", "1");
   await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);

@@ -11,7 +11,6 @@ export function startReveals(root: HTMLElement) {
         const stage = root.querySelector<HTMLElement>(".story-stage");
         const track = root.querySelector<HTMLElement>(".story-track");
         if (!stage || !track) return;
-        root.classList.add("editorial-enhanced");
         const scroll = (
           trigger: string | HTMLElement,
           start: string,
@@ -62,11 +61,7 @@ export function startReveals(root: HTMLElement) {
               invalidateOnRefresh: true,
             },
           })
-          .to(
-            track,
-            { yPercent: -50, duration: 0.3, ease: "power2.inOut" },
-            0.35,
-          )
+          .to(track, { xPercent: -50, duration: 0.6, ease: "none" }, 0.2)
           .to(
             ".story-backdrop-0",
             { opacity: 0, duration: 0.3, ease: "none" },
@@ -77,11 +72,11 @@ export function startReveals(root: HTMLElement) {
             { opacity: 0.22, duration: 0.3, ease: "none" },
             0.35,
           )
-          .to({}, { duration: 0.35 });
+          .to({}, { duration: 0.2 }, 0.8);
 
         gsap
           .timeline({
-            scrollTrigger: scroll(".about-section", "top 90%", "top 20%"),
+            scrollTrigger: scroll(".about-section", "top 85%", "bottom 80%"),
           })
           .fromTo(".about-heading", { x: -80 }, { x: 0, ease: "none" }, 0)
           .fromTo(
@@ -92,21 +87,20 @@ export function startReveals(root: HTMLElement) {
           )
           .fromTo(
             ".about-sweep",
-            { xPercent: 10 },
-            { xPercent: -12, ease: "none" },
+            { x: 0 },
+            {
+              x: (_index: number, target: HTMLElement) => {
+                const panel = target.parentElement!;
+                const padding = parseFloat(getComputedStyle(panel).paddingLeft);
+                return Math.min(
+                  0,
+                  panel.clientWidth - padding * 2 - target.scrollWidth,
+                );
+              },
+              ease: "none",
+            },
             0,
           );
-        root.querySelectorAll<HTMLElement>(".skill-row").forEach((row) => {
-          gsap.fromTo(
-            row,
-            { y: 64 },
-            {
-              y: 0,
-              ease: "power2.out",
-              scrollTrigger: scroll(row, "top 90%", "top 45%"),
-            },
-          );
-        });
         gsap
           .timeline({
             scrollTrigger: scroll(
@@ -117,22 +111,21 @@ export function startReveals(root: HTMLElement) {
           })
           .fromTo(
             ".contact-ribbon:first-child",
-            { xPercent: -18, rotation: -9 },
-            { xPercent: 0, rotation: -4, ease: "none" },
+            { xPercent: -12 },
+            { xPercent: 0, ease: "none" },
             0,
           )
           .fromTo(
             ".contact-ribbon:last-child",
-            { xPercent: 12, rotation: 9 },
-            { xPercent: -8, rotation: 4, ease: "none" },
+            { xPercent: 8 },
+            { xPercent: -8, ease: "none" },
             0,
           );
         return () => {
           stage.classList.remove("story-enhanced");
-          root.classList.remove("editorial-enhanced");
           // Refresh may leave identity transforms on these exclusively owned wrappers.
           gsap.set(
-            ".work-introduction h2, .story-window, .story-track, .about-heading, .about-copy, .about-sweep, .skill-row, .contact-ribbon",
+            ".work-introduction h2, .story-window, .story-track, .about-heading, .about-copy, .about-sweep, .contact-ribbon",
             {
               clearProps: "transform,clipPath,filter,opacity",
             },
