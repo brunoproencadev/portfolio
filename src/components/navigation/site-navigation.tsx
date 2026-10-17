@@ -25,6 +25,8 @@ export function SiteNavigation() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<SectionId>("inicio");
   const toggle = useRef<HTMLButtonElement>(null);
+  const hovered = useRef(false);
+  const hoverDismissed = useRef(false);
   const nav = useIslandMotion(enhanced, open);
 
   useEffect(() => {
@@ -69,8 +71,8 @@ export function SiteNavigation() {
   }, [enhanced, nav]);
 
   useEffect(() => {
-    if (!open) return;
     const closeOutside = (event: PointerEvent) => {
+      if (!nav.current?.hasAttribute("data-open")) return;
       if (
         event.target instanceof Node &&
         !nav.current?.contains(event.target)
@@ -82,7 +84,14 @@ export function SiteNavigation() {
       }
     };
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key !== "Escape" || event.defaultPrevented) return;
+      if (
+        event.key !== "Escape" ||
+        event.defaultPrevented ||
+        !nav.current?.hasAttribute("data-open")
+      )
+        return;
+      hoverDismissed.current = true;
+      hovered.current = false;
       setOpen(false);
       toggle.current?.focus();
     };
@@ -93,7 +102,7 @@ export function SiteNavigation() {
       document.removeEventListener("pointerdown", closeOutside);
       document.removeEventListener("keydown", closeOnEscape);
     };
-  }, [open, nav]);
+  }, [nav]);
 
   return (
     <header className="site-header page-container">
@@ -111,6 +120,31 @@ export function SiteNavigation() {
         data-enhanced={enhanced || undefined}
         data-open={open || undefined}
         aria-label="Navegação principal"
+        onPointerEnter={(event) => {
+          if (event.pointerType === "mouse" && !hoverDismissed.current) {
+            hovered.current = !open;
+            setOpen(true);
+          }
+        }}
+        onPointerMove={(event) => {
+          if (
+            event.pointerType === "mouse" &&
+            hoverDismissed.current &&
+            (event.movementX || event.movementY)
+          ) {
+            hoverDismissed.current = false;
+            hovered.current = !open;
+            setOpen(true);
+          }
+        }}
+        onPointerLeave={(event) => {
+          hovered.current = false;
+          if (
+            event.pointerType === "mouse" &&
+            !event.currentTarget.contains(document.activeElement)
+          )
+            setOpen(false);
+        }}
         onBlur={(event) => {
           if (!event.currentTarget.contains(event.relatedTarget))
             setOpen(false);
@@ -137,7 +171,13 @@ export function SiteNavigation() {
             aria-expanded={open}
             aria-controls="navigation-links"
             aria-label={open ? "Fechar" : "Menu"}
-            onClick={() => setOpen((value) => !value)}
+            onClick={(event) => {
+              if (hovered.current && event.detail > 0) {
+                hovered.current = false;
+                return;
+              }
+              setOpen((value) => !value);
+            }}
             className="capsule-toggle"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -171,9 +211,6 @@ export function SiteNavigation() {
                       return;
                     setOpen(false);
                     setActive(section.id);
-                    document
-                      .getElementById(section.id)
-                      ?.focus({ preventScroll: true });
                   }}
                 >
                   <svg

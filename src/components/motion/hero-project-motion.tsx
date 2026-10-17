@@ -17,13 +17,6 @@ export function HeroProjectMotion({ children }: { children: ReactNode }) {
       "(min-width: 900px) and (min-height: 800px) and (prefers-reduced-motion: no-preference)";
     const eligible = matchMedia(query);
 
-    // Native anchors leave the sticky scene; focusing its hero returns to its start.
-    const revealHero = () => {
-      if (location.hash === "#inicio") {
-        window.scrollTo({ top: 0, behavior: "instant" });
-        settle?.();
-      }
-    };
     const focusHero = (event: FocusEvent) => {
       if (
         root.classList.contains(styles.enhanced) &&
@@ -35,7 +28,6 @@ export function HeroProjectMotion({ children }: { children: ReactNode }) {
       }
     };
     root.addEventListener("focusin", focusHero);
-    window.addEventListener("hashchange", revealHero);
 
     const load = () => {
       if (!eligible.matches || pending || revert || disposed) return;
@@ -144,7 +136,6 @@ export function HeroProjectMotion({ children }: { children: ReactNode }) {
       revert?.();
       root.removeEventListener("focusin", focusHero);
       eligible.removeEventListener("change", load);
-      window.removeEventListener("hashchange", revealHero);
     };
   }, []);
 

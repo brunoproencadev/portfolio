@@ -11,96 +11,191 @@ export function HomeMotion() {
 
   useEffect(() => {
     const root = skip.current?.closest("main");
-    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
     if (!root) return;
-    const storyRoot = root;
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
     const desktop = matchMedia("(min-width: 900px) and (min-height: 700px)");
-    let pending = false;
-    let stopped = false;
-    let suspended = Boolean(location.hash);
-    let revert: (() => void) | undefined;
-    const release = () => {
-      suspended = true;
-      revert?.();
-      revert = undefined;
+    let disposed = false;
+    let hidden = false;
+    let loading = false;
+    let effects:
+      ReturnType<typeof import("./home-reveals").startReveals> | undefined;
+    let destination: HTMLElement | undefined;
+    let timer = 0;
+    let initialFrame = 0;
+    let interacted = false;
+    const cancel = () => {
+      clearTimeout(timer);
+      destination = undefined;
     };
-    const navigate = () => {
-      release();
-      const target = document.getElementById(location.hash.slice(1));
-      target?.scrollIntoView({ block: "start" });
+    const topFor = (target: HTMLElement) => {
+      if (target.id === "inicio") return 0;
+      const carouselTop = effects?.scrollTop(target);
+      if (carouselTop !== undefined) return carouselTop;
+      // A sticky heading is not a stable anchor; navigate to its reading section.
+      const anchor = target.matches("h2")
+        ? (target.closest("section") ?? target)
+        : target;
+      return Math.max(0, anchor.getBoundingClientRect().top + scrollY - 112);
+    };
+    const finish = () => {
+      const target = destination;
+      cancel();
+      if (!target) return;
+      effects?.settle();
+      target.focus({ preventScroll: true });
+    };
+    const onScroll = () => {
+      if (!destination) return;
+      clearTimeout(timer);
+      timer = window.setTimeout(finish, 160);
+    };
+    const navigate = (target: HTMLElement, smooth = true) => {
+      cancel();
+      destination = target;
+      scrollTo({
+        top: topFor(target),
+        behavior: smooth && !reduced.matches ? "smooth" : "instant",
+      });
+      onScroll();
+    };
+    const hashTarget = () => document.getElementById(location.hash.slice(1));
+    const alignInitialHash = () => {
+      if (disposed || interacted || document.readyState !== "complete") return;
+      cancelAnimationFrame(initialFrame);
+      // Native fragment scrolling and font layout finish after the load event.
+      initialFrame = requestAnimationFrame(() => {
+        const target = hashTarget();
+        if (!disposed && !interacted && target) navigate(target, false);
+      });
+    };
+    const interrupt = () => {
+      interacted = true;
+      cancel();
+    };
+    const onHash = () => {
+      const target = hashTarget();
+      if (target) navigate(target);
+    };
+    const click = (event: MouseEvent) => {
+      if (
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey ||
+        event.altKey
+      )
+        return;
+      const link =
+        event.target instanceof Element
+          ? event.target.closest<HTMLAnchorElement>('a[href^="#"]')
+          : null;
+      if (!link || link.hasAttribute("download") || link.target) return;
+      const target = document.getElementById(link.hash.slice(1));
+      if (!target) return;
+      event.preventDefault();
+      if (location.hash !== link.hash) history.pushState(null, "", link.hash);
+      navigate(target);
     };
     const focus = (event: FocusEvent) => {
+      const target = event.target;
       if (
-        event.target instanceof HTMLElement &&
-        event.target.matches(":focus-visible")
-      ) {
-        const bounds = event.target.getBoundingClientRect();
-        if (bounds.top < 112 || bounds.bottom > innerHeight)
-          event.target.scrollIntoView({ block: "center" });
+        destination ||
+        !(target instanceof HTMLElement) ||
+        !target.matches(":focus-visible")
+      )
+        return;
+      const carouselTop = effects?.scrollTop(target);
+      const bounds = target.getBoundingClientRect();
+      if (carouselTop !== undefined) {
+        scrollTo({ top: carouselTop, behavior: "instant" });
+        effects?.settle();
+      } else if (bounds.top < 112 || bounds.bottom > innerHeight) {
+        target.scrollIntoView({ block: "center", behavior: "instant" });
+        effects?.settle();
       }
     };
-    const resume = () => {
-      suspended = false;
+    const release = () => {
+      effects?.revert();
+      effects = undefined;
+    };
+    const pagehide = () => {
+      hidden = true;
+      interrupt();
+      release();
+    };
+    const pageshow = () => {
+      hidden = false;
       load();
     };
     const preference = () => {
+      const target = destination;
       if (reduced.matches) release();
-      else resume();
-    };
-    const restore = (event: PageTransitionEvent) => {
-      if (event.persisted) resume();
+      else load();
+      if (target) navigate(target, false);
     };
     function load() {
       if (
-        stopped ||
-        suspended ||
-        pending ||
-        revert ||
+        disposed ||
+        hidden ||
+        loading ||
+        effects ||
         reduced.matches ||
         !desktop.matches
       )
         return;
-      pending = true;
+      loading = true;
       void import("./home-reveals")
         .then(({ startReveals }) => {
-          if (stopped || suspended || reduced.matches || !desktop.matches)
-            return;
-          // Preserve the visible reading position when the pin is reinstated upstream.
+          if (disposed || hidden || reduced.matches || !desktop.matches) return;
           const anchor = Array.from(
-            storyRoot.querySelectorAll<HTMLElement>(
-              "h2, h3, .work-context, .skill-row",
-            ),
+            root!.querySelectorAll<HTMLElement>("h2, h3, .skill-row"),
           ).find((element) => element.getBoundingClientRect().bottom > 112);
           const before = anchor?.getBoundingClientRect().top;
-          revert = startReveals(storyRoot);
+          effects = startReveals(root!);
           if (anchor && before !== undefined && scrollY > 0)
             scrollBy(0, anchor.getBoundingClientRect().top - before);
+          alignInitialHash();
         })
         .catch(release)
         .finally(() => {
-          pending = false;
+          loading = false;
         });
     }
     reduced.addEventListener("change", preference);
-    root.addEventListener("focusin", focus);
-    window.addEventListener("hashchange", navigate);
-    window.addEventListener("pagehide", release);
-    window.addEventListener("pageshow", restore);
-    window.addEventListener("wheel", resume, { passive: true });
-    window.addEventListener("touchstart", resume, { passive: true });
     desktop.addEventListener("change", load);
+    document.addEventListener("click", click);
+    root.addEventListener("focusin", focus);
+    window.addEventListener("hashchange", onHash);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("pagehide", pagehide);
+    window.addEventListener("pageshow", pageshow);
+    window.addEventListener("wheel", interrupt, { passive: true });
+    window.addEventListener("touchstart", interrupt, { passive: true });
+    window.addEventListener("pointerdown", interrupt);
+    window.addEventListener("keydown", interrupt);
+    window.addEventListener("load", alignInitialHash);
+    void document.fonts.ready.then(alignInitialHash);
     load();
+    alignInitialHash();
     return () => {
-      stopped = true;
+      disposed = true;
+      cancel();
+      cancelAnimationFrame(initialFrame);
       release();
-      desktop.removeEventListener("change", load);
       reduced.removeEventListener("change", preference);
+      desktop.removeEventListener("change", load);
+      document.removeEventListener("click", click);
       root.removeEventListener("focusin", focus);
-      window.removeEventListener("hashchange", navigate);
-      window.removeEventListener("pagehide", release);
-      window.removeEventListener("pageshow", restore);
-      window.removeEventListener("wheel", resume);
-      window.removeEventListener("touchstart", resume);
+      window.removeEventListener("hashchange", onHash);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("pagehide", pagehide);
+      window.removeEventListener("pageshow", pageshow);
+      window.removeEventListener("wheel", interrupt);
+      window.removeEventListener("touchstart", interrupt);
+      window.removeEventListener("pointerdown", interrupt);
+      window.removeEventListener("keydown", interrupt);
+      window.removeEventListener("load", alignInitialHash);
     };
   }, []);
 

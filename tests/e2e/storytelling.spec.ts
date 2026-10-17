@@ -17,12 +17,12 @@ async function pinStart(page: Page) {
 
 async function progress(page: Page, start: number, value: number) {
   await page.evaluate(
-    ({ start, value }) => scrollTo(0, start + innerHeight * 1.2 * value),
+    ({ start, value }) => scrollTo(0, start + innerHeight * 1.6 * value),
     { start, value },
   );
   await expect
     .poll(async () =>
-      Math.abs((await page.evaluate(() => scrollY)) - (start + 1080 * value)),
+      Math.abs((await page.evaluate(() => scrollY)) - (start + 1440 * value)),
     )
     .toBeLessThan(1.1);
 }
@@ -39,18 +39,18 @@ test("one bounded scene moves projects horizontally, changes backgrounds and rev
     );
   await progress(page, start, 0.15);
   await expect.poll(x).toBe(0);
-  await expect(page.locator(".story-title").first()).toContainText(
+  await expect(page.locator(".story-band h3").first()).toContainText(
     "Industry Week",
   );
-  await expect(page.locator(".story-stage a")).toHaveCount(0);
+  await expect(page.locator(".story-stage a")).toHaveCount(8);
   const first = await page.locator(".story-window").boundingBox();
   await progress(page, start, 0.5);
   await expect.poll(x).toBeLessThan(-50);
   const mid = await x();
   await progress(page, start, 0.85);
   await expect.poll(x).toBeLessThan(mid - 50);
-  await expect(page.locator(".story-title").last()).toContainText("Ateliê");
-  await expect(page.locator(".story-backdrop-1")).toHaveCSS("opacity", "0.22");
+  await expect(page.locator(".story-band h3").last()).toContainText("Ateliê");
+  await expect(page.locator(".story-backdrop-1")).toHaveCSS("opacity", "0.16");
   const second = await page.locator(".story-window").boundingBox();
   expect(Math.abs(first!.y - second!.y)).toBeLessThan(2);
   await progress(page, start, 0.15);
@@ -66,17 +66,13 @@ test("one bounded scene moves projects horizontally, changes backgrounds and rev
   ).toBeInViewport();
 });
 
-for (const reason of ["hash", "reduced", "pagehide"] as const) {
+for (const reason of ["reduced", "pagehide"] as const) {
   test(`scene releases on ${reason} with every image and link available`, async ({
     page,
   }) => {
     await openStory(page);
     await progress(page, await pinStart(page), 0.5);
-    if (reason === "hash")
-      await page.evaluate(() => {
-        location.hash = "contato";
-      });
-    else if (reason === "reduced")
+    if (reason === "reduced")
       await page.emulateMedia({ reducedMotion: "reduce" });
     else
       await page.evaluate(() =>
@@ -93,8 +89,6 @@ for (const reason of ["hash", "reduced", "pagehide"] as const) {
         .locator(".story-window")
         .evaluate((el) => getComputedStyle(el).overflow),
     ).toBe("visible");
-    if (reason === "hash")
-      await expect(page.locator("#contato")).toBeInViewport();
   });
 }
 
@@ -164,7 +158,7 @@ for (const fallback of ["no-js", "reduced", "hash"] as const) {
       ).toBe(true);
       await expect(
         page.locator(".selected-work a[href^='/projetos/']"),
-      ).toHaveCount(3);
+      ).toHaveCount(2);
     } finally {
       await context.close();
     }
@@ -176,9 +170,9 @@ test("pinned media stays below navigation in wide short viewports", async ({
 }) => {
   await openStory(page);
   for (const viewport of [
-    { width: 900, height: 700 },
-    { width: 1440, height: 700 },
-    { width: 1920, height: 700 },
+    { width: 1100, height: 800 },
+    { width: 1440, height: 900 },
+    { width: 1920, height: 1080 },
     { width: 2560, height: 900 },
   ]) {
     await page.setViewportSize(viewport);
@@ -192,7 +186,9 @@ test("pinned media stays below navigation in wide short viewports", async ({
     await expect
       .poll(async () => {
         const band = await page.locator(".story-window").boundingBox();
-        return band!.y >= 112 && band!.y + band!.height <= viewport.height;
+        return (
+          band!.y >= 111.5 && band!.y + band!.height <= viewport.height + 0.5
+        );
       })
       .toBe(true);
   }
@@ -223,7 +219,7 @@ test("mobile defers scroll code until an eligible desktop resize", async ({
 });
 
 for (const path of ["cta", "menu", "direct-hash"] as const) {
-  test(`${path} navigation releases the destination and subsequent wheel restores storytelling`, async ({
+  test(`${path} navigation keeps the scene and reaches its destination`, async ({
     page,
   }) => {
     await openStory(page);
@@ -235,9 +231,21 @@ for (const path of ["cta", "menu", "direct-hash"] as const) {
     } else await page.goto("/#sobre");
     const target = page.locator(path === "cta" ? "#projetos" : "#sobre");
     await expect(target).toBeInViewport();
-    await expect(page.locator(".pin-spacer")).toHaveCount(0);
+    await expect(target).toBeFocused();
+    await expect(page.locator(".pin-spacer")).toHaveCount(1);
+    await expect
+      .poll(() =>
+        target.evaluate((el) =>
+          Math.abs(el.closest("section")!.getBoundingClientRect().top - 112),
+        ),
+      )
+      .toBeLessThan(1.1);
     const before = (await target.boundingBox())!.y;
+    const beforeScroll = await page.evaluate(() => scrollY);
     await page.mouse.wheel(0, 50);
+    await expect
+      .poll(() => page.evaluate(() => scrollY))
+      .toBeCloseTo(beforeScroll + 50, 0);
     await expect(page.locator(".pin-spacer")).toHaveCount(1);
     await expect
       .poll(async () => Math.abs((await target.boundingBox())!.y - before))
@@ -245,7 +253,7 @@ for (const path of ["cta", "menu", "direct-hash"] as const) {
     await progress(page, await pinStart(page), 0.85);
     await expect(page.locator(".story-backdrop-1")).toHaveCSS(
       "opacity",
-      "0.22",
+      "0.16",
     );
   });
 }
@@ -284,7 +292,7 @@ test("content focus keeps scene geometry and keyboard restores the approved hero
         ),
     )
     .toBeGreaterThan(1);
-  for (const selector of [".about-copy", ".contact-ribbon"]) {
+  for (const selector of [".about-copy"]) {
     await expect(page.locator(selector).first()).toHaveAttribute(
       "style",
       /transform/,

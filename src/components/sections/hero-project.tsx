@@ -2,7 +2,8 @@ import Image from "next/image";
 import { HeroProjectMotion } from "@/components/motion/hero-project-motion";
 import { CinematicHero } from "./cinematic-hero";
 import { projects } from "@/data/portfolio";
-import { projectMedia, toolIcons } from "@/data/project-media";
+import { projectMedia } from "@/data/project-media";
+import { ToolPopups } from "@/components/projects/tool-popups";
 import styles from "./hero-project.module.css";
 
 export function HeroProject() {
@@ -23,19 +24,7 @@ export function HeroProject() {
         </div>
         <figcaption>{media.caption}</figcaption>
       </figure>
-      <ul
-        className={styles.tools}
-        aria-label="Ferramentas usadas no RoboSense Lab"
-      >
-        {projects[0].stack.map((tool) => (
-          <li key={tool} data-project-tool>
-            <span className={styles.symbol} aria-hidden="true">
-              <Image src={toolIcons[tool]} alt="" width={40} height={40} />
-            </span>
-            <span>{tool}</span>
-          </li>
-        ))}
-      </ul>
+      <ToolPopups tools={projects[0].stack} name={projects[0].name} />
     </HeroProjectMotion>
   );
 }

@@ -16,39 +16,6 @@
   color: #b8b5c5;
 }
 
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  list-style: none;
-  padding: 0 20px;
-  margin: 32px auto;
-  color: #f5f3ff;
-  font-size: 13px;
-}
-
-.tools li {
-  display: grid;
-  justify-items: center;
-  gap: 10px;
-}
-
-.symbol {
-  display: grid;
-  place-items: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 12px;
-  background: #eeedf3;
-}
-
-.symbol img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
 .enhanced {
   height: 240svh;
   margin-top: -96px;
@@ -85,7 +52,7 @@
   z-index: 1;
 }
 
-.enhanced .tools {
+.enhanced :global(.tool-popups) {
   position: absolute;
   inset: 0;
   margin: 0;
@@ -94,23 +61,36 @@
   z-index: 2;
 }
 
-.enhanced .tools li {
+.enhanced :global(.tool-popups) li {
   position: absolute;
-  width: 96px;
+  width: 56px;
 }
 
-.enhanced .tools li:nth-child(odd) {
+.enhanced :global(.tool-popups) li:nth-child(odd) {
   left: max(24px, calc((100% - 960px) / 2 - 132px));
 }
 
-.enhanced .tools li:nth-child(even) {
+.enhanced :global(.tool-popups) li:nth-child(even) {
   right: max(24px, calc((100% - 960px) / 2 - 132px));
 }
 
-.enhanced .tools li:nth-child(-n + 2) {
-  top: 24%;
+.enhanced :global(.tool-popups) li:nth-child(-n + 2) {
+  top: 20%;
 }
 
-.enhanced .tools li:nth-child(n + 3) {
-  bottom: 22%;
+.enhanced :global(.tool-popups) li:nth-child(n + 3) {
+  bottom: 18%;
+}
+
+.enhanced :global(.tool-popups) li:nth-child(2) {
+  top: 28%;
+}
+.enhanced :global(.tool-popups) li:nth-child(3) {
+  bottom: 27%;
+}
+.frame :global(.robo-media) {
+  border-radius: 12px;
+  box-shadow:
+    0 32px 64px -12px #000b,
+    0 12px 28px #0006;
 }

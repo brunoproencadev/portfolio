@@ -3,7 +3,10 @@ import { manrope } from "@/fonts/manrope";
 import { SiteNavigation } from "@/components/navigation/site-navigation";
 import { HeroProject } from "@/components/sections/hero-project";
 import { HomeMotion } from "@/components/motion/home-motion";
-import { profile, skills } from "@/data/portfolio";
+import { profile, projects, skills } from "@/data/portfolio";
+import { ProjectContent } from "@/components/projects/project-content";
+import { LinkIcon } from "@/components/projects/link-icon";
+import { ContactPassage } from "@/components/sections/contact-passage";
 
 export default function Home() {
   return (
@@ -16,13 +19,19 @@ export default function Home() {
         <HeroProject />
         <HomeMotion />
 
-        <SelectedWork />
+        <article
+          className="work-robo page-container"
+          aria-labelledby="titulo-robosense-lab"
+          data-scroll-copy
+        >
+          <ProjectContent project={projects[0]} />
+        </article>
 
         <section
           className="section page-container about-section"
           aria-labelledby="sobre"
         >
-          <div className="about-heading">
+          <div className="about-heading" data-scroll-copy>
             <h2 id="sobre" tabIndex={-1}>
               Aprender,
               <br />
@@ -35,37 +44,36 @@ export default function Home() {
             </div>
             <p className="large-copy">{profile.about}</p>
             <div className="process-note">
-              <span aria-hidden="true">↳</span>
+              <LinkIcon name="turn" />
               <p>
-                Uma interface precisa comunicar. Um experimento precisa de
-                contexto. Em ambos, a próxima decisão começa pelo que é possível
-                observar.
+                <strong>Uma interface precisa comunicar.</strong> Um experimento
+                precisa de contexto. Em ambos, a próxima decisão começa pelo que
+                é possível observar.
               </p>
             </div>
           </div>
         </section>
 
+        <SelectedWork />
+
         <section
           className="section page-container skills-section"
           aria-labelledby="competencias"
         >
-          <div className="section-heading">
+          <div className="section-heading" data-scroll-copy>
             <div>
               <h2 id="competencias" tabIndex={-1}>
                 Ferramentas com <em>contexto.</em>
               </h2>
             </div>
             <p>
-              Tecnologias utilizadas nos projetos, com uma fonte para cada
-              aplicação.
+              <strong>Tecnologias utilizadas nos projetos</strong>, com uma
+              fonte para cada aplicação.
             </p>
           </div>
           <div className="skill-list">
-            {skills.map((skill, index) => (
+            {skills.map((skill) => (
               <article className="skill-row" key={skill.title}>
-                <span className="skill-index" aria-hidden="true">
-                  0{index + 1}
-                </span>
                 <div>
                   <h3>{skill.title}</h3>
                   <p>{skill.technologies}</p>
@@ -73,7 +81,7 @@ export default function Home() {
                 <div>
                   <p>{skill.evidence}</p>
                   <a className="text-link" href={skill.project.repository}>
-                    Consultar projeto <span aria-hidden="true">↗</span>
+                    Consultar projeto <LinkIcon name="arrow" />
                   </a>
                 </div>
               </article>
@@ -84,31 +92,36 @@ export default function Home() {
           </p>
         </section>
 
-        <div className="contact-passage" aria-hidden="true">
-          <div className="contact-ribbon">
-            Construir. Observar. Evoluir. Construir. Observar. Evoluir.
-          </div>
-          <div className="contact-ribbon">
-            Interfaces. Percepção. Robótica. Interfaces. Percepção. Robótica.
-          </div>
-        </div>
+        <ContactPassage />
         <section
           className="section page-container contact-section"
           aria-labelledby="contato"
         >
-          <h2 id="contato" tabIndex={-1}>
-            {profile.contact}
-          </h2>
-          <p>
-            Interfaces, percepção ou uma ideia que ainda está tomando forma.
-          </p>
-          <div className="contact-links">
-            {profile.links.map((link) => (
-              <a key={link.label} className="button-link" href={link.href}>
-                {link.label}
-                <span aria-hidden="true">↗</span>
-              </a>
-            ))}
+          <div data-scroll-copy>
+            <h2 id="contato" tabIndex={-1}>
+              {profile.contact}
+            </h2>
+            <p>
+              Interfaces, percepção ou uma ideia que ainda está tomando forma.
+            </p>
+          </div>
+          <div className="contact-actions">
+            <a
+              className="contact-email"
+              href="mailto:brunoproencasilva@gmail.com"
+            >
+              brunoproencasilva@gmail.com
+            </a>
+            <div className="contact-links">
+              {[profile.links[2], profile.links[1], profile.links[0]].map(
+                (link) => (
+                  <a key={link.label} className="button-link" href={link.href}>
+                    <LinkIcon name={link.label} />
+                    {link.label}
+                  </a>
+                ),
+              )}
+            </div>
           </div>
         </section>
       </main>
@@ -117,7 +130,7 @@ export default function Home() {
           © {new Date().getFullYear()} {profile.name}
         </p>
         <a className="text-link" href="#inicio">
-          Voltar ao início <span aria-hidden="true">↑</span>
+          Voltar ao início <LinkIcon name="up" />
         </a>
       </footer>
     </div>

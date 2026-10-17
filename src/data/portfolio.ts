@@ -20,8 +20,8 @@ export const profile = {
 
 export const sections = [
   { id: "inicio", label: "Início" },
-  { id: "projetos", label: "Projetos" },
   { id: "sobre", label: "Sobre" },
+  { id: "projetos", label: "Projetos" },
   { id: "competencias", label: "Competências" },
   { id: "contato", label: "Contato" },
 ] as const;

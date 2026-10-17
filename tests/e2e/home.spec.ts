@@ -38,8 +38,12 @@ test("projects show sources and limits and all internal links resolve", async ({
     const card = page.getByRole("article", { name });
     await expect(card).toContainText("Estado");
     await expect(card).toContainText("Fonte");
-    await expect(card.locator("figure img").first()).toBeVisible();
-    await expect(card.locator("figcaption").first()).not.toBeEmpty();
+    const media =
+      name === "RoboSense Lab"
+        ? page.locator(".robo-frame")
+        : card.locator("figure");
+    await expect(media.locator("img").first()).toBeVisible();
+    await expect(media.locator("figcaption").first()).not.toBeEmpty();
     await expect(
       card.getByRole("link", { name: `Ver repositório de ${name}` }),
     ).toHaveAttribute("href", /^https:\/\/github\.com\/brunoproencadev\//);

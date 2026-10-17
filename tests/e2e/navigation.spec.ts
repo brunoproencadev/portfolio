@@ -19,7 +19,7 @@ test("disclosure follows keyboard order and Escape returns focus", async ({
   await page.keyboard.press("Tab");
   await expect(
     page
-      .getByRole("navigation")
+      .getByRole("navigation", { name: "Navegação principal" })
       .getByRole("link", { name: "Início", exact: true }),
   ).toBeFocused();
   await page.keyboard.press("Escape");
@@ -53,7 +53,7 @@ test("outside click and leaving focus close without stealing the new focus", asy
   ).toHaveAttribute("aria-expanded", "false");
   await page.getByRole("button", { name: "Menu", exact: true }).click();
   const contact = page
-    .getByRole("navigation")
+    .getByRole("navigation", { name: "Navegação principal" })
     .getByRole("link", { name: "Contato", exact: true });
   await contact.focus();
   await page.keyboard.press("Tab");
@@ -94,7 +94,7 @@ for (const width of [375, 1440]) {
     ]) {
       await page.getByRole("button", { name: "Menu", exact: true }).click();
       await page
-        .getByRole("navigation")
+        .getByRole("navigation", { name: "Navegação principal" })
         .getByRole("link", { name: label, exact: true })
         .click();
       await expect(page).toHaveURL(new RegExp(`#${id}$`));
@@ -105,7 +105,7 @@ for (const width of [375, 1440]) {
       await page.getByRole("button", { name: "Menu", exact: true }).click();
       await expect(
         page
-          .getByRole("navigation")
+          .getByRole("navigation", { name: "Navegação principal" })
           .getByRole("link", { name: label, exact: true }),
       ).toHaveAttribute("aria-current", "location");
       await page.keyboard.press("Escape");
@@ -130,7 +130,7 @@ test("navigation links remain usable without JavaScript", async ({
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.getByRole("button")).toHaveCount(0);
-    const nav = page.getByRole("navigation");
+    const nav = page.getByRole("navigation", { name: "Navegação principal" });
     await expect(nav.getByRole("link")).toHaveCount(5);
     await nav.getByRole("link", { name: "Contato", exact: true }).click();
     await expect(page).toHaveURL(/#contato$/);

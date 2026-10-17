@@ -12,10 +12,13 @@ test.beforeEach(async ({ page }) => {
 test("Atelie preview is bounded and retains a direct link to the entire capture", async ({
   page,
 }) => {
-  const section = await page.locator(".work-atelie").boundingBox();
+  const section = await page.locator(".story-band:last-child").boundingBox();
   expect(section!.height).toBeLessThan(1100);
-  const preview = await page.locator(".atelie-preview").boundingBox();
+  const preview = await page
+    .locator(".story-band:last-child .story-image")
+    .boundingBox();
   expect(preview!.height).toBeLessThanOrEqual(620);
+  await page.locator("#titulo-atelie-ingrid-xavier").focus();
   await page.getByRole("link", { name: "Abrir captura completa" }).click();
   await expect(page).toHaveURL(
     /\/images\/projects\/atelie-ingrid\/catalog\.webp$/,
@@ -33,7 +36,7 @@ test("focusing lower content then wheeling preserves layout and keeps focus belo
   page,
 }) => {
   for (const selector of [
-    ".atelie-copy a",
+    ".work-robo a",
     ".skill-row:last-child a",
     ".contact-links a",
   ]) {
@@ -56,31 +59,16 @@ test("focusing lower content then wheeling preserves layout and keeps focus belo
   }
 });
 
-test("the About panel finishes expanding while visible and releases on reduced motion", async ({
+test("About stays readable in its reading range and releases on reduced motion", async ({
   page,
 }) => {
   const section = page.locator(".about-section");
   await section.evaluate((el) =>
-    scrollTo(0, el.getBoundingClientRect().top + scrollY - 500),
+    scrollTo(0, el.getBoundingClientRect().top + scrollY - 112),
   );
-  await page.waitForTimeout(650);
-  const panel = page.locator(".about-copy");
-  const scale = () =>
-    panel.evaluate(
-      (el) => new DOMMatrixReadOnly(getComputedStyle(el).transform).a,
-    );
-  expect(await scale()).toBeLessThan(0.99);
-  await section.evaluate((el) =>
-    scrollTo(
-      0,
-      el.getBoundingClientRect().bottom + scrollY - innerHeight * 0.8,
-    ),
-  );
-  await expect.poll(scale).toBeCloseTo(1, 2);
-  const bounds = (await panel.boundingBox())!;
-  expect(bounds.y + bounds.height).toBeLessThan(800);
+  await expect(page.locator(".about-copy")).toHaveCSS("opacity", "1");
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await expect(panel).toHaveCSS("transform", "none");
+  await expect(page.locator(".about-copy")).toHaveCSS("transform", "none");
   await expect(page.locator(".pin-spacer")).toHaveCount(0);
 });
 
@@ -90,6 +78,11 @@ test("lower sections keep the same grid when anchor navigation resumes", async (
   await page.goto("/#competencias");
   await expect(page.locator("#competencias")).toBeInViewport();
   const skills = page.locator(".skills-section");
+  await expect
+    .poll(() =>
+      skills.evaluate((el) => Math.abs(el.getBoundingClientRect().top - 112)),
+    )
+    .toBeLessThan(1.1);
   const height = (await skills.boundingBox())!.height;
   const headingTop = (await page.locator("#competencias").boundingBox())!.y;
   await page.mouse.wheel(0, 50);

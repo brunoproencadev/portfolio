@@ -19,7 +19,7 @@ test("real tools enter after the approved handoff, stay outside media and revers
       page.locator("[data-scroll-study]").evaluate((el) => el.clientHeight),
     )
     .toBe(2160);
-  const tools = page.locator("[data-project-tool]");
+  const tools = page.locator("[data-scroll-study] [data-project-tool]");
   await expect(tools).toHaveCount(4);
   for (const tool of await tools.all())
     await expect(tool).toHaveCSS("opacity", "0");
@@ -29,7 +29,7 @@ test("real tools enter after the approved handoff, stay outside media and revers
   await progress(page, 1);
   for (const [index, tool] of (await tools.all()).entries()) {
     await expect(tool).toHaveCSS("opacity", "1");
-    await expect(tool).toContainText(projects[0].stack[index]);
+    await expect(tool).toHaveAttribute("aria-label", projects[0].stack[index]);
     const icon = tool.locator("img");
     await expect(icon).toHaveAttribute("alt", "");
     await expect
@@ -61,7 +61,7 @@ test("real tools enter after the approved handoff, stay outside media and revers
   await expect(page.locator(".hero-content")).toHaveCSS("opacity", "1");
 });
 
-test("live reduced motion restores tool labels and the entire media in normal flow", async ({
+test("live reduced motion restores accessible tool names and the entire media in normal flow", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
@@ -74,7 +74,9 @@ test("live reduced motion restores tool labels and the entire media in normal fl
   await progress(page, 0.8);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(page.locator(".robo-frame")).toHaveCSS("position", "static");
-  for (const tool of await page.locator("[data-project-tool]").all()) {
+  for (const tool of await page
+    .locator("[data-scroll-study] [data-project-tool]")
+    .all()) {
     await expect(tool).toHaveCSS("opacity", "1");
     await expect(tool).toHaveCSS("position", "static");
   }

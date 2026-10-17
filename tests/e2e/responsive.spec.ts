@@ -81,11 +81,13 @@ test("panel survives resizing and scrolls in short landscape viewports", async (
     await page.setViewportSize(viewport);
     await expectNoOverflow(page);
     const contact = page
-      .getByRole("navigation")
+      .getByRole("navigation", { name: "Navegação principal" })
       .getByRole("link", { name: "Contato", exact: true });
     await contact.focus();
     await expect(contact).toBeInViewport({ ratio: 1 });
-    const bounds = await page.getByRole("navigation").boundingBox();
+    const bounds = await page
+      .getByRole("navigation", { name: "Navegação principal" })
+      .boundingBox();
     expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(viewport.height);
   }
 });
@@ -130,7 +132,7 @@ test("reduced motion updates immediately and keyboard focus stays visible", asyn
     ),
   ).toBe("auto");
   await page
-    .getByRole("navigation")
+    .getByRole("navigation", { name: "Navegação principal" })
     .getByRole("link", { name: "Contato", exact: true })
     .click();
   await expect(page.locator("#contato")).toBeFocused();
@@ -193,10 +195,12 @@ test("real Chromium zoom at 200 percent keeps navigation and content usable", as
     await expectNoOverflow(page);
     await page.getByRole("button", { name: "Menu", exact: true }).click();
     await page
-      .getByRole("navigation")
+      .getByRole("navigation", { name: "Navegação principal" })
       .getByRole("link", { name: "Contato", exact: true })
       .click();
     await expect(page.locator("#contato")).toBeFocused();
+    // At 200% zoom the full-height contact composition needs ordinary vertical reading.
+    await page.getByRole("link", { name: "E-mail", exact: true }).focus();
     await expect(
       page
         .getByRole("region", {

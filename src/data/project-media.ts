@@ -4,6 +4,13 @@ export const toolIcons = {
   NumPy: "/images/tools/numpy.svg",
   OpenCV: "/images/tools/opencv.svg",
   PySerial: "/images/tools/pyserial.png",
+  React: "/images/tools/react.svg",
+  TypeScript: "/images/tools/typescript.svg",
+  Vite: "/images/tools/vite.svg",
+  Tailwind: "/images/tools/tailwind.svg",
+  GSAP: "/images/tools/gsap.svg",
+  Motion: "/images/tools/motion.svg",
+  "Next.js": "/images/tools/nextjs.svg",
 } as const;
 
 export const projectMedia = {
