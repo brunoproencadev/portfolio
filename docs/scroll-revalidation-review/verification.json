@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-16",
+  "source": "77d2506a2e0d846c4091f7496d14e189054b21a0",
+  "codeChanged": false,
+  "e2e": {
+    "startTime": "2026-10-17T00:25:46.488Z",
+    "duration": 63169.486,
+    "expected": 63,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": ["chromium", "firefox", "webkit"],
+  "specs": [
+    "lower-scroll.spec.ts",
+    "storytelling.spec.ts",
+    "hero-tools.spec.ts"
+  ],
+  "unitTests": 7,
+  "lint": "pass, zero warnings",
+  "build": "pass, including TypeScript",
+  "buildWarning": "metadataBase falls back to localhost for local preview",
+  "initialAttempt": "Interrupted inside sandbox after Firefox newPage crashes; no passing count claimed.",
+  "diagnosis": "Firefox also crashed on blank page before navigation inside sandbox; same probe opened local home outside sandbox.",
+  "confirmation": "63/63 outside sandbox, two workers, zero retries, skips or failures.",
+  "visual": "33 states at 1440x900, 1920x1080 and 375x812; zero overflow or pageerrors; axe zero at final contact states.",
+  "limitations": [
+    "Scope excludes full repository suite and Lighthouse",
+    "25fps video is not a 60fps benchmark",
+    "Playwright WebMs show intermediate image compositing artifacts in headless shell and full Chromium; not reproduced in still screenshots or inspected Chrome states at 1440x900; root cause unresolved",
+    "No independent review, physical mobile or real Safari",
+    "Visual acceptance remains pending"
+  ]
+}

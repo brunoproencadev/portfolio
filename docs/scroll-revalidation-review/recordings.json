@@ -1,0 +1,39 @@
+{
+  "videos": [
+    {
+      "path": ".audit/phase-f-resume-20261016/corrected-1440.webm",
+      "fps": 25.0,
+      "frames": 896,
+      "duration": 35.84,
+      "width": 1440,
+      "height": 900,
+      "sha256": "83d3fe08096c5c0ca5f6a0af5780b57553c0d65dc9935bb35b361514dd77b858"
+    },
+    {
+      "path": ".audit/phase-f-resume-20261016/corrected-1920.webm",
+      "fps": 25.0,
+      "frames": 896,
+      "duration": 35.84,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e5a8d06ef06b8d229cd789e3e28a67751bb9c0bc7f73d476b4fa0c7a8bca542d"
+    },
+    {
+      "path": ".audit/phase-f-resume-20261016/corrected-375.webm",
+      "fps": 25.0,
+      "frames": 576,
+      "duration": 23.04,
+      "width": 374,
+      "height": 812,
+      "sha256": "ff10af74691f138233f9ed483bc8f02b2d9323d07668ed4a2ae1e7a9cd5220da"
+    }
+  ],
+  "fullBrowser": {
+    "path": ".audit/phase-f-resume-20261016/full-chromium.webm",
+    "fps": 25.0,
+    "frames": 196,
+    "sha256": "50bef3d326f3b88e9844734dc77722f592cf5f7c8949f134ace3b4b46862e42e",
+    "duration": 7.84
+  },
+  "referenceSha256": "58ed14b63e7d8753569c26750023c34d7abe740deb7f7e0bb965eb983e753460"
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "file": "about-reading-375.jpg",
+    "sha256": "03e53dd34ad94d5fa7496e63d753dc62f361606325b806b0eccf8ed122aef993"
+  },
+  {
+    "file": "atelie-1440.jpg",
+    "sha256": "50e9d0e9fe87287a0cca69c15c1bf917cd98d04cedf424e615be75061f78e251"
+  },
+  {
+    "file": "capture.json",
+    "sha256": "7e255f4e63055e66389ff7a4c245ece4a6cfc18e7a1e852e1740fed215a4424c"
+  },
+  {
+    "file": "full-browser-sequence.jpg",
+    "sha256": "f31c6469006bacedcd9e82765695aa1c80cd4577c5d3c56c12215ff43eaae282"
+  },
+  {
+    "file": "horizontal-end-1440.jpg",
+    "sha256": "96e231b17b6f02a9fd5a51f42af18fe12aa2c2746582b630779ecdf4ec836820"
+  },
+  {
+    "file": "horizontal-sequence.jpg",
+    "sha256": "f4f2498604cf0d0bcb8da08eba4f907347b01c8a6708448c9a33798239383358"
+  },
+  {
+    "file": "icons-1440.jpg",
+    "sha256": "db277900cd29fdee83e5e8e382da1fa540f18550d5a63b78ec081f5799b634f9"
+  },
+  {
+    "file": "lower-sequence.jpg",
+    "sha256": "87c32dafcf23f4ad2603822d39ed07ea01e1721464a22c664a3236bc698d5a73"
+  },
+  {
+    "file": "recordings.json",
+    "sha256": "d089619ed958a30d3ee6b5c659b1af7bded9bcc0aaed5c27bf090fd071d7bced"
+  },
+  {
+    "file": "reference4-sequence.jpg",
+    "sha256": "9dbb3fa8775f24a9d6c28beebe7a9ab9ae5f8f94c969be5af2d46ccb084b3338"
+  },
+  {
+    "file": "verification.json",
+    "sha256": "e864af4b0ff03b0c77524c0b27750ac4deb570d5e884d01d3b9ff94e90e0f4e3"
+  }
+]
