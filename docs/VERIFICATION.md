@@ -1,4 +1,14 @@
-## Integração F — 2026-10-15
+## Revisão F — 2026-10-16
+
+Fonte existente `77d2506`, ícones `e0dec50`; sem alteração de código nesta retomada. Evidências `417fca9`, [relatório](PHASE_F_REVALIDATION.md), [resultados](scroll-revalidation-review/verification.json). Build com TypeScript, lint completo e 7/7 unitários passam. Aviso local de metadataBase/localhost mantido.
+
+Playwright: 63/63 em lower-scroll/storytelling/hero-tools, nos três engines, dois workers, sem skips/retries/falhas. Primeiro run dentro do sandbox interrompido por crashes Firefox; probe em página vazia também caiu antes de navegar. Mesmo probe e confirmação fora do sandbox passaram; não contar a primeira tentativa como rodada limpa nem afirmar suíte integral do repositório.
+
+33 estados em 1440×900/1920×1080/375×812: zero overflow/pageerrors, axe zero nos estados finais de Contato. Vídeos25fps de35,84/35,84/23,04s e comparação Chromium completo7,84s. WebMs mostram artefatos de composição em alguns quadros horizontais intermediários; não reproduzidos em screenshots/estados Chrome inspecionados, causa ainda aberta. Evidência preservada, sem alegação de renderização perfeita ou60fps. Referência R4 reconferida por hash e amostrada a cada0,5s entre18,5–26s. JSON/formato/hashes conferidos; 47 arquivos preexistentes preservados.
+
+Revisão própria; F ainda depende de avaliação perceptual. Sem novo Lighthouse/INP, dispositivo físico, Safari real ou leitor de tela. Nenhum push/deploy ou avanço a G–I.
+
+## Histórico — integração F — 2026-10-15
 
 Fonte 4acc977; relógio de testes 7c518f4; evidências 83e07cc. [Relatório](PHASE_F_INTEGRATION_REVIEW.md) e [resultados](scroll-integration-review/verification.json). Build/TypeScript strict, lint completo, formato dos arquivos alterados, diff-check e 7/7 unitários passam.
 

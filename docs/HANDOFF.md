@@ -1,4 +1,20 @@
-# Estado vigente — passagem aprovada e home integrada para revisão, 2026-10-15
+# Estado vigente — revisão F de 16/10, fechamento retomado em 17/10/2026
+
+O usuário confirmou “Continuar revisão e ajustes da Fase F”. Código já continha ícones autênticos `e0dec50d9c7a408fb78450944e9c18bac8511c67` e correções inferiores/janelas horizontais `77d2506a2e0d846c4091f7496d14e189054b21a0`. Revalidados sem nova alteração de produto; [relatório vigente](PHASE_F_REVALIDATION.md). Os registros de integração abaixo descrevem a versão anterior.
+
+Novo commit `417fca9cd885426713edf54a21bdc5ae6c240cfa` registra evidências e limites desta retomada. O commit documental `docs: record phase F revalidation and pending visual review` sincroniza este estado; consultar `git log -1 -- docs/HANDOFF.md` para seu SHA, evitando autorreferência.
+
+“Continue” em 17/10 autorizou concluir a documentação pendente. A tentativa anterior de staging não foi executada por limite de uso da revisão automática. Fonte e evidências permanecem inalteradas; reutilizadas as provas de 16/10, com nova verificação documental e dos arquivos preservados.
+
+Provas atuais: 63/63 E2E focados em Chromium/Firefox/WebKit, sem skips/retries; 7/7 unitários; lint completo e build/TypeScript. Primeira rodada no sandbox interrompida por crash do Firefox ao criar página vazia; confirmação fora do sandbox limpa. 33 estados em três viewports sem overflow/pageerrors e axe zero nos estados finais. Três gravações contínuas + comparação em Chromium completo; JSON/formato/hashes verificados.
+
+Limite aberto: quadros intermediários dos WebMs apresentam composição incorreta de imagens, também no Chromium completo; não reproduzida nas capturas ou nos estados inspecionados no Chrome aberto a 1440×900. Causa ainda não estabelecida; não equivale a defeito visual resolvido ou aceite perceptual. Sem Lighthouse/INP, hardware físico, Safari real, leitor de tela ou parecer independente novos.
+
+47 arquivos preexistentes preservados byte a byte e fora destes commits, incluindo AGENTS, MEDIA_ASSETS, MOTION_SPEC, REFERENCE_ANALYSIS, rascunho PHASE_F_LOWER_REVIEW e scroll-lower-review. Não os descartar nem incluir automaticamente em futuros commits.
+
+Home para avaliação: http://127.0.0.1:3102/ (build local; servidor reiniciado em 17/10). Player: `.audit/phase-f-resume-20261016/review.html`. Próximo passo dentro de F: avaliação visual das ferramentas e do trecho inferior; reproduzir no navegador qualquer defeito percebido antes de novo ajuste. G requer aceite global de F e autorização própria; conteúdo/cases e mídia factual serão seu escopo. Nenhum push/deploy nesta retomada.
+
+# Histórico — passagem aprovada e home integrada para revisão, 2026-10-15
 
 O usuário aprovou o trecho hero→RoboSense (“de resto, essa parte está aprovada”), pediu pop-ups das ferramentas e revisão do scroll no restante da página. Essa aprovação satisfez o gate de integração do protótipo. Trabalho autorizado dentro de F concluído para nova avaliação visual; G–I, push e deploy não autorizados.
 
