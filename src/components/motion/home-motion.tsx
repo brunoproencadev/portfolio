@@ -13,7 +13,6 @@ export function HomeMotion() {
     const root = skip.current?.closest("main");
     if (!root) return;
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
-    const desktop = matchMedia("(min-width: 900px) and (min-height: 700px)");
     let disposed = false;
     let hidden = false;
     let loading = false;
@@ -106,6 +105,8 @@ export function HomeMotion() {
       )
         return;
       const carouselTop = effects?.scrollTop(target);
+      // Native focus may already have scrolled. Finish that scrub before measuring.
+      effects?.settle();
       const bounds = target.getBoundingClientRect();
       if (carouselTop !== undefined) {
         scrollTo({ top: carouselTop, behavior: "instant" });
@@ -135,19 +136,11 @@ export function HomeMotion() {
       if (target) navigate(target, false);
     };
     function load() {
-      if (
-        disposed ||
-        hidden ||
-        loading ||
-        effects ||
-        reduced.matches ||
-        !desktop.matches
-      )
-        return;
+      if (disposed || hidden || loading || effects || reduced.matches) return;
       loading = true;
       void import("./home-reveals")
         .then(({ startReveals }) => {
-          if (disposed || hidden || reduced.matches || !desktop.matches) return;
+          if (disposed || hidden || reduced.matches) return;
           const anchor = Array.from(
             root!.querySelectorAll<HTMLElement>("h2, h3, .skill-row"),
           ).find((element) => element.getBoundingClientRect().bottom > 112);
@@ -163,7 +156,6 @@ export function HomeMotion() {
         });
     }
     reduced.addEventListener("change", preference);
-    desktop.addEventListener("change", load);
     document.addEventListener("click", click);
     root.addEventListener("focusin", focus);
     window.addEventListener("hashchange", onHash);
@@ -184,7 +176,6 @@ export function HomeMotion() {
       cancelAnimationFrame(initialFrame);
       release();
       reduced.removeEventListener("change", preference);
-      desktop.removeEventListener("change", load);
       document.removeEventListener("click", click);
       root.removeEventListener("focusin", focus);
       window.removeEventListener("hashchange", onHash);

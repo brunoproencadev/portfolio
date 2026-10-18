@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+import { startRibbonLoop } from "../motion/ribbon-loop";
 
 const phrases = [
   "Construir. Observar. Evoluir.",
@@ -9,34 +10,14 @@ const phrases = [
 
 export function ContactPassage() {
   const passage = useRef<HTMLDivElement>(null);
-  const [paused, setPaused] = useState(false);
 
   useEffect(() => {
     const root = passage.current;
-    if (!root || !("IntersectionObserver" in window)) return;
-    let visible = false;
-    const update = () => {
-      root.dataset.running = String(visible && !document.hidden);
-    };
-    const observer = new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting;
-      update();
-    });
-    observer.observe(root);
-    document.addEventListener("visibilitychange", update);
-    return () => {
-      observer.disconnect();
-      document.removeEventListener("visibilitychange", update);
-      delete root.dataset.running;
-    };
+    if (root) return startRibbonLoop(root);
   }, []);
 
   return (
-    <div
-      ref={passage}
-      className="contact-passage"
-      data-paused={paused || undefined}
-    >
+    <div ref={passage} className="contact-passage">
       <div className="contact-ribbons" aria-hidden="true">
         {phrases.map((phrase) => (
           <div className="contact-ribbon" key={phrase}>
@@ -52,14 +33,6 @@ export function ContactPassage() {
           </div>
         ))}
       </div>
-      <button
-        className="ribbon-control"
-        type="button"
-        aria-pressed={paused}
-        onClick={() => setPaused((value) => !value)}
-      >
-        {paused ? "Retomar faixas" : "Pausar faixas"}
-      </button>
     </div>
   );
 }

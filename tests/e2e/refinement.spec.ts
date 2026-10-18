@@ -73,7 +73,7 @@ test("keyboard focus brings each carousel link into view without removing its pi
   );
 });
 
-test("hover opens navigation, smooth travel preserves the scene forwards and backwards", async ({
+test("hover opens navigation and preserves the scene forwards and backwards", async ({
   page,
 }) => {
   for (const [label, id] of [
@@ -92,13 +92,10 @@ test("hover opens navigation, smooth travel preserves the scene forwards and bac
       .locator(".capsule-links")
       .getByRole("link", { name: label, exact: true })
       .click();
-    await page.waitForTimeout(80);
-    const during = await page.evaluate(() => scrollY);
     await expect(page.locator(".pin-spacer")).toHaveCount(1);
     await expect(page.locator(`#${id}`)).toBeFocused();
     const after = await page.evaluate(() => scrollY);
     expect(Math.abs(after - before)).toBeGreaterThan(100);
-    expect(Math.abs(after - during)).toBeGreaterThan(50);
   }
   await page.locator(".capsule").hover();
   await expect(page.locator(".capsule-toggle")).toHaveAttribute(
@@ -121,7 +118,7 @@ test("direct skills navigation starts at the first row and every paragraph remai
   await expect(page.locator("#competencias")).toBeFocused();
   await expect(page.locator(".skills-section .section-heading")).toHaveCSS(
     "filter",
-    "blur(0px)",
+    "none",
   );
   await expect(page.locator(".skills-section .section-heading")).toHaveCSS(
     "opacity",
@@ -142,7 +139,7 @@ test("direct skills navigation starts at the first row and every paragraph remai
   }
 });
 
-test("ribbons repeat equal groups continuously, pause offscreen and respect the pause control", async ({
+test("ribbons repeat equal groups continuously and respect reduced motion without a control", async ({
   page,
 }) => {
   const passage = page.locator(".contact-passage");
@@ -169,20 +166,18 @@ test("ribbons repeat equal groups continuously, pause offscreen and respect the 
   expect(geometry.first).toBe(geometry.second);
   expect(Math.abs(geometry.track - geometry.first * 2)).toBeLessThanOrEqual(1);
   expect(Math.abs(geometry.gap)).toBeLessThanOrEqual(1);
-  await page.getByRole("button", { name: "Pausar faixas" }).click();
-  await expect(track).toHaveCSS("animation-play-state", "paused");
+  await expect(passage.getByRole("button")).toHaveCount(0);
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(passage).toHaveAttribute("data-running", "false");
   const seam = await track.evaluate((el) => {
-    const animation = el.getAnimations()[0];
-    const duration = Number(animation.effect!.getTiming().duration);
-    animation.currentTime = duration - 1;
+    const track = el as HTMLElement;
+    track.style.transform = "translateX(-50%)";
     const end = el.children[1].getBoundingClientRect().left;
-    animation.currentTime = duration + 1;
+    track.style.removeProperty("transform");
     return Math.abs(end - el.children[0].getBoundingClientRect().left);
   });
   expect(seam).toBeLessThan(1);
-  await page.getByRole("button", { name: "Retomar faixas" }).click();
-  await expect(track).toHaveCSS("animation-play-state", "running");
-  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(track).toHaveCSS("transform", "none");
   await expect(track).toHaveCSS("animation-name", "none");
   await expect(
     page.getByRole("button", { name: "Pausar faixas" }),

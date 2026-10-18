@@ -15,12 +15,20 @@ export function startIntro(root: HTMLElement, onComplete: () => void) {
         (sum, path) => sum + path.getTotalLength(),
         0,
       );
+      // Explicit start states survive scroll-plugin refresh before the first frame.
+      gsap.set(strokes, { attr: { "stroke-dashoffset": 1 } });
+      gsap.set(".hero-arc", { y: 30, scale: 1.04, opacity: 0.25 });
+      gsap.set(".hero-arc-edge", { attr: { "stroke-width": 12 } });
+      gsap.set(".hero-title-line", { yPercent: 110 });
+      gsap.set(".hero-position", { y: 12, opacity: 0 });
+      gsap.set(".hero-description, .hero-actions", { y: 10, opacity: 0 });
+      gsap.set(".hero-end", { opacity: 0 });
       let position = 0;
       for (const path of strokes) {
         const duration = (path.getTotalLength() / length) * 0.85;
-        timeline.from(
+        timeline.to(
           path,
-          { attr: { "stroke-dashoffset": 1 }, duration, ease: "none" },
+          { attr: { "stroke-dashoffset": 0 }, duration, ease: "none" },
           position,
         );
         position += duration;
@@ -33,37 +41,25 @@ export function startIntro(root: HTMLElement, onComplete: () => void) {
           1,
         )
         .addLabel("hero", 0.85)
-        .from(
-          ".hero-arc",
-          { y: 30, scale: 1.04, opacity: 0.25, duration: 0.8 },
-          "hero",
-        )
-        .from(
+        .to(".hero-arc", { y: 0, scale: 1, opacity: 1, duration: 0.8 }, "hero")
+        .to(
           ".hero-arc-edge",
-          { attr: { "stroke-width": 12 }, duration: 0.8 },
+          { attr: { "stroke-width": 2 }, duration: 0.8 },
           "hero",
         )
-        .from(
+        .to(
           ".hero-title-line",
-          { yPercent: 110, duration: 0.64, stagger: 0.1 },
+          { yPercent: 0, duration: 0.64, stagger: 0.1 },
           "hero+=0.12",
         )
-        .from(
-          ".hero-position",
-          { y: 12, opacity: 0, duration: 0.35 },
-          "hero+=0.4",
-        )
-        .from(
+        .to(".hero-position", { y: 0, opacity: 1, duration: 0.35 }, "hero+=0.4")
+        .to(
           ".hero-description",
-          { y: 10, opacity: 0, duration: 0.4 },
+          { y: 0, opacity: 1, duration: 0.4 },
           "hero+=0.5",
         )
-        .from(
-          ".hero-actions",
-          { y: 10, opacity: 0, duration: 0.36 },
-          "hero+=0.64",
-        )
-        .from(".hero-end", { opacity: 0, duration: 0.4 }, "hero+=0.6");
+        .to(".hero-actions", { y: 0, opacity: 1, duration: 0.36 }, "hero+=0.64")
+        .to(".hero-end", { opacity: 1, duration: 0.4 }, "hero+=0.6");
     });
   } catch (error) {
     context.revert();

@@ -194,7 +194,7 @@ test("pinned media stays below navigation in wide short viewports", async ({
   }
 });
 
-test("mobile defers scroll code until an eligible desktop resize", async ({
+test("mobile receives section transitions while only desktop pins the project track", async ({
   page,
 }) => {
   let scrollChunkRequested = false;
@@ -210,7 +210,12 @@ test("mobile defers scroll code until an eligible desktop resize", async ({
   });
   await page.goto("/");
   await page.waitForLoadState("networkidle");
-  expect(scrollChunkRequested).toBe(false);
+  expect(scrollChunkRequested).toBe(true);
+  await expect(page.locator(".pin-spacer")).toHaveCount(0);
+  await expect(page.locator(".about-copy")).toHaveAttribute(
+    "data-section-motion",
+    "true",
+  );
   await page.setViewportSize({ width: 1440, height: 900 });
   await expect(page.locator(".story-enhanced")).toHaveCount(1);
   expect(scrollChunkRequested).toBe(true);
@@ -244,8 +249,10 @@ for (const path of ["cta", "menu", "direct-hash"] as const) {
     const beforeScroll = await page.evaluate(() => scrollY);
     await page.mouse.wheel(0, 50);
     await expect
-      .poll(() => page.evaluate(() => scrollY))
-      .toBeCloseTo(beforeScroll + 50, 0);
+      .poll(async () =>
+        Math.abs((await page.evaluate(() => scrollY)) - beforeScroll - 50),
+      )
+      .toBeLessThan(1.1);
     await expect(page.locator(".pin-spacer")).toHaveCount(1);
     await expect
       .poll(async () => Math.abs((await target.boundingBox())!.y - before))

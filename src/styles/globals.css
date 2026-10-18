@@ -825,6 +825,10 @@ button.button-link {
 }
 
 /* Phase F: one continuous canvas with authentic project media. */
+.home-page [data-section-motion="true"][data-section-active="true"] {
+  opacity: var(--section-opacity, 1);
+}
+
 .home-page {
   overflow-x: clip;
   --background: #08090d;
@@ -1128,30 +1132,31 @@ button.button-link {
 }
 .contact-passage {
   position: relative;
-  padding-block: 80px 24px;
+  padding-block: 64px;
 }
 .contact-ribbons {
-  padding-block: 40px;
+  display: grid;
+  place-items: center;
+  min-height: clamp(240px, 24vw, 400px);
   overflow: clip;
 }
 .contact-ribbon {
-  width: calc(100% + 80px);
-  margin-left: -40px;
+  grid-area: 1 / 1;
+  width: calc(100% + 120px);
   overflow: hidden;
-  transform: rotate(-3deg);
+  transform: rotate(-6deg);
   background: #16151e;
   color: var(--accent);
 }
 .contact-ribbon + .contact-ribbon {
-  margin-top: 16px;
+  transform: rotate(6deg);
   background: #211d2b;
   color: var(--foreground);
+  box-shadow: 0 12px 28px #0005;
 }
 .ribbon-track {
   display: flex;
   width: max-content;
-  animation: ribbon-loop 40s linear infinite;
-  animation-play-state: paused;
 }
 .ribbon-group {
   display: flex;
@@ -1165,34 +1170,6 @@ button.button-link {
   font-size: clamp(1.125rem, 2.2vw, 2rem);
   font-weight: 600;
   white-space: nowrap;
-}
-.contact-ribbon + .contact-ribbon .ribbon-track {
-  animation-direction: reverse;
-  animation-duration: 46s;
-}
-.contact-passage[data-running="true"]:not([data-paused]) .ribbon-track {
-  animation-play-state: running;
-}
-.ribbon-control {
-  display: none;
-  min-height: 44px;
-  margin: 16px auto 0;
-  padding: 8px 16px;
-  color: var(--muted);
-  border: 0;
-  background: transparent;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  cursor: pointer;
-  font-size: 0.8125rem;
-}
-.contact-passage[data-running] .ribbon-control {
-  display: block;
-}
-@keyframes ribbon-loop {
-  to {
-    transform: translateX(-50%);
-  }
 }
 .home-page .contact-section {
   min-height: 80svh;
@@ -1376,8 +1353,5 @@ button.button-link {
 @media (prefers-reduced-motion: reduce) {
   .ribbon-track {
     animation: none;
-  }
-  .contact-passage[data-running] .ribbon-control {
-    display: none;
   }
 }
