@@ -1,5 +1,7 @@
 # Estado vigente — fase F, transições e faixas, 2026-10-17
 
+Documentação que permanecia local após a implementação foi consolidada em `c672e902fd6f9bcf07b443f0b4a82e472a980a96` (`docs: align phase F design and motion records`): regras geradas do Next, direção visual, mídia, especificação vigente/histórica e análise R4. O relatório inferior, suas 42 evidências e o manifesto de integridade seguem no commit documental imediatamente posterior a esta seção. Esses registros não alteram o produto nem o gate: F continua aguardando avaliação visual; G–I e deploy permanecem sem autorização. O push anterior terminou em `edec153`; estes novos commits são locais até novo pedido explícito.
+
 O usuário pediu completar F, animar as transições das seções e restaurar faixas cruzadas, contínuas e reativas ao scroll, sem botão de pausa. Refinamentos consolidados em `25712288b0287aea1deff56c357832f144d25372`; motion e testes em `b5e787540f7866ab581454a880955762e5dc5e1e` (`feat: add section transitions and scroll-reactive ribbons`). O commit documental fecha provas e estado. Rascunhos/documentos preexistentes foram preservados fora dos commits. Não houve push/deploy. F continua aguardando avaliação visual do usuário; G–I não iniciadas.
 
 Implementados reveals reversíveis em detalhes RoboSense, Sobre, abertura dos projetos e Competências (mobile sem pin; contato/footer sem reveal). A faixa horizontal de projetos mantém seu pin. Faixas em sentidos opostos com cópias idênticas, loop modular e impulso amortecido do scroll; sem botão. Reduced motion, aba oculta, saída de viewport, foco, hash e limpeza foram contemplados. Registro, limitações e comparação local em [PHASE_F_TRANSITIONS](PHASE_F_TRANSITIONS.md).
@@ -18,7 +20,7 @@ Provas atuais: 63/63 E2E focados em Chromium/Firefox/WebKit, sem skips/retries; 
 
 Limite aberto: quadros intermediários dos WebMs apresentam composição incorreta de imagens, também no Chromium completo; não reproduzida nas capturas ou nos estados inspecionados no Chrome aberto a 1440×900. Causa ainda não estabelecida; não equivale a defeito visual resolvido ou aceite perceptual. Sem Lighthouse/INP, hardware físico, Safari real, leitor de tela ou parecer independente novos.
 
-47 arquivos preexistentes preservados byte a byte e fora destes commits, incluindo AGENTS, MEDIA_ASSETS, MOTION_SPEC, REFERENCE_ANALYSIS, rascunho PHASE_F_LOWER_REVIEW e scroll-lower-review. Não os descartar nem incluir automaticamente em futuros commits.
+Os 47 arquivos que haviam sido preservados fora dos commits foram revisados e consolidados posteriormente por autorização explícita do usuário; este aviso permanece apenas como histórico da retomada de16/10.
 
 Home para avaliação: http://127.0.0.1:3102/ (build local; servidor reiniciado em 17/10). Player: `.audit/phase-f-resume-20261016/review.html`. Próximo passo dentro de F: avaliação visual das ferramentas e do trecho inferior; reproduzir no navegador qualquer defeito percebido antes de novo ajuste. G requer aceite global de F e autorização própria; conteúdo/cases e mídia factual serão seu escopo. Nenhum push/deploy nesta retomada.
 

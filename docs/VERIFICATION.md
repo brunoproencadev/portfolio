@@ -44,6 +44,10 @@ Capturas cinco larguras320/375/768/1440/1920: axe0, overflow0, pageerrors0; cont
 
 # Verificação — Fase 3 e auditoria
 
+## Redesign F — consolidação do snapshot inferior, 2026-10-17
+
+Os arquivos locais da correção inferior de15/10 foram revisados antes da inclusão tardia no histórico. `PHASE_F_LOWER_REVIEW` agora identifica explicitamente os commits de produto `e0dec50`/`77d2506` e sua condição histórica. `scroll-lower-review/manifest.json` verifica bytes e SHA-256 dos 42 artefatos preexistentes; os JSON foram parseados e as assinaturas JPEG conferidas. `capture.json` registra três viewports, zero overflow/erros/violações axe nos estados coletados; `videos.json` preserva três gravações locais a25fps e seus hashes. Esta consolidação não repete nem substitui os testes do produto já registrados em `PHASE_F_REVALIDATION` e `PHASE_F_TRANSITIONS`.
+
 ## Redesign F — transições e faixas, evidência de 2026-10-17
 
 Fonte base `2571228`; implementação final registrada no histórico imediatamente após esta atualização. Build Next 16.4/TypeScript strict, lint integral sem warnings, Prettier dos arquivos alterados e Vitest: 7/7 aprovados. E2E amplo: 216 aprovados/5 skips/1 falha em 222 casos, Chromium/Firefox/WebKit. A falha foi uma expectativa incorreta de fade-out, corrigida para validar saída vertical e reversão; confirmação após correção 6/6 nos três motores. A tolerância do scroll no storytelling também foi ajustada após o Firefox arredondar em 1px; storytelling Firefox 14/14. A rodada ampla não foi repetida após esses ajustes. Não somar tentativas intermediárias nem declarar a execução ampla como totalmente verde.

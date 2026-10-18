@@ -1,0 +1,29 @@
+[
+  {
+    "file": ".audit/phase-f-lower/corrected-1440.webm",
+    "fps": 25.0,
+    "frames": 922,
+    "duration": 36.88,
+    "width": 1440,
+    "height": 900,
+    "sha256": "6769c50996439b9af8d7445fec0624b6860264feae5dc6a75551344daff27b80"
+  },
+  {
+    "file": ".audit/phase-f-lower/corrected-1920.webm",
+    "fps": 25.0,
+    "frames": 953,
+    "duration": 38.12,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "d5565b4b4f1a56d45f3ca96943bb1b0c80e8b5674d820a03c80baee2219b6db3"
+  },
+  {
+    "file": ".audit/phase-f-lower/corrected-375.webm",
+    "fps": 25.0,
+    "frames": 573,
+    "duration": 22.92,
+    "width": 374,
+    "height": 812,
+    "sha256": "2247a205d10da95302ff75d087e48a87f9a5961f257dd9dc0042e72459dd274b"
+  }
+]

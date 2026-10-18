@@ -1,0 +1,139 @@
+{
+  "geometry": [
+    {
+      "selector": ".work-atelie",
+      "x": 80,
+      "y": 5636.34375,
+      "width": 1280,
+      "height": 2402.140625,
+      "position": "static"
+    },
+    {
+      "selector": ".atelie-copy",
+      "x": 80,
+      "y": 5636.34375,
+      "width": 529.453125,
+      "height": 784.96875,
+      "position": "static"
+    },
+    {
+      "selector": ".atelie-frame",
+      "x": 724.640625,
+      "y": 5636.34375,
+      "width": 635.359375,
+      "height": 2290.140625,
+      "position": "static"
+    },
+    {
+      "selector": ".about-section",
+      "x": 80,
+      "y": 8038.484375,
+      "width": 1280,
+      "height": 1135.453125,
+      "position": "static"
+    },
+    {
+      "selector": ".about-copy",
+      "x": 182.4000244140625,
+      "y": 8600.4296875,
+      "width": 1075.199951171875,
+      "height": 513.59375,
+      "position": "static"
+    },
+    {
+      "selector": ".about-sweep",
+      "x": 359.85394287109375,
+      "y": 8648.80859375,
+      "width": 1290.751708984375,
+      "height": 79.8388671875,
+      "position": "static"
+    },
+    {
+      "selector": ".skills-section",
+      "x": 80,
+      "y": 9173.9375,
+      "width": 1280,
+      "height": 1130.59375,
+      "position": "static"
+    },
+    {
+      "selector": ".skill-list",
+      "x": 650.65625,
+      "y": 9269.9375,
+      "width": 709.34375,
+      "height": 840,
+      "position": "static"
+    },
+    {
+      "selector": ".contact-passage",
+      "x": 0,
+      "y": 10304.53125,
+      "width": 1440,
+      "height": 361.375,
+      "position": "static"
+    },
+    {
+      "selector": ".contact-section",
+      "x": 80,
+      "y": 10665.90625,
+      "width": 1280,
+      "height": 519.59375,
+      "position": "static"
+    }
+  ],
+  "states": [
+    {
+      "name": "atelie",
+      "scrollY": 5496
+    },
+    {
+      "name": "atelie-lower",
+      "scrollY": 6536
+    },
+    {
+      "name": "about",
+      "scrollY": 7898
+    },
+    {
+      "name": "skills",
+      "scrollY": 9034
+    },
+    {
+      "name": "skills-last",
+      "scrollY": 9754
+    },
+    {
+      "name": "contact",
+      "scrollY": 10379
+    }
+  ],
+  "interaction": [
+    {
+      "label": "before-focus",
+      "scrollY": 9034,
+      "height": 11279,
+      "enhanced": true,
+      "skillsHeight": 1130.59375,
+      "about": -592.484375,
+      "link": 1044.53125
+    },
+    {
+      "label": "after-focus",
+      "scrollY": 8952,
+      "height": 10145,
+      "enhanced": false,
+      "skillsHeight": 799.09375,
+      "about": -1312.484375,
+      "link": 0.4375
+    },
+    {
+      "label": "after-wheel50",
+      "scrollY": 10136,
+      "height": 11279,
+      "enhanced": true,
+      "skillsHeight": 1130.59375,
+      "about": -1694.484375,
+      "link": -121.46875
+    }
+  ]
+}
