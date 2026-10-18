@@ -1,0 +1,92 @@
+[
+  {
+    "file": "docs/scroll-depth-review/1440-atelie.jpg",
+    "bytes": 97919,
+    "sha256": "5266186b248088d52bc01b287782515e3bcaba0562c21a1abc0a05cc5c10ca01"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-cover-entry.jpg",
+    "bytes": 48990,
+    "sha256": "ac1a4a9744f58409a7c0fd960ab7e772bf0facf7a15ce373146218c155704433"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-cover-full.jpg",
+    "bytes": 90952,
+    "sha256": "f5d1c80a44319af5345bc67f253ac6343bb9fc97c283c9add5175b68af908e7f"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-cover-mid.jpg",
+    "bytes": 84902,
+    "sha256": "3ed51c68c672ba8d018c89aedce753cd7501905ea5268010408834cd112c36cf"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-cover-reverse.jpg",
+    "bytes": 84902,
+    "sha256": "3ed51c68c672ba8d018c89aedce753cd7501905ea5268010408834cd112c36cf"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-hero.jpg",
+    "bytes": 70676,
+    "sha256": "66e9062ccb863c33532ecac0ae3a4982161ff99be2ae62fe9f99f1f81bfbc82f"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-industry.jpg",
+    "bytes": 119032,
+    "sha256": "bc1e9fcfb6b8312a46d5818c35c74efb4423c986bcfec66227642b3b6912127d"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-recede.jpg",
+    "bytes": 57836,
+    "sha256": "c3c399ba43dc117d7c8bca77378faa374f9e097ef54648227abb8d6a8c34d254"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-robo.jpg",
+    "bytes": 78726,
+    "sha256": "3f9ee45f7d1fe4b02b70ee08e8fc333162277156035f04b61e054b0241fc5918"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-sequence.jpg",
+    "bytes": 226239,
+    "sha256": "a1256ae7c9e59ffa0aed4b65f27123a31047960540d1bd36238e794e6b817bf0"
+  },
+  {
+    "file": "docs/scroll-depth-review/1440-text.jpg",
+    "bytes": 47901,
+    "sha256": "fc10601dfa2e8ccd48ca4d7c0c91f6309efe774c2c57ff4b856e0d5a968c2e22"
+  },
+  {
+    "file": "docs/scroll-depth-review/374-sequence.jpg",
+    "bytes": 207689,
+    "sha256": "0ba858925dea4bb3c74f87c11c7e50dcb25ca9d9563f1f609dacc1c0d5143943"
+  },
+  {
+    "file": "docs/scroll-depth-review/375-cover-full.jpg",
+    "bytes": 48704,
+    "sha256": "3ba101eb3f04720cbca0b7ffcd8c966141f5464a96d1630109f36e9e7905a9f1"
+  },
+  {
+    "file": "docs/scroll-depth-review/375-cover-mid.jpg",
+    "bytes": 34827,
+    "sha256": "0ba75d71e65e041b4116a245a837e4ba0af5cd0a0dda9071f280798526224642"
+  },
+  {
+    "file": "docs/scroll-depth-review/375-focus.jpg",
+    "bytes": 36166,
+    "sha256": "66b3e4681d0930f7199b62a62ca1ccf45e937ffe76a291dc00d593ed365afce8"
+  },
+  {
+    "file": "docs/scroll-depth-review/375-reduced.jpg",
+    "bytes": 54459,
+    "sha256": "5f69744aa2e4222e8d4dc541ba84b2b82a74567b0affcc3c03a875330d9f9854"
+  },
+  {
+    "file": "docs/scroll-depth-review/browser.json",
+    "bytes": 2852,
+    "sha256": "d11f5ca537e63f35dcdfe15fcb5e80998a7dcbf8fab442a739b1bb54736f21e6"
+  },
+  {
+    "file": "docs/scroll-depth-review/recordings.json",
+    "bytes": 563,
+    "sha256": "0fbc72c8ae2e427142f4b1cf4e734b32ef4e47523f15e4cd5f4d3951dc519f10"
+  }
+]

@@ -1,4 +1,12 @@
-# Estado vigente — F, novos projetos e Clawd, 2026-10-17
+# Estado vigente — consolidação de profundidade F, 2026-10-18
+
+Refinamentos pendentes consolidados em `41eec8176152d3de06dc99e74a16c5ea3311c234` (`feat: refine RoboSense handoffs and project depth`), preservando a ampliação anterior `c3a801d`/`8effc54`: recuo RoboSense, cobertura Sobre, sombra/glow, blur/halo, moldura e recuperação de navegação. Fonte sem alterações preexistentes pendentes após o commit; a documentação/evidência fecha no commit `docs: close phase F depth refinements` (consultar SHA com `git log -1 -- docs/PHASE_F_DEPTH.md`).
+
+Build/strict, lint, formato e7/7 unitários; confirmação integrada75/75 E2E nos três engines, sem skips/retries. [Relatório e limites](PHASE_F_DEPTH.md), histórico de falhas em VERIFICATION. As capturas de profundidade preservam a composição anterior; Clawd e os quatro projetos têm evidência própria em PHASE_F_PROJECTS. Nenhum novo push/deploy. O último push confirmado deste trabalho foi `b966e4b`.
+
+Usuário em18/10: continuar, concluir pendências e depois completar Competências e atrasar a entrada dos pop-ups do carrossel em relação à imagem, mantendo RoboSense. Próximo trabalho autorizado dentro de F: Unity/C# e HTML/CSS/JavaScript dos projetos Museu/kord, com fontes existentes, e entrada dos ícones no carrossel. G–I continuam sem autorização.
+
+# Histórico — F, novos projetos e Clawd, 2026-10-17
 
 Pedido concluído localmente: pendências anteriores revalidadas; pop-ups com bounce; Clawd centralizado acima da janela RoboSense; Museu e kord com mídia real; carrossel Museu → Industry Week → Ateliê → kord. Museu identificado como projeto compartilhado declarado pelo autor, sem atribuir commits; kord explicitamente acadêmico/marca fictícia. Três cases preservados; novos projetos levam aos repositórios.
 

@@ -1,5 +1,7 @@
 # Ícones da revisão F — 17/10/2026
 
+Atualização de18/10: o PNG abaixo registra a primeira implementação. O componente vigente usa o Clawd SVG introduzido em `c3a801d`, com proveniência/licença em [PHASE_F_PROJECTS](PHASE_F_PROJECTS.md); o PNG foi preservado como histórico, sem requisição no site.
+
 Adição final: `public/images/tools/claude-code.png`, 192×192, obtido sem redesenho do favicon indicado por [Claude Code, documentação oficial](https://code.claude.com/docs/en/overview). [Arquivo de origem](https://code.claude.com/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon/android-chrome-192x192.png). SHA-256 `d4e5e8e9990ac52f147a74ae80b9e69cdc612264b84a76cdb5c43b53b73a1707`. Atribuição nos três projetos solicitada pelo usuário; uso identificador da ferramenta, sem alegar endosso ou licença geral da marca. Bytes originais preservados; nenhuma consulta remota durante a navegação.
 
 Complemento de proveniência a MEDIA_ASSETS.md, preservado sem alterações nesta revisão. Assets baixados das fontes abaixo, sem redesenho. Servidos localmente; nenhuma requisição às marcas ocorre durante a navegação.

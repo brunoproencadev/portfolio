@@ -1,3 +1,9 @@
+## Revisão F — profundidade e integração, 2026-10-18
+
+Fonte `41eec81`: recuo RoboSense→texto, superfície Sobre sobreposta, blur/halo/glow e moldura, com recuperação de foco e navegação. Preservados os commits de ampliação `c3a801d`/`8effc54`. Build Next/strict, lint completo, formato e 7/7 unitários aprovados; confirmação da integração em hero-tools/project-expansion/storytelling/robo-handoff: **75/75 em Chromium, Firefox e WebKit**, sem retries/skips. A primeira tentativa de integração iniciou enquanto o build ainda estava sendo gerado e encerrou sem executar testes; a execução após o build está em `.audit/phase-f-depth/integration-confirmed.txt`.
+
+Histórico de implementação: 84/90 (3 skips/3 falhas), depois105/111 (2 skips/4 falhas) e confirmação focada54/54 antes da ampliação de projetos. As causas, correções e distinção de versões estão em [PHASE_F_DEPTH](PHASE_F_DEPTH.md). Não somar rodadas sobrepostas ou afirmar que toda a suíte foi repetida. Evidências de profundidade:22 estados/2 WebMs, sem overflow/pageerrors, axe zero nos estados finais; capturas anteriores ao Clawd/carrossel ampliado, cuja composição tem provas próprias em PHASE_F_PROJECTS. Sem nova medição de performance ou aprovação perceptual.
+
 ## Revisão F — novos projetos e Clawd, 2026-10-17
 
 Fonte `c3a801d` sobre a árvore preexistente preservada. Fechamento anterior `875da83`: 54/54 E2E, build/strict/lint e 7 unitários. Novo incremento: build/strict, lint completo, 7/7 unitários e Prettier aprovados. E2E principal 114/120; seis falhas nos três engines por sobreposição Clawd e expectativa antiga de Ateliê em último. Corrigidos espaço da janela e ordem esperada. Confirmação project-expansion/hero-tools/storytelling 63/63, sem retries/skips; os outros 57 casos não foram repetidos. Total 120 casos distintos. PowerShell com redirecionamento reportou status 1 por avisos stderr, enquanto Playwright terminou 63 passed; divergência registrada.

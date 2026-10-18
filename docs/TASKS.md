@@ -6,6 +6,10 @@
 - [x] Validar autoria declarada do Museu, natureza acadêmica do kord, mídia, âncoras, foco/reversão, mobile/no-JS/reduced; preservar três cases. Build/strict/lint, 7 unitários; 120 E2E distintos cobertos após confirmação 63/63. Evidências desktop/mobile.
 - [ ] Avaliação perceptual deste incremento F; fase geral G e push/deploy exigem autorização explícita. Alterações preexistentes continuam locais; provas da árvore completa.
 
+- [x] 17/10: usuário aprovou a versão do scroll e autorizou último refinamento F: recuo RoboSense→texto, superfície Sobre sobreposta, blurs, halo, sombras/glows, moldura e Claude Code nos três projetos. Implementação e provas em PHASE_F_DEPTH.
+- [x] Preservar entrada aprovada, faixas e contato; validar reversão, foco, navegação interrompida, reduced/no-JS, resize e três engines. Resultados/limites vigentes em VERIFICATION e HANDOFF.
+- [ ] Avaliação perceptual dos refinamentos finais; G–I, novos pushes e deploy aguardam autorização específica. O histórico de pendências abaixo não substitui este estado.
+
 - [x] Fase A autorizada em 2026-10-11: workspace/Git/arquitetura/documentação inspecionados, status inicial limpo em aa70f4c, branch redesign/cinematic-portfolio preservada.
 - [x] Três MP4 reais analisados; mapeamento, hashes, duração/resolução, keyframes sequenciais e limites em REFERENCE_ANALYSIS.
 - [x] Baseline navegador desktop/mobile e auditoria KEEP/IMPROVE/REBUILD/REMOVE; causas do desvio e invariantes em REDESIGN_AUDIT.

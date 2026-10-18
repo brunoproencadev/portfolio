@@ -2,7 +2,11 @@
 
 Incremento `c3a801d`: Museu → Industry Week → Ateliê → kord. Largura/foco/fundos/progresso derivados da quantidade; 160vh por passagem, três passagens, scrub0,5s. Clawd central acima da janela RoboSense, frame40px abaixo para reservar espaço. Bounce RoboSense na timeline existente (`back.out(2.6)`, duração0,2/stagger0,022); demais grupos650ms/stagger45ms/`elastic.out(1, 0.5)` via IO, sem loop. GSAP exclusivo das propriedades; cleanup em reduced/resize/desmontagem e encerramento na aba oculta. Mobile/no-JS/reduced mantém fluxo. [Provas e decisões](PHASE_F_PROJECTS.md). Preserva os refinamentos anteriores locais abaixo.
 
-## Estado vigente F — transições e faixas, 2026-10-17
+## Estado anterior F — transições e faixas, 2026-10-17
+
+Refinamento final autorizado após o usuário aprovar o scroll: saída RoboSense no wrapper `.robo-visual`, scale1→0,35/opacity1→0/y0→60vh entre bottom bottom e bottom40%, scrub0,35s, ease none. Compensa o deslocamento do canvas para manter o centro; entrada permanece intacta. Compacto: scale1→0,7/opacity1→0 entre bottom55% e bottom15%, scrub0,25s. Sobre ocupa uma superfície própria: sticky nativo na leitura anterior, top limitado pela altura do artigo; raio superior48→0px e sombra1→0 do topo na borda inferior ao topo da tela. Nenhum pin adicional. Foco recupera a leitura anterior mesmo quando encoberta, e chegada por âncora é conferida antes do foco. Reduced/no-JS preservam fluxo estático. [Decisões, provas e limites](PHASE_F_DEPTH.md).
+
+Acabamento solicitado: blur superior164px, halo SVG com stroke76px/blur38px, glow discreto por ferramenta, sombra aprofundada, Claude Code nos três projetos e moldura macOS no RoboSense. Blur10px limitado à margem esquerda24–64px da janela horizontal. Não altera contato/faixas.
 
 Esta seção substitui as geometrias históricas abaixo. `HomeMotion` carrega o owner de scroll em qualquer viewport com `no-preference`; reduced motion mantém o fluxo estático. `section-transitions` coordena detalhes RoboSense, Sobre, abertura dos projetos e Competências com scrub0,45s no desktop e0,25s no compacto. Contato e footer ficam fora desse owner. Foco e hash acomodam as timelines antes da medição; pagehide, aba oculta, mudança de preferência e desmontagem liberam seus recursos.
 

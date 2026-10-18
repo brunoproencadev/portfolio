@@ -1,0 +1,150 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "states": [
+      {
+        "name": "hero",
+        "y": 0,
+        "time": 3096.2000000029802,
+        "overflow": false
+      },
+      {
+        "name": "robo",
+        "y": 1260,
+        "time": 4906.20000000298,
+        "overflow": false
+      },
+      {
+        "name": "recede",
+        "y": 1530,
+        "time": 6419,
+        "overflow": false
+      },
+      {
+        "name": "text",
+        "y": 1800,
+        "time": 7959.30000000447,
+        "overflow": false
+      },
+      {
+        "name": "cover-entry",
+        "y": 2026,
+        "time": 9494.89999999851,
+        "overflow": false
+      },
+      {
+        "name": "cover-mid",
+        "y": 2296,
+        "time": 11019.5,
+        "overflow": false
+      },
+      {
+        "name": "cover-full",
+        "y": 2746,
+        "time": 12655,
+        "overflow": false
+      },
+      {
+        "name": "cover-reverse",
+        "y": 2296,
+        "time": 14268.5,
+        "overflow": false
+      },
+      {
+        "name": "focus",
+        "y": 2160,
+        "time": 14854,
+        "overflow": false
+      },
+      {
+        "name": "industry",
+        "y": 3999,
+        "time": 15667.20000000298,
+        "overflow": false
+      },
+      {
+        "name": "atelie",
+        "y": 5151,
+        "time": 16452.89999999851,
+        "overflow": false
+      },
+      {
+        "name": "reduced",
+        "y": 2122,
+        "time": 18284.10000000149,
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "axe": []
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "states": [
+      {
+        "name": "hero",
+        "y": 0,
+        "time": 2079.2000000029802,
+        "overflow": false
+      },
+      {
+        "name": "robo",
+        "y": 127,
+        "time": 2216.2000000029802,
+        "overflow": false
+      },
+      {
+        "name": "cover-entry",
+        "y": 1135,
+        "time": 3936.8000000044703,
+        "overflow": false
+      },
+      {
+        "name": "cover-mid",
+        "y": 1379,
+        "time": 5384,
+        "overflow": false
+      },
+      {
+        "name": "cover-full",
+        "y": 1785,
+        "time": 6907.4000000059605,
+        "overflow": false
+      },
+      {
+        "name": "cover-reverse",
+        "y": 1379,
+        "time": 8439.60000000149,
+        "overflow": false
+      },
+      {
+        "name": "focus",
+        "y": 1137,
+        "time": 9013.40000000596,
+        "overflow": false
+      },
+      {
+        "name": "industry",
+        "y": 3137,
+        "time": 9807.90000000596,
+        "overflow": false
+      },
+      {
+        "name": "atelie",
+        "y": 4400,
+        "time": 10570,
+        "overflow": false
+      },
+      {
+        "name": "reduced",
+        "y": 1807,
+        "time": 12380.40000000596,
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "axe": []
+  }
+]
