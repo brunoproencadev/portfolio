@@ -68,14 +68,35 @@ test("metadata, crawler policy and sitemap agree across all public routes", asyn
 });
 
 test("native metadata assets have the expected formats and dimensions", async ({
+  page,
   request,
 }) => {
-  const icon = await request.get("/icon.svg");
+  for (const path of paths) {
+    await page.goto(path);
+    await expect(
+      page.locator('link[rel="icon"][type="image/x-icon"]'),
+    ).toHaveAttribute("href", /^\/favicon\.ico\?/);
+    await expect(
+      page.locator('link[rel="icon"][type="image/png"]'),
+    ).toHaveAttribute("href", /^\/icon\.png\?/);
+    await expect(page.locator('link[rel="apple-touch-icon"]')).toHaveAttribute(
+      "href",
+      /^\/apple-icon\.png\?/,
+    );
+  }
+  const icon = await request.get("/favicon.ico");
   expect(icon.status()).toBe(200);
-  expect(icon.headers()["content-type"]).toContain("image/svg+xml");
+  expect(icon.headers()["content-type"]).toMatch(
+    /image\/(x-icon|vnd.microsoft.icon)/,
+  );
+  const ico = await icon.body();
+  expect(ico.readUInt16LE(2)).toBe(1);
+  expect(ico.readUInt16LE(4)).toBe(3);
+  expect([0, 1, 2].map((index) => ico[6 + index * 16])).toEqual([16, 32, 48]);
   for (const [path, width, height] of [
     ["/opengraph-image", 1200, 630],
-    ["/apple-icon", 180, 180],
+    ["/icon.png", 192, 192],
+    ["/apple-icon.png", 180, 180],
   ] as const) {
     const response = await request.get(path);
     expect(response.status()).toBe(200);

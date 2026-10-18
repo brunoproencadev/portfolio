@@ -1,4 +1,12 @@
-## Museu, kord e Clawd — revisão vigente de 17/10/2026
+## Fase G — identidade e cases, 18/10/2026
+
+Avatar atual reconferido pela API pública GitHub e download: `https://avatars.githubusercontent.com/u/271389368?v=4`, PNG 460×460, 101.669 bytes, SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`. Idêntico byte a byte ao arquivo local da ilha. Ilustração usada pelo autor no perfil, sem atribuir autoria da arte ou licença adicional.
+
+`src/app/favicon.ico` contém PNGs 16/32/48; `src/app/icon.png` mede 192×192; `src/app/apple-icon.png` mede 180×180. Derivados exclusivamente por redução proporcional do avatar inteiro, transparência preservada, sem recorte/recoloração. Geração reproduzível por `node tools/generate-profile-icons.mjs`, usando Sharp instalado pelo Next fixado; o script rejeita fonte com hash diferente. Ícones BP/ anteriores removidos. Entrega somente local, sem push/deploy. Registros inferiores sobre favicon BP/ são históricos, superados por esta seção.
+
+Cases reutilizam `projectMedia`: frame M3, duas capturas Industry de 11/10 e catálogo Ateliê. Nenhuma nova imagem de projeto ou fotografia pessoal foi criada. Capturas mantêm seus limites e acesso ao arquivo integral. Fontes fixadas dos cases reconferidas em 18/10, sem reexecutar os projetos. Fotos pessoais/contextos e permissão de publicação proeminente das imagens/marca do Ateliê permanecem pendentes.
+
+## Museu, kord e Clawd — revisão de 17/10/2026
 
 Frame integral do vídeo do museu aos 10s, screenshot real da execução local do kord, mascote Clawd via Lobe Icons e ícones Unity/C#/HTML/CSS/JavaScript via Devicon. Fontes fixadas, autoria, licenças, hashes e limites em [PHASE_F_PROJECTS](PHASE_F_PROJECTS.md) e [assets.json](project-expansion-review/assets.json). Museu sem contribuição Git atribuída a Bruno; kord é marca fictícia acadêmica. Uso local solicitado, sem publicação. O PNG Claude anterior foi preservado e não é usado pelo componente.
 
