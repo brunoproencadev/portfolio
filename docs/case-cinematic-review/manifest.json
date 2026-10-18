@@ -111,8 +111,8 @@
   },
   {
     "path": "confirmation.txt",
-    "bytes": 20704,
-    "sha256": "6a87cf4b182996bc24d8f916305e8c7012023c0d4fd78904eb31b904c36677ef"
+    "bytes": 20697,
+    "sha256": "8e460be782478f458e59cc7c79ef661e0a770ebe0d5aec2dd794f389a1a9f2bf"
   },
   {
     "path": "detector.json",
@@ -121,8 +121,8 @@
   },
   {
     "path": "e2e.txt",
-    "bytes": 21183,
-    "sha256": "1a28421835fbc8b8d7e84c2413f5b1c720f8a3264b08ed30a1492adea59de4d4"
+    "bytes": 21172,
+    "sha256": "911bdbf14950ab7e7406efd8d0667f800175e4461bbf7b4f724b39150c986959"
   },
   {
     "path": "recordings.json",
@@ -136,7 +136,7 @@
   },
   {
     "path": "story-confirmation.txt",
-    "bytes": 1489,
-    "sha256": "077eeb0cddf7486a2a13252220daf86ba7893bb84d098a8045b278d5dd016ada"
+    "bytes": 1488,
+    "sha256": "89cd499f16448196584e04ccb7824e4289e8db266302f5a61a527caa1b49a7f9"
   }
 ]

@@ -5,7 +5,7 @@ At line:2 char:1
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : NotSpecified: ([WebServer] (no... env being set.:String) [], RemoteException
     + FullyQualifiedErrorId : NativeCommandError
- 
+
 [WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
 
 Running 102 tests using 2 workers
@@ -52,7 +52,7 @@ Running 102 tests using 2 workers
 [32/102] [chromium] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in no-js flow
 [33/102] [chromium] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in reduced flow
 [34/102] [chromium] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in hash flow
-  1) [chromium] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses 
+  1) [chromium] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
 
     Error: expect(locator).toHaveCount(expected) failed
 
@@ -130,7 +130,7 @@ Running 102 tests using 2 workers
 [66/102] [firefox] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in no-js flow
 [67/102] [firefox] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in reduced flow
 [68/102] [firefox] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in hash flow
-  2) [firefox] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses 
+  2) [firefox] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
 
     Error: expect(locator).toHaveCount(expected) failed
 
@@ -207,7 +207,7 @@ Running 102 tests using 2 workers
 [99/102] [webkit] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
 [100/102] [webkit] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in no-js flow
 [101/102] [webkit] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in reduced flow
-  3) [webkit] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses 
+  3) [webkit] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
 
     Error: expect(locator).toHaveCount(expected) failed
 
@@ -249,7 +249,7 @@ Running 102 tests using 2 workers
 
 [102/102] [webkit] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in hash flow
   3 failed
-    [chromium] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses 
-    [firefox] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses 
-    [webkit] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses 
+    [chromium] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+    [firefox] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+    [webkit] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
   99 passed (2.0m)
