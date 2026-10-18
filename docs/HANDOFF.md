@@ -1,4 +1,14 @@
-# Estado vigente — consolidação de profundidade F, 2026-10-18
+# Estado vigente — competências e entrada do carrossel, 2026-10-18
+
+Pedido concluído: competências dos projetos Museu/kord adicionadas com fontes existentes, totalizando cinco grupos; ícones dos quatro projetos do carrossel surgem depois da imagem (240ms), com fade/escala/subida e curva `back.out(2.6)`. RoboSense preservado. Nota final de estudos mantém contraste integral. Sem dependências novas ou alterações nos cases. [Relatório e evidências](PHASE_F_COMPETENCIES.md).
+
+Commits locais desta continuidade: `41eec8176152d3de06dc99e74a16c5ea3311c234` — profundidade/cobertura/recuo; `6d5e46b` — fechamento documental das pendências; `f2cb592db74430f344eeb082120c4a764584d32a` — competências e entrada atrasada do carrossel. O commit `docs: record skills and carousel arrival validation` contém este registro e as provas; seu SHA pode ser obtido por `git log -1 -- docs/PHASE_F_COMPETENCIES.md`, evitando autorreferência.
+
+Validação final: build Next/strict, lint, formato,7/7 unitários;30/30 E2E em Chromium/Firefox/WebKit, sem skips/retries, após corrigir expectativas antigas e a espera do teste de animação. Histórico45/48 e15/18 registrado em VERIFICATION/relatório. Duas rodadas visuais: confirmação22 estados, sem overflow/pageerrors, axe zero nos estados examinados; vídeos e limitações documentados. Preview atualizado em http://127.0.0.1:3109/. Sem push/deploy; árvore limpa após o commit documental.
+
+F aguardando avaliação perceptual destes ajustes. G trata conteúdo/cases, fotografias verificadas, avatar e favicon; não iniciada e depende de confirmação explícita. Snapshot auxiliar do Impeccable não foi regenerado; sem Lighthouse/INP, Safari/dispositivos físicos ou leitor de tela novos.
+
+# Histórico — consolidação de profundidade F, 2026-10-18
 
 Refinamentos pendentes consolidados em `41eec8176152d3de06dc99e74a16c5ea3311c234` (`feat: refine RoboSense handoffs and project depth`), preservando a ampliação anterior `c3a801d`/`8effc54`: recuo RoboSense, cobertura Sobre, sombra/glow, blur/halo, moldura e recuperação de navegação. Fonte sem alterações preexistentes pendentes após o commit; a documentação/evidência fecha no commit `docs: close phase F depth refinements` (consultar SHA com `git log -1 -- docs/PHASE_F_DEPTH.md`).
 

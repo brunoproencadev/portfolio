@@ -1,0 +1,52 @@
+[
+  {
+    "file": "docs/skills-arrival-review/1440-kord-skill.jpg",
+    "bytes": 68670,
+    "sha256": "cda44e9875260a96c2749f07558b6740a9317427b62116b4cac3dfb2c9d1badf"
+  },
+  {
+    "file": "docs/skills-arrival-review/1440-museu-arte-moderna-image.jpg",
+    "bytes": 88198,
+    "sha256": "6dd868ba5abb39f420b51c369d897b3dfbef7d2c7be87b3284f691840da2e05f"
+  },
+  {
+    "file": "docs/skills-arrival-review/1440-museu-arte-moderna-tools.jpg",
+    "bytes": 91525,
+    "sha256": "f3ff371689e7d5ea1ef0ff0dae7b653cd50233bb8c6e25c5d395184b90900d8a"
+  },
+  {
+    "file": "docs/skills-arrival-review/1440-sequence.jpg",
+    "bytes": 170885,
+    "sha256": "7840c5e37de3cc4eedf7394e98868e2ba1600f614b49b11260deabfe00f6cb99"
+  },
+  {
+    "file": "docs/skills-arrival-review/374-sequence.jpg",
+    "bytes": 202007,
+    "sha256": "e2e2e928ae7d672c7dc456a59da7f2ef215f19781ae6f4ac4a9474367492dadc"
+  },
+  {
+    "file": "docs/skills-arrival-review/375-kord-skill.jpg",
+    "bytes": 39663,
+    "sha256": "7313e0f9223658a23f89705107324a3a9546878e6af91aa608811bd6af83ae7c"
+  },
+  {
+    "file": "docs/skills-arrival-review/375-museu-arte-moderna-image.jpg",
+    "bytes": 35143,
+    "sha256": "8c7e1c7c727a59b3b94333182eeccad1e1a4017d31ca91a4b31371ac606232b7"
+  },
+  {
+    "file": "docs/skills-arrival-review/375-museu-arte-moderna-tools.jpg",
+    "bytes": 37845,
+    "sha256": "c2db216ecb1db04593ab6bffe8033603dbcdc94d830f15df85d3e28def27399f"
+  },
+  {
+    "file": "docs/skills-arrival-review/browser.json",
+    "bytes": 3113,
+    "sha256": "b5f6f0ee88af8885633f61a81bcec461598967098cb216c85f55ce464553fff8"
+  },
+  {
+    "file": "docs/skills-arrival-review/recordings.json",
+    "bytes": 566,
+    "sha256": "b02619ffc9a292ec382c7d65782ec174ee3afede3ee8a0368ec87072e7c9c89e"
+  }
+]

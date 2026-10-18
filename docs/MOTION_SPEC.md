@@ -1,4 +1,8 @@
-## Estado vigente F — quatro projetos e bounce, 2026-10-17
+## Estado vigente F — entrada atrasada no carrossel, 2026-10-18
+
+Fonte `f2cb592`: somente os grupos `.story-visual .tool-popups` recebem o surgimento do RoboSense (y28/scale0,55/opacity0 → y0/scale1/opacity1, `back.out(2.6)`) com atraso240ms após o IO detectar a imagem, duração650ms e stagger45ms. Saída do viewport restaura o início; reentrada repete uma vez, sem loop. Reduced/no-JS restauram visibilidade; aba oculta encerra a animação; observer/listener/tweens têm cleanup e callback tardio é ignorado. A timeline e o fallback do RoboSense permanecem como no incremento anterior. Nota de estudos desloca24px com opacidade integral para conservar contraste na borda inferior. [Provas e decisões](PHASE_F_COMPETENCIES.md).
+
+## Histórico F — quatro projetos e bounce, 2026-10-17
 
 Incremento `c3a801d`: Museu → Industry Week → Ateliê → kord. Largura/foco/fundos/progresso derivados da quantidade; 160vh por passagem, três passagens, scrub0,5s. Clawd central acima da janela RoboSense, frame40px abaixo para reservar espaço. Bounce RoboSense na timeline existente (`back.out(2.6)`, duração0,2/stagger0,022); demais grupos650ms/stagger45ms/`elastic.out(1, 0.5)` via IO, sem loop. GSAP exclusivo das propriedades; cleanup em reduced/resize/desmontagem e encerramento na aba oculta. Mobile/no-JS/reduced mantém fluxo. [Provas e decisões](PHASE_F_PROJECTS.md). Preserva os refinamentos anteriores locais abaixo.
 

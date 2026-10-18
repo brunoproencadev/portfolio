@@ -271,6 +271,8 @@ Cápsula contínua com raio compacto e aberto próprios, avatar circular, CTAs d
 
 ## Components
 
+- **Refinamento F de18/10:** Competências apresenta cinco grupos com evidência dos projetos; Museu/kord somam Unity/C# e HTML/CSS/JavaScript/GSAP sem inferir novas experiências. Ícones do carrossel surgem240ms após a entrada da imagem, scale0,55/y28/opacity0 até1/0/1, duração650ms, stagger45ms e `back.out(2.6)`. A versão atual do RoboSense permanece intacta. Nota de estudos conserva movimento com opacidade1. [Provas](docs/PHASE_F_COMPETENCIES.md).
+
 - **Ilha B:** snapshot estático com identidade constante, avatar GitHub exato e cinco destinos; `details/summary` permite abertura por teclado sem JS.
 - **Ilha C aplicada:** mesma paleta aprovada (`surface`, `surface-hover`, `foreground`, `muted`, `accent`, `rule`), sombra e Manrope, restritas à navegação. Nome curto e avatar exato (40px); subtítulo de 12px indica a seção atual. A nota de posicionamento fica sob os destinos, em 12px/20px. Ícones SVG geométricos têm traço de 1,5px, 18px nos links e 22px no botão de 44px.
 - **Geometria C:** compacta até 322×60px, largura limitada a viewport−32px; aberta até 404px. Altura natural observada de 365px em 768/1440/1920px e 385px em 320/375px pela quebra da nota, sem altura fixa para esconder conteúdo. Centro/topo permanecem estáveis: 32px a partir de 900px, 16px abaixo, acrescidos de safe-area. Painel alto tem scroll interno. Itens usam raio de 12px (B: 10px), alvo mínimo de 48px; “Atual” usa 11px e violeta (B: 12px e cinza). O foco usa contorno violeta de 3px com offset −3px, voltado para dentro para evitar recorte pelo overflow da cápsula (B: offset externo de 4px).

@@ -1,3 +1,9 @@
+## Revisão F — competências e surgimento dos ícones, 2026-10-18
+
+Fonte `f2cb592`: cinco grupos com evidência dos projetos, chegada dos ícones do carrossel atrasada240ms, RoboSense preservado. Build/strict, lint completo, Prettier/diff-check e7/7 unitários. Confirmação final: **30/30 E2E**, carousel-arrival/section-transitions/robo-handoff, três engines, dois workers, sem skips/retries. Os testes anteriores de project-expansion/hero-tools/refinement passaram na rodada45/48; não foram repetidos após o ajuste pontual da nota de estudos. As três falhas eram do novo teste de reentrada, corrigido para usar scroll; rodada15/18 posterior identificou duas expectativas antigas de saída do texto sticky e uma espera fixa do overshoot. Uma tentativa do processo encerrou antes de executar; confirmação sem redirecionamento passou. Detalhes em [PHASE_F_COMPETENCIES](PHASE_F_COMPETENCIES.md).
+
+Confirmação visual22 estados em1440×900/375×812, dois WebMs, sem overflow/pageerrors. Axe zero nos estados finais examinados após remover somente o fade de opacidade da nota de estudos; deslocamento mantido. Provas, hashes e limites em `skills-arrival-review/`; artefatos intermediários em `.audit/phase-f-arrival`. Não é suíte integral repetida, medição de performance ou aceite humano.
+
 ## Revisão F — profundidade e integração, 2026-10-18
 
 Fonte `41eec81`: recuo RoboSense→texto, superfície Sobre sobreposta, blur/halo/glow e moldura, com recuperação de foco e navegação. Preservados os commits de ampliação `c3a801d`/`8effc54`. Build Next/strict, lint completo, formato e 7/7 unitários aprovados; confirmação da integração em hero-tools/project-expansion/storytelling/robo-handoff: **75/75 em Chromium, Firefox e WebKit**, sem retries/skips. A primeira tentativa de integração iniciou enquanto o build ainda estava sendo gerado e encerrou sem executar testes; a execução após o build está em `.audit/phase-f-depth/integration-confirmed.txt`.
