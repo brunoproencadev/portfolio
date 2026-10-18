@@ -3,12 +3,13 @@
 ## Redesign cinematográfico — estado vigente
 
 - [x] 18/10: F aprovada explicitamente por “Perfeito, a fase F finalmente está adequada”. Push e integração na branch padrão autorizados pelo pedido de contribuições; preservar todos os commits originais e bloquear deploy automático da `main` até o gate de publicação. E-mail associado ao perfil confirmado via API GitHub. G–I aguardam seus gates individuais.
+- [x] 18/10: sete commits pendentes enviados;56 commits originais integrados à `main` por fast-forward. Refs remotas main/redesign iguais em30eeef5; JSON/formato/ancestralidade/árvores verificados, Preview confirmado pela API. Atualização do gráfico depende do processamento do GitHub e da preferência pessoal de contribuições privadas.
 
 - [x] 18/10: concluir pendências em41eec81/6d5e46b e implementar o pedido posterior emf2cb592: competências Museu/kord e surgimento atrasado dos ícones somente no carrossel, RoboSense preservado. Build/lint/strict,7 unitários e30 E2E finais aprovados; provas/limites em PHASE_F_COMPETENCIES.
 
 - [x] Pedido atual de 17/10: fechar revalidação anterior (`875da83`), bounce, Clawd central acima do RoboSense e carrossel Museu → Industry Week → Ateliê → kord com mídia real (`c3a801d`). Relatório vigente PHASE_F_PROJECTS.
 - [x] Validar autoria declarada do Museu, natureza acadêmica do kord, mídia, âncoras, foco/reversão, mobile/no-JS/reduced; preservar três cases. Build/strict/lint, 7 unitários; 120 E2E distintos cobertos após confirmação 63/63. Evidências desktop/mobile.
-- [ ] Avaliação perceptual dos incrementos F; fase geral G e push/deploy exigem autorização explícita. Pendências anteriores consolidadas em41eec81/6d5e46b; provas atuais em PHASE_F_COMPETENCIES.
+- [x] Avaliação perceptual dos incrementos F aprovada pelo usuário em18/10. Push e integração realizados por autorização posterior; fase geral G e publicação ainda dependem de autorização explícita.
 
 - [x] 17/10: usuário aprovou a versão do scroll e autorizou último refinamento F: recuo RoboSense→texto, superfície Sobre sobreposta, blurs, halo, sombras/glows, moldura e Claude Code nos três projetos. Implementação e provas em PHASE_F_DEPTH.
 - [x] Preservar entrada aprovada, faixas e contato; validar reversão, foco, navegação interrompida, reduced/no-JS, resize e três engines. Resultados/limites vigentes em VERIFICATION e HANDOFF.
