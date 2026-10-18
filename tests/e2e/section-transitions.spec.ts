@@ -17,8 +17,8 @@ for (const width of [1440, 375]) {
     page,
   }) => {
     await open(page, width, 900);
+    // RoboSense remains sticky under About; its separate contract is covered in robo-handoff.
     for (const selector of [
-      ".work-robo .project-copy",
       ".about-heading",
       ".about-copy",
       ".work-introduction",

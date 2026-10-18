@@ -45,7 +45,12 @@ export function startSectionTransitions(root: HTMLElement) {
       }
       const reveal = (
         selector: string,
-        from: { x?: number; y?: number; scale?: number },
+        from: {
+          x?: number;
+          y?: number;
+          scale?: number;
+          "--section-opacity"?: number;
+        },
       ) => {
         for (const target of root.querySelectorAll<HTMLElement>(selector)) {
           targets.push(target);
@@ -100,7 +105,7 @@ export function startSectionTransitions(root: HTMLElement) {
       reveal(".work-introduction", { y: wide ? 72 : 32, scale: 0.97 });
       reveal(".skills-section .section-heading", { y: wide ? 72 : 32 });
       reveal(".skill-row", { y: wide ? 64 : 32 });
-      reveal(".skills-section .study-note", { y: 24 });
+      reveal(".skills-section .study-note", { y: 24, "--section-opacity": 1 });
 
       if (context.conditions?.heroFallback) {
         gsap.fromTo(

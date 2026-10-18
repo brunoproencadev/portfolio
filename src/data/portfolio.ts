@@ -1,3 +1,5 @@
+import { additionalProjects } from "./additional-projects";
+
 export const profile = {
   name: "Bruno Proença Silva",
   shortName: "Bruno Proença",
@@ -88,5 +90,19 @@ export const skills = [
     technologies: "Next.js · React · TypeScript · Git",
     evidence: "Dados do catálogo e contato contextual no Ateliê Ingrid Xavier.",
     project: projects[2],
+  },
+  {
+    title: "Ambientes virtuais",
+    technologies: additionalProjects[0].stack.join(" · "),
+    evidence:
+      "Museu de Arte Moderna em Unity e C#: projeto compartilhado, com participação declarada pelo autor.",
+    project: additionalProjects[0],
+  },
+  {
+    title: "Identidade visual na web",
+    technologies: additionalProjects[1].stack.join(" · "),
+    evidence:
+      "Estratégia, tipografia e aplicações de uma marca fictícia no brand book acadêmico kord.",
+    project: additionalProjects[1],
   },
 ] as const;

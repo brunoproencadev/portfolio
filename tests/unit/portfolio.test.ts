@@ -1,5 +1,6 @@
 import { expect, test } from "vitest";
 import { profile, projects, sections, skills } from "../../src/data/portfolio";
+import { additionalProjects } from "../../src/data/additional-projects";
 
 test("editorial data links only to confirmed contacts and public repositories", () => {
   expect(projects).toHaveLength(3);
@@ -17,7 +18,9 @@ test("editorial data links only to confirmed contacts and public repositories", 
     expect(["https:", "mailto:"]).toContain(new URL(link.href).protocol);
   for (const skill of skills)
     expect(
-      projects.some((project) => project.slug === skill.project.slug),
+      [...projects, ...additionalProjects].some(
+        (project) => project.slug === skill.project.slug,
+      ),
     ).toBe(true);
   expect(new Set(sections.map((section) => section.id)).size).toBe(
     sections.length,
