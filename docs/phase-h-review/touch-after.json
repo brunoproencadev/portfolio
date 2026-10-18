@@ -1,0 +1,30 @@
+[
+  {
+    "text": "Museu",
+    "width": 44,
+    "height": 44,
+    "minWidth": "44px",
+    "minHeight": "44px"
+  },
+  {
+    "text": "Industry Week",
+    "width": 85.265625,
+    "height": 44,
+    "minWidth": "44px",
+    "minHeight": "44px"
+  },
+  {
+    "text": "Ateliê",
+    "width": 44,
+    "height": 44,
+    "minWidth": "44px",
+    "minHeight": "44px"
+  },
+  {
+    "text": "kord",
+    "width": 44,
+    "height": 44,
+    "minWidth": "44px",
+    "minHeight": "44px"
+  }
+]

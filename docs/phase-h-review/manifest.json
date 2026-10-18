@@ -1,0 +1,117 @@
+[
+  {
+    "file": "build-restored.log",
+    "bytes": 1609,
+    "sha256": "cf91ca86c5b3dd6ac90355eb94813d3580fa527622fbb305723f778dbbfac739"
+  },
+  {
+    "file": "carousel-after.png",
+    "bytes": 333523,
+    "sha256": "f7d4bb272a247768bb0847fa58fed28e4f1f895005c7a8a9938bb641cd9d4779"
+  },
+  {
+    "file": "chromium-keyboard-focus.png",
+    "bytes": 341178,
+    "sha256": "0fad8366ee93257ab661107a6d7d19ece5d7358169607c7dbc92209fb76f1986"
+  },
+  {
+    "file": "chromium-menu-open-320.png",
+    "bytes": 117643,
+    "sha256": "8eb8789b8dcbd0293bca8f9e148b315611e9ce20e8a8f24649bc8ce5b83df039"
+  },
+  {
+    "file": "chromium-zoom-200-atelie-ingrid-xavier.png",
+    "bytes": 291107,
+    "sha256": "d42141c3c493b635424051f7042ff777bd1d37e1223125c5326173f4df00d85d"
+  },
+  {
+    "file": "chromium-zoom-200-museu-arte-moderna.png",
+    "bytes": 303121,
+    "sha256": "d1520a0d7b95fb9b9d97b7aaea1db7d449dc0b4627d040a693391a43d99bb1a0"
+  },
+  {
+    "file": "decoding-probe.json",
+    "bytes": 7178,
+    "sha256": "df2bad99557f0afeedfa6d8b908d8f1c8552c47429e6e162a53300fa46b2a5c1"
+  },
+  {
+    "file": "e2e-confirm.json",
+    "bytes": 33469,
+    "sha256": "429baeebbec7ead355dc2550473e94aa8bbbb50bb211d20b05de619c1b12ca2d"
+  },
+  {
+    "file": "e2e-continuation.json",
+    "bytes": 143026,
+    "sha256": "5c1e7fe1c54536b5ad7a5efa8b84b3305cfda0d09bd4b6e74f033201b78d2f40"
+  },
+  {
+    "file": "e2e-final.json",
+    "bytes": 143514,
+    "sha256": "a312fcc3b8caef6d5084e1df8c7afa2d98d0f3773c0a825597edf20d74221bc6"
+  },
+  {
+    "file": "e2e-initial.json",
+    "bytes": 145628,
+    "sha256": "d900b88ad4f8d1ccca7850dcf79000f0ee35524959ebef0e9daeab3ada9eecf9"
+  },
+  {
+    "file": "e2e-skills.json",
+    "bytes": 3691,
+    "sha256": "a1e0e82a98848f9419d00e38bb71e452f9787413357d389764fbbb8068a3b7e4"
+  },
+  {
+    "file": "format-continuation.log",
+    "bytes": 1507,
+    "sha256": "3490d9317a7be745cd52527662fe35042e2a1a0c5e8e710c5f86a66a70827a5f"
+  },
+  {
+    "file": "lint-continuation.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "performance.json",
+    "bytes": 180553,
+    "sha256": "0bf67563a50e69774fa263c3115e02036f53a550b1f4ef2e2501c3b4d6cc4cfc"
+  },
+  {
+    "file": "source-fingerprints.json",
+    "bytes": 1528,
+    "sha256": "f3edd5a1aa1f5c8057d960a0d76a39ff26eae4a40655191c621f1486f371eba5"
+  },
+  {
+    "file": "strict-continuation.log",
+    "bytes": 59,
+    "sha256": "adba4af9194e10e47dda75ff0fd0f8c2b756474896d0eba5612799c527ff372a"
+  },
+  {
+    "file": "touch-after.json",
+    "bytes": 471,
+    "sha256": "9c2cfd10bf1b25c3cae6a31c02dbdf9da390ce0b0e97c59d9198a565b90336e2"
+  },
+  {
+    "file": "touch-before.json",
+    "bytes": 491,
+    "sha256": "ce88b9c0b2f82dd49eefecb7c919a70eacaaf94a48af1c1ce4b20916cd240e52"
+  },
+  {
+    "file": "unit-confirmation.log",
+    "bytes": 206,
+    "sha256": "20c5c8b8211fbbefd69cc6d3d6c4166e30dbbe0b430f310217a834a9e18e67f1"
+  },
+  {
+    "file": "unit-continuation.log",
+    "bytes": 1395,
+    "sha256": "e2955ac917d5c48f034c813c9cd1ad6c724f62bd6a7d2137288bfa68f70a3421"
+  },
+  {
+    "file": "verification.json",
+    "bytes": 1767,
+    "sha256": "f7f2ff3d20385cdfa1f24401e027b2efe0bdc910dab696335c1d02ec51a38e51"
+  },
+  {
+    "file": "work-probe.json",
+    "bytes": 187,
+    "sha256": "6c4ba7caa3fd0102ce8b5c63a35014993eafb15152d309b3fbdbaacf7800dacc"
+  }
+]

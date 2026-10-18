@@ -1,0 +1,49 @@
+{
+  "base": "7a27a28b2f8cfd487ae83bb6ca284bc692cdc674",
+  "files": [
+    {
+      "file": "docs/PHASE_H_PLAN.md",
+      "sha256": "2d8c9edfd49803e05ebbfe35617f2c0da87ed5708b5d4be731b381a9e84af21c",
+      "preexisting": true,
+      "unchanged": true
+    },
+    {
+      "file": "src/components/projects/case-capture.tsx",
+      "sha256": "a2a6f857a589be98df1daf353b1a136728994064d87a7429f7ef74591693587b",
+      "preexisting": true,
+      "unchanged": true
+    },
+    {
+      "file": "src/components/sections/hero-project.tsx",
+      "sha256": "0f2b85556ac0a2d38b0aad582aa7e83c3759aa3847d0beb2a715acad52b59daa",
+      "preexisting": true,
+      "unchanged": true
+    },
+    {
+      "file": "tests/e2e/refinement.spec.ts",
+      "sha256": "1015bf7060cd5c25cb76a6b74ec35a0afc229203a09efc33788f74c73548d9ef",
+      "preexisting": true,
+      "unchanged": true
+    },
+    {
+      "file": "next.config.ts",
+      "sha256": "032368c3ac5ee0a6810247b5b4a4db5eb4e063cb23de7743aef0874eb74d3ffe",
+      "preexisting": false
+    },
+    {
+      "file": "src/styles/globals.css",
+      "sha256": "2d7c2d4f175440b2bce894d0f7a395aabd57dd607aba272a9ca5f3f4c6367368",
+      "preexisting": false
+    },
+    {
+      "file": "tests/e2e/lower-scroll.spec.ts",
+      "sha256": "fd9e8294c8ccae8aba3dc05e9c85733dbe647c2f55092eb3fd5f53e51b689e1d",
+      "preexisting": false
+    },
+    {
+      "file": "tests/e2e/responsive.spec.ts",
+      "sha256": "ce53b740ba5f68aa177f2fef81b80a0871c816a7bf011b28ac11504925afc467",
+      "preexisting": false
+    }
+  ]
+}
