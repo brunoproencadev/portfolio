@@ -1428,9 +1428,11 @@ button.button-link {
     font-size: 0.8125rem;
   }
   .story-progress a {
+    min-width: 44px;
     min-height: 44px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     white-space: nowrap;
   }
   .story-progress-rail {
