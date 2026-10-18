@@ -1,14 +1,22 @@
+## Ícones reais das ferramentas — 2026-10-15
+
+Por solicitação do usuário, Python, NumPy e OpenCV usam os SVGs `original` do Devicon; PySerial usa o logo PNG indicado pela documentação oficial. Arquivos locais em `public/images/tools/`, fontes, bytes e SHA-256 em [tool-icons-manifest.json](tool-icons-manifest.json). Aquisição em 15/10/2026; URLs de origem mutáveis, bytes locais identificados pelo hash. Sem pacote adicional ou logos redesenhados.
+
+Licenças preservadas ao lado dos assets: Devicon MIT, Copyright 2015 konpa; PySerial BSD-3-Clause, Chris Liechti (texto obtido do repositório oficial). Logos identificam as ferramentas, sem alegar endosso. SVG/textos normalizados para UTF-8/LF; PNG original. O nome de cada ferramenta permanece como texto acessível; imagem decorativa com alt vazio evita repetição.
+
+A captura do Ateliê continua íntegra no mesmo WebP. A home passa a mostrar uma prévia limitada, com link explícito **Abrir captura completa**; isso substitui a indicação histórica abaixo de imagem integral no fluxo. Janelas e seus três pontos são molduras decorativas CSS, não controles falsos. Vídeo R4 permanece somente leitura e não integra assets da aplicação.
+
 # Mídias integradas na Fase F
 
 Correção2026-10-14: nenhum asset/fonte foi fabricado ou substituído. A faixa usa industry-week/hero.webp e o recorte superior via CSS de atelie-ingrid/catalog.webp, identificado na legenda; a captura integral do Ateliê continua no fluxo. industry-week/eras.webp permanece no inventário, mas deixou de integrar a faixa da home. Fundo decorativo deriva das mesmas imagens. Hashes/origens abaixo preservados; provas novas em story-correction-review.
 
 Cópias locais para home, geradas dos originais auditados em A. SHA-256 de cada original conferido antes da conversão. [Manifesto otimizado](project-media-manifest.json) registra arquivos, dimensões, bytes e hashes; [manifesto de origem](media-audit/manifest.json) contém URLs imutáveis e contexto.
 
-| Arquivo sob public/images/projects | Origem / uso na home | Verificação e direitos |
-| --- | --- | --- |
-| robosense-lab/m3.webp | Frame M3, repositório593768e; showcase RoboSense | Vídeo gravado, não streaming/hardware. Métrica desenhada pertence ao frame original; não novo benchmark. |
-| industry-week/hero.webp e eras.webp | Capturas desktop do GitHub Pages em2026-10-11; sequência Industry Week | Duas telas reais1440×900; deploymentb22aa4b distinto do main68ab01a. Não afirmar captura recente sem nova navegação. |
-| atelie-ingrid/catalog.webp | Screenshot integral do repositório66969cf, home-desktop.png; coluna Ateliê | Execução local documentada; não deployment público. Marca/fotos reservadas pelo README; revisar permissão antes de publicação proeminente. |
+| Arquivo sob public/images/projects  | Origem / uso na home                                                       | Verificação e direitos                                                                                                                     |
+| ----------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| robosense-lab/m3.webp               | Frame M3, repositório593768e; showcase RoboSense                           | Vídeo gravado, não streaming/hardware. Métrica desenhada pertence ao frame original; não novo benchmark.                                   |
+| industry-week/hero.webp e eras.webp | Capturas desktop do GitHub Pages em2026-10-11; sequência Industry Week     | Duas telas reais1440×900; deploymentb22aa4b distinto do main68ab01a. Não afirmar captura recente sem nova navegação.                       |
+| atelie-ingrid/catalog.webp          | Screenshot integral do repositório66969cf, home-desktop.png; coluna Ateliê | Execução local documentada; não deployment público. Marca/fotos reservadas pelo README; revisar permissão antes de publicação proeminente. |
 
 Evidências locais F em docs/story-review: capturas da aplicação, pranchas derivadas de gravações25fps e manifesto com hashes. WebMs completos ficam em .audit/phase-f, ignorados; nenhuma imagem documental é importada pela aplicação. Capturas padrão/gravações correspondem5c49407; wide-short após dbaae0e.
 
@@ -20,13 +28,13 @@ WebP qualidade85; somente resize proporcional, sem crop/edição da UI. Total428
 
 SVG inline em src/components/motion/home-motion.tsx reutiliza exatamente o linework original “olá” de docs/design-prototype/states.html, aprovado B. Quatro paths separados apenas para ordem de escrita, viewBox120×80 recorta o espaço externo; não altera a forma. Decoração aria-hidden, não assinatura atribuída a Bruno nem fotografia. Nenhuma fonte manuscrita/asset externo/download foi adicionado.
 
-Capturas intro-review/*.jpg mostram a aplicação real local. intro-*-*.jpg usa relógio controlado em milissegundos; recorded-sequence-* deriva dos WebMs reais locais em .audit/phase-e, não versionados. Pranchas podem conter resize e timestamp para análise, sem redesenho da interface. Manifesto intro-review/manifest.json, fonte75ba951 e condições de captura em PHASE_E_REVIEW registram a entrega E; evidências commitadas em a3d3126.
+Capturas intro-review/_.jpg mostram a aplicação real local. intro-_-_.jpg usa relógio controlado em milissegundos; recorded-sequence-_ deriva dos WebMs reais locais em .audit/phase-e, não versionados. Pranchas podem conter resize e timestamp para análise, sem redesenho da interface. Manifesto intro-review/manifest.json, fonte75ba951 e condições de captura em PHASE_E_REVIEW registram a entrega E; evidências commitadas em a3d3126.
 
 ## Hero — Fase D, 2026-10-12
 
 Manrope local já licenciada em C agora também serve o hero, com declaração compartilhada src/fonts/manrope.ts; arquivo/licença/hash permanecem iguais. Arco SVG de três paths é decoração autoral geométrica derivada do estudo B/R2, não screenshot, evidência de projeto ou imagem pessoal. Ícones de setas SVG também são autorais. Nenhum download ou asset de terceiros adicionado em D.
 
-hero-review/*.jpg são capturas reais do build local em Chromium; pranchas recorded-sequence usam frames de vídeos reais25fps com labels/resize apenas para comparação. entry-* são estados com relógio controlado. WebMs originais em .audit/phase-d permanecem locais, fora do Git; manifesto registra caminhos/hashes. Imagens documentais não são importadas pela aplicação.
+hero-review/_.jpg são capturas reais do build local em Chromium; pranchas recorded-sequence usam frames de vídeos reais25fps com labels/resize apenas para comparação. entry-_ são estados com relógio controlado. WebMs originais em .audit/phase-d permanecem locais, fora do Git; manifesto registra caminhos/hashes. Imagens documentais não são importadas pela aplicação.
 
 Pesquisa em 2026-10-11, GitHub público e Chromium 156.0.8078.4. Nenhuma mídia nova integrada à aplicação. Cópias em `docs/media-audit` são evidência de auditoria; futuros assets de produção usarão `public/images/profile`, `experiences` e `projects/<projeto>` quando a fase correspondente for aprovada. Não criar esses diretórios vazios antecipadamente.
 

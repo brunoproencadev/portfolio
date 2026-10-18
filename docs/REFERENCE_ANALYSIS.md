@@ -1,3 +1,16 @@
+## R4 — janelas e passagem horizontal, 2026-10-15
+
+Fonte nova autorizada pelo usuário: `D:\aNova pasta\Desktop\coisas after\references\4.mp4`, somente leitura. 1920×1080, 60 fps, 1764 frames, 29,4s; SHA-256 `58ed14b63e7d8753569c26750023c34d7abe740deb7f7e0bb965eb983e753460`. Inspeção inicial de 20 estados, seguida por 16 amostras consecutivas a cada 0,5s entre 18,5–26s: [prancha temporal](scroll-lower-review/reference4-horizontal.jpg).
+
+- 18,5–20s: seção Projetos sobe verticalmente até o primeiro trabalho, com texto à esquerda e janela à direita.
+- 20,5–21,5s: primeiro conjunto sai para a esquerda enquanto o segundo entra pela direita; a altura da composição se mantém. Janela escura, cantos arredondados e controles coloridos no topo.
+- 22,5–23,5s: segunda passagem lateral para o terceiro projeto; leitura em repouso entre transições.
+- 24,5–26s: último projeto volta a sair verticalmente, revelando o contato.
+
+Aplicação inicial dentro de F (`77d2506`): composição texto/janela no mesmo trilho horizontal para Industry Week e Ateliê; o showcase RoboSense permanece na passagem já aprovada. Essa versão usava um pin120svh. O refinamento vigente `b5e7875` preserva a ordem e o deslocamento lateral, amplia o pin para160svh e restringe-o a viewports≥1100×800; mobile/baixo permanecem verticais. Título, estado e janela viajam juntos. Dots são decorativos e não recebem foco. Detalhes e links reais permanecem no fluxo, fora da máscara.
+
+Diferenças deliberadas: dois estados em vez dos três de R4; sem copiar texto, assinatura, experiência ou métricas do autor; sem player ou UI inventada sobre as capturas. A duração filmada depende da roda e não mede a função de easing do site original. A versão inicial usava scrub0,35s; a vigente usa0,5s. Mobile/baixo/reduced/no-JS usam sequência vertical. Comparações: [correção inferior histórica](PHASE_F_LOWER_REVIEW.md) e [refinamento vigente](PHASE_F_TRANSITIONS.md).
+
 # Análise dos vídeos locais — Fase A
 
 Data: 2026-10-11. Fonte prioritária: `D:\aNova pasta\Desktop\coisas after\references`, somente leitura. Esta análise substitui as decisões de simplificação de [REFERENCES](REFERENCES.md), preservado como histórico. Não é aprovação de implementação nem direção de arte final da Fase B.

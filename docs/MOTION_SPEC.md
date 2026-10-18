@@ -1,3 +1,24 @@
+## Estado vigente F — transições e faixas, 2026-10-17
+
+Esta seção substitui as geometrias históricas abaixo. `HomeMotion` carrega o owner de scroll em qualquer viewport com `no-preference`; reduced motion mantém o fluxo estático. `section-transitions` coordena detalhes RoboSense, Sobre, abertura dos projetos e Competências com scrub0,45s no desktop e0,25s no compacto. Contato e footer ficam fora desse owner. Foco e hash acomodam as timelines antes da medição; pagehide, aba oculta, mudança de preferência e desmontagem liberam seus recursos.
+
+Projetos usam um único pin a partir de1100×800, top112px, extensão160svh. O trilho de duas colunas move xPercent0→−50 entre p0,2–0,8, ease none e scrub0,5s; fundos cruzam entre p0,325–0,675. Viewports menores ou baixos permanecem no fluxo vertical, mas recebem transições menores de seção. As faixas de contato cruzam a−6°/+6°, repetem dois grupos iguais e percorrem sentidos opostos em loop de34px/s. O delta do scroll adiciona impulso limitado a±600px/s e amortecido; IntersectionObserver, ResizeObserver, visibilitychange, reduced motion e eventos de página controlam execução e cleanup. Não há botão de pausa nem interceptação de wheel/touch. [Relatório e provas](PHASE_F_TRANSITIONS.md).
+
+## Histórico — correção F inferior + R4, 2026-10-15
+
+Substituiu o trecho inferior da integração abaixo, rejeitado pelo usuário; hero→RoboSense e navbar continuaram aprovados. [Relatório histórico](PHASE_F_LOWER_REVIEW.md). Os números desta seção descrevem o commit `77d2506` e não a implementação vigente.
+
+- **Projetos:** mesmo `home-reveals` e único pin120svh/top112px, elegível ≥900×700/no-preference. Janela altura100svh−160px; track largura200%, duas colunas de50%. Texto/estado/janela viajam em xPercent0→−50 entre p0,2–0,8, ease none; leitura nas extremidades e scrub0,35s. Fundos cruzam p0,35–0,65. Entrada scaleX0,92→1/máscara35→0% preservada; saída retorna à rolagem vertical.
+- **Ateliê:** preview clamp(280px,65svh,620px), original intacto e link para captura completa. Altura da seção em1440×900 cai de2402 para829px, sem alongamento vazio da coluna de texto.
+- **Sobre:** scale0,84→1/y110→0 e título x−80→0 distribuídos de top85% a bottom80%, encerrando quando o painel está visível. Texto decorativo x0→overflow negativo medido, sem distância percentual arbitrária.
+- **Competências:** composição desktop em CSS independentemente do estado GSAP; linhas estáticas. Título sticky/top144px somente ≥900×800/no-preference, sem segundo pin. Foco/retomada não troca a altura da seção.
+- **Contato:** translação das duas faixas −12→0% e8→−8%; inclinações constantes em CSS, sem novo giro durante a passagem.
+- **Foco e ciclo:** foco normal mantém o pin; teclado (`:focus-visible`) centraliza somente quando o alvo está sob a navbar ou fora do viewport. Clique não reposiciona o link entre mousedown e mouseup. Hash/reduced/pagehide continuam liberando e wheel/touch retomam com compensação da leitura. Hero mantém seu owner próprio. Cena horizontal não contém links escondidos.
+
+Ícones reais substituem apenas os símbolos tipográficos dos pop-ups, mantendo nomes, posição e timeline da passagem aprovada. GSAP/Motion não compartilham propriedades; listeners/import tardio/matchMedia têm cleanup. Sem dependência ou interceptação de wheel.
+
+## Histórico da integração anterior
+
 ## Integração F após aprovação da passagem — 2026-10-15
 
 O usuário aprovou hero→RoboSense e solicitou ferramentas e revisão do restante. Fonte4acc977; [relatório](PHASE_F_INTEGRATION_REVIEW.md). `HeroProject/HeroProjectMotion` compartilham a mesma passagem entre home e estudo local, preservando a geometria e timeline do protótipo abaixo. Ferramentas reais entram em p0,68: y28→0, scale0,55→1, opacity0→1, duration0,12, stagger0,025, power3.out. Todas acomodadas em p0,875; leitura até p1. Estado inicial de todas é aplicado por gsap.set dentro do contexto antes do tween, garantindo reversão e cleanup.
@@ -55,7 +76,7 @@ Base observada: [REFERENCE_ANALYSIS](REFERENCE_ANALYSIS.md). B aprovada; M01 imp
 | `SiteNavigation` + Motion já instalado | Estado/layout/entrada e saída da ilha           | Disclosure não modal, links reais, foco, Escape, clique externo, seção ativa, no-JS, cleanup                         |
 | `HomeMotion`                           | Elegibilidade, cancelamento, imports e watchdog | Storage opcional, guarda por documento, hash/scroll inicial, reduced motion em execução, imports tardios inofensivos |
 | `home-sequence` + GSAP                 | Intro e entrada coordenada do hero              | Contexto local e retorno de função de limpeza                                                                        |
-| `HeroProjectMotion` + ScrollTrigger    | Passagem hero→RoboSense e ferramentas           | Sticky nativo, foco no hero legível, reduced/no-JS, import tardio e desmontagem/revert                              |
+| `HeroProjectMotion` + ScrollTrigger    | Passagem hero→RoboSense e ferramentas           | Sticky nativo, foco no hero legível, reduced/no-JS, import tardio e desmontagem/revert                               |
 | `home-reveals` + ScrollTrigger         | Faixa de projetos e passagens editoriais        | SSR legível, âncoras nativas, conteúdo alcançável por foco, desmontagem/revert                                       |
 | CSS                                    | Layout estático, foco, hover e fallback         | Sem ocultação global aguardando JS, contraste e dimensões reservadas                                                 |
 

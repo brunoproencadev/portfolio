@@ -30,3 +30,13 @@ No PowerShell, ler texto com -Encoding utf8 ou File.ReadAllText; preservar UTF-8
 - Preservar semântica, teclado/foco, no-JS, reduced motion em execução, conteúdo disponível em falha, cleanup e separação dados/apresentação. GSAP e Motion não devem controlar a mesma propriedade do mesmo elemento.
 - Manter docs/TASKS.md, docs/HANDOFF.md, docs/VERIFICATION.md e decisões sincronizados. CODEX.md é apoio explicitamente referenciado, não substitui estas instruções.
 - Fluxo do redesign: Analyze → Specify → Plan → Prototype → Implement → Test → Compare → Refine → Commit → Review → Request Approval. Ao fechar a fase, relatar entregas, SHAs, provas, limitações e próxima fase; parar até aprovação explícita.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
