@@ -42,7 +42,7 @@ test("one bounded scene moves projects horizontally, changes backgrounds and rev
   await expect(page.locator(".story-band h3").first()).toContainText(
     "Museu de Arte Moderna",
   );
-  await expect(page.locator(".story-stage a")).toHaveCount(12);
+  await expect(page.locator(".story-stage a")).toHaveCount(14);
   const first = await page.locator(".story-window").boundingBox();
   await progress(page, start, 0.5);
   await expect.poll(x).toBeLessThan(-50);
@@ -145,6 +145,21 @@ for (const fallback of ["no-js", "reduced", "hash"] as const) {
             img.evaluate((el) => (el as HTMLImageElement).naturalWidth),
           )
           .toBeGreaterThan(0);
+        if (
+          await img.evaluate((el) => getComputedStyle(el).objectFit === "cover")
+        ) {
+          // Museum deliberately fills its window by cropping, without stretching pixels.
+          const fill = await img.evaluate((el) => {
+            const window = el.parentElement!.getBoundingClientRect();
+            const image = el.getBoundingClientRect();
+            return Math.max(
+              Math.abs(image.width - window.width),
+              Math.abs(image.height - window.height),
+            );
+          });
+          expect(fill).toBeLessThan(1.1);
+          continue;
+        }
         const ratio = await img.evaluate((el) => {
           const i = el as HTMLImageElement;
           return Math.abs(
@@ -160,7 +175,7 @@ for (const fallback of ["no-js", "reduced", "hash"] as const) {
       ).toBe(true);
       await expect(
         page.locator(".selected-work a[href^='/projetos/']"),
-      ).toHaveCount(2);
+      ).toHaveCount(3);
     } finally {
       await context.close();
     }

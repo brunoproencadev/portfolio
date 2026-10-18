@@ -5,6 +5,7 @@ const paths = [
   "/projetos/robosense-lab",
   "/projetos/industry-week-senai",
   "/projetos/atelie-ingrid-xavier",
+  "/projetos/museu-arte-moderna",
 ];
 const indexable =
   process.env.SITE_INDEXABLE === "true" && process.env.VERCEL_ENV !== "preview";
@@ -61,7 +62,7 @@ test("metadata, crawler policy and sitemap agree across all public routes", asyn
   expect(await robots.text()).toContain(indexable ? "Allow: /" : "Disallow: /");
   const sitemap = await request.get("/sitemap.xml");
   const xml = await sitemap.text();
-  expect((xml.match(/<loc>/g) ?? []).length).toBe(indexable ? 4 : 0);
+  expect((xml.match(/<loc>/g) ?? []).length).toBe(indexable ? 5 : 0);
   if (indexable)
     for (const path of paths)
       expect(xml).toContain(new URL(path, process.env.SITE_URL).href);

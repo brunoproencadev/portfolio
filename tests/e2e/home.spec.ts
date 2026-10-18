@@ -48,7 +48,7 @@ test("projects show sources and limits and all internal links resolve", async ({
       card.getByRole("link", { name: `Ver repositório de ${name}` }),
     ).toHaveAttribute("href", /^https:\/\/github\.com\/brunoproencadev\//);
   }
-  expect(await page.locator('a[href^="/projetos/"]').count()).toBe(3);
+  expect(await page.locator('a[href^="/projetos/"]').count()).toBe(4);
   expect(
     await page.evaluate(() =>
       [...document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')].every(
