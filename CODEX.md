@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização2026-10-18: usuário aprovou expressamente F e autorizou enviar os commits ao GitHub e fazê-los contar nas contribuições. Integração na `main` por fast-forward preserva o histórico; `vercel.json` bloqueia deploy Git automático apenas da `main` para respeitar o gate separado de publicação. G–I não autorizadas. Estado atual e provas em HANDOFF/TASKS/LAUNCH; os registros de F aguardando aceite abaixo são históricos.
+
 Atualização 2026-10-17 — fechamento anterior `875da83`; carrossel Museu → Industry Week → Ateliê → kord, Clawd central acima do RoboSense e bounce em `c3a801d`. Relatório vigente `docs/PHASE_F_PROJECTS.md`, preview http://127.0.0.1:3108/. 120 E2E distintos cobertos: 114/120 iniciais, seis falhas corrigidas, confirmação 63/63; build/strict/lint e 7 unitários. Alterações anteriores preservadas fora dos novos commits; provas da árvore completa. F aguarda avaliação perceptual; G–I/push/deploy não autorizados. Registros abaixo são históricos.
 
 Atualização 2026-10-17 — F: refinamentos src/testes consolidados em `2571228`; implementadas transições reversíveis das seções e faixas cruzadas em loop que reagem ao scroll, sem controle de pausa. Ver evidências e limites em `docs/PHASE_F_TRANSITIONS.md`; F aguarda revisão visual do usuário. Os docs/runs de trabalho preexistentes permanecem preservados. Sem push/deploy ou autorização para G–I. O fechamento final está em HANDOFF/TASKS/VERIFICATION.

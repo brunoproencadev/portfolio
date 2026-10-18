@@ -1,5 +1,13 @@
 # Preparação de publicação — Fase 8
 
+## Integração GitHub da fase F — 2026-10-18
+
+F aprovada pelo usuário, com pedido explícito de envio ao GitHub e atribuição no gráfico de contribuições. A branch padrão `main` recebe os commits originais do redesign por fast-forward, sem squash ou reescrita. O repositório é privado, não é fork, e o GitHub associa o e-mail dos commits a `brunoproencadev`.
+
+Os registros de deployment do GitHub confirmaram que pushes na `main` acionavam produção. Para cumprir o gate de publicação separado, `vercel.json` define `git.deploymentEnabled.main=false` antes da integração. Só a criação automática de deployments por Git dessa branch fica desativada; previews das demais branches conservam a configuração anterior. Esse bloqueio é deliberado e deverá ser revisto no gate de publicação; integrar na `main` não autoriza deploy, indexação ou G–I. [Configuração oficial](https://vercel.com/docs/project-configuration/git-configuration).
+
+Contribuições requerem commits alcançáveis pela branch padrão e e-mail associado; a atualização do gráfico pode levar até24h. Como o repositório é privado, a exibição pública dos quadrados também depende da preferência pessoal de contribuições privadas. Essa preferência não foi alterada. [Regras do GitHub](https://docs.github.com/en/account-and-profile/how-tos/contribution-settings/troubleshooting-missing-contributions).
+
 Fase 8 publicada em 2026-10-11: https://brunoproencasilva.vercel.app. Usuário autorizou finalizar a publicação quando o MCP estivesse conectado, confirmou login GitHub e autorizou Vercel a acessar myportifolio. Os seis commits pendentes já haviam sido enviados por pedido explícito, com remoto confirmado em 0272dea.
 
 ## Lançamento confirmado

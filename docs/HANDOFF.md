@@ -1,4 +1,12 @@
-# Estado vigente — competências e entrada do carrossel, 2026-10-18
+# Estado vigente — F aprovada e integração GitHub autorizada, 2026-10-18
+
+O usuário aprovou expressamente F: “Perfeito, a fase F finalmente está adequada”, e pediu enviar os commits ao GitHub e fazê-los contar no histórico de contribuições. Os sete commits locais até `75dde1671c97527c6b71ce0043e4281c90893b15` foram enviados e o remoto foi atualizado de `b966e4b` para esse SHA. A API autenticada confirmou: repositório privado `brunoproencadev/myportifolio`, não fork, branch padrão `main`, e autor GitHub `brunoproencadev` para o e-mail utilizado em todos os56 commits de `main..75dde16`.
+
+Integração preparada: fast-forward da `main`, sem squash/rebase/force ou mudança de autoria/datas. Antes da integração, `vercel.json` desativa deploy Git automático somente da `main`, pois o GitHub registrou deploy Production de `aa70f4c` e o usuário não autorizou nova publicação. Previews das demais branches permanecem. Detalhes e regra de contribuições privadas em LAUNCH. G–I não iniciadas; próximos trabalhos dependem de confirmação específica.
+
+Código já validado na revisão anterior: build/strict/lint,7 unitários e30/30 E2E finais, com histórico e limitações em VERIFICATION/PHASE_F_COMPETENCIES. Esta preparação altera somente configuração Git/Vercel e registros documentais; validar JSON, formato, diff e ancestralidade antes do commit. A confirmação remota da integração será registrada após o push, com o SHA então alcançável pelas duas branches.
+
+# Histórico — competências e entrada do carrossel, 2026-10-18
 
 Pedido concluído: competências dos projetos Museu/kord adicionadas com fontes existentes, totalizando cinco grupos; ícones dos quatro projetos do carrossel surgem depois da imagem (240ms), com fade/escala/subida e curva `back.out(2.6)`. RoboSense preservado. Nota final de estudos mantém contraste integral. Sem dependências novas ou alterações nos cases. [Relatório e evidências](PHASE_F_COMPETENCIES.md).
 
