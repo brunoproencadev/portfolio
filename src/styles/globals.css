@@ -1118,8 +1118,10 @@ button.button-link {
   height: auto;
 }
 .story-image-wide img {
-  top: 50%;
-  transform: translateY(-50%);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .story-slide figcaption {
   font-size: 0.75rem;

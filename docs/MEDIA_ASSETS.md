@@ -1,3 +1,9 @@
+## Museu — recuperação de resolução nativa, 18/10/2026
+
+Por solicitação do autor, `public/images/projects/museu-arte-moderna/hall.webp` foi recuperado do mesmo frame aos10s do vídeo original `projeto_arte_moderna.mp4`, preservado somente leitura. A captura passa de1440×665/77.608bytes para2340×1080/284.294bytes; SHA256 atual `f97e25bc965fe4671ee6e868d47b557059fcedbe1c59267138354cb743bdda4b`. PNG extraído antes da compressão:2340×1080/1.779.124bytes, SHA256 `d124e857c7c6c6943d94bf5e33f490e492bb5562361b649606bc0d1253f80db6`. Vídeo original SHA256 `975ae7a9d5f5b8359c6bd07c52267a800a3d6c57d03f6d2e284a7484bf510e6e`. Sem reconstrução generativa ou novos detalhes artificiais.
+
+Home e case usam `object-fit: cover`: a imagem preenche a janela, com recorte proporcional e link ao arquivo integral. Os manifestos anteriores documentam a versão antiga e permanecem intactos. O relato escolar e a autoria coletiva são atribuídos ao usuário; não demonstram contribuições Git individuais, headset validado ou resultado pedagógico medido. Fontes técnicas fixadas e provas atuais em [PHASE_G_CINEMATIC_REVIEW](PHASE_G_CINEMATIC_REVIEW.md).
+
 ## Fase G — identidade e cases, 18/10/2026
 
 Avatar atual reconferido pela API pública GitHub e download: `https://avatars.githubusercontent.com/u/271389368?v=4`, PNG 460×460, 101.669 bytes, SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`. Idêntico byte a byte ao arquivo local da ilha. Ilustração usada pelo autor no perfil, sem atribuir autoria da arte ou licença adicional.
