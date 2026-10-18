@@ -1,5 +1,7 @@
 # Aceitação visual e funcional — redesign A–I
 
+Estado vigente18/10/2026: F aprovada e G autorizada/implementada localmente para avaliação, conforme PHASE_G_REVIEW. G01: fontes reconferidas, fotografias/eventos sem originais/contexto permanecem pendentes. G02: três cases e fallbacks verificados. G03: avatar atual,ICO/PNG/Apple e metadata HTTP comprovados; inspeção humana da aba ainda pendente. Não declarar G01/G03 integralmente aceitos. H/I e novos pushes/deploys aguardam autorização explícita; relatos datados inferiores são históricos.
+
 Estado vigente2026-10-14: F reaberta e correção autorizada; relatório PHASE_F_CORRECTION_REVIEW. A tabela de requisitos permanece; a correção exige comprovar CTA/menu→scroll e continuidade hero→mídia→troca de projetos→editorial→contato. Fotografias/3D ausentes são diferenças explícitas, não requisitos concluídos. Status datado abaixo é histórico; G–I continuam sem autorização.
 
 Status2026-10-13: B/C/D aprovadas. E01–E02 implementados e validados em [PHASE_E_REVIEW](PHASE_E_REVIEW.md), fonte75ba951, revisão independente ship; aguardam aprovação do usuário. F–I não autorizados. [Referências](REFERENCE_ANALYSIS.md), [movimento](MOTION_SPEC.md), [plano](VISUAL_REDESIGN_PLAN.md).

@@ -16,9 +16,9 @@ Portfólio pessoal de um desenvolvedor em formação que aprende construindo apl
 
 ## Capabilities and Constraints
 
-Correção F em2026-10-14 após rejeição visual: hero→RoboSense coordenado, faixa troca Industry por Ateliê, passagens textuais em Sobre/competências/contato; foco/hash suspendem e gesto seguinte retoma scroll. Sem fotografias novas, objeto3D, favicon ou mudanças nos cases. Estado/provas vigentes: docs/PHASE_F_CORRECTION_REVIEW.md; o parágrafo abaixo registra a primeira aplicação F, superada pela correção.
+Estado vigente em 18/10/2026: F aprovada; G autorizada por “dê sequência com a fase G” e entregue localmente para avaliação em [PHASE_G_REVIEW](docs/PHASE_G_REVIEW.md). Os três cases usam Manrope e neutros/violeta da identidade aprovada, com capturas reais antes do contexto, diagramas conceituais junto da arquitetura e catálogo em região rolável com acesso ao arquivo completo. Ícones derivados do avatar GitHub exato substituem BP/; HTTP e estrutura ICO/PNG comprovados, aparência na aba visível ainda pendente de inspeção humana. Fotografias pessoais opcionais continuam pendentes de originais/contexto; a pergunta sobre sua finalidade não confirmou dispensa. H/I e novos push/deploy exigem autorização explícita.
 
-Preservar o projeto Next/React existente, três cases, dados separados, SEO, links e acessibilidade. Redesign por gates A–I; A–E concluídas/aprovadas; F autorizada pelo “continue” no gate E/F e aplicada localmente em2026-10-13. Navegação dimensional, hero, saudação/passagem e cenas de projetos com mídia real. RoboSense aproxima em fluxo; Industry troca dois estados verificados no mesmo projeto (adaptações R2/R3, sem equivalência integral); Ateliê usa screenshot vertical do repositório. G–I exigem gates individuais. Nenhum push/deploy autorizado.
+Preservar o projeto Next/React existente, três cases, dados separados, SEO, links e acessibilidade. Redesign por gates A–I; A–F aprovadas, G em avaliação. Navegação dimensional, hero, saudação/passagem e cenas de projetos com mídia real mantêm a coreografia aprovada. A home apresenta RoboSense e carrossel Museu → Industry Week → Ateliê → kord; Museu/kord levam a repositórios, sem novas rotas de case. Industry distingue captura do deployment e revisão do código; Ateliê preserva a captura vertical do repositório. Nenhum push/deploy autorizado em G.
 
 ## Brand Commitments
 

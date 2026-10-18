@@ -1,0 +1,117 @@
+[
+  {
+    "file": "docs/phase-g-review/1440-sequence.jpg",
+    "bytes": 130213,
+    "sha256": "af13c81b798e75e88c177c9cb1e830fb37137f90555f95767af35aeea6370a04"
+  },
+  {
+    "file": "docs/phase-g-review/374-sequence.jpg",
+    "bytes": 168122,
+    "sha256": "be7324515c50a12c2c95031c43e7a6601cad4777b88d217b6465a7a610169b95"
+  },
+  {
+    "file": "docs/phase-g-review/atelie-ingrid-xavier-1440-catalog-link-focus.jpg",
+    "bytes": 100502,
+    "sha256": "749ca99ae79a7c6a083781c0307b94e18b9227765760e1d6f5c9485de276057a"
+  },
+  {
+    "file": "docs/phase-g-review/atelie-ingrid-xavier-1440-full.jpg",
+    "bytes": 410471,
+    "sha256": "d6dc2f8128c855963021b14a0ef955ddd4339128a48edad70af2123afb3d394d"
+  },
+  {
+    "file": "docs/phase-g-review/atelie-ingrid-xavier-1920-catalog-link-focus.jpg",
+    "bytes": 134920,
+    "sha256": "7b6aa5f91006ed1de4f1e818a54a63b1ae6db96e981546b93a4a932790fac581"
+  },
+  {
+    "file": "docs/phase-g-review/atelie-ingrid-xavier-1920-intro.jpg",
+    "bytes": 110528,
+    "sha256": "4c68df042384bf953621671e2aeb5cf09c347d951d866b1a9ca1bd18804f0303"
+  },
+  {
+    "file": "docs/phase-g-review/atelie-ingrid-xavier-375-catalog-link-focus.jpg",
+    "bytes": 41867,
+    "sha256": "62c87e0ac905868c21e8b810e27fccbf21665de3ba21c7d6ca921ec2387e6617"
+  },
+  {
+    "file": "docs/phase-g-review/atelie-ingrid-xavier-375-full.jpg",
+    "bytes": 299998,
+    "sha256": "f849d385e21420bcf751872148838302bec2e460e06fc5ccea905c1c571ca35a"
+  },
+  {
+    "file": "docs/phase-g-review/browser.json",
+    "bytes": 6080,
+    "sha256": "3c6221e505cc90409b4c3f8621f129e38b8618a213d2a3526c2f357e3bcc8e09"
+  },
+  {
+    "file": "docs/phase-g-review/detector.json",
+    "bytes": 12058,
+    "sha256": "e7e15128cb5c1979a6580a00013bc03bcc0237398f95fb516b42b22583beff08"
+  },
+  {
+    "file": "docs/phase-g-review/favicon-sizes.png",
+    "bytes": 9717,
+    "sha256": "bc7598bc0697dfdb1e602632e43330d8384f6a26c8641b8b36ea3da37bdc4588"
+  },
+  {
+    "file": "docs/phase-g-review/finish-review.md",
+    "bytes": 1572,
+    "sha256": "cc931472717cc1a0650819d7fdcd7a339478483d98949d473254ee361390dbdc"
+  },
+  {
+    "file": "docs/phase-g-review/icons.json",
+    "bytes": 925,
+    "sha256": "d3bd7d4eb1eeb44195c43c2bf4399211bbaa7f6df6b8fd5d05a46a0f574f2f20"
+  },
+  {
+    "file": "docs/phase-g-review/industry-week-senai-1440-full.jpg",
+    "bytes": 613465,
+    "sha256": "26b9500279cbaae4f4924ae2409be4b96494f178a36eae44dd2c02ef648b7e08"
+  },
+  {
+    "file": "docs/phase-g-review/industry-week-senai-1920-intro.jpg",
+    "bytes": 142051,
+    "sha256": "18db01ecc3212b4fee091526420fddb7d580883b2c8a923519a42a769f7308d9"
+  },
+  {
+    "file": "docs/phase-g-review/industry-week-senai-375-full.jpg",
+    "bytes": 323344,
+    "sha256": "40d17233f46be51d52967a32635c6295add92ef15fbd425e3dbab90318fd8ecc"
+  },
+  {
+    "file": "docs/phase-g-review/recordings.json",
+    "bytes": 560,
+    "sha256": "8f92ab800e163f6577e6411ba8c30ea889a3643e0ac56412ece63231f3820a0f"
+  },
+  {
+    "file": "docs/phase-g-review/robosense-lab-1440-full.jpg",
+    "bytes": 446889,
+    "sha256": "74b9d225db9267a0081fadf54f59b39f80b2eeaf563c1d47a625bd51fb5f81b1"
+  },
+  {
+    "file": "docs/phase-g-review/robosense-lab-1920-intro.jpg",
+    "bytes": 114628,
+    "sha256": "e891bea3dfd164961853ba9c8753654d6d4315ca09b90aa6f00cba95b9fb571d"
+  },
+  {
+    "file": "docs/phase-g-review/robosense-lab-375-full.jpg",
+    "bytes": 307366,
+    "sha256": "30e8ef04aa6234dde5f958db98478cd20aa8703b5735c707f7e0be5c0c517f97"
+  },
+  {
+    "file": "docs/phase-g-review/sources.json",
+    "bytes": 3216,
+    "sha256": "368f9123c2ca93a3032d589b053572c3cad5405f6f642e0390289851044ea448"
+  },
+  {
+    "file": "docs/phase-g-review/verification.json",
+    "bytes": 6442,
+    "sha256": "4ce07d8aa9b6d5892342067b2f568693c35790af9221ad6cb01f7f3d9e312a2c"
+  },
+  {
+    "file": "docs/phase-g-review/video-confirmation.json",
+    "bytes": 856,
+    "sha256": "4008379b573413382146102743e28851ae4ba0b5fee8adedc145871e4c7c95ad"
+  }
+]

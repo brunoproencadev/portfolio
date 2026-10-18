@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização2026-10-18 — G autorizada por “dê sequência com a fase G” e implementada localmente para avaliação: plano6c1c768, ícones161b6a4, casesaee6ea7. Relatório vigente docs/PHASE_G_REVIEW.md. Build/strict/lint,8 unitários e60/60 E2E aprovados; formato dos alterados passa, global falha em24 arquivos preexistentes. Fotografias pessoais/contexto e inspeção humana da aba continuam pendentes. F já aprovada. H/I, novos pushes e deploys não autorizados. HANDOFF/TASKS/VERIFICATION prevalecem sobre os registros históricos abaixo.
+
 Atualização2026-10-18: usuário aprovou expressamente F e autorizou enviar os commits ao GitHub e fazê-los contar nas contribuições. Integração na `main` por fast-forward preserva o histórico; `vercel.json` bloqueia deploy Git automático apenas da `main` para respeitar o gate separado de publicação. G–I não autorizadas. Estado atual e provas em HANDOFF/TASKS/LAUNCH; os registros de F aguardando aceite abaixo são históricos.
 
 Atualização 2026-10-17 — fechamento anterior `875da83`; carrossel Museu → Industry Week → Ateliê → kord, Clawd central acima do RoboSense e bounce em `c3a801d`. Relatório vigente `docs/PHASE_F_PROJECTS.md`, preview http://127.0.0.1:3108/. 120 E2E distintos cobertos: 114/120 iniciais, seis falhas corrigidas, confirmação 63/63; build/strict/lint e 7 unitários. Alterações anteriores preservadas fora dos novos commits; provas da árvore completa. F aguarda avaliação perceptual; G–I/push/deploy não autorizados. Registros abaixo são históricos.

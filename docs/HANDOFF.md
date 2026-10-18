@@ -1,4 +1,16 @@
-# Estado vigente — F aprovada e integração GitHub autorizada, 2026-10-18
+# Estado vigente — G implementada para avaliação, 2026-10-18
+
+O usuário autorizou G por “dê sequência com a fase G”. [Relatório](PHASE_G_REVIEW.md): três cases com capturas reais, leitura alinhada à identidade B, diagramas junto da arquitetura, fontes fixadas reconferidas e favicon/PNG/Apple derivados do avatar GitHub exato. Sobre/home/coreografia F preservados. Fotografias pessoais/eventos continuam sem originais/contexto; o usuário perguntou sua finalidade e recebeu explicação, sem confirmar dispensa. Nenhuma nova foto presumida.
+
+Commits locais: `6c1c768` — plano e decisões; `161b6a4` — ícones/proveniência/gerador/regressões; `aee6ea7` — cases, mídia e leitura. Este fechamento documental reúne o relatório e as provas; consultar seu SHA por `git log -1 -- docs/PHASE_G_REVIEW.md`, evitando autorreferência.
+
+Validação: build/strict/lint,8/8 unitários e60/60 E2E Chromium/Firefox/WebKit, sem skips/retries. Nove estados visuais/42 capturas e duas gravações de confirmação; zero overflow/pageerrors/axe nos estados examinados. Formato dos arquivos alterados passa; check global falha em24 arquivos preexistentes, preservados. Histórico de crashes sandbox e expectativas corrigidas em VERIFICATION. WebKit/Windows usa foco explícito no novo teste de link, sem comprovar Tab nativo. Inspeção da aba visível, fotos/contextos, direitos de destaque Ateliê e métricas de campo continuam pendentes. Não declarar G01/G03 integralmente aceitos.
+
+Revisão independente pediu somente alinhamento de PRODUCT/DESIGN; corrigido pelo documenter. Verdict posterior `ship` cobre apenas persistence corrigida, sem substituir aceite visual/perceptual ou liberar a próxima fase. Evidências/documentos e seus links/hashes conferidos.
+
+Revisão local: http://127.0.0.1:3110/projetos/robosense-lab. Browser/provas em `docs/phase-g-review`; WebMs locais em `.audit/phase-g/video-confirm`. Nenhum push/deploy desta fase. Próximo gate: avaliação G e autorização explícita de H para QA completo/performance, com decisão sobre as pendências. Não iniciar H/I automaticamente; gate vem das instruções AGENTS.md do usuário.
+
+# Histórico — F aprovada e integração GitHub autorizada, 2026-10-18
 
 O usuário aprovou expressamente F: “Perfeito, a fase F finalmente está adequada”, e pediu enviar os commits ao GitHub e fazê-los contar no histórico de contribuições. Os sete commits locais até `75dde1671c97527c6b71ce0043e4281c90893b15` foram enviados e o remoto foi atualizado de `b966e4b` para esse SHA. A API autenticada confirmou: repositório privado `brunoproencadev/myportifolio`, não fork, branch padrão `main`, e autor GitHub `brunoproencadev` para o e-mail utilizado em todos os56 commits de `main..75dde16`.
 

@@ -1,0 +1,158 @@
+{
+  "e2e": {
+    "command": "node node_modules/@playwright/test/cli.js test cases.spec.ts seo.spec.ts error.spec.ts --workers=3 --reporter=json",
+    "stats": {
+      "startTime": "2026-10-18T09:30:20.043Z",
+      "duration": 46745.747,
+      "expected": 60,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "engines": ["chromium", "firefox", "webkit"],
+    "retries": 0,
+    "environment": "Windows, outside sandbox"
+  },
+  "initialAttempt": {
+    "completed": false,
+    "report": "Interrupted after repeat Firefox page creation crashes; error-context files preserved locally.",
+    "failures": [
+      {
+        "file": "cases-atelie-ingrid-xavier-27d9f-te-accessible-case-at-375px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-atelie-ingrid-xavier-2e7e8-e-accessible-case-at-1440px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-atelie-ingrid-xavier-7a328-te-accessible-case-at-768px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-atelie-ingrid-xavier-ae1cb-te-accessible-case-at-320px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-case-text-sources-an-11481-ed-media-and-reduced-motion-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-case-text-sources-an-11481-ed-media-and-reduced-motion-webkit.md",
+        "cause": "Native link Tab behavior on Windows WebKit"
+      },
+      {
+        "file": "cases-cases-and-navigation-41d5a-vailable-without-JavaScript-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-client-navigation-di-6b9b1-d-does-not-replay-the-intro-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-industry-week-senai--29b6b-te-accessible-case-at-768px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-industry-week-senai--a2dbd-te-accessible-case-at-375px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-industry-week-senai--c330d-e-accessible-case-at-1440px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-industry-week-senai--c6bac-te-accessible-case-at-320px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-robosense-lab-render-096d5-te-accessible-case-at-375px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-robosense-lab-render-9c055-te-accessible-case-at-320px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-robosense-lab-render-cd9a7-te-accessible-case-at-768px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-robosense-lab-render-f21e7-e-accessible-case-at-1440px-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "cases-unknown-slugs-and-in-03eae-eturn-useful-HTTP-404-pages-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "error-failed-server-naviga-5bab6-keyboard-recovery-via-retry-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "error-failed-server-naviga-7312b--keyboard-recovery-via-home-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "seo-metadata-crawler-polic-94651-ee-across-all-public-routes-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "seo-native-metadata-assets-f2d97-cted-formats-and-dimensions-chromium.md",
+        "cause": "Favicon URL includes Next version query"
+      },
+      {
+        "file": "seo-native-metadata-assets-f2d97-cted-formats-and-dimensions-firefox.md",
+        "cause": "Firefox page creation crashed in sandbox"
+      },
+      {
+        "file": "seo-native-metadata-assets-f2d97-cted-formats-and-dimensions-webkit.md",
+        "cause": "Favicon URL includes Next version query"
+      }
+    ]
+  },
+  "formatting": {
+    "changedFiles": "PASS",
+    "fullCheck": {
+      "exitCode": 1,
+      "failures": [
+        ".impeccable/design.json",
+        "docs/hero-review/finish-review.md",
+        "docs/hero-review/lighthouse-environment.json",
+        "docs/hero-review/lighthouse-summary.json",
+        "docs/hero-review/results.json",
+        "docs/intro-review/lighthouse-environment.json",
+        "docs/intro-review/lighthouse-summary.json",
+        "docs/intro-review/results.json",
+        "docs/PHASE_D_REVIEW.md",
+        "docs/PHASE_E_REVIEW.md",
+        "docs/PHASE_F_GAP_ANALYSIS.md",
+        "docs/PHASE_F_REVIEW.md",
+        "docs/scroll-gap-review/navigation-bug.json",
+        "docs/scroll-integration-review/recordings.json",
+        "docs/scroll-integration-review/verification.json",
+        "docs/scroll-transitions-review/browser.json",
+        "docs/scroll-transitions-review/manifest.json",
+        "docs/story-correction-review/recordings.json",
+        "docs/story-correction-review/results.json",
+        "docs/story-correction-review/verification.json",
+        "docs/story-review/capture-results.json",
+        "docs/story-review/deployment-check.json",
+        "docs/story-review/motion-samples.json",
+        "docs/story-review/wide-short-results.json"
+      ],
+      "initialFailureCount": 25,
+      "explanation": "Initial global check had 25 pre-existing failures; VISUAL_REDESIGN_PLAN was updated for G and formatted, leaving the listed historical files unchanged."
+    }
+  },
+  "limits": [
+    "WebKit Windows: explicit focus replaces Tab-to-native-link assertion; see QA_PHASE7.",
+    "No new Lighthouse, field INP, physical devices, screen reader or visible browser-tab inspection."
+  ],
+  "detector": {
+    "target": ["src/app/projetos/[slug]/page.tsx", "src/styles/globals.css"],
+    "primaryFindings": 0,
+    "advisories": 23,
+    "scope": "Existing CSS and snapshot drift; no system repair authorized."
+  }
+}

@@ -1,6 +1,6 @@
 ---
-name: "Bruno Proença Silva — direção B e refinamento C/D/E/F"
-description: "Identidade B–E preservada; refinamento local F com canvas escuro contínuo, projetos lado a lado e contato em destaque."
+name: "Bruno Proença Silva — direção B e extensão C/D/E/F/G"
+description: "Identidade aprovada preservada; home F e leitura dos três cases G sobre neutros escuros, violeta e Manrope."
 colors:
   background: "#08090d"
   surface: "#202024"
@@ -196,9 +196,11 @@ components:
     width: "404px"
 ---
 
-# Design System: Bruno Proença Silva — direção B e refinamento C/D/E/F
+# Design System: Bruno Proença Silva — direção B e extensão C/D/E/F/G
 
 ## Overview
+
+**Extensão G — 18/10/2026:** os três cases existentes usam Manrope e os mesmos papéis escuros/violeta registrados em `f-*`, sem criar outro sistema ou alterar a home aprovada. Capturas reais precedem o contexto; diagramas conceituais ficam na arquitetura, com legenda explícita. O catálogo preserva proporção, região rolável e link para o arquivo integral. Ícones ICO/PNG/Apple derivam proporcionalmente do avatar GitHub exato. [Revisão G](docs/PHASE_G_REVIEW.md) registra provas e limites: fotografias pessoais opcionais permanecem pendentes de originais/contexto; HTTP e estrutura dos ícones estão comprovados, mas sua aparência na aba visível depende de inspeção humana.
 
 **Incremento F — projetos e pop-ups, 17/10/2026:** carrossel Museu → Industry Week → Ateliê → kord, com dados e mídia reais. Mantém a janela e a composição existentes; Museu panorâmico aparece integral, sem recorte. Clawd central no topo do RoboSense, janela 40px abaixo para liberar espaço; bounce breve de chegada, sem loop, retirado em reduced motion. Os novos projetos levam a repositórios, com contexto acadêmico/compartilhado documentado. Especificação/provas em `docs/PHASE_F_PROJECTS.md`.
 
@@ -208,7 +210,7 @@ components:
 
 Nome sob uma borda de luz conduz a trabalho verificável, transformando curiosidade em evidência visual. Preto profundo, luz violeta interior, Manrope aberta e cápsula cinza sustentam essa direção. Espaço, escala e sombras suaves organizam a leitura sobre um fundo contínuo; as divisões entre seções não recebem linhas.
 
-Os tokens sem prefixo preservam a direção do [protótipo B](docs/design-prototype/index.html); `hero-*` registra a identidade D, e `f-*` descreve a home atual. Os cases preservam o ciclo anterior. [DESIGN_SYSTEM](docs/DESIGN_SYSTEM.md), [COMPONENT_SPEC](docs/COMPONENT_SPEC.md) e [VISUAL_DIRECTION](docs/VISUAL_DIRECTION.md) guardam os contratos aprovados; descrições antigas de Sobre claro, três colunas e troca vertical não representam este refinamento. Não importar o CSS documental no app nem migrar tokens globalmente a partir deste registro.
+Os tokens sem prefixo preservam a direção do [protótipo B](docs/design-prototype/index.html); `hero-*` registra a identidade D, e `f-*` descreve a home atual e os papéis de cor compartilhados pelos cases G. [DESIGN_SYSTEM](docs/DESIGN_SYSTEM.md), [COMPONENT_SPEC](docs/COMPONENT_SPEC.md) e [VISUAL_DIRECTION](docs/VISUAL_DIRECTION.md) guardam os contratos aprovados; descrições antigas de Sobre claro, três colunas e troca vertical não representam este refinamento. Não importar o CSS documental no app nem migrar tokens globalmente a partir deste registro.
 
 **Key Characteristics:**
 
@@ -218,11 +220,11 @@ Os tokens sem prefixo preservam a direção do [protótipo B](docs/design-protot
 - Movimento nas bordas da leitura, mantendo o texto central nítido.
 - Navegação e leitura disponíveis sem JavaScript.
 
-As revisões [B](docs/PHASE_B_REVIEW.md), [C](docs/island-review/results.json), [D](docs/PHASE_D_REVIEW.md), [E](docs/PHASE_E_REVIEW.md) e [F original](docs/PHASE_F_REVIEW.md) preservam as evidências e limites de suas versões. O estado atual tem capturas desktop/mobile, pranchas temporais e hashes em [PHASE_F_TRANSITIONS](docs/PHASE_F_TRANSITIONS.md). Este documento registra código inspecionado, não aceite visual, performance final ou equivalência integral às referências. F permanece em revisão local; G–I e deploy exigem autorização explícita.
+As revisões [B](docs/PHASE_B_REVIEW.md), [C](docs/island-review/results.json), [D](docs/PHASE_D_REVIEW.md), [E](docs/PHASE_E_REVIEW.md) e [F original](docs/PHASE_F_REVIEW.md) preservam as evidências e limites de suas versões. O estado atual tem capturas desktop/mobile, pranchas temporais e hashes em [PHASE_F_TRANSITIONS](docs/PHASE_F_TRANSITIONS.md). Este documento registra código inspecionado, não aceite visual, performance final ou equivalência integral às referências. F está aprovada; G foi entregue localmente para avaliação em [PHASE_G_REVIEW](docs/PHASE_G_REVIEW.md), com capturas e sequência em `docs/phase-g-review`. H/I e novos push/deploy exigem autorização explícita.
 
 ## Colors
 
-Acento violeta sobre neutros quase pretos. Hero, Sobre, projetos, competências e contato compartilham a continuidade escura. Os primitivos sem prefixo preservam B; os tokens `f-*` registram os papéis locais aplicados à home.
+Acento violeta sobre neutros quase pretos. Hero, Sobre, projetos, competências e contato compartilham a continuidade escura. Os primitivos sem prefixo preservam B; os tokens `f-*` registram os papéis locais da home e as cores compartilhadas pelos cases G.
 
 - **Primary:** `accent` serve a foco, hover e ênfase; `accent-deep` pertence ao halo decorativo do SVG, nunca ao texto.
 - **Neutral:** `background` guarda o negativo do arco; `surface` e `surface-hover` distinguem cápsula e opção ativa; `foreground` e `muted` hierarquizam texto.
@@ -231,7 +233,7 @@ Acento violeta sobre neutros quase pretos. Hero, Sobre, projetos, competências 
 
 **The Legibility Rule.** Texto não cruza a borda luminosa; indicação atual inclui texto e forma além da cor.
 
-Em D, o arco usa accent-deep/accent/foreground, o CTA principal usa ink e o hover secundário usa surface. Em E, a camada usa background e os traços foreground; Pular usa surface/foreground, borda control e accent no hover/foco. Em F, os papéis locais são herdados pelas seções da home, sem inversão clara em Sobre ou Industry. C/D/E mantêm regras locais; a raiz e os cases preservam a paleta verde anterior.
+Em D, o arco usa accent-deep/accent/foreground, o CTA principal usa ink e o hover secundário usa surface. Em E, a camada usa background e os traços foreground; Pular usa surface/foreground, borda control e accent no hover/foco. Em F, os papéis locais são herdados pelas seções da home, sem inversão clara em Sobre ou Industry. C/D/E mantêm regras locais. A raiz preserva a paleta anterior, enquanto o wrapper dos cases G define background/surface/foreground/muted/accent com os valores já registrados em f-background/f-surface/f-foreground/f-muted/f-accent; divider/control correspondem a f-divider/f-control.
 
 **The Continuous Canvas Rule.** A mudança de seção é comunicada por espaço e composição. A linha acima do e-mail pertence ao grupo de ações de contato; não é uma divisória entre seções.
 
@@ -239,9 +241,9 @@ Pares calculados estão nos resultados da revisão. Rampas tonais do sidecar sã
 
 ## Typography
 
-Manrope Latin variável local, com Arial/sans-serif como fallback no protótipo documental. Licença SIL OFL 1.1 e origem estão em [fonts/source.json](docs/design-prototype/fonts/source.json); `font-display: swap` preserva leitura. C/D/E compartilham a mesma família via `src/fonts/manrope.ts` e `next/font/local`, pesos 400–800 e swap, na navegação, no hero e no botão Pular. A saudação é desenho SVG original, não uma fonte ou assinatura pessoal. F aplica a mesma Manrope ao wrapper .home-page, incluindo os textos herdados das seções ainda não recompostas; regras locais de serif/mono continuam onde já existiam. Os cases mantêm a tipografia anterior. CLS local de D está registrado em PHASE_D_REVIEW, sem representar o redesign completo.
+Manrope Latin variável local, com Arial/sans-serif como fallback no protótipo documental. Licença SIL OFL 1.1 e origem estão em [fonts/source.json](docs/design-prototype/fonts/source.json); `font-display: swap` preserva leitura. C/D/E compartilham a mesma família via `src/fonts/manrope.ts` e `next/font/local`, pesos 400–800 e swap, na navegação, no hero e no botão Pular. A saudação é desenho SVG original, não uma fonte ou assinatura pessoal. F aplica a mesma Manrope ao wrapper .home-page, incluindo os textos herdados das seções ainda não recompostas; regras locais de serif/mono continuam onde já existiam. G aplica a mesma Manrope ao wrapper dos três cases via `src/fonts/manrope.ts` e `next/font/local`. CLS local de D está registrado em PHASE_D_REVIEW, sem representar o redesign completo.
 
-O frontmatter preserva os papéis B: nome (`display`), seção (`headline`), projeto (`title`), leitura (`body`), CTA (`label`) e legenda (`caption`). D compartilha `display`; os papéis `hero-*` registram seus demais tamanhos e line-height herdado de 1.6, sem alterar os papéis B. Em D, o apoio usa 18px/16px desktop/mobile, a descrição 16px/14px, os CTAs 14px e o fechamento 14px/13px. A descrição tem máximo de 48ch, reduzido para 33ch no mobile. Os demais papéis B continuam documentais; os papéis f-* descrevem tamanhos e entrelinhas observados na home, sem migração global dos cases. F usa títulos de trabalho com peso 500 e título Industry com peso 550; resumos têm largura máxima de 55ch e descrições de evidência de 65ch. Legendas mantêm texto explícito sobre origem e limites.
+O frontmatter preserva os papéis B: nome (`display`), seção (`headline`), projeto (`title`), leitura (`body`), CTA (`label`) e legenda (`caption`). D compartilha `display`; os papéis `hero-*` registram seus demais tamanhos e line-height herdado de 1.6, sem alterar os papéis B. Em D, o apoio usa 18px/16px desktop/mobile, a descrição 16px/14px, os CTAs 14px e o fechamento 14px/13px. A descrição tem máximo de 48ch, reduzido para 33ch no mobile. Os demais papéis B continuam documentais; os papéis f-* descrevem tamanhos e entrelinhas observados na home, sem redefinir a escala dos cases. Em G, o título de case usa clamp(2.5rem, 6vw, 5rem), entrelinha 1.1 e tracking −0.04em; títulos de seção usam clamp(1.75rem, 3vw, 2.75rem), com leitura limitada a 64ch. F usa títulos de trabalho com peso 500 e título Industry com peso 550; resumos têm largura máxima de 55ch e descrições de evidência de 65ch. Legendas mantêm texto explícito sobre origem e limites.
 
 **The Real Name Rule.** O nome completo permanece um único h1 semântico; quebras visuais respeitam palavras inteiras.
 
@@ -256,6 +258,8 @@ A decoração D começa 96px acima do hero, com clip apenas local. Arco desktop:
 No protótipo B, RoboSense usa imagem ampla e texto lateral; Industry Week intercala uma faixa clara; Ateliê preserva a captura longa. Essa composição é histórica. Na home vigente, o canvas permanece escuro, Industry e Ateliê compartilham um trilho horizontal no desktop e a captura longa aparece em uma janela limitada com acesso ao original. Em larguras menores, a leitura progride verticalmente. Consultar [prancha de estados](docs/design-prototype/states.html) para o storyboard B: quadros consecutivos não implementam movimento.
 
 F reutiliza o container existente até1280px: margens de64px a partir de900px,32px entre600–899px e20px abaixo. RoboSense ocupa a largura do container e mantém contexto/links no fluxo. No desktop elegível, Industry e Ateliê formam duas colunas de50% em um trilho de200%, com texto e janela lado a lado; o palco mede calc(100svh - 112px). A janela do Ateliê limita a prévia vertical e oferece link para o arquivo integral. Abaixo de1100px, em viewport baixo, reduced motion, no-JS ou falha do chunk, os projetos voltam à sequência vertical legível.
+
+Em G, os cases mantêm o container até1280px e header de96px; a introdução tem largura máxima de800px. As capturas reais ficam entre a introdução e o contexto, com gap de40px e margens de56px/64px. Janelas têm altura máxima min(72svh, 720px), overflow auto, foco visível e imagens com largura100%/altura automática. O catálogo longo pode ser percorrido nessa região ou aberto integralmente. Diagramas conceituais permanecem junto de “Como foi construído”, separados da evidência real. Seções de leitura preservam divisórias internas e padding vertical de48px; a regra de canvas contínuo da home não elimina essa hierarquia dos cases.
 
 ## Elevation & Depth
 
@@ -288,10 +292,11 @@ Cápsula contínua com raio compacto e aberto próprios, avatar circular, CTAs d
 - **Mídias F:** WebPs reais sob `public/images/projects`, com dimensões reservadas, alt, sizes e carregamento responsivo por Next Image. RoboSense 960×540 é frame M3 de vídeo gravado, sem prova de hardware ao vivo. Industry usa duas capturas 1440×900 do site público observado em 11/10/2026; deployment e main são distintos. Ateliê 1000×3524 preserva a página longa do repositório, execução local documentada e publicação não confirmada. [Manifesto](docs/project-media-manifest.json) e [MEDIA_ASSETS](docs/MEDIA_ASSETS.md) registram origem/hash/transformações. Marca/fotografias do Ateliê exigem revisão de direitos antes de publicação proeminente; fotografias pessoais LinkedIn seguem indisponíveis.
 - **Links F:** linhas de ação com alvo mínimo de 48px, padding vertical 12px, gap 16px, borda inferior control e seta SVG de 18px. Hover usa accent local e transição de cor de 160ms; reduced a remove. F herda foco de 2px com offset 4px, usando f-accent no escuro e f-paper-accent na faixa clara; não herda o contorno B de 3px. No desktop os links Industry usam 14px.
 - **Lifecycle F:** HomeMotion carrega `home-reveals` em qualquer viewport com no-preference; reduced inicial evita o chunk. Foco e hash acomodam os scrubs antes de posicionar o destino. `gsap.matchMedia` reverte pin/timelines no resize ou mudança de preferência; pagehide e desmontagem liberam listeners, observers, RAF e estilos. Falha de import mantém SSR legível. D/E mantêm cancelamentos próprios; Motion continua exclusivo da ilha. As faixas decorativas têm loop contínuo, pausado fora da tela/aba ou em reduced motion, e respondem ao delta do scroll sem bloquear o gesto.
+- **Cases G:** três rotas estáticas com título, síntese, stack, estado e ações nativas antes das capturas reais. Figure/figcaption, legendas de origem e link para a captura integral permanecem disponíveis sem JS. Diagramas conceituais autorais acompanham a arquitetura e não representam dados de execução. As fontes fixadas e os limites permanecem nos dados separados da apresentação.
 - **Competências:** lista sem porcentagens, cada grupo acompanhado por evidência de uso.
 - **Arco:** SVG decorativo oculto da árvore acessível; não substitui conteúdo nem controla a navegação.
 
-O sidecar preserva os snippets de B como amostras documentais e registra C em `extensions.appliedNavigation`, D em `extensions.appliedHero` E em `extensions.appliedIntro` e F em `extensions.appliedProjects`; não acrescenta inputs, formulários, chips ou cards ao produto. Snippets não são componentes prontos para integrar ao React. A amostra adicional de link F representa o controle aplicado, sem simular imagens ou animações. O hero mantém B/D; os projetos F substituem a grade repetida. Sobre/competências/contato conservam estrutura anterior sob paleta/fonte da home; cases continuam legados, fora de C–F. A ilha aberta pode sobrepor temporariamente o nome, conforme o disclosure C aprovado.
+O sidecar preserva os snippets de B como amostras documentais e registra C em `extensions.appliedNavigation`, D em `extensions.appliedHero` E em `extensions.appliedIntro` e F em `extensions.appliedProjects`; não acrescenta inputs, formulários, chips ou cards ao produto. Snippets não são componentes prontos para integrar ao React. A amostra adicional de link F representa o controle aplicado, sem simular imagens ou animações. O hero mantém B/D; os projetos F substituem a grade repetida. Sobre/competências/contato conservam estrutura anterior sob paleta/fonte da home; G estende a identidade aos três cases existentes, preservando os conteúdos e as rotas. A ilha aberta pode sobrepor temporariamente o nome, conforme o disclosure C aprovado.
 
 ## Do's and Don'ts
 

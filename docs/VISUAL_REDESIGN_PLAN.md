@@ -1,6 +1,6 @@
 # Plano do redesign — gates A–I
 
-Autorização vigente: **E**, por “Aprovo e autorizo” em resposta ao gate D/E. A–D concluídas/aprovadas; E entregue para revisão em [PHASE_E_REVIEW](PHASE_E_REVIEW.md). Fonte75ba951, evidênciasa3d3126. F–I exigem confirmação individual. Workspace D:/projects/portifolio, branch redesign/cinematic-portfolio e origin preservados. Nenhum push/deploy autorizado.
+Autorização vigente: **G**, por “dê sequência com a fase G” em18/10/2026, após aceite de F. Entrega local para avaliação em [PHASE_G_REVIEW](PHASE_G_REVIEW.md): cases/mídia e ícones; fotos/contexto e inspeção humana da aba permanecem pendentes. H/I exigem confirmação individual. Workspace D:/projects/portifolio, branch redesign/cinematic-portfolio e origin preservados. Nenhum novo push/deploy autorizado. Os relatos de gates E/F abaixo são históricos.
 
 ## Problema e direção exigida
 
@@ -10,17 +10,17 @@ O brief fixa dark-first, neutros/violeta, composição cinematográfica, navega�
 
 ## Plano por gate
 
-| Fase               | Entrega delimitada                                                               | Arquivos/responsabilidades                                | Condição para encerrar                                                 |
-| ------------------ | -------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------- |
-| A — concluída      | Auditoria, vídeos, mídia candidata, especificações e continuidade                | Docs/AGENTS e evidências documentais                      | Evidência revisada, critérios mensuráveis, commits locais; solicitar B |
-| B — concluída      | Arte, tipografia/licenças, luz, grid, mobile, estados da ilha e layouts de cenas | BRAND, DESIGN_SYSTEM e protótipos locais apropriados      | Aprovação visual concreta desktop/mobile; nenhum conteúdo fictício     |
-| C — concluída      | Ilha compacta/expandida e transformação                                          | SiteNavigation, CSS, Motion, regressões nav               | C01–C04, vídeo/frames e teclado/reduced/no-JS; solicitar D             |
-| D — concluída | Hero cinematográfico e entrada                                                   | page.tsx, CSS, wrapper de motion/GSAP                     | D01–D03, composição/CTA e observação de custo; solicitar E             |
-| E — concluída | Saudação manuscrita e passagem ao hero                                           | HomeMotion, home-sequence, CSS/asset próprio              | E01–E02, watchdog/falhas e gravação; solicitar F                       |
-| F — não autorizada | Scroll narrativo e showcases reais                                               | home-reveals, composição de projetos, imagens verificadas | F01–F03, mídia íntegra, reversão/mobile/foco/performance; solicitar G  |
-| G — não autorizada | Conteúdo/cases, fotos confirmadas, avatar e favicon                              | src/data, cases, public/images, ícones/metadata           | G01–G03, fontes/limites e verificação de ícones; solicitar H           |
-| H — não autorizada | QA e correção de defeitos                                                        | testes, CSS/componentes afetados, VERIFICATION            | H01–H04, comparação final, riscos explícitos; solicitar I              |
-| I — não autorizada | SEO, segurança, proveniência e checklist                                         | site config/metadados/docs                                | I01, validar novamente favicon/OG; push/deploy separados               |
+| Fase               | Entrega delimitada                                                               | Arquivos/responsabilidades                                | Condição para encerrar                                                                       |
+| ------------------ | -------------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| A — concluída      | Auditoria, vídeos, mídia candidata, especificações e continuidade                | Docs/AGENTS e evidências documentais                      | Evidência revisada, critérios mensuráveis, commits locais; solicitar B                       |
+| B — concluída      | Arte, tipografia/licenças, luz, grid, mobile, estados da ilha e layouts de cenas | BRAND, DESIGN_SYSTEM e protótipos locais apropriados      | Aprovação visual concreta desktop/mobile; nenhum conteúdo fictício                           |
+| C — concluída      | Ilha compacta/expandida e transformação                                          | SiteNavigation, CSS, Motion, regressões nav               | C01–C04, vídeo/frames e teclado/reduced/no-JS; solicitar D                                   |
+| D — concluída      | Hero cinematográfico e entrada                                                   | page.tsx, CSS, wrapper de motion/GSAP                     | D01–D03, composição/CTA e observação de custo; solicitar E                                   |
+| E — concluída      | Saudação manuscrita e passagem ao hero                                           | HomeMotion, home-sequence, CSS/asset próprio              | E01–E02, watchdog/falhas e gravação; solicitar F                                             |
+| F — aprovada       | Scroll narrativo e showcases reais                                               | home-reveals, composição de projetos, imagens verificadas | Aceite explícito em18/10; histórico em HANDOFF                                               |
+| G — para avaliação | Conteúdo/cases, avatar e favicon; fotografias ainda pendentes                    | src/data, cases, public/images, ícones/metadata           | G02 verificado; G01/G03 com pendências em PHASE_G_REVIEW; solicitar H somente após avaliação |
+| H — não autorizada | QA e correção de defeitos                                                        | testes, CSS/componentes afetados, VERIFICATION            | H01–H04, comparação final, riscos explícitos; solicitar I                                    |
+| I — não autorizada | SEO, segurança, proveniência e checklist                                         | site config/metadados/docs                                | I01, validar novamente favicon/OG; push/deploy separados                                     |
 
 O favicon fica explicitamente alocado em G e verificado novamente em I; o master prompt o exige, embora a lista de fases só mencione sua verificação final. Pode-se reaproveitar avatar na ilha C após validação de proveniência; isso não autoriza implantar favicon na Fase A.
 
@@ -47,4 +47,4 @@ O favicon fica explicitamente alocado em G e verificado novamente em I; o master
 
 Separar referências/proveniência, auditoria/pesquisa e especificações/continuidade em unidades revisáveis. Antes de cada commit: Prettier nos documentos do grupo, links locais/JSON/imagens íntegros, diff sem erros, staging explícito e revisão contra baseline. Não incluir `.audit`, vídeos MP4/WebM, builds, dados privados, `.env` ou alterações preexistentes. Registrar SHAs em HANDOFF; o próprio commit de fechamento é identificado por `git log -1`, evitando autorreferência impossível.
 
-Critérios completos em [VISUAL_ACCEPTANCE_CRITERIA](VISUAL_ACCEPTANCE_CRITERIA.md). Resultado B em VISUAL_DIRECTION, COMPONENT_SPEC, DESIGN_SYSTEM e PHASE_B_REVIEW. Próximo gate: **aprovação visual de B e autorização explícita de C**.
+Critérios completos em [VISUAL_ACCEPTANCE_CRITERIA](VISUAL_ACCEPTANCE_CRITERIA.md). Resultado B histórico em VISUAL_DIRECTION, COMPONENT_SPEC, DESIGN_SYSTEM e PHASE_B_REVIEW. Próximo gate vigente: **avaliação da entrega G, decisão sobre fotografias/inspeção da aba e autorização explícita de H**.

@@ -1,0 +1,28 @@
+{
+  "source": "https://avatars.githubusercontent.com/u/271389368?v=4",
+  "generator": "node tools/generate-profile-icons.mjs",
+  "sharp": "0.35.5",
+  "transformation": "Proportional downsampling only. No cropping, recoloring, compositing or generated replacement.",
+  "assets": [
+    {
+      "path": "public/images/profile/github-avatar.png",
+      "bytes": 101669,
+      "sha256": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672"
+    },
+    {
+      "path": "src/app/favicon.ico",
+      "bytes": 5406,
+      "sha256": "0df197898f53bf33e7fa74f86eef7aae655e627bc8d8bf96678cfb2dabd94106"
+    },
+    {
+      "path": "src/app/icon.png",
+      "bytes": 32455,
+      "sha256": "a3dc67bd38aa43b80a239f1df87d4e620c8a3674bbdbd303a267665d4ac627fd"
+    },
+    {
+      "path": "src/app/apple-icon.png",
+      "bytes": 29027,
+      "sha256": "addee9928e950d5a8dff4ad223e9ea8e0cae142086814a01bbbd6d5186b73508"
+    }
+  ]
+}

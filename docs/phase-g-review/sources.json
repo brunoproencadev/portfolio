@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-18T09:20:59.420Z",
+  "profile": "https://api.github.com/users/brunoproencadev",
+  "avatar": {
+    "url": "https://avatars.githubusercontent.com/u/271389368?v=4",
+    "sha256": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672",
+    "bytes": 101669,
+    "localHash": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672",
+    "matches": true
+  },
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/robosense-lab/593768ee3d3f2f861f15beb83459131579e85104/README.md",
+      "status": 200,
+      "bytes": 12069,
+      "sha256": "973b590c009990402e28cf4848c03d62a1b69c42c1c243d1fe809f1b4b7fc5d1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/robosense-lab/593768ee3d3f2f861f15beb83459131579e85104/docs/architecture.md",
+      "status": 200,
+      "bytes": 9963,
+      "sha256": "33b13b27e11853188f1de8f77f9d00ff1c80e30ef6cd0a4e51817db7b2148c00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/robosense-lab/593768ee3d3f2f861f15beb83459131579e85104/docs/validation-m3.md",
+      "status": 200,
+      "bytes": 8319,
+      "sha256": "0c6bd2b89f5fe2f904d8da7623e40a37b1dc34016b90e87ef10a284b746409ab"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/robosense-lab/593768ee3d3f2f861f15beb83459131579e85104/artifacts/m3/index.html",
+      "status": 200,
+      "bytes": 1471,
+      "sha256": "66fe634b01a9bfdcc8c9002620a50cdc19d5221bdca1ef809b215ca1a6fb1b95"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/industry-week-senai-prj/68ab01a95b770f28d66a8f76fb6f138e4c8edbd6/README.md",
+      "status": 200,
+      "bytes": 4631,
+      "sha256": "29c3730f0f29d3304a1c163644bfbd403dff1532bdd2b6acd0a33fb42135e0c6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/industry-week-senai-prj/68ab01a95b770f28d66a8f76fb6f138e4c8edbd6/src/App.tsx",
+      "status": 200,
+      "bytes": 67935,
+      "sha256": "5ebe0b4a6e9bf009f6d0d8ee7e1d3fa0ca0d2eeee873a3b74445896eac8c43de"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/industry-week-senai-prj/68ab01a95b770f28d66a8f76fb6f138e4c8edbd6/package.json",
+      "status": 200,
+      "bytes": 1037,
+      "sha256": "d74c13b89112373685d6c4e6886be0e54b0ca6fd8477c4a9b859b0a7feb4f883"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/atelie-ingridxavier/66969cf8354c3063807a98069354d78303defdf7/README.md",
+      "status": 200,
+      "bytes": 5765,
+      "sha256": "9f4a7e5a82687f9b8755d8bf9d5a5c6484011b061ac27b63c6a260a2db2d84a3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/atelie-ingridxavier/66969cf8354c3063807a98069354d78303defdf7/docs/VERIFICATION.md",
+      "status": 200,
+      "bytes": 5896,
+      "sha256": "8d2636d7adcca8515bd74d325eb68c3f4a3b79955d39f1d030fc670994c61508"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/brunoproencadev/atelie-ingridxavier/66969cf8354c3063807a98069354d78303defdf7/package.json",
+      "status": 200,
+      "bytes": 995,
+      "sha256": "14fe287b894ad7f9640a4737de38199a23e24c01f0930724ca89f365e2e8bf3d"
+    }
+  ]
+}

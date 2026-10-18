@@ -1,3 +1,15 @@
+## Fase G — cases e ícones, 2026-10-18
+
+Fontes `161b6a4`/`aee6ea7`, plano `6c1c768`; [relatório](PHASE_G_REVIEW.md), [checks e falhas iniciais](phase-g-review/verification.json). Build Next16.4.0/TypeScript strict e lint completo PASS,8/8 unitários PASS.60/60 E2E nos três engines,46,7s, sem skips/retries, em build de produção local: três cases/quatro larguras, imagens, fontes,404/erro, navegação no-JS/cliente, cleanup, reduced/falha de mídia, foco e metadata/ícones. Nenhum teste funcional falhou na confirmação.
+
+Primeira tentativa no sandbox interrompida após crashes Firefox em newPage. As expectativas de URL favicon sem query de versão e Tab por links no WebKit/Windows também falharam; corrigidas para o contrato real, sem retirar verificações de conteúdo. No WebKit/Windows o teste usa foco explícito, sem alegar prova de Tab. Confirmação completa fora do sandbox passou. Avisos NO_COLOR/FORCE_COLOR e metadataBase sem SITE_URL preservados; noindex/robots passaram.
+
+Formatação dos arquivos alterados e diff-check PASS; check global Prettier FAIL em24 arquivos que já estavam fora do padrão, lista em verification.json. A primeira rodada apontou25; VISUAL_REDESIGN_PLAN foi alinhado e formatado neste fechamento, restando24 históricos. Baseline inicial limpa; os24 arquivos restantes não foram modificados por G. Não classificar o check global como aprovado nem incluir reformatação histórica no escopo.
+
+Nove estados em375/1440/1920px: overflow0/pageerrors0/axe0;42 capturas de inspeção local,12 selecionadas duráveis. Primeiros WebMs gravados junto com screenshots full-page tiveram quadros reduzidos/cinzentos e imagens momentaneamente vazias. Repetição sem full-page: duas sequências contínuas,11,48s/12,48s a25fps, sem reprodução do quadro reduzido nas amostras examinadas. Fonte não alterada entre rodadas; não certificar causa do artefato nem fluidez/percepção. Mobile375 codificado em374px pelo encoder. Manifestos e pranchas em phase-g-review; brutos ignorados em .audit.
+
+Avatar atual reconferido byte a byte pela API/download GitHub; dez fontes fixadas HTTP200. ICO contém16/32/48; PNG192/Apple180 e vínculos de metadata/HTTP passam. G01 fotos/contextos e G03 inspeção humana de aba permanecem pendentes. Sem Lighthouse/INP, Safari/dispositivos reais, leitor de tela ou publicação. H/I aguardam autorização.
+
 ## F aprovada — integração GitHub, 2026-10-18
 
 Autorização explícita do usuário para push e contribuições, com aceite visual de F. Sete commits pendentes até75dde16 enviados à branch de redesign; main avançada deaa70f4c para30eeef5 por fast-forward. Cinquenta e seis commits originais preservados, sem squash/rebase/alteração de autor ou datas. `git fetch`, ancestralidade, árvores iguais e `git ls-remote` confirmaram integração/sincronização das duas branches. API autenticada: repositório privado/não fork, default_branch main, e-mail vinculado a brunoproencadev. Gráfico pode atualizar em até24h; consulta GraphQL imediata ainda não comprovou a atualização visual.

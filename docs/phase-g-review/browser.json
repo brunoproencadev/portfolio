@@ -1,0 +1,263 @@
+[
+  {
+    "slug": "robosense-lab",
+    "width": 1440,
+    "height": 900,
+    "status": 200,
+    "overflow": 0,
+    "errors": [],
+    "axe": [],
+    "media": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Frobosense-lab%2Fm3.webp&w=3840&q=75",
+        "width": 640,
+        "ratio": 1.7777777777777777,
+        "expected": 1.7777777777777777
+      }
+    ],
+    "colors": {
+      "background": "rgb(8, 9, 13)",
+      "color": "rgb(245, 243, 255)",
+      "font": "manrope, \"manrope Fallback\""
+    },
+    "catalogScroll": {
+      "scroll": 72,
+      "height": 648,
+      "contentHeight": 720
+    }
+  },
+  {
+    "slug": "industry-week-senai",
+    "width": 1440,
+    "height": 900,
+    "status": 200,
+    "overflow": 0,
+    "errors": [],
+    "axe": [],
+    "media": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Findustry-week%2Fhero.webp&w=3840&q=75",
+        "width": 960,
+        "ratio": 1.6,
+        "expected": 1.6
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Findustry-week%2Feras.webp&w=3840&q=75",
+        "width": 960,
+        "ratio": 1.6,
+        "expected": 1.6
+      }
+    ],
+    "colors": {
+      "background": "rgb(8, 9, 13)",
+      "color": "rgb(245, 243, 255)",
+      "font": "manrope, \"manrope Fallback\""
+    },
+    "catalogScroll": {
+      "scroll": 152,
+      "height": 648,
+      "contentHeight": 800
+    }
+  },
+  {
+    "slug": "atelie-ingrid-xavier",
+    "width": 1440,
+    "height": 900,
+    "status": 200,
+    "overflow": 0,
+    "errors": [],
+    "axe": [],
+    "media": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Fatelie-ingrid%2Fcatalog.webp&w=3840&q=75",
+        "width": 666,
+        "ratio": 0.28376852358618015,
+        "expected": 0.28376844494892167
+      }
+    ],
+    "colors": {
+      "background": "rgb(8, 9, 13)",
+      "color": "rgb(245, 243, 255)",
+      "font": "manrope, \"manrope Fallback\""
+    },
+    "catalogScroll": {
+      "scroll": 3862,
+      "height": 648,
+      "contentHeight": 4511
+    }
+  },
+  {
+    "slug": "robosense-lab",
+    "width": 1920,
+    "height": 1080,
+    "status": 200,
+    "overflow": 0,
+    "errors": [],
+    "axe": [],
+    "media": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Frobosense-lab%2Fm3.webp&w=3840&q=75",
+        "width": 640,
+        "ratio": 1.7777777777777777,
+        "expected": 1.7777777777777777
+      }
+    ],
+    "colors": {
+      "background": "rgb(8, 9, 13)",
+      "color": "rgb(245, 243, 255)",
+      "font": "manrope, \"manrope Fallback\""
+    },
+    "catalogScroll": {
+      "scroll": 0,
+      "height": 720,
+      "contentHeight": 720
+    }
+  },
+  {
+    "slug": "industry-week-senai",
+    "width": 1920,
+    "height": 1080,
+    "status": 200,
+    "overflow": 0,
+    "errors": [],
+    "axe": [],
+    "media": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Findustry-week%2Fhero.webp&w=3840&q=75",
+        "width": 960,
+        "ratio": 1.6,
+        "expected": 1.6
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Findustry-week%2Feras.webp&w=3840&q=75",
+        "width": 960,
+        "ratio": 1.6,
+        "expected": 1.6
+      }
+    ],
+    "colors": {
+      "background": "rgb(8, 9, 13)",
+      "color": "rgb(245, 243, 255)",
+      "font": "manrope, \"manrope Fallback\""
+    },
+    "catalogScroll": {
+      "scroll": 80,
+      "height": 720,
+      "contentHeight": 800
+    }
+  },
+  {
+    "slug": "atelie-ingrid-xavier",
+    "width": 1920,
+    "height": 1080,
+    "status": 200,
+    "overflow": 0,
+    "errors": [],
+    "axe": [],
+    "media": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Fatelie-ingrid%2Fcatalog.webp&w=3840&q=75",
+        "width": 666,
+        "ratio": 0.28376852358618015,
+        "expected": 0.28376844494892167
+      }
+    ],
+    "colors": {
+      "background": "rgb(8, 9, 13)",
+      "color": "rgb(245, 243, 255)",
+      "font": "manrope, \"manrope Fallback\""
+    },
+    "catalogScroll": {
+      "scroll": 3790,
+      "height": 720,
+      "contentHeight": 4511
+    }
+  },
+  {
+    "slug": "robosense-lab",
+    "width": 375,
+    "height": 812,
+    "status": 200,
+    "overflow": 0,
+    "errors": [],
+    "axe": [],
+    "media": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Frobosense-lab%2Fm3.webp&w=3840&q=75",
+        "width": 335,
+        "ratio": 1.7777777777777777,
+        "expected": 1.7777777777777777
+      }
+    ],
+    "colors": {
+      "background": "rgb(8, 9, 13)",
+      "color": "rgb(245, 243, 255)",
+      "font": "manrope, \"manrope Fallback\""
+    },
+    "catalogScroll": {
+      "scroll": 0,
+      "height": 188,
+      "contentHeight": 188
+    }
+  },
+  {
+    "slug": "industry-week-senai",
+    "width": 375,
+    "height": 812,
+    "status": 200,
+    "overflow": 0,
+    "errors": [],
+    "axe": [],
+    "media": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Findustry-week%2Fhero.webp&w=3840&q=75",
+        "width": 335,
+        "ratio": 1.6,
+        "expected": 1.6
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Findustry-week%2Feras.webp&w=3840&q=75",
+        "width": 335,
+        "ratio": 1.6,
+        "expected": 1.6
+      }
+    ],
+    "colors": {
+      "background": "rgb(8, 9, 13)",
+      "color": "rgb(245, 243, 255)",
+      "font": "manrope, \"manrope Fallback\""
+    },
+    "catalogScroll": {
+      "scroll": 0,
+      "height": 209,
+      "contentHeight": 209
+    }
+  },
+  {
+    "slug": "atelie-ingrid-xavier",
+    "width": 375,
+    "height": 812,
+    "status": 200,
+    "overflow": 0,
+    "errors": [],
+    "axe": [],
+    "media": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fprojects%2Fatelie-ingrid%2Fcatalog.webp&w=3840&q=75",
+        "width": 335,
+        "ratio": 0.2838156257446189,
+        "expected": 0.28376844494892167
+      }
+    ],
+    "colors": {
+      "background": "rgb(8, 9, 13)",
+      "color": "rgb(245, 243, 255)",
+      "font": "manrope, \"manrope Fallback\""
+    },
+    "catalogScroll": {
+      "scroll": 595,
+      "height": 585,
+      "contentHeight": 1180
+    }
+  }
+]

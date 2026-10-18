@@ -2,6 +2,12 @@
 
 ## Redesign cinematográfico — estado vigente
 
+- [x] 18/10: G autorizada explicitamente por “dê sequência com a fase G”. Plano6c1c768; ícones161b6a4; casesaee6ea7. Entrega local em PHASE_G_REVIEW; sem push/deploy ou H/I.
+- [x] G02: três cases com mídia real, leitura B, fontes/limites, slugs e fallbacks preservados; build/strict/lint,8 unitários e60 E2E finais aprovados. Formato dos alterados passa; global falha em24 arquivos preexistentes, lista registrada.
+- [x] G03 parcial: avatar atual confirmado; ICO16/32/48, PNG192/Apple180 e metadata/HTTP verificados.
+- [ ] G01: fotografias pessoais/eventos ainda dependem de originais/contexto; nenhuma dispensa confirmada. G03: inspecionar aparência na aba visível. Obter avaliação da entrega G e decidir sobre essas pendências antes de encerrar o gate.
+- [ ] Gate H: aguardar aprovação explícita para QA completo/performance; não iniciar automaticamente. G01/G03 não estão integralmente aceitos. Direitos de destaque Ateliê permanecem pendentes.
+
 - [x] 18/10: F aprovada explicitamente por “Perfeito, a fase F finalmente está adequada”. Push e integração na branch padrão autorizados pelo pedido de contribuições; preservar todos os commits originais e bloquear deploy automático da `main` até o gate de publicação. E-mail associado ao perfil confirmado via API GitHub. G–I aguardam seus gates individuais.
 - [x] 18/10: sete commits pendentes enviados;56 commits originais integrados à `main` por fast-forward. Refs remotas main/redesign iguais em30eeef5; JSON/formato/ancestralidade/árvores verificados, Preview confirmado pela API. Atualização do gráfico depende do processamento do GitHub e da preferência pessoal de contribuições privadas.
 
@@ -38,8 +44,8 @@
 - [x] Retomar revisão de F em 2026-10-16, conforme escolha explícita do usuário. Ícones `e0dec50` e scroll inferior/janelas horizontais `77d2506` já implementados; reconfirmação sem nova mudança de produto: 63/63 E2E, 7/7 unitários, lint/build/strict, 33 estados capturados. Evidências `417fca9`; relatório PHASE_F_REVALIDATION. Os 47 arquivos preexistentes ficaram preservados e fora dos novos commits.
 - [x] Em 2026-10-17, completar composição F previamente pendente, transições reversíveis em RoboSense/Sobre/Projetos/Competências, faixas cruzadas em loop contínuo e reativas ao scroll; remover controle de pausa. Fontes `2571228` e `b5e7875`; implementação/evidências finais e validação em `PHASE_F_TRANSITIONS.md`.
 - [x] Consolidar documentação e evidências inferiores que permaneciam locais: contratos atuais/históricos em `c672e90`; relatório `PHASE_F_LOWER_REVIEW`, 42 artefatos e manifesto no commit documental seguinte. Nenhuma mudança de produto.
-- [ ] Obter avaliação visual do usuário sobre as ferramentas, o trecho inferior e as novas transições/faixas. F global ainda aberta; a implementação local não equivale à aprovação visual. Fotos/mosaico/objeto3D continuam ausentes. G não autorizado.
-- [ ] G: conteúdo/cases/fotos confirmadas e avatar favicon; gate próprio após F.
+- [x] Avaliação global F recebida em18/10; G autorizada no pedido posterior. Registros anteriores de F aberta são históricos.
+- [ ] G: implementação local disponível para avaliação; G01 fotografias/contexto e G03 inspeção humana de aba permanecem pendentes, conforme PHASE_G_REVIEW.
 - [ ] H: QA completo/performance/comparação; gate próprio após G.
 - [ ] I: prontidão de produção; gate próprio após H, sem push/deploy implícito.
 
