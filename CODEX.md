@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização 2026-10-17 — fechamento anterior `875da83`; carrossel Museu → Industry Week → Ateliê → kord, Clawd central acima do RoboSense e bounce em `c3a801d`. Relatório vigente `docs/PHASE_F_PROJECTS.md`, preview http://127.0.0.1:3108/. 120 E2E distintos cobertos: 114/120 iniciais, seis falhas corrigidas, confirmação 63/63; build/strict/lint e 7 unitários. Alterações anteriores preservadas fora dos novos commits; provas da árvore completa. F aguarda avaliação perceptual; G–I/push/deploy não autorizados. Registros abaixo são históricos.
+
 Atualização 2026-10-17 — F: refinamentos src/testes consolidados em `2571228`; implementadas transições reversíveis das seções e faixas cruzadas em loop que reagem ao scroll, sem controle de pausa. Ver evidências e limites em `docs/PHASE_F_TRANSITIONS.md`; F aguarda revisão visual do usuário. Os docs/runs de trabalho preexistentes permanecem preservados. Sem push/deploy ou autorização para G–I. O fechamento final está em HANDOFF/TASKS/VERIFICATION.
 
 Atualização 2026-10-17 — fechamento documental da revisão F retomado após “Continue”; provas de 16/10 reutilizadas com fonte inalterada. A tentativa anterior de staging não havia sido executada por limite de uso da revisão automática. Estado vigente em docs/HANDOFF.md e docs/PHASE_F_REVALIDATION.md; F continua aguardando avaliação visual, sem autorização de G–I/push/deploy.

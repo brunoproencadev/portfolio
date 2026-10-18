@@ -1,3 +1,7 @@
+## Museu, kord e Clawd — revisão vigente de 17/10/2026
+
+Frame integral do vídeo do museu aos 10s, screenshot real da execução local do kord, mascote Clawd via Lobe Icons e ícones Unity/C#/HTML/CSS/JavaScript via Devicon. Fontes fixadas, autoria, licenças, hashes e limites em [PHASE_F_PROJECTS](PHASE_F_PROJECTS.md) e [assets.json](project-expansion-review/assets.json). Museu sem contribuição Git atribuída a Bruno; kord é marca fictícia acadêmica. Uso local solicitado, sem publicação. O PNG Claude anterior foi preservado e não é usado pelo componente.
+
 ## Ícones reais das ferramentas — 2026-10-15
 
 Por solicitação do usuário, Python, NumPy e OpenCV usam os SVGs `original` do Devicon; PySerial usa o logo PNG indicado pela documentação oficial. Arquivos locais em `public/images/tools/`, fontes, bytes e SHA-256 em [tool-icons-manifest.json](tool-icons-manifest.json). Aquisição em 15/10/2026; URLs de origem mutáveis, bytes locais identificados pelo hash. Sem pacote adicional ou logos redesenhados.

@@ -1,0 +1,127 @@
+[
+  {
+    "path": "1440-atelie.jpg",
+    "sha256": "90de6cc455d9ed1907ccdcb6a94b0894991004bc30267b4800ed842ef677d0de",
+    "bytes": 106791
+  },
+  {
+    "path": "1440-clawd.jpg",
+    "sha256": "82f606122366243c6cdcad5c75a3c1b643e640f4d6178eed2d0b255aabbd260b",
+    "bytes": 90482
+  },
+  {
+    "path": "1440-industry.jpg",
+    "sha256": "e23cfc46bbced09c70a9607d0cc5ff67a6b9a7eb4038d96f910a4f2a9a78fbef",
+    "bytes": 130635
+  },
+  {
+    "path": "1440-kord.jpg",
+    "sha256": "a0ae0004d89c80695059513dfa66fcc7f93e21d94bbc95a6e635a18b38ba8cae",
+    "bytes": 81890
+  },
+  {
+    "path": "1440-museum.jpg",
+    "sha256": "e5cd2e4fab5c391466a66445da00130a2b9bb8f1b82e7c00751627b02c3f64f3",
+    "bytes": 99533
+  },
+  {
+    "path": "1440-reduced.jpg",
+    "sha256": "739365fa9989635d6533947f89cc0a39b9c732ec084f856a5022aef02ff7ee27",
+    "bytes": 89553
+  },
+  {
+    "path": "1440-reverse.jpg",
+    "sha256": "5e86fc2d87a8af1648e7aa91d62d3f3a9c861c9d953c7eefc968763c71067b04",
+    "bytes": 101802
+  },
+  {
+    "path": "1440-sequence.jpg",
+    "sha256": "2668fa5599906a874dbc3574862ed50f388d40ea3c8319f425b48345482a06b8",
+    "bytes": 271352
+  },
+  {
+    "path": "374-sequence.jpg",
+    "sha256": "350290c1e9ab07cc38692fea471c4b3d7c96cce2d4aa7a67d61fb7630d50cde4",
+    "bytes": 207467
+  },
+  {
+    "path": "375-atelie-media.jpg",
+    "sha256": "0fc352aba325672cbd47321d16780809ace7e746ce2143df7f1ed750242d56f1",
+    "bytes": 47163
+  },
+  {
+    "path": "375-atelie.jpg",
+    "sha256": "e78da2f8e956fced6a4506eb5edc2b02a8775494d64d7da4c6833d05d92aee3e",
+    "bytes": 50167
+  },
+  {
+    "path": "375-clawd.jpg",
+    "sha256": "a3ca02bc51f28b635ce12c6f8e77ac52a5fc2bc509e4bb338a40b15ba87b87da",
+    "bytes": 30313
+  },
+  {
+    "path": "375-industry-media.jpg",
+    "sha256": "0a393ed7717b2608e39c536727eb4e3ec0497fcb72dfec3a40e281a220bb4713",
+    "bytes": 52748
+  },
+  {
+    "path": "375-industry.jpg",
+    "sha256": "c1ddefffdffa348a9a8f8a426762f5d2a6bbe2fe3b434ca55d839fb86dc2d254",
+    "bytes": 49235
+  },
+  {
+    "path": "375-kord-media.jpg",
+    "sha256": "93af60c75a34a6e212063708c2e0a965a969cbd0b92cdd782835a05f7d052745",
+    "bytes": 38502
+  },
+  {
+    "path": "375-kord.jpg",
+    "sha256": "153b2d8e5f25369f76b5e32405787a76e8f35b3e1cc3927d232e87794fce348d",
+    "bytes": 44626
+  },
+  {
+    "path": "375-museum-media.jpg",
+    "sha256": "54e3e4cbe81af474799997c1444ada9d1a6e0da18b7e82d53bd5713b27641b22",
+    "bytes": 41921
+  },
+  {
+    "path": "375-museum.jpg",
+    "sha256": "c61bd61fdb0f7e0c49e23464c603d4f7c6e896a2f9a4ca37c416d4861681657c",
+    "bytes": 44422
+  },
+  {
+    "path": "375-reduced.jpg",
+    "sha256": "2e0ec310c80d63657ef47f1d12f8bf48ae6ed9c2a39e187bcf40877118d7bba0",
+    "bytes": 50378
+  },
+  {
+    "path": "375-reverse.jpg",
+    "sha256": "dc11e07615f59f77ce3748c1241cbbc7629ea5d5c0e1d370e1f99a9dab4682fa",
+    "bytes": 47191
+  },
+  {
+    "path": "assets.json",
+    "sha256": "0fa9370476b420a409669d89f54f8088183f4013f9a759cbe6007254111bf9ef",
+    "bytes": 2697
+  },
+  {
+    "path": "browser.json",
+    "sha256": "3517cd433ed02c6de1513e3c582c7173a4b1b70768ec56933b667f88658e3a25",
+    "bytes": 2382
+  },
+  {
+    "path": "lobe-icons-LICENSE",
+    "sha256": "add9d7531d1b21646317a8958e38fc727506fa39d24bdecb44154d943c82753a",
+    "bytes": 1064
+  },
+  {
+    "path": "museum-reference-sequence.jpg",
+    "sha256": "fc39a77b565f40f7c0cfcf24f13d9097929e07aaf05fd7f328bb896f9b8353d1",
+    "bytes": 143856
+  },
+  {
+    "path": "recordings.json",
+    "sha256": "215d68d53e4afdb9f657c1127b972806a0c012a40e684c73b99b3947e9c7948e",
+    "bytes": 577
+  }
+]

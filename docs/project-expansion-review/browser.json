@@ -1,0 +1,126 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "states": [
+      {
+        "name": "clawd",
+        "time": 3524.89999999851,
+        "y": 1260,
+        "overflow": false
+      },
+      {
+        "name": "museum",
+        "time": 5761.39999999851,
+        "y": 3999,
+        "overflow": false
+      },
+      {
+        "name": "industry",
+        "time": 7756.5999999940395,
+        "y": 5295,
+        "overflow": false
+      },
+      {
+        "name": "atelie",
+        "time": 9693.09999999404,
+        "y": 6735,
+        "overflow": false
+      },
+      {
+        "name": "kord",
+        "time": 11629.69999999553,
+        "y": 8031,
+        "overflow": false
+      },
+      {
+        "name": "reverse",
+        "time": 12795.5,
+        "y": 3999,
+        "overflow": false
+      },
+      {
+        "name": "reduced",
+        "time": 14994.29999999702,
+        "y": 5474,
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "axe": []
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "states": [
+      {
+        "name": "clawd",
+        "time": 1623.3999999985099,
+        "y": 667,
+        "overflow": false
+      },
+      {
+        "name": "museum",
+        "time": 2903.39999999851,
+        "y": 3094,
+        "overflow": false
+      },
+      {
+        "name": "museum-media",
+        "time": 3435.89999999851,
+        "y": 2887,
+        "overflow": false
+      },
+      {
+        "name": "industry",
+        "time": 4741.5,
+        "y": 4331,
+        "overflow": false
+      },
+      {
+        "name": "industry-media",
+        "time": 5286.60000000149,
+        "y": 4081,
+        "overflow": false
+      },
+      {
+        "name": "atelie",
+        "time": 6556,
+        "y": 5594,
+        "overflow": false
+      },
+      {
+        "name": "atelie-media",
+        "time": 7104.20000000298,
+        "y": 5360,
+        "overflow": false
+      },
+      {
+        "name": "kord",
+        "time": 8390.5,
+        "y": 6730,
+        "overflow": false
+      },
+      {
+        "name": "kord-media",
+        "time": 8938.10000000149,
+        "y": 6540,
+        "overflow": false
+      },
+      {
+        "name": "reverse",
+        "time": 10067.5,
+        "y": 3038,
+        "overflow": false
+      },
+      {
+        "name": "reduced",
+        "time": 12034.29999999702,
+        "y": 6690,
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "axe": []
+  }
+]

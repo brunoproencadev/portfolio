@@ -1,3 +1,7 @@
+## Estado vigente F — quatro projetos e bounce, 2026-10-17
+
+Incremento `c3a801d`: Museu → Industry Week → Ateliê → kord. Largura/foco/fundos/progresso derivados da quantidade; 160vh por passagem, três passagens, scrub0,5s. Clawd central acima da janela RoboSense, frame40px abaixo para reservar espaço. Bounce RoboSense na timeline existente (`back.out(2.6)`, duração0,2/stagger0,022); demais grupos650ms/stagger45ms/`elastic.out(1, 0.5)` via IO, sem loop. GSAP exclusivo das propriedades; cleanup em reduced/resize/desmontagem e encerramento na aba oculta. Mobile/no-JS/reduced mantém fluxo. [Provas e decisões](PHASE_F_PROJECTS.md). Preserva os refinamentos anteriores locais abaixo.
+
 ## Estado vigente F — transições e faixas, 2026-10-17
 
 Esta seção substitui as geometrias históricas abaixo. `HomeMotion` carrega o owner de scroll em qualquer viewport com `no-preference`; reduced motion mantém o fluxo estático. `section-transitions` coordena detalhes RoboSense, Sobre, abertura dos projetos e Competências com scrub0,45s no desktop e0,25s no compacto. Contato e footer ficam fora desse owner. Foco e hash acomodam as timelines antes da medição; pagehide, aba oculta, mudança de preferência e desmontagem liberam seus recursos.

@@ -1,4 +1,18 @@
-# Estado vigente — fase F, transições e faixas, 2026-10-17
+# Estado vigente — F, novos projetos e Clawd, 2026-10-17
+
+Pedido concluído localmente: pendências anteriores revalidadas; pop-ups com bounce; Clawd centralizado acima da janela RoboSense; Museu e kord com mídia real; carrossel Museu → Industry Week → Ateliê → kord. Museu identificado como projeto compartilhado declarado pelo autor, sem atribuir commits; kord explicitamente acadêmico/marca fictícia. Três cases preservados; novos projetos levam aos repositórios.
+
+- `875da83` — `docs: close pending phase F validation`: build/strict/lint, 7 unitários e 54/54 E2E da base anterior.
+- `c3a801d` — `feat: expand project carousel and bounce tool popups`: implementação, assets reais e regressões.
+- Commit documental deste fechamento: consultar `git log -1 -- docs/PHASE_F_PROJECTS.md`, evitando autorreferência de hash.
+
+Provas: build/strict, lint completo, 7/7 unitários, formato/diff-check. E2E amplo 114/120; seis falhas corrigidas (sobreposição Clawd e expectativa antiga de ordem), confirmação 63/63 nos três engines, sem skips/retries. 120 casos distintos cobertos; os outros 57 já haviam passado. Duas rodadas visuais, confirmação de 18 estados desktop/mobile, sem overflow/pageerrors e axe sem violações nos estados examinados. [Relatório, fontes, hashes e limites](PHASE_F_PROJECTS.md).
+
+Preservação: 21 arquivos rastreados modificados e quatro entradas não rastreadas já existiam na chegada. Snapshot `.audit/phase-f-projects/baseline*`; hunks anteriores separados do staging. As provas são da árvore completa; HEAD isolado não inclui todos os refinamentos anteriores de recuo/cobertura/glow. Esses arquivos permanecem locais conforme instrução de não incluí-los nos novos commits. O registro inicial de fechamento teve codificação corrigida neste commit documental.
+
+Preview: http://127.0.0.1:3108/. Sem push/deploy. F aguarda avaliação perceptual. Próxima fase geral G: conteúdo/cases, fotografias verificadas, avatar e favicon; somente após confirmação explícita. Sem novo Lighthouse/INP, headset/dispositivo físico, Safari real ou leitor de tela. Sidecar Impeccable antigo permanece fora do escopo.
+
+# Histórico — fase F, transições e faixas, 2026-10-17
 
 Documentação que permanecia local após a implementação foi consolidada em `c672e902fd6f9bcf07b443f0b4a82e472a980a96` (`docs: align phase F design and motion records`): regras geradas do Next, direção visual, mídia, especificação vigente/histórica e análise R4. O relatório inferior, suas 42 evidências e o manifesto de integridade seguem no commit documental imediatamente posterior a esta seção. Esses registros não alteram o produto nem o gate: F continua aguardando avaliação visual; G–I e deploy permanecem sem autorização. O push anterior terminou em `edec153`; estes novos commits são locais até novo pedido explícito.
 

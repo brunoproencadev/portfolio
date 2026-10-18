@@ -2,6 +2,10 @@
 
 ## Redesign cinematográfico — estado vigente
 
+- [x] Pedido atual de 17/10: fechar revalidação anterior (`875da83`), bounce, Clawd central acima do RoboSense e carrossel Museu → Industry Week → Ateliê → kord com mídia real (`c3a801d`). Relatório vigente PHASE_F_PROJECTS.
+- [x] Validar autoria declarada do Museu, natureza acadêmica do kord, mídia, âncoras, foco/reversão, mobile/no-JS/reduced; preservar três cases. Build/strict/lint, 7 unitários; 120 E2E distintos cobertos após confirmação 63/63. Evidências desktop/mobile.
+- [ ] Avaliação perceptual deste incremento F; fase geral G e push/deploy exigem autorização explícita. Alterações preexistentes continuam locais; provas da árvore completa.
+
 - [x] Fase A autorizada em 2026-10-11: workspace/Git/arquitetura/documentação inspecionados, status inicial limpo em aa70f4c, branch redesign/cinematic-portfolio preservada.
 - [x] Três MP4 reais analisados; mapeamento, hashes, duração/resolução, keyframes sequenciais e limites em REFERENCE_ANALYSIS.
 - [x] Baseline navegador desktop/mobile e auditoria KEEP/IMPROVE/REBUILD/REMOVE; causas do desvio e invariantes em REDESIGN_AUDIT.

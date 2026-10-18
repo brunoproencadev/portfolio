@@ -1,4 +1,12 @@
-## Revisão F — 2026-10-16
+## Revisão F — novos projetos e Clawd, 2026-10-17
+
+Fonte `c3a801d` sobre a árvore preexistente preservada. Fechamento anterior `875da83`: 54/54 E2E, build/strict/lint e 7 unitários. Novo incremento: build/strict, lint completo, 7/7 unitários e Prettier aprovados. E2E principal 114/120; seis falhas nos três engines por sobreposição Clawd e expectativa antiga de Ateliê em último. Corrigidos espaço da janela e ordem esperada. Confirmação project-expansion/hero-tools/storytelling 63/63, sem retries/skips; os outros 57 casos não foram repetidos. Total 120 casos distintos. PowerShell com redirecionamento reportou status 1 por avisos stderr, enquanto Playwright terminou 63 passed; divergência registrada.
+
+Duas rodadas visuais Chromium, 18 estados na confirmação 1440×900/375×812, sem overflow/pageerrors e axe sem violações nos estados examinados. Bounce com overshoot e assentamento verificados; reduced remove transforms. Dois WebMs de 16,04s/13,20s, capturas e pranchas temporais. Fontes fixadas por SHA, vídeo original reconferido. [Relatório](PHASE_F_PROJECTS.md), [dados](project-expansion-review/browser.json), [assets](project-expansion-review/assets.json).
+
+Provas da árvore completa; sem teste de HEAD isolado, performance/INP, dispositivo/headset real, Safari físico ou leitor de tela. F aguarda avaliação do usuário; sem G–I/push/deploy.
+
+## Histórico — revisão F de 2026-10-16
 
 Fonte existente `77d2506`, ícones `e0dec50`; sem alteração de código nesta retomada. Evidências `417fca9`, [relatório](PHASE_F_REVALIDATION.md), [resultados](scroll-revalidation-review/verification.json). Build com TypeScript, lint completo e 7/7 unitários passam. Aviso local de metadataBase/localhost mantido.
 

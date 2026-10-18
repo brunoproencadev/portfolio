@@ -200,6 +200,8 @@ components:
 
 ## Overview
 
+**Incremento F — projetos e pop-ups, 17/10/2026:** carrossel Museu → Industry Week → Ateliê → kord, com dados e mídia reais. Mantém a janela e a composição existentes; Museu panorâmico aparece integral, sem recorte. Clawd central no topo do RoboSense, janela 40px abaixo para liberar espaço; bounce breve de chegada, sem loop, retirado em reduced motion. Os novos projetos levam a repositórios, com contexto acadêmico/compartilhado documentado. Especificação/provas em `docs/PHASE_F_PROJECTS.md`.
+
 **Refinamento F — 2026-10-17:** registro da implementação local em `src/styles/globals.css`, `src/app/page.tsx` e componentes de navegação, projetos e movimento. Sobre agora usa o mesmo canvas escuro e antecede o carrossel Industry/Ateliê; a passagem hero→RoboSense permanece antes de Sobre. O carrossel apresenta imagem e informações factuais lado a lado, ícones autênticos dispersos e navegação horizontal. Sobre e competências têm altura mínima de uma viewport; contato reserva 80svh. O fluxo cresce quando o conteúdo exige. Este refinamento mantém a identidade aprovada B–E; não cria outra direção visual.
 
 **Creative North Star: "Horizonte e evidência"**

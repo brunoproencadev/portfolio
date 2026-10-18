@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Unity",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/unity/unity-original.svg",
+    "path": "public\\images\\tools\\unity-original.svg",
+    "sha256": "92f5736155fc1d6a4829b6b5798e0821f56ba7b61d2999c0fca6840cc1f7b6af",
+    "bytes": 879
+  },
+  {
+    "name": "C#",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/csharp/csharp-original.svg",
+    "path": "public\\images\\tools\\csharp-original.svg",
+    "sha256": "7093478d0888e22a224b6fa832da6c9ffd14c433de8bd14aab0c1cb50925f3ee",
+    "bytes": 851
+  },
+  {
+    "name": "HTML",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/html5/html5-original.svg",
+    "path": "public\\images\\tools\\html5-original.svg",
+    "sha256": "34826e5b3315daadf4fa15f723a3c1d5ba4a89277bfd94e22ac4d7d3d54338c5",
+    "bytes": 607
+  },
+  {
+    "name": "CSS",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/css3/css3-original.svg",
+    "path": "public\\images\\tools\\css3-original.svg",
+    "sha256": "36b7d94b657d571d3f94042acbf6a4c86a5301a222f83f4b4583ad2acf6e297d",
+    "bytes": 778
+  },
+  {
+    "name": "JavaScript",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/javascript/javascript-original.svg",
+    "path": "public\\images\\tools\\javascript-original.svg",
+    "sha256": "0656ff65fc8eeacda5c78d7f9ffe91ec1eb919db64f56e0b7dcd460af4bbd36c",
+    "bytes": 1144
+  },
+  {
+    "path": "public/images/tools/clawd.svg",
+    "source": "https://raw.githubusercontent.com/lobehub/lobe-icons/8a1b2821bb768c484fe8da20c5e1838b6bf551a9/packages/static-svg/icons/claudecode-color.svg",
+    "sha256": "670b3d8d749d0815ad8f7e62a59d51cb5e2053cb19403f3541a8aed7036a877f",
+    "bytes": 424
+  },
+  {
+    "path": "public/images/projects/museu-arte-moderna/hall.webp",
+    "source": "D:\\aNova pasta\\Desktop\\coisas after\\references\\projeto_arte_moderna.mp4",
+    "seconds": 10,
+    "sourceSHA256": "975ae7a9d5f5b8359c6bd07c52267a800a3d6c57d03f6d2e284a7484bf510e6e",
+    "sha256": "f8eb98a3d68bc64bcda53e33e889543186d329878dc7dde541348fc87bbaa96c",
+    "bytes": 77608
+  },
+  {
+    "path": "public/images/projects/kord/cover.webp",
+    "source": "https://github.com/brunoproencadev/kordvisualidentity/tree/2b1d3829aa95516f301df8f35f850a820722a553",
+    "capture": "Chromium local server, 1440x900, unchanged repository source",
+    "sha256": "20e3f0ad7e84746eb51fba9615f4d4a341900793134047012e57f5ca32246653",
+    "bytes": 27424
+  }
+]
