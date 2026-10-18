@@ -1,0 +1,41 @@
+▲ Next.js 16.4.0 (Turbopack)
+✓ Running next.config.ts took 127ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 23.3s
+  Running TypeScript ...
+  Finished TypeScript in 3.2s ...
+  Collecting page data using 12 workers ...
+  Generating static pages using 12 workers (0/14) ...
+node : ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using
+"http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+At line:2 char:132
++ ... k-icon.tsx; node node_modules/next/dist/bin/next build *> .audit/phas ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (⚠ metadataBase ...ta#metadatabase:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+  Generating static pages using 12 workers (3/14)
+  Generating static pages using 12 workers (6/14)
+  Generating static pages using 12 workers (10/14)
+✓ Generating static pages using 12 workers (14/14) in 2.2s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /apple-icon.png
+├ ○ /experimentos/hero-projeto
+├ ○ /icon.png
+├ ○ /opengraph-image
+├   /projetos/[slug]
+│ ├ ● /projetos/robosense-lab
+│ ├ ● /projetos/museu-arte-moderna
+│ ├ ● /projetos/industry-week-senai
+│ └ ● /projetos/atelie-ingrid-xavier
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)

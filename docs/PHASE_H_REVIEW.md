@@ -44,6 +44,25 @@ Valores são medianas de três execuções, não a melhor rodada. Acessibilidade
 
 O recurso de imagem já chega cedo nas sondagens; o atraso de apresentação e o trabalho de JavaScript/layout são candidatos mais fortes do que a prioridade de rede. Isso é diagnóstico parcial, não causalidade fechada: retirar um módulo inteiro e comparar séries sujeitas à variação da máquina não isola uma função responsável. Não há otimização adicional comprovada nesta rodada. O próximo trabalho de H deve isolar o custo de inicialização/refresh sem alterar a sequência aprovada, medir a solução e repetir suas regressões.
 
+### Continuidade — custo de inicialização
+
+Após novo “Continue”, plano `81641c0` e [resultados da investigação](PHASE_H_PERFORMANCE_PLAN.md). Três execuções por candidato e por rota restaurada, no mesmo perfil mobile e sem build/testes concorrentes:
+
+| Estado                                      | Rota   | Performance | LCP mediano | TBT mediano | JavaScript |
+| ------------------------------------------- | ------ | ----------: | ----------: | ----------: | ---------: |
+| SVGs de ToolPopups/LinkIcon como img nativo | Home   |          84 |     3.543ms |     307,5ms |  213.339 B |
+| Captura com getImageProps                   | Ateliê |          94 |     2.901ms |       130ms |  165.269 B |
+| Fonte restaurada após os experimentos       | Home   |          86 |     3.412ms |       249ms |  213.339 B |
+| Fonte restaurada após os experimentos       | Ateliê |          95 |     2.815ms |        91ms |  165.269 B |
+
+Nenhum candidato trouxe ganho consistente; ambos foram retirados. A troca dos SVGs manteve o bundle transferido e aumentou HTML/RSC. A captura com propriedades geradas no servidor manteve o otimizador, mas não resolveu o atraso. A diferença pequena entre as bases restauradas não prova melhora. Esta confirmação mede somente home e Ateliê; os outros três cases conservam a medição integral anterior. CLS 0,0389/0, acessibilidade/boas práticas 100 e SEO66 nas seis execuções restauradas. **H03 continua sem passar.**
+
+Doze sondagens adicionais, uma execução por condição/rota, compararam scripts bloqueados, filtros removidos e decode imediato. Bloquear scripts reduziu LCP/TBT, mas muda a experiência e não isola a função responsável. Retirar filtros ou decode não melhorou consistentemente. A segunda série intercepta o HTML de todas as condições, inclusive a base; seu custo impede comparar valores absolutos com a primeira. Traces mostram trabalho de JavaScript e compositor/GPU entre chegada da imagem e apresentação; não permitem atribuir todo o atraso à hidratação. O breakdown observado no trace não usa a mesma escala do LCP simulado.
+
+[Execuções, ambiente, fontes preservadas e tentativas inválidas](phase-h-review/hydration-investigation.json). Builds dos [SVGs](phase-h-review/build-native-icons.log), da [captura](phase-h-review/build-server-capture.log) e da [restauração](phase-h-review/build-hydration-restored.log): PASS, incluindo TypeScript. Houve tentativa inicial com servidor indisponível, erro no leitor de trace e preview preliminar iniciado antes do build terminar; foram descartados antes das séries válidas. Um health check PowerShell também falhou e foi corrigido com `-UseBasicParsing` antes de medir. Não contabilizar essas tentativas como provas de produto.
+
+Sem alteração de produto conservada, não foi repetida a suíte completa nem foi feito aceite visual dos candidatos rejeitados. Os quatro arquivos preexistentes voltaram a coincidir byte a byte com o snapshot; a prova E2E de 379 PASS/5 SKIP abaixo continua sendo a execução anterior, não uma nova rodada. O build e o preview foram restaurados. Próxima investigação de H: obter perfil de CPU por função na inicialização e relacioná-lo à apresentação antes de propor outra alteração; estas sondagens não identificaram uma correção segura. Coreografia, dependências, limites de acessibilidade e critérios de aceitação permanecem iguais.
+
 ## Checks e histórico de falhas
 
 - Build restaurado e TypeScript strict: PASS; lint completo: PASS. O aviso de `metadataBase` ausente no ambiente local sem SITE_URL permanece; não é validação de SEO de produção. HTTP local 200, `noindex` presente e duas folhas CSS externas confirmadas após a restauração.

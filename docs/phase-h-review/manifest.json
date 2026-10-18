@@ -1,8 +1,23 @@
 [
   {
+    "file": "build-hydration-restored.log",
+    "bytes": 1610,
+    "sha256": "cec1caf2344345a8681022cd30c8df2182325246672f06a989d6424a8fb41d99"
+  },
+  {
+    "file": "build-native-icons.log",
+    "bytes": 1608,
+    "sha256": "650e0fdd9aeb22df31f8afa3a539032bc3adbcf47cfd19105838fa3ae74366ba"
+  },
+  {
     "file": "build-restored.log",
     "bytes": 1609,
     "sha256": "cf91ca86c5b3dd6ac90355eb94813d3580fa527622fbb305723f778dbbfac739"
+  },
+  {
+    "file": "build-server-capture.log",
+    "bytes": 1597,
+    "sha256": "76d621edf4e244fe7af56cf3f4ea274f038decd6a3bc253780808149151a2d62"
   },
   {
     "file": "carousel-after.png",
@@ -63,6 +78,11 @@
     "file": "format-continuation.log",
     "bytes": 1507,
     "sha256": "3490d9317a7be745cd52527662fe35042e2a1a0c5e8e710c5f86a66a70827a5f"
+  },
+  {
+    "file": "hydration-investigation.json",
+    "bytes": 29971,
+    "sha256": "8b0cd3bcdd39583cc7f9bc5f0d0afe2fc3afcf8448c28d5a40c8e7092d365f31"
   },
   {
     "file": "lint-continuation.log",
