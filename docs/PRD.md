@@ -1,6 +1,8 @@
 # PRD — Bruno Proença Silva
 
-Atualização18/10/2026: F aprovada; G autorizada por “dê sequência com a fase G”. Implementação local para avaliação em PHASE_G_REVIEW: três cases com mídia real e identidade B, fontes reconferidas e ícones do avatar exato. Fotografias/contexto e inspeção humana da aba permanecem pendentes; não criar novas rotas para Museu/kord. H/I e novos pushes/deploys exigem autorizações próprias. Registros inferiores são históricos quanto aos gates.
+Atualização do incremento18/10/2026: pedido explícito autoriza case Museu e extensão da estética/scroll da home aos quatro cases. Registry compartilhado, fontes e créditos coletivos; kord continua sem case. Plano PHASE_G_CINEMATIC_PLAN, entrega PHASE_G_CINEMATIC_REVIEW. G aguarda avaliação; H/I e push/deploy não autorizados. A proibição de rota Museu no registro imediatamente abaixo está superada por este pedido.
+
+Registro anterior18/10/2026: F aprovada; G autorizada por “dê sequência com a fase G”. Implementação local para avaliação em PHASE_G_REVIEW: três cases com mídia real e identidade B, fontes reconferidas e ícones do avatar exato. Fotografias/contexto e inspeção humana da aba permanecem pendentes; não criar novas rotas para Museu/kord. H/I e novos pushes/deploys exigem autorizações próprias. Registros inferiores são históricos quanto aos gates.
 
 Adendo autorizado em 17/10/2026: o pedido explícito do usuário amplia a home para cinco projetos reais — RoboSense na passagem inicial e carrossel Museu → Industry Week → Ateliê → kord. Os três cases publicados continuam; os dois novos itens usam seus repositórios e evidência verificada, sem novas rotas de case. Escopo/limites em PHASE_F_PROJECTS; não autoriza fase geral G–I ou publicação.
 

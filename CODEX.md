@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização2026-10-18 — continuidade cinematográfica G concluída para avaliação: imagem452cb71, cases/motion/testes32dfe49, plano anterior e06b414. Quatro cases incluindo Museu; captura nativa2340×1080/cover, estética e transições da home. Relatório vigente docs/PHASE_G_CINEMATIC_REVIEW.md, preview3112. Build/strict/lint,9 unitários; confirmação99/102 +3/3 corrigidos, SEO6/6 anterior;72 estados visuais. Sem push/deploy ou H/I. HANDOFF registra limites e SHAs; estados inferiores são históricos.
+
 Atualização2026-10-18 — G autorizada por “dê sequência com a fase G” e implementada localmente para avaliação: plano6c1c768, ícones161b6a4, casesaee6ea7. Relatório vigente docs/PHASE_G_REVIEW.md. Build/strict/lint,8 unitários e60/60 E2E aprovados; formato dos alterados passa, global falha em24 arquivos preexistentes. Fotografias pessoais/contexto e inspeção humana da aba continuam pendentes. F já aprovada. H/I, novos pushes e deploys não autorizados. HANDOFF/TASKS/VERIFICATION prevalecem sobre os registros históricos abaixo.
 
 Atualização2026-10-18: usuário aprovou expressamente F e autorizou enviar os commits ao GitHub e fazê-los contar nas contribuições. Integração na `main` por fast-forward preserva o histórico; `vercel.json` bloqueia deploy Git automático apenas da `main` para respeitar o gate separado de publicação. G–I não autorizadas. Estado atual e provas em HANDOFF/TASKS/LAUNCH; os registros de F aguardando aceite abaixo são históricos.

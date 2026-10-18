@@ -1,3 +1,11 @@
+# Estado vigente — cases cinematográficos G, 2026-10-18
+
+G ampliada pelo pedido de aplicar estética/scroll da home aos cases e adicionar o Museu. Continuidade concluída localmente para avaliação; plano prévio `e06b414`, imagem `452cb71`, cases/motion/testes `32dfe49`. Quatro cases, captura do Museu recuperada em2340×1080 e preenchimento cover com acesso integral. [Relatório vigente](PHASE_G_CINEMATIC_REVIEW.md).
+
+Validação: build/strict/lint,9/9 unitários,99/102 E2E de confirmação mais3/3 corrigidos nos três engines; SEO6/6 anterior aprovado. Histórico completo de falhas e limites no relatório/VERIFICATION.72 estados visuais, overflow/pageerrors0 e axe0 nos nove estados examinados.13 arquivos pendentes do mesmo pedido foram preservados em snapshot e consolidados. Sem push/deploy. Preview http://127.0.0.1:3112/projetos/museu-arte-moderna.
+
+Este fechamento documental registra provas, decisões e SHAs; consultar seu SHA com `git log -1 -- docs/PHASE_G_CINEMATIC_REVIEW.md`, sem autorreferência. G aguarda avaliação do usuário; fotos/contexto, favicon visível e direitos Ateliê mantêm os limites anteriores. H é QA completo/performance e não foi iniciada; exige autorização explícita. Os estados seguintes são históricos.
+
 # Estado vigente — G implementada para avaliação, 2026-10-18
 
 O usuário autorizou G por “dê sequência com a fase G”. [Relatório](PHASE_G_REVIEW.md): três cases com capturas reais, leitura alinhada à identidade B, diagramas junto da arquitetura, fontes fixadas reconferidas e favicon/PNG/Apple derivados do avatar GitHub exato. Sobre/home/coreografia F preservados. Fotografias pessoais/eventos continuam sem originais/contexto; o usuário perguntou sua finalidade e recebeu explicação, sem confirmar dispensa. Nenhuma nova foto presumida.

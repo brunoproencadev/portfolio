@@ -1,0 +1,310 @@
+
+node : [WebServer] (node:42232) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+At line:2 char:1
++ node node_modules/@playwright/test/cli.js test tests/e2e/cases.spec.t ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([WebServer] (no... env being set.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 87 tests using 2 workers
+
+(node:71204) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:68136) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/87] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › robosense-lab stages the real capture, reverses and releases live reduced motion
+[2/87] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › museu-arte-moderna stages the real capture, reverses and releases live reduced motion
+[3/87] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › industry-week-senai stages the real capture, reverses and releases live reduced motion
+[4/87] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion
+[5/87] [chromium] › tests\e2e\case-motion.spec.ts:53:1 › case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow
+[6/87] [chromium] › tests\e2e\case-motion.spec.ts:81:1 › direct fragments and failed scripts preserve the museum narrative and original capture
+[7/87] [chromium] › tests\e2e\case-motion.spec.ts:120:1 › keyboard reading started before hydration takes precedence over a late motion import
+[8/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 320px
+[9/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 375px
+[10/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 768px
+[11/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px
+[12/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 320px
+  1) [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "Abrir captura completa ↗",
+    + ]
+
+      83 |             .map((element) => element.textContent),
+      84 |         ),
+    > 85 |       ).toEqual([]);
+         |         ^
+      86 |       if (width === 320 || width === 1440)
+      87 |         expect(
+      88 |           (
+        at D:\projects\portifolio\tests\e2e\cases.spec.ts:85:9
+
+    Error Context: test-results\cases-robosense-lab-render-f21e7-e-accessible-case-at-1440px-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\cases-robosense-lab-render-f21e7-e-accessible-case-at-1440px-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\cases-robosense-lab-render-f21e7-e-accessible-case-at-1440px-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[13/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 768px
+(node:71708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[14/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 375px
+[15/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px
+[16/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 320px
+  2) [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "Abrir captura completa ↗",
+    + ]
+
+      83 |             .map((element) => element.textContent),
+      84 |         ),
+    > 85 |       ).toEqual([]);
+         |         ^
+      86 |       if (width === 320 || width === 1440)
+      87 |         expect(
+      88 |           (
+        at D:\projects\portifolio\tests\e2e\cases.spec.ts:85:9
+
+    Error Context: test-results\cases-museu-arte-moderna-r-e4142-e-accessible-case-at-1440px-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\cases-museu-arte-moderna-r-e4142-e-accessible-case-at-1440px-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\cases-museu-arte-moderna-r-e4142-e-accessible-case-at-1440px-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:73732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[17/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 768px
+[18/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 375px
+[19/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 1440px
+[20/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 320px
+[21/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 375px
+[22/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 768px
+[23/87] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px
+[24/87] [chromium] › tests\e2e\cases.spec.ts:106:1 › cases and navigation remain available without JavaScript
+  3) [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "Abrir captura completa ↗",
+    + ]
+
+      83 |             .map((element) => element.textContent),
+      84 |         ),
+    > 85 |       ).toEqual([]);
+         |         ^
+      86 |       if (width === 320 || width === 1440)
+      87 |         expect(
+      88 |           (
+        at D:\projects\portifolio\tests\e2e\cases.spec.ts:85:9
+
+    Error Context: test-results\cases-atelie-ingrid-xavier-2e7e8-e-accessible-case-at-1440px-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\cases-atelie-ingrid-xavier-2e7e8-e-accessible-case-at-1440px-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\cases-atelie-ingrid-xavier-2e7e8-e-accessible-case-at-1440px-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[25/87] [chromium] › tests\e2e\cases.spec.ts:185:1 › unknown slugs and inherited names return useful HTTP 404 pages
+(node:66352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[26/87] [chromium] › tests\e2e\cases.spec.ts:149:1 › case text, sources and navigation survive failed media and reduced motion
+[27/87] [chromium] › tests\e2e\cases.spec.ts:209:1 › client navigation discards home motion and does not replay the intro
+[28/87] [chromium] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[29/87] [chromium] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+
+
+(node:75596) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[30/87] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › museu-arte-moderna stages the real capture, reverses and releases live reduced motion
+(node:75660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[31/87] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › robosense-lab stages the real capture, reverses and releases live reduced motion
+[32/87] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › industry-week-senai stages the real capture, reverses and releases live reduced motion
+[33/87] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion
+[34/87] [firefox] › tests\e2e\case-motion.spec.ts:53:1 › case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow
+[35/87] [firefox] › tests\e2e\case-motion.spec.ts:81:1 › direct fragments and failed scripts preserve the museum narrative and original capture
+[36/87] [firefox] › tests\e2e\case-motion.spec.ts:120:1 › keyboard reading started before hydration takes precedence over a late motion import
+[37/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 320px
+[38/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 375px
+[39/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 768px
+[40/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px
+[41/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 320px
+[42/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 375px
+[43/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 768px
+[44/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px
+[45/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 320px
+[46/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 375px
+[47/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 768px
+[48/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 1440px
+[49/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 320px
+[50/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 375px
+[51/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 768px
+[52/87] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px
+[53/87] [firefox] › tests\e2e\cases.spec.ts:106:1 › cases and navigation remain available without JavaScript
+[54/87] [firefox] › tests\e2e\cases.spec.ts:149:1 › case text, sources and navigation survive failed media and reduced motion
+[55/87] [firefox] › tests\e2e\cases.spec.ts:185:1 › unknown slugs and inherited names return useful HTTP 404 pages
+[56/87] [firefox] › tests\e2e\cases.spec.ts:209:1 › client navigation discards home motion and does not replay the intro
+[57/87] [firefox] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[58/87] [firefox] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+(node:47972) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[59/87] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › robosense-lab stages the real capture, reverses and releases live reduced motion
+(node:75944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[60/87] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › museu-arte-moderna stages the real capture, reverses and releases live reduced motion
+[61/87] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › industry-week-senai stages the real capture, reverses and releases live reduced motion
+[62/87] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion
+[63/87] [webkit] › tests\e2e\case-motion.spec.ts:53:1 › case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow
+[64/87] [webkit] › tests\e2e\case-motion.spec.ts:81:1 › direct fragments and failed scripts preserve the museum narrative and original capture
+[65/87] [webkit] › tests\e2e\case-motion.spec.ts:120:1 › keyboard reading started before hydration takes precedence over a late motion import
+[66/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 320px
+[67/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 375px
+[68/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 768px
+[69/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px
+[70/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 320px
+  4) [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "Abrir captura completa ↗",
+    + ]
+
+      83 |             .map((element) => element.textContent),
+      84 |         ),
+    > 85 |       ).toEqual([]);
+         |         ^
+      86 |       if (width === 320 || width === 1440)
+      87 |         expect(
+      88 |           (
+        at D:\projects\portifolio\tests\e2e\cases.spec.ts:85:9
+
+    Error Context: test-results\cases-robosense-lab-render-f21e7-e-accessible-case-at-1440px-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\cases-robosense-lab-render-f21e7-e-accessible-case-at-1440px-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\cases-robosense-lab-render-f21e7-e-accessible-case-at-1440px-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:74304) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[71/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 375px
+[72/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 768px
+[73/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px
+[74/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 320px
+  5) [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "Abrir captura completa ↗",
+    + ]
+
+      83 |             .map((element) => element.textContent),
+      84 |         ),
+    > 85 |       ).toEqual([]);
+         |         ^
+      86 |       if (width === 320 || width === 1440)
+      87 |         expect(
+      88 |           (
+        at D:\projects\portifolio\tests\e2e\cases.spec.ts:85:9
+
+    Error Context: test-results\cases-museu-arte-moderna-r-e4142-e-accessible-case-at-1440px-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\cases-museu-arte-moderna-r-e4142-e-accessible-case-at-1440px-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\cases-museu-arte-moderna-r-e4142-e-accessible-case-at-1440px-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:72784) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[75/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 375px
+[76/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 768px
+[77/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 1440px
+[78/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 320px
+[79/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 375px
+[80/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 768px
+[81/87] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px
+[82/87] [webkit] › tests\e2e\cases.spec.ts:106:1 › cases and navigation remain available without JavaScript
+[83/87] [webkit] › tests\e2e\cases.spec.ts:149:1 › case text, sources and navigation survive failed media and reduced motion
+[84/87] [webkit] › tests\e2e\cases.spec.ts:185:1 › unknown slugs and inherited names return useful HTTP 404 pages
+[85/87] [webkit] › tests\e2e\cases.spec.ts:209:1 › client navigation discards home motion and does not replay the intro
+[86/87] [webkit] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[87/87] [webkit] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+  5 failed
+    [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px 
+    [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px 
+    [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px 
+    [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px 
+    [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px 
+  82 passed (1.6m)

@@ -1,0 +1,37 @@
+[
+  {
+    "path": "UnityProject/README.md",
+    "url": "https://raw.githubusercontent.com/rafaeldominguesdev/semana-da-arte-moderna/8fc221f7836b594edb53350197a2c49f621fad97/UnityProject/README.md",
+    "status": 200,
+    "bytes": 6483,
+    "sha256": "0f965ed200388ca1986e04a0e7fd8d605ca3a904444eba726d49ef75017ed280"
+  },
+  {
+    "path": "UnityProject/Assets/Scenes/MuseumScene.unity",
+    "url": "https://raw.githubusercontent.com/rafaeldominguesdev/semana-da-arte-moderna/8fc221f7836b594edb53350197a2c49f621fad97/UnityProject/Assets/Scenes/MuseumScene.unity",
+    "status": 200,
+    "bytes": 5468054,
+    "sha256": "8296342903110211af151619c618d2223c7a9efe26eb2868ff76360f3bca2ad6"
+  },
+  {
+    "path": "UnityProject/Assets/Scripts/Utils/CuratorialCatalog.cs",
+    "url": "https://raw.githubusercontent.com/rafaeldominguesdev/semana-da-arte-moderna/8fc221f7836b594edb53350197a2c49f621fad97/UnityProject/Assets/Scripts/Utils/CuratorialCatalog.cs",
+    "status": 200,
+    "bytes": 1991,
+    "sha256": "4d3cb3029a2e0acc9a9aad8138f30442369dd2d75d6e11ba2f736ca9a9432ba4"
+  },
+  {
+    "path": "UnityProject/Assets/Scripts/Player/GazeDwellInteraction.cs",
+    "url": "https://raw.githubusercontent.com/rafaeldominguesdev/semana-da-arte-moderna/8fc221f7836b594edb53350197a2c49f621fad97/UnityProject/Assets/Scripts/Player/GazeDwellInteraction.cs",
+    "status": 200,
+    "bytes": 5472,
+    "sha256": "e130f85e7331e6d4ede7732cc73fba519b67a023a7cae0a9895ed14effe4372a"
+  },
+  {
+    "path": "UnityProject/Assets/Scripts/UI/MuseumGuidePanel.cs",
+    "url": "https://raw.githubusercontent.com/rafaeldominguesdev/semana-da-arte-moderna/8fc221f7836b594edb53350197a2c49f621fad97/UnityProject/Assets/Scripts/UI/MuseumGuidePanel.cs",
+    "status": 200,
+    "bytes": 21847,
+    "sha256": "f742aa64a7a3ce175ba383e13c5e2600b75c3b21bdf17f3d93f0f322506fb304"
+  }
+]

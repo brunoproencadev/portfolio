@@ -1,0 +1,1112 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "slug": "robosense-lab",
+    "axe": [],
+    "geometry": {
+      "window": {
+        "width": 1280,
+        "height": 558
+      },
+      "image": {
+        "width": 1280,
+        "height": 720
+      },
+      "fit": "fill"
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "slug": "museu-arte-moderna",
+    "axe": [],
+    "geometry": {
+      "window": {
+        "width": 1280,
+        "height": 720
+      },
+      "image": {
+        "width": 1280,
+        "height": 720
+      },
+      "fit": "cover"
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "slug": "industry-week-senai",
+    "axe": [],
+    "geometry": {
+      "window": {
+        "width": 1280,
+        "height": 558
+      },
+      "image": {
+        "width": 1280,
+        "height": 800
+      },
+      "fit": "fill"
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "slug": "atelie-ingrid-xavier",
+    "axe": [],
+    "geometry": {
+      "window": {
+        "width": 1280,
+        "height": 558
+      },
+      "image": {
+        "width": 1280,
+        "height": 4511
+      },
+      "fit": "fill"
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "states": [
+      {
+        "slug": "robosense-lab",
+        "name": "intro",
+        "y": 0,
+        "time": 992.9000000059605,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 664],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "transition",
+        "y": 360,
+        "time": 2370.1000000089407,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 664],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "capture",
+        "y": 720,
+        "time": 3678.2000000029802,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 664],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "reverse",
+        "y": 0,
+        "time": 5116.5,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 664],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "cover",
+        "y": 1350,
+        "time": 6739.70000000298,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 664],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "context",
+        "y": 1847,
+        "time": 8145.800000011921,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 664],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "architecture",
+        "y": 2247,
+        "time": 9538.10000000894,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 664],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "focus",
+        "y": 3141,
+        "time": 11461.20000000298,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 558],
+          "image": [1280, 720],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "ribbons",
+        "y": 4682,
+        "time": 12282.800000011921,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 558],
+          "image": [1280, 720],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "intro",
+        "y": 0,
+        "time": 825.8000000119209,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 540],
+          "image": [1180, 540],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "transition",
+        "y": 360,
+        "time": 2161.9000000059605,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 540],
+          "image": [1180, 540],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "capture",
+        "y": 720,
+        "time": 3479.5,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 540],
+          "image": [1180, 540],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "reverse",
+        "y": 0,
+        "time": 4940.9000000059605,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 540],
+          "image": [1180, 540],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "cover",
+        "y": 1350,
+        "time": 6600.800000011921,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 540],
+          "image": [1180, 540],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "context",
+        "y": 1870,
+        "time": 8016.800000011921,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 540],
+          "image": [1180, 540],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "architecture",
+        "y": 2480,
+        "time": 9452.10000000894,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 540],
+          "image": [1180, 540],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "focus",
+        "y": 3403,
+        "time": 10819.20000000298,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 720],
+          "image": [1280, 720],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "ribbons",
+        "y": 5082,
+        "time": 11547.60000000894,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 720],
+          "image": [1280, 720],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "intro",
+        "y": 0,
+        "time": 781.0999999940395,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 738],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "transition",
+        "y": 360,
+        "time": 2127.7999999970198,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 738],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "capture",
+        "y": 720,
+        "time": 3435.2000000029802,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 738],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "reverse",
+        "y": 0,
+        "time": 4886.9000000059605,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 738],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "cover",
+        "y": 1350,
+        "time": 6517.5999999940395,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 738],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "context",
+        "y": 1847,
+        "time": 7958.20000000298,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 738],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "architecture",
+        "y": 2206,
+        "time": 9298.79999999702,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 738],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "focus",
+        "y": 3814,
+        "time": 10826.90000000596,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 558],
+          "image": [1280, 800],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "ribbons",
+        "y": 5258,
+        "time": 11525.79999999702,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 558],
+          "image": [1280, 800],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "intro",
+        "y": 0,
+        "time": 739.3000000119209,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 4158],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "transition",
+        "y": 360,
+        "time": 2097,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 4158],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "capture",
+        "y": 720,
+        "time": 3409.5,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 4158],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "reverse",
+        "y": 0,
+        "time": 4843.600000008941,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 4158],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "cover",
+        "y": 1350,
+        "time": 6474.5,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 4158],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "context",
+        "y": 1847,
+        "time": 7868.600000008941,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 4158],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "architecture",
+        "y": 2206,
+        "time": 9211.10000000894,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 558],
+          "image": [1180, 4158],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "focus",
+        "y": 3040,
+        "time": 10917.20000000298,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 558],
+          "image": [1280, 4511],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "ribbons",
+        "y": 4455,
+        "time": 11671.800000011921,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 558],
+          "image": [1280, 4511],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "final",
+        "name": "reduced",
+        "y": 473,
+        "time": 11953.70000000298,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 558],
+          "image": [1280, 4511],
+          "fit": "fill"
+        }
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "slug": "robosense-lab",
+    "axe": [],
+    "geometry": {
+      "window": {
+        "width": 335,
+        "height": 188
+      },
+      "image": {
+        "width": 335,
+        "height": 188
+      },
+      "fit": "fill"
+    }
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "slug": "museu-arte-moderna",
+    "axe": [],
+    "geometry": {
+      "window": {
+        "width": 335,
+        "height": 188
+      },
+      "image": {
+        "width": 335,
+        "height": 188
+      },
+      "fit": "cover"
+    }
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "slug": "industry-week-senai",
+    "axe": [],
+    "geometry": {
+      "window": {
+        "width": 335,
+        "height": 209
+      },
+      "image": {
+        "width": 335,
+        "height": 209
+      },
+      "fit": "fill"
+    }
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "slug": "atelie-ingrid-xavier",
+    "axe": [],
+    "geometry": {
+      "window": {
+        "width": 335,
+        "height": 503
+      },
+      "image": {
+        "width": 335,
+        "height": 1180
+      },
+      "fit": "fill"
+    }
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "errors": [],
+    "states": [
+      {
+        "slug": "robosense-lab",
+        "name": "intro",
+        "y": 0,
+        "time": 843.5999999940395,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "capture",
+        "y": 87,
+        "time": 1256.5,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "context",
+        "y": 1003,
+        "time": 2708,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "architecture",
+        "y": 1470,
+        "time": 3980.2000000029802,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "focus",
+        "y": 3349,
+        "time": 5203.70000000298,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "robosense-lab",
+        "name": "ribbons",
+        "y": 5094,
+        "time": 5775.20000000298,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "intro",
+        "y": 0,
+        "time": 712.7999999970198,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "capture",
+        "y": 155,
+        "time": 1103.2999999970198,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "context",
+        "y": 1094,
+        "time": 2528.0999999940395,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "architecture",
+        "y": 1817,
+        "time": 3894.4000000059605,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "focus",
+        "y": 3863,
+        "time": 5012,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "ribbons",
+        "y": 5811,
+        "time": 5571,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 188],
+          "image": [335, 188],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "intro",
+        "y": 0,
+        "time": 691.9000000059605,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 209],
+          "image": [335, 209],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "capture",
+        "y": 166,
+        "time": 1105.4000000059605,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 209],
+          "image": [335, 209],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "context",
+        "y": 1082,
+        "time": 2553,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 209],
+          "image": [335, 209],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "architecture",
+        "y": 1485,
+        "time": 3816.5999999940395,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 209],
+          "image": [335, 209],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "focus",
+        "y": 3719,
+        "time": 4939.5999999940395,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 209],
+          "image": [335, 209],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "industry-week-senai",
+        "name": "ribbons",
+        "y": 5444,
+        "time": 5518.29999999702,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 209],
+          "image": [335, 209],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "intro",
+        "y": 0,
+        "time": 723,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 503],
+          "image": [335, 1180],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "capture",
+        "y": 402,
+        "time": 1112,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 503],
+          "image": [335, 1180],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "context",
+        "y": 1318,
+        "time": 2535.3999999910593,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 503],
+          "image": [335, 1180],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "architecture",
+        "y": 1721,
+        "time": 3792.8999999910593,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 503],
+          "image": [335, 1180],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "focus",
+        "y": 3540,
+        "time": 4885.79999999702,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 503],
+          "image": [335, 1180],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "atelie-ingrid-xavier",
+        "name": "ribbons",
+        "y": 5100,
+        "time": 5453.70000000298,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 503],
+          "image": [335, 1180],
+          "fit": "fill"
+        }
+      },
+      {
+        "slug": "final",
+        "name": "reduced",
+        "y": 490,
+        "time": 5681.29999999702,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [335, 503],
+          "image": [335, 1180],
+          "fit": "fill"
+        }
+      }
+    ]
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "slug": "museu-arte-moderna",
+    "axe": [],
+    "geometry": {
+      "window": {
+        "width": 1280,
+        "height": 720
+      },
+      "image": {
+        "width": 1280,
+        "height": 720
+      },
+      "fit": "cover"
+    }
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "errors": [],
+    "states": [
+      {
+        "slug": "museu-arte-moderna",
+        "name": "intro",
+        "y": 0,
+        "time": 860.9000000059605,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 648],
+          "image": [1180, 648],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "transition",
+        "y": 432,
+        "time": 2264.6000000089407,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 648],
+          "image": [1180, 648],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "capture",
+        "y": 864,
+        "time": 3633.4000000059605,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 648],
+          "image": [1180, 648],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "reverse",
+        "y": 0,
+        "time": 5233.70000000298,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 648],
+          "image": [1180, 648],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "cover",
+        "y": 1620,
+        "time": 6947.79999999702,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 648],
+          "image": [1180, 648],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "context",
+        "y": 2230,
+        "time": 8394.20000000298,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 648],
+          "image": [1180, 648],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "architecture",
+        "y": 2840,
+        "time": 9803.90000000596,
+        "overflow": false,
+        "enhanced": 1,
+        "geometry": {
+          "window": [1180, 648],
+          "image": [1180, 648],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "focus",
+        "y": 3315,
+        "time": 11228.40000000596,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 720],
+          "image": [1280, 720],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "museu-arte-moderna",
+        "name": "ribbons",
+        "y": 5022,
+        "time": 11954,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 720],
+          "image": [1280, 720],
+          "fit": "cover"
+        }
+      },
+      {
+        "slug": "final",
+        "name": "reduced",
+        "y": 499,
+        "time": 12260.79999999702,
+        "overflow": false,
+        "enhanced": 0,
+        "geometry": {
+          "window": [1280, 720],
+          "image": [1280, 720],
+          "fit": "cover"
+        }
+      }
+    ]
+  }
+]

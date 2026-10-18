@@ -1,3 +1,9 @@
+## G — continuidade cinematográfica, 2026-10-18
+
+Fontes `452cb71`/`32dfe49`; plano prévio `e06b414`. Build Next/strict, lint completo e9/9 unitários PASS; formato dos alterados e diff-check PASS. [Relatório com histórico](PHASE_G_CINEMATIC_REVIEW.md). Primeiro lote82/87, cinco falhas de medição de controles durante escala corrigidas por foco/leitura e cobertura44px no estado final. Confirmação99/102; três falhas de expectativa antiga13/14 links; reconfirmação3/3 PASS Chromium/Firefox/WebKit. Os102 testes selecionados passaram entre esses dois comandos, sem skips/retries; não foi uma rodada única102/102. SEO6/6 PASS no primeiro lote. Não alegar execução integral da suíte.
+
+Confirmação visual72 estados1440/375/1920, overflow0/pageerrors0; axe0 nos nove estados examinados. Três gravações contínuas/pranchas com timestamps, hashes e dimensões em case-cinematic-review. Sem nova prova Safari físico/leitor de tela/Lighthouse/INP/headset. Detector consultivo11 avisos (cores/tipos/raio) reconciliados no DESIGN; check global de formato continua limitado pelos24 arquivos preexistentes. O primeiro script de resumo de evidências falhou ao ler JSON UTF-16 do detector como UTF-8; artefatos já haviam sido produzidos, resumo reconferido com a codificação correta. Sem falha de runtime ocultada.
+
 ## Fase G — cases e ícones, 2026-10-18
 
 Fontes `161b6a4`/`aee6ea7`, plano `6c1c768`; [relatório](PHASE_G_REVIEW.md), [checks e falhas iniciais](phase-g-review/verification.json). Build Next16.4.0/TypeScript strict e lint completo PASS,8/8 unitários PASS.60/60 E2E nos três engines,46,7s, sem skips/retries, em build de produção local: três cases/quatro larguras, imagens, fontes,404/erro, navegação no-JS/cliente, cleanup, reduced/falha de mídia, foco e metadata/ícones. Nenhum teste funcional falhou na confirmação.

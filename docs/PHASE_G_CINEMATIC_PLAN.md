@@ -25,4 +25,10 @@ Mobile/baixo/reduced/no-JS/falha de import: fluxo vertical, mídia visível, sem
 
 ## Validação e encerramento
 
+### Retomada após interrupção — 18/10
+
+Treze arquivos pendentes preservados byte a byte em `.audit/phase-g-cinematic-resume/baseline`, com diff binário e hashes. O pedido atual autoriza concluir e consolidar essa mesma implementação. Manter o storyboard acima e os esclarecimentos editoriais registrados no plano original; não acrescentar atribuições individuais ou métricas.
+
+Antes da nova implementação: completar limpeza de pagehide/pageshow, tratar hash inválido, recuperar foco somente no caminho de teclado para não mover links durante cliques, e manter o skip-link no início da leitura. A cápsula dos cases reutilizará o avatar exato e a tipografia da home; arco e superfície continuam subordinados ao conteúdo. Categorias em texto normal, sem títulos duplicados por índices decorativos; tracking limitado a−0,04em. Todos os quatro cases serão cobertos pelos testes de rota/SEO e pela nova regressão de scroll/fallback. O Museu já recuperou2340×1080 do vídeo original; a validação medirá preenchimento por cover e manterá acesso ao arquivo integral.
+
 Build/strict/lint/unitários; E2E dos quatro cases, SEO, rota desconhecida/erro e navegação home→Museu. Provar progresso/reversão/resize/hash/teclado/reduced em execução/import falho/no-JS. Capturas1440/1920/375 e vídeos sem full-page simultâneo; comparar sequência e geometria à home aprovada. Uma rodada de inspeção e no máximo uma confirmação após correções agrupadas. Verificar janela do museu preenchida e recuperação de resolução real. Preservar falhas/limites; atualizar docs e commits atômicos locais. Fechar para avaliação de G, aguardando aprovação explícita antes de H.

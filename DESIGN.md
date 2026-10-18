@@ -1,6 +1,6 @@
 ---
 name: "Bruno Proença Silva — direção B e extensão C/D/E/F/G"
-description: "Identidade aprovada preservada; home F e leitura dos três cases G sobre neutros escuros, violeta e Manrope."
+description: "Identidade aprovada preservada; home F e quatro cases cinematográficos G sobre neutros escuros, violeta e Manrope."
 colors:
   background: "#08090d"
   surface: "#202024"
@@ -311,3 +311,11 @@ O sidecar preserva os snippets de B como amostras documentais e registra C em `e
 - Inventar experiência, métricas, prêmios, disponibilidade, fotografias ou interfaces de projetos.
 - Tratar storyboard, snippets ou revisão estática como animações entregues.
 - Aplicar este snapshot a src ou produção sem autorização da fase correspondente.
+
+## Extensão G — cases cinematográficos,18/10/2026
+
+Quatro cases conforme PHASE_G_CINEMATIC_REVIEW. Manrope; título desktop clamp(2.75rem,6.5vw,6rem), mobile clamp(2.5rem,11vw,3.75rem); capítulos clamp(2.25rem,4vw,3.75rem), texto principal clamp(1.25rem,2vw,1.625rem), corpo1.0625rem. Categorias/controles0.875rem, legendas0.8125rem; adaptações compactas0.75rem/0.625rem na barra decorativa. Sem tracking inferior a−0.04em. São rampas fluidas específicas da leitura dos cases.
+
+Cápsula420px/raio30px com avatar exato; janela raio14px; superfície de leitura#111116, hover#282434, borda#716782. Preto#000 em máscara/sombras (alpha33%/60%), violeta#8b5cf6 com alpha13% no glow. Raio superior32px→0 na cobertura; preto não é nova superfície de conteúdo. Top blur164px/8px. São extensões intencionais detectadas como11 avisos consultivos pelo detector único, não novos temas. Sidecar antigo preservado.
+
+Desktop≥1100×800/no-preference:200svh sticky nativo, scrub0.4s, captura65vh/escala0.65→1; texto desloca48px. Compacto/reduced/foco/hash/falha conserva leitura. Faixas reutilizam home. Nenhuma captura inventada; Museu cover proporcional com original integral.

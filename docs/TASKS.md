@@ -2,6 +2,10 @@
 
 ## Redesign cinematográfico — estado vigente
 
+- [x] Incremento G solicitado: planejar antes de animar, preservar13 pendências da mesma tarefa, aplicar identidade/scroll aos quatro cases e adicionar Museu com créditos coletivos/storytelling e imagem original2340×1080 preenchendo a janela. Fontes452cb71/32dfe49; relatório PHASE_G_CINEMATIC_REVIEW.
+- [x] Validar build/strict/lint,9 unitários,102 testes selecionados entre confirmação99/102 e reconfirmação3/3, SEO6/6; preservar histórico de falhas.72 estados visuais e provas duráveis. Commits locais, sem push/deploy.
+- [ ] Avaliação perceptual G; fotos/contexto, aba visível e direitos Ateliê conforme limites anteriores. H/I exigem autorização específica. Entradas anteriores de três cases abaixo são históricas.
+
 - [x] 18/10: G autorizada explicitamente por “dê sequência com a fase G”. Plano6c1c768; ícones161b6a4; casesaee6ea7. Entrega local em PHASE_G_REVIEW; sem push/deploy ou H/I.
 - [x] G02: três cases com mídia real, leitura B, fontes/limites, slugs e fallbacks preservados; build/strict/lint,8 unitários e60 E2E finais aprovados. Formato dos alterados passa; global falha em24 arquivos preexistentes, lista registrada.
 - [x] G03 parcial: avatar atual confirmado; ICO16/32/48, PNG192/Apple180 e metadata/HTTP verificados.
