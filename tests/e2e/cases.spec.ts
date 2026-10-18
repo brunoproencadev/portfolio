@@ -31,13 +31,26 @@ for (const project of projects) {
         await expect(
           page.getByRole("heading", { name, exact: true }),
         ).toBeVisible();
-      await expect(page.getByRole("img")).toHaveAccessibleName(
-        /Diagrama conceitual/,
-      );
-      await expect(page.getByRole("img")).toHaveAttribute("width", "480");
-      await expect(page.getByRole("img")).toHaveAttribute("height", "260");
-      await expect(page.locator("figcaption")).toContainText(
+      const diagram = page.locator(".case-diagram").getByRole("img");
+      await expect(diagram).toHaveAccessibleName(/Diagrama conceitual/);
+      await expect(diagram).toHaveAttribute("width", "480");
+      await expect(diagram).toHaveAttribute("height", "260");
+      await expect(page.locator(".case-diagram figcaption")).toContainText(
         "Esquema conceitual autoral",
+      );
+      for (const image of await page.locator(".case-media img").all()) {
+        await image.scrollIntoViewIfNeeded();
+        await expect(image).toBeVisible();
+        await expect
+          .poll(() =>
+            image.evaluate((img: HTMLImageElement) => img.naturalWidth),
+          )
+          .toBeGreaterThan(0);
+        await expect(image).not.toHaveAttribute("alt", "");
+      }
+      await expect(page.locator("time")).toHaveAttribute(
+        "datetime",
+        "2026-10-18",
       );
       await expect(
         page.getByRole("link", { name: "Ver repositório" }),
@@ -120,6 +133,42 @@ test("cases and navigation remain available without JavaScript", async ({
   } finally {
     await context.close();
   }
+});
+
+test("case text, sources and navigation survive failed media and reduced motion", async ({
+  page,
+  browserName,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.route("**/_next/image?*", (route) => route.abort());
+  await page.goto("/projetos/atelie-ingrid-xavier");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Ateliê Ingrid Xavier",
+  );
+  await expect(page.locator(".case-media figcaption")).toContainText(
+    "Publicação não confirmada",
+  );
+  await page.locator(".case-media-window").focus();
+  await expect(page.locator(".case-media-window")).toBeFocused();
+  const original = page.getByRole("link", { name: "Abrir captura completa" });
+  if (browserName === "webkit" && process.platform === "win32") {
+    // Windows WebKit skips native links on Tab, including plain HTML (QA_PHASE7).
+    await original.focus();
+  } else {
+    await page.keyboard.press("Tab");
+  }
+  await expect(original).toBeFocused();
+  await expect(page.locator(".case-sources a").first()).toHaveAttribute(
+    "href",
+    /\/blob\/[a-f0-9]{40}\//,
+  );
+  await page
+    .getByRole("navigation", { name: "Outros cases" })
+    .getByRole("link", { name: "RoboSense Lab" })
+    .click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "RoboSense Lab",
+  );
 });
 
 test("unknown slugs and inherited names return useful HTTP 404 pages", async ({

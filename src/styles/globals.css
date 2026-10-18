@@ -659,6 +659,18 @@ h3 {
   color: var(--muted);
   font-size: 0.875rem;
 }
+.case-page {
+  --background: #08090d;
+  --surface: #14141b;
+  --foreground: #f5f3ff;
+  --muted: #b8b5c5;
+  --accent: #c4b5fd;
+  --divider: #33323a;
+  --control-border: #85838f;
+  min-height: 100svh;
+  background: var(--background);
+  color: var(--foreground);
+}
 .case-header {
   display: flex;
   min-height: 96px;
@@ -685,17 +697,61 @@ h3 {
 }
 .case-status {
   color: var(--muted);
-  padding: 20px;
-  border-left: 3px solid var(--accent);
-  background: var(--surface);
+  padding-block: 20px;
+  border-block: 1px solid var(--divider);
 }
 .case-status strong {
   color: var(--foreground);
 }
 .case-diagram {
-  margin-block: 48px;
+  margin: 32px 0 0;
   border: 1px solid var(--divider);
   border-radius: 8px;
+}
+.case-diagram figcaption {
+  padding: 20px;
+  color: var(--muted);
+}
+.case-diagram figcaption strong {
+  display: block;
+  color: var(--foreground);
+  margin-bottom: 8px;
+}
+.case-media {
+  display: grid;
+  gap: 40px;
+  margin-block: 56px 64px;
+}
+.case-media figure {
+  margin: 0;
+  min-width: 0;
+}
+.case-media-window {
+  max-height: min(72svh, 720px);
+  overflow: auto;
+  border-radius: 12px;
+  background: var(--surface);
+  scrollbar-color: var(--control-border) var(--surface);
+}
+.case-media-window img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.case-media figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 32px;
+  color: var(--muted);
+  padding-top: 16px;
+}
+.case-media figcaption p {
+  max-width: 65ch;
+}
+.case-source-note {
+  font-size: 0.875rem;
 }
 .case-diagram .project-illustration {
   max-width: 640px;

@@ -1,8 +1,13 @@
 import { projects } from "./portfolio";
+import { projectMedia } from "./project-media";
+
+// Pinned sources rechecked without rerunning the original experiments.
+const sourcesCheckedAt = "2026-10-18";
 
 const studies = [
   {
     slug: "robosense-lab",
+    media: [projectMedia.robo],
     context:
       "Antes de integrar percepção ao controle de um robô, é preciso distinguir uma bola não detectada de uma câmera sem dados ou de um frame antigo. O RoboSense Lab investiga esses contratos em experimentos de visão computacional para RoboCup Junior Soccer.",
     approach:
@@ -46,6 +51,7 @@ const studies = [
   },
   {
     slug: "industry-week-senai",
+    media: projectMedia.industry,
     context:
       "O evento Engrenagens do Tempo, da escola SESI em parceria com o SENAI, precisava apresentar a evolução industrial. A interface organiza o tema em uma jornada por eras, conectando conteúdo histórico e exploração visual.",
     approach:
@@ -62,7 +68,7 @@ const studies = [
       "Descrever o formulário de visita como feedback local: sua confirmação visual não comprova agendamento ou persistência.",
     ],
     evidenceSummary:
-      "O código confirma navegação, tema e painéis por era. O README indica uma demonstração pública; sua disponibilidade foi conferida, mas este case não certifica o funcionamento integral da aplicação externa.",
+      "O código confirma navegação, tema e painéis por era. As capturas mostram o site público observado em 11/10/2026; o deployment consultado estava em uma revisão diferente da fonte analisada. Este case não certifica o funcionamento integral da aplicação externa.",
     sources: [
       {
         label: "Contexto do evento e demonstração indicada",
@@ -85,6 +91,7 @@ const studies = [
   },
   {
     slug: "atelie-ingrid-xavier",
+    media: [projectMedia.atelie],
     context:
       "O catálogo apresenta peças artesanais reais e facilita o atendimento sem exigir conta ou checkout. O desafio é manter as informações das peças e os destinos de contato coerentes com o conteúdo confirmado.",
     approach:
@@ -127,5 +134,7 @@ const studies = [
 export function getCaseStudy(slug: string) {
   const project = projects.find((entry) => entry.slug === slug);
   const study = studies.find((entry) => entry.slug === slug);
-  return project && study ? { ...project, ...study } : undefined;
+  return project && study
+    ? { ...project, ...study, sourcesCheckedAt }
+    : undefined;
 }
