@@ -11,20 +11,30 @@ export function HeroProject() {
   return (
     <HeroProjectMotion>
       <CinematicHero />
-      <figure className={`robo-frame ${styles.frame}`}>
-        <div className="robo-media">
-          <Image
-            src={media.src}
-            alt={media.alt}
-            width={media.width}
-            height={media.height}
-            sizes="(min-width: 900px) 960px, 90vw"
-            priority
-          />
-        </div>
-        <figcaption>{media.caption}</figcaption>
-      </figure>
-      <ToolPopups tools={projects[0].stack} name={projects[0].name} />
+      <div className="robo-visual">
+        <figure className={`robo-frame ${styles.frame}`}>
+          <div className="robo-media project-window">
+            <div className="window-bar" aria-hidden="true">
+              <span className="window-lights">
+                <span />
+                <span />
+                <span />
+              </span>
+              <span>{projects[0].name}</span>
+            </div>
+            <Image
+              src={media.src}
+              alt={media.alt}
+              width={media.width}
+              height={media.height}
+              sizes="(min-width: 900px) 960px, 90vw"
+              priority
+            />
+          </div>
+          <figcaption>{media.caption}</figcaption>
+        </figure>
+        <ToolPopups tools={projects[0].stack} name={projects[0].name} />
+      </div>
     </HeroProjectMotion>
   );
 }

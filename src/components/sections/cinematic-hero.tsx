@@ -17,7 +17,7 @@ export function CinematicHero() {
                 width="160%"
                 height="300%"
               >
-                <feGaussianBlur stdDeviation="24" />
+                <feGaussianBlur stdDeviation="38" />
               </filter>
               <filter
                 id="hero-edge"
@@ -32,7 +32,7 @@ export function CinematicHero() {
             <path
               d="M-80 344 Q720 824 1520 344"
               stroke="#7350d6"
-              strokeWidth="55"
+              strokeWidth="76"
               opacity=".65"
               filter="url(#hero-halo)"
             />

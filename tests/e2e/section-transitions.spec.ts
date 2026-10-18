@@ -46,7 +46,9 @@ for (const width of [1440, 375]) {
       await target.evaluate((el) =>
         scrollTo(
           0,
-          el.getBoundingClientRect().top + scrollY + el.offsetHeight * 0.98,
+          el.getBoundingClientRect().top +
+            scrollY +
+            (el as HTMLElement).offsetHeight * 0.98,
         ),
       );
       await expect

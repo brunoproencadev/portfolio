@@ -86,6 +86,11 @@ export function startReveals(root: HTMLElement) {
       media.revert();
     },
     scrollTop(target: HTMLElement) {
+      const robo = target.closest<HTMLElement>(".cover-enhanced .work-robo");
+      if (robo) {
+        const start = robo.parentElement!.getBoundingClientRect().top + scrollY;
+        return start + Math.max(0, robo.offsetHeight - innerHeight + 48);
+      }
       const band = target.closest(".story-band");
       if (!carousel || !band) return undefined;
       const index = Array.from(band.parentElement!.children).indexOf(band);
@@ -99,7 +104,7 @@ export function startReveals(root: HTMLElement) {
     settle() {
       ScrollTrigger.update();
       for (const trigger of ScrollTrigger.getAll())
-        trigger.getTween()?.progress(1);
+        trigger.getTween()?.progress?.(1);
     },
   };
 }

@@ -73,6 +73,26 @@ test("keyboard focus brings each carousel link into view without removing its pi
   );
 });
 
+test("a cancelled native smooth scroll still brings the focused destination into view", async ({
+  page,
+}) => {
+  await page.evaluate(() => {
+    const nativeScroll = window.scrollTo.bind(window);
+    window.scrollTo = ((options: ScrollToOptions | number, y?: number) => {
+      if (typeof options === "object") {
+        if (options.behavior !== "smooth") nativeScroll(options);
+      } else nativeScroll(options, y ?? 0);
+    }) as typeof window.scrollTo;
+  });
+  await page.locator(".capsule").hover();
+  await page
+    .locator(".capsule-links")
+    .getByRole("link", { name: "Contato", exact: true })
+    .click();
+  await expect(page.locator("#contato")).toBeFocused();
+  await expect(page.locator("#contato")).toBeInViewport();
+});
+
 test("hover opens navigation and preserves the scene forwards and backwards", async ({
   page,
 }) => {

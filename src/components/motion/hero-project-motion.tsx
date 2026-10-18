@@ -58,9 +58,27 @@ export function HeroProjectMotion({ children }: { children: ReactNode }) {
                   invalidateOnRefresh: true,
                 },
               });
+              const exit = gsap.fromTo(
+                root.querySelector(".robo-visual"),
+                { scale: 1, opacity: 1, y: 0 },
+                {
+                  scale: 0.35,
+                  opacity: 0,
+                  y: () => innerHeight * 0.6,
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: root,
+                    start: "bottom bottom",
+                    end: "bottom 40%",
+                    scrub: 0.35,
+                    invalidateOnRefresh: true,
+                  },
+                },
+              );
               settle = () => {
                 ScrollTrigger.update();
                 timeline.scrollTrigger?.getTween()?.progress(1);
+                exit.scrollTrigger?.getTween()?.progress(1);
               };
               timeline
                 .to(

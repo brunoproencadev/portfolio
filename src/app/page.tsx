@@ -19,40 +19,41 @@ export default function Home() {
         <HeroProject />
         <HomeMotion />
 
-        <article
-          className="work-robo page-container"
-          aria-labelledby="titulo-robosense-lab"
-          data-scroll-copy
-        >
-          <ProjectContent project={projects[0]} />
-        </article>
+        <div className="robo-about-passage">
+          <article
+            className="work-robo page-container"
+            aria-labelledby="titulo-robosense-lab"
+            data-scroll-copy
+          >
+            <ProjectContent project={projects[0]} />
+          </article>
 
-        <section
-          className="section page-container about-section"
-          aria-labelledby="sobre"
-        >
-          <div className="about-heading" data-scroll-copy>
-            <h2 id="sobre" tabIndex={-1}>
-              Aprender,
-              <br />
-              <em>construindo.</em>
-            </h2>
-          </div>
-          <div className="about-copy">
-            <div className="about-sweep" aria-hidden="true">
-              {profile.fields}
+          <section className="about-surface" aria-labelledby="sobre">
+            <div className="section page-container about-section">
+              <div className="about-heading" data-scroll-copy>
+                <h2 id="sobre" tabIndex={-1}>
+                  Aprender,
+                  <br />
+                  <em>construindo.</em>
+                </h2>
+              </div>
+              <div className="about-copy">
+                <div className="about-sweep" aria-hidden="true">
+                  {profile.fields}
+                </div>
+                <p className="large-copy">{profile.about}</p>
+                <div className="process-note">
+                  <LinkIcon name="turn" />
+                  <p>
+                    <strong>Uma interface precisa comunicar.</strong> Um
+                    experimento precisa de contexto. Em ambos, a próxima decisão
+                    começa pelo que é possível observar.
+                  </p>
+                </div>
+              </div>
             </div>
-            <p className="large-copy">{profile.about}</p>
-            <div className="process-note">
-              <LinkIcon name="turn" />
-              <p>
-                <strong>Uma interface precisa comunicar.</strong> Um experimento
-                precisa de contexto. Em ambos, a próxima decisão começa pelo que
-                é possível observar.
-              </p>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         <SelectedWork />
 

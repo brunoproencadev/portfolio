@@ -111,6 +111,8 @@ test("resize removes pin on narrow or short windows and restores desktop safely"
   }
   await page.setViewportSize({ width: 1440, height: 900 });
   await expect(page.locator(".pin-spacer")).toHaveCount(1);
+  // About intentionally covers the sticky article; keyboard focus restores it.
+  await page.getByRole("link", { name: "Ler case de RoboSense Lab" }).focus();
   await page.getByRole("link", { name: "Ler case de RoboSense Lab" }).click();
   await expect(page).toHaveURL(/projetos\/robosense-lab$/);
   await expect(page.locator(".pin-spacer")).toHaveCount(0);

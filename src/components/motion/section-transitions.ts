@@ -14,6 +14,35 @@ export function startSectionTransitions(root: HTMLElement) {
     (context) => {
       const wide = Boolean(context.conditions?.wide);
       const targets: HTMLElement[] = [];
+      const passage = root.querySelector<HTMLElement>(".robo-about-passage");
+      const copy = passage?.querySelector<HTMLElement>(".work-robo");
+      const surface = passage?.querySelector<HTMLElement>(".about-surface");
+      if (passage && copy && surface) {
+        passage.classList.add("cover-enhanced");
+        gsap.set(copy, {
+          top: () => Math.min(112, innerHeight - copy.offsetHeight - 48),
+        });
+        gsap.fromTo(
+          surface,
+          { "--cover-radius": "48px", "--cover-shadow": 1 },
+          {
+            "--cover-radius": "0px",
+            "--cover-shadow": 0,
+            ease: "none",
+            scrollTrigger: {
+              trigger: surface,
+              start: "top bottom",
+              end: "top top",
+              scrub: true,
+              invalidateOnRefresh: true,
+              onRefresh: () =>
+                gsap.set(copy, {
+                  top: Math.min(112, innerHeight - copy.offsetHeight - 48),
+                }),
+            },
+          },
+        );
+      }
       const reveal = (
         selector: string,
         from: { x?: number; y?: number; scale?: number },
@@ -74,6 +103,21 @@ export function startSectionTransitions(root: HTMLElement) {
       reveal(".skills-section .study-note", { y: 24 });
 
       if (context.conditions?.heroFallback) {
+        gsap.fromTo(
+          ".robo-visual",
+          { scale: 1, opacity: 1 },
+          {
+            scale: 0.7,
+            opacity: 0,
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".robo-visual",
+              start: "bottom 55%",
+              end: "bottom 15%",
+              scrub: 0.25,
+            },
+          },
+        );
         reveal(".robo-frame, .robo-frame + .tool-popups", { y: 36 });
         gsap.to(".hero-content", {
           y: -36,
@@ -110,6 +154,7 @@ export function startSectionTransitions(root: HTMLElement) {
       }
 
       return () => {
+        passage?.classList.remove("cover-enhanced");
         for (const target of targets) {
           delete target.dataset.sectionMotion;
           delete target.dataset.sectionActive;

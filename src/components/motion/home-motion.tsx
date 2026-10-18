@@ -40,6 +40,13 @@ export function HomeMotion() {
       const target = destination;
       cancel();
       if (!target) return;
+      // A delayed/cancelled native smooth scroll can go quiet before arriving.
+      // Keep focus and viewport together, unless a user gesture cancelled us.
+      const top = Math.min(
+        topFor(target),
+        document.documentElement.scrollHeight - innerHeight,
+      );
+      if (Math.abs(scrollY - top) > 2) scrollTo({ top, behavior: "instant" });
       effects?.settle();
       target.focus({ preventScroll: true });
     };

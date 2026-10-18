@@ -2,6 +2,14 @@
 
 Frame integral do vídeo do museu aos 10s, screenshot real da execução local do kord, mascote Clawd via Lobe Icons e ícones Unity/C#/HTML/CSS/JavaScript via Devicon. Fontes fixadas, autoria, licenças, hashes e limites em [PHASE_F_PROJECTS](PHASE_F_PROJECTS.md) e [assets.json](project-expansion-review/assets.json). Museu sem contribuição Git atribuída a Bruno; kord é marca fictícia acadêmica. Uso local solicitado, sem publicação. O PNG Claude anterior foi preservado e não é usado pelo componente.
 
+## Histórico — Claude Code em 2026-10-17
+
+Incluído nos pop-ups dos três projetos por pedido explícito do autor. A atribuição fica separada das listas tecnológicas dos cases; nenhuma funcionalidade ou resultado é inferido. Ícone PNG original do site oficial, servido localmente: [proveniência e hash](PHASE_F_REFINEMENT_ASSETS.md). Uso identificador, sem alegação de endosso ou licença geral sobre a marca. A moldura macOS agora também envolve o frame real do RoboSense; pontos decorativos, sem controles fictícios.
+
+## Claude Code — 2026-10-17
+
+Incluído nos pop-ups dos três projetos por pedido explícito do autor. A atribuição fica separada das listas tecnológicas dos cases; nenhuma funcionalidade ou resultado é inferido. Ícone PNG original do site oficial, servido localmente: [proveniência e hash](PHASE_F_REFINEMENT_ASSETS.md). Uso identificador, sem alegação de endosso ou licença geral sobre a marca. A moldura macOS agora também envolve o frame real do RoboSense; pontos decorativos, sem controles fictícios.
+
 ## Ícones reais das ferramentas — 2026-10-15
 
 Por solicitação do usuário, Python, NumPy e OpenCV usam os SVGs `original` do Devicon; PySerial usa o logo PNG indicado pela documentação oficial. Arquivos locais em `public/images/tools/`, fontes, bytes e SHA-256 em [tool-icons-manifest.json](tool-icons-manifest.json). Aquisição em 15/10/2026; URLs de origem mutáveis, bytes locais identificados pelo hash. Sem pacote adicional ou logos redesenhados.

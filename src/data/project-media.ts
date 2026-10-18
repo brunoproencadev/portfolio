@@ -1,5 +1,6 @@
 // Provenance, original hashes and publication limits: docs/MEDIA_ASSETS.md.
 export const toolIcons = {
+  "Claude Code": "/images/tools/claude-code.png",
   Python: "/images/tools/python.svg",
   NumPy: "/images/tools/numpy.svg",
   OpenCV: "/images/tools/opencv.svg",
@@ -12,6 +13,23 @@ export const toolIcons = {
   Motion: "/images/tools/motion.svg",
   "Next.js": "/images/tools/nextjs.svg",
 } as const;
+
+// Popup attribution requested by the author; case technology lists stay factual.
+export const projectAssistants = ["Claude Code"] as const;
+export const toolColors: Record<keyof typeof toolIcons, string> = {
+  Python: "#ffd343",
+  NumPy: "#4dabcf",
+  OpenCV: "#5cdb49",
+  PySerial: "#3776ab",
+  React: "#61dafb",
+  TypeScript: "#3178c6",
+  Vite: "#a855f7",
+  Tailwind: "#38bdf8",
+  GSAP: "#88ce02",
+  Motion: "#fff42b",
+  "Next.js": "#d9d9e3",
+  "Claude Code": "#d97757",
+};
 
 export const projectMedia = {
   robo: {

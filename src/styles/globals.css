@@ -839,7 +839,7 @@ button.button-link {
   --divider: #33323a;
   --control-border: #85838f;
   --depth-media: 0 32px 64px -12px #000b, 0 12px 28px #0006;
-  --depth-tool: 0 18px 36px -8px #000b, 0 6px 12px #0005;
+  --depth-tool: 0 22px 38px -8px #000d, 0 8px 14px #0008;
   background: var(--background);
   color: var(--foreground);
 }
@@ -847,7 +847,7 @@ button.button-link {
   content: "";
   position: fixed;
   inset: 0 0 auto;
-  height: 116px;
+  height: 164px;
   z-index: 9;
   pointer-events: none;
   backdrop-filter: blur(8px);
@@ -998,7 +998,9 @@ button.button-link {
   height: 56px;
   border-radius: 14px;
   background: #eeedf3;
-  box-shadow: var(--depth-tool);
+  box-shadow:
+    var(--depth-tool),
+    0 0 26px -5px color-mix(in srgb, var(--tool-glow) 38%, transparent);
 }
 .tool-popups img {
   width: 36px;
@@ -1074,6 +1076,22 @@ button.button-link {
 }
 .story-progress {
   display: none;
+}
+.robo-about-passage {
+  position: relative;
+  isolation: isolate;
+}
+.cover-enhanced .work-robo {
+  position: sticky;
+}
+.about-surface {
+  position: relative;
+  background: var(--background);
+}
+.cover-enhanced .about-surface {
+  border-radius: var(--cover-radius, 48px) var(--cover-radius, 48px) 0 0;
+  background: #101117;
+  box-shadow: 0 -28px 64px -12px rgb(0 0 0 / calc(var(--cover-shadow, 1) * 0.7));
 }
 .home-page .about-section {
   display: grid;
@@ -1268,10 +1286,20 @@ button.button-link {
     opacity: 0;
   }
   .story-enhanced .story-window {
+    position: relative;
     width: 100%;
     flex: 1;
     min-height: 0;
     overflow: clip;
+  }
+  .story-enhanced .story-window::after {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: clamp(24px, 4vw, 64px);
+    pointer-events: none;
+    backdrop-filter: blur(10px);
+    mask-image: linear-gradient(90deg, #000, transparent);
   }
   .story-enhanced .story-track {
     flex-direction: row;
@@ -1325,6 +1353,11 @@ button.button-link {
     top: 38%;
     right: -28px;
     transform: rotate(6deg);
+  }
+  .story-enhanced .tool-popups li:nth-child(7) {
+    top: -8px;
+    left: 47%;
+    transform: rotate(-4deg);
   }
   .story-enhanced .story-progress {
     position: relative;

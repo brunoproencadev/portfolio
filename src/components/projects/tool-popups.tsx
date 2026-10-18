@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { toolIcons } from "@/data/project-media";
+import type { CSSProperties } from "react";
+import { toolColors, toolIcons } from "@/data/project-media";
 import { additionalToolIcons } from "@/data/additional-projects";
 
 const icons = {
@@ -20,7 +21,19 @@ export function ToolPopups({
   return (
     <ul className="tool-popups" aria-label={`Ferramentas usadas no ${name}`}>
       {[...new Set([...tools, ...assistants])].map((tool) => (
-        <li key={tool} data-project-tool aria-label={tool}>
+        <li
+          key={tool}
+          data-project-tool
+          aria-label={tool}
+          style={
+            {
+              "--tool-glow":
+                tool in toolColors
+                  ? toolColors[tool as keyof typeof toolColors]
+                  : "#b8b5c5",
+            } as CSSProperties
+          }
+        >
           <Image src={icons[tool]} alt="" width={40} height={40} />
         </li>
       ))}

@@ -1,5 +1,7 @@
 # Ícones da revisão F — 17/10/2026
 
+Adição final: `public/images/tools/claude-code.png`, 192×192, obtido sem redesenho do favicon indicado por [Claude Code, documentação oficial](https://code.claude.com/docs/en/overview). [Arquivo de origem](https://code.claude.com/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon/android-chrome-192x192.png). SHA-256 `d4e5e8e9990ac52f147a74ae80b9e69cdc612264b84a76cdb5c43b53b73a1707`. Atribuição nos três projetos solicitada pelo usuário; uso identificador da ferramenta, sem alegar endosso ou licença geral da marca. Bytes originais preservados; nenhuma consulta remota durante a navegação.
+
 Complemento de proveniência a MEDIA_ASSETS.md, preservado sem alterações nesta revisão. Assets baixados das fontes abaixo, sem redesenho. Servidos localmente; nenhuma requisição às marcas ocorre durante a navegação.
 
 Devicon: licença MIT já preservada em `public/images/tools/devicon-LICENSE.txt`. GreenSock: distribuição Simple Icons 11.15.0, CC0-1.0; é o símbolo histórico de GreenSock/GSAP. Motion: favicon do domínio oficial, usado para identificar a ferramenta; não pressupõe cessão de marca, endosso ou uma licença geral para outros usos. Os logotipos GitHub e LinkedIn identificam destinos externos. SVG de e-mail/seta é geometria funcional autoral.

@@ -54,7 +54,9 @@ test("focusing lower content then wheeling preserves layout and keeps focus belo
     const delta = (await page.evaluate(() => scrollY)) - beforeScroll;
     expect(delta).toBeGreaterThanOrEqual(0);
     expect(delta).toBeLessThanOrEqual(52);
-    expect(Math.abs(after.y - before.y + delta)).toBeLessThan(2);
+    // RoboSense now stays in place while About rises over it.
+    const expectedDelta = selector.startsWith(".work-robo") ? 0 : delta;
+    expect(Math.abs(after.y - before.y + expectedDelta)).toBeLessThan(2);
     expect(await page.evaluate(() => document.body.scrollHeight)).toBe(height);
   }
 });
