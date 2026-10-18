@@ -39,8 +39,8 @@ test("content order, consolidated details, tool icons and contact match the requ
     }
   }
   await expect(
-    page.locator(".story-band:first-child [data-project-tool]"),
-  ).toHaveCount(6);
+    page.locator(".story-band:nth-child(2) [data-project-tool]"),
+  ).toHaveCount(7);
   await expect(page.locator(".contact-actions > a")).toHaveText(
     "brunoproencasilva@gmail.com",
   );
@@ -66,7 +66,7 @@ test("keyboard focus brings each carousel link into view without removing its pi
     await expect(page.locator(".pin-spacer")).toHaveCount(1);
   }
   await page.locator(".story-progress a").first().click();
-  await expect(page.locator("#titulo-industry-week-senai")).toBeFocused();
+  await expect(page.locator("#titulo-museu-arte-moderna")).toBeFocused();
   await expect(page.locator(".story-progress-thumb")).toHaveCSS(
     "transform",
     "matrix(1, 0, 0, 1, 0, 0)",

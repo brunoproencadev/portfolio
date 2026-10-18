@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { projects } from "@/data/portfolio";
 import { projectMedia } from "@/data/project-media";
+import { additionalProjects } from "@/data/additional-projects";
 import { LinkIcon } from "./link-icon";
 
 export function ProjectContent({
   project,
 }: {
-  project: (typeof projects)[number];
+  project: (typeof projects)[number] | (typeof additionalProjects)[number];
 }) {
   const Heading = project.slug === "robosense-lab" ? "h2" : "h3";
   return (
@@ -36,13 +37,15 @@ export function ProjectContent({
         </div>
       </dl>
       <div className="work-links">
-        <Link
-          href={`/projetos/${project.slug}`}
-          prefetch={false}
-          aria-label={`Ler case de ${project.name}`}
-        >
-          Ler case <LinkIcon name="arrow" />
-        </Link>
+        {projects.some(({ slug }) => slug === project.slug) && (
+          <Link
+            href={`/projetos/${project.slug}`}
+            prefetch={false}
+            aria-label={`Ler case de ${project.name}`}
+          >
+            Ler case <LinkIcon name="arrow" />
+          </Link>
+        )}
         <a
           href={project.repository}
           aria-label={`Ver repositório de ${project.name}`}

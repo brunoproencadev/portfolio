@@ -1,14 +1,33 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import { projects } from "@/data/portfolio";
 import { projectMedia } from "@/data/project-media";
 import { ProjectContent } from "@/components/projects/project-content";
 import { ToolPopups } from "@/components/projects/tool-popups";
 import { LinkIcon } from "@/components/projects/link-icon";
+import {
+  additionalMedia,
+  additionalProjects,
+} from "@/data/additional-projects";
 
 export function SelectedWork() {
   const scenes = [
-    { project: projects[1], media: projectMedia.industry[0] },
-    { project: projects[2], media: projectMedia.atelie },
+    {
+      project: additionalProjects[0],
+      media: additionalMedia.museum,
+      label: "Museu",
+    },
+    {
+      project: projects[1],
+      media: projectMedia.industry[0],
+      label: "Industry Week",
+    },
+    { project: projects[2], media: projectMedia.atelie, label: "Ateliê" },
+    {
+      project: additionalProjects[1],
+      media: additionalMedia.kord,
+      label: "kord",
+    },
   ];
   return (
     <section className="selected-work" aria-labelledby="projetos">
@@ -18,7 +37,12 @@ export function SelectedWork() {
         </h2>
         <p>O problema, as escolhas e até onde cada resultado foi validado.</p>
       </div>
-      <div className="story-stage" role="region" aria-label="Projetos em foco">
+      <div
+        className="story-stage"
+        role="region"
+        aria-label="Projetos em foco"
+        style={{ "--story-count": scenes.length } as CSSProperties}
+      >
         <div className="story-background" aria-hidden="true">
           {scenes.map(({ media }, index) => (
             <Image
@@ -50,7 +74,9 @@ export function SelectedWork() {
                         </span>
                         <span>{project.name}</span>
                       </div>
-                      <div className="story-image">
+                      <div
+                        className={`story-image${project.slug === "museu-arte-moderna" ? " story-image-wide" : ""}`}
+                      >
                         <Image
                           src={media.src}
                           alt={media.alt}
@@ -67,7 +93,16 @@ export function SelectedWork() {
                       </a>
                     )}
                   </figure>
-                  <ToolPopups tools={project.stack} name={project.name} />
+                  <ToolPopups
+                    tools={project.stack}
+                    name={project.name}
+                    assistants={
+                      project.slug === "kord" ||
+                      project.slug === "museu-arte-moderna"
+                        ? []
+                        : undefined
+                    }
+                  />
                 </div>
                 <ProjectContent project={project} />
               </article>
@@ -78,11 +113,14 @@ export function SelectedWork() {
           className="story-progress page-container"
           aria-label="Navegar entre projetos"
         >
-          <a href="#titulo-industry-week-senai">Industry Week</a>
+          {scenes.map(({ project, label }) => (
+            <a key={project.slug} href={`#titulo-${project.slug}`}>
+              {label}
+            </a>
+          ))}
           <span className="story-progress-rail" aria-hidden="true">
             <span className="story-progress-thumb" />
           </span>
-          <a href="#titulo-atelie-ingrid-xavier">Ateliê Ingrid</a>
         </nav>
       </div>
     </section>

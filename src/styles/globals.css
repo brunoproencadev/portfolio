@@ -1059,6 +1059,10 @@ button.button-link {
   width: 100%;
   height: auto;
 }
+.story-image-wide img {
+  top: 50%;
+  transform: translateY(-50%);
+}
 .story-slide figcaption {
   font-size: 0.75rem;
   line-height: 1.6;
@@ -1260,7 +1264,7 @@ button.button-link {
     filter: blur(24px) brightness(0.45);
     transform: scale(1.1);
   }
-  .story-backdrop-1 {
+  .story-backdrop:not(.story-backdrop-0) {
     opacity: 0;
   }
   .story-enhanced .story-window {
@@ -1272,11 +1276,11 @@ button.button-link {
   .story-enhanced .story-track {
     flex-direction: row;
     gap: 0;
-    width: 200%;
+    width: calc(100% * var(--story-count));
     height: 100%;
   }
   .story-enhanced .story-band {
-    flex: 0 0 50%;
+    flex: 0 0 calc(100% / var(--story-count));
     height: 100%;
     padding: 64px max(64px, calc((100vw - 1320px) / 2));
   }
@@ -1323,7 +1327,9 @@ button.button-link {
     transform: rotate(6deg);
   }
   .story-enhanced .story-progress {
+    position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 24px;
     height: 64px;
@@ -1337,14 +1343,15 @@ button.button-link {
     white-space: nowrap;
   }
   .story-progress-rail {
-    flex: 1;
+    position: absolute;
+    inset: auto 0 0;
     height: 2px;
     background: #514b60;
     overflow: hidden;
   }
   .story-progress-thumb {
     display: block;
-    width: 50%;
+    width: calc(100% / var(--story-count));
     height: 100%;
     background: var(--accent);
     transform-origin: left;

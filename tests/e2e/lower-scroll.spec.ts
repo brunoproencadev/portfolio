@@ -12,10 +12,10 @@ test.beforeEach(async ({ page }) => {
 test("Atelie preview is bounded and retains a direct link to the entire capture", async ({
   page,
 }) => {
-  const section = await page.locator(".story-band:last-child").boundingBox();
+  const section = await page.locator(".story-band:nth-child(3)").boundingBox();
   expect(section!.height).toBeLessThan(1100);
   const preview = await page
-    .locator(".story-band:last-child .story-image")
+    .locator(".story-band:nth-child(3) .story-image")
     .boundingBox();
   expect(preview!.height).toBeLessThanOrEqual(620);
   await page.locator("#titulo-atelie-ingrid-xavier").focus();

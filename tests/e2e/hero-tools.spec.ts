@@ -20,7 +20,7 @@ test("real tools enter after the approved handoff, stay outside media and revers
     )
     .toBe(2160);
   const tools = page.locator("[data-scroll-study] [data-project-tool]");
-  await expect(tools).toHaveCount(4);
+  await expect(tools).toHaveCount(5);
   for (const tool of await tools.all())
     await expect(tool).toHaveCSS("opacity", "0");
   await progress(page, 0.64);
@@ -29,7 +29,10 @@ test("real tools enter after the approved handoff, stay outside media and revers
   await progress(page, 1);
   for (const [index, tool] of (await tools.all()).entries()) {
     await expect(tool).toHaveCSS("opacity", "1");
-    await expect(tool).toHaveAttribute("aria-label", projects[0].stack[index]);
+    await expect(tool).toHaveAttribute(
+      "aria-label",
+      [...projects[0].stack, "Claude Code"][index],
+    );
     const icon = tool.locator("img");
     await expect(icon).toHaveAttribute("alt", "");
     await expect
@@ -51,7 +54,9 @@ test("real tools enter after the approved handoff, stay outside media and revers
         true,
       );
       expect(
-        bounds.x + bounds.width <= frame.x || bounds.x >= frame.x + frame.width,
+        bounds.x + bounds.width <= frame.x ||
+          bounds.x >= frame.x + frame.width ||
+          bounds.y + bounds.height <= frame.y,
       ).toBe(true);
     }
   }

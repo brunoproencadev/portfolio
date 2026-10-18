@@ -17,12 +17,12 @@ async function pinStart(page: Page) {
 
 async function progress(page: Page, start: number, value: number) {
   await page.evaluate(
-    ({ start, value }) => scrollTo(0, start + innerHeight * 1.6 * value),
+    ({ start, value }) => scrollTo(0, start + innerHeight * 4.8 * value),
     { start, value },
   );
   await expect
     .poll(async () =>
-      Math.abs((await page.evaluate(() => scrollY)) - (start + 1440 * value)),
+      Math.abs((await page.evaluate(() => scrollY)) - (start + 4320 * value)),
     )
     .toBeLessThan(1.1);
 }
@@ -37,29 +37,29 @@ test("one bounded scene moves projects horizontally, changes backgrounds and rev
     track.evaluate(
       (el) => new DOMMatrixReadOnly(getComputedStyle(el).transform).m41,
     );
-  await progress(page, start, 0.15);
+  await progress(page, start, 0.03);
   await expect.poll(x).toBe(0);
   await expect(page.locator(".story-band h3").first()).toContainText(
-    "Industry Week",
+    "Museu de Arte Moderna",
   );
-  await expect(page.locator(".story-stage a")).toHaveCount(8);
+  await expect(page.locator(".story-stage a")).toHaveCount(12);
   const first = await page.locator(".story-window").boundingBox();
   await progress(page, start, 0.5);
   await expect.poll(x).toBeLessThan(-50);
   const mid = await x();
-  await progress(page, start, 0.85);
+  await progress(page, start, 0.97);
   await expect.poll(x).toBeLessThan(mid - 50);
-  await expect(page.locator(".story-band h3").last()).toContainText("Ateliê");
-  await expect(page.locator(".story-backdrop-1")).toHaveCSS("opacity", "0.16");
+  await expect(page.locator(".story-band h3").last()).toContainText("kord");
+  await expect(page.locator(".story-backdrop-3")).toHaveCSS("opacity", "0.16");
   const second = await page.locator(".story-window").boundingBox();
   expect(Math.abs(first!.y - second!.y)).toBeLessThan(2);
-  await progress(page, start, 0.15);
+  await progress(page, start, 0.03);
   await expect.poll(x).toBe(0);
   expect(await page.locator(".pin-spacer").count()).toBe(1);
   const added = await page
     .locator(".pin-spacer")
     .evaluate((el) => parseFloat((el as HTMLElement).style.paddingBottom));
-  expect(added).toBeLessThanOrEqual(900 * 1.8);
+  expect(added).toBeLessThanOrEqual(900 * 4.8 + 1);
   await page.evaluate(() => scrollTo(0, document.body.scrollHeight));
   await expect(
     page.getByRole("link", { name: "Voltar ao início" }),
@@ -257,8 +257,8 @@ for (const path of ["cta", "menu", "direct-hash"] as const) {
     await expect
       .poll(async () => Math.abs((await target.boundingBox())!.y - before))
       .toBeLessThan(100);
-    await progress(page, await pinStart(page), 0.85);
-    await expect(page.locator(".story-backdrop-1")).toHaveCSS(
+    await progress(page, await pinStart(page), 0.97);
+    await expect(page.locator(".story-backdrop-3")).toHaveCSS(
       "opacity",
       "0.16",
     );

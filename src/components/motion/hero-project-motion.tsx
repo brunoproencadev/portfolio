@@ -104,9 +104,9 @@ export function HeroProjectMotion({ children }: { children: ReactNode }) {
                     y: 0,
                     scale: 1,
                     opacity: 1,
-                    duration: 0.12,
-                    stagger: 0.025,
-                    ease: "power3.out",
+                    duration: 0.2,
+                    stagger: 0.022,
+                    ease: "back.out(2.6)",
                   },
                   0.68,
                 )

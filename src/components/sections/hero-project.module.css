@@ -45,7 +45,7 @@
 
 .enhanced .frame {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 40px);
   left: 50%;
   width: min(960px, 72vw, calc((100svh - 260px) * 16 / 9));
   margin: 0;
@@ -87,6 +87,13 @@
 }
 .enhanced :global(.tool-popups) li:nth-child(3) {
   bottom: 27%;
+}
+
+.enhanced :global(.tool-popups) li[aria-label="Claude Code"] {
+  top: max(120px, calc(50% - min(270px, (100svh - 260px) / 2) - 100px));
+  left: calc(50% - 28px);
+  right: auto;
+  bottom: auto;
 }
 .frame :global(.robo-media) {
   border-radius: 12px;
