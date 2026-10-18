@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização 2026-10-18 — H já foi autorizada por “Dê início a fase H” e retomada por “Dê continuidade”. Estado vigente em docs/PHASE_H_REVIEW.md e HANDOFF: QA/performance, sem início de I ou publicação. Experimento inlineCss descartado por regressão; coreografia preservada. Quatro arquivos preexistentes mantidos fora dos novos commits. H continua aberta por desempenho; as afirmações anteriores de H não autorizada são históricas.
+
 Atualização2026-10-18 — continuidade cinematográfica G concluída para avaliação: imagem452cb71, cases/motion/testes32dfe49, plano anterior e06b414. Quatro cases incluindo Museu; captura nativa2340×1080/cover, estética e transições da home. Relatório vigente docs/PHASE_G_CINEMATIC_REVIEW.md, preview3112. Build/strict/lint,9 unitários; confirmação99/102 +3/3 corrigidos, SEO6/6 anterior;72 estados visuais. Sem push/deploy ou H/I. HANDOFF registra limites e SHAs; estados inferiores são históricos.
 
 Atualização2026-10-18 — G autorizada por “dê sequência com a fase G” e implementada localmente para avaliação: plano6c1c768, ícones161b6a4, casesaee6ea7. Relatório vigente docs/PHASE_G_REVIEW.md. Build/strict/lint,8 unitários e60/60 E2E aprovados; formato dos alterados passa, global falha em24 arquivos preexistentes. Fotografias pessoais/contexto e inspeção humana da aba continuam pendentes. F já aprovada. H/I, novos pushes e deploys não autorizados. HANDOFF/TASKS/VERIFICATION prevalecem sobre os registros históricos abaixo.

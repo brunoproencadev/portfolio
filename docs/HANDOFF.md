@@ -1,3 +1,17 @@
+# Estado vigente — Fase H em QA, 2026-10-18
+
+H autorizada por “Dê início a fase H”, retomada por “Dê continuidade”. [Relatório vigente](PHASE_H_REVIEW.md). Esta rodada de QA foi registrada; **H continua aberta por desempenho**, sem autorização de I/push/deploy. As afirmações abaixo de H não iniciada são históricas. Próximo trabalho dentro de H: isolar o custo de inicialização de JavaScript/layout e medir uma solução que preserve a coreografia aprovada.
+
+Commits: `d6a17f0` — plano H; `7a27a28` — alvos do carrossel ≥44px, expectativa cover e zoom dos quatro cases; `cbb81bc910d043b64d938b940d93e09c4ea1ac42` — relatório, histórico de falhas, métricas e evidências duráveis desta retomada. O commit documental de sincronização é consultável por `git log -1 -- docs/HANDOFF.md`, sem autorreferência.
+
+Reconfirmação atual: build/strict/lint PASS; 9/9 unitários; **379 E2E aprovados, cinco skips justificados, zero falhas/retries**, em 384 casos Chromium/Firefox/WebKit. Timeout inicial do teste unitário de lint registrado, seguido de confirmação isolada sem alterar timeout. Formato global FAIL nos mesmos 24 arquivos preexistentes; arquivos desta entrega e diff-check PASS. Artefatos, links e hashes verificados.
+
+Lighthouse mobile: três navegações por cada uma das cinco rotas, sem build/testes concorrentes. Performance home 87; cases 95–97. LCP mediano 3,440s/2,594s/2,537s/2,801s/2,817s para home/RoboSense/Museu/Industry/Ateliê, todos acima de 2,5s. CLS 0,0389 na home e zero nos cases; acessibilidade/boas práticas 100; SEO 66 pelo noindex deliberado. INP não medido. `inlineCss` piorou a mediana local e foi retirado; nenhum ajuste de produto conservado nesta retomada. Não remover movimento para perseguir pontuação.
+
+Quatro alterações de entrada preservadas byte a byte e fora dos novos commits: `docs/PHASE_H_PLAN.md`, `src/components/projects/case-capture.tsx`, `src/components/sections/hero-project.tsx`, `tests/e2e/refinement.spec.ts`. Snapshot em `.audit/phase-h/continuation-baseline`, hashes em `docs/phase-h-review/source-fingerprints.json`. As provas cobrem a árvore completa com essas pendências, não somente HEAD limpo. Não houve inclusão indireta do conteúdo delas nos commits documentais.
+
+Preview local restaurado: http://127.0.0.1:3115/. Novas capturas de menu/foco/zoom e resultados em `docs/phase-h-review`; traces/Lighthouse completos em `.audit/phase-h`. Sem novos vídeos de coreografia, Safari físico, leitor de tela ou prova de campo. Fotos/contexto, direitos Ateliê e favicon em aba seguem pendentes. I tratará SEO, segurança, proveniência e checklist de produção e exige confirmação explícita separada; não iniciar automaticamente.
+
 # Estado vigente — cases cinematográficos G, 2026-10-18
 
 G ampliada pelo pedido de aplicar estética/scroll da home aos cases e adicionar o Museu. Continuidade concluída localmente para avaliação; plano prévio `e06b414`, imagem `452cb71`, cases/motion/testes `32dfe49`. Quatro cases, captura do Museu recuperada em2340×1080 e preenchimento cover com acesso integral. [Relatório vigente](PHASE_G_CINEMATIC_REVIEW.md).

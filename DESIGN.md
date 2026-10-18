@@ -319,3 +319,7 @@ Quatro cases conforme PHASE_G_CINEMATIC_REVIEW. Manrope; título desktop clamp(2
 Cápsula420px/raio30px com avatar exato; janela raio14px; superfície de leitura#111116, hover#282434, borda#716782. Preto#000 em máscara/sombras (alpha33%/60%), violeta#8b5cf6 com alpha13% no glow. Raio superior32px→0 na cobertura; preto não é nova superfície de conteúdo. Top blur164px/8px. São extensões intencionais detectadas como11 avisos consultivos pelo detector único, não novos temas. Sidecar antigo preservado.
 
 Desktop≥1100×800/no-preference:200svh sticky nativo, scrub0.4s, captura65vh/escala0.65→1; texto desloca48px. Compacto/reduced/foco/hash/falha conserva leitura. Faixas reutilizam home. Nenhuma captura inventada; Museu cover proporcional com original integral.
+
+## Decisão H — 18/10/2026
+
+Preservar composição, tempos e transições aprovados durante o QA. A sondagem que removeu movimento inferior não é uma otimização equivalente. O experimento Next inlineCss piorou a mediana e foi retirado; a entrega de CSS permanece externa. Metas de performance continuam abertas em docs/PHASE_H_REVIEW.md; pontuação técnica não substitui aceitação perceptual.

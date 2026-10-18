@@ -1,5 +1,7 @@
 # PRD — Bruno Proença Silva
 
+Atualização 18/10/2026 — H autorizada explicitamente para QA completo/performance. Relatório vigente PHASE_H_REVIEW; metas R07/R10/R11 mantidas, sem presumir atendimento de LCP/INP ou aceite humano. A coreografia aprovada continua preservada. I e publicação exigem autorização própria; os gates de H descritos abaixo são históricos.
+
 Atualização do incremento18/10/2026: pedido explícito autoriza case Museu e extensão da estética/scroll da home aos quatro cases. Registry compartilhado, fontes e créditos coletivos; kord continua sem case. Plano PHASE_G_CINEMATIC_PLAN, entrega PHASE_G_CINEMATIC_REVIEW. G aguarda avaliação; H/I e push/deploy não autorizados. A proibição de rota Museu no registro imediatamente abaixo está superada por este pedido.
 
 Registro anterior18/10/2026: F aprovada; G autorizada por “dê sequência com a fase G”. Implementação local para avaliação em PHASE_G_REVIEW: três cases com mídia real e identidade B, fontes reconferidas e ícones do avatar exato. Fotografias/contexto e inspeção humana da aba permanecem pendentes; não criar novas rotas para Museu/kord. H/I e novos pushes/deploys exigem autorizações próprias. Registros inferiores são históricos quanto aos gates.

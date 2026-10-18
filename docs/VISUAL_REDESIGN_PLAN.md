@@ -1,6 +1,6 @@
 # Plano do redesign — gates A–I
 
-Autorização vigente: **G**, por “dê sequência com a fase G” em18/10/2026, após aceite de F. Entrega local para avaliação em [PHASE_G_REVIEW](PHASE_G_REVIEW.md): cases/mídia e ícones; fotos/contexto e inspeção humana da aba permanecem pendentes. H/I exigem confirmação individual. Workspace D:/projects/portifolio, branch redesign/cinematic-portfolio e origin preservados. Nenhum novo push/deploy autorizado. Os relatos de gates E/F abaixo são históricos.
+Autorização vigente: **H**, por “Dê início a fase H” em 18/10/2026, retomada por “Dê continuidade”. [QA e pendências](PHASE_H_REVIEW.md): métricas medidas, performance ainda fora da meta; fotos/contexto, direitos Ateliê e inspeção humana da aba continuam pendentes. I exige confirmação individual. Workspace D:/projects/portifolio, branch redesign/cinematic-portfolio e origin preservados. Nenhum novo push/deploy autorizado. Os relatos anteriores de gates abaixo são históricos.
 
 ## Problema e direção exigida
 
@@ -19,7 +19,7 @@ O brief fixa dark-first, neutros/violeta, composição cinematográfica, navega�
 | E — concluída      | Saudação manuscrita e passagem ao hero                                           | HomeMotion, home-sequence, CSS/asset próprio              | E01–E02, watchdog/falhas e gravação; solicitar F                                             |
 | F — aprovada       | Scroll narrativo e showcases reais                                               | home-reveals, composição de projetos, imagens verificadas | Aceite explícito em18/10; histórico em HANDOFF                                               |
 | G — para avaliação | Conteúdo/cases, avatar e favicon; fotografias ainda pendentes                    | src/data, cases, public/images, ícones/metadata           | G02 verificado; G01/G03 com pendências em PHASE_G_REVIEW; solicitar H somente após avaliação |
-| H — não autorizada | QA e correção de defeitos                                                        | testes, CSS/componentes afetados, VERIFICATION            | H01–H04, comparação final, riscos explícitos; solicitar I                                    |
+| H — em QA          | QA e correção de defeitos                                                        | testes, CSS/componentes afetados, VERIFICATION            | PHASE_H_REVIEW: H03 fora da meta; preservar limites H01/H04; I não autorizada                |
 | I — não autorizada | SEO, segurança, proveniência e checklist                                         | site config/metadados/docs                                | I01, validar novamente favicon/OG; push/deploy separados                                     |
 
 O favicon fica explicitamente alocado em G e verificado novamente em I; o master prompt o exige, embora a lista de fases só mencione sua verificação final. Pode-se reaproveitar avatar na ilha C após validação de proveniência; isso não autoriza implantar favicon na Fase A.

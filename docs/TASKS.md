@@ -1,5 +1,15 @@
 # Tarefas e gate atual
 
+## Estado vigente — H autorizada, performance pendente
+
+- [x] H autorizada em 18/10 por “Dê início a fase H”; retomada por “Dê continuidade”. Plano `d6a17f0`; correção anterior `7a27a28`; relatório/evidências `cbb81bc`. Registros de H não autorizada abaixo são históricos.
+- [x] Reconfirmar a árvore: build/strict/lint, 9 unitários e suíte completa de 384 casos — 379 aprovados, cinco skips, zero falhas/retries. Histórico de falhas e limitações em [PHASE_H_REVIEW](PHASE_H_REVIEW.md).
+- [x] H01/H02: cobertura automatizada de responsividade, toque, teclado/foco, zoom Chromium, no-JS/falhas, reduced inicial/dinâmico e cleanup. Preservar limites de WebKit/Windows e avaliação humana.
+- [x] H03 medição: três Lighthouse mobile por rota; comparar prioridades/decodificação/CSS embutido, rejeitar experimento sem ganho e registrar ambiente/rede/long tasks. Não alterar coreografia para obter pontuação.
+- [ ] H03 aceitação: reduzir LCP mediano a ≤2,5s e performance home a ≥90 sem mudar a sequência aprovada; nova rodada permanece fora da meta nas cinco rotas. INP depende de prova própria de campo.
+- [ ] H04 residual: formato global falha em 24 arquivos históricos; quatro arquivos preexistentes preservados fora dos novos commits. Provas identificam a árvore com pendências por hashes.
+- [ ] Validações humanas anteriores, fotos/contexto, direitos Ateliê e favicon em aba. I/push/deploy não autorizados; manter o gate individual.
+
 ## Redesign cinematográfico — estado vigente
 
 - [x] Incremento G solicitado: planejar antes de animar, preservar13 pendências da mesma tarefa, aplicar identidade/scroll aos quatro cases e adicionar Museu com créditos coletivos/storytelling e imagem original2340×1080 preenchendo a janela. Fontes452cb71/32dfe49; relatório PHASE_G_CINEMATIC_REVIEW.
