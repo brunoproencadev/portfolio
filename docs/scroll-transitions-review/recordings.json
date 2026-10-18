@@ -1,0 +1,26 @@
+{
+  "recordings": [
+    {
+      "path": ".audit\\phase-f-transitions\\confirmed\\page@d05b7208aed5a84156f1a3f34f7d2ede.webm",
+      "width": 1440,
+      "height": 900,
+      "fps": 25.0,
+      "frames": 671.0,
+      "duration": 26.84,
+      "sha256": "95093f9dc6fcc455710913d01363d82856019a73ddd6b31d78643dffedaf1e4f"
+    },
+    {
+      "path": ".audit\\phase-f-transitions\\confirmed\\page@d7aca9664fd3eaaea37745a5f17afa64.webm",
+      "width": 374,
+      "height": 812,
+      "fps": 25.0,
+      "frames": 615.0,
+      "duration": 24.6,
+      "sha256": "4c74e8a3c2213f8bc3f06c3422f92ba3020f4e75630ea6e43e1c0f25cfa4b294"
+    }
+  ],
+  "reference4": {
+    "path": "D:\\aNova pasta\\Desktop\\coisas after\\references\\4.mp4",
+    "sha256": "58ed14b63e7d8753569c26750023c34d7abe740deb7f7e0bb965eb983e753460"
+  }
+}

@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização 2026-10-17 — F: refinamentos src/testes consolidados em `2571228`; implementadas transições reversíveis das seções e faixas cruzadas em loop que reagem ao scroll, sem controle de pausa. Ver evidências e limites em `docs/PHASE_F_TRANSITIONS.md`; F aguarda revisão visual do usuário. Os docs/runs de trabalho preexistentes permanecem preservados. Sem push/deploy ou autorização para G–I. O fechamento final está em HANDOFF/TASKS/VERIFICATION.
+
 Atualização 2026-10-17 — fechamento documental da revisão F retomado após “Continue”; provas de 16/10 reutilizadas com fonte inalterada. A tentativa anterior de staging não havia sido executada por limite de uso da revisão automática. Estado vigente em docs/HANDOFF.md e docs/PHASE_F_REVALIDATION.md; F continua aguardando avaliação visual, sem autorização de G–I/push/deploy.
 
 Atualização 2026-10-16 — usuário confirmou continuar revisão/ajustes de F. Estado efetivo já inclui ícones `e0dec50` e scroll inferior/janelas horizontais `77d2506`, posteriores à integração abaixo. Revalidação concluída sem mudar código: 63/63 E2E nos três engines, 7/7 unitários, lint e build/strict; evidências `417fca9`. Relatório vigente: docs/PHASE_F_REVALIDATION.md. Home local http://127.0.0.1:3102/. Artefatos intermediários em WebMs, sem reprodução nas capturas/estados Chrome inspecionados, têm causa ainda aberta. Os 47 arquivos preexistentes foram preservados e não incluídos nos commits desta retomada. F aguarda avaliação visual; G–I/push/deploy não autorizados. Registros seguintes são históricos.

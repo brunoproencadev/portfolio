@@ -1,3 +1,13 @@
+## Continuidade F e faixas — 2026-10-17
+
+Contrato vigente deste incremento: [PHASE_F_TRANSITIONS](PHASE_F_TRANSITIONS.md). HomeMotion carrega o scroll em qualquer viewport sem reduced motion. `home-reveals` mantém o único pin horizontal e delega as seções de apoio a `section-transitions`; seus contextos são revertidos juntos. Contato/footer ficam fora dos seletores. O hero compacto só recebe movimento quando o owner cinematográfico não é elegível, preservando a separação de propriedades da intro e da navbar.
+
+Fade usa variável CSS condicionada ao intervalo ativo, deixando o conteúdo fora da tela com opacidade integral. Hash e teclado acomodam o scrub antes de medir foco; não desmontam o pin durante navegação. A inicialização explícita da intro mantém sua sequência mesmo com refresh do ScrollTrigger antes do primeiro frame.
+
+`ContactPassage` conserva markup SSR e delega a `ribbon-loop`: fases modulares em grupos iguais, impulso do scroll e amortecimento; ResizeObserver mede, RAF só escreve transforms dos trilhos. Inclinações pertencem aos wrappers CSS. IntersectionObserver, visibilidade, pagehide/pageshow e reduced controlam o loop; cleanup libera frames, observers, listeners e estilos. Remoção do botão foi solicitada explicitamente pelo usuário. Sem dependências novas ou motor de scroll.
+
+As descrições abaixo são históricas e não substituem esses owners/comportamentos.
+
 ## Correção F — retomada de scroll e coreografia, 2026-10-14
 
 HomeMotion separa suspensão reversível (foco/hash/reduced/pagehide) de desmontagem. Roda/toque retoma somente quando desktop e no-preference permitem; pending evita imports simultâneos. Uma referência visual em fluxo preserva a leitura ao reinserir o pin. startReveals finaliza ScrollTrigger.refresh antes de devolver o cleanup; medir antes desse refresh deixava salto equivalente à extensão do pin. pageshow só retoma quando persisted; o evento inicial não anula a proteção do hash direto.

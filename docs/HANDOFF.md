@@ -1,4 +1,12 @@
-# Estado vigente — revisão F de 16/10, fechamento retomado em 17/10/2026
+# Estado vigente — fase F, transições e faixas, 2026-10-17
+
+O usuário pediu completar F, animar as transições das seções e restaurar faixas cruzadas, contínuas e reativas ao scroll, sem botão de pausa. Refinamentos consolidados em `25712288b0287aea1deff56c357832f144d25372`; motion e testes em `b5e787540f7866ab581454a880955762e5dc5e1e` (`feat: add section transitions and scroll-reactive ribbons`). O commit documental fecha provas e estado. Rascunhos/documentos preexistentes foram preservados fora dos commits. Não houve push/deploy. F continua aguardando avaliação visual do usuário; G–I não iniciadas.
+
+Implementados reveals reversíveis em detalhes RoboSense, Sobre, abertura dos projetos e Competências (mobile sem pin; contato/footer sem reveal). A faixa horizontal de projetos mantém seu pin. Faixas em sentidos opostos com cópias idênticas, loop modular e impulso amortecido do scroll; sem botão. Reduced motion, aba oculta, saída de viewport, foco, hash e limpeza foram contemplados. Registro, limitações e comparação local em [PHASE_F_TRANSITIONS](PHASE_F_TRANSITIONS.md).
+
+Validação: build Next com TypeScript strict, lint completo, Prettier e 7/7 unitários. E2E amplo: 216 aprovados/5 skips/1 falha de expectativa de saída corrigida; confirmação posterior 6/6 no teste corrigido Chromium/Firefox/WebKit e storytelling Firefox 14/14. A suíte ampla não foi repetida após as correções de teste; o histórico completo está em [PHASE_F_TRANSITIONS](PHASE_F_TRANSITIONS.md). Capturas, JSON de estados e pranchas temporais em `scroll-transitions-review/`; gravações WebM brutas e hash ficam apenas em `.audit/phase-f-transitions` por serem artefatos temporários. Para revisão local usar `npm run start` (porta padrão 3000, se disponível). Este commit documental não pode registrar seu próprio SHA; consultar `git log -1 --oneline` após o commit.
+
+# Estado anterior — revisão F de 16/10, fechamento retomado em 17/10/2026
 
 O usuário confirmou “Continuar revisão e ajustes da Fase F”. Código já continha ícones autênticos `e0dec50d9c7a408fb78450944e9c18bac8511c67` e correções inferiores/janelas horizontais `77d2506a2e0d846c4091f7496d14e189054b21a0`. Revalidados sem nova alteração de produto; [relatório vigente](PHASE_F_REVALIDATION.md). Os registros de integração abaixo descrevem a versão anterior.
 

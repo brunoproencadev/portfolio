@@ -44,6 +44,12 @@ Capturas cinco larguras320/375/768/1440/1920: axe0, overflow0, pageerrors0; cont
 
 # Verificação — Fase 3 e auditoria
 
+## Redesign F — transições e faixas, evidência de 2026-10-17
+
+Fonte base `2571228`; implementação final registrada no histórico imediatamente após esta atualização. Build Next 16.4/TypeScript strict, lint integral sem warnings, Prettier dos arquivos alterados e Vitest: 7/7 aprovados. E2E amplo: 216 aprovados/5 skips/1 falha em 222 casos, Chromium/Firefox/WebKit. A falha foi uma expectativa incorreta de fade-out, corrigida para validar saída vertical e reversão; confirmação após correção 6/6 nos três motores. A tolerância do scroll no storytelling também foi ajustada após o Firefox arredondar em 1px; storytelling Firefox 14/14. A rodada ampla não foi repetida após esses ajustes. Não somar tentativas intermediárias nem declarar a execução ampla como totalmente verde.
+
+Captura em build de produção local: 1440×900 e 375×812; 26 estados combinados, sem erros de página ou overflow; axe zero nos dois viewports, inclusive contato. Pranchas temporais desktop/mobile compostas de frames consecutivos de vídeo real da sessão; WebMs locais a 25 fps, 26,84s/24,60s, com hashes em `scroll-transitions-review/recordings.json`; originais temporários permanecem ignorados em `.audit`. Fotos e JSON de estado têm SHA-256 em `scroll-transitions-review/manifest.json`. Capturas são evidência de execução local e revisão própria; não equivalem a Safari real, hardware físico, leitor de tela ou aprovação perceptual do usuário. F continua aguardando essa aprovação.
+
 ## Redesign Fase E — evidência vigente, 2026-10-13
 
 Fonte75ba951, evidênciasa3d3126. Build/lint/strict/formato de código alterado aprovados. E2E96 focados+112 regressões aprovados em duas rodadas disjuntas,5 skips preexistentes,0 falhas. Unitários6 passaram; tooling.test excedeu60s inicialmente (104088ms) e passou isolado, sem aumento de timeout,22,59s total/15,80s teste. Não alegar execução integral unitária limpa. [Relatório completo](PHASE_E_REVIEW.md), [resumo](intro-review/verification.json).

@@ -1,0 +1,198 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "states": [
+      {
+        "name": "hero",
+        "y": 0,
+        "time": 1232.2000000029802,
+        "overflow": false
+      },
+      {
+        "name": "robo",
+        "y": 726,
+        "time": 2902.800000000745,
+        "overflow": false
+      },
+      {
+        "name": "details",
+        "y": 2010,
+        "time": 4729.400000002235,
+        "overflow": false
+      },
+      {
+        "name": "about",
+        "y": 2596,
+        "time": 6365.10000000149,
+        "overflow": false
+      },
+      {
+        "name": "projects",
+        "y": 3572,
+        "time": 8111.5,
+        "overflow": false
+      },
+      {
+        "name": "industry",
+        "y": 3999,
+        "time": 9674.300000000745,
+        "overflow": false
+      },
+      {
+        "name": "transition",
+        "y": 4575,
+        "time": 11447,
+        "overflow": false
+      },
+      {
+        "name": "atelie",
+        "y": 5151,
+        "time": 13057.400000002235,
+        "overflow": false
+      },
+      {
+        "name": "reverse",
+        "y": 3999,
+        "time": 14845.5,
+        "overflow": false
+      },
+      {
+        "name": "skills",
+        "y": 6045,
+        "time": 16844.5,
+        "overflow": false
+      },
+      {
+        "name": "skills-last",
+        "y": 6692,
+        "time": 18645.5,
+        "overflow": false
+      },
+      {
+        "name": "ribbons",
+        "y": 6692,
+        "time": 19550.900000002235,
+        "overflow": false
+      },
+      {
+        "name": "ribbons-forward",
+        "y": 6812,
+        "time": 20040.5,
+        "overflow": false
+      },
+      {
+        "name": "ribbons-reverse",
+        "y": 6632,
+        "time": 20555,
+        "overflow": false
+      },
+      {
+        "name": "contact",
+        "y": 7425,
+        "time": 23533,
+        "overflow": false
+      },
+      {
+        "name": "reduced",
+        "y": 1940,
+        "time": 27022.20000000298,
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "axe": []
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "states": [
+      {
+        "name": "hero",
+        "y": 0,
+        "time": 1149.199999999255,
+        "overflow": false
+      },
+      {
+        "name": "robo",
+        "y": 511,
+        "time": 2941.89999999851,
+        "overflow": false
+      },
+      {
+        "name": "details",
+        "y": 875,
+        "time": 4468.39999999851,
+        "overflow": false
+      },
+      {
+        "name": "about",
+        "y": 1523,
+        "time": 6078.79999999702,
+        "overflow": false
+      },
+      {
+        "name": "projects",
+        "y": 2417,
+        "time": 7961.29999999702,
+        "overflow": false
+      },
+      {
+        "name": "industry",
+        "y": 2689,
+        "time": 9471.699999999255,
+        "overflow": false
+      },
+      {
+        "name": "atelie",
+        "y": 3968,
+        "time": 11265.599999997765,
+        "overflow": false
+      },
+      {
+        "name": "skills",
+        "y": 5084,
+        "time": 12999.199999999255,
+        "overflow": false
+      },
+      {
+        "name": "skills-last",
+        "y": 5970,
+        "time": 14688,
+        "overflow": false
+      },
+      {
+        "name": "ribbons",
+        "y": 6037,
+        "time": 15469.29999999702,
+        "overflow": false
+      },
+      {
+        "name": "ribbons-forward",
+        "y": 6157,
+        "time": 15830,
+        "overflow": false
+      },
+      {
+        "name": "ribbons-reverse",
+        "y": 5977,
+        "time": 16238.29999999702,
+        "overflow": false
+      },
+      {
+        "name": "contact",
+        "y": 6699,
+        "time": 19098.099999997765,
+        "overflow": false
+      },
+      {
+        "name": "reduced",
+        "y": 1523,
+        "time": 22692.5,
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "axe": []
+  }
+]
