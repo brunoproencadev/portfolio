@@ -344,6 +344,28 @@ a:hover {
   padding-block: 0.08em;
   margin-block: -0.08em;
 }
+.hero-avatar-letter {
+  position: relative;
+  display: inline-block;
+}
+.hero-avatar-glyph {
+  display: inline-block;
+}
+.hero-avatar-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -40%;
+  width: 0.65em;
+  height: 0.65em;
+  max-width: none;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #202024;
+  box-shadow: 0 0.06em 0.16em #0008;
+  opacity: 0;
+  pointer-events: none;
+}
 .hero-position {
   margin-top: 24px;
   font-size: 18px;
