@@ -2,6 +2,8 @@
 
 ## Easter egg do nome — 24/10/2026
 
+- [x] Ajuste posterior `21af82c`: PNG transparente sem fundo, recorte ou sombra; tamanho0,85em (~31% maior). Build/strict e9 regressões específicas passam; desktop/mobile conferidos.
+
 - [x] Pedido explícito: “o” de Bruno troca pelo avatar e retorna após1s; fonte `6e9575a`, sem dependências novas. [Entrega](HERO_AVATAR_REVIEW.md).
 - [x] Preservar posição/nome acessível, respeitar reduced motion e falha de imagem; confirmar75/75 E2E focados nos três motores, build/strict, lint e9 unitários.
 - [x] Capturas e gravações desktop/mobile; registrar proveniência, falhas intermediárias e continuidade. Quatro arquivos preexistentes preservados.

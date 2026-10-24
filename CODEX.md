@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização 2026-10-24 — refinamento do avatar solicitado: `21af82c`, PNG transparente sem fundo/recorte/sombra, tamanho0,85em. Build/strict e9 E2E específicos passam; capturas atuais em docs/HERO_AVATAR_REVIEW.md. Ciclo de1s preservado. Sem push/deploy; segurança Next e H03 continuam pendentes.
+
 Atualização 2026-10-24 — easter egg solicitado no “o” de Bruno, fonte `6e9575a`, entrega em docs/HERO_AVATAR_REVIEW.md: avatar existente por ciclo de1s, retorno da letra, reduced motion e nome acessível.75/75 E2E focados, build/strict/lint e9 unitários passam. Quatro alterações anteriores preservadas. Sem push/deploy/I; desempenho H03 e segurança Next continuam pendentes.
 
 Atualização 2026-10-24 — plano de UI/UX aprovado; `7fc1de6`/`bac97a6`. Entrega local em docs/UI_UX_REFINEMENT_REVIEW.md: leitura/foco ao alternar movimento e indicação do projeto atual. Testes completos com um crash Firefox reconfirmado isoladamente; detalhes em HANDOFF/VERIFICATION. H03 segue aberta (home mediana LCP3522ms/performance84). Next 16.4.0 crítico no audit; atualização16.4.3 aguarda decisão separada. Sem I/push/deploy. Quatro alterações anteriores preservadas.

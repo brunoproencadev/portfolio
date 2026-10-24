@@ -1,5 +1,11 @@
 # Easter egg no “o” de Bruno — 24/10/2026
 
+## Ajuste posterior — PNG transparente e maior
+
+Pedido adicional do usuário implementado em `21af82c`: usar o PNG sem fundo e um pouco maior. Removidos fundo CSS, recorte circular e sombra; dimensões de0,65em para0,85em, aumento de aproximadamente31%. O PNG original já é RGBA com transparência (alpha0–255; canto0,0,0,0) e não foi alterado. Ciclo de1s e comportamento anteriores preservados.
+
+Build/strict na repetição após o aviso de segurança Next, formato do CSS e diff-check PASS; regressões específicas **9/9 PASS**, três motores, sem falhas/skips/retries. Não foi repetida a suíte75 inteira para esta alteração apenas visual. Inspeção desktop1440/mobile375: avatar81,39px/33,47px, opacidade1 durante a troca e0 no retorno, zero pageerrors. [Desktop](hero-avatar-review/transparent-1440.png), [mobile](hero-avatar-review/transparent-375.png) e [dados](hero-avatar-review/transparent-verification.json). Os arquivos de entrada e a pendência de segurança continuam preservados; sem publicação. A descrição circular abaixo documenta a primeira entrega, superada por este ajuste.
+
 Solicitação autorizada pelo usuário: ao passar o mouse pelo “o” de “Bruno”, substituí-lo pelo avatar de perfil e retornar após 1s, com transição. Fonte `6e9575a`; implementação local, sem autorização de push/deploy ou mudança de fase.
 
 ## Entrega e decisões

@@ -1,0 +1,86 @@
+{
+  "source": "21af82c",
+  "stats": {
+    "startTime": "2026-10-24T14:23:33.130Z",
+    "duration": 15631.767,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "browser": [
+    {
+      "width": 1440,
+      "geometry": {
+        "letter": {
+          "x": 798.9593505859375,
+          "y": 171.564208984375,
+          "width": 37.581298828125,
+          "height": 71.04998779296875,
+          "top": 171.564208984375,
+          "right": 836.5406494140625,
+          "bottom": 242.61419677734375,
+          "left": 798.9593505859375
+        },
+        "image": {
+          "x": 777.0546875,
+          "y": 182.19375610351562,
+          "width": 81.390625,
+          "height": 81.390625,
+          "top": 182.19375610351562,
+          "right": 858.4453125,
+          "bottom": 263.5843811035156,
+          "left": 777.0546875
+        },
+        "computedWidth": "81.3906px",
+        "maxWidth": "none",
+        "opacity": "1"
+      },
+      "errors": [],
+      "restored": "0",
+      "video": "D:\\projects\\portifolio\\.audit\\hero-avatar-transparent\\page@45b50f81a260cf2831d7bd24e2f9d8f2.webm"
+    },
+    {
+      "width": 375,
+      "geometry": {
+        "letter": {
+          "x": 219.9523468017578,
+          "y": 157.1101531982422,
+          "width": 15.454681396484375,
+          "height": 29.214065551757812,
+          "top": 157.1101531982422,
+          "right": 235.4070281982422,
+          "bottom": 186.32421875,
+          "left": 219.9523468017578
+        },
+        "image": {
+          "x": 210.9375,
+          "y": 161.4718780517578,
+          "width": 33.46875,
+          "height": 33.46875,
+          "top": 161.4718780517578,
+          "right": 244.40625,
+          "bottom": 194.9406280517578,
+          "left": 210.9375
+        },
+        "computedWidth": "33.4688px",
+        "maxWidth": "none",
+        "opacity": "1"
+      },
+      "errors": [],
+      "restored": "0",
+      "video": "D:\\projects\\portifolio\\.audit\\hero-avatar-transparent\\page@33f406f88c1ed72ac8e49f7d773c5fcc.webm"
+    }
+  ],
+  "asset": {
+    "unchanged": true,
+    "mode": "RGBA",
+    "corner": [0, 0, 0, 0],
+    "alphaRange": [0, 255]
+  },
+  "gates": {
+    "buildStrict": "PASS after security reminder retry",
+    "cssFormat": "PASS",
+    "diffCheck": "PASS"
+  }
+}

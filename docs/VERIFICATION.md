@@ -1,5 +1,7 @@
 ## Easter egg do nome — 2026-10-24
 
+Ajuste visual posterior `21af82c`: PNG transparente de0,65em para0,85em, sem fundo, recorte circular ou sombra. Build/strict confirmado na repetição do alerta Next, formato do CSS e diff-check PASS.9/9 E2E específicos Chromium/Firefox/WebKit, zero falhas/skips/retries. Duas capturas atuais e dados em `hero-avatar-review/transparent-*`; zero pageerrors. Os75 testes abaixo pertencem à entrega anterior. Não houve nova medição de performance, atualização Next ou publicação.
+
 Fonte `6e9575a`; [relatório](HERO_AVATAR_REVIEW.md), [resultados](hero-avatar-review/verification.json). Build/strict final na repetição do alerta Next, lint completo,9/9 unitários, formato dos alterados e diff-check PASS. **75/75 E2E selecionados, zero falhas/skips/retries**, nos três motores: hero-avatar/hero/hero-tools/intro. Nove novos casos verificam ciclo de1s, repetição, geometria estável/nome acessível, reduced motion e falha da imagem.
 
 Histórico: execução inicial interrompida para corrigir “Brun o” no nome acessível; rodada intermediária73/75 com duas falhas de prontidão na intro congelada WebKit, preservadas. Confirmação final75/75 sem alterar os testes anteriores. Inspeção visual desktop1440/mobile375,6 capturas finais e duas gravações; zero pageerrors nas sequências. Quatro capturas selecionadas e hashes de asset/evidências em `hero-avatar-review`. Sem aparelho físico, nova medição Lighthouse, execução integral dos cases ou publicação. Segurança Next e H03 continuam pendentes.

@@ -1,5 +1,7 @@
 # Estado vigente — easter egg do nome entregue localmente, 2026-10-24
 
+Ajuste posterior solicitado: `21af82c` remove fundo/recorte circular/sombra do avatar e amplia0,65em→0,85em, preservando o PNG transparente original e o ciclo de1s. Build/strict, formato/diff-check e9/9 E2E específicos nos três motores PASS; desktop/mobile conferidos. Provas atuais em [HERO_AVATAR_REVIEW](HERO_AVATAR_REVIEW.md), seção do PNG transparente. Sem push/deploy ou atualização de dependências; quatro pendências anteriores intactas.
+
 Pedido explícito implementado em `6e9575a`: passar o mouse pelo “o” de Bruno revela o mesmo avatar da navbar em um ciclo de1000ms e devolve a letra, sem deslocar o nome. Animação nativa com reduced motion, repetição e cleanup; nome acessível preservado. [Relatório e evidências](HERO_AVATAR_REVIEW.md).
 
 75/75 E2E focados nos três motores, zero skips/retries; build/strict, lint,9 unitários, formato dos alterados e diff-check PASS. Histórico de regressão no nome acessível e duas falhas intermediárias na intro WebKit preservado no relatório. Confirmação visual desktop/mobile e duas gravações. Quatro pendências anteriores preservadas. Preview http://127.0.0.1:3116/. Sem push/deploy/I; H03 e segurança Next continuam pendentes. SHA documental consultável por `git log -1 -- docs/HERO_AVATAR_REVIEW.md`.

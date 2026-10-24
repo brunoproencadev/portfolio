@@ -45,6 +45,21 @@
     "sha256": "062e17b4312235beebc9af367d6e5cee25b0efe0d56976bb8c2b602bc7d06546"
   },
   {
+    "file": "transparent-1440.png",
+    "bytes": 212888,
+    "sha256": "fcdb793573bc9f26bf2090f8fa0eec2bc649bcd3ae2d644ea607f6550515dd00"
+  },
+  {
+    "file": "transparent-375.png",
+    "bytes": 146912,
+    "sha256": "a857eee33e11c27a51de6433b82a23fc085f67c11aa1f2f43971ac1f84876e26"
+  },
+  {
+    "file": "transparent-verification.json",
+    "bytes": 2291,
+    "sha256": "b6dff4a3e472a87dedff9821076324d28b8429fc279c0fc3fcdf8b453621f8b4"
+  },
+  {
     "file": "verification.json",
     "bytes": 2832,
     "sha256": "04ed04cb7d3344cddaac0dd282275b29158806ace3aa97eff4291d91033f6a46"
