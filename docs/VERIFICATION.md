@@ -1,4 +1,16 @@
-## H — reconfirmação completa e desempenho pendente, 2026-10-18
+## UI/UX — continuidade de leitura e contexto, 2026-10-24
+
+Fonte `bac97a6`, plano `7fc1de6`; [relatório atual](UI_UX_REFINEMENT_REVIEW.md) e [resumo dos resultados](ui-ux-review/verification.json). Novos casos: 9/9 Chromium/Firefox/WebKit. Suíte completa de produção: 387 PASS, cinco SKIP históricos e um crash de worker Firefox (3221226505); confirmação isolada do mesmo cenário em `motion.spec.ts`: 1/1 PASS. Total distinto coberto entre os comandos: 388 aprovados e cinco skips, não uma única rodada limpa. Tentativa de confirmação com arquivo incorreto não encontrou testes e foi descartada.
+
+Build/strict PASS na repetição após interrupção por alerta de segurança do Next; lint e 9/9 unitários PASS; formato dos alterados/diff-check PASS. Formato global FAIL nos 24 arquivos históricos; cache local do Trail transferido para `.audit` para não acrescentar quatro avisos gerados. Quatro arquivos preexistentes preservados byte a byte. Logs/hashes e capturas/gravações em `ui-ux-review`.
+
+Comparação Chromium desktop/mobile e quatro cases: zero pageerrors/overflow nos estados registrados; 23 capturas finais e duas gravações. Reduced motion: título em 259,984→259,531→259,984px, foco preservado, sem mudar a coreografia aprovada. Provas automatizadas não substituem aceite perceptual ou hardware real.
+
+Três Lighthouse mobile atuais da home sem concorrência: mediana performance84/LCP3521,9ms/TBT285ms/CLS0,0389. H03 FAIL; CPU 4× perfilada sem função responsável isolada. Sem série pareada de baseline, novas métricas de cases ou INP. Nenhum ganho de performance alegado.
+
+Auditoria de runtime atual: Next 16.4.0 crítico, correção indicada16.4.3; atualização solicitada em pergunta separada e ainda não autorizada/aplicada. Nenhum push/deploy/I. Limites e próximos gates no relatório.
+
+## Histórico — H, reconfirmação completa e desempenho pendente, 2026-10-18
 
 Base `7a27a28` mais quatro arquivos preexistentes preservados, identificados em [source-fingerprints](phase-h-review/source-fingerprints.json). Evidências/relatório `cbb81bc`. [Relatório e limites](PHASE_H_REVIEW.md), [comandos e códigos de saída](phase-h-review/verification.json). Build restaurado e TypeScript strict PASS; lint completo PASS; unitários 9/9 na confirmação isolada. A tentativa anterior teve 8/9 e timeout de 60s no teste de plugins ESLint durante checks concorrentes; nenhuma asserção ou timeout alterado.
 

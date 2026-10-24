@@ -1,4 +1,14 @@
-# Estado vigente — Fase H em QA, 2026-10-18
+# Estado vigente — refinamento de UI/UX entregue localmente, 2026-10-24
+
+Usuário aprovou o plano de correções de interface/movimento por “Pode fazer então, tem minha aprovação”. Plano `7fc1de6`; fonte/testes `bac97a6c7227b5ea9beb6593ff936c6d5263ff26`. [Entrega, comparação e limites](UI_UX_REFINEMENT_REVIEW.md). Posição de leitura e foco preservados ao alternar reduced motion; carrossel informa projeto atual com sublinhado/aria-current. Quatro alterações anteriores preservadas byte a byte e fora dos commits.
+
+Build/strict na confirmação, lint e 9 unitários PASS. Produção completa: 387 PASS, cinco skips históricos e um crash de worker Firefox; confirmação isolada 1/1 PASS, cobrindo 388 casos distintos entre os dois comandos. Nove novos casos de regressão incluídos. Não declarar rodada única sem falhas. Formato global ainda falha em 24 arquivos históricos; alterados/diff-check PASS. 23 capturas e duas gravações finais; título em 259,984→259,531→259,984px no ciclo de preferência, foco mantido.
+
+H03 continua aberta: três Lighthouse mobile atuais da home, mediana performance84/LCP3522ms/TBT285ms/CLS0,0389. Perfil de CPU sem causa isolada para otimização; nenhuma alegação de ganho ou comparação causal com o baseline histórico. Cases/INP não remedidos.
+
+Next 16.4.0 sinalizou vulnerabilidade no build; npm audit de runtime confirmou crítica e indicou 16.4.3. Atualização apresentada em pergunta separada, ainda sem autorização/aplicação neste fechamento. Não publicar. Preview atual http://127.0.0.1:3116/. Avaliação visual humana, segurança e H03 permanecem pendentes; I/push/deploy não autorizados. O SHA deste fechamento documental é consultável em `git log -1 -- docs/UI_UX_REFINEMENT_REVIEW.md`.
+
+# Histórico — Fase H em QA, 2026-10-18
 
 H autorizada por “Dê início a fase H”, retomada por “Dê continuidade”. [Relatório vigente](PHASE_H_REVIEW.md). Esta rodada de QA foi registrada; **H continua aberta por desempenho**, sem autorização de I/push/deploy. As afirmações abaixo de H não iniciada são históricas. Próximo trabalho dentro de H: isolar o custo de inicialização de JavaScript/layout e medir uma solução que preserve a coreografia aprovada.
 

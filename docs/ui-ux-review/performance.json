@@ -1,0 +1,153 @@
+{
+  "rows": [
+    {
+      "run": 1,
+      "score": 84,
+      "lcp": 3559.2254,
+      "tbt": 285,
+      "cls": 0.03888213851761847
+    },
+    {
+      "run": 2,
+      "score": 85,
+      "lcp": 3521.8856,
+      "tbt": 277.5,
+      "cls": 0.03888213851761847
+    },
+    {
+      "run": 3,
+      "score": 84,
+      "lcp": 3507.496,
+      "tbt": 292.5,
+      "cls": 0.03888213851761847
+    }
+  ],
+  "median": {
+    "score": 84,
+    "lcp": 3521.8856,
+    "tbt": 285,
+    "cls": 0.03888213851761847
+  },
+  "cpuHotspots": [
+    {
+      "name": "(idle)",
+      "url": "",
+      "line": -1,
+      "selfMs": 1334.044
+    },
+    {
+      "name": "(program)",
+      "url": "",
+      "line": -1,
+      "selfMs": 701.378
+    },
+    {
+      "name": "W",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/turbopack-2c3mg3r-05n1w.js",
+      "line": 0,
+      "selfMs": 32.36
+    },
+    {
+      "name": "r",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/3gvquzt6rtnyp.js",
+      "line": 0,
+      "selfMs": 30.387
+    },
+    {
+      "name": "W",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/turbopack-2c3mg3r-05n1w.js",
+      "line": 0,
+      "selfMs": 19.161
+    },
+    {
+      "name": "eH",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/2p2jd75im6m_h.js",
+      "line": 0,
+      "selfMs": 17.714
+    },
+    {
+      "name": "init",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/394ceu8hxos50.js",
+      "line": 0,
+      "selfMs": 11.191
+    },
+    {
+      "name": "t",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/394ceu8hxos50.js",
+      "line": 0,
+      "selfMs": 9.618
+    },
+    {
+      "name": "ih",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/0s7mvllxht1mo.js",
+      "line": 0,
+      "selfMs": 9.062
+    },
+    {
+      "name": "W",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/turbopack-2c3mg3r-05n1w.js",
+      "line": 0,
+      "selfMs": 8.096
+    },
+    {
+      "name": "",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/44zlqrt98iyt5.js",
+      "line": 0,
+      "selfMs": 7.497
+    },
+    {
+      "name": "ij",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/394ceu8hxos50.js",
+      "line": 0,
+      "selfMs": 6.403
+    },
+    {
+      "name": "(garbage collector)",
+      "url": "",
+      "line": -1,
+      "selfMs": 6.368
+    },
+    {
+      "name": "",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/0s7mvllxht1mo.js",
+      "line": 0,
+      "selfMs": 6.358
+    },
+    {
+      "name": "ax",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/0s7mvllxht1mo.js",
+      "line": 0,
+      "selfMs": 5.306
+    },
+    {
+      "name": "tS.refresh",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/2p2jd75im6m_h.js",
+      "line": 0,
+      "selfMs": 4.886
+    },
+    {
+      "name": "",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/0s7mvllxht1mo.js",
+      "line": 0,
+      "selfMs": 4.838
+    },
+    {
+      "name": "t",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/394ceu8hxos50.js",
+      "line": 0,
+      "selfMs": 4.816
+    },
+    {
+      "name": "W",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/turbopack-2c3mg3r-05n1w.js",
+      "line": 0,
+      "selfMs": 4.786
+    },
+    {
+      "name": "m",
+      "url": "http://127.0.0.1:3116/_next/static/chunks/44zlqrt98iyt5.js",
+      "line": 0,
+      "selfMs": 4.051
+    }
+  ]
+}

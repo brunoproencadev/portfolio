@@ -1,0 +1,341 @@
+{
+  "source": "bac97a6c7227b5ea9beb6593ff936c6d5263ff26",
+  "suite": {
+    "stats": {
+      "startTime": "2026-10-24T12:55:53.630Z",
+      "duration": 468829.942,
+      "expected": 387,
+      "skipped": 5,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "unexpected": [
+      {
+        "title": "independent 2.2s timeout rejects a late animation import",
+        "project": "firefox",
+        "status": "unexpected",
+        "results": [
+          {
+            "status": "failed",
+            "errors": [
+              {
+                "message": "Error: worker process exited unexpectedly (code=3221226505, signal=null)"
+              }
+            ],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      }
+    ],
+    "skipped": [
+      {
+        "title": "disclosure follows keyboard order and Escape returns focus",
+        "project": "webkit",
+        "status": "skipped",
+        "results": [
+          {
+            "status": "skipped",
+            "errors": [],
+            "annotations": [
+              {
+                "type": "skip",
+                "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+                "location": {
+                  "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+                  "line": 8,
+                  "column": 8
+                }
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "type": "skip",
+            "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+            "location": {
+              "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+              "line": 8,
+              "column": 8
+            }
+          }
+        ]
+      },
+      {
+        "title": "outside click and leaving focus close without stealing the new focus",
+        "project": "webkit",
+        "status": "skipped",
+        "results": [
+          {
+            "status": "skipped",
+            "errors": [],
+            "annotations": [
+              {
+                "type": "skip",
+                "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+                "location": {
+                  "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+                  "line": 44,
+                  "column": 8
+                }
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "type": "skip",
+            "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+            "location": {
+              "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+              "line": 44,
+              "column": 8
+            }
+          }
+        ]
+      },
+      {
+        "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+        "project": "firefox",
+        "status": "skipped",
+        "results": [
+          {
+            "status": "skipped",
+            "errors": [],
+            "annotations": [
+              {
+                "type": "skip",
+                "description": "Native zoom uses a Chromium extension.",
+                "location": {
+                  "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+                  "line": 147,
+                  "column": 8
+                }
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "type": "skip",
+            "description": "Native zoom uses a Chromium extension.",
+            "location": {
+              "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+              "line": 147,
+              "column": 8
+            }
+          }
+        ]
+      },
+      {
+        "title": "reduced motion updates immediately and keyboard focus stays visible",
+        "project": "webkit",
+        "status": "skipped",
+        "results": [
+          {
+            "status": "skipped",
+            "errors": [],
+            "annotations": [
+              {
+                "type": "skip",
+                "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+                "location": {
+                  "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+                  "line": 102,
+                  "column": 8
+                }
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "type": "skip",
+            "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+            "location": {
+              "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+              "line": 102,
+              "column": 8
+            }
+          }
+        ]
+      },
+      {
+        "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+        "project": "webkit",
+        "status": "skipped",
+        "results": [
+          {
+            "status": "skipped",
+            "errors": [],
+            "annotations": [
+              {
+                "type": "skip",
+                "description": "Native zoom uses a Chromium extension.",
+                "location": {
+                  "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+                  "line": 147,
+                  "column": 8
+                }
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "type": "skip",
+            "description": "Native zoom uses a Chromium extension.",
+            "location": {
+              "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+              "line": 147,
+              "column": 8
+            }
+          }
+        ]
+      }
+    ],
+    "newRegressionTests": [
+      {
+        "title": "live reduced motion preserves the current project with focus true",
+        "project": "chromium",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "errors": [],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "live reduced motion preserves the current project with focus false",
+        "project": "chromium",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "errors": [],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "carousel announces the current project, reverses, and clears its state in linear flow",
+        "project": "chromium",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "errors": [],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "live reduced motion preserves the current project with focus true",
+        "project": "firefox",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "errors": [],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "live reduced motion preserves the current project with focus false",
+        "project": "firefox",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "errors": [],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "carousel announces the current project, reverses, and clears its state in linear flow",
+        "project": "firefox",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "errors": [],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "live reduced motion preserves the current project with focus true",
+        "project": "webkit",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "errors": [],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "live reduced motion preserves the current project with focus false",
+        "project": "webkit",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "errors": [],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      },
+      {
+        "title": "carousel announces the current project, reverses, and clears its state in linear flow",
+        "project": "webkit",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "errors": [],
+            "annotations": []
+          }
+        ],
+        "annotations": []
+      }
+    ]
+  },
+  "confirmation": {
+    "stats": {
+      "startTime": "2026-10-24T13:04:29.325Z",
+      "duration": 6943.543,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "tests": ["independent 2.2s timeout rejects a late animation import"]
+  },
+  "gates": {
+    "build": "PASS on retry; security reminder interrupted earlier attempts",
+    "lint": "PASS",
+    "unit": {
+      "passed": 9,
+      "failed": 0
+    },
+    "formatChanged": "PASS",
+    "formatGlobal": "FAIL, 24 historical files after moving the generated Trail cache under .audit",
+    "diffCheck": "PASS"
+  },
+  "invalidAttempt": "The first isolated Firefox command selected intro.spec.ts instead of motion.spec.ts and matched no tests; excluded from test counts."
+}

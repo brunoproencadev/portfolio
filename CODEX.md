@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização 2026-10-24 — plano de UI/UX aprovado; `7fc1de6`/`bac97a6`. Entrega local em docs/UI_UX_REFINEMENT_REVIEW.md: leitura/foco ao alternar movimento e indicação do projeto atual. Testes completos com um crash Firefox reconfirmado isoladamente; detalhes em HANDOFF/VERIFICATION. H03 segue aberta (home mediana LCP3522ms/performance84). Next 16.4.0 crítico no audit; atualização16.4.3 aguarda decisão separada. Sem I/push/deploy. Quatro alterações anteriores preservadas.
+
 Atualização 2026-10-18 — H já foi autorizada por “Dê início a fase H” e retomada por “Dê continuidade”. Estado vigente em docs/PHASE_H_REVIEW.md e HANDOFF: QA/performance, sem início de I ou publicação. Experimento inlineCss descartado por regressão; coreografia preservada. Quatro arquivos preexistentes mantidos fora dos novos commits. H continua aberta por desempenho; as afirmações anteriores de H não autorizada são históricas.
 
 Atualização2026-10-18 — continuidade cinematográfica G concluída para avaliação: imagem452cb71, cases/motion/testes32dfe49, plano anterior e06b414. Quatro cases incluindo Museu; captura nativa2340×1080/cover, estética e transições da home. Relatório vigente docs/PHASE_G_CINEMATIC_REVIEW.md, preview3112. Build/strict/lint,9 unitários; confirmação99/102 +3/3 corrigidos, SEO6/6 anterior;72 estados visuais. Sem push/deploy ou H/I. HANDOFF registra limites e SHAs; estados inferiores são históricos.

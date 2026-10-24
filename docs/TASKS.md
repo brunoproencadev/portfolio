@@ -1,5 +1,14 @@
 # Tarefas e gate atual
 
+## Refinamento de UI/UX — 24/10/2026
+
+- [x] Plano aprovado explicitamente; registro `7fc1de6`, implementação/testes `bac97a6`. [Relatório](UI_UX_REFINEMENT_REVIEW.md).
+- [x] Corrigir perda de posição e foco ao alternar reduced motion; indicar projeto atual no carrossel sem alterar a coreografia aprovada.
+- [x] Validar 9 novas regressões nos três motores; suíte de produção 387 PASS/5 SKIP/1 crash Firefox e confirmação isolada 1/1 PASS. Build/strict, lint e 9 unitários passam. Preservar histórico e 24 falhas globais de formato.
+- [x] Capturar 23 estados finais e duas gravações; preservar os quatro arquivos de entrada e registrar hashes, decisões, métricas e SHAs.
+- [ ] Avaliação perceptual do usuário; H03 continua fora da meta: home performance84/LCP3522ms na mediana de três execuções atuais.
+- [ ] Decisão separada sobre atualizar Next 16.4.0 para a correção 16.4.3 indicada pelo npm audit crítico. Não aplicada nesta rodada; I/push/deploy não autorizados.
+
 ## Estado vigente — H autorizada, performance pendente
 
 - [x] H autorizada em 18/10 por “Dê início a fase H”; retomada por “Dê continuidade”. Plano `d6a17f0`; correção anterior `7a27a28`; relatório/evidências `cbb81bc`. Registros de H não autorizada abaixo são históricos.

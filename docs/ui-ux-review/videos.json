@@ -1,0 +1,18 @@
+[
+  {
+    "file": "interaction-1.webm",
+    "inspection": "container metadata; not a full playback or decode",
+    "streams": [
+      "Duration: 00:00:10.56, start: 0.000000, bitrate: 2469 kb/s",
+      "Stream #0:0(eng): Video: vp9 (libvpx-vp9) (Profile 0), yuv420p(tv, progressive), 1440x900, SAR 1:1 DAR 8:5, 25 fps, 25 tbr, 1k tbn (default)"
+    ]
+  },
+  {
+    "file": "interaction-2.webm",
+    "inspection": "container metadata; not a full playback or decode",
+    "streams": [
+      "Duration: 00:00:08.68, start: 0.000000, bitrate: 892 kb/s",
+      "Stream #0:0(eng): Video: vp9 (libvpx-vp9) (Profile 0), yuv420p(tv, progressive), 374x812, SAR 1:1 DAR 187:406, 25 fps, 25 tbr, 1k tbn (default)"
+    ]
+  }
+]
