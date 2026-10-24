@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização 2026-10-24 — usuário aceitou o PNG e autorizou push.23 commits enviados até `32e24b5` à branch redesign/cinematic-portfolio; main inalterada. vercel.json agora bloqueia deploy Git automático da main e do redesign. Repositório renomeado confirmado: brunoproencadev/portfolio, origin atualizado. Fechamento documental enviado na mesma branch; detalhes/provas em HANDOFF/VERIFICATION. Quatro alterações sem commit permanecem locais. H03 e segurança Next seguem pendentes; fase I/publicação exigem aprovação própria.
+
 Atualização 2026-10-24 — refinamento do avatar solicitado: `21af82c`, PNG transparente sem fundo/recorte/sombra, tamanho0,85em. Build/strict e9 E2E específicos passam; capturas atuais em docs/HERO_AVATAR_REVIEW.md. Ciclo de1s preservado. Sem push/deploy; segurança Next e H03 continuam pendentes.
 
 Atualização 2026-10-24 — easter egg solicitado no “o” de Bruno, fonte `6e9575a`, entrega em docs/HERO_AVATAR_REVIEW.md: avatar existente por ciclo de1s, retorno da letra, reduced motion e nome acessível.75/75 E2E focados, build/strict/lint e9 unitários passam. Quatro alterações anteriores preservadas. Sem push/deploy/I; desempenho H03 e segurança Next continuam pendentes.

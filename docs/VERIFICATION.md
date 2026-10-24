@@ -1,4 +1,10 @@
-## Easter egg do nome — 2026-10-24
+## Push GitHub — 2026-10-24
+
+Autorização explícita do usuário após aceitar o ajuste do PNG. Fetch prévio:0 commits remotos exclusivos/22 locais. Commit adicional `32e24b5` limita deploy Git automático da branch de redesign, preservando o bloqueio da main; JSON, formato e diff-check PASS. Push de23 commits para `redesign/cinematic-portfolio` concluído, sem squash/force/merge. ls-remote: branch em `32e24b5a61959f950358c4411d0caf862b459884`, idêntica a HEAD; main em `a56426dd3016c01f2eb510acc8e068bc758dd395`, inalterada. API GitHub:0 deployments para esse SHA na consulta, status pending/sem contextos; não declarar CI/deploy executados.
+
+Renomeação confirmada pela API para `brunoproencadev/portfolio`; origin atualizado. Quatro arquivos de entrada preservados e fora dos commits. Este registro documental será enviado também; SHA por `git log -1 -- docs/HANDOFF.md`. Nenhum código de UI mudou nesta publicação Git; continuam válidas as provas específicas abaixo, sem nova alegação de build/testes executados neste push. Segurança Next/H03/I/publicação do site permanecem pendentes.
+
+## Histórico — easter egg do nome, 2026-10-24
 
 Ajuste visual posterior `21af82c`: PNG transparente de0,65em para0,85em, sem fundo, recorte circular ou sombra. Build/strict confirmado na repetição do alerta Next, formato do CSS e diff-check PASS.9/9 E2E específicos Chromium/Firefox/WebKit, zero falhas/skips/retries. Duas capturas atuais e dados em `hero-avatar-review/transparent-*`; zero pageerrors. Os75 testes abaixo pertencem à entrega anterior. Não houve nova medição de performance, atualização Next ou publicação.
 

@@ -1,5 +1,12 @@
 # Tarefas e gate atual
 
+## Push autorizado — 24/10/2026
+
+- [x] Aceite do ajuste do PNG e autorização explícita “Perfeito, muito obrigado, pode fazer o push”. Enviados23 commits até `32e24b5`, mantendo histórico e branch `redesign/cinematic-portfolio`; sem merge/main.
+- [x] Bloquear deploy Git automático também da branch de redesign em vercel.json, validando JSON/formato/diff; conferir SHA remoto, main inalterada e0 deployments na consulta do commit.
+- [x] Confirmar renomeação para `brunoproencadev/portfolio`, atualizar origin e preservar as quatro alterações locais sem commit. Enviar também este fechamento documental na mesma branch.
+- [ ] H03, segurança Next e fase I/publicação continuam pendentes e não foram aprovadas pelo pedido de push.
+
 ## Easter egg do nome — 24/10/2026
 
 - [x] Ajuste posterior `21af82c`: PNG transparente sem fundo, recorte ou sombra; tamanho0,85em (~31% maior). Build/strict e9 regressões específicas passam; desktop/mobile conferidos.

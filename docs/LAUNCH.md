@@ -1,5 +1,11 @@
 # Preparação de publicação — Fase 8
 
+## Push do redesign sem deploy — 2026-10-24
+
+Usuário aceitou o avatar PNG e autorizou apenas o push. Histórico enviado à branch `redesign/cinematic-portfolio` até `32e24b5`; main não foi atualizada. A configuração `git.deploymentEnabled` passou a bloquear tanto `main` quanto `redesign/cinematic-portfolio`, impedindo que o push autorizado dispare o deploy Git dessas branches, conforme a [configuração oficial Vercel](https://vercel.com/docs/project-configuration/git-configuration). As demais branches não foram alteradas. A afirmação anterior de previews habilitados permanece histórica para a branch de redesign.
+
+O GitHub confirmou o repositório renomeado `brunoproencadev/portfolio`; origin foi atualizado. API de deployments retornou0 registros para o SHA enviado na consulta; status agregado pending sem contextos não comprova uma execução de CI. Este fechamento documental será enviado à mesma branch. Não houve ação de deploy/merge nesta rodada; H03 e correção de segurança Next continuam pendentes, e fase I/publicação exigem aprovação própria.
+
 ## Integração GitHub da fase F — 2026-10-18
 
 F aprovada pelo usuário, com pedido explícito de envio ao GitHub e atribuição no gráfico de contribuições. A branch padrão `main` recebe os commits originais do redesign por fast-forward, sem squash ou reescrita. O repositório é privado, não é fork, e o GitHub associa o e-mail dos commits a `brunoproencadev`.

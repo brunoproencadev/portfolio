@@ -1,4 +1,12 @@
-# Estado vigente — easter egg do nome entregue localmente, 2026-10-24
+# Estado vigente — push autorizado e enviado, 2026-10-24
+
+Usuário aprovou o ajuste do PNG e autorizou o envio por “Perfeito, muito obrigado, pode fazer o push”. Foram enviados23 commits preservando o histórico, de `6c1c768` até `32e24b5a61959f950358c4411d0caf862b459884`, incluindo os22 pendentes de G/H/UI/UX/easter egg e a proteção adicional de deploy. Branch `redesign/cinematic-portfolio`; sem merge ou atualização de `main`.
+
+`32e24b5` acrescenta `redesign/cinematic-portfolio: false` a `git.deploymentEnabled` em vercel.json, mantendo `main: false`, para separar o push autorizado da publicação não autorizada. JSON, formato e diff-check PASS. Fetch prévio confirmou0 commits remotos exclusivos/22 locais; após o envio, ls-remote confirmou o SHA remoto idêntico a HEAD. Main permaneceu em `a56426dd3016c01f2eb510acc8e068bc758dd395`. API GitHub retornou0 deployments para `32e24b5` no momento da consulta; o status agregado estava pending, sem contextos de check, não uma prova de CI executada.
+
+O GitHub informou renomeação do repositório, confirmada pela API: `brunoproencadev/portfolio`. Origin atualizado para `https://github.com/brunoproencadev/portfolio.git`; os redirecionamentos históricos não foram reescritos nos documentos. As quatro alterações sem commit continuam locais e preservadas. O commit documental deste registro será enviado à mesma branch; seu SHA é consultável por `git log -1 -- docs/HANDOFF.md`. H03, atualização de segurança Next e fase I permanecem pendentes; nenhum deploy foi solicitado.
+
+# Histórico — easter egg do nome entregue localmente, 2026-10-24
 
 Ajuste posterior solicitado: `21af82c` remove fundo/recorte circular/sombra do avatar e amplia0,65em→0,85em, preservando o PNG transparente original e o ciclo de1s. Build/strict, formato/diff-check e9/9 E2E específicos nos três motores PASS; desktop/mobile conferidos. Provas atuais em [HERO_AVATAR_REVIEW](HERO_AVATAR_REVIEW.md), seção do PNG transparente. Sem push/deploy ou atualização de dependências; quatro pendências anteriores intactas.
 
