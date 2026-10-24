@@ -1,0 +1,64 @@
+[
+  {
+    "width": 1440,
+    "geometry": {
+      "letter": {
+        "x": 798.9593505859375,
+        "y": 171.564208984375,
+        "width": 37.581298828125,
+        "height": 71.04998779296875,
+        "top": 171.564208984375,
+        "right": 836.5406494140625,
+        "bottom": 242.61419677734375,
+        "left": 798.9593505859375
+      },
+      "image": {
+        "x": 786.6328125,
+        "y": 189.8562469482422,
+        "width": 62.234375,
+        "height": 62.234375,
+        "top": 189.8562469482422,
+        "right": 848.8671875,
+        "bottom": 252.0906219482422,
+        "left": 786.6328125
+      },
+      "computedWidth": "62.2344px",
+      "maxWidth": "none",
+      "opacity": "1"
+    },
+    "errors": [],
+    "restored": "0",
+    "video": "D:\\projects\\portifolio\\.audit\\hero-avatar-confirmation\\page@191a1ea6871a9aa753f2ac580250ab86.webm"
+  },
+  {
+    "width": 375,
+    "geometry": {
+      "letter": {
+        "x": 219.9523468017578,
+        "y": 157.1101531982422,
+        "width": 15.454681396484375,
+        "height": 29.214065551757812,
+        "top": 157.1101531982422,
+        "right": 235.4070281982422,
+        "bottom": 186.32421875,
+        "left": 219.9523468017578
+      },
+      "image": {
+        "x": 214.875,
+        "y": 164.6218719482422,
+        "width": 25.59375,
+        "height": 25.59375,
+        "top": 164.6218719482422,
+        "right": 240.46875,
+        "bottom": 190.2156219482422,
+        "left": 214.875
+      },
+      "computedWidth": "25.5938px",
+      "maxWidth": "none",
+      "opacity": "1"
+    },
+    "errors": [],
+    "restored": "0",
+    "video": "D:\\projects\\portifolio\\.audit\\hero-avatar-confirmation\\page@eacaaf23c3fba07556dac627855d0480.webm"
+  }
+]

@@ -1,3 +1,7 @@
+## Avatar no easter egg do nome — 24/10/2026
+
+Uso solicitado pelo usuário: ao passar o mouse pelo “o” de Bruno, revelar o avatar por um ciclo de1s. Reutilizado o mesmo leão exato da navbar, `public/images/profile/github-avatar.png`,460×460/101.669bytes, SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`, reconferido nesta rodada. Sem arquivo novo ou alteração da imagem; não é fotografia facial. Origem pública já registrada abaixo: avatar GitHub do usuário. [Implementação, provas e limites](HERO_AVATAR_REVIEW.md). Pedido autoriza o uso local, sem nova publicação.
+
 ## Museu — recuperação de resolução nativa, 18/10/2026
 
 Por solicitação do autor, `public/images/projects/museu-arte-moderna/hall.webp` foi recuperado do mesmo frame aos10s do vídeo original `projeto_arte_moderna.mp4`, preservado somente leitura. A captura passa de1440×665/77.608bytes para2340×1080/284.294bytes; SHA256 atual `f97e25bc965fe4671ee6e868d47b557059fcedbe1c59267138354cb743bdda4b`. PNG extraído antes da compressão:2340×1080/1.779.124bytes, SHA256 `d124e857c7c6c6943d94bf5e33f490e492bb5562361b649606bc0d1253f80db6`. Vídeo original SHA256 `975ae7a9d5f5b8359c6bd07c52267a800a3d6c57d03f6d2e284a7484bf510e6e`. Sem reconstrução generativa ou novos detalhes artificiais.

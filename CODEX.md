@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização 2026-10-24 — easter egg solicitado no “o” de Bruno, fonte `6e9575a`, entrega em docs/HERO_AVATAR_REVIEW.md: avatar existente por ciclo de1s, retorno da letra, reduced motion e nome acessível.75/75 E2E focados, build/strict/lint e9 unitários passam. Quatro alterações anteriores preservadas. Sem push/deploy/I; desempenho H03 e segurança Next continuam pendentes.
+
 Atualização 2026-10-24 — plano de UI/UX aprovado; `7fc1de6`/`bac97a6`. Entrega local em docs/UI_UX_REFINEMENT_REVIEW.md: leitura/foco ao alternar movimento e indicação do projeto atual. Testes completos com um crash Firefox reconfirmado isoladamente; detalhes em HANDOFF/VERIFICATION. H03 segue aberta (home mediana LCP3522ms/performance84). Next 16.4.0 crítico no audit; atualização16.4.3 aguarda decisão separada. Sem I/push/deploy. Quatro alterações anteriores preservadas.
 
 Atualização 2026-10-18 — H já foi autorizada por “Dê início a fase H” e retomada por “Dê continuidade”. Estado vigente em docs/PHASE_H_REVIEW.md e HANDOFF: QA/performance, sem início de I ou publicação. Experimento inlineCss descartado por regressão; coreografia preservada. Quatro arquivos preexistentes mantidos fora dos novos commits. H continua aberta por desempenho; as afirmações anteriores de H não autorizada são históricas.

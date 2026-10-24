@@ -1,0 +1,56 @@
+{
+  "source": "6e9575a",
+  "stats": {
+    "startTime": "2026-10-24T14:12:42.552Z",
+    "duration": 128088.09999999999,
+    "expected": 75,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "suites": [
+    {
+      "file": "hero-avatar.spec.ts",
+      "tests": 9
+    },
+    {
+      "file": "hero-tools.spec.ts",
+      "tests": 6
+    },
+    {
+      "file": "hero.spec.ts",
+      "tests": 9
+    },
+    {
+      "file": "intro.spec.ts",
+      "tests": 51
+    }
+  ],
+  "previousCompletedRun": {
+    "stats": {
+      "startTime": "2026-10-24T14:09:41.206Z",
+      "duration": 131856.104,
+      "expected": 73,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "failed": [
+      {
+        "test": "reduced cancels the curtain at 1200ms without a late replay",
+        "browser": "webkit",
+        "errors": [
+          "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.intro-curtain')\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeVisible\" locator('.intro-curtain') with timeout 5000ms\n  - waiting for locator('.intro-curtain')\n    13 × locator resolved to <div hidden=\"\" aria-hidden=\"true\" class=\"intro-curtain\">…</div>\n       - unexpected value \"hidden\"\n\n\n   7 |   await page.clock.pauseAt(now);\n   8 |   await page.goto(\"/\");\n>  9 |   await expect(page.locator(\".intro-curtain\")).toBeVisible();\n     |                                                ^\n  10 |   await page.clock.runFor(32);\n  11 | }\n  12 |\n    at startFrozen (D:\\projects\\portifolio\\tests\\e2e\\intro.spec.ts:9:48)\n    at D:\\projects\\portifolio\\tests\\e2e\\intro.spec.ts:74:7"
+        ]
+      },
+      {
+        "test": "watchdog removes a stalled timeline independently of animation frames",
+        "browser": "webkit",
+        "errors": [
+          "Error: expect(locator).toBeVisible() failed\n\nLocator:  locator('.intro-curtain')\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeVisible\" locator('.intro-curtain') with timeout 5000ms\n  - waiting for locator('.intro-curtain')\n    13 × locator resolved to <div hidden=\"\" aria-hidden=\"true\" class=\"intro-curtain\">…</div>\n       - unexpected value \"hidden\"\n\n\n   7 |   await page.clock.pauseAt(now);\n   8 |   await page.goto(\"/\");\n>  9 |   await expect(page.locator(\".intro-curtain\")).toBeVisible();\n     |                                                ^\n  10 |   await page.clock.runFor(32);\n  11 | }\n  12 |\n    at startFrozen (D:\\projects\\portifolio\\tests\\e2e\\intro.spec.ts:9:48)\n    at D:\\projects\\portifolio\\tests\\e2e\\intro.spec.ts:109:3"
+        ]
+      }
+    ]
+  },
+  "initialAttempt": "Interrupted after accessible-name regressions were detected; error contexts remain in .audit/hero-avatar-first-failures."
+}

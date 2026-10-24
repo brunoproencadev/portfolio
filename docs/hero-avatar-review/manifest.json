@@ -1,0 +1,52 @@
+[
+  {
+    "file": "asset.json",
+    "bytes": 221,
+    "sha256": "4149c8ffa04be0f299cda4e814110b610c38fe3eade5619fa5222ef77b985a2b"
+  },
+  {
+    "file": "avatar-1440.png",
+    "bytes": 212709,
+    "sha256": "c2df3aee5acc5d5f870a28397d33addceeaca9e12327f56b6a329f0c10302934"
+  },
+  {
+    "file": "avatar-375.png",
+    "bytes": 147240,
+    "sha256": "f1a872ebfca1adf9f09aed3212816726e7fec8c53b8a06b28216998cc1dc10cd"
+  },
+  {
+    "file": "browser.json",
+    "bytes": 1720,
+    "sha256": "92378d4822fe73325c9d5e9a033a3e9afedc3fbe24ad96969b305be3b23a88a8"
+  },
+  {
+    "file": "build.log",
+    "bytes": 1857,
+    "sha256": "c2515fbc28f9eb1cc03e8ef481cf31318a98d17abb67d601436386c06c74fe6b"
+  },
+  {
+    "file": "hover-1440.webm",
+    "bytes": 329744,
+    "sha256": "3190f62f0e96ceb2409ea559e21db60a4292e01d9ab321d132df98125c42af89"
+  },
+  {
+    "file": "hover-375.webm",
+    "bytes": 203467,
+    "sha256": "1b37638f81b04389317dfa56b1082639eae4b8c79bfcc9328633cdddcafbc5da"
+  },
+  {
+    "file": "restored-1440.png",
+    "bytes": 208467,
+    "sha256": "b87f867126c4c38be2b929f7e571ac28c1377100f51ef9e79143704ba4a76036"
+  },
+  {
+    "file": "restored-375.png",
+    "bytes": 146177,
+    "sha256": "062e17b4312235beebc9af367d6e5cee25b0efe0d56976bb8c2b602bc7d06546"
+  },
+  {
+    "file": "verification.json",
+    "bytes": 2832,
+    "sha256": "04ed04cb7d3344cddaac0dd282275b29158806ace3aa97eff4291d91033f6a46"
+  }
+]

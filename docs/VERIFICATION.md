@@ -1,4 +1,10 @@
-## UI/UX — continuidade de leitura e contexto, 2026-10-24
+## Easter egg do nome — 2026-10-24
+
+Fonte `6e9575a`; [relatório](HERO_AVATAR_REVIEW.md), [resultados](hero-avatar-review/verification.json). Build/strict final na repetição do alerta Next, lint completo,9/9 unitários, formato dos alterados e diff-check PASS. **75/75 E2E selecionados, zero falhas/skips/retries**, nos três motores: hero-avatar/hero/hero-tools/intro. Nove novos casos verificam ciclo de1s, repetição, geometria estável/nome acessível, reduced motion e falha da imagem.
+
+Histórico: execução inicial interrompida para corrigir “Brun o” no nome acessível; rodada intermediária73/75 com duas falhas de prontidão na intro congelada WebKit, preservadas. Confirmação final75/75 sem alterar os testes anteriores. Inspeção visual desktop1440/mobile375,6 capturas finais e duas gravações; zero pageerrors nas sequências. Quatro capturas selecionadas e hashes de asset/evidências em `hero-avatar-review`. Sem aparelho físico, nova medição Lighthouse, execução integral dos cases ou publicação. Segurança Next e H03 continuam pendentes.
+
+## Histórico — UI/UX, continuidade de leitura e contexto, 2026-10-24
 
 Fonte `bac97a6`, plano `7fc1de6`; [relatório atual](UI_UX_REFINEMENT_REVIEW.md) e [resumo dos resultados](ui-ux-review/verification.json). Novos casos: 9/9 Chromium/Firefox/WebKit. Suíte completa de produção: 387 PASS, cinco SKIP históricos e um crash de worker Firefox (3221226505); confirmação isolada do mesmo cenário em `motion.spec.ts`: 1/1 PASS. Total distinto coberto entre os comandos: 388 aprovados e cinco skips, não uma única rodada limpa. Tentativa de confirmação com arquivo incorreto não encontrou testes e foi descartada.
 

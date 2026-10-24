@@ -1,4 +1,10 @@
-# Estado vigente — refinamento de UI/UX entregue localmente, 2026-10-24
+# Estado vigente — easter egg do nome entregue localmente, 2026-10-24
+
+Pedido explícito implementado em `6e9575a`: passar o mouse pelo “o” de Bruno revela o mesmo avatar da navbar em um ciclo de1000ms e devolve a letra, sem deslocar o nome. Animação nativa com reduced motion, repetição e cleanup; nome acessível preservado. [Relatório e evidências](HERO_AVATAR_REVIEW.md).
+
+75/75 E2E focados nos três motores, zero skips/retries; build/strict, lint,9 unitários, formato dos alterados e diff-check PASS. Histórico de regressão no nome acessível e duas falhas intermediárias na intro WebKit preservado no relatório. Confirmação visual desktop/mobile e duas gravações. Quatro pendências anteriores preservadas. Preview http://127.0.0.1:3116/. Sem push/deploy/I; H03 e segurança Next continuam pendentes. SHA documental consultável por `git log -1 -- docs/HERO_AVATAR_REVIEW.md`.
+
+# Histórico — refinamento de UI/UX, 2026-10-24
 
 Usuário aprovou o plano de correções de interface/movimento por “Pode fazer então, tem minha aprovação”. Plano `7fc1de6`; fonte/testes `bac97a6c7227b5ea9beb6593ff936c6d5263ff26`. [Entrega, comparação e limites](UI_UX_REFINEMENT_REVIEW.md). Posição de leitura e foco preservados ao alternar reduced motion; carrossel informa projeto atual com sublinhado/aria-current. Quatro alterações anteriores preservadas byte a byte e fora dos commits.
 
