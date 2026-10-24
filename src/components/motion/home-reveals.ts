@@ -19,6 +19,10 @@ export function startReveals(root: HTMLElement) {
         const count = track.children.length;
         const steps = count - 1;
         if (steps < 1) return;
+        const links = Array.from(
+          stage.querySelectorAll<HTMLAnchorElement>(".story-progress a"),
+        );
+        let current = -1;
         stage.classList.add("story-enhanced");
         const timeline = gsap.timeline({
           scrollTrigger: {
@@ -31,6 +35,17 @@ export function startReveals(root: HTMLElement) {
             invalidateOnRefresh: true,
           },
         });
+        const updateCurrent = () => {
+          const index = Math.round(timeline.progress() * steps);
+          if (current === index) return;
+          current = index;
+          links.forEach((link, linkIndex) => {
+            if (linkIndex === index)
+              link.setAttribute("aria-current", "location");
+            else link.removeAttribute("aria-current");
+          });
+        };
+        timeline.eventCallback("onUpdate", updateCurrent);
         carousel = timeline.scrollTrigger;
         for (let index = 1; index < count; index++) {
           const offset = index - 1;
@@ -57,8 +72,10 @@ export function startReveals(root: HTMLElement) {
             )
             .to({}, { duration: 0.2 }, offset + 0.8);
         }
+        updateCurrent();
         return () => {
           carousel = undefined;
+          links.forEach((link) => link.removeAttribute("aria-current"));
           stage.classList.remove("story-enhanced");
           gsap.set(".story-track, .story-progress-thumb", {
             clearProps: "transform",
