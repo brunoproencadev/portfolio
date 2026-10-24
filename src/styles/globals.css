@@ -356,13 +356,10 @@ a:hover {
   left: 50%;
   top: 50%;
   translate: -50% -40%;
-  width: 0.65em;
-  height: 0.65em;
+  width: 0.85em;
+  height: 0.85em;
   max-width: none;
   object-fit: contain;
-  border-radius: 50%;
-  background: #202024;
-  box-shadow: 0 0.06em 0.16em #0008;
   opacity: 0;
   pointer-events: none;
 }
