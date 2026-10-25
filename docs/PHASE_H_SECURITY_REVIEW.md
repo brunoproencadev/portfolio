@@ -1,6 +1,6 @@
 # Correção de segurança e continuidade H — 25/10/2026
 
-Autorização: “Faça o que for necessário para solucionar. Em seguida pode dar continuidade”. Plano `ae86b92`, corre??o `4ed77f9`, base anterior `9f0f064`, raiz `D:\projects\portifolio`, branch `redesign/cinematic-portfolio`. A fase H segue aberta; esta entrega não autoriza I ou publicação.
+Autorização: “Faça o que for necessário para solucionar. Em seguida pode dar continuidade”. Plano `ae86b92`, correção `4ed77f9`, base anterior `9f0f064`, raiz `D:\projects\portifolio`, branch `redesign/cinematic-portfolio`. A fase H segue aberta; esta entrega não autoriza I ou publicação.
 
 ## Segurança corrigida localmente
 
@@ -11,6 +11,12 @@ A auditoria completa também revelou quatro dependências de desenvolvimento com
 [Auditoria final de runtime](phase-h-security-review/audit-runtime-final.json) e [auditoria completa](phase-h-security-review/audit-all-final.json): **zero vulnerabilidades**. Esse resultado cobre o grafo de dependências consultado; não é uma auditoria de invasão ou confirmação de correção no site publicado. A correção permanece local.
 
 Avisos oficiais: [Image Optimization](https://github.com/advisories/GHSA-2464-fhr4-w9xw), [Server Actions](https://github.com/advisories/GHSA-p3m5-59mp-jv5r) e [use cache](https://github.com/advisories/GHSA-673q-mjm6-r5xr). As condições de exploração diferem: Linux/glibc no primeiro, uso de Server Actions no segundo e Cache Components com retorno específico no terceiro. A busca local não encontrou Server Actions/use cache/habilitação de SVG no otimizador; isso não foi usado para dispensar o patch.
+
+## Instalação reproduzida e manifesto
+
+[npm ci](phase-h-security-review/npm-ci.log), [build final/strict](phase-h-security-review/build-final.log), [lint](phase-h-security-review/lint-ci.log) e [nove unitários](phase-h-security-review/unit-ci.log) passaram após reinstalar pelo lockfile. Os 22 chunks JS/CSS ficaram byte a byte iguais aos usados na suíte E2E; [resultados e comparação](phase-h-security-review/installation.json). npm ls --all saiu com código zero, sem peers inválidos/ausentes, mas listou seis pacotes opcionais WASM como extraneous mesmo após npm ci. O aviso de ESLint 9 fora de suporte permanece; nenhuma migração maior foi necessária para zerar a auditoria.
+
+O [manifesto](phase-h-security-review/manifest.json) usa os bytes UTF-8/LF efetivamente commitados, conferidos contra os blobs Git. O primeiro manifesto, em `4528fdd`, usava CRLF local nos quatro logs de build; `b9bcfd6` corrigiu os hashes em commit separado, preservando o histórico. Uma substituição inicial de texto pelo pipe PowerShell perdeu acentos e não inseriu esta seção; o relatório foi corrigido por script UTF-8, sem alterar provas de runtime.
 
 ## Validação e histórico preservado
 
