@@ -1,6 +1,6 @@
 # Estado vigente — segurança corrigida, H03 aberta, 25/10/2026
 
-Usuário autorizou solucionar o Next e continuar as pendências. Plano local `ae86b92`; correção `4ed77f9`: Next/eslint-config-next 16.4.3 e patches compatíveis das ferramentas. [Relatório vigente](PHASE_H_SECURITY_REVIEW.md). Auditorias de runtime e completa: zero vulnerabilidades; npm ci, build/strict, lint e nove unitários PASS. Os 22 chunks JS/CSS coincidem byte a byte com os usados nos E2E. npm ls --all sai0 sem peers inválidos, mas conserva seis avisos extraneous de pacotes WASM opcionais após reinstalar; diagnóstico preservado.
+Usuário autorizou solucionar o Next e continuar as pendências. Plano local `ae86b92`; correção `4ed77f9`; evidências `4528fdd`: Next/eslint-config-next 16.4.3 e patches compatíveis das ferramentas. [Relatório vigente](PHASE_H_SECURITY_REVIEW.md). Auditorias de runtime e completa: zero vulnerabilidades; npm ci, build/strict, lint e nove unitários PASS. Os 22 chunks JS/CSS coincidem byte a byte com os usados nos E2E. npm ls --all sai0 sem peers inválidos, mas conserva seis avisos extraneous de pacotes WASM opcionais após reinstalar; diagnóstico preservado.
 
 E2E:396 PASS/1 FAIL/5 SKIP em 402 casos, sem retries. Falha de transição desktop Firefox repetiu isolada; sonda geométrica normal e três repetições posteriores do teste original PASS, sem modificar teste/timeout. Total distinto397 PASS entre rodadas; intermitência sem causa isolada, não declarar rodada integral limpa. Formato global FAIL nos mesmos 24 arquivos históricos; alterados/diff-check e provas documentais conferidos no fechamento.
 
@@ -8,7 +8,7 @@ H03:21 Lighthouse mobile. Controle final da home: mediana performance 84/LCP 358
 
 Browser:16 capturas e duas comparações geométricas em 1440×900/375×812, sem overflow/pageerrors nos estados registrados; quatro capturas inspecionadas e duráveis, duas gravações brutas locais sem reprodução integral. Quatro alterações anteriores preservadas por hashes e fora dos commits. Preview atual http://127.0.0.1:3117/. Nenhum push/merge/deploy ou início de I. Produção não atualizada.
 
-Próximo trabalho autorizado em H: investigar a intermitência Firefox e coletar perfil atual da home com variabilidade controlada antes de outro candidato de desempenho. H03, formato histórico, fotos/contexto, direitos Ateliê, favicon em aba e validações humanas/físicas continuam abertos. I é prontidão de produção e exige seu gate separado. Commit documental consultável por `git log -1 -- docs/PHASE_H_SECURITY_REVIEW.md`; registros seguintes são históricos quando conflitarem com este estado.
+Próximo trabalho autorizado em H: investigar a intermitência Firefox e coletar perfil atual da home com variabilidade controlada antes de outro candidato de desempenho. H03, formato histórico, fotos/contexto, direitos Ateliê, favicon em aba e validações humanas/físicas continuam abertos. I é prontidão de produção e exige seu gate separado. Manifesto reconferido com os blobs Git em UTF-8/LF, corrigindo a diferença de hashes dos quatro logs de build inicialmente calculados com CRLF local. Commit documental consultável por `git log -1 -- docs/PHASE_H_SECURITY_REVIEW.md`; registros seguintes são históricos quando conflitarem com este estado.
 
 # Histórico — push autorizado e enviado, 2026-10-24
 
