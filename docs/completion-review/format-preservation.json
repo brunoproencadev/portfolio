@@ -1,0 +1,482 @@
+{
+  "timestamp": "2026-10-25T18:02:16.864Z",
+  "formatting": [
+    {
+      "file": ".impeccable/design.json",
+      "beforeSha256": "4f16253a8c060af46beea7b22cbe970074166c291efa6f360764d12738135c97",
+      "gitSha256": "4f16253a8c060af46beea7b22cbe970074166c291efa6f360764d12738135c97",
+      "afterSha256": "b21596ea88657504904049388417dcf6bf055a862c4fc204843c8348a1428115",
+      "beforeBytes": 42416,
+      "afterBytes": 42384,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "b21596ea88657504904049388417dcf6bf055a862c4fc204843c8348a1428115"
+    },
+    {
+      "file": "docs/hero-review/finish-review.md",
+      "beforeSha256": "d06df88ad71185993da358152fdb5063f43b6c02e8163d5a8eb5e81740002fd0",
+      "gitSha256": "d06df88ad71185993da358152fdb5063f43b6c02e8163d5a8eb5e81740002fd0",
+      "afterSha256": "01408c989445837e0bf2148d85f71496fd4f0c9d5cc14e9748a0aacb68c96823",
+      "beforeBytes": 5861,
+      "afterBytes": 7964,
+      "proof": "identical Markdown AST without source positions",
+      "formattedSha256": "01408c989445837e0bf2148d85f71496fd4f0c9d5cc14e9748a0aacb68c96823"
+    },
+    {
+      "file": "docs/hero-review/lighthouse-environment.json",
+      "beforeSha256": "bc4dd59eb74951207b37aaf81729e87861602c112a111cad8101c759fbd6fa73",
+      "gitSha256": "bc4dd59eb74951207b37aaf81729e87861602c112a111cad8101c759fbd6fa73",
+      "afterSha256": "09992592127402894816820a12d4eb4b0fce0225ae6aadd60e221258c0c6c549",
+      "beforeBytes": 2214,
+      "afterBytes": 2185,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "09992592127402894816820a12d4eb4b0fce0225ae6aadd60e221258c0c6c549"
+    },
+    {
+      "file": "docs/hero-review/lighthouse-summary.json",
+      "beforeSha256": "524af99a1c95905a37ad72eac2006519af6444827ccd3b945681182f4aa3cc4b",
+      "gitSha256": "524af99a1c95905a37ad72eac2006519af6444827ccd3b945681182f4aa3cc4b",
+      "afterSha256": "26d2a1aee1ee4b329ffb875f8affa50fd05cb194db9c994aee90d49e81962a61",
+      "beforeBytes": 2512,
+      "afterBytes": 2513,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "26d2a1aee1ee4b329ffb875f8affa50fd05cb194db9c994aee90d49e81962a61"
+    },
+    {
+      "file": "docs/hero-review/results.json",
+      "beforeSha256": "52bc3183045a44b13ee7d7bde7a7dd9ab599c870b452fec9383fd393fc3843ac",
+      "gitSha256": "52bc3183045a44b13ee7d7bde7a7dd9ab599c870b452fec9383fd393fc3843ac",
+      "afterSha256": "9c83a36948d2d27c5829a9ab0141eb74b26ad6688b1f3fc045b471fff2e3e817",
+      "beforeBytes": 51345,
+      "afterBytes": 50769,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "9c83a36948d2d27c5829a9ab0141eb74b26ad6688b1f3fc045b471fff2e3e817"
+    },
+    {
+      "file": "docs/intro-review/lighthouse-environment.json",
+      "beforeSha256": "7fa8acee485c133d3ccf3adb1831fbf72f286e383d00b5044d962c911217c213",
+      "gitSha256": "7fa8acee485c133d3ccf3adb1831fbf72f286e383d00b5044d962c911217c213",
+      "afterSha256": "2748dc98e036e0afa928d3243f2f8c3bf08695f3d1f2697fc1696e232be87db0",
+      "beforeBytes": 2214,
+      "afterBytes": 2185,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "2748dc98e036e0afa928d3243f2f8c3bf08695f3d1f2697fc1696e232be87db0"
+    },
+    {
+      "file": "docs/intro-review/lighthouse-summary.json",
+      "beforeSha256": "aa05e23253ead490af13b7cfe7283988cba45a3735bfcae6a3b8afda2d28a14b",
+      "gitSha256": "aa05e23253ead490af13b7cfe7283988cba45a3735bfcae6a3b8afda2d28a14b",
+      "afterSha256": "af84d1c9bca1cd9fc20198881a16a3ca8a3a59267d345231cf16626dd26bc92a",
+      "beforeBytes": 2480,
+      "afterBytes": 2481,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "af84d1c9bca1cd9fc20198881a16a3ca8a3a59267d345231cf16626dd26bc92a"
+    },
+    {
+      "file": "docs/intro-review/results.json",
+      "beforeSha256": "64a762bf53da964fd61344a6835c68f7a9632acb0705bbc42931838528875d26",
+      "gitSha256": "64a762bf53da964fd61344a6835c68f7a9632acb0705bbc42931838528875d26",
+      "afterSha256": "cc832af57dc31cf4f3729efa5a7877924fabee5ac0d3f23e2e3303e4bfa96f9f",
+      "beforeBytes": 99016,
+      "afterBytes": 85016,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "cc832af57dc31cf4f3729efa5a7877924fabee5ac0d3f23e2e3303e4bfa96f9f"
+    },
+    {
+      "file": "docs/PHASE_D_REVIEW.md",
+      "beforeSha256": "43b6b6d00c894732fd0ccc87bbbc19127d1efca8a785124e523adc4998188492",
+      "gitSha256": "43b6b6d00c894732fd0ccc87bbbc19127d1efca8a785124e523adc4998188492",
+      "afterSha256": "9168b8e60d8b00bd665ccfd976db728adca0e97c858108c76e3a39de7eccb57d",
+      "beforeBytes": 6684,
+      "afterBytes": 7453,
+      "proof": "identical Markdown AST without source positions",
+      "formattedSha256": "9168b8e60d8b00bd665ccfd976db728adca0e97c858108c76e3a39de7eccb57d"
+    },
+    {
+      "file": "docs/PHASE_E_REVIEW.md",
+      "beforeSha256": "feee8d1c6641ccdcbf49bd55ae3054b99bb92357c80a3193eb1efbbc563dcc99",
+      "gitSha256": "feee8d1c6641ccdcbf49bd55ae3054b99bb92357c80a3193eb1efbbc563dcc99",
+      "afterSha256": "b1f8700743b0abf36fb518655df12a3ae3c73ecca69c703c457c786c0267a95d",
+      "beforeBytes": 8329,
+      "afterBytes": 9437,
+      "proof": "identical Markdown AST without source positions",
+      "formattedSha256": "b1f8700743b0abf36fb518655df12a3ae3c73ecca69c703c457c786c0267a95d"
+    },
+    {
+      "file": "docs/PHASE_F_GAP_ANALYSIS.md",
+      "beforeSha256": "b76f0e8218e0da933dac89280bd82f2f6a9d4977e58107ef468d07ba1026c72f",
+      "gitSha256": "b76f0e8218e0da933dac89280bd82f2f6a9d4977e58107ef468d07ba1026c72f",
+      "afterSha256": "ed95a0df88aea16c4885df060539eba818a17fe1bbf1a1ab667b8a652123d864",
+      "beforeBytes": 5529,
+      "afterBytes": 6620,
+      "proof": "identical Markdown AST without source positions",
+      "formattedSha256": "ed95a0df88aea16c4885df060539eba818a17fe1bbf1a1ab667b8a652123d864"
+    },
+    {
+      "file": "docs/PHASE_F_REVIEW.md",
+      "beforeSha256": "1b66ab087804467b82e6c48074fca0e1b7df00bc70c317c8adeb0cd68b72bbce",
+      "gitSha256": "1b66ab087804467b82e6c48074fca0e1b7df00bc70c317c8adeb0cd68b72bbce",
+      "afterSha256": "f04c4dbfb19de4b64275001ede10836dee9310bb89af7c1e04e81201eb70b652",
+      "beforeBytes": 8328,
+      "afterBytes": 9410,
+      "proof": "identical Markdown AST without source positions",
+      "formattedSha256": "f04c4dbfb19de4b64275001ede10836dee9310bb89af7c1e04e81201eb70b652"
+    },
+    {
+      "file": "docs/scroll-gap-review/navigation-bug.json",
+      "beforeSha256": "fa76a671fc0c243c9d9925880bb99ae11f10bf9c9cb9620a3c2ef27d1226d5b5",
+      "gitSha256": "fa76a671fc0c243c9d9925880bb99ae11f10bf9c9cb9620a3c2ef27d1226d5b5",
+      "afterSha256": "812e5caf211e7044df24d180bc3c44a272be60d6e56dd08da70e57e4fcb7be4a",
+      "beforeBytes": 135,
+      "afterBytes": 136,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "812e5caf211e7044df24d180bc3c44a272be60d6e56dd08da70e57e4fcb7be4a"
+    },
+    {
+      "file": "docs/scroll-integration-review/recordings.json",
+      "beforeSha256": "86dd84d59776fea9c95030f5d0827aa9e14623e06214fa8c2736b144479f856d",
+      "gitSha256": "86dd84d59776fea9c95030f5d0827aa9e14623e06214fa8c2736b144479f856d",
+      "afterSha256": "d8cf0b37866b3170f0aa7e7a44ac16ab21ff12bb7c9d8afc114740b5fc6cbf6f",
+      "beforeBytes": 1514,
+      "afterBytes": 1226,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "d8cf0b37866b3170f0aa7e7a44ac16ab21ff12bb7c9d8afc114740b5fc6cbf6f"
+    },
+    {
+      "file": "docs/scroll-integration-review/verification.json",
+      "beforeSha256": "c37666b75892e16af24723ae1bf8243f5fc71afb9aa7fb89645e5d24d867923e",
+      "gitSha256": "c37666b75892e16af24723ae1bf8243f5fc71afb9aa7fb89645e5d24d867923e",
+      "afterSha256": "bdc830ad7275e893a35df0c9e69b61e86be3b3bdc0c2c22bf278a1349b043f30",
+      "beforeBytes": 2763,
+      "afterBytes": 2691,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "bdc830ad7275e893a35df0c9e69b61e86be3b3bdc0c2c22bf278a1349b043f30"
+    },
+    {
+      "file": "docs/scroll-transitions-review/browser.json",
+      "beforeSha256": "85595268b74e50c03b9193e7af2fb1e0076c38fabe83b8e1609b43fc89f43a71",
+      "gitSha256": "85595268b74e50c03b9193e7af2fb1e0076c38fabe83b8e1609b43fc89f43a71",
+      "afterSha256": "4277e047a57e0a1d25fe473f3b727558f1ee5a6699f246f1f161835ef5de18c7",
+      "beforeBytes": 3821,
+      "afterBytes": 3822,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "4277e047a57e0a1d25fe473f3b727558f1ee5a6699f246f1f161835ef5de18c7"
+    },
+    {
+      "file": "docs/scroll-transitions-review/manifest.json",
+      "beforeSha256": "c9ce9f8f5263ae6d02c9066aa68b1a61dd6f0480d2a344bd7cfe55805e1c5b8e",
+      "gitSha256": "c9ce9f8f5263ae6d02c9066aa68b1a61dd6f0480d2a344bd7cfe55805e1c5b8e",
+      "afterSha256": "cc6df912844d5411b826709d9a262ac75a6254ff35118a4e0be4cea6cd10dd9c",
+      "beforeBytes": 4269,
+      "afterBytes": 2826,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "c2ae327d5bba43a111baea7e22a691905abf98aef86e9b52114b18798173fa0d"
+    },
+    {
+      "file": "docs/story-correction-review/recordings.json",
+      "beforeSha256": "a07ab77904c77839ea2d8baa3ece6f6b63b408252dbadef17f7aa6b743ddf53c",
+      "gitSha256": "a07ab77904c77839ea2d8baa3ece6f6b63b408252dbadef17f7aa6b743ddf53c",
+      "afterSha256": "277ca8782aa95210da0d7b9420bd9703d9f4c650457c4483df5db68ffdfe29f6",
+      "beforeBytes": 1039,
+      "afterBytes": 913,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "277ca8782aa95210da0d7b9420bd9703d9f4c650457c4483df5db68ffdfe29f6"
+    },
+    {
+      "file": "docs/story-correction-review/results.json",
+      "beforeSha256": "2d751f2204e40f833e20c6322023ceafbcb1a7026072f522dcfc8608b9b046bc",
+      "gitSha256": "2d751f2204e40f833e20c6322023ceafbcb1a7026072f522dcfc8608b9b046bc",
+      "afterSha256": "7c51395e077e612cbeae2772434046313b7c6cb47a89142ba944a9a234e1d996",
+      "beforeBytes": 5936,
+      "afterBytes": 5768,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "7c51395e077e612cbeae2772434046313b7c6cb47a89142ba944a9a234e1d996"
+    },
+    {
+      "file": "docs/story-correction-review/verification.json",
+      "beforeSha256": "cf15051a8eb9dc2a4a5a72ae2dad3f0ea0c6888102255ec9057d2dc1e1eac9d8",
+      "gitSha256": "cf15051a8eb9dc2a4a5a72ae2dad3f0ea0c6888102255ec9057d2dc1e1eac9d8",
+      "afterSha256": "92b049214c212c667b97098c02dd32852d887c59b4416de48f1a7c34aa7600e3",
+      "beforeBytes": 4058,
+      "afterBytes": 3610,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "92b049214c212c667b97098c02dd32852d887c59b4416de48f1a7c34aa7600e3"
+    },
+    {
+      "file": "docs/story-review/capture-results.json",
+      "beforeSha256": "64c71b93c377d8f9ea63335880580e7d07a0b97edd2b72374ff52a3994659f58",
+      "gitSha256": "64c71b93c377d8f9ea63335880580e7d07a0b97edd2b72374ff52a3994659f58",
+      "afterSha256": "a645779db629566e3912a8c31edaa6bd9b3c8bab9094e23630190003a9e0be67",
+      "beforeBytes": 3730,
+      "afterBytes": 3731,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "a645779db629566e3912a8c31edaa6bd9b3c8bab9094e23630190003a9e0be67"
+    },
+    {
+      "file": "docs/story-review/deployment-check.json",
+      "beforeSha256": "a99e41ff7f04f77a12cbd08eb8975b525ddc7b466dd9159260c0529bd8700495",
+      "gitSha256": "a99e41ff7f04f77a12cbd08eb8975b525ddc7b466dd9159260c0529bd8700495",
+      "afterSha256": "6fa79ce92f1ab669c9c9b63fc76175d004d2517348a4e2dc26ba66423460968c",
+      "beforeBytes": 167,
+      "afterBytes": 168,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "6fa79ce92f1ab669c9c9b63fc76175d004d2517348a4e2dc26ba66423460968c"
+    },
+    {
+      "file": "docs/story-review/motion-samples.json",
+      "beforeSha256": "4286f2d1e7ada176340d05cb1db922b753861894ed3946f30984c131b73a7525",
+      "gitSha256": "4286f2d1e7ada176340d05cb1db922b753861894ed3946f30984c131b73a7525",
+      "afterSha256": "311c51daee69cd4941dbcdc148222324acac357a6ef8f3d31f4bdb6c0f5a42ed",
+      "beforeBytes": 130375,
+      "afterBytes": 224985,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "311c51daee69cd4941dbcdc148222324acac357a6ef8f3d31f4bdb6c0f5a42ed"
+    },
+    {
+      "file": "docs/story-review/wide-short-results.json",
+      "beforeSha256": "7fad629c88c832f8f1ebcebbfb5d7d091f78afef9793a0d3e4b6d261c499dd5e",
+      "gitSha256": "7fad629c88c832f8f1ebcebbfb5d7d091f78afef9793a0d3e4b6d261c499dd5e",
+      "afterSha256": "a0505cc392af7baa37779b5acb74f99eef62a71bb4ddb1e1d6936c43f6f2083b",
+      "beforeBytes": 1360,
+      "afterBytes": 1361,
+      "proof": "identical parsed JSON",
+      "formattedSha256": "a0505cc392af7baa37779b5acb74f99eef62a71bb4ddb1e1d6936c43f6f2083b"
+    }
+  ],
+  "manifestRebindings": [
+    {
+      "manifest": "docs/hero-review/manifest.json",
+      "target": "docs/hero-review/results.json",
+      "beforeSha256": "52bc3183045a44b13ee7d7bde7a7dd9ab599c870b452fec9383fd393fc3843ac",
+      "afterSha256": "9c83a36948d2d27c5829a9ab0141eb74b26ad6688b1f3fc045b471fff2e3e817",
+      "beforeBytes": 51345,
+      "afterBytes": 50769
+    },
+    {
+      "manifest": "docs/intro-review/manifest.json",
+      "target": "docs/intro-review/results.json",
+      "beforeSha256": "64a762bf53da964fd61344a6835c68f7a9632acb0705bbc42931838528875d26",
+      "afterSha256": "cc832af57dc31cf4f3729efa5a7877924fabee5ac0d3f23e2e3303e4bfa96f9f",
+      "beforeBytes": 99016,
+      "afterBytes": 85016
+    },
+    {
+      "manifest": "docs/scroll-integration-review/manifest.json",
+      "target": "docs/scroll-integration-review/recordings.json",
+      "beforeSha256": "86dd84d59776fea9c95030f5d0827aa9e14623e06214fa8c2736b144479f856d",
+      "afterSha256": "d8cf0b37866b3170f0aa7e7a44ac16ab21ff12bb7c9d8afc114740b5fc6cbf6f",
+      "beforeBytes": 1514,
+      "afterBytes": 1226
+    },
+    {
+      "manifest": "docs/scroll-integration-review/manifest.json",
+      "target": "docs/scroll-integration-review/verification.json",
+      "beforeSha256": "c37666b75892e16af24723ae1bf8243f5fc71afb9aa7fb89645e5d24d867923e",
+      "afterSha256": "bdc830ad7275e893a35df0c9e69b61e86be3b3bdc0c2c22bf278a1349b043f30",
+      "beforeBytes": 2763,
+      "afterBytes": 2691
+    },
+    {
+      "manifest": "docs/scroll-transitions-review/manifest.json",
+      "target": "docs/scroll-transitions-review/browser.json",
+      "beforeSha256": "85595268b74e50c03b9193e7af2fb1e0076c38fabe83b8e1609b43fc89f43a71",
+      "afterSha256": "4277e047a57e0a1d25fe473f3b727558f1ee5a6699f246f1f161835ef5de18c7",
+      "beforeBytes": 3821,
+      "afterBytes": 3822
+    },
+    {
+      "manifest": "docs/story-correction-review/manifest.json",
+      "target": "docs/story-correction-review/verification.json",
+      "beforeSha256": "cf15051a8eb9dc2a4a5a72ae2dad3f0ea0c6888102255ec9057d2dc1e1eac9d8",
+      "afterSha256": "92b049214c212c667b97098c02dd32852d887c59b4416de48f1a7c34aa7600e3",
+      "beforeBytes": 4058,
+      "afterBytes": 3610
+    },
+    {
+      "manifest": "docs/story-review/manifest.json",
+      "target": "docs/story-review/capture-results.json",
+      "beforeSha256": "64c71b93c377d8f9ea63335880580e7d07a0b97edd2b72374ff52a3994659f58",
+      "afterSha256": "a645779db629566e3912a8c31edaa6bd9b3c8bab9094e23630190003a9e0be67",
+      "beforeBytes": 3730,
+      "afterBytes": 3731
+    },
+    {
+      "manifest": "docs/story-review/manifest.json",
+      "target": "docs/story-review/deployment-check.json",
+      "beforeSha256": "a99e41ff7f04f77a12cbd08eb8975b525ddc7b466dd9159260c0529bd8700495",
+      "afterSha256": "6fa79ce92f1ab669c9c9b63fc76175d004d2517348a4e2dc26ba66423460968c",
+      "beforeBytes": 167,
+      "afterBytes": 168
+    },
+    {
+      "manifest": "docs/story-review/manifest.json",
+      "target": "docs/story-review/motion-samples.json",
+      "beforeSha256": "4286f2d1e7ada176340d05cb1db922b753861894ed3946f30984c131b73a7525",
+      "afterSha256": "311c51daee69cd4941dbcdc148222324acac357a6ef8f3d31f4bdb6c0f5a42ed",
+      "beforeBytes": 130375,
+      "afterBytes": 224985
+    },
+    {
+      "manifest": "docs/story-review/manifest.json",
+      "target": "docs/story-review/wide-short-results.json",
+      "beforeSha256": "7fad629c88c832f8f1ebcebbfb5d7d091f78afef9793a0d3e4b6d261c499dd5e",
+      "afterSha256": "a0505cc392af7baa37779b5acb74f99eef62a71bb4ddb1e1d6936c43f6f2083b",
+      "beforeBytes": 1360,
+      "afterBytes": 1361
+    }
+  ],
+  "unresolvedOldHashReferences": [],
+  "changedFiles": [
+    {
+      "file": ".impeccable/design.json",
+      "beforeSha256": "4f16253a8c060af46beea7b22cbe970074166c291efa6f360764d12738135c97",
+      "afterSha256": "b21596ea88657504904049388417dcf6bf055a862c4fc204843c8348a1428115"
+    },
+    {
+      "file": "docs/hero-review/finish-review.md",
+      "beforeSha256": "d06df88ad71185993da358152fdb5063f43b6c02e8163d5a8eb5e81740002fd0",
+      "afterSha256": "01408c989445837e0bf2148d85f71496fd4f0c9d5cc14e9748a0aacb68c96823"
+    },
+    {
+      "file": "docs/hero-review/lighthouse-environment.json",
+      "beforeSha256": "bc4dd59eb74951207b37aaf81729e87861602c112a111cad8101c759fbd6fa73",
+      "afterSha256": "09992592127402894816820a12d4eb4b0fce0225ae6aadd60e221258c0c6c549"
+    },
+    {
+      "file": "docs/hero-review/lighthouse-summary.json",
+      "beforeSha256": "524af99a1c95905a37ad72eac2006519af6444827ccd3b945681182f4aa3cc4b",
+      "afterSha256": "26d2a1aee1ee4b329ffb875f8affa50fd05cb194db9c994aee90d49e81962a61"
+    },
+    {
+      "file": "docs/hero-review/results.json",
+      "beforeSha256": "52bc3183045a44b13ee7d7bde7a7dd9ab599c870b452fec9383fd393fc3843ac",
+      "afterSha256": "9c83a36948d2d27c5829a9ab0141eb74b26ad6688b1f3fc045b471fff2e3e817"
+    },
+    {
+      "file": "docs/intro-review/lighthouse-environment.json",
+      "beforeSha256": "7fa8acee485c133d3ccf3adb1831fbf72f286e383d00b5044d962c911217c213",
+      "afterSha256": "2748dc98e036e0afa928d3243f2f8c3bf08695f3d1f2697fc1696e232be87db0"
+    },
+    {
+      "file": "docs/intro-review/lighthouse-summary.json",
+      "beforeSha256": "aa05e23253ead490af13b7cfe7283988cba45a3735bfcae6a3b8afda2d28a14b",
+      "afterSha256": "af84d1c9bca1cd9fc20198881a16a3ca8a3a59267d345231cf16626dd26bc92a"
+    },
+    {
+      "file": "docs/intro-review/results.json",
+      "beforeSha256": "64a762bf53da964fd61344a6835c68f7a9632acb0705bbc42931838528875d26",
+      "afterSha256": "cc832af57dc31cf4f3729efa5a7877924fabee5ac0d3f23e2e3303e4bfa96f9f"
+    },
+    {
+      "file": "docs/PHASE_D_REVIEW.md",
+      "beforeSha256": "43b6b6d00c894732fd0ccc87bbbc19127d1efca8a785124e523adc4998188492",
+      "afterSha256": "9168b8e60d8b00bd665ccfd976db728adca0e97c858108c76e3a39de7eccb57d"
+    },
+    {
+      "file": "docs/PHASE_E_REVIEW.md",
+      "beforeSha256": "feee8d1c6641ccdcbf49bd55ae3054b99bb92357c80a3193eb1efbbc563dcc99",
+      "afterSha256": "b1f8700743b0abf36fb518655df12a3ae3c73ecca69c703c457c786c0267a95d"
+    },
+    {
+      "file": "docs/PHASE_F_GAP_ANALYSIS.md",
+      "beforeSha256": "b76f0e8218e0da933dac89280bd82f2f6a9d4977e58107ef468d07ba1026c72f",
+      "afterSha256": "ed95a0df88aea16c4885df060539eba818a17fe1bbf1a1ab667b8a652123d864"
+    },
+    {
+      "file": "docs/PHASE_F_REVIEW.md",
+      "beforeSha256": "1b66ab087804467b82e6c48074fca0e1b7df00bc70c317c8adeb0cd68b72bbce",
+      "afterSha256": "f04c4dbfb19de4b64275001ede10836dee9310bb89af7c1e04e81201eb70b652"
+    },
+    {
+      "file": "docs/scroll-gap-review/navigation-bug.json",
+      "beforeSha256": "fa76a671fc0c243c9d9925880bb99ae11f10bf9c9cb9620a3c2ef27d1226d5b5",
+      "afterSha256": "812e5caf211e7044df24d180bc3c44a272be60d6e56dd08da70e57e4fcb7be4a"
+    },
+    {
+      "file": "docs/scroll-integration-review/recordings.json",
+      "beforeSha256": "86dd84d59776fea9c95030f5d0827aa9e14623e06214fa8c2736b144479f856d",
+      "afterSha256": "d8cf0b37866b3170f0aa7e7a44ac16ab21ff12bb7c9d8afc114740b5fc6cbf6f"
+    },
+    {
+      "file": "docs/scroll-integration-review/verification.json",
+      "beforeSha256": "c37666b75892e16af24723ae1bf8243f5fc71afb9aa7fb89645e5d24d867923e",
+      "afterSha256": "bdc830ad7275e893a35df0c9e69b61e86be3b3bdc0c2c22bf278a1349b043f30"
+    },
+    {
+      "file": "docs/scroll-transitions-review/browser.json",
+      "beforeSha256": "85595268b74e50c03b9193e7af2fb1e0076c38fabe83b8e1609b43fc89f43a71",
+      "afterSha256": "4277e047a57e0a1d25fe473f3b727558f1ee5a6699f246f1f161835ef5de18c7"
+    },
+    {
+      "file": "docs/scroll-transitions-review/manifest.json",
+      "beforeSha256": "c9ce9f8f5263ae6d02c9066aa68b1a61dd6f0480d2a344bd7cfe55805e1c5b8e",
+      "afterSha256": "cc6df912844d5411b826709d9a262ac75a6254ff35118a4e0be4cea6cd10dd9c"
+    },
+    {
+      "file": "docs/story-correction-review/recordings.json",
+      "beforeSha256": "a07ab77904c77839ea2d8baa3ece6f6b63b408252dbadef17f7aa6b743ddf53c",
+      "afterSha256": "277ca8782aa95210da0d7b9420bd9703d9f4c650457c4483df5db68ffdfe29f6"
+    },
+    {
+      "file": "docs/story-correction-review/results.json",
+      "beforeSha256": "2d751f2204e40f833e20c6322023ceafbcb1a7026072f522dcfc8608b9b046bc",
+      "afterSha256": "7c51395e077e612cbeae2772434046313b7c6cb47a89142ba944a9a234e1d996"
+    },
+    {
+      "file": "docs/story-correction-review/verification.json",
+      "beforeSha256": "cf15051a8eb9dc2a4a5a72ae2dad3f0ea0c6888102255ec9057d2dc1e1eac9d8",
+      "afterSha256": "92b049214c212c667b97098c02dd32852d887c59b4416de48f1a7c34aa7600e3"
+    },
+    {
+      "file": "docs/story-review/capture-results.json",
+      "beforeSha256": "64c71b93c377d8f9ea63335880580e7d07a0b97edd2b72374ff52a3994659f58",
+      "afterSha256": "a645779db629566e3912a8c31edaa6bd9b3c8bab9094e23630190003a9e0be67"
+    },
+    {
+      "file": "docs/story-review/deployment-check.json",
+      "beforeSha256": "a99e41ff7f04f77a12cbd08eb8975b525ddc7b466dd9159260c0529bd8700495",
+      "afterSha256": "6fa79ce92f1ab669c9c9b63fc76175d004d2517348a4e2dc26ba66423460968c"
+    },
+    {
+      "file": "docs/story-review/motion-samples.json",
+      "beforeSha256": "4286f2d1e7ada176340d05cb1db922b753861894ed3946f30984c131b73a7525",
+      "afterSha256": "311c51daee69cd4941dbcdc148222324acac357a6ef8f3d31f4bdb6c0f5a42ed"
+    },
+    {
+      "file": "docs/story-review/wide-short-results.json",
+      "beforeSha256": "7fad629c88c832f8f1ebcebbfb5d7d091f78afef9793a0d3e4b6d261c499dd5e",
+      "afterSha256": "a0505cc392af7baa37779b5acb74f99eef62a71bb4ddb1e1d6936c43f6f2083b"
+    },
+    {
+      "file": "docs/hero-review/manifest.json",
+      "beforeSha256": "4188ffa6636624a088309ac731296fb8bd0de25f0b339147311b2fab058b64e3",
+      "afterSha256": "c6d761d694160f8878ce54fb16af1efedc77af949f13e0fbe2fa0858571cf27f"
+    },
+    {
+      "file": "docs/intro-review/manifest.json",
+      "beforeSha256": "0fec745a9f7f682c5d32f6613ce1450196ec8f9a77f3252acb6ac84b27cd43cd",
+      "afterSha256": "b01adcafb8ce992fa3972d82d7dba8f95bce14a1bc0a66ce430a7409bd7392b3"
+    },
+    {
+      "file": "docs/scroll-integration-review/manifest.json",
+      "beforeSha256": "13bc08fd99e988b11fd141aad89173cec97957414deb965588a1da03ecd1deb2",
+      "afterSha256": "70bc67cfa0b5bf2bf39f87cb397f469a1f872267c37664450121854a9039457e"
+    },
+    {
+      "file": "docs/story-correction-review/manifest.json",
+      "beforeSha256": "61191b9005e7acd59f1742efc3dc7735733b9477715512f56f0ca49bd94d749e",
+      "afterSha256": "d0e7ff86a5f053c6a2c4170a1a43fdd44a8a1dfbad4d65848179051681214de5"
+    },
+    {
+      "file": "docs/story-review/manifest.json",
+      "beforeSha256": "f9c4f65bf197edb3e2d786980569f82615a8547be9fd37b3cf8dbf19d1adcedd",
+      "afterSha256": "12cec9b3aa2eeccadb3fc12e348ea90ce13a5f4be107c68a8e43cdbf1549a10a"
+    }
+  ],
+  "verified": {
+    "semanticChecks": 24,
+    "reboundEntries": 10,
+    "preservedFiles": 4,
+    "stagedFiles": 29,
+    "result": "PASS"
+  }
+}

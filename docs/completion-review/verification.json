@@ -1,0 +1,129 @@
+[
+  {
+    "name": "baseline",
+    "args": [".audit/completion/measure.mjs", "baseline"],
+    "code": 0,
+    "elapsedMs": 43162,
+    "timestamp": "2026-10-25T17:41:50.163Z"
+  },
+  {
+    "name": "build-frame",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 10808,
+    "timestamp": "2026-10-25T17:42:24.486Z"
+  },
+  {
+    "name": "frame",
+    "args": [".audit/completion/measure.mjs", "frame"],
+    "code": 0,
+    "elapsedMs": 72974,
+    "timestamp": "2026-10-25T17:43:48.527Z"
+  },
+  {
+    "name": "build-two-frames",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 8740,
+    "timestamp": "2026-10-25T17:44:20.045Z"
+  },
+  {
+    "name": "two-frames",
+    "args": [".audit/completion/measure.mjs", "two-frames"],
+    "code": 0,
+    "elapsedMs": 37187,
+    "timestamp": "2026-10-25T17:45:15.545Z"
+  },
+  {
+    "name": "build-idle",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 13015,
+    "timestamp": "2026-10-25T17:47:25.505Z"
+  },
+  {
+    "name": "idle",
+    "args": [".audit/completion/measure.mjs", "idle"],
+    "code": 0,
+    "elapsedMs": 37419,
+    "timestamp": "2026-10-25T17:48:17.935Z"
+  },
+  {
+    "name": "build-selection",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 11954,
+    "timestamp": "2026-10-25T17:52:31.338Z"
+  },
+  {
+    "name": "build-pointer",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 13903,
+    "timestamp": "2026-10-25T17:57:25.808Z"
+  },
+  {
+    "name": "selection",
+    "args": [".audit/completion/check-selection.mjs"],
+    "code": 1,
+    "elapsedMs": 231961,
+    "timestamp": "2026-10-25T17:57:11.348Z"
+  },
+  {
+    "name": "selection-final",
+    "args": [".audit/completion/check-selection.mjs"],
+    "code": 4294967295,
+    "elapsedMs": 79834,
+    "timestamp": "2026-10-25T17:59:23.767Z"
+  },
+  {
+    "name": "selection-confirmation",
+    "args": [".audit/completion/check-selection.mjs"],
+    "code": 0,
+    "elapsedMs": 8277,
+    "timestamp": "2026-10-25T17:59:32.102Z"
+  },
+  {
+    "name": "focus-diagnostic",
+    "args": [".audit/completion/focus-diagnostic.mjs"],
+    "code": 0,
+    "elapsedMs": 19858,
+    "timestamp": "2026-10-25T17:54:14.152Z"
+  },
+  {
+    "name": "focus-restored",
+    "args": [".audit/completion/focus-diagnostic.mjs"],
+    "code": 0,
+    "elapsedMs": 21167,
+    "timestamp": "2026-10-25T17:55:35.431Z"
+  },
+  {
+    "name": "focus-final",
+    "args": [".audit/completion/check-focus.mjs"],
+    "code": 0,
+    "elapsedMs": 5551,
+    "timestamp": "2026-10-25T17:58:09.405Z"
+  },
+  {
+    "name": "keyboard",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "tests/e2e/responsive.spec.ts",
+      "--grep",
+      "keyboard focus stays visible",
+      "--workers=1",
+      "--reporter=line"
+    ],
+    "code": 0,
+    "elapsedMs": 8814,
+    "timestamp": "2026-10-25T17:58:50.497Z"
+  },
+  {
+    "name": "format-final",
+    "args": ["node_modules/prettier/bin/prettier.cjs", "--check", "."],
+    "code": 0,
+    "elapsedMs": 6441,
+    "timestamp": "2026-10-25T18:02:23.400Z"
+  }
+]

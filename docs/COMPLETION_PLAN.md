@@ -7,3 +7,7 @@
 3. Validar a superfície que efetivamente mudar, incluindo cold start, hash/foco, mudanças de preferência e ciclo de vida se o agendamento de efeitos for alterado. Comparar browser desktop/mobile; expandir testes somente quando a superfície justificar.
 4. Resolver os24 avisos históricos de Prettier. Antes de tocar em evidências, inventariar hashes e referências; atualizar manifestos que possuam hashes de arquivos reformatados ou preservar a evidência bruta com exclusão justificada se houver assinatura impossível de regenerar. Provar que JSON continua semanticamente idêntico; apenas whitespace em código/Markdown. Não reformatar indiscriminadamente a árvore.
 5. Validar, revisar diff, commits locais pequenos com staging explícito e documentação sincronizada. Registrar SHAs, resultados reais, comparações e limites no HANDOFF/TASKS/VERIFICATION. Encerrar no gate de revisão/liberação; nenhuma publicação implícita.
+
+## Resultado da retomada
+
+Plano `38cc257`. O usuário priorizou posteriormente seleção de texto e caixa do título; atendidos em `a7034e9`, com15 verificações de arraste, seis de foco/reload e build/strict PASS. Formato resolvido em `b0f52c4`,29 arquivos com prova semântica e dez rebindings de hash/bytes. H03 permanece aberta: sondas de dois frames/idle retiradas sem ganho comprovado necessário; fonte JS restaurada. Detalhes, falhas intermediárias, limites e próximos passos em COMPLETION_REVIEW. Quatro edições anteriores intactas; sem push/merge/deploy.

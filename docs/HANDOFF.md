@@ -1,4 +1,16 @@
-# Estado vigente — I preparada para revisão, 25/10/2026
+# Estado vigente — seleção/título e formato resolvidos, 25/10/2026
+
+Continuidade autorizada por “Pode continuar”, plano `38cc257`. Pedidos posteriores priorizaram bloquear seleção de texto e retirar a caixa de foco do título: `a7034e9` aplica CSS global de seleção e remove somente o outline do h1 do hero; links/botões conservam foco visível. [Relatório vigente](COMPLETION_REVIEW.md). Preview http://127.0.0.1:3117/.
+
+Validação: build/strict PASS,15 verificações de arraste nas cinco rotas/três motores, seis verificações de foco/reload e captura inspecionada. Teste existente de teclado/reduced motion:2 PASS/1 SKIP histórico WebKit/Windows, sem falhas/retries. A caixa foi reproduzida com foco programático/teclado; o clique comum não a reproduziu nos headless. Não atribuir causa confirmada de restauração do browser. Foco do título não interativo foi preservado, seu outline foi suprimido por pedido explícito.
+
+`b0f52c4` normaliza24 arquivos históricos, prova JSON/AST equivalente e atualiza dez referências de hash/bytes em seis manifestos.29 arquivos no commit; formato global agora PASS. [Linhagem e provas](completion-review/format-preservation.json), sem mudança de resultados/imagens. Quatro edições preexistentes intactas por SHA256 e fora dos commits.
+
+H03 continua aberta. Controle desta retomada, antes dos pedidos CSS: nota84/LCP3540ms/TBT307ms, três execuções. Sondas de dois frames89/LCP3221 e idle87/LCP3445 retiradas; séries exploratórias não comprovam ganho causal nem atingem a meta. Ensaio com servidor antigo invalidado por erros de recursos; logs preservados. `home-motion.tsx` restaurado byte a byte ao blob db9095e; nenhuma alteração experimental de coreografia/agendamento conservada. Não são métricas do build CSS final; cases/INP não remedidos.
+
+I permanece preparada localmente, com autorização Ateliê resolvida. Próximo trabalho técnico: reduzir custo de renderização/inicialização sem retirar a coreografia aprovada. Aceite humano, favicon em aba, compartilhamento real, fotos/contexto, hardware/leitor de tela e INP continuam delimitados. Build noindex e deploy Git main/redesign bloqueado; sem push/merge/deploy. SHA documental por `git log -1 -- docs/HANDOFF.md`. Registros inferiores de formato24 pendente foram superados; H03 não foi dispensada.
+
+# Histórico — I preparada para revisão, 25/10/2026
 
 I autorizada por “Aprovado, pode dar inicio”; plano `ebaad99`, fonte `3b99eba` (OG com identidade atual, avatar exato e Manrope local). [Revisão e evidências](PHASE_I_REVIEW.md), [checklist de release/rollback](RELEASE_CHECKLIST.md). Permissão da marca/capturas Ateliê confirmada pelo usuário: “Confirmo que tenho permissão para esse uso”, registrada em MEDIA_ASSETS. Não atribuir autoria adicional nem supor fotos/contexto fornecidos.
 

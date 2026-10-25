@@ -1,5 +1,16 @@
 # Tarefas e gate atual
 
+## Estado vigente — pedidos de interação e formato, 25/10/2026
+
+- [x] Plano `38cc257`; `a7034e9`: seleção de texto bloqueada nas cinco rotas e outline removido somente do título do hero, mantendo foco de links/botões.
+- [x] Build/strict PASS;15 verificações de arraste, seis de foco/reload nos três motores, captura inspecionada. Teclado/reduced motion existente2 PASS/1 SKIP histórico WebKit/Windows. [Revisão](COMPLETION_REVIEW.md).
+- [x] `b0f52c4`:24 avisos de formato resolvidos; JSON/Markdown preservados semanticamente, dez hashes/tamanhos atualizados em seis manifestos. Formato global PASS, quatro edições anteriores intactas.
+- [x] Investigar inicialização pós-frame/idle com três execuções por variante; retirar os dois candidatos sem ganho comprovado necessário. JS restaurado ao controle; não reduzir a coreografia para ganhar nota.
+- [ ] H03: localizar/reduzir custo de renderização/inicialização com comparação pareada; controle pré-CSS84/LCP3540ms, fora da meta. Cases/INP não remedidos.
+- [ ] Revisão/liberação de I e limites humanos/físicos/fotos/contexto; autorizações próprias de push/integração/deploy conforme RELEASE_CHECKLIST.
+
+Registros inferiores de formato24 pendente foram superados; segurança/SEO/permissão Ateliê mantêm as provas de I.
+
 ## Estado vigente — I preparada para revisão, 25/10/2026
 
 - [x] Autorização I registrada em `ebaad99`; escopo PHASE_I_PLAN, sem publicação implícita.

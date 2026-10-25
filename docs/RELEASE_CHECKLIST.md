@@ -2,6 +2,8 @@
 
 Preparação da fase I, não autorização de publicação. Branch `redesign/cinematic-portfolio`, plano `ebaad99`, fonte `3b99eba`; [provas e limites](PHASE_I_REVIEW.md). A publicação histórica de2026-10-11 em LAUNCH não comprova a publicação deste redesign.
 
+Continuidade25/10: `a7034e9` atende seleção/título, `b0f52c4` resolve formato histórico com hashes atualizados; [revisão e limites atuais](COMPLETION_REVIEW.md). H03 não passou; sondas de agendamento retiradas, sem alteração de coreografia.
+
 ## Preparado localmente
 
 - [x] Cinco rotas: `/`, `/projetos/robosense-lab`, `/projetos/museu-arte-moderna`, `/projetos/industry-week-senai`, `/projetos/atelie-ingrid-xavier`.
@@ -14,7 +16,7 @@ Preparação da fase I, não autorização de publicação. Branch `redesign/cin
 ## Decisões e provas antes da liberação
 
 - [ ] Resolver H03 (home fora das metas nota≥90/LCP≤2500ms), preservando coreografia e produzindo comparação pareada; INP de campo continua sem prova. Preparação de I não dispensa H.
-- [ ] Decidir tratamento dos24 arquivos históricos com falha de Prettier sem invalidar hashes de evidências anteriores.
+- [x] Normalizar os24 arquivos históricos com prova JSON/AST equivalente e atualizar dez hashes/tamanhos em seis manifestos; formato global PASS, linhagem preservada em completion-review/format-preservation.json (`b0f52c4`).
 - [ ] Concluir aceite visual humano e favicon em aba visível; registrar limites Safari, aparelhos físicos e leitor de tela. Fotografias/contexto ainda não fornecidos não podem ser tratados como conteúdo validado.
 - [ ] Revisar I. Autorizar explicitamente push, eventual integração e deploy/indexação; não inferir uma autorização da outra. Conferir a árvore com as quatro alterações locais antes de definir o SHA exato do release.
 - [ ] No projeto Vercel, reconfirmar conta, vínculo do repositório atual `brunoproencadev/portfolio` e domínio `brunoproencasilva.vercel.app`. O HTTP200 público desta fase não comprova essa associação. Registrar deployment de retorno antes de alterar produção.

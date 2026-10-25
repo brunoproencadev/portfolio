@@ -1,4 +1,12 @@
-# Verificação vigente — preparação I, 25/10/2026
+# Verificação vigente — seleção, título e formato, 25/10/2026
+
+Plano `38cc257`, CSS `a7034e9`, normalização `b0f52c4`. [Revisão](COMPLETION_REVIEW.md), [comandos/logs](completion-review/verification.json). Build/strict e formato do CSS PASS.15 verificações de arraste nas cinco rotas/três motores; seis de foco/reload e links com outline visível; captura posterior inspecionada. Teste existente teclado/reduced motion:2 PASS/1 SKIP histórico WebKit/Windows, zero falhas/retries. Sem prova física ou rodada sem JS; tentativas interrompidas das sondas estão identificadas.
+
+Formato global agora PASS:24 arquivos normalizados,19 JSONs com valores idênticos e cinco Markdown com AST idêntica sem posições. Dez entradas de hashes/bytes em seis manifestos atualizadas; [prova e linhagem](completion-review/format-preservation.json). Quatro edições anteriores preservadas e fora dos commits, diff-check e hashes staged conferidos no fechamento. Não reexecutar build/testes de produto por formatação apenas documental.
+
+[Desempenho exploratório](completion-review/performance.json): controle pré-CSS84/LCP3540/TBT307; dois frames89/LCP3221/TBT201,5; idle87/LCP3445/TBT225, três execuções por variante. Candidatos retirados, JS restaurado byte a byte; não há ganho causal ou H03 aprovado. Um ensaio com servidor de build antigo foi descartado por erros de recursos. Não são métricas do build final CSS; sem nova suíte integral, cases ou INP. [Manifesto](completion-review/manifest.json). Preview3117 noindex; sem push/merge/deploy. Registros seguintes são históricos quando conflitarem com este estado.
+
+# Histórico — preparação I, 25/10/2026
 
 Plano `ebaad99`, fonte `3b99eba`; [revisão e limites](PHASE_I_REVIEW.md). [Resultados/logs](phase-i-review/verification.json): build final de cada perfil e restauração/strict PASS, lint completo PASS, unitários9/9 PASS. SEO/assets18/18 nos três perfis e motores, zero skips/retries nas rodadas finais; políticas HTTP e JSONs completos em phase-i-review. Falhas intermediárias de build/harness e ocupação de porta documentadas, sem ocultar execução. Produção apenas simulada em processos locais.
 

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "src/styles/globals.css",
+    "sha256": "b671093fb862791e058867a57788bd6b59b2807335e313f4d6f49999b2003b33"
+  },
+  {
+    "file": "src/components/motion/home-motion.tsx",
+    "sha256": "301a92ca1b5032fe2a253e53520143d5ae65599795868233e31cadffd7fb1029"
+  },
+  {
+    "file": "vercel.json",
+    "sha256": "517556fa798811929fe7fe6dbad130e65c38cd184c62a18288d3b71d1f9373a5"
+  }
+]

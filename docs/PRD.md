@@ -1,5 +1,7 @@
 # PRD — Bruno Proença Silva
 
+Pedido25/10/2026 — usuário solicitou bloquear seleção de texto no site e retirar a caixa de foco do título após atualizar/clicar. Implementação CSS `a7034e9`: seleção desabilitada globalmente e outline suprimido somente no h1 do hero, mantendo navegação/foco visível de links e botões. Provas e limites em COMPLETION_REVIEW. Formato histórico resolvido em `b0f52c4`; H03 permanece aberta e publicação não autorizada.
+
 Atualização25/10/2026 — I autorizada por “Aprovado, pode dar inicio” e preparada para revisão em PHASE_I_REVIEW. SEO, segurança, proveniência e checklist local validados; a autorização específica de marca/capturas Ateliê foi confirmada pelo usuário. H03/metas de desempenho e validações humanas continuam abertas. Não houve autorização ou execução de publicação; RELEASE_CHECKLIST rege o próximo gate. Registros inferiores de I não autorizada são históricos.
 
 Atualização 18/10/2026 — H autorizada explicitamente para QA completo/performance. Relatório vigente PHASE_H_REVIEW; metas R07/R10/R11 mantidas, sem presumir atendimento de LCP/INP ou aceite humano. A coreografia aprovada continua preservada. I e publicação exigem autorização própria; os gates de H descritos abaixo são históricos.

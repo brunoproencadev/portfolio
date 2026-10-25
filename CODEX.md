@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização25/10/2026 — continuidade autorizada, plano `38cc257`. Pedidos de seleção/título atendidos em `a7034e9`: CSS global sem seleção, sem outline no h1 do hero e foco de links/botões mantido. Build/strict,15 verificações de seleção, seis de foco/reload e teclado2 PASS/1 SKIP histórico. `b0f52c4` resolve os24 avisos de formato com prova de preservação e dez hashes atualizados; formato global PASS. Relatório docs/COMPLETION_REVIEW.md. H03 continua aberta: sondas frame/idle retiradas e JS restaurado, sem ganho causal; quatro edições anteriores intactas. Sem push/merge/deploy, próximos gates em RELEASE_CHECKLIST.
+
 Atualização 2026-10-25 — I preparada para revisão em docs/PHASE_I_REVIEW.md: plano `ebaad99`, fonte `3b99eba`, imagem social alinhada à identidade, fontes/avatares com proveniência e autorização Ateliê confirmada. SEO/assets18/18 nos três perfis/motores; builds/strict/lint/nove unitários PASS, auditorias zero. Build noindex restaurado, quatro alterações anteriores intactas. H03 e formato histórico24 arquivos continuam abertos; checklist docs/RELEASE_CHECKLIST.md. Sem push/merge/deploy. Próximo gate é revisão/liberação com autorizações próprias; I não dispensa os limites de H.
 
 Atualização 2026-10-25 — I autorizada por “Aprovado, pode dar inicio”. Escopo docs/PHASE_I_PLAN.md: SEO, segurança, proveniência e checklist local. H03 e demais limites anteriores não foram dispensados; nenhum push/deploy ou ativação pública de indexação autorizado. Estados inferiores de I não autorizada são históricos.

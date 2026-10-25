@@ -1,0 +1,82 @@
+{
+  "rows": [
+    {
+      "engine": "chromium",
+      "reload": false,
+      "title": {
+        "focused": true,
+        "outline": "none"
+      },
+      "pointerTitleOutline": "none",
+      "keyboardLink": {
+        "visible": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "engine": "chromium",
+      "reload": true,
+      "title": {
+        "focused": true,
+        "outline": "none"
+      },
+      "pointerTitleOutline": "none",
+      "keyboardLink": {
+        "visible": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "engine": "firefox",
+      "reload": false,
+      "title": {
+        "focused": true,
+        "outline": "none"
+      },
+      "pointerTitleOutline": "none",
+      "keyboardLink": {
+        "visible": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "engine": "firefox",
+      "reload": true,
+      "title": {
+        "focused": true,
+        "outline": "none"
+      },
+      "pointerTitleOutline": "none",
+      "keyboardLink": {
+        "visible": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "engine": "webkit",
+      "reload": false,
+      "title": {
+        "focused": true,
+        "outline": "none"
+      },
+      "pointerTitleOutline": "none",
+      "keyboardLink": {
+        "visible": true,
+        "outline": "solid"
+      }
+    },
+    {
+      "engine": "webkit",
+      "reload": true,
+      "title": {
+        "focused": true,
+        "outline": "none"
+      },
+      "pointerTitleOutline": "none",
+      "keyboardLink": {
+        "visible": true,
+        "outline": "solid"
+      }
+    }
+  ]
+}

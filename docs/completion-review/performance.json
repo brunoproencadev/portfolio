@@ -1,0 +1,37 @@
+{
+  "series": [
+    {
+      "label": "baseline",
+      "median": {
+        "performance": 84,
+        "lcp": 3540.2541999999994,
+        "tbt": 307,
+        "cls": 0.03888213851761847
+      }
+    },
+    {
+      "label": "two-frames",
+      "median": {
+        "performance": 89,
+        "lcp": 3221.1886000000004,
+        "tbt": 201.5,
+        "cls": 0.03888213851761847
+      }
+    },
+    {
+      "label": "idle",
+      "median": {
+        "performance": 87,
+        "lcp": 3444.8372,
+        "tbt": 225,
+        "cls": 0.03888213851761847
+      }
+    }
+  ],
+  "decision": "Both scheduling candidates rejected; no retained JavaScript changes or causal performance claim. Baseline predates requested CSS changes; not a final-build measurement.",
+  "invalidSeries": {
+    "label": "frame",
+    "reason": "Server retained old build references; network/console errors. Excluded from comparison."
+  },
+  "method": "Next production, Lighthouse 13.5 mobile defaults, simulate CPU 4x, three fresh Chrome sessions per variant, no concurrent builds/tests. Sequential exploratory series, not randomized matched pairs."
+}
