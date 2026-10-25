@@ -1,5 +1,13 @@
 # Verificação vigente — commit isolado do release, 25/10/2026
 
+## Incremento documental — README, 25/10/2026
+
+Plano aprovado pelo usuário antes das edições. README reescrito com apresentação, captura desktop real já versionada, cinco projetos, stack, instalação, ambiente, estrutura, comandos e créditos. Captura inspecionada: `finalization-review/live-avatar-1440.png`, PNG2880×1800, avatar em interação. Nenhum novo asset ou código de aplicação.
+
+Verificação pontual: 13 destinos locais existentes, sete scripts npm presentes em package.json, Node24 coerente com engines e cinco links do domínio publicado retornando HTTP200. GitHub CLI confirmou `brunoproencadev/portfolio` público. Quatro arquivos preexistentes conferidos por SHA256 contra `finalization-review/preserved-files.json`, todos intactos. O primeiro verificador de scripts rejeitou incorretamente `test:e2e` por omitir dígitos na expressão regular; o verificador foi corrigido e a rodada completa passou, sem necessidade de alterar o comando documentado.
+
+Prettier nos documentos alterados e `git diff --check` aprovados antes dos commits. Não houve nova execução de build, E2E ou Lighthouse: mudança apenas documental. Renderização no GitHub e contatos externos não foram testados. As evidências de runtime abaixo permanecem históricas e a pendência H03 continua aberta.
+
 Publicação final: main abbf7a3/runtime0a53503, deployment dpl_DYtwkccWuqUkQZmWpgFs5qXypQre READY/alias correto. [HTTP final](finalization-review/live.json): cinco rotas200, canonical/OG/Twitter, robots Allow/sitemap cinco URLs, imagens200, ícones iguais por hash,404/HTTPS308/headers. [Browser final](finalization-review/live-browser.json): desktop1440/mobile375, DPR2 suficiente, source hint responsivo ativo, nome estável e zero overflow/pageerrors. [Build](finalization-review/final-build.log) e [consulta runtime amostral](finalization-review/runtime-logs.json) preservados.
 
 [Performance pública final](finalization-review/public-performance.json): três execuções, mediana95/LCP2517/TBT190/CLS0,0389; a11y/boas práticas/SEO100. H03 não passou por LCP, e a mediana local3419 também não passou; não arredondar para aprovação nem selecionar a execução2474ms. [Rede](finalization-review/public-network.json) confirma redução do pedido de avatar no perfil, sem afirmar ganho causal de LCP entre séries. Base400/5 e delta24/24 mantêm seus SHAs de origem distintos. Estados abaixo são etapas anteriores quando conflitarem com esta entrega.
