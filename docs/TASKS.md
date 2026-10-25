@@ -1,5 +1,12 @@
 # Tarefas e gate atual
 
+## README — entrega documental aprovada, 25/10/2026
+
+- [x] Plano apresentado antes de editar e aprovado pelo usuário com “Aprovado”. Reescrever a apresentação para visitantes do repositório, mantendo histórico de fases nos documentos internos.
+- [x] README com captura real existente, projetos, tecnologias, execução local, configuração, estrutura, verificações e créditos; sem novos assets, dependências ou alterações no site.
+- [x] Conferir 13 destinos locais, sete scripts npm, cinco rotas públicas HTTP200, imagem PNG2880×1800 e quatro arquivos preexistentes por SHA256. Repositório confirmado público via GitHub CLI.
+- [x] Formatação e revisão do diff documental; H03 continua aberta. A aprovação deste trabalho não encerra desempenho nem altera a coreografia aceita.
+
 ## Estado vigente — entrega autorizada e validada, 25/10/2026
 
 - [x] Aceite visual final do usuário; fotografias pessoais/contexto retirados do escopo. Publicação GitHub/main/Vercel explicitamente autorizada.
