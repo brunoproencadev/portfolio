@@ -1,3 +1,11 @@
+## Ícones ampliados e escopo final, 25/10/2026
+
+O usuário aceitou o visual final e decidiu não incluir fotos pessoais/contexto. Essa pendência de conteúdo está encerrada por decisão de escopo, sem inventar originais ou atribuições. Autorizou GitHub, main e publicação na Vercel; isso não comprova testes físicos ou INP e não encerra H03.
+
+Favicon e easter egg foram solicitados maiores e mais nítidos. O avatar original460×460 foi preservado com o mesmo SHA256 verificado abaixo. O gerador existente agora remove somente a margem transparente, conserva a proporção e adiciona uma pequena borda de segurança: ICO16/32/48/64, PNG192 e Apple180. O leão ocupa mais pixels úteis; nenhuma arte, cor ou detalhe novo foi sintetizado. Fonte suficiente para esses tamanhos, sem upscale generativo. Reproduzir com `node tools/generate-profile-icons.mjs`; os testes decodificam as quatro entradas ICO e preservam o hash do original.
+
+No título, o canvas CSS passa de0,85em para1,1em (cerca de29% maior). Next Image recebe128×128 e sizes112px, em lugar de64×64/sizes64px. Na conferência DPR2 desktop/mobile o navegador requisitou256px; a geometria do nome, ciclo de1s, transparência e reduced motion foram preservados.18/18 E2E de avatar/SEO nos três motores; comparação de ícones em tamanho nativo e capturas do avatar ampliado foram inspecionadas. Essa comparação renderiza as entradas no browser; não é captura da barra de abas do sistema.
+
 ## Fase I — OG e autorização Ateliê, 25/10/2026
 
 O usuário confirmou expressamente a permissão para destacar a marca e as capturas do Ateliê Ingrid Xavier no portfólio: “Confirmo que tenho permissão para esse uso”. Isso resolve a pendência específica de autorização registrada em G; não atribui ao usuário autoria da marca/fotografias nem confirma um deployment do Ateliê. Fotografias pessoais/eventos continuam sem originais/contexto e não foram adicionadas.

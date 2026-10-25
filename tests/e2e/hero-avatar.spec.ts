@@ -103,3 +103,35 @@ test("an unavailable avatar keeps the letter and full identity readable", async 
     "Bruno Proença Silva",
   );
 });
+
+test("the enlarged avatar requests enough pixels on a dense display", async ({
+  browser,
+  baseURL,
+}) => {
+  const context = await browser.newContext({
+    baseURL,
+    viewport: { width: 1440, height: 900 },
+    deviceScaleFactor: 2,
+    reducedMotion: "reduce",
+  });
+  try {
+    const page = await context.newPage();
+    await page.goto("/");
+    const image = page.locator(".hero-avatar-image");
+    const density = await image.evaluate(async (node) => {
+      const avatar = node as HTMLImageElement;
+      await avatar.decode();
+      return {
+        sourceWidth: Number(new URL(avatar.currentSrc).searchParams.get("w")),
+        width: avatar.getBoundingClientRect().width,
+        pixels: devicePixelRatio,
+      };
+    });
+    expect(density.width).toBeGreaterThan(100);
+    expect(density.sourceWidth).toBeGreaterThanOrEqual(
+      Math.ceil(density.width * density.pixels),
+    );
+  } finally {
+    await context.close();
+  }
+});

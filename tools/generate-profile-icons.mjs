@@ -15,10 +15,25 @@ if (createHash("sha256").update(source).digest("hex") !== expected) {
   );
 }
 
-const sizes = [16, 32, 48];
-const images = await Promise.all(
-  sizes.map((size) => sharp(source).resize(size, size).png().toBuffer()),
-);
+const sizes = [16, 32, 48, 64];
+const render = (size) => {
+  const padding = Math.max(1, Math.round(size * 0.04));
+  return sharp(source)
+    .trim({ threshold: 0 })
+    .resize(size - padding * 2, size - padding * 2, {
+      fit: "contain",
+      background: { r: 0, g: 0, b: 0, alpha: 0 },
+    })
+    .extend({
+      top: padding,
+      bottom: padding,
+      left: padding,
+      right: padding,
+      background: { r: 0, g: 0, b: 0, alpha: 0 },
+    })
+    .png();
+};
+const images = await Promise.all(sizes.map((size) => render(size).toBuffer()));
 const directory = Buffer.alloc(6 + sizes.length * 16);
 directory.writeUInt16LE(1, 2);
 directory.writeUInt16LE(sizes.length, 4);
@@ -38,8 +53,8 @@ for (const [name, size] of [
   ["icon", 192],
   ["apple-icon", 180],
 ]) {
-  await sharp(source).resize(size, size).png().toFile(`src/app/${name}.png`);
+  await render(size).toFile(`src/app/${name}.png`);
 }
 console.log(
-  "Verified avatar → ICO 16/32/48, PNG 192, Apple PNG 180; no crop or recoloring.",
+  "Verified avatar → ICO 16/32/48/64, PNG 192, Apple PNG 180; transparent margin trimmed, artwork unchanged.",
 );

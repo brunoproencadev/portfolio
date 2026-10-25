@@ -10,8 +10,8 @@ test("profile icons keep the verified avatar and decodable ICO entries", () => {
   const ico = readFileSync("src/app/favicon.ico");
   expect(ico.readUInt16LE(0)).toBe(0);
   expect(ico.readUInt16LE(2)).toBe(1);
-  expect(ico.readUInt16LE(4)).toBe(3);
-  for (const [index, size] of [16, 32, 48].entries()) {
+  expect(ico.readUInt16LE(4)).toBe(4);
+  for (const [index, size] of [16, 32, 48, 64].entries()) {
     const entry = 6 + index * 16;
     const offset = ico.readUInt32LE(entry + 12);
     const length = ico.readUInt32LE(entry + 8);

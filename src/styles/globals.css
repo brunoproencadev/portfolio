@@ -358,8 +358,8 @@ a:hover {
   left: 50%;
   top: 50%;
   translate: -50% -40%;
-  width: 0.85em;
-  height: 0.85em;
+  width: 1.1em;
+  height: 1.1em;
   max-width: none;
   object-fit: contain;
   opacity: 0;

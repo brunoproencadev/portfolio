@@ -88,9 +88,9 @@ export function HeroAvatarLetter({ letter }: { letter: string }) {
       <Image
         className="hero-avatar-image"
         src="/images/profile/github-avatar.png"
-        width={64}
-        height={64}
-        sizes="64px"
+        width={128}
+        height={128}
+        sizes="112px"
         alt=""
         aria-hidden="true"
         draggable={false}

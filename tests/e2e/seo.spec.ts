@@ -92,8 +92,10 @@ test("native metadata assets have the expected formats and dimensions", async ({
   );
   const ico = await icon.body();
   expect(ico.readUInt16LE(2)).toBe(1);
-  expect(ico.readUInt16LE(4)).toBe(3);
-  expect([0, 1, 2].map((index) => ico[6 + index * 16])).toEqual([16, 32, 48]);
+  expect(ico.readUInt16LE(4)).toBe(4);
+  expect([0, 1, 2, 3].map((index) => ico[6 + index * 16])).toEqual([
+    16, 32, 48, 64,
+  ]);
   for (const [path, width, height] of [
     ["/opengraph-image", 1200, 630],
     ["/icon.png", 192, 192],
