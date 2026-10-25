@@ -1,0 +1,35 @@
+# Fase I — preparação local para revisão, 25/10/2026
+
+I autorizada por “Aprovado, pode dar inicio”. Plano `ebaad99`, implementação `3b99eba`, branch `redesign/cinematic-portfolio`. A preparação técnica está entregue para revisão; o redesign ainda não está liberado para publicação. H03 e os limites abaixo permanecem. Nenhum push, merge, deploy ou configuração remota foi executado nesta fase.
+
+## Entrega e decisões
+
+A imagem social comum ainda usava BP/ e verde da identidade antiga. Agora reutiliza o avatar GitHub exato, dados existentes, Manrope e o arco violeta da direção aprovada. PNG nativo 1200×630, sem novas afirmações pessoais ou mudança da home/coreografia. [Antes](phase-i-review/og-before.png) e [depois](phase-i-review/og-after.png), ambos inspecionados; nome, avatar e textos cabem no quadro. Compartilhamento real em redes sociais não foi testado.
+
+ImageResponse não suporta o WOFF2 usado pela interface. Dois TTF estáticos locais da mesma Manrope, pesos400/500, resolvem essa incompatibilidade; a UI conserva seus WOFF2. [Proveniência/licença/hashes](phase-i-review/fonts.json), licença OFL existente idêntica ao texto oficial. Sem dependência nova ou fetch externo durante a renderização; rastreamento do build inclui fontes e avatar. Guia consultado no Next instalado: `node_modules/next/dist/docs/01-app/03-api-reference/04-functions/image-response.md`.
+
+A configuração existente de SEO já atendia aos três perfis; foi reutilizada. `.env.example` mantém `SITE_INDEXABLE=false` e origem comentada, com descrição atualizada. `vercel.json` conserva `git.deploymentEnabled.main=false` e `redesign/cinematic-portfolio=false`. O ambiente de produção foi apenas simulado em processos locais e o build final foi restaurado sem origem/indexação.
+
+O usuário confirmou a permissão para destacar a marca e as capturas do Ateliê Ingrid Xavier: “Confirmo que tenho permissão para esse uso”. [Inventário atualizado](MEDIA_ASSETS.md). Isso resolve a autorização específica, sem atribuir autoria adicional da marca ou das fotografias. Fotos pessoais/eventos não foram inventadas ou adicionadas. API GitHub/avatar e domínio público responderam200 via HTTP direto; avatar remoto e local coincidem por SHA256. [Consultas](phase-i-review/external-checks.json). A consulta do domínio não identifica o SHA implantado nem revalida a associação à conta Vercel; as tentativas pelo navegador de pesquisa falharam.
+
+## Provas
+
+| Perfil local      | Origem / flags no build                                     | E2E nos três motores                           | Política HTTP capturada                                                             |
+| ----------------- | ----------------------------------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Padrão            | Sem SITE_URL, SITE_INDEXABLE ou VERCEL_ENV                  | [6/6 PASS](phase-i-review/default-seo.json)    | [5 rotas noindex, sem canonical, sitemap vazio](phase-i-review/default-policy.json) |
+| Preview           | Origem documentada, SITE_INDEXABLE=true, VERCEL_ENV=preview | [6/6 PASS](phase-i-review/preview-seo.json)    | [Canonical na origem, noindex, sitemap vazio](phase-i-review/preview-policy.json)   |
+| Produção simulada | Mesma origem, SITE_INDEXABLE=true, VERCEL_ENV=production    | [6/6 PASS](phase-i-review/production-seo.json) | [5 rotas index/follow, sitemap com5 URLs](phase-i-review/production-policy.json)    |
+
+18/18 casos em Chromium, Firefox e WebKit, zero skips, retries ou falhas nas três rodadas finais. Testes existentes `tests/e2e/seo.spec.ts`: cinco rotas com canonical/OG/Twitter/robots/sitemap e respostas/dimensões de ICO16/32/48, PNG192, Apple180 e OG1200×630. Captura HTTP adicional em cada build: headers nosniff/referrer/DENY/permissions, ausência de X-Powered-By, 404/noindex para slug desconhecido e estudo experimental. O [build restaurado](phase-i-review/restored-policy.json) voltou a noindex e sitemap vazio; preview local http://127.0.0.1:3117/.
+
+[Comandos/resultados](phase-i-review/verification.json) e logs adjacentes: quatro builds finais PASS, incluindo strict; lint completo final PASS; unitários9/9 PASS. Auditorias [runtime](phase-i-review/audit-runtime.json) e [completa](phase-i-review/audit-all.json): zero vulnerabilidades. [Peers](phase-i-review/peers-summary.json): exit0, nenhum inválido, seis avisos extraneous conhecidos de WASM opcional; não declarar árvore sem avisos. [Varredura](phase-i-review/source-audit.json):325 arquivos de texto rastreados, nenhum padrão de segredo encontrado; não é pentest nem inspeção de arquivos locais ignorados. [Quatro arquivos anteriores](phase-i-review/preserved-files.json) intactos por SHA256 e fora dos commits.
+
+Histórico de falhas, preservado nos logs: primeiro build falhou por div com dois filhos sem display:flex na ImageResponse; corrigido no template. Primeiro Playwright terminou com código nativo3221226505 antes dos casos e deixou servidor; tentativa seguinte encontrou porta ocupada. Após encerrar somente esse servidor, padrão6/6 PASS. Primeira captura auxiliar do preview comparou origem com e sem barra final; normalização com URL corrigiu a captura, sem alterar SEO ou testes do produto. Confirmação preview6/6 PASS; produção6/6 PASS. O formato global continua FAIL nos mesmos24 arquivos históricos, registrados em [log](phase-i-review/format-global.log). Formato dos arquivos desta fase e diff-check PASS no fechamento.
+
+Reprodução: para cada perfil, definir/remover as três variáveis indicadas na tabela, executar `npm run build` e `node node_modules/@playwright/test/cli.js test tests/e2e/seo.spec.ts --workers=1`. O Playwright inicia seu próprio servidor3100; não manter outro nessa porta. Remover as variáveis e reconstruir ao final. Artefatos identificam build, horário e resultado; são provas locais, sem CI ou deployment alegados. Logs versionados normalizam UTF-8/LF, espaços finais e linhas vazias finais; originais locais permanecem em `.audit/phase-i`. Essa normalização resolveu os avisos de whitespace do primeiro diff-check do staging, antes do commit, e os hashes foram recalculados.
+
+## Limites e próximo gate
+
+H03 continua aberta: a última série de H foi nota88/LCP3412ms/TBT203ms/CLS0,0389 na home, sem nova medição nesta fase ou ganho causal atribuído à OG. Cases e INP não remedidos. [Revisão H](PHASE_H_RESOLUTION_REVIEW.md). Formato histórico24 arquivos, aceite visual humano, favicon em aba visível, compartilhamento social, Safari/aparelhos físicos e leitor de tela continuam sem fechamento. Fotos/contexto dependem de material do usuário; a autorização Ateliê não supre esses originais.
+
+[Checklist de release e rollback](RELEASE_CHECKLIST.md) separa o preparo técnico das decisões ainda pendentes. Revisar a entrega de I e resolver/decidir os limites antes de autorizar publicação. Push, merge e deploy exigem autorização própria. O commit documental final é consultável por `git log -1 -- docs/PHASE_I_REVIEW.md`; manifesto dos artefatos em [manifest.json](phase-i-review/manifest.json).

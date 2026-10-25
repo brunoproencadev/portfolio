@@ -1,0 +1,166 @@
+{
+  "timestamp": "2026-10-25T15:49:39.229Z",
+  "sourceCommit": "3b99eba",
+  "artifacts": [
+    {
+      "file": "docs/phase-i-review/audit-all.json",
+      "bytes": 365,
+      "sha256": "2d8fd5976bab7eaad5325ce59c70bd4ff0905d624e3b045d681a831eb28c2155"
+    },
+    {
+      "file": "docs/phase-i-review/audit-runtime.json",
+      "bytes": 365,
+      "sha256": "2d8fd5976bab7eaad5325ce59c70bd4ff0905d624e3b045d681a831eb28c2155"
+    },
+    {
+      "file": "docs/phase-i-review/build-default-confirmation.log",
+      "bytes": 1265,
+      "sha256": "20dd4d04d5f6e7d5d111ee8e41f46929623c9e0732896321c03b3ef2d35e97cb"
+    },
+    {
+      "file": "docs/phase-i-review/build-default.log",
+      "bytes": 1009,
+      "sha256": "9f9a9839c8cce495e9c48747660eaf646ec5bea3a73f2bc69535616c3367bd05"
+    },
+    {
+      "file": "docs/phase-i-review/build-preview.log",
+      "bytes": 1042,
+      "sha256": "bb8f7f41186df1f5615929c3fe37295bc8e67558ac62e3e3384dd9a1a79ff051"
+    },
+    {
+      "file": "docs/phase-i-review/build-production.log",
+      "bytes": 1042,
+      "sha256": "67c7175c95d1f96e8edc1e7e6ab45387640ad2e1a62cae89ae65514642f9bdd8"
+    },
+    {
+      "file": "docs/phase-i-review/build-restored.log",
+      "bytes": 1267,
+      "sha256": "33acdf0e7464af3dd5083540f373b6842d2d13403a936ba15407fc698a34b6e9"
+    },
+    {
+      "file": "docs/phase-i-review/default-policy.json",
+      "bytes": 3377,
+      "sha256": "03cf79e689d62abc750f9be479efac8f76c871ed0d37751883dfa83392570b29"
+    },
+    {
+      "file": "docs/phase-i-review/default-seo.json",
+      "bytes": 11526,
+      "sha256": "2a5fddefba38ad454481de7f807630c1ff40caa60ed35e7e69e17d8b928a7465"
+    },
+    {
+      "file": "docs/phase-i-review/external-checks.json",
+      "bytes": 1312,
+      "sha256": "72eb5d1192967eeee2956a72b202d49a4fa316ff09be84f4c5e80edc2aa09f67"
+    },
+    {
+      "file": "docs/phase-i-review/fonts.json",
+      "bytes": 958,
+      "sha256": "eac01ace2466c22f965cd4b45a36332e0345d08da2f365dddc722df29a790424"
+    },
+    {
+      "file": "docs/phase-i-review/format-global.log",
+      "bytes": 1181,
+      "sha256": "4306b9c32293cd2ca54f47480943d7bc10bab3bf15a40f68c81cbc34cfccdc21"
+    },
+    {
+      "file": "docs/phase-i-review/lint-final.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "docs/phase-i-review/og-after.png",
+      "bytes": 120319,
+      "sha256": "a7a296bf1026b0b082d8e300601ee653b7b82e36b58ed462310547c21e179536"
+    },
+    {
+      "file": "docs/phase-i-review/og-before.png",
+      "bytes": 43213,
+      "sha256": "1d5989cf6ecb57748c57d96e3529e585639532a1dab5659d4bc86616d03e92b7"
+    },
+    {
+      "file": "docs/phase-i-review/peers-summary.json",
+      "bytes": 755,
+      "sha256": "6d33f0bae92624851f5ce52f04e594cc98fc4cf372a6287cdb7c35f58e9f6e99"
+    },
+    {
+      "file": "docs/phase-i-review/preserved-files.json",
+      "bytes": 647,
+      "sha256": "6ef1cf3d3f276032a6d55b635448e4c3e52a35438c3421798c0271dba76a94b6"
+    },
+    {
+      "file": "docs/phase-i-review/preview-policy.json",
+      "bytes": 4221,
+      "sha256": "3344b598e2eed9a15f50ab5ea1ddf53ff9e75f12b074110f5fbb17da387610c2"
+    },
+    {
+      "file": "docs/phase-i-review/preview-seo.json",
+      "bytes": 11583,
+      "sha256": "31a87c81ad8e74cbf638e1cca40853ab75e7dfa5df7d8dfc4078f7c3574df7ae"
+    },
+    {
+      "file": "docs/phase-i-review/production-policy.json",
+      "bytes": 4593,
+      "sha256": "6150fbff44202189bd992b290a8714f74a5bf75f5de598d684d48ea1df4f0eda"
+    },
+    {
+      "file": "docs/phase-i-review/production-seo.json",
+      "bytes": 11605,
+      "sha256": "14d31bcab7ede326efd93a8b0a9081142e57e631c2334ec4c430088cf756a216"
+    },
+    {
+      "file": "docs/phase-i-review/restored-policy.json",
+      "bytes": 3377,
+      "sha256": "13fa2b126b8f5058483834948671a915b38d5f5bc1f374c21088e15f6b24a678"
+    },
+    {
+      "file": "docs/phase-i-review/seo-default-confirmation.log",
+      "bytes": 149,
+      "sha256": "dbaf01ebc52bec2e54ff1ed3adcdb92a1c6f0621272e80067ce8386fbeb7f553"
+    },
+    {
+      "file": "docs/phase-i-review/seo-default-confirmation2.log",
+      "bytes": 1441,
+      "sha256": "bdf73323434705a231836d47e29be146ab329cf02f8e1754ed6be013502c9199"
+    },
+    {
+      "file": "docs/phase-i-review/seo-default.log",
+      "bytes": 188,
+      "sha256": "5339b036c66a1c03033252c2f4f2ab15aa342f07fb13b39d9ea3d485cfa57792"
+    },
+    {
+      "file": "docs/phase-i-review/seo-preview-confirmation.log",
+      "bytes": 1517,
+      "sha256": "b639dc168ea29ebf4389fa9d2e820e19353964fccae8dca448ecc7ed1620027b"
+    },
+    {
+      "file": "docs/phase-i-review/seo-preview.log",
+      "bytes": 3573,
+      "sha256": "4f60777d357de4c3a97594bf40fe262a915ff6484bd563cb4d9f59a511085166"
+    },
+    {
+      "file": "docs/phase-i-review/seo-production.log",
+      "bytes": 1519,
+      "sha256": "a454f7c29460fb38b8ed3e07f1d2716a4c36ffc589e2fb8f0fbf1ae54c50c7f0"
+    },
+    {
+      "file": "docs/phase-i-review/source-audit.json",
+      "bytes": 511,
+      "sha256": "eca602f49630bda3a3b513c9c1aebac5edbdaf48c7046ce617a7220a76ada1ff"
+    },
+    {
+      "file": "docs/phase-i-review/source-fingerprints.json",
+      "bytes": 1525,
+      "sha256": "ce436d859ecbd981c744417b225a265e0a45d871b0c8e94372376a38d5c26389"
+    },
+    {
+      "file": "docs/phase-i-review/unit.log",
+      "bytes": 206,
+      "sha256": "3035690f9f9955165cb4e0670c7964c5a3563bb4bd8a66db5af2ddb46856fe96"
+    },
+    {
+      "file": "docs/phase-i-review/verification.json",
+      "bytes": 3175,
+      "sha256": "1760e61a9e1acfcf3d3172bd3f9e0418006d542f45d58dbdf2a7406deb3e7469"
+    }
+  ]
+}

@@ -1,4 +1,12 @@
-# Verificação vigente — medição das transições, 25/10/2026
+# Verificação vigente — preparação I, 25/10/2026
+
+Plano `ebaad99`, fonte `3b99eba`; [revisão e limites](PHASE_I_REVIEW.md). [Resultados/logs](phase-i-review/verification.json): build final de cada perfil e restauração/strict PASS, lint completo PASS, unitários9/9 PASS. SEO/assets18/18 nos três perfis e motores, zero skips/retries nas rodadas finais; políticas HTTP e JSONs completos em phase-i-review. Falhas intermediárias de build/harness e ocupação de porta documentadas, sem ocultar execução. Produção apenas simulada em processos locais.
+
+Auditorias runtime/completa zero; peers exit0, nenhum inválido e seis avisos extraneous WASM opcionais.325 textos rastreados sem padrões de segredo encontrados; não é pentest. Avatar remoto idêntico ao local, TTFs com licença/proveniência, OG antes/depois inspecionadas; permissão Ateliê confirmada pelo usuário. Quatro alterações anteriores intactas por hashes. Formato dos arquivos da fase/diff-check conferidos no fechamento; global FAIL nos mesmos24 históricos.
+
+Build local final noindex/sitemap vazio, preview3117; nenhuma configuração remota, push/merge/deploy. H03, INP, aceite humano, fotos/contexto e validações físicas mantêm os limites anteriores; não foram repetidos Lighthouse ou suíte de movimento porque a superfície alterada foi OG. [Release/rollback](RELEASE_CHECKLIST.md), [manifesto](phase-i-review/manifest.json). Registros seguintes são históricos quando conflitarem com este estado.
+
+# Histórico — medição das transições, 25/10/2026
 
 Fonte `6fd47a7`, plano `92952eb`, testes `d2e7bf7`; [revisão](PHASE_H_RESOLUTION_REVIEW.md). Build/strict/lint/nove unitários PASS. Reprodução anterior 11 PASS/1 FAIL com scroll correto; teste original 20/20 Firefox e transições 12/12 PASS após correção. [E2E](phase-h-resolution-review/e2e.json): Rodada completa inicial: 393 PASS/4 FAIL/5 SKIP; confirmação dos dois arquivos afetados: 15/15 PASS. 397 casos distintos aprovados entre os comandos, com cinco skips e zero retries. Não foi uma única rodada completa sem falhas. Expectativas/sincronização corrigidas sem desabilitar axe ou aumentar timeouts.
 

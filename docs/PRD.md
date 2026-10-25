@@ -1,5 +1,7 @@
 # PRD — Bruno Proença Silva
 
+Atualização25/10/2026 — I autorizada por “Aprovado, pode dar inicio” e preparada para revisão em PHASE_I_REVIEW. SEO, segurança, proveniência e checklist local validados; a autorização específica de marca/capturas Ateliê foi confirmada pelo usuário. H03/metas de desempenho e validações humanas continuam abertas. Não houve autorização ou execução de publicação; RELEASE_CHECKLIST rege o próximo gate. Registros inferiores de I não autorizada são históricos.
+
 Atualização 18/10/2026 — H autorizada explicitamente para QA completo/performance. Relatório vigente PHASE_H_REVIEW; metas R07/R10/R11 mantidas, sem presumir atendimento de LCP/INP ou aceite humano. A coreografia aprovada continua preservada. I e publicação exigem autorização própria; os gates de H descritos abaixo são históricos.
 
 Atualização do incremento18/10/2026: pedido explícito autoriza case Museu e extensão da estética/scroll da home aos quatro cases. Registry compartilhado, fontes e créditos coletivos; kord continua sem case. Plano PHASE_G_CINEMATIC_PLAN, entrega PHASE_G_CINEMATIC_REVIEW. G aguarda avaliação; H/I e push/deploy não autorizados. A proibição de rota Museu no registro imediatamente abaixo está superada por este pedido.

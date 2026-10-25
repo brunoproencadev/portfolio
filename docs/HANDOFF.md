@@ -1,4 +1,14 @@
-# Estado vigente — transições corrigidas, H03 aberta, 25/10/2026
+# Estado vigente — I preparada para revisão, 25/10/2026
+
+I autorizada por “Aprovado, pode dar inicio”; plano `ebaad99`, fonte `3b99eba` (OG com identidade atual, avatar exato e Manrope local). [Revisão e evidências](PHASE_I_REVIEW.md), [checklist de release/rollback](RELEASE_CHECKLIST.md). Permissão da marca/capturas Ateliê confirmada pelo usuário: “Confirmo que tenho permissão para esse uso”, registrada em MEDIA_ASSETS. Não atribuir autoria adicional nem supor fotos/contexto fornecidos.
+
+18/18 E2E SEO/assets nos perfis padrão, preview e produção simulada, três motores, zero skips/retries nas rodadas finais. Cinco rotas, metadata, ícones, headers, 404 e sitemap conferidos. Builds/strict/lint e nove unitários PASS; auditorias runtime/completa zero vulnerabilidades. Seis avisos extraneous opcionais conhecidos, sem peers inválidos; varredura de325 textos rastreados sem padrões de segredo, sem alegação de pentest. Falhas intermediárias do build/harness, correções e logs preservados no relatório. Fonte da home e testes de movimento não alterados nesta fase.
+
+Build final restaurado noindex, sitemap vazio; preview http://127.0.0.1:3117/. Quatro arquivos preexistentes intactos por SHA256 e fora dos commits. H03 segue aberta (última mediana H: nota88/LCP3412ms, não remedida nesta fase); formato global ainda falha nos mesmos24 arquivos históricos. Aceite humano, favicon em aba, compartilhamento real, Safari/hardware/leitor de tela, INP e fotos/contexto permanecem delimitados. I preparada localmente não equivale a release liberado. Nenhum push/merge/deploy ou configuração remota; deploy Git automático main/redesign continua bloqueado.
+
+Próximo gate: revisão de I e resolução/decisão dos limites antes da publicação; push, integração e deploy precisam de autorizações próprias. Não começar outra fase automaticamente. SHA do fechamento documental: `git log -1 -- docs/HANDOFF.md`. Registros inferiores de I não autorizada ou direitos Ateliê pendentes são históricos.
+
+# Histórico — transições corrigidas, H03 aberta, 25/10/2026
 
 Retomada autorizada por “Tem minha aprovação, continue”. Plano `92952eb`; correção funcional `6fd47a7`; sincronização dos testes `d2e7bf7`; [relatório vigente](PHASE_H_RESOLUTION_REVIEW.md). O refresh podia medir o trigger após aplicar a entrada de 36px/96px. immediateRender:false preserva a geometria natural; endpoints, tempos, scrub, refresh e cleanup mantidos. Uma linha de produto alterada.
 

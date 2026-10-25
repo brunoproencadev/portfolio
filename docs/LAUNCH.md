@@ -1,4 +1,10 @@
-# Preparação de publicação — Fase 8
+# Preparação de publicação — estado em25/10/2026
+
+Fase I preparada localmente para revisão: plano `ebaad99`, fonte `3b99eba`, [revisão/provas](PHASE_I_REVIEW.md), [checklist vigente de release e rollback](RELEASE_CHECKLIST.md). Cinco rotas, OG atual com avatar/Manrope/violeta, permissões Ateliê confirmadas, três perfis SEO com18/18 E2E e auditorias zero. Build local final noindex; deploy Git main/redesign continua bloqueado. Nenhuma publicação do redesign foi executada ou autorizada nesta fase.
+
+H03, formato histórico e validações humanas/físicas impedem tratar o preparo como release liberado. Antes de publicar, reconfirmar projeto/domínio Vercel, SHA aprovado, ambiente e deployment de retorno. A consulta HTTP pública200 não identifica a versão implantada. Registros abaixo são históricos: descrições de BP/, apenas três cases e segurança/I pendentes foram superadas localmente; a produção de2026-10-11 não foi atualizada por esta fase.
+
+# Histórico — preparação de publicação da Fase 8
 
 ## Push do redesign sem deploy — 2026-10-24
 

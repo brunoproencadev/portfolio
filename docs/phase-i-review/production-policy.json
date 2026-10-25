@@ -1,0 +1,127 @@
+{
+  "profile": "production",
+  "buildId": "F56e3LUd3AuETZ_ebPRNr",
+  "timestamp": "2026-10-25T15:41:48.997Z",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Bruno Proença Silva | Portfólio",
+      "canonical": "https://brunoproencasilva.vercel.app",
+      "robots": ["index, follow"],
+      "ogUrl": ["https://brunoproencasilva.vercel.app"],
+      "ogImage": [
+        "https://brunoproencasilva.vercel.app/opengraph-image?311e2872493d39d7"
+      ],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    },
+    {
+      "path": "/projetos/robosense-lab",
+      "status": 200,
+      "title": "RoboSense Lab | Bruno Proença Silva",
+      "canonical": "https://brunoproencasilva.vercel.app/projetos/robosense-lab",
+      "robots": ["index, follow"],
+      "ogUrl": ["https://brunoproencasilva.vercel.app/projetos/robosense-lab"],
+      "ogImage": ["https://brunoproencasilva.vercel.app/opengraph-image"],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    },
+    {
+      "path": "/projetos/museu-arte-moderna",
+      "status": 200,
+      "title": "Museu de Arte Moderna | Bruno Proença Silva",
+      "canonical": "https://brunoproencasilva.vercel.app/projetos/museu-arte-moderna",
+      "robots": ["index, follow"],
+      "ogUrl": [
+        "https://brunoproencasilva.vercel.app/projetos/museu-arte-moderna"
+      ],
+      "ogImage": ["https://brunoproencasilva.vercel.app/opengraph-image"],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    },
+    {
+      "path": "/projetos/industry-week-senai",
+      "status": 200,
+      "title": "Industry Week SENAI | Bruno Proença Silva",
+      "canonical": "https://brunoproencasilva.vercel.app/projetos/industry-week-senai",
+      "robots": ["index, follow"],
+      "ogUrl": [
+        "https://brunoproencasilva.vercel.app/projetos/industry-week-senai"
+      ],
+      "ogImage": ["https://brunoproencasilva.vercel.app/opengraph-image"],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    },
+    {
+      "path": "/projetos/atelie-ingrid-xavier",
+      "status": 200,
+      "title": "Ateliê Ingrid Xavier | Bruno Proença Silva",
+      "canonical": "https://brunoproencasilva.vercel.app/projetos/atelie-ingrid-xavier",
+      "robots": ["index, follow"],
+      "ogUrl": [
+        "https://brunoproencasilva.vercel.app/projetos/atelie-ingrid-xavier"
+      ],
+      "ogImage": ["https://brunoproencasilva.vercel.app/opengraph-image"],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    }
+  ],
+  "robots": "User-Agent: *\nAllow: /\n\nSitemap: https://brunoproencasilva.vercel.app/sitemap.xml\n",
+  "locations": [
+    "https://brunoproencasilva.vercel.app/",
+    "https://brunoproencasilva.vercel.app/projetos/robosense-lab",
+    "https://brunoproencasilva.vercel.app/projetos/museu-arte-moderna",
+    "https://brunoproencasilva.vercel.app/projetos/industry-week-senai",
+    "https://brunoproencasilva.vercel.app/projetos/atelie-ingrid-xavier"
+  ],
+  "rejected": [
+    {
+      "path": "/projetos/slug-inexistente",
+      "status": 404,
+      "noindex": true
+    },
+    {
+      "path": "/experimentos/hero-projeto",
+      "status": 404,
+      "noindex": true
+    }
+  ],
+  "og": {
+    "status": 200,
+    "contentType": "image/png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 120319
+  }
+}

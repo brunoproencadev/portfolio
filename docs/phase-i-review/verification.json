@@ -1,0 +1,136 @@
+[
+  {
+    "name": "build-default",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 1,
+    "elapsedMs": 29461,
+    "timestamp": "2026-10-25T15:28:06.388Z"
+  },
+  {
+    "name": "build-default-confirmation",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 9764,
+    "timestamp": "2026-10-25T15:29:40.063Z"
+  },
+  {
+    "name": "build-preview",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 10521,
+    "timestamp": "2026-10-25T15:38:21.281Z"
+  },
+  {
+    "name": "build-production",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 12199,
+    "timestamp": "2026-10-25T15:41:47.211Z"
+  },
+  {
+    "name": "build-restored",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 11389,
+    "timestamp": "2026-10-25T15:44:13.441Z"
+  },
+  {
+    "name": "lint-final",
+    "args": ["node_modules/eslint/bin/eslint.js", ".", "--max-warnings=0"],
+    "code": 0,
+    "elapsedMs": 6235,
+    "timestamp": "2026-10-25T15:44:37.320Z"
+  },
+  {
+    "name": "unit",
+    "args": ["node_modules/vitest/vitest.mjs", "run"],
+    "code": 0,
+    "elapsedMs": 3617,
+    "timestamp": "2026-10-25T15:28:51.518Z"
+  },
+  {
+    "name": "seo-default",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      ".audit/phase-i/seo.config.mjs",
+      "--workers=2"
+    ],
+    "code": 3221226505,
+    "elapsedMs": 1487,
+    "timestamp": "2026-10-25T15:31:48.406Z"
+  },
+  {
+    "name": "seo-default-confirmation",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      ".audit/phase-i/seo.config.mjs",
+      "--workers=1"
+    ],
+    "code": 1,
+    "elapsedMs": 610,
+    "timestamp": "2026-10-25T15:32:39.825Z"
+  },
+  {
+    "name": "seo-default-confirmation2",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      ".audit/phase-i/seo.config.mjs",
+      "--workers=1"
+    ],
+    "code": 0,
+    "elapsedMs": 17076,
+    "timestamp": "2026-10-25T15:33:27.160Z"
+  },
+  {
+    "name": "seo-preview",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      ".audit/phase-i/seo.config.mjs",
+      "--workers=1"
+    ],
+    "code": 1,
+    "elapsedMs": 1896,
+    "timestamp": "2026-10-25T15:38:23.269Z"
+  },
+  {
+    "name": "seo-preview-confirmation",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      ".audit/phase-i/seo.config.mjs",
+      "--workers=1"
+    ],
+    "code": 0,
+    "elapsedMs": 13498,
+    "timestamp": "2026-10-25T15:40:24.138Z"
+  },
+  {
+    "name": "seo-production",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      ".audit/phase-i/seo.config.mjs",
+      "--workers=1"
+    ],
+    "code": 0,
+    "elapsedMs": 18236,
+    "timestamp": "2026-10-25T15:42:05.523Z"
+  },
+  {
+    "name": "format-global",
+    "args": ["node_modules/prettier/bin/prettier.cjs", "--check", "."],
+    "code": 1,
+    "elapsedMs": 6024,
+    "timestamp": "2026-10-25T15:44:43.420Z"
+  }
+]

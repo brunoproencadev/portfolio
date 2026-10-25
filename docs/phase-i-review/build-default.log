@@ -1,0 +1,16 @@
+▲ Next.js 16.4.3 (Turbopack)
+✓ Running next.config.ts took 41ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.1s
+  Running TypeScript ...
+  Finished TypeScript in 13.2s ...
+  Collecting page data using 12 workers ...
+  Generating static pages using 12 workers (0/14) ...
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+  Generating static pages using 12 workers (3/14)
+Error occurred prerendering page "/opengraph-image". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Expected <div> to have explicit "display: flex", "display: contents", or "display: none" if it has more than one child node.
+    at Jt.next (<anonymous>)
+Export encountered an error on /opengraph-image/route: /opengraph-image, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null

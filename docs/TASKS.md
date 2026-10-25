@@ -1,5 +1,18 @@
 # Tarefas e gate atual
 
+## Estado vigente — I preparada para revisão, 25/10/2026
+
+- [x] Autorização I registrada em `ebaad99`; escopo PHASE_I_PLAN, sem publicação implícita.
+- [x] `3b99eba`: OG com identidade atual, avatar exato e Manrope local/licenciada; nenhuma mudança da home/coreografia.
+- [x] Permissão Ateliê confirmada expressamente pelo usuário e registrada em MEDIA_ASSETS; não inventar fotos/contexto.
+- [x] SEO/assets18/18 nos três perfis e motores; builds/strict/lint/nove unitários PASS, auditorias zero, headers/404/sitemap conferidos. Build noindex restaurado, quatro edições anteriores intactas. [Revisão](PHASE_I_REVIEW.md).
+- [x] Checklist de release/rollback documentado; deploy Git main/redesign permanece bloqueado, sem push/merge/deploy.
+- [ ] Revisar I; resolver H03 e decidir formato histórico24 arquivos antes da liberação. H03 não foi dispensada pela autorização de I.
+- [ ] Aceite visual humano, favicon em aba, compartilhamento real, Safari/aparelhos/leitor de tela, INP e fotos/contexto nos limites registrados.
+- [ ] Autorizações próprias para envio, integração e publicação, com SHA/deployment e prova no destino conforme RELEASE_CHECKLIST.
+
+Registros inferiores de I não autorizada ou direitos Ateliê pendentes são históricos; H03 continua aberta.
+
 ## Estado vigente — medição das transições, 25/10/2026
 
 - [x] Plano `92952eb`, fonte `6fd47a7`: immediateRender:false impede que a entrada contamine a medição; coreografia/tempos/cleanup mantidos. [Revisão](PHASE_H_RESOLUTION_REVIEW.md).
