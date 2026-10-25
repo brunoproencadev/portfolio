@@ -1,6 +1,10 @@
-# Estado vigente — release validado, publicação autorizada, 25/10/2026
+# Estado vigente — produção publicada, ajuste responsivo validado, 25/10/2026
 
 O usuário aceitou o visual final, retirou fotografias pessoais/contexto do escopo, pediu ícones maiores/nítidos e confirmou “GitHub, main e publicação na Vercel”. Plano `857207f`, ícones `d9430f4`; [revisão vigente](FINALIZATION_REVIEW.md). Isso supera os gates históricos de aceite visual/fotos/autorização de entrega; H03 continua aberta e não foi declarada aprovada.
+
+PR1 integrado em f9bd0cf; produção READY dpl_F9HSH5KotxomfkDPk17Mfsjc18vq em https://brunoproencasilva.vercel.app. Cinco rotas/SEO/sitemap/ícones/HTTPS conferidos, ícones iguais por hash; browser desktop/mobile sem pageerror/overflow. Série pública inicial93/LCP2547ms, não comparar causalmente com localhost. Logs amostrais cinco minutos sem error/fatal.
+
+Correção responsiva0a53503 validada:24/24 E2E avatar/SEO, build/strict/lint PASS; source pixels adequados em320/375/1440. Uma requisição mobile duplicada foi eliminada,7976bytes poupados por navegação nas três amostras locais, mantendo o tamanho do avatar e todas as animações. Mediana local88/LCP3419ms, sem ganho de LCP comprovado; H03 permanece aberta. Próximo passo autorizado é integrar/publicar esse ajuste e registrar a verificação final.
 
 Favicon com melhor ocupação e entradas16/32/48/64; avatar do “o” cerca de29% maior, com fonte adequada a DPR2 e arte original intacta.18/18 E2E específicos e capturas desktop/mobile/native-size conferidos. No worktree isolado detached d9430f4, sem as quatro edições locais: npm ci, build/strict, lint, nove unitários e formato PASS; **400 E2E PASS/5 SKIP**, zero falhas/retries, nos três motores em uma rodada serial completa. Auditorias runtime/completa zero; peers exit0 sem inválidos, seis avisos opcionais conhecidos. Provas em finalization-review.
 
@@ -8,7 +12,7 @@ QA paralelo foi encerrado após relato de queda de quadros; usuário confirmou r
 
 H03 atual do release limpo: home mediana nota88/LCP3392ms/TBT191ms/CLS0,0389, três Lighthouse sem concorrência; meta ainda não atingida. Sondas ABBA de stub startReveals e decoding sync não justificaram alteração de produto; dados instrumentados não são comparáveis às navegações diretas. Cases/INP não remedidos. Não trocar fluidez por pontuação.
 
-Branch enviada, PR1 em https://github.com/brunoproencadev/portfolio/pull/1; integração/publicação ainda não executadas neste registro. Vercel autenticada, projeto/domínio/repoId/variáveis conferidos; rollback atual dpl_6FxjM8rjeehB3bAeWJrG212ABmTL, SHA aa70f4c73008f85731e4f45e528ac2c7f8737d0f. Próximo passo: concluir PR e publicar o SHA integrado pela API Git, excluindo arquivos locais, validar domínio e registrar deployment. Git deploy automático continua bloqueado; autorização é para esta entrega explícita. Registros inferiores são históricos quando conflitarem.
+Vercel autenticada, projeto/domínio/repoId/variáveis conferidos. Rollback anterior à primeira entrega dpl_6FxjM8rjeehB3bAeWJrG212ABmTL/SHA aa70f4c; a entrega inicial agora é o retorno conhecido para a correção responsiva. Git deploy automático continua bloqueado; as publicações desta finalização são explícitas e usam o SHA integrado. Registros inferiores são históricos quando conflitarem.
 
 # Histórico — seleção/título e formato resolvidos, 25/10/2026
 

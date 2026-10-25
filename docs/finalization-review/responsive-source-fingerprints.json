@@ -1,0 +1,79 @@
+[
+  {
+    "file": "src/app/favicon.ico",
+    "sha256": "fa006d7e09e4100ddc440d5d9f67008c08b7fea8601b1c3caa10ffe33cc4906e",
+    "releaseSha256": "fa006d7e09e4100ddc440d5d9f67008c08b7fea8601b1c3caa10ffe33cc4906e",
+    "same": true,
+    "baselineSha256": "fa006d7e09e4100ddc440d5d9f67008c08b7fea8601b1c3caa10ffe33cc4906e"
+  },
+  {
+    "file": "src/app/icon.png",
+    "sha256": "d8345010ce2ca5e9f69313993d24425c3d73f5e13bd6571b1205d56b271646fe",
+    "releaseSha256": "d8345010ce2ca5e9f69313993d24425c3d73f5e13bd6571b1205d56b271646fe",
+    "same": true,
+    "baselineSha256": "d8345010ce2ca5e9f69313993d24425c3d73f5e13bd6571b1205d56b271646fe"
+  },
+  {
+    "file": "src/app/apple-icon.png",
+    "sha256": "2762db8a35475d4404f79da8a63c9759283bcc9c8359c1efba4a10364d7e16e1",
+    "releaseSha256": "2762db8a35475d4404f79da8a63c9759283bcc9c8359c1efba4a10364d7e16e1",
+    "same": true,
+    "baselineSha256": "2762db8a35475d4404f79da8a63c9759283bcc9c8359c1efba4a10364d7e16e1"
+  },
+  {
+    "file": "src/components/sections/hero-avatar-letter.tsx",
+    "sha256": "317d3d20e6053cfd3c2b8b982a3218d07a7b4e6167ab70ac10310911009248e2",
+    "releaseSha256": "b2a5bcebe5e2a9bea9be20ab87550bd579dc198ffbdd57f38e32e2b24a4701d4",
+    "same": true,
+    "baselineSha256": "b2a5bcebe5e2a9bea9be20ab87550bd579dc198ffbdd57f38e32e2b24a4701d4"
+  },
+  {
+    "file": "src/styles/globals.css",
+    "sha256": "fa72fa65d28974f98cf715803ef42d98792f5dab6e41a22ebf895fdd3b6f4e01",
+    "releaseSha256": "fa72fa65d28974f98cf715803ef42d98792f5dab6e41a22ebf895fdd3b6f4e01",
+    "same": true,
+    "baselineSha256": "fa72fa65d28974f98cf715803ef42d98792f5dab6e41a22ebf895fdd3b6f4e01"
+  },
+  {
+    "file": "tools/generate-profile-icons.mjs",
+    "sha256": "c15896c01f4a84bf36da9dc668d353e58aadd5adf914a00154c821da37ae8b2b",
+    "releaseSha256": "c15896c01f4a84bf36da9dc668d353e58aadd5adf914a00154c821da37ae8b2b",
+    "same": true,
+    "baselineSha256": "c15896c01f4a84bf36da9dc668d353e58aadd5adf914a00154c821da37ae8b2b"
+  },
+  {
+    "file": "public/images/profile/github-avatar.png",
+    "sha256": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672",
+    "releaseSha256": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672",
+    "same": true,
+    "baselineSha256": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672"
+  },
+  {
+    "file": "src/components/motion/home-motion.tsx",
+    "sha256": "301a92ca1b5032fe2a253e53520143d5ae65599795868233e31cadffd7fb1029",
+    "releaseSha256": "301a92ca1b5032fe2a253e53520143d5ae65599795868233e31cadffd7fb1029",
+    "same": true,
+    "baselineSha256": "301a92ca1b5032fe2a253e53520143d5ae65599795868233e31cadffd7fb1029"
+  },
+  {
+    "file": "src/components/motion/section-transitions.ts",
+    "sha256": "ab2ce57d42a32d37b433026ddf5c6879aaddfec569e97ab115535c9e8fd0a8a6",
+    "releaseSha256": "ab2ce57d42a32d37b433026ddf5c6879aaddfec569e97ab115535c9e8fd0a8a6",
+    "same": true,
+    "baselineSha256": "ab2ce57d42a32d37b433026ddf5c6879aaddfec569e97ab115535c9e8fd0a8a6"
+  },
+  {
+    "file": "vercel.json",
+    "sha256": "517556fa798811929fe7fe6dbad130e65c38cd184c62a18288d3b71d1f9373a5",
+    "releaseSha256": "517556fa798811929fe7fe6dbad130e65c38cd184c62a18288d3b71d1f9373a5",
+    "same": true,
+    "baselineSha256": "517556fa798811929fe7fe6dbad130e65c38cd184c62a18288d3b71d1f9373a5"
+  },
+  {
+    "file": "package-lock.json",
+    "sha256": "7272b02512b8b1a348bca15e7bad69d5c30bc8bf4a2b41fb4769b6b21b5c9016",
+    "releaseSha256": "7272b02512b8b1a348bca15e7bad69d5c30bc8bf4a2b41fb4769b6b21b5c9016",
+    "same": true,
+    "baselineSha256": "7272b02512b8b1a348bca15e7bad69d5c30bc8bf4a2b41fb4769b6b21b5c9016"
+  }
+]

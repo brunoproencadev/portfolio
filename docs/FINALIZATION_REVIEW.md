@@ -2,6 +2,18 @@
 
 Plano `857207f`, implementação dos ícones `d9430f4`. O usuário aceitou o visual final, decidiu não incluir fotografias pessoais/contexto, solicitou ícones maiores/nítidos e confirmou “GitHub, main e publicação na Vercel”. Essas decisões substituem as pendências históricas correspondentes. H03 continua em acompanhamento; autorização de entrega não é prova de atendimento da meta.
 
+## Publicação inicial e correção responsiva
+
+[PR1](https://github.com/brunoproencadev/portfolio/pull/1) integrado em `f9bd0cf`; deployment `dpl_F9HSH5KotxomfkDPk17Mfsjc18vq` READY e alias atribuído a https://brunoproencasilva.vercel.app. O SHA exato foi buscado do GitHub pela Vercel, sem upload da árvore local. [Estado do deployment](finalization-review/initial-deployment.json), [cinco rotas/SEO/ícones/HTTPS](finalization-review/initial-live.json), [browser desktop/mobile](finalization-review/initial-live-browser.json). Os três arquivos de ícones publicados coincidiram por SHA256 com os validados; sitemap cinco URLs, desconhecido/estudo404/noindex e HTTP→HTTPS308. Consulta amostral de logs de erro/fatal retornou zero registros em cinco minutos, sem atestar ausência contínua de erros.
+
+Três Lighthouse da home pública deram mediana93/LCP2547ms/TBT163,5ms/CLS0,0389, acessibilidade/boas práticas/SEO100. [Série pública inicial](finalization-review/initial-public-performance.json). Não atribuir a diferença em relação ao localhost aos ícones; transporte/ambiente são diferentes. A meta de2,5s ainda não foi atingida nessa série.
+
+O trace revelou dois downloads do mesmo avatar no mobile:96px para a navbar e256px para o easter egg. `0a53503` altera somente sizes para acompanhar o clamp CSS mobile, mantendo o tamanho visual e os112px de referência desktop. Em vez de subamostrar o avatar, o browser recebe uma indicação compatível com seus pixels físicos e reaproveita o recurso da navbar no perfil Lighthouse. [Rede antes/depois](finalization-review/responsive-network.json): duas requisições passam a uma, poupando7976bytes nas três navegações locais. A versão de256px continua disponível para desktop.
+
+Build/strict e lint PASS; **24/24 E2E** avatar/SEO nos três motores, incluindo densidade em320/375/1440px. [Fonte e escopo da validação](finalization-review/responsive-validation.json), [resultados](finalization-review/responsive-e2e.json), [browser](finalization-review/responsive-browser.json) e [mobile inspecionado](finalization-review/responsive-avatar-375.png). Os arquivos testados foram conferidos por hash antes/depois do commit e o worktree ficou limpo em0a53503. A prova integral400/5 continua vinculada à base d9430f4; não foi repetida inteira por uma alteração na indicação de imagem. As rotinas de animação/scroll e a geometria CSS não mudaram.
+
+Lighthouse local após esse ajuste: mediana88/LCP3419ms/TBT191,5ms/CLS0,0389, sem ganho de LCP comprovado. [Série](finalization-review/responsive-local-performance.json). O ajuste foi conservado pela redução determinística de requisição/bytes com densidade suficiente, não por uma alegação de ganho de pontuação. Próximo passo autorizado: integrar e publicar essa correção, validar o destino e manter H03 aberta enquanto a meta não estiver provada.
+
 ## Ícones e avatar
 
 O arquivo GitHub original460×460, SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`, permanece intacto. O gerador existente remove somente margem transparente, conserva proporção e aplica borda de segurança; o favicon passa a conter16/32/48/64px, com PNG192 e Apple180. Não houve redesenho, recoloração, upscale generativo ou detalhes pessoais inventados. A comparação em tamanho nativo mostra melhor aproveitamento dos pixels disponíveis; o tamanho do espaço da aba continua definido pelo browser.

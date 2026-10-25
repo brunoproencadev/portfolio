@@ -1,0 +1,23 @@
+{
+  "sourceCommit": "0a535039801259717e91b33754744a4a3988799d",
+  "testedSources": [
+    {
+      "file": "src/components/sections/hero-avatar-letter.tsx",
+      "sha256": "317d3d20e6053cfd3c2b8b982a3218d07a7b4e6167ab70ac10310911009248e2"
+    },
+    {
+      "file": "tests/e2e/hero-avatar.spec.ts",
+      "sha256": "ce59da97155576965ff64e0d9b35f9a8c1c342054839ad0538707be096300e15"
+    }
+  ],
+  "sourceClean": true,
+  "stats": {
+    "startTime": "2026-10-25T19:25:03.615Z",
+    "duration": 36828.988,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scope": "One responsive image hint plus density coverage; baseline full-suite proof remains d9430f4."
+}
