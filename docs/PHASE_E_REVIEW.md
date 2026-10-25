@@ -10,14 +10,14 @@ HomeMotion permanece dono da elegibilidade, sessão, import dinâmico, encerrame
 
 ## Comparação R3/B → E
 
-| Critério | Observação da referência | Resultado E |
-| --- | --- | --- |
-| E01 escrita | R3,3.mp4,2,1–5,1s: traços formam hello progressivamente em fundo preto | SVG original B escreve olá, caminho por caminho, duração total850ms proporcional ao comprimento. Branco#f5f3ff sobre#08090d. Adaptação para português e duração curta. |
-| Pausa | R3,5,1–6,3s: palavra completa antes de desaparecer | Pausa850–1000ms; ausência de percentuais/status de download. |
-| Retirada | R3,6,6–7,2s: saudação desaparece; a tela preta recua de baixo para cima | Opacidade do traço1000–1150ms; wrapper HTML yPercent0→−100 entre1000–1450ms, power3.inOut. Sem blur ou desenho animado em tela inteira. |
-| Integração D | B states.html prevê retirada1000–1450ms e hero revelado | Entrada D começa850ms atrás da camada e termina1850ms. A sobreposição preserva o watchdog2200ms, em vez de somar as durações. |
-| E02 controle | A gravação não comprova teclado/reduced/falhas da referência | Pular visível acima da camada, sem body lock/focus trap; foco/ponteiro/nav, Escape, roda/toque, hash/pagehide/reduced cancelam imediatamente. Timeout também limpa timeline estagnada e import tardio. |
-| Mobile | Não demonstrado no vídeo R3 | Adaptação validada em320/375/768px: SVG mínimo104px, botão≥44px, gutters/safe-area; composição final preservada. |
+| Critério     | Observação da referência                                                | Resultado E                                                                                                                                                                                            |
+| ------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| E01 escrita  | R3,3.mp4,2,1–5,1s: traços formam hello progressivamente em fundo preto  | SVG original B escreve olá, caminho por caminho, duração total850ms proporcional ao comprimento. Branco#f5f3ff sobre#08090d. Adaptação para português e duração curta.                                 |
+| Pausa        | R3,5,1–6,3s: palavra completa antes de desaparecer                      | Pausa850–1000ms; ausência de percentuais/status de download.                                                                                                                                           |
+| Retirada     | R3,6,6–7,2s: saudação desaparece; a tela preta recua de baixo para cima | Opacidade do traço1000–1150ms; wrapper HTML yPercent0→−100 entre1000–1450ms, power3.inOut. Sem blur ou desenho animado em tela inteira.                                                                |
+| Integração D | B states.html prevê retirada1000–1450ms e hero revelado                 | Entrada D começa850ms atrás da camada e termina1850ms. A sobreposição preserva o watchdog2200ms, em vez de somar as durações.                                                                          |
+| E02 controle | A gravação não comprova teclado/reduced/falhas da referência            | Pular visível acima da camada, sem body lock/focus trap; foco/ponteiro/nav, Escape, roda/toque, hash/pagehide/reduced cancelam imediatamente. Timeout também limpa timeline estagnada e import tardio. |
+| Mobile       | Não demonstrado no vídeo R3                                             | Adaptação validada em320/375/768px: SVG mínimo104px, botão≥44px, gutters/safe-area; composição final preservada.                                                                                       |
 
 Não há alegação de duração/easing originais, pixel-perfect ou reprodução literal da palavra hello. O letterform vem do desenho B aprovado, não de uma assinatura real.
 
@@ -51,12 +51,12 @@ A revisão React preservou componente servidor para conteúdo, fonte compartilha
 
 Três rodadas Lighthouse13.5.0, mobile, build local127.0.0.1:3101; sem E2E/captura concorrentes. Mesmo perfil D: Chromium156.0.8078.4, Node24.15.0, Windows11 Pro/Ryzen7 5700G, mobile412×823, CPU4×/RTT150ms/throughput1638,4Kbps simulados. [Ambiente](intro-review/lighthouse-environment.json), [resultados individuais](intro-review/lighthouse-summary.json).
 
-| Rodada | Performance | LCP | CLS | TBT |
-| --- | --- | --- | --- | --- |
-| 1 | 97 | 2484,60ms | 0,03888 | 59,08ms |
-| 2 | 98 | 2393,03ms | 0,03888 | 82,50ms |
-| 3 | 98 | 2383,70ms | 0,03888 | 74,50ms |
-| Mediana | 98 | 2393,03ms | 0,03888 | 74,50ms |
+| Rodada  | Performance | LCP       | CLS     | TBT     |
+| ------- | ----------- | --------- | ------- | ------- |
+| 1       | 97          | 2484,60ms | 0,03888 | 59,08ms |
+| 2       | 98          | 2393,03ms | 0,03888 | 82,50ms |
+| 3       | 98          | 2383,70ms | 0,03888 | 74,50ms |
+| Mediana | 98          | 2393,03ms | 0,03888 | 74,50ms |
 
 Acessibilidade/boas práticas100 e SEO66/noindex em todas. Peso total251762bytes (D251291bytes), diferença471bytes. LCP mediano D2387ms; diferença de cerca de6ms está na variabilidade do laboratório, não comprova equivalência no campo. Todas as rodadas ficaram abaixo de2,5s, a primeira por margem pequena. Reavaliar após F/mídia e em produção; TBT não comprova INP. Oportunidades de JS não usado≈52KiB, legado≈14KiB e recursos bloqueantes290–340ms permanecem; não houve nova dependência.
 

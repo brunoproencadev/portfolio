@@ -789,10 +789,7 @@
           "elapsed": 1125.2999999970198,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "0.9998",
           "actions": "0.9611",
@@ -804,10 +801,7 @@
           "elapsed": 1168.6000000014901,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "0.9844",
@@ -819,10 +813,7 @@
           "elapsed": 1190.2999999970198,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "0.9979",
@@ -834,10 +825,7 @@
           "elapsed": 1201.3999999985099,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "0.9997",
@@ -849,10 +837,7 @@
           "elapsed": 1246.3999999985099,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "1",
@@ -864,10 +849,7 @@
           "elapsed": 1293,
           "arc": "none",
           "stroke": "2",
-          "titles": [
-            "none",
-            "none"
-          ],
+          "titles": ["none", "none"],
           "position": "1",
           "description": "1",
           "actions": "1",
@@ -1666,10 +1648,7 @@
           "elapsed": 1112.3999999985099,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "0.9993",
           "actions": "0.9473",
@@ -1681,10 +1660,7 @@
           "elapsed": 1129.3999999985099,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "0.9999",
           "actions": "0.9648",
@@ -1696,10 +1672,7 @@
           "elapsed": 1145.5999999940395,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "0.9779",
@@ -1711,10 +1684,7 @@
           "elapsed": 1162.7999999970198,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "0.9868",
@@ -1726,10 +1696,7 @@
           "elapsed": 1178.6999999955297,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "0.9933",
@@ -1741,10 +1708,7 @@
           "elapsed": 1195.7999999970198,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "0.997",
@@ -1756,10 +1720,7 @@
           "elapsed": 1212.2999999970198,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "0.9991",
@@ -1771,10 +1732,7 @@
           "elapsed": 1229,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "0.9999",
@@ -1786,10 +1744,7 @@
           "elapsed": 1245.8999999985099,
           "arc": "matrix(1, 0, 0, 1, 0, 0)",
           "stroke": "2",
-          "titles": [
-            "matrix(1, 0, 0, 1, 0, 0)",
-            "matrix(1, 0, 0, 1, 0, 0)"
-          ],
+          "titles": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"],
           "position": "1",
           "description": "1",
           "actions": "1",
@@ -1801,10 +1756,7 @@
           "elapsed": 1262.5999999940395,
           "arc": "none",
           "stroke": "2",
-          "titles": [
-            "none",
-            "none"
-          ],
+          "titles": ["none", "none"],
           "position": "1",
           "description": "1",
           "actions": "1",

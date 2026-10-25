@@ -557,11 +557,7 @@
       "limits": "Revisor abriu 20 capturas/pranchas; sem navegador próprio ou reprodução contínua WebM. Relógio controlado, frames reais e testes têm provas separadas. Não certifica 60 fps em todo hardware, WCAG, mobile físico, INP/desempenho de campo, pixel-perfect R3 ou publicação. F–I e superfícies legadas continuam pendentes dos gates."
     },
     "appliedProjects": {
-      "sourceCommits": [
-        "5c49407",
-        "b8d2f04",
-        "dbaae0e"
-      ],
+      "sourceCommits": ["5c49407", "b8d2f04", "dbaae0e"],
       "authorization": "E aprovada e F autorizada pelo “continue” no gate E/F em 2026-10-13; G–I e push/deploy não autorizados.",
       "reviewDisposition": "ship restrito aos dois achados pontuados (contenção wide-short e persistência), resolvidos no verdict pass independente de2026-10-14. F entregue para revisão do usuário; G–I não autorizados.",
       "sources": [

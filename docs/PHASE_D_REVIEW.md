@@ -10,13 +10,13 @@ HomeMotion mantém sessão, cancelamento por foco/gesto/hash/reduced/pagehide, b
 
 ## Comparação observável
 
-| Critério | Fonte | Implementação e diferença |
-| --- | --- | --- |
-| D01 composição | R2,2.mp4,2,6–4,8s; B home-1440 | Nome central, negativo acima do arco, apoio e CTAs no centro. Arco usa os três paths do estudo B. Texto factual existente substitui copy demonstrativa do protótipo. Não é cópia da landing SaaS. |
-| D02 sequência | R2 mostra arco definindo borda antes de título/apoio | Arco0–800ms; título120–860ms, stagger100ms; posição400–750ms; descrição500–900ms; ações640–1000ms; fechamento600–1000ms. power2.out é decisão autoral, não easing original conhecido. |
-| D03 adaptação e custo | Vídeo original só demonstra desktop | 320/375/768/1440/1920 sem overflow; CTAs≥44px, título único legível, falha de fonte testada. 320 usa duas linhas de ações. Reduced e no-JS mantêm composição estática. Lighthouse medido abaixo. |
-| Continuidade com navbar | Ilha C e estados do protótipo B | Menu aberto sobrepõe temporariamente título, fecha com Escape/clique externo/saída de foco; é a superfície existente, sem segunda camada de navegação. |
-| Continuidade com projetos | R2,6,3–8,7s; transição planejada em B | Screenshot/pin/scrub e novo showcase pertencem a F. O verde e os cards da seção seguinte permanecem anteriores; essa quebra visual é transitória e explicitamente fora de D. |
+| Critério                  | Fonte                                                | Implementação e diferença                                                                                                                                                                         |
+| ------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| D01 composição            | R2,2.mp4,2,6–4,8s; B home-1440                       | Nome central, negativo acima do arco, apoio e CTAs no centro. Arco usa os três paths do estudo B. Texto factual existente substitui copy demonstrativa do protótipo. Não é cópia da landing SaaS. |
+| D02 sequência             | R2 mostra arco definindo borda antes de título/apoio | Arco0–800ms; título120–860ms, stagger100ms; posição400–750ms; descrição500–900ms; ações640–1000ms; fechamento600–1000ms. power2.out é decisão autoral, não easing original conhecido.             |
+| D03 adaptação e custo     | Vídeo original só demonstra desktop                  | 320/375/768/1440/1920 sem overflow; CTAs≥44px, título único legível, falha de fonte testada. 320 usa duas linhas de ações. Reduced e no-JS mantêm composição estática. Lighthouse medido abaixo.  |
+| Continuidade com navbar   | Ilha C e estados do protótipo B                      | Menu aberto sobrepõe temporariamente título, fecha com Escape/clique externo/saída de foco; é a superfície existente, sem segunda camada de navegação.                                            |
+| Continuidade com projetos | R2,6,3–8,7s; transição planejada em B                | Screenshot/pin/scrub e novo showcase pertencem a F. O verde e os cards da seção seguinte permanecem anteriores; essa quebra visual é transitória e explicitamente fora de D.                      |
 
 Não há alegação de pixel-perfect, easing idêntico, fidelidade mobile a vídeo inexistente ou conclusão de E–I.
 
@@ -42,12 +42,12 @@ As cinco exclusões são preexistentes: duas de zoom nativo exclusivo Chromium e
 
 Build de produção local em127.0.0.1:3101, Windows11 Pro, Ryzen7 5700G, RAM≈29,95GB, Node24.15.0, Chromium156.0.8078.4, Lighthouse13.5.0. Mobile412×823, throttling simulado CPU4×, RTT150ms/throughput1638,4Kbps. Sem E2E concorrente. [Ambiente completo](hero-review/lighthouse-environment.json), [três rodadas](hero-review/lighthouse-summary.json).
 
-| Rodada | Performance | LCP | CLS | TBT |
-| --- | --- | --- | --- | --- |
-| 1 | 97 | 2402,70ms | 0,03888 | 89,86ms |
-| 2 | 98 | 2387,00ms | 0,03888 | 73,80ms |
-| 3 | 98 | 2368,78ms | 0,03888 | 55,84ms |
-| Mediana | 98 | 2387,00ms | 0,03888 | 73,80ms |
+| Rodada  | Performance | LCP       | CLS     | TBT     |
+| ------- | ----------- | --------- | ------- | ------- |
+| 1       | 97          | 2402,70ms | 0,03888 | 89,86ms |
+| 2       | 98          | 2387,00ms | 0,03888 | 73,80ms |
+| 3       | 98          | 2368,78ms | 0,03888 | 55,84ms |
+| Mediana | 98          | 2387,00ms | 0,03888 | 73,80ms |
 
 Todas atenderam LCP≤2,5s e CLS≤0,1 neste laboratório. Acessibilidade/boas práticas100; SEO66 por noindex intencional. Peso total251.291bytes. Oportunidades observadas: JS não usado≈52KiB, legado≈14KiB e recursos bloqueantes≈300ms. Nenhuma dependência adicionada. TBT não comprova INP. Resultado próximo à meta LCP exige reavaliar após mídia/scroll/intro e no ambiente publicado.
 

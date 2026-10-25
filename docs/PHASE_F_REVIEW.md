@@ -12,13 +12,13 @@ A home usa Manrope e neutros/violeta com escopo local; diagramas/estilos dos cas
 
 ## Referência → implementação
 
-| Evidência original | Aplicação F | Diferença / limite |
-| --- | --- | --- |
-| R2 6,3–8,7s, screenshot cresce enquanto hero recua | RoboSense aproxima scale0,88→1/y64→0 e abre máscara6→0 durante scroll | Adaptação em fluxo: não reproduz toda a sobreposição dimensional do hero da referência. D/E preservados. |
+| Evidência original                                  | Aplicação F                                                                                                                     | Diferença / limite                                                                                                                            |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| R2 6,3–8,7s, screenshot cresce enquanto hero recua  | RoboSense aproxima scale0,88→1/y64→0 e abre máscara6→0 durante scroll                                                           | Adaptação em fluxo: não reproduz toda a sobreposição dimensional do hero da referência. D/E preservados.                                      |
 | R3 22,8–25,2s, faixa clara estável e troca vertical | Industry fixa um palco por120svh; rótulos/links estáveis; mídia troca verticalmente no intervalo35–65%, com70% total de leitura | Dois estados reais do mesmo projeto; faixa proporcionalmente mais alta para screenshot/legenda legíveis. Não é equivalência geométrica exata. |
-| R3, fundo ampliado derivado da mídia corrente | Duas cópias decorativas aria-hidden, escurecidas, trocam junto à mídia | Nenhuma mídia inventada; blur fixo, sem loop. |
-| B, Ateliê em coluna editorial | Screenshot completo preserva aspecto; texto lateral desktop, fluxo vertical mobile | Não implica deployment público; origem é repositório/execução local. |
-| Contrato de navegação segura | Mobile/reduced/no-JS/viewport baixo mostram ambas as telas no fluxo; foco/hash/pagehide/reduced cancelam | Movimento é enhancement. Um pin, sem scroll hijack; links fora do track mascarado. |
+| R3, fundo ampliado derivado da mídia corrente       | Duas cópias decorativas aria-hidden, escurecidas, trocam junto à mídia                                                          | Nenhuma mídia inventada; blur fixo, sem loop.                                                                                                 |
+| B, Ateliê em coluna editorial                       | Screenshot completo preserva aspecto; texto lateral desktop, fluxo vertical mobile                                              | Não implica deployment público; origem é repositório/execução local.                                                                          |
+| Contrato de navegação segura                        | Mobile/reduced/no-JS/viewport baixo mostram ambas as telas no fluxo; foco/hash/pagehide/reduced cancelam                        | Movimento é enhancement. Um pin, sem scroll hijack; links fora do track mascarado.                                                            |
 
 Easing original não é inferível com precisão dos vídeos. Scroll usa scrub linear; segundos das referências não são duração fixa do gesto implementado. Nenhuma afirmação pixel-perfect.
 
