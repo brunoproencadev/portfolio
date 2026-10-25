@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-25T19:09:21.553Z",
+  "timestamp": "2026-10-25T19:40:36.996Z",
   "validatedRuntime": "d9430f4a55fa6e6c83124ad3724c0c5dd9be7f23",
   "artifacts": [
     {
@@ -61,6 +61,31 @@
       "file": "docs/finalization-review/icons-e2e.json",
       "bytes": 24736,
       "sha256": "097a15a0710eb0d6cfd7b976d656935a35e93b86f32dccde91f1b6d12013769b"
+    },
+    {
+      "file": "docs/finalization-review/initial-deployment.json",
+      "bytes": 647,
+      "sha256": "bf61539055ba29edb831fafdbac6b023644426e2b6b8733a01964a1fc63c6110"
+    },
+    {
+      "file": "docs/finalization-review/initial-live-browser.json",
+      "bytes": 844,
+      "sha256": "c89441c541f9ce952d0ef07b549fac2c39d915cb0b4f5a366106a9ece96d32a3"
+    },
+    {
+      "file": "docs/finalization-review/initial-live.json",
+      "bytes": 7617,
+      "sha256": "ac3846f41c15c983f75e351601a1c8a18d3160a4c9fe2bcab5ec364816ed30e7"
+    },
+    {
+      "file": "docs/finalization-review/initial-public-performance.json",
+      "bytes": 3270,
+      "sha256": "be2b1759b4977c3b43d9ef8cc2b6d10137de1d86133709c2c5a57a9998d269bb"
+    },
+    {
+      "file": "docs/finalization-review/initial-runtime-logs.json",
+      "bytes": 562,
+      "sha256": "65dc21ee4064b2642189e3590fdf34da135503fe4e001437f888ca85bd2927a2"
     },
     {
       "file": "docs/finalization-review/isolate-reveals.log",
@@ -151,6 +176,61 @@
       "file": "docs/finalization-review/release-validation.json",
       "bytes": 889,
       "sha256": "d44ae4cf86b21c4831d68bdb15b0c0b5469d5c10f0143c58e914f8785d93c9af"
+    },
+    {
+      "file": "docs/finalization-review/responsive-avatar-375.png",
+      "bytes": 382690,
+      "sha256": "71608aa06361f48b484297371601c820bc9d5d22ffa03995efa1919921b66c36"
+    },
+    {
+      "file": "docs/finalization-review/responsive-browser.json",
+      "bytes": 812,
+      "sha256": "a9d18b8ca78f3cd190816798c5fa974a15b29d4a2a3e61589c8f476cf49adf0a"
+    },
+    {
+      "file": "docs/finalization-review/responsive-build.log",
+      "bytes": 1265,
+      "sha256": "beb533b30d6bca9f7da1e167f80c93485a4bc469f88b66c848deb3df5248ce55"
+    },
+    {
+      "file": "docs/finalization-review/responsive-e2e.json",
+      "bytes": 31486,
+      "sha256": "c57c7e3ba92c386f9f40fc7f36f4deddcf5cc9c2cc2bdf86d787eda9b98ca14d"
+    },
+    {
+      "file": "docs/finalization-review/responsive-e2e.log",
+      "bytes": 3840,
+      "sha256": "8eef6dc8cb9fe4823e17124d5a4b294133b5186564b89be695c5948c1eec7a33"
+    },
+    {
+      "file": "docs/finalization-review/responsive-lighthouse.log",
+      "bytes": 711,
+      "sha256": "3db9603ad88918be3fbc9d4ca7b7ece9b06bc14afcc311f1c57abd2b327b8baf"
+    },
+    {
+      "file": "docs/finalization-review/responsive-lint.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "docs/finalization-review/responsive-local-performance.json",
+      "bytes": 3300,
+      "sha256": "8d91521f5af902d50010facc0fe62b81fa161553a136c99ccb2f1e47089dbb76"
+    },
+    {
+      "file": "docs/finalization-review/responsive-network.json",
+      "bytes": 1981,
+      "sha256": "5f786698000ebeddf0823cb94ee72b2c30c1b859f34d77989d0dd642c1960e04"
+    },
+    {
+      "file": "docs/finalization-review/responsive-source-fingerprints.json",
+      "bytes": 3641,
+      "sha256": "7291ff1c04dab4111e3c8fe1d4f15552d9105649fcfc6fa5cbbe0263ae032348"
+    },
+    {
+      "file": "docs/finalization-review/responsive-validation.json",
+      "bytes": 686,
+      "sha256": "4f6d47ca330aa8a8d64094597f5222abc8682ff54552cfe643b273d6cba6f038"
     },
     {
       "file": "docs/finalization-review/source-fingerprints.json",

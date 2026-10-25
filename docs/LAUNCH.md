@@ -1,4 +1,12 @@
-# Preparação de publicação — estado em25/10/2026
+# Publicação vigente — 25/10/2026
+
+Redesign publicado por autorização expressa do usuário após aceite visual final e exclusão de fotografias pessoais/contexto do escopo. PR1 integrado em `f9bd0cfa92b41b5fe0bb6dc4ec71c161c6913bce`; deployment `dpl_F9HSH5KotxomfkDPk17Mfsjc18vq`, READY, alias https://brunoproencasilva.vercel.app atribuído sem erro. A Vercel buscou o SHA de main pelo repoId1412563281, sem upload das quatro alterações locais preservadas. [Entrega e provas](FINALIZATION_REVIEW.md).
+
+Cinco rotas200, canonical/OG/Twitter corretos, sitemap com cinco URLs, robots Allow,404/noindex para desconhecido/estudo, assets de ícones iguais por SHA, OG1200×630, redirecionamento HTTP→HTTPS308 e cabeçalhos conferidos. Desktop/mobile sem overflow/pageerrors. Logs de error/fatal na janela consultada de cinco minutos retornaram zero registros; não é monitoramento contínuo. Produção true/Preview false mantidos, sem alterar variáveis. Git deploy automático main/redesign permanece bloqueado.
+
+H03 permanece aberta: primeira série pública93/LCP2547ms, laboratório local88/LCP3392ms. Correção responsiva0a53503, validada em24 E2E, elimina um download mobile duplicado sem alterar animações; aguarda integração/publicação. Sua série local88/LCP3419 não comprova ganho de LCP. O deployment inicial passa a ser rollback conhecido desse refinamento; retorno anterior dpl_6FxjM8rjeehB3bAeWJrG212ABmTL preservado no histórico. Os registros abaixo descrevem estados anteriores.
+
+# Histórico — preparação de publicação em25/10/2026
 
 Fase I preparada localmente para revisão: plano `ebaad99`, fonte `3b99eba`, [revisão/provas](PHASE_I_REVIEW.md), [checklist vigente de release e rollback](RELEASE_CHECKLIST.md). Cinco rotas, OG atual com avatar/Manrope/violeta, permissões Ateliê confirmadas, três perfis SEO com18/18 E2E e auditorias zero. Build local final noindex; deploy Git main/redesign continua bloqueado. Nenhuma publicação do redesign foi executada ou autorizada nesta fase.
 

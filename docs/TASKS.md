@@ -6,7 +6,9 @@
 - [x] `857207f`/`d9430f4`: ícones com maior ocupação, ICO64 adicional e avatar1,1em com densidade correta.18/18 E2E focados e comparação visual inspecionada.
 - [x] Release limpo isolado d9430f4: npm ci, build/strict/lint/nove unitários/formato PASS;400 E2E PASS/5 SKIP, zero falhas/retries. Auditorias zero; quatro edições locais preservadas e excluídas. [Revisão](FINALIZATION_REVIEW.md).
 - [x] Confirmar recuperação de fluidez após parar QA paralelo; retomada com um worker/BelowNormal aprovada nos testes. Nenhuma mudança experimental no scroll mantida.
-- [ ] Concluir PR1/main e publicar SHA integrado, com rollback identificado e conferência do domínio. Autorização já concedida, sem repetir pedido.
+- [x] PR1/main f9bd0cf e produção READY dpl_F9HSH5KotxomfkDPk17Mfsjc18vq; cinco rotas/SEO/ícones/HTTPS e browser conferidos. Autorização já concedida, sem repetir pedido.
+- [x] `0a53503`: sizes responsivo, uma requisição mobile a menos/7976bytes poupados,24/24 E2E e densidade suficiente, sem mudar tamanho visual ou scroll.
+- [ ] Integrar/publicar o ajuste responsivo e registrar as provas finais. H03 permanece aberta; localhost88/LCP3419 e primeira série pública93/LCP2547.
 - [ ] H03 continua: home88/LCP3392ms; não declarar meta aprovada por publicação. Cases/INP não remedidos; hardware/leitor de tela mantêm limites anteriores.
 
 ## Estado vigente — pedidos de interação e formato, 25/10/2026

@@ -1,0 +1,67 @@
+{
+  "rows": [
+    {
+      "run": 1,
+      "before": [
+        {
+          "url": "http://127.0.0.1:3118/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=96&q=75",
+          "transferSize": 2922
+        },
+        {
+          "url": "http://127.0.0.1:3118/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=256&q=75",
+          "transferSize": 7976
+        }
+      ],
+      "after": [
+        {
+          "url": "http://127.0.0.1:3118/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=96&q=75",
+          "transferSize": 2922
+        }
+      ],
+      "savedBytes": 7976
+    },
+    {
+      "run": 2,
+      "before": [
+        {
+          "url": "http://127.0.0.1:3118/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=96&q=75",
+          "transferSize": 2922
+        },
+        {
+          "url": "http://127.0.0.1:3118/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=256&q=75",
+          "transferSize": 7976
+        }
+      ],
+      "after": [
+        {
+          "url": "http://127.0.0.1:3118/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=96&q=75",
+          "transferSize": 2922
+        }
+      ],
+      "savedBytes": 7976
+    },
+    {
+      "run": 3,
+      "before": [
+        {
+          "url": "http://127.0.0.1:3118/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=96&q=75",
+          "transferSize": 2922
+        },
+        {
+          "url": "http://127.0.0.1:3118/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=256&q=75",
+          "transferSize": 7976
+        }
+      ],
+      "after": [
+        {
+          "url": "http://127.0.0.1:3118/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=96&q=75",
+          "transferSize": 2922
+        }
+      ],
+      "savedBytes": 7976
+    }
+  ],
+  "retainedReason": "One fewer mobile avatar request; reuse of the navbar asset with enough physical pixels. No demonstrated local LCP gain.",
+  "motionCodeChanged": false,
+  "cssGeometryChanged": false
+}

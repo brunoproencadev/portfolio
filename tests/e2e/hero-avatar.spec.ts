@@ -104,34 +104,38 @@ test("an unavailable avatar keeps the letter and full identity readable", async 
   );
 });
 
-test("the enlarged avatar requests enough pixels on a dense display", async ({
-  browser,
-  baseURL,
-}) => {
-  const context = await browser.newContext({
+for (const viewportWidth of [1440, 375, 320]) {
+  test(`the enlarged avatar requests enough pixels at ${viewportWidth}px on a dense display`, async ({
+    browser,
     baseURL,
-    viewport: { width: 1440, height: 900 },
-    deviceScaleFactor: 2,
-    reducedMotion: "reduce",
-  });
-  try {
-    const page = await context.newPage();
-    await page.goto("/");
-    const image = page.locator(".hero-avatar-image");
-    const density = await image.evaluate(async (node) => {
-      const avatar = node as HTMLImageElement;
-      await avatar.decode();
-      return {
-        sourceWidth: Number(new URL(avatar.currentSrc).searchParams.get("w")),
-        width: avatar.getBoundingClientRect().width,
-        pixels: devicePixelRatio,
-      };
+  }) => {
+    const context = await browser.newContext({
+      baseURL,
+      viewport: { width: viewportWidth, height: 900 },
+      deviceScaleFactor: 2,
+      reducedMotion: "reduce",
     });
-    expect(density.width).toBeGreaterThan(100);
-    expect(density.sourceWidth).toBeGreaterThanOrEqual(
-      Math.ceil(density.width * density.pixels),
-    );
-  } finally {
-    await context.close();
-  }
-});
+    try {
+      const page = await context.newPage();
+      await page.goto("/");
+      const image = page.locator(".hero-avatar-image");
+      const density = await image.evaluate(async (node) => {
+        const avatar = node as HTMLImageElement;
+        await avatar.decode();
+        return {
+          sourceWidth: Number(new URL(avatar.currentSrc).searchParams.get("w")),
+          width: avatar.getBoundingClientRect().width,
+          pixels: devicePixelRatio,
+        };
+      });
+      expect(density.width).toBeGreaterThan(viewportWidth < 600 ? 38 : 100);
+      expect(density.sourceWidth).toBeGreaterThanOrEqual(
+        Math.ceil(density.width * density.pixels),
+      );
+      if (viewportWidth < 600)
+        expect(density.sourceWidth).toBeLessThanOrEqual(128);
+    } finally {
+      await context.close();
+    }
+  });
+}

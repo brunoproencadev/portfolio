@@ -90,7 +90,7 @@ export function HeroAvatarLetter({ letter }: { letter: string }) {
         src="/images/profile/github-avatar.png"
         width={128}
         height={128}
-        sizes="112px"
+        sizes="(max-width: 599px) clamp(40px, 12vw, 64px), 112px"
         alt=""
         aria-hidden="true"
         draggable={false}
