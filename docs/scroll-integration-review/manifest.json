@@ -141,8 +141,8 @@
   },
   {
     "file": "recordings.json",
-    "bytes": 1514,
-    "sha256": "86dd84d59776fea9c95030f5d0827aa9e14623e06214fa8c2736b144479f856d"
+    "bytes": 1226,
+    "sha256": "d8cf0b37866b3170f0aa7e7a44ac16ab21ff12bb7c9d8afc114740b5fc6cbf6f"
   },
   {
     "file": "reference-band.jpg",
@@ -216,7 +216,7 @@
   },
   {
     "file": "verification.json",
-    "bytes": 2763,
-    "sha256": "c37666b75892e16af24723ae1bf8243f5fc71afb9aa7fb89645e5d24d867923e"
+    "bytes": 2691,
+    "sha256": "bdc830ad7275e893a35df0c9e69b61e86be3b3bdc0c2c22bf278a1349b043f30"
   }
 ]

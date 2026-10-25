@@ -1,0 +1,181 @@
+{
+  "timestamp": "2026-10-25T19:09:21.553Z",
+  "validatedRuntime": "d9430f4a55fa6e6c83124ad3724c0c5dd9be7f23",
+  "artifacts": [
+    {
+      "file": "docs/finalization-review/audit-all.json",
+      "bytes": 365,
+      "sha256": "2d8fd5976bab7eaad5325ce59c70bd4ff0905d624e3b045d681a831eb28c2155"
+    },
+    {
+      "file": "docs/finalization-review/audit-all.log",
+      "bytes": 365,
+      "sha256": "2d8fd5976bab7eaad5325ce59c70bd4ff0905d624e3b045d681a831eb28c2155"
+    },
+    {
+      "file": "docs/finalization-review/audit-runtime.json",
+      "bytes": 365,
+      "sha256": "2d8fd5976bab7eaad5325ce59c70bd4ff0905d624e3b045d681a831eb28c2155"
+    },
+    {
+      "file": "docs/finalization-review/audit-runtime.log",
+      "bytes": 365,
+      "sha256": "2d8fd5976bab7eaad5325ce59c70bd4ff0905d624e3b045d681a831eb28c2155"
+    },
+    {
+      "file": "docs/finalization-review/avatar-1440.png",
+      "bytes": 578415,
+      "sha256": "12d48d0f7fe2c7ba1e12c3312b2437e417866f4f2f42fa11b2cc15cd6bf61911"
+    },
+    {
+      "file": "docs/finalization-review/avatar-375.png",
+      "bytes": 382495,
+      "sha256": "b36087060ad4ec90929dce302750618f004b8cbc2fa8f05181dfa55f5c4e52d5"
+    },
+    {
+      "file": "docs/finalization-review/build-icons.log",
+      "bytes": 1269,
+      "sha256": "d93743c915f8f167870f8b8ed859ea75f4f251ef004ad266b3d5b5d5967359bc"
+    },
+    {
+      "file": "docs/finalization-review/decode-probe.json",
+      "bytes": 2579,
+      "sha256": "f2765ebdf7942b4e6337390eaa12ddfd28d7a8efa42f7e4c4c771bb11ded4cf1"
+    },
+    {
+      "file": "docs/finalization-review/decode-probe.log",
+      "bytes": 620,
+      "sha256": "f6a284cf94b3267db20e4f9080159f69f026027233ca290a482ed1a05563533c"
+    },
+    {
+      "file": "docs/finalization-review/e2e-icons.log",
+      "bytes": 3012,
+      "sha256": "1b37caf7033179ab5d465acd84c4c5942cd1e090a2fe31d99d6b7e34479e121a"
+    },
+    {
+      "file": "docs/finalization-review/favicon-comparison.png",
+      "bytes": 83420,
+      "sha256": "eea9ed31485465632793e515fae8167eb766f4792cafb54190f49984a0472ff2"
+    },
+    {
+      "file": "docs/finalization-review/icons-e2e.json",
+      "bytes": 24736,
+      "sha256": "097a15a0710eb0d6cfd7b976d656935a35e93b86f32dccde91f1b6d12013769b"
+    },
+    {
+      "file": "docs/finalization-review/isolate-reveals.log",
+      "bytes": 585,
+      "sha256": "f288c4455f24109a80cd4a64a8883e9489a65c9888bf0140a48a061472140b5c"
+    },
+    {
+      "file": "docs/finalization-review/isolation-probe.json",
+      "bytes": 2551,
+      "sha256": "fef9a7071c74bec27c160b52a349f079e6aeafaccbae5990321ae4dbb569fc50"
+    },
+    {
+      "file": "docs/finalization-review/lint-icons.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "docs/finalization-review/local-performance.json",
+      "bytes": 3323,
+      "sha256": "0e84d1b70543483bf00353b94cac41fea16aa2042f8667c7277c42f62f571373"
+    },
+    {
+      "file": "docs/finalization-review/peers-summary.json",
+      "bytes": 759,
+      "sha256": "9e239c51657383d5dc5c5ffce692a62f5483ca6741fc778252e167bbd03801f6"
+    },
+    {
+      "file": "docs/finalization-review/peers.log",
+      "bytes": 199348,
+      "sha256": "47e6976e5c92fcab38902719775e73c9269bd55b4aa10d3b9d8e006b3baf3ce7"
+    },
+    {
+      "file": "docs/finalization-review/preserved-files.json",
+      "bytes": 647,
+      "sha256": "6ef1cf3d3f276032a6d55b635448e4c3e52a35438c3421798c0271dba76a94b6"
+    },
+    {
+      "file": "docs/finalization-review/publication-preflight.json",
+      "bytes": 1125,
+      "sha256": "c2c908ec8e9ed84fe4c8b4ea20aed11468ddac6d270afd794f57eee31290c049"
+    },
+    {
+      "file": "docs/finalization-review/qa-interruption.json",
+      "bytes": 589,
+      "sha256": "ab1a009f4ba76180baae152681df429d9cd295a7038adc853b3d26a6fd03e4af"
+    },
+    {
+      "file": "docs/finalization-review/release-build.log",
+      "bytes": 1267,
+      "sha256": "c24922f95250de957eba7a24f9d459ca1fdc60dea062156bcfaa77879b59259d"
+    },
+    {
+      "file": "docs/finalization-review/release-e2e-serial.log",
+      "bytes": 52688,
+      "sha256": "cd41162e0fca29d267d59ac11dc614e266d4b4e5c36c2003120987c856649fb9"
+    },
+    {
+      "file": "docs/finalization-review/release-e2e.json",
+      "bytes": 452761,
+      "sha256": "60b74a47c3c7dff41c146371fc64eb64ada906986f66a9c5be7d5ff38691c9aa"
+    },
+    {
+      "file": "docs/finalization-review/release-e2e.log",
+      "bytes": 31594,
+      "sha256": "ae2752a8370433db6da5f0dc6159129fec70244dcec308567f2e6d3a13923444"
+    },
+    {
+      "file": "docs/finalization-review/release-format.log",
+      "bytes": 66,
+      "sha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20"
+    },
+    {
+      "file": "docs/finalization-review/release-lighthouse.log",
+      "bytes": 732,
+      "sha256": "e0c9a1c927eced69d253ee10a541d3ce6a82fd1b2cd400349bb6f1d3e0da4c30"
+    },
+    {
+      "file": "docs/finalization-review/release-lint.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "docs/finalization-review/release-unit.log",
+      "bytes": 220,
+      "sha256": "5ac3d600a2335c68461edb36a1c7f32d59de033a1e94c0ddb0511ff352c06754"
+    },
+    {
+      "file": "docs/finalization-review/release-validation.json",
+      "bytes": 889,
+      "sha256": "d44ae4cf86b21c4831d68bdb15b0c0b5469d5c10f0143c58e914f8785d93c9af"
+    },
+    {
+      "file": "docs/finalization-review/source-fingerprints.json",
+      "bytes": 2651,
+      "sha256": "78a9dde7876cafc0552e435df36adfd4326f6f05b5c6d3168b7b8ab0b8f9c287"
+    },
+    {
+      "file": "docs/finalization-review/unit-icons-all.log",
+      "bytes": 206,
+      "sha256": "10ce72c6a82a29c03778f439457681b2ec73811034714610cb3ab598e1149371"
+    },
+    {
+      "file": "docs/finalization-review/verification.json",
+      "bytes": 3643,
+      "sha256": "5dc57e25858cbf9644dd41775ee015fa12011315acece8e11196448a89255bd8"
+    },
+    {
+      "file": "docs/finalization-review/visual-icons.log",
+      "bytes": 345,
+      "sha256": "2c25a8960205de4404a381c2a4c10c5752ff3c55ba2a9505bd76be060647a796"
+    },
+    {
+      "file": "docs/finalization-review/visual.json",
+      "bytes": 688,
+      "sha256": "e50b3ab0f39cffdc4ae2399e43903098e1bd22dee7faf78074376a8c0b6a045f"
+    }
+  ]
+}

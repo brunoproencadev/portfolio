@@ -1,0 +1,104 @@
+
+Running 20 tests using 2 workers
+
+(node:33716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:9112) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+[2/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:36124) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:36132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[3/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+[4/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:10712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[5/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:10308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[6/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:35768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[7/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:32676) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[8/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:36740) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[9/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:23264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[10/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:36236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[11/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:34740) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[12/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:15576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[13/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:34660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[14/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:36592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[15/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:28272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[16/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:28168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[17/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:37852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[18/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:36332) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[19/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:37028) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[20/20] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+  20 passed (1.2m)

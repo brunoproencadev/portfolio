@@ -12,11 +12,7 @@
         "unexpected": 3,
         "flaky": 0
       },
-      "projects": [
-        "chromium",
-        "firefox",
-        "webkit"
-      ],
+      "projects": ["chromium", "firefox", "webkit"],
       "failures": [
         {
           "title": "cta navigation releases the destination and subsequent wheel restores storytelling",
@@ -72,11 +68,7 @@
         "unexpected": 0,
         "flaky": 0
       },
-      "projects": [
-        "chromium",
-        "firefox",
-        "webkit"
-      ],
+      "projects": ["chromium", "firefox", "webkit"],
       "failures": []
     }
   ],
@@ -89,24 +81,12 @@
           {
             "id": "color-contrast",
             "nodes": [
-              [
-                ".hero-title-mask:nth-child(1) > .hero-title-line"
-              ],
-              [
-                ".hero-title-mask:nth-child(2) > .hero-title-line"
-              ],
-              [
-                ".hero-position"
-              ],
-              [
-                ".hero-description"
-              ],
-              [
-                ".hero-primary"
-              ],
-              [
-                ".hero-secondary"
-              ]
+              [".hero-title-mask:nth-child(1) > .hero-title-line"],
+              [".hero-title-mask:nth-child(2) > .hero-title-line"],
+              [".hero-position"],
+              [".hero-description"],
+              [".hero-primary"],
+              [".hero-secondary"]
             ]
           }
         ]
@@ -117,24 +97,12 @@
           {
             "id": "color-contrast",
             "nodes": [
-              [
-                ".hero-title-mask:nth-child(1) > .hero-title-line"
-              ],
-              [
-                ".hero-title-mask:nth-child(2) > .hero-title-line"
-              ],
-              [
-                ".hero-position"
-              ],
-              [
-                ".hero-description"
-              ],
-              [
-                ".hero-primary"
-              ],
-              [
-                ".hero-secondary"
-              ]
+              [".hero-title-mask:nth-child(1) > .hero-title-line"],
+              [".hero-title-mask:nth-child(2) > .hero-title-line"],
+              [".hero-position"],
+              [".hero-description"],
+              [".hero-primary"],
+              [".hero-secondary"]
             ]
           }
         ]

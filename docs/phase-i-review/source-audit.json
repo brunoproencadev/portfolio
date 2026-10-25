@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-25T15:45:42.779Z",
+  "trackedTextFilesScanned": 325,
+  "patterns": ["private-key", "github-token", "aws-access-key", "openai-token"],
+  "findings": [],
+  "tracedAssets": [
+    {
+      "file": "manrope-og-400.ttf",
+      "included": true
+    },
+    {
+      "file": "manrope-og-500.ttf",
+      "included": true
+    },
+    {
+      "file": "github-avatar.png",
+      "included": true
+    }
+  ],
+  "limits": "Pattern scan of tracked text; not a pentest or a scan of ignored local files."
+}

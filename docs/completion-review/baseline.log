@@ -1,0 +1,3 @@
+{"route":"/","run":1,"score":89,"lcp":2824.18055,"tbt":307,"cls":0.03888213851761847,"fcp":921.4537,"scores":{"performance":89,"accessibility":100,"best-practices":100,"seo":66},"timestamp":"2026-10-25T17:41:15.091Z","warnings":[]}
+{"route":"/","run":2,"score":84,"lcp":3540.2541999999994,"tbt":303,"cls":0.03888213851761847,"fcp":913.1270999999999,"scores":{"performance":84,"accessibility":100,"best-practices":100,"seo":66},"timestamp":"2026-10-25T17:41:27.440Z","warnings":[]}
+{"route":"/","run":3,"score":83,"lcp":3548.5030000000006,"tbt":326,"cls":0.03888213851761847,"fcp":913.7515000000001,"scores":{"performance":83,"accessibility":100,"best-practices":100,"seo":66},"timestamp":"2026-10-25T17:41:38.649Z","warnings":[]}

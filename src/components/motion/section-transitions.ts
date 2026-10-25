@@ -78,6 +78,7 @@ export function startSectionTransitions(root: HTMLElement) {
               target,
               { "--section-opacity": 0.18, ...from },
               {
+                immediateRender: false,
                 "--section-opacity": 1,
                 x: 0,
                 y: 0,

@@ -1,5 +1,6 @@
 import { profile } from "@/data/portfolio";
 import { manrope } from "@/fonts/manrope";
+import { HeroAvatarLetter } from "./hero-avatar-letter";
 
 export function CinematicHero() {
   const [firstName, ...surname] = profile.name.split(" ");
@@ -54,9 +55,12 @@ export function CinematicHero() {
         </div>
       </div>
       <div className="hero-content">
-        <h1 id="inicio" tabIndex={-1}>
+        <h1 id="inicio" tabIndex={-1} aria-label={profile.name}>
           <span className="hero-title-mask">
-            <span className="hero-title-line">{firstName}</span>
+            <span className="hero-title-line">
+              {firstName.slice(0, -1)}
+              <HeroAvatarLetter letter={firstName.slice(-1)} />
+            </span>
           </span>{" "}
           <span className="hero-title-mask">
             <span className="hero-title-line">{surname.join(" ")}</span>

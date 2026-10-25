@@ -58,18 +58,9 @@
   "captures": {
     "screenshots": 36,
     "viewports": [
-      [
-        1440,
-        900
-      ],
-      [
-        1920,
-        1080
-      ],
-      [
-        375,
-        812
-      ]
+      [1440, 900],
+      [1920, 1080],
+      [375, 812]
     ],
     "pageErrors": 0,
     "overflowStates": 0,

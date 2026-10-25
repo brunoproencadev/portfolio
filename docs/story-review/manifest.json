@@ -34,13 +34,13 @@
     },
     {
       "file": "capture-results.json",
-      "bytes": 3730,
-      "sha256": "64c71b93c377d8f9ea63335880580e7d07a0b97edd2b72374ff52a3994659f58"
+      "bytes": 3731,
+      "sha256": "a645779db629566e3912a8c31edaa6bd9b3c8bab9094e23630190003a9e0be67"
     },
     {
       "file": "deployment-check.json",
-      "bytes": 167,
-      "sha256": "a99e41ff7f04f77a12cbd08eb8975b525ddc7b466dd9159260c0529bd8700495"
+      "bytes": 168,
+      "sha256": "6fa79ce92f1ab669c9c9b63fc76175d004d2517348a4e2dc26ba66423460968c"
     },
     {
       "file": "flow-1440.jpg",
@@ -129,8 +129,8 @@
     },
     {
       "file": "motion-samples.json",
-      "bytes": 130375,
-      "sha256": "4286f2d1e7ada176340d05cb1db922b753861894ed3946f30984c131b73a7525"
+      "bytes": 224985,
+      "sha256": "311c51daee69cd4941dbcdc148222324acac357a6ef8f3d31f4bdb6c0f5a42ed"
     },
     {
       "file": "performance.json",
@@ -224,8 +224,8 @@
     },
     {
       "file": "wide-short-results.json",
-      "bytes": 1360,
-      "sha256": "7fad629c88c832f8f1ebcebbfb5d7d091f78afef9793a0d3e4b6d261c499dd5e"
+      "bytes": 1361,
+      "sha256": "a0505cc392af7baa37779b5acb74f99eef62a71bb4ddb1e1d6936c43f6f2083b"
     }
   ]
 }

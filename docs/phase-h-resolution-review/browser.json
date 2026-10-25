@@ -1,0 +1,174 @@
+[
+  {
+    "width": 1440,
+    "name": "home",
+    "url": "http://127.0.0.1:3117/",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "about",
+    "url": "http://127.0.0.1:3117/#sobre",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "about-exit",
+    "url": "http://127.0.0.1:3117/#sobre",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "about-reversed",
+    "url": "http://127.0.0.1:3117/#sobre",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "project",
+    "url": "http://127.0.0.1:3117/#titulo-industry-week-senai",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "reduced-reading",
+    "before": {
+      "x": 805.9375,
+      "y": 259.984375,
+      "width": 570.046875,
+      "height": 51.59375
+    },
+    "after": {
+      "x": 805.9375,
+      "y": 259.53125,
+      "width": 570.046875,
+      "height": 51.59375
+    }
+  },
+  {
+    "width": 1440,
+    "name": "reduced",
+    "url": "http://127.0.0.1:3117/#titulo-industry-week-senai",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "robosense-lab",
+    "url": "http://127.0.0.1:3117/projetos/robosense-lab",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "museu-arte-moderna",
+    "url": "http://127.0.0.1:3117/projetos/museu-arte-moderna",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "industry-week-senai",
+    "url": "http://127.0.0.1:3117/projetos/industry-week-senai",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "name": "atelie-ingrid-xavier",
+    "url": "http://127.0.0.1:3117/projetos/atelie-ingrid-xavier",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "home",
+    "url": "http://127.0.0.1:3117/",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "about",
+    "url": "http://127.0.0.1:3117/#sobre",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "about-exit",
+    "url": "http://127.0.0.1:3117/#sobre",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "about-reversed",
+    "url": "http://127.0.0.1:3117/#sobre",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "project",
+    "url": "http://127.0.0.1:3117/#titulo-industry-week-senai",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "reduced-reading",
+    "before": {
+      "x": 20,
+      "y": 111.84375,
+      "width": 335,
+      "height": 35.828125
+    },
+    "after": {
+      "x": 20,
+      "y": 111.84375,
+      "width": 335,
+      "height": 35.828125
+    }
+  },
+  {
+    "width": 375,
+    "name": "reduced",
+    "url": "http://127.0.0.1:3117/#titulo-industry-week-senai",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "robosense-lab",
+    "url": "http://127.0.0.1:3117/projetos/robosense-lab",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "museu-arte-moderna",
+    "url": "http://127.0.0.1:3117/projetos/museu-arte-moderna",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "industry-week-senai",
+    "url": "http://127.0.0.1:3117/projetos/industry-week-senai",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "name": "atelie-ingrid-xavier",
+    "url": "http://127.0.0.1:3117/projetos/atelie-ingrid-xavier",
+    "overflow": false,
+    "errors": []
+  }
+]

@@ -1,3 +1,101 @@
+# Verificação vigente — commit isolado do release, 25/10/2026
+
+Plano `857207f`, fonte `d9430f4`; [revisão](FINALIZATION_REVIEW.md), [prova isolada](finalization-review/release-validation.json). npm ci no lockfile, build/strict, lint, nove unitários e formato PASS. **400 E2E PASS/5 SKIP**, zero falhas/retries, uma rodada completa com um worker/BelowNormal nos três motores. Os cinco skips são históricos. Tentativa anterior de dois workers interrompida após sobrecarga percebida pelo usuário; recuperação confirmada, sem mudança de lógica de animação. Não apresentar log parcial como aprovação.
+
+Auditorias runtime/completa zero vulnerabilidades; peers exit0, sem inválidos e seis avisos extraneous opcionais conhecidos. Quatro edições locais não entram no SHA e permanecem intactas.18 testes específicos adicionais na árvore original e capturas avatar desktop/mobile/ícones em tamanho nativo passam; ícones derivam da mesma arte, sem detalhes gerados. Aceite visual humano concedido e fotos retiradas do escopo por decisão do usuário.
+
+H03 sobre o build limpo, três execuções diretas sem concorrência: mediana88/LCP3392/TBT191/CLS0,0389, fora da meta. [Configuração e valores](finalization-review/local-performance.json). Sondas ABBA adicionais retiradas/diagnósticas, sem mudança conservada. Sem nova medição de cases/INP. Publicação autorizada e preparação Vercel conferida; integração/deployment ainda não executados neste registro. [Manifesto](finalization-review/manifest.json). Estados inferiores de aceite/fotos/autorização pendentes foram superados.
+
+# Histórico — seleção, título e formato, 25/10/2026
+
+Plano `38cc257`, CSS `a7034e9`, normalização `b0f52c4`. [Revisão](COMPLETION_REVIEW.md), [comandos/logs](completion-review/verification.json). Build/strict e formato do CSS PASS.15 verificações de arraste nas cinco rotas/três motores; seis de foco/reload e links com outline visível; captura posterior inspecionada. Teste existente teclado/reduced motion:2 PASS/1 SKIP histórico WebKit/Windows, zero falhas/retries. Sem prova física ou rodada sem JS; tentativas interrompidas das sondas estão identificadas.
+
+Formato global agora PASS:24 arquivos normalizados,19 JSONs com valores idênticos e cinco Markdown com AST idêntica sem posições. Dez entradas de hashes/bytes em seis manifestos atualizadas; [prova e linhagem](completion-review/format-preservation.json). Quatro edições anteriores preservadas e fora dos commits, diff-check e hashes staged conferidos no fechamento. Não reexecutar build/testes de produto por formatação apenas documental.
+
+[Desempenho exploratório](completion-review/performance.json): controle pré-CSS84/LCP3540/TBT307; dois frames89/LCP3221/TBT201,5; idle87/LCP3445/TBT225, três execuções por variante. Candidatos retirados, JS restaurado byte a byte; não há ganho causal ou H03 aprovado. Um ensaio com servidor de build antigo foi descartado por erros de recursos. Não são métricas do build final CSS; sem nova suíte integral, cases ou INP. [Manifesto](completion-review/manifest.json). Preview3117 noindex; sem push/merge/deploy. Registros seguintes são históricos quando conflitarem com este estado.
+
+# Histórico — preparação I, 25/10/2026
+
+Plano `ebaad99`, fonte `3b99eba`; [revisão e limites](PHASE_I_REVIEW.md). [Resultados/logs](phase-i-review/verification.json): build final de cada perfil e restauração/strict PASS, lint completo PASS, unitários9/9 PASS. SEO/assets18/18 nos três perfis e motores, zero skips/retries nas rodadas finais; políticas HTTP e JSONs completos em phase-i-review. Falhas intermediárias de build/harness e ocupação de porta documentadas, sem ocultar execução. Produção apenas simulada em processos locais.
+
+Auditorias runtime/completa zero; peers exit0, nenhum inválido e seis avisos extraneous WASM opcionais.325 textos rastreados sem padrões de segredo encontrados; não é pentest. Avatar remoto idêntico ao local, TTFs com licença/proveniência, OG antes/depois inspecionadas; permissão Ateliê confirmada pelo usuário. Quatro alterações anteriores intactas por hashes. Formato dos arquivos da fase/diff-check conferidos no fechamento; global FAIL nos mesmos24 históricos.
+
+Build local final noindex/sitemap vazio, preview3117; nenhuma configuração remota, push/merge/deploy. H03, INP, aceite humano, fotos/contexto e validações físicas mantêm os limites anteriores; não foram repetidos Lighthouse ou suíte de movimento porque a superfície alterada foi OG. [Release/rollback](RELEASE_CHECKLIST.md), [manifesto](phase-i-review/manifest.json). Registros seguintes são históricos quando conflitarem com este estado.
+
+# Histórico — medição das transições, 25/10/2026
+
+Fonte `6fd47a7`, plano `92952eb`, testes `d2e7bf7`; [revisão](PHASE_H_RESOLUTION_REVIEW.md). Build/strict/lint/nove unitários PASS. Reprodução anterior 11 PASS/1 FAIL com scroll correto; teste original 20/20 Firefox e transições 12/12 PASS após correção. [E2E](phase-h-resolution-review/e2e.json): Rodada completa inicial: 393 PASS/4 FAIL/5 SKIP; confirmação dos dois arquivos afetados: 15/15 PASS. 397 casos distintos aprovados entre os comandos, com cinco skips e zero retries. Não foi uma única rodada completa sem falhas. Expectativas/sincronização corrigidas sem desabilitar axe ou aumentar timeouts.
+
+[H03](phase-h-resolution-review/performance.json): três Lighthouse diretos da home, nota 88/LCP 3412ms/TBT 203ms/CLS 0,0389 na mediana, ainda fora da meta. Sem série pareada antiga para ganho causal; sondagem CSS alternada rejeitada sem editar produto. Perfil CPU atual identifica trabalho em startReveals/transições, não breakdown de LCP. Cases/INP não remedidos.
+
+[Browser](phase-h-resolution-review/browser.json):20 capturas e duas comparações reduced motion, sem overflow/pageerrors nos 22 registros; quatro capturas inspecionadas, vídeos locais sem playback integral. Quatro pendências anteriores preservadas por hashes. Formato/links/manifesto reconferidos no fechamento; formato global histórico pendente. Sem push/deploy/I, produção não atualizada.
+
+# Verificação vigente — segurança e retomada H, 25/10/2026
+
+Fonte `4ed77f9`, plano `ae86b92`; [relatório e limites](PHASE_H_SECURITY_REVIEW.md). npm ci/build/strict/lint e 9 unitários PASS; auditorias de runtime/completa zero vulnerabilidades. [Instalação e22 chunks idênticos](phase-h-security-review/installation.json). npm ls --all exit0 sem peers inválidos, seis avisos extraneous opcionais WASM preservados. Formato dos alterados/diff-check conferidos no fechamento; global FAIL nos 24 arquivos históricos.
+
+[E2E 402 casos](phase-h-security-review/e2e.json):396 PASS/1 FAIL/5 SKIP, zero retries; falha desktop Firefox repetiu na primeira confirmação. Sonda geométrica normal, três repetições posteriores do teste original PASS sem alterações.397 aprovações distintas entre comandos; não declarar rodada integral sem falhas. Causa da intermitência permanece aberta.
+
+[21 Lighthouse mobile](phase-h-security-review/performance.json), sem builds/testes concorrentes. Controle final home84/LCP 3585 ms/TBT 298 ms/CLS 0,0389; cases96/94/94/91, LCP 2583/2513/2840/2922 ms. Candidato de refresh rejeitado:80/LCP 3618 ms contra controle melhor. Builds PASS, fonte restaurada e22 chunks novamente idênticos; nenhuma alteração de animação conservada, sem repetição integral da suíte após rejeitar o candidato. H03 continua aberta; não atribuir diferenças ao patch Next sem base antiga pareada; sem INP.
+
+Browser real:16 capturas e duas comparações de leitura em 1440×900/375×812, sem overflow/pageerrors nos estados registrados; quatro PNGs inspecionados e duráveis. Duas gravações brutas locais, não reproduzidas integralmente. [Fonte e quatro pendências preservadas](phase-h-security-review/source-fingerprints.json). Nenhum push/merge/deploy/I; produção não atualizada. Registros seguintes são históricos.
+
+## Push GitHub — 2026-10-24
+
+Autorização explícita do usuário após aceitar o ajuste do PNG. Fetch prévio:0 commits remotos exclusivos/22 locais. Commit adicional `32e24b5` limita deploy Git automático da branch de redesign, preservando o bloqueio da main; JSON, formato e diff-check PASS. Push de23 commits para `redesign/cinematic-portfolio` concluído, sem squash/force/merge. ls-remote: branch em `32e24b5a61959f950358c4411d0caf862b459884`, idêntica a HEAD; main em `a56426dd3016c01f2eb510acc8e068bc758dd395`, inalterada. API GitHub:0 deployments para esse SHA na consulta, status pending/sem contextos; não declarar CI/deploy executados.
+
+Renomeação confirmada pela API para `brunoproencadev/portfolio`; origin atualizado. Quatro arquivos de entrada preservados e fora dos commits. Este registro documental será enviado também; SHA por `git log -1 -- docs/HANDOFF.md`. Nenhum código de UI mudou nesta publicação Git; continuam válidas as provas específicas abaixo, sem nova alegação de build/testes executados neste push. Segurança Next/H03/I/publicação do site permanecem pendentes.
+
+## Histórico — easter egg do nome, 2026-10-24
+
+Ajuste visual posterior `21af82c`: PNG transparente de0,65em para0,85em, sem fundo, recorte circular ou sombra. Build/strict confirmado na repetição do alerta Next, formato do CSS e diff-check PASS.9/9 E2E específicos Chromium/Firefox/WebKit, zero falhas/skips/retries. Duas capturas atuais e dados em `hero-avatar-review/transparent-*`; zero pageerrors. Os75 testes abaixo pertencem à entrega anterior. Não houve nova medição de performance, atualização Next ou publicação.
+
+Fonte `6e9575a`; [relatório](HERO_AVATAR_REVIEW.md), [resultados](hero-avatar-review/verification.json). Build/strict final na repetição do alerta Next, lint completo,9/9 unitários, formato dos alterados e diff-check PASS. **75/75 E2E selecionados, zero falhas/skips/retries**, nos três motores: hero-avatar/hero/hero-tools/intro. Nove novos casos verificam ciclo de1s, repetição, geometria estável/nome acessível, reduced motion e falha da imagem.
+
+Histórico: execução inicial interrompida para corrigir “Brun o” no nome acessível; rodada intermediária73/75 com duas falhas de prontidão na intro congelada WebKit, preservadas. Confirmação final75/75 sem alterar os testes anteriores. Inspeção visual desktop1440/mobile375,6 capturas finais e duas gravações; zero pageerrors nas sequências. Quatro capturas selecionadas e hashes de asset/evidências em `hero-avatar-review`. Sem aparelho físico, nova medição Lighthouse, execução integral dos cases ou publicação. Segurança Next e H03 continuam pendentes.
+
+## Histórico — UI/UX, continuidade de leitura e contexto, 2026-10-24
+
+Fonte `bac97a6`, plano `7fc1de6`; [relatório atual](UI_UX_REFINEMENT_REVIEW.md) e [resumo dos resultados](ui-ux-review/verification.json). Novos casos: 9/9 Chromium/Firefox/WebKit. Suíte completa de produção: 387 PASS, cinco SKIP históricos e um crash de worker Firefox (3221226505); confirmação isolada do mesmo cenário em `motion.spec.ts`: 1/1 PASS. Total distinto coberto entre os comandos: 388 aprovados e cinco skips, não uma única rodada limpa. Tentativa de confirmação com arquivo incorreto não encontrou testes e foi descartada.
+
+Build/strict PASS na repetição após interrupção por alerta de segurança do Next; lint e 9/9 unitários PASS; formato dos alterados/diff-check PASS. Formato global FAIL nos 24 arquivos históricos; cache local do Trail transferido para `.audit` para não acrescentar quatro avisos gerados. Quatro arquivos preexistentes preservados byte a byte. Logs/hashes e capturas/gravações em `ui-ux-review`.
+
+Comparação Chromium desktop/mobile e quatro cases: zero pageerrors/overflow nos estados registrados; 23 capturas finais e duas gravações. Reduced motion: título em 259,984→259,531→259,984px, foco preservado, sem mudar a coreografia aprovada. Provas automatizadas não substituem aceite perceptual ou hardware real.
+
+Três Lighthouse mobile atuais da home sem concorrência: mediana performance84/LCP3521,9ms/TBT285ms/CLS0,0389. H03 FAIL; CPU 4× perfilada sem função responsável isolada. Sem série pareada de baseline, novas métricas de cases ou INP. Nenhum ganho de performance alegado.
+
+Auditoria de runtime atual: Next 16.4.0 crítico, correção indicada16.4.3; atualização solicitada em pergunta separada e ainda não autorizada/aplicada. Nenhum push/deploy/I. Limites e próximos gates no relatório.
+
+## Histórico — H, reconfirmação completa e desempenho pendente, 2026-10-18
+
+Base `7a27a28` mais quatro arquivos preexistentes preservados, identificados em [source-fingerprints](phase-h-review/source-fingerprints.json). Evidências/relatório `cbb81bc`. [Relatório e limites](PHASE_H_REVIEW.md), [comandos e códigos de saída](phase-h-review/verification.json). Build restaurado e TypeScript strict PASS; lint completo PASS; unitários 9/9 na confirmação isolada. A tentativa anterior teve 8/9 e timeout de 60s no teste de plugins ESLint durante checks concorrentes; nenhuma asserção ou timeout alterado.
+
+Suíte completa: **379 PASS, cinco SKIP, zero FAIL/retry**, 384 casos, Chromium/Firefox/WebKit, dois workers, 474,204s. [Resultado](phase-h-review/e2e-continuation.json). Cinco skips mantidos: três fluxos de Tab WebKit/Windows e dois projetos não Chromium no teste de zoom por extensão. Falhas anteriores 371/384 e 378/384 e confirmações selecionadas 84/87 e 9/9 preservadas separadamente; não somar execuções sobrepostas. Novas capturas de menu a 320px, foco e zoom 200% dos cases documentam os estados exercitados.
+
+Formatação global FAIL nos mesmos 24 arquivos históricos, lista em [log](phase-h-review/format-continuation.log); formatação dos novos arquivos e diff-check PASS. Logs exportados em UTF-8/LF, removendo só espaços finais e linhas vazias de encerramento; brutos permanecem locais. Links, manifesto e hashes dos quatro arquivos preservados verificados. Nenhum ajuste de produto ficou desta retomada; configuração Next restaurada, HTTP200/noindex e duas folhas CSS externas confirmados.
+
+Quinze Lighthouse novos, mobile simulado, sem build/testes concorrentes: medianas performance 87/97/97/95/95 e LCP 3439,7/2594,3/2536,6/2801,3/2817,5ms (home/RoboSense/Museu/Industry/Ateliê). CLS 0,0389/0/0/0/0; acessibilidade/boas práticas 100 em todas as execuções, SEO66 pelo noindex. H03 **não passou**. [Séries, ambiente, rede e long tasks](phase-h-review/performance.json). `inlineCss` testado em três rodadas reais da home e retirado: mediana84/LCP3600,7ms/TBT290,5ms, mais bytes e sem cache CSS independente. Priorização/decodificação não resolveram; remover o módulo de movimento reduziu trabalho numa sondagem, mas não é comportamento equivalente e não foi aplicado.
+
+Sem prova de INP, dispositivo/Safari físico, leitor de tela ou aceitação perceptual. H continua aberta; próximo trabalho é investigar inicialização/refresh com a coreografia preservada. I, push e deploy não iniciados.
+
+## G — continuidade cinematográfica, 2026-10-18
+
+Fontes `452cb71`/`32dfe49`; plano prévio `e06b414`. Build Next/strict, lint completo e9/9 unitários PASS; formato dos alterados e diff-check PASS. [Relatório com histórico](PHASE_G_CINEMATIC_REVIEW.md). Primeiro lote82/87, cinco falhas de medição de controles durante escala corrigidas por foco/leitura e cobertura44px no estado final. Confirmação99/102; três falhas de expectativa antiga13/14 links; reconfirmação3/3 PASS Chromium/Firefox/WebKit. Os102 testes selecionados passaram entre esses dois comandos, sem skips/retries; não foi uma rodada única102/102. SEO6/6 PASS no primeiro lote. Não alegar execução integral da suíte.
+
+Confirmação visual72 estados1440/375/1920, overflow0/pageerrors0; axe0 nos nove estados examinados. Três gravações contínuas/pranchas com timestamps, hashes e dimensões em case-cinematic-review. Sem nova prova Safari físico/leitor de tela/Lighthouse/INP/headset. Detector consultivo11 avisos (cores/tipos/raio) reconciliados no DESIGN; check global de formato continua limitado pelos24 arquivos preexistentes. O primeiro script de resumo de evidências falhou ao ler JSON UTF-16 do detector como UTF-8; artefatos já haviam sido produzidos, resumo reconferido com a codificação correta. Sem falha de runtime ocultada.
+
+## Fase G — cases e ícones, 2026-10-18
+
+Fontes `161b6a4`/`aee6ea7`, plano `6c1c768`; [relatório](PHASE_G_REVIEW.md), [checks e falhas iniciais](phase-g-review/verification.json). Build Next16.4.0/TypeScript strict e lint completo PASS,8/8 unitários PASS.60/60 E2E nos três engines,46,7s, sem skips/retries, em build de produção local: três cases/quatro larguras, imagens, fontes,404/erro, navegação no-JS/cliente, cleanup, reduced/falha de mídia, foco e metadata/ícones. Nenhum teste funcional falhou na confirmação.
+
+Primeira tentativa no sandbox interrompida após crashes Firefox em newPage. As expectativas de URL favicon sem query de versão e Tab por links no WebKit/Windows também falharam; corrigidas para o contrato real, sem retirar verificações de conteúdo. No WebKit/Windows o teste usa foco explícito, sem alegar prova de Tab. Confirmação completa fora do sandbox passou. Avisos NO_COLOR/FORCE_COLOR e metadataBase sem SITE_URL preservados; noindex/robots passaram.
+
+Formatação dos arquivos alterados e diff-check PASS; check global Prettier FAIL em24 arquivos que já estavam fora do padrão, lista em verification.json. A primeira rodada apontou25; VISUAL_REDESIGN_PLAN foi alinhado e formatado neste fechamento, restando24 históricos. Baseline inicial limpa; os24 arquivos restantes não foram modificados por G. Não classificar o check global como aprovado nem incluir reformatação histórica no escopo.
+
+Nove estados em375/1440/1920px: overflow0/pageerrors0/axe0;42 capturas de inspeção local,12 selecionadas duráveis. Primeiros WebMs gravados junto com screenshots full-page tiveram quadros reduzidos/cinzentos e imagens momentaneamente vazias. Repetição sem full-page: duas sequências contínuas,11,48s/12,48s a25fps, sem reprodução do quadro reduzido nas amostras examinadas. Fonte não alterada entre rodadas; não certificar causa do artefato nem fluidez/percepção. Mobile375 codificado em374px pelo encoder. Manifestos e pranchas em phase-g-review; brutos ignorados em .audit.
+
+Avatar atual reconferido byte a byte pela API/download GitHub; dez fontes fixadas HTTP200. ICO contém16/32/48; PNG192/Apple180 e vínculos de metadata/HTTP passam. G01 fotos/contextos e G03 inspeção humana de aba permanecem pendentes. Sem Lighthouse/INP, Safari/dispositivos reais, leitor de tela ou publicação. H/I aguardam autorização.
+
 ## F aprovada — integração GitHub, 2026-10-18
 
 Autorização explícita do usuário para push e contribuições, com aceite visual de F. Sete commits pendentes até75dde16 enviados à branch de redesign; main avançada deaa70f4c para30eeef5 por fast-forward. Cinquenta e seis commits originais preservados, sem squash/rebase/alteração de autor ou datas. `git fetch`, ancestralidade, árvores iguais e `git ls-remote` confirmaram integração/sincronização das duas branches. API autenticada: repositório privado/não fork, default_branch main, e-mail vinculado a brunoproencadev. Gráfico pode atualizar em até24h; consulta GraphQL imediata ainda não comprovou a atualização visual.

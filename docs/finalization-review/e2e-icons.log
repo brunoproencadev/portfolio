@@ -1,0 +1,37 @@
+[WebServer] (node:51276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 18 tests using 1 worker
+
+(node:46008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/18] [chromium] › tests\e2e\hero-avatar.spec.ts:15:1 › hover swaps only the o for one second without moving the name, then replays
+[2/18] [chromium] › tests\e2e\hero-avatar.spec.ts:69:1 › reduced motion fades only and a live preference change clears the effect
+[3/18] [chromium] › tests\e2e\hero-avatar.spec.ts:90:1 › an unavailable avatar keeps the letter and full identity readable
+[4/18] [chromium] › tests\e2e\hero-avatar.spec.ts:107:1 › the enlarged avatar requests enough pixels on a dense display
+[5/18] [chromium] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[6/18] [chromium] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+(node:41220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[7/18] [firefox] › tests\e2e\hero-avatar.spec.ts:15:1 › hover swaps only the o for one second without moving the name, then replays
+[8/18] [firefox] › tests\e2e\hero-avatar.spec.ts:69:1 › reduced motion fades only and a live preference change clears the effect
+[9/18] [firefox] › tests\e2e\hero-avatar.spec.ts:90:1 › an unavailable avatar keeps the letter and full identity readable
+[10/18] [firefox] › tests\e2e\hero-avatar.spec.ts:107:1 › the enlarged avatar requests enough pixels on a dense display
+[11/18] [firefox] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[12/18] [firefox] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+(node:50544) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[13/18] [webkit] › tests\e2e\hero-avatar.spec.ts:15:1 › hover swaps only the o for one second without moving the name, then replays
+[14/18] [webkit] › tests\e2e\hero-avatar.spec.ts:69:1 › reduced motion fades only and a live preference change clears the effect
+[15/18] [webkit] › tests\e2e\hero-avatar.spec.ts:90:1 › an unavailable avatar keeps the letter and full identity readable
+[16/18] [webkit] › tests\e2e\hero-avatar.spec.ts:107:1 › the enlarged avatar requests enough pixels on a dense display
+[17/18] [webkit] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[18/18] [webkit] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+  18 passed (34.0s)

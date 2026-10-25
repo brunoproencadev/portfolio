@@ -1,0 +1,194 @@
+[
+  {
+    "engine": "chromium",
+    "label": "initial",
+    "id": "",
+    "tag": "BODY",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) none 3px"
+  },
+  {
+    "engine": "chromium",
+    "label": "title click",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) none 3px"
+  },
+  {
+    "engine": "chromium",
+    "label": "reload and blank click",
+    "id": "conteudo",
+    "tag": "MAIN",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) none 3px"
+  },
+  {
+    "engine": "chromium",
+    "label": "reload and title click",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) none 3px"
+  },
+  {
+    "engine": "chromium",
+    "label": "keyboard next",
+    "id": "",
+    "tag": "A",
+    "focusVisible": true,
+    "outline": "rgb(245, 243, 255) none 3px"
+  },
+  {
+    "engine": "chromium",
+    "label": "keyboard title focus",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": true,
+    "outline": "rgb(189, 164, 255) solid 3px"
+  },
+  {
+    "engine": "chromium",
+    "label": "restored title focus",
+    "id": "",
+    "tag": "BODY",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) none 3px"
+  },
+  {
+    "engine": "chromium",
+    "label": "restored title click",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) none 3px"
+  },
+  {
+    "engine": "firefox",
+    "label": "initial",
+    "id": "",
+    "tag": "BODY",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) 3px"
+  },
+  {
+    "engine": "firefox",
+    "label": "title click",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) 3px"
+  },
+  {
+    "engine": "firefox",
+    "label": "reload and blank click",
+    "id": "conteudo",
+    "tag": "MAIN",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) 3px"
+  },
+  {
+    "engine": "firefox",
+    "label": "reload and title click",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) 3px"
+  },
+  {
+    "engine": "firefox",
+    "label": "keyboard next",
+    "id": "",
+    "tag": "A",
+    "focusVisible": true,
+    "outline": "rgb(245, 243, 255) 3px"
+  },
+  {
+    "engine": "firefox",
+    "label": "keyboard title focus",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": true,
+    "outline": "rgb(189, 164, 255) solid 3px"
+  },
+  {
+    "engine": "firefox",
+    "label": "restored title focus",
+    "id": "",
+    "tag": "BODY",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) 3px"
+  },
+  {
+    "engine": "firefox",
+    "label": "restored title click",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": false,
+    "outline": "rgb(245, 243, 255) 3px"
+  },
+  {
+    "engine": "webkit",
+    "label": "initial",
+    "id": "",
+    "tag": "BODY",
+    "focusVisible": false,
+    "outline": "3px none rgb(245, 243, 255)"
+  },
+  {
+    "engine": "webkit",
+    "label": "title click",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": false,
+    "outline": "3px none rgb(245, 243, 255)"
+  },
+  {
+    "engine": "webkit",
+    "label": "reload and blank click",
+    "id": "conteudo",
+    "tag": "MAIN",
+    "focusVisible": false,
+    "outline": "3px none rgb(245, 243, 255)"
+  },
+  {
+    "engine": "webkit",
+    "label": "reload and title click",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": false,
+    "outline": "3px none rgb(245, 243, 255)"
+  },
+  {
+    "engine": "webkit",
+    "label": "keyboard next",
+    "id": "",
+    "tag": "BODY",
+    "focusVisible": false,
+    "outline": "3px none rgb(245, 243, 255)"
+  },
+  {
+    "engine": "webkit",
+    "label": "keyboard title focus",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": true,
+    "outline": "3px solid rgb(189, 164, 255)"
+  },
+  {
+    "engine": "webkit",
+    "label": "restored title focus",
+    "id": "",
+    "tag": "BODY",
+    "focusVisible": false,
+    "outline": "3px none rgb(245, 243, 255)"
+  },
+  {
+    "engine": "webkit",
+    "label": "restored title click",
+    "id": "inicio",
+    "tag": "H1",
+    "focusVisible": false,
+    "outline": "3px none rgb(245, 243, 255)"
+  }
+]

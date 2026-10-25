@@ -2,6 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { chromium, expect, test, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { caseProjects } from "../../src/data/case-studies";
 
 async function expectNoOverflow(page: Page) {
   await expect
@@ -18,9 +19,13 @@ for (const width of [320, 375, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/");
     await page.getByRole("button", { name: "Menu", exact: true }).click();
+    await expect(page.locator(".capsule")).toHaveAttribute("data-open", "true");
     await expect(page.locator(".capsule")).not.toHaveAttribute(
       "data-animating",
     );
+    await expect(page.locator(".capsule-note")).toHaveCSS("opacity", "1");
+    if (width >= 1100)
+      await expect(page.locator(".story-enhanced")).toHaveCount(1);
     await expectNoOverflow(page);
     const light = await page.locator(".hero-light").boundingBox();
     expect(light!.x).toBeGreaterThanOrEqual(0);
@@ -49,6 +54,7 @@ for (const width of [320, 375, 768, 1440]) {
       path: testInfo.outputPath(`menu-open-${width}.png`),
     });
     await page.getByRole("button", { name: "Fechar", exact: true }).click();
+    await expect(page.locator(".capsule")).not.toHaveAttribute("data-open");
     await expect(page.locator(".capsule")).not.toHaveAttribute(
       "data-animating",
     );
@@ -223,6 +229,28 @@ test("real Chromium zoom at 200 percent keeps navigation and content usable", as
     await capture("zoom-200-contact.png");
     await page.goto("http://127.0.0.1:3100/");
     await capture("zoom-200-home.png");
+    for (const project of caseProjects) {
+      await page.goto(`http://127.0.0.1:3100/projetos/${project.slug}`);
+      await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+        project.name,
+      );
+      await expectNoOverflow(page);
+      await expect(page.locator("[data-case-enhanced]")).toHaveCount(0);
+      const media = page.locator(".case-media-window").first();
+      await media.focus();
+      await expect(media).toBeInViewport();
+      await page.keyboard.press("Tab");
+      const original = page
+        .getByRole("link", { name: "Abrir captura completa" })
+        .first();
+      await expect(original).toBeFocused();
+      await expect(original).toBeInViewport();
+      await capture(`zoom-200-${project.slug}.png`);
+      await page.getByRole("link", { name: "Contato", exact: true }).focus();
+      await expect(
+        page.getByRole("link", { name: "Contato", exact: true }),
+      ).toBeInViewport();
+    }
   } finally {
     await context.close();
   }

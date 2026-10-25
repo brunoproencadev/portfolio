@@ -1,0 +1,148 @@
+{
+  "stats": {
+    "startTime": "2026-10-18T15:41:35.149Z",
+    "duration": 18824.093,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "cases": [
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1670,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1674,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1683,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3676,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3972,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3561,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3035,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2827,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2719,
+          "retry": 0
+        }
+      ]
+    }
+  ]
+}

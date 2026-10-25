@@ -1,5 +1,17 @@
 # PRD — Bruno Proença Silva
 
+Decisão25/10/2026 — usuário aceita o visual final, decide não incluir fotografias pessoais/eventos e respectivos contextos, pede favicon/avatar maiores/nítidos e autoriza expressamente GitHub, main e publicação na Vercel. Ícones atendidos em d9430f4; validação isolada em FINALIZATION_REVIEW. Fluidez do scroll aprovado é requisito explícito: não sacrificá-la por LCP. H03 permanece em acompanhamento e não é encerrada pela autorização de entrega; metas R07/R11 continuam registradas.
+
+Pedido25/10/2026 — usuário solicitou bloquear seleção de texto no site e retirar a caixa de foco do título após atualizar/clicar. Implementação CSS `a7034e9`: seleção desabilitada globalmente e outline suprimido somente no h1 do hero, mantendo navegação/foco visível de links e botões. Provas e limites em COMPLETION_REVIEW. Formato histórico resolvido em `b0f52c4`; H03 permanece aberta e publicação não autorizada.
+
+Atualização25/10/2026 — I autorizada por “Aprovado, pode dar inicio” e preparada para revisão em PHASE_I_REVIEW. SEO, segurança, proveniência e checklist local validados; a autorização específica de marca/capturas Ateliê foi confirmada pelo usuário. H03/metas de desempenho e validações humanas continuam abertas. Não houve autorização ou execução de publicação; RELEASE_CHECKLIST rege o próximo gate. Registros inferiores de I não autorizada são históricos.
+
+Atualização 18/10/2026 — H autorizada explicitamente para QA completo/performance. Relatório vigente PHASE_H_REVIEW; metas R07/R10/R11 mantidas, sem presumir atendimento de LCP/INP ou aceite humano. A coreografia aprovada continua preservada. I e publicação exigem autorização própria; os gates de H descritos abaixo são históricos.
+
+Atualização do incremento18/10/2026: pedido explícito autoriza case Museu e extensão da estética/scroll da home aos quatro cases. Registry compartilhado, fontes e créditos coletivos; kord continua sem case. Plano PHASE_G_CINEMATIC_PLAN, entrega PHASE_G_CINEMATIC_REVIEW. G aguarda avaliação; H/I e push/deploy não autorizados. A proibição de rota Museu no registro imediatamente abaixo está superada por este pedido.
+
+Registro anterior18/10/2026: F aprovada; G autorizada por “dê sequência com a fase G”. Implementação local para avaliação em PHASE_G_REVIEW: três cases com mídia real e identidade B, fontes reconferidas e ícones do avatar exato. Fotografias/contexto e inspeção humana da aba permanecem pendentes; não criar novas rotas para Museu/kord. H/I e novos pushes/deploys exigem autorizações próprias. Registros inferiores são históricos quanto aos gates.
+
 Adendo autorizado em 17/10/2026: o pedido explícito do usuário amplia a home para cinco projetos reais — RoboSense na passagem inicial e carrossel Museu → Industry Week → Ateliê → kord. Os três cases publicados continuam; os dois novos itens usam seus repositórios e evidência verificada, sem novas rotas de case. Escopo/limites em PHASE_F_PROJECTS; não autoriza fase geral G–I ou publicação.
 
 Atualização de precedência2026-10-13: A–D concluídas/aprovadas; E aprovada; F autorizada pelo “continue” no gate E/F, escopo PHASE_F_PLAN. G–I exigem confirmação individual. REFERENCE_ANALYSIS/MOTION_SPEC/VISUAL_ACCEPTANCE_CRITERIA substituem decisões visuais incompatíveis do ciclo anterior. Conteúdo factual, rotas, segurança/SEO e fallbacks continuam válidos. O texto abaixo é histórico; estado vigente em HANDOFF. Nenhum novo push/deploy autorizado.

@@ -1,0 +1,54 @@
+{
+  "source": "7a27a28 plus the four preserved files in source-fingerprints.json",
+  "checks": [
+    {
+      "command": "node node_modules/next/dist/bin/next build",
+      "exitCode": 0,
+      "log": "build-restored.log"
+    },
+    {
+      "command": "node node_modules/next/dist/bin/next typegen; node node_modules/typescript/bin/tsc --noEmit",
+      "exitCode": 0,
+      "log": "strict-continuation.log"
+    },
+    {
+      "command": "node node_modules/eslint/bin/eslint.js . --max-warnings=0",
+      "exitCode": 0,
+      "log": "lint-continuation.log"
+    },
+    {
+      "command": "node node_modules/vitest/vitest.mjs run",
+      "attempt": 1,
+      "exitCode": 1,
+      "log": "unit-continuation.log",
+      "note": "Tooling test timeout with concurrent checks; eight of nine passed."
+    },
+    {
+      "command": "node node_modules/vitest/vitest.mjs run",
+      "attempt": 2,
+      "exitCode": 0,
+      "log": "unit-confirmation.log",
+      "note": "Isolated confirmation, nine of nine passed without test changes."
+    },
+    {
+      "command": "node node_modules/prettier/bin/prettier.cjs --check .",
+      "exitCode": 1,
+      "log": "format-continuation.log",
+      "note": "Same 24 preexisting files as the previous baseline."
+    },
+    {
+      "command": "node node_modules/@playwright/test/cli.js test --workers=2 --reporter=line,json --output=.audit/phase-h/continuation-results",
+      "exitCode": 0,
+      "report": "e2e-continuation.json",
+      "stats": {
+        "startTime": "2026-10-18T20:04:35.822Z",
+        "duration": 474203.871,
+        "expected": 379,
+        "skipped": 5,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  ],
+  "logs": "UTF-8/LF exports with trailing whitespace removed; raw logs remain in .audit/phase-h."
+}

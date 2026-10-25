@@ -1,0 +1,22 @@
+[WebServer] (node:41752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+AssertionError: Expected values to be strictly equal:
++ actual - expected
+
++ 'https://brunoproencasilva.vercel.app'
+- 'https://brunoproencasilva.vercel.app/'
+                                       ^
+
+
+   at ..\..\.audit\phase-i\capture-policy.mjs:4
+
+  2 | export async function capture(profile,base='http://127.0.0.1:3100'){
+  3 |  const indexable=profile==='production';const origin=profile==='default'?undefined:'https://brunoproencasilva.vercel.app';const paths=['/','/projetos/robosense-lab','/projetos/museu-arte-moderna','/projetos/industry-week-senai','/projetos/atelie-ingrid-xavier'];const routes=[];
+> 4 |  for(const path of paths){const response=await fetch(base+path);assert.equal(response.status,200);const html=await response.text();const meta=name=>[...html.matchAll(/<meta\s[^>]*>/g)].filter(m=>m[0].includes(`name="${name}"`)||m[0].includes(`property="${name}"`)).map(m=>m[0].match(/content="([^"]*)"/)?.[1]);const canonical=html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];const robots=meta('robots');assert.ok(robots.includes(indexable?'index, follow':'noindex, nofollow'));if(origin){assert.equal(canonical,new URL(path,origin).href);assert.ok(meta('og:url').includes(canonical));assert.ok(meta('og:image').every(x=>x.startsWith(origin+'/')));}else assert.equal(canonical,undefined);
+    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+  5 |   const headers=Object.fromEntries(['x-content-type-options','referrer-policy','x-frame-options','permissions-policy','x-powered-by'].map(name=>[name,response.headers.get(name)]));assert.equal(headers['x-content-type-options'],'nosniff');assert.equal(headers['x-frame-options'],'DENY');assert.equal(headers['x-powered-by'],null);assert.equal(headers['referrer-policy'],'strict-origin-when-cross-origin');assert.equal(headers['permissions-policy'],'camera=(), microphone=(), geolocation=()');routes.push({path,status:response.status,title:html.match(/<title>([^<]*)<\/title>/)?.[1],canonical,robots,ogUrl:meta('og:url'),ogImage:meta('og:image'),twitter:meta('twitter:card'),headers});}
+  6 |  const robots=await(await fetch(base+'/robots.txt')).text();assert.ok(robots.includes(indexable?'Allow: /':'Disallow: /'));const sitemap=await(await fetch(base+'/sitemap.xml')).text();const locations=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);assert.equal(locations.length,indexable?5:0);if(indexable)for(const path of paths)assert.ok(locations.includes(new URL(path,origin).href));
+  7 |  const rejected=[];for(const path of ['/projetos/slug-inexistente','/experimentos/hero-projeto']){const r=await fetch(base+path);assert.equal(r.status,404);const body=await r.text();assert.ok(/<meta name="robots" content="[^"]*noindex/.test(body));rejected.push({path,status:r.status,noindex:true});}
+    at capture (D:\projects\portifolio\.audit\phase-i\capture-policy.mjs:4:503)
+    at default (D:\projects\portifolio\.audit\phase-i\capture-policy.mjs:11:33)

@@ -1,0 +1,14 @@
+[
+  {
+    "mode": "normal",
+    "score": 85,
+    "lcp": 3487.3562,
+    "tbt": 281
+  },
+  {
+    "mode": "without-lower-motion",
+    "score": 91,
+    "lcp": 3208.8178,
+    "tbt": 149
+  }
+]

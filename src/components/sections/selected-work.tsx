@@ -87,7 +87,8 @@ export function SelectedWork() {
                       </div>
                     </div>
                     <figcaption>{media.caption}</figcaption>
-                    {project.slug === "atelie-ingrid-xavier" && (
+                    {(project.slug === "atelie-ingrid-xavier" ||
+                      project.slug === "museu-arte-moderna") && (
                       <a className="text-link" href={media.src}>
                         Abrir captura completa <LinkIcon name="arrow" />
                       </a>

@@ -1,0 +1,5823 @@
+{
+  "stats": {
+    "startTime": "2026-10-18T20:04:35.822Z",
+    "duration": 474203.871,
+    "expected": 379,
+    "skipped": 5,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": [],
+  "cases": [
+    {
+      "file": "carousel-arrival.spec.ts",
+      "title": "carousel tools follow the image, replay and release at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3719,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "carousel-arrival.spec.ts",
+      "title": "carousel tools follow the image, replay and release at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3600,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "carousel-arrival.spec.ts",
+      "title": "carousel tools follow the image, replay and release at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5260,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "carousel-arrival.spec.ts",
+      "title": "carousel tools follow the image, replay and release at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5147,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "carousel-arrival.spec.ts",
+      "title": "carousel tools follow the image, replay and release at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4348,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "carousel-arrival.spec.ts",
+      "title": "carousel tools follow the image, replay and release at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3991,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "robosense-lab stages the real capture, reverses and releases live reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 818,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "museu-arte-moderna stages the real capture, reverses and releases live reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 740,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "industry-week-senai stages the real capture, reverses and releases live reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 756,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 747,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 642,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "direct fragments and failed scripts preserve the museum narrative and original capture",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1326,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "keyboard reading started before hydration takes precedence over a late motion import",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1142,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "robosense-lab stages the real capture, reverses and releases live reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1070,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "museu-arte-moderna stages the real capture, reverses and releases live reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1298,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "industry-week-senai stages the real capture, reverses and releases live reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1481,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1521,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1504,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "direct fragments and failed scripts preserve the museum narrative and original capture",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2334,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "keyboard reading started before hydration takes precedence over a late motion import",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1765,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "robosense-lab stages the real capture, reverses and releases live reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1419,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "museu-arte-moderna stages the real capture, reverses and releases live reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1848,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "industry-week-senai stages the real capture, reverses and releases live reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1583,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1316,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1209,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "direct fragments and failed scripts preserve the museum narrative and original capture",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2272,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "case-motion.spec.ts",
+      "title": "keyboard reading started before hydration takes precedence over a late motion import",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1423,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 320px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1488,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 691,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 768px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 506,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1829,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 320px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1248,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 752,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 768px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 584,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1939,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 320px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1308,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 780,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 768px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 540,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2034,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 320px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1163,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 830,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 768px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 473,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1591,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "cases and navigation remain available without JavaScript",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 834,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "case text, sources and navigation survive failed media and reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 393,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "unknown slugs and inherited names return useful HTTP 404 pages",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1178,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "client navigation discards home motion and does not replay the intro",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 830,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 320px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2206,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1281,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 768px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1191,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3362,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 320px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2899,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1720,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 768px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1495,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5034,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 320px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3174,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3089,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 768px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1236,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4331,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 320px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3578,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1512,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 768px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1340,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2975,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "cases and navigation remain available without JavaScript",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1904,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "case text, sources and navigation survive failed media and reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 867,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "unknown slugs and inherited names return useful HTTP 404 pages",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2583,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "client navigation discards home motion and does not replay the intro",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1736,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 320px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2666,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1366,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 768px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1745,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "robosense-lab renders a complete accessible case at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3642,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 320px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2488,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1227,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 768px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1068,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "museu-arte-moderna renders a complete accessible case at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2866,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 320px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2190,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1394,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 768px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1260,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "industry-week-senai renders a complete accessible case at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2823,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 320px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1722,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1069,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 768px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 932,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "atelie-ingrid-xavier renders a complete accessible case at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2489,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "cases and navigation remain available without JavaScript",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1630,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "case text, sources and navigation survive failed media and reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 895,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "unknown slugs and inherited names return useful HTTP 404 pages",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1917,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "cases.spec.ts",
+      "title": "client navigation discards home motion and does not replay the intro",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2398,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "error.spec.ts",
+      "title": "failed server navigation offers safe keyboard recovery via retry",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1109,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "error.spec.ts",
+      "title": "failed server navigation offers safe keyboard recovery via home",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 975,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "error.spec.ts",
+      "title": "failed server navigation offers safe keyboard recovery via retry",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2278,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "error.spec.ts",
+      "title": "failed server navigation offers safe keyboard recovery via home",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1828,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "error.spec.ts",
+      "title": "failed server navigation offers safe keyboard recovery via retry",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2675,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "error.spec.ts",
+      "title": "failed server navigation offers safe keyboard recovery via home",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2174,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation serves accessible preview content without runtime errors",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2024,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "server content remains available without JavaScript",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 431,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 320px with reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 327,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 375px with reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 355,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 768px with reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 525,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 1440px with reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 515,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation serves accessible preview content without runtime errors",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2974,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "server content remains available without JavaScript",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 887,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 320px with reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 848,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 375px with reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 826,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 768px with reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 827,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 1440px with reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 903,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation serves accessible preview content without runtime errors",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2332,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "server content remains available without JavaScript",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 495,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 320px with reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 667,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 375px with reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 619,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 768px with reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 617,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "foundation.spec.ts",
+      "title": "foundation fits 1440px with reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 696,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero-tools.spec.ts",
+      "title": "real tools enter after the approved handoff, stay outside media and reverse",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6479,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero-tools.spec.ts",
+      "title": "live reduced motion restores accessible tool names and the entire media in normal flow",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1381,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero-tools.spec.ts",
+      "title": "real tools enter after the approved handoff, stay outside media and reverse",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 8155,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero-tools.spec.ts",
+      "title": "live reduced motion restores accessible tool names and the entire media in normal flow",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2798,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero-tools.spec.ts",
+      "title": "real tools enter after the approved handoff, stay outside media and reverse",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 8117,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero-tools.spec.ts",
+      "title": "live reduced motion restores accessible tool names and the entire media in normal flow",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1835,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero.spec.ts",
+      "title": "hero keeps the name, actions and luminous edge separate at every size",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1667,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero.spec.ts",
+      "title": "hero reveals title lines before support and actions, then restores static styles",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2049,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero.spec.ts",
+      "title": "font failure leaves readable identity and functional actions",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 386,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero.spec.ts",
+      "title": "hero keeps the name, actions and luminous edge separate at every size",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2648,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero.spec.ts",
+      "title": "hero reveals title lines before support and actions, then restores static styles",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2060,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero.spec.ts",
+      "title": "font failure leaves readable identity and functional actions",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 687,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero.spec.ts",
+      "title": "hero keeps the name, actions and luminous edge separate at every size",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3486,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero.spec.ts",
+      "title": "hero reveals title lines before support and actions, then restores static styles",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5195,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "hero.spec.ts",
+      "title": "font failure leaves readable identity and functional actions",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 655,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "home.spec.ts",
+      "title": "identity and primary action fit the first fold at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 516,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "home.spec.ts",
+      "title": "identity and primary action fit the first fold at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 639,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "home.spec.ts",
+      "title": "projects show sources and limits and all internal links resolve",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 644,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "home.spec.ts",
+      "title": "identity and primary action fit the first fold at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1023,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "home.spec.ts",
+      "title": "identity and primary action fit the first fold at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1359,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "home.spec.ts",
+      "title": "projects show sources and limits and all internal links resolve",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1177,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "home.spec.ts",
+      "title": "identity and primary action fit the first fold at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 819,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "home.spec.ts",
+      "title": "identity and primary action fit the first fold at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1052,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "home.spec.ts",
+      "title": "projects show sources and limits and all internal links resolve",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 857,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "handwriting advances one stroke at a time, pauses, and lifts to reveal the hero",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1825,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "wheel cancels the curtain at 400ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2256,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "touch cancels the curtain at 400ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2175,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "hash cancels the curtain at 400ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2258,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pagehide cancels the curtain at 400ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2097,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pointer cancels the curtain at 400ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2099,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "navigation focus cancels the curtain at 400ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2093,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "reduced cancels the curtain at 400ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2133,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "wheel cancels the curtain at 1200ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2520,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "touch cancels the curtain at 1200ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2491,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "hash cancels the curtain at 1200ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2524,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pagehide cancels the curtain at 1200ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2573,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pointer cancels the curtain at 1200ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2395,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "navigation focus cancels the curtain at 1200ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2540,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "reduced cancels the curtain at 1200ms without a late replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2594,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "watchdog removes a stalled timeline independently of animation frames",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2113,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "server markup leaves the greeting hidden with JavaScript disabled",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 406,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "handwriting advances one stroke at a time, pauses, and lifts to reveal the hero",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2235,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "wheel cancels the curtain at 400ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2714,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "touch cancels the curtain at 400ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2866,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "hash cancels the curtain at 400ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2848,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pagehide cancels the curtain at 400ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2630,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pointer cancels the curtain at 400ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2597,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "navigation focus cancels the curtain at 400ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2492,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "reduced cancels the curtain at 400ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2697,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "wheel cancels the curtain at 1200ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2631,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "touch cancels the curtain at 1200ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2667,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "hash cancels the curtain at 1200ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3328,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pagehide cancels the curtain at 1200ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2671,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pointer cancels the curtain at 1200ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2717,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "navigation focus cancels the curtain at 1200ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2787,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "reduced cancels the curtain at 1200ms without a late replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2615,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "watchdog removes a stalled timeline independently of animation frames",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1478,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "server markup leaves the greeting hidden with JavaScript disabled",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 777,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "handwriting advances one stroke at a time, pauses, and lifts to reveal the hero",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4723,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "wheel cancels the curtain at 400ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6080,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "touch cancels the curtain at 400ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6167,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "hash cancels the curtain at 400ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6245,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pagehide cancels the curtain at 400ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6035,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pointer cancels the curtain at 400ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6062,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "navigation focus cancels the curtain at 400ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6047,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "reduced cancels the curtain at 400ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6089,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "wheel cancels the curtain at 1200ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6941,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "touch cancels the curtain at 1200ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6919,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "hash cancels the curtain at 1200ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 7047,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pagehide cancels the curtain at 1200ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6964,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "pointer cancels the curtain at 1200ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6925,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "navigation focus cancels the curtain at 1200ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 7043,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "reduced cancels the curtain at 1200ms without a late replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6957,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "watchdog removes a stalled timeline independently of animation frames",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1197,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "intro.spec.ts",
+      "title": "server markup leaves the greeting hidden with JavaScript disabled",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 567,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "one surface interpolates dimensions with a stable center and unscaled avatar",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1175,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "reversal responds during motion and exiting links are immediately inert",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2213,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "keyboard focus and runtime reduced motion finish clipped transitions immediately",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 568,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "outside pointer resolves panel focus without taking the destination focus",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 553,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "a failed animation still exposes every destination",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2450,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "one surface interpolates dimensions with a stable center and unscaled avatar",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1655,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "reversal responds during motion and exiting links are immediately inert",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2669,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "keyboard focus and runtime reduced motion finish clipped transitions immediately",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 992,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "outside pointer resolves panel focus without taking the destination focus",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1060,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "a failed animation still exposes every destination",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1348,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "one surface interpolates dimensions with a stable center and unscaled avatar",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1599,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "reversal responds during motion and exiting links are immediately inert",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2475,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "keyboard focus and runtime reduced motion finish clipped transitions immediately",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1019,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "outside pointer resolves panel focus without taking the destination focus",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1083,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "island-motion.spec.ts",
+      "title": "a failed animation still exposes every destination",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1861,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "Atelie preview is bounded and retains a direct link to the entire capture",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 743,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "focusing lower content then wheeling preserves layout and keeps focus below navigation",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2699,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "About stays readable in its reading range and releases on reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 531,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "lower sections keep the same grid when anchor navigation resumes",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 696,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "Atelie preview is bounded and retains a direct link to the entire capture",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1346,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "focusing lower content then wheeling preserves layout and keeps focus below navigation",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3279,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "About stays readable in its reading range and releases on reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 818,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "lower sections keep the same grid when anchor navigation resumes",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1555,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "Atelie preview is bounded and retains a direct link to the entire capture",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1483,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "focusing lower content then wheeling preserves layout and keeps focus below navigation",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3600,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "About stays readable in its reading range and releases on reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1224,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "lower-scroll.spec.ts",
+      "title": "lower sections keep the same grid when anchor navigation resumes",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1308,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "greeting and hero entrance complete within 2s, keeps content available and does not replay",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2366,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "reveal chunk failure leaves sections and keyboard navigation usable",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 509,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "initial reduced motion avoids animation chunks and capsule motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 373,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "keyboard skip and Escape cancel without trapping or losing focus",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1101,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "denied storage does not stop the intro from completing",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1850,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "failed animation chunk restores the static page",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1414,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "independent 2.2s timeout rejects a late animation import",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3087,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "direct hashes and live reduced motion bypass or cancel the intro",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2240,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "greeting and hero entrance complete within 2s, keeps content available and does not replay",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2897,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "reveal chunk failure leaves sections and keyboard navigation usable",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1171,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "initial reduced motion avoids animation chunks and capsule motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 830,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "keyboard skip and Escape cancel without trapping or losing focus",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1248,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "denied storage does not stop the intro from completing",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3142,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "failed animation chunk restores the static page",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1152,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "independent 2.2s timeout rejects a late animation import",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3138,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "direct hashes and live reduced motion bypass or cancel the intro",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2666,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "greeting and hero entrance complete within 2s, keeps content available and does not replay",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5283,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "reveal chunk failure leaves sections and keyboard navigation usable",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 858,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "initial reduced motion avoids animation chunks and capsule motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 652,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "keyboard skip and Escape cancel without trapping or losing focus",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 967,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "denied storage does not stop the intro from completing",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4652,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "failed animation chunk restores the static page",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1131,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "independent 2.2s timeout rejects a late animation import",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 7452,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "direct hashes and live reduced motion bypass or cancel the intro",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6235,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "disclosure follows keyboard order and Escape returns focus",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2451,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "outside click and leaving focus close without stealing the new focus",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 543,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "pointer opening keeps Escape available and returns focus to the toggle",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 433,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10958,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 12284,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "navigation links remain usable without JavaScript",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 422,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "disclosure follows keyboard order and Escape returns focus",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4546,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "outside click and leaving focus close without stealing the new focus",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1489,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "pointer opening keeps Escape available and returns focus to the toggle",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 850,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 12523,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10709,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "navigation links remain usable without JavaScript",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 760,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "disclosure follows keyboard order and Escape returns focus",
+      "project": "webkit",
+      "status": "skipped",
+      "expected": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+            "line": 8,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 160,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "outside click and leaving focus close without stealing the new focus",
+      "project": "webkit",
+      "status": "skipped",
+      "expected": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+            "line": 44,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 180,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "pointer opening keeps Escape available and returns focus to the toggle",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 877,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10254,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "section selection, hash and context work at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 11025,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "navigation links remain usable without JavaScript",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 638,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "four real projects keep their order, links and full width through forward and reverse navigation",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6645,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "Clawd stays above the RoboSense frame and centered at supported desktop sizes",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2161,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "popup arrival overshoots once and live reduced motion clears its transforms",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2161,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "new projects are legible and have real media in no-js mobile flow",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 883,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "new projects are legible and have real media in reduced mobile flow",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 910,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "four real projects keep their order, links and full width through forward and reverse navigation",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 7964,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "Clawd stays above the RoboSense frame and centered at supported desktop sizes",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2827,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "popup arrival overshoots once and live reduced motion clears its transforms",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2590,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "new projects are legible and have real media in no-js mobile flow",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1269,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "new projects are legible and have real media in reduced mobile flow",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1393,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "four real projects keep their order, links and full width through forward and reverse navigation",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6993,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "Clawd stays above the RoboSense frame and centered at supported desktop sizes",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2167,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "popup arrival overshoots once and live reduced motion clears its transforms",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2326,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "new projects are legible and have real media in no-js mobile flow",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1273,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "project-expansion.spec.ts",
+      "title": "new projects are legible and have real media in reduced mobile flow",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1478,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "content order, consolidated details, tool icons and contact match the requested composition",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1697,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "keyboard focus brings each carousel link into view without removing its pin",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2811,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "a cancelled native smooth scroll still brings the focused destination into view",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1377,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "hover opens navigation and preserves the scene forwards and backwards",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 8075,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1964,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "ribbons repeat equal groups continuously and respect reduced motion without a control",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 907,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "short desktops fall back to natural content height without clipped project text",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 717,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "content order, consolidated details, tool icons and contact match the requested composition",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3293,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "keyboard focus brings each carousel link into view without removing its pin",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3202,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "a cancelled native smooth scroll still brings the focused destination into view",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2244,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "hover opens navigation and preserves the scene forwards and backwards",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9431,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3207,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "ribbons repeat equal groups continuously and respect reduced motion without a control",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2119,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "short desktops fall back to natural content height without clipped project text",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3477,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "content order, consolidated details, tool icons and contact match the requested composition",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2682,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "keyboard focus brings each carousel link into view without removing its pin",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3533,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "a cancelled native smooth scroll still brings the focused destination into view",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1766,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "hover opens navigation and preserves the scene forwards and backwards",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4651,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "direct skills navigation starts at the first row and every paragraph remains readable",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2827,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "ribbons repeat equal groups continuously and respect reduced motion without a control",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1373,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "short desktops fall back to natural content height without clipped project text",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1515,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3842,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 375px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3106,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 768px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3007,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 1440px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4073,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "panel survives resizing and scrolls in short landscape viewports",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 687,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "reduced motion updates immediately and keyboard focus stays visible",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1073,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 13139,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6008,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 375px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3319,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 768px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3516,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 1440px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5309,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "panel survives resizing and scrolls in short landscape viewports",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1494,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "reduced motion updates immediately and keyboard focus stays visible",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2730,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "firefox",
+      "status": "skipped",
+      "expected": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Native zoom uses a Chromium extension.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+            "line": 147,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 2,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3326,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 375px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2750,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 768px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2651,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 1440px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5114,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "panel survives resizing and scrolls in short landscape viewports",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1175,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "reduced motion updates immediately and keyboard focus stays visible",
+      "project": "webkit",
+      "status": "skipped",
+      "expected": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+            "line": 102,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 197,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "webkit",
+      "status": "skipped",
+      "expected": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Native zoom uses a Chromium extension.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+            "line": 147,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 1,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "RoboSense recedes before its text and restores on reverse scroll",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 496,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "About covers the reading section with a flattening top edge at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 757,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "About covers the reading section with a flattening top edge at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 565,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "Claude Code is present in every project; left blur belongs only to the horizontal carousel",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1422,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "RoboSense recedes before its text and restores on reverse scroll",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2846,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "About covers the reading section with a flattening top edge at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2207,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "About covers the reading section with a flattening top edge at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2082,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "Claude Code is present in every project; left blur belongs only to the horizontal carousel",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1977,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "RoboSense recedes before its text and restores on reverse scroll",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1531,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "About covers the reading section with a flattening top edge at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1463,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "About covers the reading section with a flattening top edge at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1080,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "robo-handoff.spec.ts",
+      "title": "Claude Code is present in every project; left blur belongs only to the horizontal carousel",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1495,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "supporting sections animate reversibly and contact stays natural at 1440px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3442,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "supporting sections animate reversibly and contact stays natural at 375px",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2111,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "crossed ribbons loop, react to both scroll directions and stop offscreen or on reduced motion",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4762,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "page lifecycle releases motion and restores without duplicate pins",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 646,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "supporting sections animate reversibly and contact stays natural at 1440px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4524,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "supporting sections animate reversibly and contact stays natural at 375px",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3571,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "crossed ribbons loop, react to both scroll directions and stop offscreen or on reduced motion",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6386,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "page lifecycle releases motion and restores without duplicate pins",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2066,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "supporting sections animate reversibly and contact stays natural at 1440px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4266,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "supporting sections animate reversibly and contact stays natural at 375px",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2330,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "crossed ribbons loop, react to both scroll directions and stop offscreen or on reduced motion",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5744,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "page lifecycle releases motion and restores without duplicate pins",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1271,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "seo.spec.ts",
+      "title": "metadata, crawler policy and sitemap agree across all public routes",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1068,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "seo.spec.ts",
+      "title": "native metadata assets have the expected formats and dimensions",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1137,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "seo.spec.ts",
+      "title": "metadata, crawler policy and sitemap agree across all public routes",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2161,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "seo.spec.ts",
+      "title": "native metadata assets have the expected formats and dimensions",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2297,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "seo.spec.ts",
+      "title": "metadata, crawler policy and sitemap agree across all public routes",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1402,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "seo.spec.ts",
+      "title": "native metadata assets have the expected formats and dimensions",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1156,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "one bounded scene moves projects horizontally, changes backgrounds and reverses",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1022,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "scene releases on reduced with every image and link available",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 761,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "scene releases on pagehide with every image and link available",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 637,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "resize removes pin on narrow or short windows and restores desktop safely",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1307,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "authentic media load with proportions intact in no-js flow",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 763,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "authentic media load with proportions intact in reduced flow",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 735,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "authentic media load with proportions intact in hash flow",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 922,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "pinned media stays below navigation in wide short viewports",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2173,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "mobile receives section transitions while only desktop pins the project track",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1365,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "cta navigation keeps the scene and reaches its destination",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2341,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "menu navigation keeps the scene and reaches its destination",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2735,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "direct-hash navigation keeps the scene and reaches its destination",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1342,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "live preference and BFCache restore one scene without accumulating pins",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1443,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "content focus keeps scene geometry and keyboard restores the approved hero",
+      "project": "chromium",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 678,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "one bounded scene moves projects horizontally, changes backgrounds and reverses",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2922,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "scene releases on reduced with every image and link available",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1761,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "scene releases on pagehide with every image and link available",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2791,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "resize removes pin on narrow or short windows and restores desktop safely",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3357,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "authentic media load with proportions intact in no-js flow",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1239,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "authentic media load with proportions intact in reduced flow",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1613,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "authentic media load with proportions intact in hash flow",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1716,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "pinned media stays below navigation in wide short viewports",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3142,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "mobile receives section transitions while only desktop pins the project track",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2053,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "cta navigation keeps the scene and reaches its destination",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3368,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "menu navigation keeps the scene and reaches its destination",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3801,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "direct-hash navigation keeps the scene and reaches its destination",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2612,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "live preference and BFCache restore one scene without accumulating pins",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2954,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "content focus keeps scene geometry and keyboard restores the approved hero",
+      "project": "firefox",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1360,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "one bounded scene moves projects horizontally, changes backgrounds and reverses",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2134,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "scene releases on reduced with every image and link available",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1267,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "scene releases on pagehide with every image and link available",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1281,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "resize removes pin on narrow or short windows and restores desktop safely",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2941,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "authentic media load with proportions intact in no-js flow",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1394,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "authentic media load with proportions intact in reduced flow",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1663,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "authentic media load with proportions intact in hash flow",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2064,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "pinned media stays below navigation in wide short viewports",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2885,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "mobile receives section transitions while only desktop pins the project track",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1967,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "cta navigation keeps the scene and reaches its destination",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1922,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "menu navigation keeps the scene and reaches its destination",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2414,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "direct-hash navigation keeps the scene and reaches its destination",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1458,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "live preference and BFCache restore one scene without accumulating pins",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2971,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "content focus keeps scene geometry and keyboard restores the approved hero",
+      "project": "webkit",
+      "status": "expected",
+      "expected": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1203,
+          "retry": 0
+        }
+      ]
+    }
+  ]
+}

@@ -5,12 +5,13 @@ export const additionalProjects = [
     name: "Museu de Arte Moderna",
     category: "Museu virtual",
     summary:
-      "Um percurso pela Semana de Arte Moderna, com galerias, obras e fichas de leitura que acompanham o olhar.",
+      "Um museu em realidade virtual sobre a Semana de Arte Moderna de 1922, com storytelling audiovisual e espaço para obras dos estudantes do SESI de Sorocaba.",
     stack: ["Unity", "C#"],
     status:
-      "Visita registrada em vídeo. Projeto compartilhado; participação declarada pelo autor, ainda sem contribuições no repositório.",
+      "Apresentação prevista para 2026. Visita registrada em vídeo; participação declarada pelo autor, ainda sem contribuições no repositório.",
     repository: "https://github.com/rafaeldominguesdev/semana-da-arte-moderna",
-    evidence: "Vídeo do percurso e cena MuseumScene no repositório.",
+    evidence:
+      "Relato do autor, vídeo do percurso e cena MuseumScene no repositório.",
   },
   {
     slug: "kord",
@@ -29,8 +30,8 @@ export const additionalProjects = [
 export const additionalMedia = {
   museum: {
     src: "/images/projects/museu-arte-moderna/hall.webp",
-    width: 1440,
-    height: 665,
+    width: 2340,
+    height: 1080,
     alt: "Hall do museu virtual, com piso de madeira, bancos e arcos que levam às galerias de arte moderna.",
     caption:
       "Hall do museu · frame aos 10s do vídeo de visita fornecido pelo autor.",

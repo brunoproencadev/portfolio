@@ -1,0 +1,32 @@
+[
+  {
+    "path": ".audit/phase-g-cinematic-resume/confirmed/page@4c9385649a78c49b4072d0339fa7c30c.webm",
+    "width": 374,
+    "height": 812,
+    "fps": 25.0,
+    "frames": 585.0,
+    "duration": 23.4,
+    "sha256": "8e03e82e094eeb439f8a5cabcd67e6748bf84ba9f48d70628e26f3976860b892",
+    "sequence": "374-sequence-1.jpg"
+  },
+  {
+    "path": ".audit/phase-g-cinematic-resume/confirmed/page@89b968d8ece9da4c71e08c0feaf63996.webm",
+    "width": 1440,
+    "height": 900,
+    "fps": 25.0,
+    "frames": 1208.0,
+    "duration": 48.32,
+    "sha256": "e78e5ad8f1e016290cae0f595ca8e5d9e3299b42df615c8be4bcea1d6c06a76b",
+    "sequence": "1440-sequence-2.jpg"
+  },
+  {
+    "path": ".audit/phase-g-cinematic-resume/confirmed/page@971978ca2cad1b3239687058d4e9d337.webm",
+    "width": 1920,
+    "height": 1080,
+    "fps": 25.0,
+    "frames": 326.0,
+    "duration": 13.04,
+    "sha256": "e582f78396de41ef1f87d09b1397d68862e93be465066f8c9944a14b6817be37",
+    "sequence": "1920-sequence-3.jpg"
+  }
+]

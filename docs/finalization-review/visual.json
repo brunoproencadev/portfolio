@@ -1,0 +1,23 @@
+{
+  "rows": [
+    {
+      "width": 105.328125,
+      "currentSrc": "http://127.0.0.1:3117/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=256&q=75",
+      "naturalWidth": 111,
+      "dpr": 2,
+      "headingStable": true,
+      "viewportWidth": 1440
+    },
+    {
+      "width": 43.3125,
+      "currentSrc": "http://127.0.0.1:3117/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=256&q=75",
+      "naturalWidth": 111,
+      "dpr": 2,
+      "headingStable": true,
+      "viewportWidth": 375
+    }
+  ],
+  "icoSizesBefore": [16, 32, 48],
+  "icoSizesAfter": [16, 32, 48, 64],
+  "note": "Native-size PNG entries rendered in browser; not a screenshot of browser tab chrome."
+}

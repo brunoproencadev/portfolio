@@ -1,0 +1,972 @@
+{
+  "date": "2026-10-18",
+  "planCommit": "81641c0bf2077dfb6b8ef0e07f4efcda1f9d33b9",
+  "retainedProductChanges": [],
+  "preserved": [
+    {
+      "file": "docs/PHASE_H_PLAN.md",
+      "sha256": "2D8C9EDFD49803E05EBBFE35617F2C0DA87ED5708B5D4BE731B381A9E84AF21C"
+    },
+    {
+      "file": "src/components/projects/case-capture.tsx",
+      "sha256": "A2A6F857A589BE98DF1DAF353B1A136728994064D87A7429F7EF74591693587B"
+    },
+    {
+      "file": "src/components/sections/hero-project.tsx",
+      "sha256": "0F2B85556AC0A2D38B0AAD582AA7E83C3759AA3847D0BEB2A715ACAD52B59DAA"
+    },
+    {
+      "file": "tests/e2e/refinement.spec.ts",
+      "sha256": "1015BF7060CD5C25CB76A6B74EC35A0AFC229203A09EFC33788F74C73548D9EF"
+    }
+  ],
+  "limitations": [
+    "Three runs per product candidate and restored route; sequential series, not randomized causal proof.",
+    "Probes have one run per condition and change behavior; diagnostic only.",
+    "Observed trace breakdown is unthrottled; LCP score is simulated. Do not add these timings together.",
+    "No full E2E or visual gate on rejected product candidates. Previous complete suite remains separate.",
+    "Only home and Atelie remeasured after restoration; other route metrics remain from lighthouse-restored."
+  ],
+  "excludedAttempts": [
+    "Probe before restarting server: CHROME_INTERSTITIAL_ERROR, no valid trace.",
+    "Initial trace reader expected traces.defaultPass; corrected to artifacts.Trace.",
+    "Native-icons preliminary preview started before build completion; stopped, health checked, then repeated in confirm directory.",
+    "PowerShell Invoke-WebRequest health check failed without UseBasicParsing; no measurement started in that attempt."
+  ],
+  "series": [
+    {
+      "folder": "lighthouse-native-icons-confirm",
+      "disposition": "reverted",
+      "machine": {
+        "platform": "win32",
+        "release": "10.0.26300",
+        "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+        "memory": 29953048576,
+        "node": "v24.15.0"
+      },
+      "config": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "version": "13.5.0",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "runs": [
+        {
+          "route": "/",
+          "run": 1,
+          "timestamp": "2026-10-18T20:34:51.085Z",
+          "warnings": [],
+          "scores": {
+            "performance": 84,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 3543.0678,
+          "cls": 0.03888213851761847,
+          "tbt": 307.5,
+          "fcp": 925.0338999999999,
+          "bytes": 317212,
+          "scriptBytes": 213339,
+          "requestCount": 29
+        },
+        {
+          "route": "/",
+          "run": 2,
+          "timestamp": "2026-10-18T20:35:02.004Z",
+          "warnings": [],
+          "scores": {
+            "performance": 84,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 3508.9568,
+          "cls": 0.03888213851761847,
+          "tbt": 291.5,
+          "fcp": 910.4784,
+          "bytes": 317212,
+          "scriptBytes": 213339,
+          "requestCount": 29
+        },
+        {
+          "route": "/",
+          "run": 3,
+          "timestamp": "2026-10-18T20:35:13.267Z",
+          "warnings": [],
+          "scores": {
+            "performance": 71,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 3946.8004,
+          "cls": 0,
+          "tbt": 621,
+          "fcp": 914.4002,
+          "bytes": 317212,
+          "scriptBytes": 213339,
+          "requestCount": 29
+        }
+      ],
+      "medians": {
+        "lcp": 3543.0678,
+        "cls": 0.03888213851761847,
+        "tbt": 307.5,
+        "fcp": 914.4002,
+        "bytes": 317212,
+        "scriptBytes": 213339,
+        "performance": 84
+      }
+    },
+    {
+      "folder": "lighthouse-server-capture",
+      "disposition": "reverted",
+      "machine": {
+        "platform": "win32",
+        "release": "10.0.26300",
+        "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+        "memory": 29953048576,
+        "node": "v24.15.0"
+      },
+      "config": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "version": "13.5.0",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "runs": [
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "run": 1,
+          "timestamp": "2026-10-18T20:40:11.681Z",
+          "warnings": [],
+          "scores": {
+            "performance": 87,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 3109.9174000000003,
+          "cls": 0,
+          "tbt": 326,
+          "fcp": 922.6116,
+          "bytes": 301165,
+          "scriptBytes": 165269,
+          "requestCount": 20
+        },
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "run": 2,
+          "timestamp": "2026-10-18T20:40:20.610Z",
+          "warnings": [],
+          "scores": {
+            "performance": 95,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 2844.3397999999997,
+          "cls": 0,
+          "tbt": 81,
+          "fcp": 908.8932,
+          "bytes": 301165,
+          "scriptBytes": 165269,
+          "requestCount": 20
+        },
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "run": 3,
+          "timestamp": "2026-10-18T20:40:29.427Z",
+          "warnings": [],
+          "scores": {
+            "performance": 94,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 2900.98455,
+          "cls": 0,
+          "tbt": 130,
+          "fcp": 913.9897000000001,
+          "bytes": 301165,
+          "scriptBytes": 165269,
+          "requestCount": 20
+        }
+      ],
+      "medians": {
+        "lcp": 2900.98455,
+        "cls": 0,
+        "tbt": 130,
+        "fcp": 913.9897000000001,
+        "bytes": 301165,
+        "scriptBytes": 165269,
+        "performance": 94
+      }
+    },
+    {
+      "folder": "lighthouse-hydration-restored-home",
+      "disposition": "restored-source",
+      "machine": {
+        "platform": "win32",
+        "release": "10.0.26300",
+        "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+        "memory": 29953048576,
+        "node": "v24.15.0"
+      },
+      "config": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "version": "13.5.0",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "runs": [
+        {
+          "route": "/",
+          "run": 1,
+          "timestamp": "2026-10-18T20:43:14.954Z",
+          "warnings": [],
+          "scores": {
+            "performance": 86,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 3438.8332000000005,
+          "cls": 0.03888213851761847,
+          "tbt": 250.5,
+          "fcp": 915.9166,
+          "bytes": 314641,
+          "scriptBytes": 213339,
+          "requestCount": 29
+        },
+        {
+          "route": "/",
+          "run": 2,
+          "timestamp": "2026-10-18T20:43:25.544Z",
+          "warnings": [],
+          "scores": {
+            "performance": 89,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 3362.0527999999995,
+          "cls": 0.03888213851761847,
+          "tbt": 203.5,
+          "fcp": 908.5264,
+          "bytes": 314641,
+          "scriptBytes": 213339,
+          "requestCount": 29
+        },
+        {
+          "route": "/",
+          "run": 3,
+          "timestamp": "2026-10-18T20:43:35.955Z",
+          "warnings": [],
+          "scores": {
+            "performance": 86,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 3412.2982,
+          "cls": 0.03888213851761847,
+          "tbt": 249,
+          "fcp": 909.1491000000001,
+          "bytes": 314641,
+          "scriptBytes": 213339,
+          "requestCount": 29
+        }
+      ],
+      "medians": {
+        "lcp": 3412.2982,
+        "cls": 0.03888213851761847,
+        "tbt": 249,
+        "fcp": 909.1491000000001,
+        "bytes": 314641,
+        "scriptBytes": 213339,
+        "performance": 86
+      }
+    },
+    {
+      "folder": "lighthouse-hydration-restored-atelie",
+      "disposition": "restored-source",
+      "machine": {
+        "platform": "win32",
+        "release": "10.0.26300",
+        "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+        "memory": 29953048576,
+        "node": "v24.15.0"
+      },
+      "config": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "version": "13.5.0",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "runs": [
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "run": 1,
+          "timestamp": "2026-10-18T20:43:51.565Z",
+          "warnings": [],
+          "scores": {
+            "performance": 95,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 2783.0859,
+          "cls": 0,
+          "tbt": 91.00000000000023,
+          "fcp": 911.3906,
+          "bytes": 300993,
+          "scriptBytes": 165269,
+          "requestCount": 20
+        },
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "run": 2,
+          "timestamp": "2026-10-18T20:44:00.176Z",
+          "warnings": [],
+          "scores": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 2814.97145,
+          "cls": 0,
+          "tbt": 64.5,
+          "fcp": 907.3143,
+          "bytes": 300993,
+          "scriptBytes": 165269,
+          "requestCount": 20
+        },
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "run": 3,
+          "timestamp": "2026-10-18T20:44:09.399Z",
+          "warnings": [],
+          "scores": {
+            "performance": 95,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "lcp": 2864.74025,
+          "cls": 0,
+          "tbt": 93,
+          "fcp": 914.4935,
+          "bytes": 300993,
+          "scriptBytes": 165269,
+          "requestCount": 20
+        }
+      ],
+      "medians": {
+        "lcp": 2814.97145,
+        "cls": 0,
+        "tbt": 91.00000000000023,
+        "fcp": 911.3906,
+        "bytes": 300993,
+        "scriptBytes": 165269,
+        "performance": 95
+      }
+    }
+  ],
+  "probes": [
+    {
+      "folder": "render-probe",
+      "interception": "no-filters injected at DOMContentLoaded; no-scripts blocks script URLs",
+      "runs": [
+        {
+          "mode": "baseline",
+          "route": "/",
+          "score": 82,
+          "lcp": 3434.1194000000005,
+          "tbt": 204.5,
+          "fcp": 2056.46455,
+          "lcpSelector": "div.robo-visual > figure.robo-frame > div.robo-media > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 8.236
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 8.468
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 489.339
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 2080.469
+            }
+          ]
+        },
+        {
+          "mode": "baseline",
+          "route": "/projetos/atelie-ingrid-xavier",
+          "score": 96,
+          "lcp": 2808.1356,
+          "tbt": 59,
+          "fcp": 910.0904,
+          "lcpSelector": "figure > div.project-window > div.case-media-window > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 80.0259999847412
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 8.569000015258789
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 10.309
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 424.548
+            }
+          ]
+        },
+        {
+          "mode": "no-scripts",
+          "route": "/",
+          "score": 100,
+          "lcp": 1658.6255000000003,
+          "tbt": 0,
+          "fcp": 908.6255000000001,
+          "lcpSelector": "div.robo-visual > figure.robo-frame > div.robo-media > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 6.919000015258789
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 8.42899998474121
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 11.865
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 697.318
+            }
+          ]
+        },
+        {
+          "mode": "no-scripts",
+          "route": "/projetos/atelie-ingrid-xavier",
+          "score": 99,
+          "lcp": 1960.8218000000002,
+          "tbt": 0,
+          "fcp": 910.8217999999999,
+          "lcpSelector": "figure > div.project-window > div.case-media-window > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 17.441999984741212
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 16.04500001525879
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 14.641
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 608.469
+            }
+          ]
+        },
+        {
+          "mode": "no-filters",
+          "route": "/",
+          "score": 88,
+          "lcp": 3391.5108,
+          "tbt": 217.5,
+          "fcp": 908.7554,
+          "lcpSelector": "div.robo-visual > figure.robo-frame > div.robo-media > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 7.472
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 11.445
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 13.588
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 203.635
+            }
+          ]
+        },
+        {
+          "mode": "no-filters",
+          "route": "/projetos/atelie-ingrid-xavier",
+          "score": 95,
+          "lcp": 2787.9095,
+          "tbt": 96,
+          "fcp": 911.2729999999999,
+          "lcpSelector": "figure > div.project-window > div.case-media-window > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 9.364
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 9.879
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 11.446
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 376.381
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "folder": "render-probe-early",
+      "interception": "all document responses intercepted, including baseline; do not compare across probe groups",
+      "runs": [
+        {
+          "mode": "baseline",
+          "route": "/",
+          "score": 80,
+          "lcp": 3929.793251150021,
+          "tbt": 303.5,
+          "fcp": 1356.3966255750106,
+          "lcpSelector": "div.robo-visual > figure.robo-frame > div.robo-media > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 1.212000015258789
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 31.845999984741212
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 21.19
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 490.397
+            }
+          ]
+        },
+        {
+          "mode": "baseline",
+          "route": "/projetos/atelie-ingrid-xavier",
+          "score": 95,
+          "lcp": 2909.032145068002,
+          "tbt": 74.5,
+          "fcp": 1056.6880967120017,
+          "lcpSelector": "figure > div.project-window > div.case-media-window > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 1.718
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 22.453
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 25.283
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 385.777
+            }
+          ]
+        },
+        {
+          "mode": "no-filters",
+          "route": "/",
+          "score": 84,
+          "lcp": 3904.3697111514007,
+          "tbt": 220,
+          "fcp": 1357.1848555757,
+          "lcpSelector": "div.robo-visual > figure.robo-frame > div.robo-media > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 1.579000015258789
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 28.66999998474121
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 16.173
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 380.379
+            }
+          ]
+        },
+        {
+          "mode": "no-filters",
+          "route": "/projetos/atelie-ingrid-xavier",
+          "score": 94,
+          "lcp": 2949.4957365380424,
+          "tbt": 110,
+          "fcp": 1059.6638243586947,
+          "lcpSelector": "figure > div.project-window > div.case-media-window > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 1.975
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 27.599
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 25.619
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 251.494
+            }
+          ]
+        },
+        {
+          "mode": "no-decode",
+          "route": "/",
+          "score": 77,
+          "lcp": 4044.5441674304348,
+          "tbt": 386.5,
+          "fcp": 1359.2720837152174,
+          "lcpSelector": "div.robo-visual > figure.robo-frame > div.robo-media > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 2.78
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 34.899
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 27.768
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 495.632
+            }
+          ]
+        },
+        {
+          "mode": "no-decode",
+          "route": "/projetos/atelie-ingrid-xavier",
+          "score": 94,
+          "lcp": 2969.218145068343,
+          "tbt": 134,
+          "fcp": 1056.8120967122286,
+          "lcpSelector": "figure > div.project-window > div.case-media-window > img",
+          "observedBreakdown": [
+            {
+              "subpart": "timeToFirstByte",
+              "label": "Time to first byte",
+              "duration": 1.461000015258789
+            },
+            {
+              "subpart": "resourceLoadDelay",
+              "label": "Resource load delay",
+              "duration": 20.05699998474121
+            },
+            {
+              "subpart": "resourceLoadDuration",
+              "label": "Resource load duration",
+              "duration": 16.659
+            },
+            {
+              "subpart": "elementRenderDelay",
+              "label": "Element render delay",
+              "duration": 410.209
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

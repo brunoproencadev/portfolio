@@ -1,0 +1,371 @@
+{
+  "decision": "rejected-no-consistent-gain",
+  "interception": true,
+  "environment": {
+    "machine": {
+      "node": "v24.15.0",
+      "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+      "platform": "win32"
+    },
+    "version": "13.5.0",
+    "config": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": ["performance"],
+      "skipAudits": null
+    },
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "benchmarkIndex": 2409,
+      "credits": {}
+    }
+  },
+  "rows": [
+    {
+      "index": 0,
+      "mode": "base",
+      "documents": 1,
+      "timestamp": "2026-10-25T13:48:11.066Z",
+      "score": 83,
+      "lcp": 3851.6217350351826,
+      "tbt": 248,
+      "cls": 0.03888213851761847,
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 1008.5239999999819
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 758.9839999999961
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 437.60000000000014
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 207.4879999999969
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 58.05600000000001
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 19.527999999999995
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 15.335999999999988
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 1,
+      "mode": "candidate",
+      "documents": 1,
+      "timestamp": "2026-10-25T13:48:21.319Z",
+      "score": 84,
+      "lcp": 3835.825738304813,
+      "tbt": 222,
+      "cls": 0.03888213851761847,
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 994.4279999999873
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 714.1199999999973
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 411.20800000000025
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 199.7079999999976
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 49.87599999999999
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 22.892
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 13.759999999999993
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 2,
+      "mode": "candidate",
+      "documents": 1,
+      "timestamp": "2026-10-25T13:48:31.150Z",
+      "score": 85,
+      "lcp": 3885.0421906438146,
+      "tbt": 192.5,
+      "cls": 0.03888213851761847,
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 960.8799999999873
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 739.9639999999968
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 414.46800000000013
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 201.55199999999758
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 47.324000000000005
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 18.116000000000003
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 9.983999999999993
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 3,
+      "mode": "base",
+      "documents": 1,
+      "timestamp": "2026-10-25T13:48:40.978Z",
+      "score": 84,
+      "lcp": 3891.118188028019,
+      "tbt": 195,
+      "cls": 0.03888213851761847,
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 996.9839999999868
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 742.9079999999963
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 408.16800000000063
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 205.03599999999716
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 60.55999999999999
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 19.612
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 12.827999999999994
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 4,
+      "mode": "base",
+      "documents": 1,
+      "timestamp": "2026-10-25T13:48:50.440Z",
+      "score": 84,
+      "lcp": 3907.1652820423806,
+      "tbt": 202.5,
+      "cls": 0.03888213851761847,
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 991.2559999999853
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 691.8479999999965
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 421.1559999999995
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 192.68399999999718
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 51.59199999999999
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 20.932
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 10.843999999999996
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 5,
+      "mode": "candidate",
+      "documents": 1,
+      "timestamp": "2026-10-25T13:49:00.397Z",
+      "score": 82,
+      "lcp": 3938.6692859653867,
+      "tbt": 251,
+      "cls": 0.03888213851761847,
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 1024.3359999999868
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 710.7119999999973
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 418.00000000000074
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 198.08399999999745
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 46.66800000000002
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 21.904000000000003
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 11.26399999999999
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "medians": {
+    "base": {
+      "score": 84,
+      "lcp": 3891.118188028019,
+      "tbt": 202.5
+    },
+    "candidate": {
+      "score": 84,
+      "lcp": 3885.0421906438146,
+      "tbt": 222
+    }
+  }
+}

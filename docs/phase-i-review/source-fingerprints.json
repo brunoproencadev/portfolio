@@ -1,0 +1,50 @@
+[
+  {
+    "file": ".env.example",
+    "sha256": "28405bce1b7ce98a11e1c3f1b30c89c061b97b0bba3cfdbcbe6594e871598bd2"
+  },
+  {
+    "file": ".gitattributes",
+    "sha256": "bbb894264247ec196a162352b5928d5a7878906de5e90ec3957cb1f47af738d7"
+  },
+  {
+    "file": "src/app/opengraph-image.tsx",
+    "sha256": "aac10eaac621ca351eca07efba505904e918550abe508eb295338c40f95f33b3"
+  },
+  {
+    "file": "src/fonts/manrope-og-400.ttf",
+    "sha256": "a13d9b41b0a471ce58f0e46d377fa3cc76615e4632c3b15eb397caadf7a13f0a"
+  },
+  {
+    "file": "src/fonts/manrope-og-500.ttf",
+    "sha256": "f433e5d333be1128d8ec8a28b8aadd0314d10e14e4105406076666bc830fc15d"
+  },
+  {
+    "file": "src/fonts/OFL.txt",
+    "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+  },
+  {
+    "file": "public/images/profile/github-avatar.png",
+    "sha256": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672"
+  },
+  {
+    "file": "src/config/site.ts",
+    "sha256": "ce195135abc5f4ff4aef8364d25c15112dc26e7af16a83de2844802a7780560b"
+  },
+  {
+    "file": "src/app/robots.ts",
+    "sha256": "216db53e7f288a1f6f6c6075693946bccc427b91ff3d6d120e0f0e442f2349a1"
+  },
+  {
+    "file": "src/app/sitemap.ts",
+    "sha256": "b2403d9890be9947b058cf59698c1c1645a255be39d46cba277d4301d4bdaecb"
+  },
+  {
+    "file": "vercel.json",
+    "sha256": "517556fa798811929fe7fe6dbad130e65c38cd184c62a18288d3b71d1f9373a5"
+  },
+  {
+    "file": "tests/e2e/seo.spec.ts",
+    "sha256": "9a0c564522f0e60274114f2bda78df76e7491d4f50495b311945018fb0c88cf7"
+  }
+]

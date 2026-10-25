@@ -1,8 +1,8 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
-import { projects } from "../../src/data/portfolio";
+import { caseProjects } from "../../src/data/case-studies";
 
-for (const project of projects) {
+for (const project of caseProjects) {
   for (const width of [320, 375, 768, 1440]) {
     test(`${project.slug} renders a complete accessible case at ${width}px`, async ({
       page,
@@ -31,13 +31,30 @@ for (const project of projects) {
         await expect(
           page.getByRole("heading", { name, exact: true }),
         ).toBeVisible();
-      await expect(page.getByRole("img")).toHaveAccessibleName(
-        /Diagrama conceitual/,
-      );
-      await expect(page.getByRole("img")).toHaveAttribute("width", "480");
-      await expect(page.getByRole("img")).toHaveAttribute("height", "260");
-      await expect(page.locator("figcaption")).toContainText(
-        "Esquema conceitual autoral",
+      const diagram = page.locator(".case-diagram").getByRole("img");
+      if (project.slug === "museu-arte-moderna") {
+        await expect(diagram).toHaveCount(0);
+      } else {
+        await expect(diagram).toHaveAccessibleName(/Diagrama conceitual/);
+        await expect(diagram).toHaveAttribute("width", "480");
+        await expect(diagram).toHaveAttribute("height", "260");
+        await expect(page.locator(".case-diagram figcaption")).toContainText(
+          "Esquema conceitual autoral",
+        );
+      }
+      for (const image of await page.locator(".case-media img").all()) {
+        await image.scrollIntoViewIfNeeded();
+        await expect(image).toBeVisible();
+        await expect
+          .poll(() =>
+            image.evaluate((img: HTMLImageElement) => img.naturalWidth),
+          )
+          .toBeGreaterThan(0);
+        await expect(image).not.toHaveAttribute("alt", "");
+      }
+      await expect(page.locator("time")).toHaveAttribute(
+        "datetime",
+        "2026-10-18",
       );
       await expect(
         page.getByRole("link", { name: "Ver repositório" }),
@@ -52,6 +69,11 @@ for (const project of projects) {
           () => document.documentElement.scrollWidth <= innerWidth,
         ),
       ).toBe(true);
+      // Keyboard entry resolves the scroll scene before measuring reading controls.
+      await page
+        .getByRole("link", { name: "Abrir captura completa" })
+        .first()
+        .focus();
       expect(
         await page.locator("a, button").evaluateAll((elements) =>
           elements
@@ -114,12 +136,55 @@ test("cases and navigation remain available without JavaScript", async ({
     await expect(
       page.getByRole("heading", { level: 1, name: "Ateliê Ingrid Xavier" }),
     ).toBeVisible();
+    await page
+      .getByRole("navigation", { name: "Outros cases" })
+      .getByRole("link", { name: "Museu de Arte Moderna" })
+      .click();
+    await expect(
+      page.getByRole("heading", { level: 1, name: "Museu de Arte Moderna" }),
+    ).toBeVisible();
     await page.getByRole("link", { name: "Contato", exact: true }).click();
     await expect(page).toHaveURL(/\/#contato$/);
     await expect(page.locator("#contato")).toBeInViewport();
   } finally {
     await context.close();
   }
+});
+
+test("case text, sources and navigation survive failed media and reduced motion", async ({
+  page,
+  browserName,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.route("**/_next/image?*", (route) => route.abort());
+  await page.goto("/projetos/atelie-ingrid-xavier");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Ateliê Ingrid Xavier",
+  );
+  await expect(page.locator(".case-media figcaption")).toContainText(
+    "Publicação não confirmada",
+  );
+  await page.locator(".case-media-window").focus();
+  await expect(page.locator(".case-media-window")).toBeFocused();
+  const original = page.getByRole("link", { name: "Abrir captura completa" });
+  if (browserName === "webkit" && process.platform === "win32") {
+    // Windows WebKit skips native links on Tab, including plain HTML (QA_PHASE7).
+    await original.focus();
+  } else {
+    await page.keyboard.press("Tab");
+  }
+  await expect(original).toBeFocused();
+  await expect(page.locator(".case-sources a").first()).toHaveAttribute(
+    "href",
+    /\/blob\/[a-f0-9]{40}\//,
+  );
+  await page
+    .getByRole("navigation", { name: "Outros cases" })
+    .getByRole("link", { name: "RoboSense Lab" })
+    .click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "RoboSense Lab",
+  );
 });
 
 test("unknown slugs and inherited names return useful HTTP 404 pages", async ({
@@ -151,10 +216,15 @@ test("client navigation discards home motion and does not replay the intro", asy
 }) => {
   await page.addInitScript(() => {
     const listeners = new Set<EventListenerOrEventListenerObject>();
+    const ids = new WeakMap<object, number>();
+    let nextId = 0;
     const add = EventTarget.prototype.addEventListener;
     const remove = EventTarget.prototype.removeEventListener;
     Object.defineProperty(window, "motionListenerCount", {
       get: () => listeners.size,
+    });
+    Object.defineProperty(window, "motionListenerIds", {
+      get: () => Array.from(listeners, (listener) => ids.get(listener)),
     });
     EventTarget.prototype.addEventListener = function (
       type,
@@ -163,11 +233,13 @@ test("client navigation discards home motion and does not replay the intro", asy
     ) {
       if (
         this instanceof MediaQueryList &&
-        this.media === "(prefers-reduced-motion: reduce)" &&
+        this.media.includes("prefers-reduced-motion") &&
         type === "change" &&
         listener
-      )
+      ) {
+        if (!ids.has(listener)) ids.set(listener, ++nextId);
         listeners.add(listener);
+      }
       return add.call(this, type, listener, options);
     };
     EventTarget.prototype.removeEventListener = function (
@@ -177,7 +249,7 @@ test("client navigation discards home motion and does not replay the intro", asy
     ) {
       if (
         this instanceof MediaQueryList &&
-        this.media === "(prefers-reduced-motion: reduce)" &&
+        this.media.includes("prefers-reduced-motion") &&
         type === "change" &&
         listener
       )
@@ -189,6 +261,9 @@ test("client navigation discards home motion and does not replay the intro", asy
   await expect
     .poll(() => page.evaluate(() => Reflect.get(window, "motionListenerCount")))
     .toBeGreaterThan(0);
+  const homeListeners = await page.evaluate(
+    () => Reflect.get(window, "motionListenerIds") as number[],
+  );
   await page
     .getByRole("link", { name: "Ler case de RoboSense Lab" })
     .evaluate((element: HTMLAnchorElement) => element.click());
@@ -197,8 +272,20 @@ test("client navigation discards home motion and does not replay the intro", asy
     page.getByRole("heading", { level: 1, name: "RoboSense Lab" }),
   ).toBeVisible();
   await expect
-    .poll(() => page.evaluate(() => Reflect.get(window, "motionListenerCount")))
-    .toBe(0);
+    .poll(() =>
+      page.evaluate(
+        (previous) =>
+          (Reflect.get(window, "motionListenerIds") as number[]).filter((id) =>
+            previous.includes(id),
+          ),
+        homeListeners,
+      ),
+    )
+    .toEqual([]);
+  const caseListeners = await page.evaluate(
+    () => Reflect.get(window, "motionListenerIds") as number[],
+  );
+  expect(caseListeners.length).toBeGreaterThan(0);
   await page
     .getByRole("navigation", { name: "Outros cases" })
     .getByRole("link", { name: "Industry Week SENAI" })
@@ -206,6 +293,20 @@ test("client navigation discards home motion and does not replay the intro", asy
   await expect(
     page.getByRole("heading", { level: 1, name: "Industry Week SENAI" }),
   ).toBeVisible();
+  await expect
+    .poll(() =>
+      page.evaluate(
+        (previous) =>
+          (Reflect.get(window, "motionListenerIds") as number[]).filter((id) =>
+            previous.includes(id),
+          ),
+        caseListeners,
+      ),
+    )
+    .toEqual([]);
+  await expect
+    .poll(() => page.evaluate(() => Reflect.get(window, "motionListenerCount")))
+    .toBe(caseListeners.length);
   await page
     .getByRole("link", { name: "BP/ — Bruno Proença — início" })
     .click();

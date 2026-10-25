@@ -1,96 +1,96 @@
 {
-    "captured":  "2026-10-17",
-    "files":  [
-                  {
-                      "sha256":  "bfda8a434dc6ab01ffe192a1452717cf8b6ba49b8ca3bb8b43c4abd2d1de0770",
-                      "file":  "1440-about.jpg",
-                      "bytes":  94368
-                  },
-                  {
-                      "sha256":  "0e2c2dec5992c0b18683826c7ce2885a2f3650f152cf737be7eb7c3f656a2a07",
-                      "file":  "1440-atelie.jpg",
-                      "bytes":  96293
-                  },
-                  {
-                      "sha256":  "ec5b8e33bade197addf6e6746e4249b4ddc979de29dc6f8e198cc8ee8ccb162f",
-                      "file":  "1440-contact.jpg",
-                      "bytes":  65675
-                  },
-                  {
-                      "sha256":  "84b822e0a55409f88957d42f75ffee4c8bbc151f12e119451433237dcaf8e3bd",
-                      "file":  "1440-details.jpg",
-                      "bytes":  49140
-                  },
-                  {
-                      "sha256":  "7b45917059fa8c2ddc26004eaf2e90b14d27960a5be075a2bfa70a2d67b80650",
-                      "file":  "1440-hero.jpg",
-                      "bytes":  70516
-                  },
-                  {
-                      "sha256":  "0e248ba95c93976011a9f5533a158e255897d44d2482f2e9c2d834f8963e8071",
-                      "file":  "1440-industry.jpg",
-                      "bytes":  118270
-                  },
-                  {
-                      "sha256":  "aaad431a167c04176f16ef9b0fe2bec3898df642a538fc12ff0432a7bc124388",
-                      "file":  "1440-ribbons.jpg",
-                      "bytes":  74032
-                  },
-                  {
-                      "sha256":  "ad3613c2b5e51f0fe534d1ef4782d82fe00cdf80136a9c70ef57b6d597cb04f5",
-                      "file":  "1440-skills.jpg",
-                      "bytes":  79433
-                  },
-                  {
-                      "sha256":  "00a6218f7adb7d29cb3aedbb0771b719b7dcb994f6ff1c20d4646a74a2a21455",
-                      "file":  "1440-transition.jpg",
-                      "bytes":  97755
-                  },
-                  {
-                      "sha256":  "37bb309c14ce6f8dce4a5f04ab3daf8f3fd5ab26ca15d4ff19414d3b41c6ae51",
-                      "file":  "375-about.jpg",
-                      "bytes":  47010
-                  },
-                  {
-                      "sha256":  "90eb9ceeb9b6968a2db7c02c07391c26b206d532b69860949bccbd9a739508f3",
-                      "file":  "375-contact.jpg",
-                      "bytes":  35408
-                  },
-                  {
-                      "sha256":  "bc6404ed24ea883538547a14c653aea893dcfd1c360b56c38d3fd153649fc910",
-                      "file":  "375-reduced.jpg",
-                      "bytes":  47418
-                  },
-                  {
-                      "sha256":  "191ad3fd5896d705acda29436a02cbff338e3be093bacfe954e855a7f0775d24",
-                      "file":  "375-ribbons.jpg",
-                      "bytes":  26244
-                  },
-                  {
-                      "sha256":  "5fa33cfc726369dedfe887a4b2de6f5ccee68c5cd07f9a5ec5d2e0c0c618ba0f",
-                      "file":  "375-skills.jpg",
-                      "bytes":  39789
-                  },
-                  {
-                      "sha256":  "85595268b74e50c03b9193e7af2fb1e0076c38fabe83b8e1609b43fc89f43a71",
-                      "file":  "browser.json",
-                      "bytes":  3821
-                  },
-                  {
-                      "sha256":  "585bff5682bfe8fb34977824813d615ffea91bf3fb27f34f02d7cc2b39a433cd",
-                      "file":  "desktop-motion.jpg",
-                      "bytes":  261823
-                  },
-                  {
-                      "sha256":  "8f0c016922dc0d41222414994b05042aebfd0b2c5ac04a9da78000aa5587559f",
-                      "file":  "mobile-motion.jpg",
-                      "bytes":  182123
-                  },
-                  {
-                      "sha256":  "f1889c262bf8f2ae31c5c47c58f49afd3f032fb0f619744629bb2496b90ef6d0",
-                      "file":  "recordings.json",
-                      "bytes":  836
-                  }
-              ],
-    "review":  "Phase F section transitions and ribbons"
+  "captured": "2026-10-17",
+  "files": [
+    {
+      "sha256": "bfda8a434dc6ab01ffe192a1452717cf8b6ba49b8ca3bb8b43c4abd2d1de0770",
+      "file": "1440-about.jpg",
+      "bytes": 94368
+    },
+    {
+      "sha256": "0e2c2dec5992c0b18683826c7ce2885a2f3650f152cf737be7eb7c3f656a2a07",
+      "file": "1440-atelie.jpg",
+      "bytes": 96293
+    },
+    {
+      "sha256": "ec5b8e33bade197addf6e6746e4249b4ddc979de29dc6f8e198cc8ee8ccb162f",
+      "file": "1440-contact.jpg",
+      "bytes": 65675
+    },
+    {
+      "sha256": "84b822e0a55409f88957d42f75ffee4c8bbc151f12e119451433237dcaf8e3bd",
+      "file": "1440-details.jpg",
+      "bytes": 49140
+    },
+    {
+      "sha256": "7b45917059fa8c2ddc26004eaf2e90b14d27960a5be075a2bfa70a2d67b80650",
+      "file": "1440-hero.jpg",
+      "bytes": 70516
+    },
+    {
+      "sha256": "0e248ba95c93976011a9f5533a158e255897d44d2482f2e9c2d834f8963e8071",
+      "file": "1440-industry.jpg",
+      "bytes": 118270
+    },
+    {
+      "sha256": "aaad431a167c04176f16ef9b0fe2bec3898df642a538fc12ff0432a7bc124388",
+      "file": "1440-ribbons.jpg",
+      "bytes": 74032
+    },
+    {
+      "sha256": "ad3613c2b5e51f0fe534d1ef4782d82fe00cdf80136a9c70ef57b6d597cb04f5",
+      "file": "1440-skills.jpg",
+      "bytes": 79433
+    },
+    {
+      "sha256": "00a6218f7adb7d29cb3aedbb0771b719b7dcb994f6ff1c20d4646a74a2a21455",
+      "file": "1440-transition.jpg",
+      "bytes": 97755
+    },
+    {
+      "sha256": "37bb309c14ce6f8dce4a5f04ab3daf8f3fd5ab26ca15d4ff19414d3b41c6ae51",
+      "file": "375-about.jpg",
+      "bytes": 47010
+    },
+    {
+      "sha256": "90eb9ceeb9b6968a2db7c02c07391c26b206d532b69860949bccbd9a739508f3",
+      "file": "375-contact.jpg",
+      "bytes": 35408
+    },
+    {
+      "sha256": "bc6404ed24ea883538547a14c653aea893dcfd1c360b56c38d3fd153649fc910",
+      "file": "375-reduced.jpg",
+      "bytes": 47418
+    },
+    {
+      "sha256": "191ad3fd5896d705acda29436a02cbff338e3be093bacfe954e855a7f0775d24",
+      "file": "375-ribbons.jpg",
+      "bytes": 26244
+    },
+    {
+      "sha256": "5fa33cfc726369dedfe887a4b2de6f5ccee68c5cd07f9a5ec5d2e0c0c618ba0f",
+      "file": "375-skills.jpg",
+      "bytes": 39789
+    },
+    {
+      "sha256": "4277e047a57e0a1d25fe473f3b727558f1ee5a6699f246f1f161835ef5de18c7",
+      "file": "browser.json",
+      "bytes": 3822
+    },
+    {
+      "sha256": "585bff5682bfe8fb34977824813d615ffea91bf3fb27f34f02d7cc2b39a433cd",
+      "file": "desktop-motion.jpg",
+      "bytes": 261823
+    },
+    {
+      "sha256": "8f0c016922dc0d41222414994b05042aebfd0b2c5ac04a9da78000aa5587559f",
+      "file": "mobile-motion.jpg",
+      "bytes": 182123
+    },
+    {
+      "sha256": "f1889c262bf8f2ae31c5c47c58f49afd3f032fb0f619744629bb2496b90ef6d0",
+      "file": "recordings.json",
+      "bytes": 836
+    }
+  ],
+  "review": "Phase F section transitions and ribbons"
 }

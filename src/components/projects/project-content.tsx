@@ -2,6 +2,7 @@ import Link from "next/link";
 import { projects } from "@/data/portfolio";
 import { projectMedia } from "@/data/project-media";
 import { additionalProjects } from "@/data/additional-projects";
+import { caseProjects } from "@/data/case-studies";
 import { LinkIcon } from "./link-icon";
 
 export function ProjectContent({
@@ -37,7 +38,7 @@ export function ProjectContent({
         </div>
       </dl>
       <div className="work-links">
-        {projects.some(({ slug }) => slug === project.slug) && (
+        {caseProjects.some(({ slug }) => slug === project.slug) && (
           <Link
             href={`/projetos/${project.slug}`}
             prefetch={false}

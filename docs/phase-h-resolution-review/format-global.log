@@ -1,0 +1,26 @@
+Checking formatting...
+[warn] .impeccable/design.json
+[warn] docs/hero-review/finish-review.md
+[warn] docs/hero-review/lighthouse-environment.json
+[warn] docs/hero-review/lighthouse-summary.json
+[warn] docs/hero-review/results.json
+[warn] docs/intro-review/lighthouse-environment.json
+[warn] docs/intro-review/lighthouse-summary.json
+[warn] docs/intro-review/results.json
+[warn] docs/PHASE_D_REVIEW.md
+[warn] docs/PHASE_E_REVIEW.md
+[warn] docs/PHASE_F_GAP_ANALYSIS.md
+[warn] docs/PHASE_F_REVIEW.md
+[warn] docs/scroll-gap-review/navigation-bug.json
+[warn] docs/scroll-integration-review/recordings.json
+[warn] docs/scroll-integration-review/verification.json
+[warn] docs/scroll-transitions-review/browser.json
+[warn] docs/scroll-transitions-review/manifest.json
+[warn] docs/story-correction-review/recordings.json
+[warn] docs/story-correction-review/results.json
+[warn] docs/story-correction-review/verification.json
+[warn] docs/story-review/capture-results.json
+[warn] docs/story-review/deployment-check.json
+[warn] docs/story-review/motion-samples.json
+[warn] docs/story-review/wide-short-results.json
+[warn] Code style issues found in 24 files. Run Prettier with --write to fix.

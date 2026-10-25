@@ -1,0 +1,142 @@
+[
+  {
+    "path": "1440-atelie-ingrid-xavier-intro.jpg",
+    "bytes": 61602,
+    "sha256": "730898456c7f97d84f2a717209ff73a90b83491f0122dd986714952e1d0773b0"
+  },
+  {
+    "path": "1440-industry-week-senai-architecture.jpg",
+    "bytes": 63286,
+    "sha256": "ad2225246f916cf5db3e64583f3ba126d7daf825a05c28334f9a0148c4ece7fc"
+  },
+  {
+    "path": "1440-industry-week-senai-intro.jpg",
+    "bytes": 63931,
+    "sha256": "22d249bfb725e6101219c5f17b34331baa3fd4dc3d3f18d6af02473e6703671b"
+  },
+  {
+    "path": "1440-museu-arte-moderna-architecture.jpg",
+    "bytes": 74637,
+    "sha256": "a54d66e32fef8ce7d7c198b0b5e537f6e7c9e22dd98489434832d64e71cc1552"
+  },
+  {
+    "path": "1440-museu-arte-moderna-capture.jpg",
+    "bytes": 89362,
+    "sha256": "a1be012b4a58b13da57f71d3e5568e2142c118adfc8ad0fbdb2a8003c6ac4374"
+  },
+  {
+    "path": "1440-museu-arte-moderna-context.jpg",
+    "bytes": 99590,
+    "sha256": "669ee3d89dce92d35871c92527fd61fce46b073820b4a6495005c4cb40b5eaa9"
+  },
+  {
+    "path": "1440-museu-arte-moderna-cover.jpg",
+    "bytes": 95291,
+    "sha256": "b626bad570b7cea0a1cabb268cbfab250b2ad389c6f3ba2b2ef446df1798b988"
+  },
+  {
+    "path": "1440-museu-arte-moderna-intro.jpg",
+    "bytes": 67772,
+    "sha256": "cec53bb6de0b275c76dbb421c7e9bbce0b9ab31467ed45415ab61794d8f7cec8"
+  },
+  {
+    "path": "1440-museu-arte-moderna-reverse.jpg",
+    "bytes": 67772,
+    "sha256": "cec53bb6de0b275c76dbb421c7e9bbce0b9ab31467ed45415ab61794d8f7cec8"
+  },
+  {
+    "path": "1440-museu-arte-moderna-ribbons.jpg",
+    "bytes": 67606,
+    "sha256": "7a9e03d6ad1f642252c84d13643f1afb850cf244d61363d87b8a31ab5d8a5e59"
+  },
+  {
+    "path": "1440-museu-arte-moderna-transition.jpg",
+    "bytes": 77193,
+    "sha256": "479cd365503aab0e87a63ffc42c920e19c5f80ac6592f660f2010a737c28478d"
+  },
+  {
+    "path": "1440-robosense-lab-cover.jpg",
+    "bytes": 88436,
+    "sha256": "20d16367029335b7a23f4164c2b86c62af6df53a5a1725ec0e47155409b7ad62"
+  },
+  {
+    "path": "1440-robosense-lab-intro.jpg",
+    "bytes": 61021,
+    "sha256": "ea0a10a2ede9b73557dc6d98357daf002f691f22433decb77ebe20edffad4175"
+  },
+  {
+    "path": "1440-sequence-2.jpg",
+    "bytes": 214604,
+    "sha256": "f2bb7a44d77c81b5f011e816f4430522527f6f4529c2bab1504649ee57ab06ca"
+  },
+  {
+    "path": "1920-museu-arte-moderna-capture.jpg",
+    "bytes": 99356,
+    "sha256": "83d230294bdebae6d74f38cbcc0dd3a5fd3360efdb7dbd36a15ff5e38ce36ce6"
+  },
+  {
+    "path": "1920-sequence-3.jpg",
+    "bytes": 185142,
+    "sha256": "03b36518d241f2ce65f3df15c3cbaebd89b0b78464d184f34ce670e08401ae89"
+  },
+  {
+    "path": "374-sequence-1.jpg",
+    "bytes": 316237,
+    "sha256": "4eb4a87713a08824e1574b4d2487cc94d104554b651d9a39873ca8392e2da014"
+  },
+  {
+    "path": "375-atelie-ingrid-xavier-capture.jpg",
+    "bytes": 45819,
+    "sha256": "d11a36ceb3c1dd56f335d20fc3a30a201bb9ccbb9ed0edbcc7e8c84e91dc8372"
+  },
+  {
+    "path": "375-museu-arte-moderna-capture.jpg",
+    "bytes": 46930,
+    "sha256": "ee22837bd7eb21f3cb4fc7ea48a9ac06c67baa7cd1a3f80fc4a44897e729b6ac"
+  },
+  {
+    "path": "375-museu-arte-moderna-context.jpg",
+    "bytes": 62125,
+    "sha256": "16a6a6e5235a4916b76e0ae774c9c24ecba5d019c9264630dc01edb0e61dbf0c"
+  },
+  {
+    "path": "375-museu-arte-moderna-intro.jpg",
+    "bytes": 43742,
+    "sha256": "d937dcf43a4df0576bf06a4c64bd323ad2655749086b7272397b0c66e9e6a860"
+  },
+  {
+    "path": "browser.json",
+    "bytes": 24625,
+    "sha256": "1a615c0edbcd8959f44ca41283406c4e7bba00aaa4d3e04a6cf3ac3433f3f4ca"
+  },
+  {
+    "path": "confirmation.txt",
+    "bytes": 20697,
+    "sha256": "8e460be782478f458e59cc7c79ef661e0a770ebe0d5aec2dd794f389a1a9f2bf"
+  },
+  {
+    "path": "detector.json",
+    "bytes": 6147,
+    "sha256": "006fd0a9ba120a2ed632d4b4a49560278fbd54d0b061b5c3e5bdb61a0fde566c"
+  },
+  {
+    "path": "e2e.txt",
+    "bytes": 21172,
+    "sha256": "911bdbf14950ab7e7406efd8d0667f800175e4461bbf7b4f724b39150c986959"
+  },
+  {
+    "path": "recordings.json",
+    "bytes": 986,
+    "sha256": "8c3e5ddaf4868ad9698c798e3c27833c5a057bf2fe6bafaa50a71ac190282779"
+  },
+  {
+    "path": "sources.json",
+    "bytes": 1843,
+    "sha256": "4f5a3bd16aeea4b2c6ad045c4a974ad0ea050155a40df4bd43dcd320b7c6c9c7"
+  },
+  {
+    "path": "story-confirmation.txt",
+    "bytes": 1488,
+    "sha256": "89cd499f16448196584e04ccb7824e4289e8db266302f5a61a527caa1b49a7f9"
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "profile": "default",
+  "buildId": "BlVyamoewhtWIdmon46x0",
+  "timestamp": "2026-10-25T15:37:05.732Z",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Bruno Proença Silva | Portfólio",
+      "robots": ["noindex, nofollow"],
+      "ogUrl": [],
+      "ogImage": ["http://localhost:3000/opengraph-image?311e2872493d39d7"],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    },
+    {
+      "path": "/projetos/robosense-lab",
+      "status": 200,
+      "title": "RoboSense Lab | Bruno Proença Silva",
+      "robots": ["noindex, nofollow"],
+      "ogUrl": [],
+      "ogImage": ["http://localhost:3000/opengraph-image"],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    },
+    {
+      "path": "/projetos/museu-arte-moderna",
+      "status": 200,
+      "title": "Museu de Arte Moderna | Bruno Proença Silva",
+      "robots": ["noindex, nofollow"],
+      "ogUrl": [],
+      "ogImage": ["http://localhost:3000/opengraph-image"],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    },
+    {
+      "path": "/projetos/industry-week-senai",
+      "status": 200,
+      "title": "Industry Week SENAI | Bruno Proença Silva",
+      "robots": ["noindex, nofollow"],
+      "ogUrl": [],
+      "ogImage": ["http://localhost:3000/opengraph-image"],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    },
+    {
+      "path": "/projetos/atelie-ingrid-xavier",
+      "status": 200,
+      "title": "Ateliê Ingrid Xavier | Bruno Proença Silva",
+      "robots": ["noindex, nofollow"],
+      "ogUrl": [],
+      "ogImage": ["http://localhost:3000/opengraph-image"],
+      "twitter": ["summary_large_image"],
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "DENY",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "x-powered-by": null
+      }
+    }
+  ],
+  "robots": "User-Agent: *\nDisallow: /\n\n",
+  "locations": [],
+  "rejected": [
+    {
+      "path": "/projetos/slug-inexistente",
+      "status": 404,
+      "noindex": true
+    },
+    {
+      "path": "/experimentos/hero-projeto",
+      "status": 404,
+      "noindex": true
+    }
+  ],
+  "og": {
+    "status": 200,
+    "contentType": "image/png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 120319
+  }
+}

@@ -1,0 +1,26 @@
+[WebServer] (node:42656) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+{"profile":"production","routes":5,"indexable":true,"sitemap":5,"rejected":2}
+
+Running 6 tests using 1 worker
+
+(node:42808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/6] [chromium] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[2/6] [chromium] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+(node:40192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[3/6] [firefox] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[4/6] [firefox] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+(node:40208) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[5/6] [webkit] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[6/6] [webkit] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+  6 passed (17.7s)

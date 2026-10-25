@@ -5,6 +5,7 @@ const paths = [
   "/projetos/robosense-lab",
   "/projetos/industry-week-senai",
   "/projetos/atelie-ingrid-xavier",
+  "/projetos/museu-arte-moderna",
 ];
 const indexable =
   process.env.SITE_INDEXABLE === "true" && process.env.VERCEL_ENV !== "preview";
@@ -61,21 +62,44 @@ test("metadata, crawler policy and sitemap agree across all public routes", asyn
   expect(await robots.text()).toContain(indexable ? "Allow: /" : "Disallow: /");
   const sitemap = await request.get("/sitemap.xml");
   const xml = await sitemap.text();
-  expect((xml.match(/<loc>/g) ?? []).length).toBe(indexable ? 4 : 0);
+  expect((xml.match(/<loc>/g) ?? []).length).toBe(indexable ? 5 : 0);
   if (indexable)
     for (const path of paths)
       expect(xml).toContain(new URL(path, process.env.SITE_URL).href);
 });
 
 test("native metadata assets have the expected formats and dimensions", async ({
+  page,
   request,
 }) => {
-  const icon = await request.get("/icon.svg");
+  for (const path of paths) {
+    await page.goto(path);
+    await expect(
+      page.locator('link[rel="icon"][type="image/x-icon"]'),
+    ).toHaveAttribute("href", /^\/favicon\.ico\?/);
+    await expect(
+      page.locator('link[rel="icon"][type="image/png"]'),
+    ).toHaveAttribute("href", /^\/icon\.png\?/);
+    await expect(page.locator('link[rel="apple-touch-icon"]')).toHaveAttribute(
+      "href",
+      /^\/apple-icon\.png\?/,
+    );
+  }
+  const icon = await request.get("/favicon.ico");
   expect(icon.status()).toBe(200);
-  expect(icon.headers()["content-type"]).toContain("image/svg+xml");
+  expect(icon.headers()["content-type"]).toMatch(
+    /image\/(x-icon|vnd.microsoft.icon)/,
+  );
+  const ico = await icon.body();
+  expect(ico.readUInt16LE(2)).toBe(1);
+  expect(ico.readUInt16LE(4)).toBe(4);
+  expect([0, 1, 2, 3].map((index) => ico[6 + index * 16])).toEqual([
+    16, 32, 48, 64,
+  ]);
   for (const [path, width, height] of [
     ["/opengraph-image", 1200, 630],
-    ["/apple-icon", 180, 180],
+    ["/icon.png", 192, 192],
+    ["/apple-icon.png", 180, 180],
   ] as const) {
     const response = await request.get(path);
     expect(response.status()).toBe(200);

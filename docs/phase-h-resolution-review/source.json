@@ -1,0 +1,37 @@
+{
+  "sourceCommit": "6fd47a7",
+  "file": "src/components/motion/section-transitions.ts",
+  "sha256": "ab2ce57d42a32d37b433026ddf5c6879aaddfec569e97ab115535c9e8fd0a8a6",
+  "build": {
+    "name": "build-transition-fix",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 16355,
+    "timestamp": "2026-10-25T13:43:31.507Z"
+  },
+  "lint": {
+    "name": "lint-transition-fix",
+    "args": ["node_modules/eslint/bin/eslint.js", ".", "--max-warnings=0"],
+    "code": 0,
+    "elapsedMs": 5987,
+    "timestamp": "2026-10-25T13:43:56.604Z"
+  },
+  "unit": {
+    "name": "unit-transition-fix",
+    "args": ["node_modules/vitest/vitest.mjs", "run"],
+    "code": 0,
+    "elapsedMs": 3539,
+    "timestamp": "2026-10-25T13:44:00.215Z"
+  },
+  "testCommit": "d2e7bf7",
+  "tests": [
+    {
+      "file": "tests/e2e/responsive.spec.ts",
+      "sha256": "2814c2335b12abc45809c6fb934d04ad4c91c6f7ad9b84d0339521c8462a4675"
+    },
+    {
+      "file": "tests/e2e/storytelling.spec.ts",
+      "sha256": "16861665d7e0200b15672cfabf92025566fb30662b9c3c52bab68315512fb5c3"
+    }
+  ]
+}

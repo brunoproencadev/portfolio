@@ -1,0 +1,30 @@
+{
+  "sourceCommit": "d9430f4a55fa6e6c83124ad3724c0c5dd9be7f23",
+  "sourceClean": true,
+  "worktree": "D:/projects/portifolio-release-check",
+  "install": {
+    "command": "npm ci --no-fund --no-audit",
+    "exitCode": 0,
+    "packagesAdded": 520,
+    "reportedDuration": "2m"
+  },
+  "node": "v24.15.0",
+  "sourceBuildId": "mrWkNee6OYAgn9ZWjj8Ed",
+  "e2e": {
+    "startTime": "2026-10-25T18:45:34.137Z",
+    "duration": 843474.356,
+    "expected": 400,
+    "skipped": 5,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "qaPriority": "BelowNormal, one worker; no concurrent benchmarks/builds",
+  "medians": {
+    "performance": 88,
+    "lcp": 3392.2729999999997,
+    "tbt": 191,
+    "cls": 0.03888213851761847
+  },
+  "homeThresholdsPassed": false,
+  "limits": "H03 stays open unless proven; cases/INP not remeasured. First parallel QA was interrupted after user-confirmed resource contention."
+}

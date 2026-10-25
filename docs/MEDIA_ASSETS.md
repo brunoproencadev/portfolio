@@ -1,4 +1,40 @@
-## Museu, kord e Clawd — revisão vigente de 17/10/2026
+## Ícones ampliados e escopo final, 25/10/2026
+
+O usuário aceitou o visual final e decidiu não incluir fotos pessoais/contexto. Essa pendência de conteúdo está encerrada por decisão de escopo, sem inventar originais ou atribuições. Autorizou GitHub, main e publicação na Vercel; isso não comprova testes físicos ou INP e não encerra H03.
+
+Favicon e easter egg foram solicitados maiores e mais nítidos. O avatar original460×460 foi preservado com o mesmo SHA256 verificado abaixo. O gerador existente agora remove somente a margem transparente, conserva a proporção e adiciona uma pequena borda de segurança: ICO16/32/48/64, PNG192 e Apple180. O leão ocupa mais pixels úteis; nenhuma arte, cor ou detalhe novo foi sintetizado. Fonte suficiente para esses tamanhos, sem upscale generativo. Reproduzir com `node tools/generate-profile-icons.mjs`; os testes decodificam as quatro entradas ICO e preservam o hash do original.
+
+No título, o canvas CSS passa de0,85em para1,1em (cerca de29% maior). Next Image recebe128×128 e sizes112px, em lugar de64×64/sizes64px. Na conferência DPR2 desktop/mobile o navegador requisitou256px; a geometria do nome, ciclo de1s, transparência e reduced motion foram preservados.18/18 E2E de avatar/SEO nos três motores; comparação de ícones em tamanho nativo e capturas do avatar ampliado foram inspecionadas. Essa comparação renderiza as entradas no browser; não é captura da barra de abas do sistema.
+
+## Fase I — OG e autorização Ateliê, 25/10/2026
+
+O usuário confirmou expressamente a permissão para destacar a marca e as capturas do Ateliê Ingrid Xavier no portfólio: “Confirmo que tenho permissão para esse uso”. Isso resolve a pendência específica de autorização registrada em G; não atribui ao usuário autoria da marca/fotografias nem confirma um deployment do Ateliê. Fotografias pessoais/eventos continuam sem originais/contexto e não foram adicionadas.
+
+A OG legada BP/ e verde foi substituída por composição da identidade atual, dados existentes do perfil e avatar exato, sem nova imagem pessoal. A API pública GitHub e o download em25/10 confirmaram o mesmo PNG460×460/101.669bytes e SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`; [consulta atual](phase-i-review/external-checks.json). Não inferir autoria/licença adicional da ilustração.
+
+A fonte de interface WOFF2 permanece intacta. A OG usa TTF estáticos400/500 da mesma família Manrope, versão Google Fonts v20, porque ImageResponse não aceita WOFF2. [URLs, pesos, bytes e hashes](phase-i-review/fonts.json). Aquisição via CSS oficial Google Fonts e fontes.gstatic.com; a licença OFL obtida do repositório oficial tem texto idêntico a src/fonts/OFL.txt. Nenhuma família, pacote ou dependência nova. TTFs são lidos localmente e rastreados pelo build; não há fetch externo para renderizar a OG em produção.
+
+Registros inferiores de autorização Ateliê pendente ou OG BP/ são históricos. Compartilhamento em plataformas reais e aparência do favicon em aba visível continuam dependentes de verificação própria.
+
+## Avatar no easter egg do nome — 24/10/2026
+
+Uso solicitado pelo usuário: ao passar o mouse pelo “o” de Bruno, revelar o avatar por um ciclo de1s. Reutilizado o mesmo leão exato da navbar, `public/images/profile/github-avatar.png`,460×460/101.669bytes, SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`, reconferido nesta rodada. Sem arquivo novo ou alteração da imagem; não é fotografia facial. Origem pública já registrada abaixo: avatar GitHub do usuário. [Implementação, provas e limites](HERO_AVATAR_REVIEW.md). Pedido autoriza o uso local, sem nova publicação.
+
+## Museu — recuperação de resolução nativa, 18/10/2026
+
+Por solicitação do autor, `public/images/projects/museu-arte-moderna/hall.webp` foi recuperado do mesmo frame aos10s do vídeo original `projeto_arte_moderna.mp4`, preservado somente leitura. A captura passa de1440×665/77.608bytes para2340×1080/284.294bytes; SHA256 atual `f97e25bc965fe4671ee6e868d47b557059fcedbe1c59267138354cb743bdda4b`. PNG extraído antes da compressão:2340×1080/1.779.124bytes, SHA256 `d124e857c7c6c6943d94bf5e33f490e492bb5562361b649606bc0d1253f80db6`. Vídeo original SHA256 `975ae7a9d5f5b8359c6bd07c52267a800a3d6c57d03f6d2e284a7484bf510e6e`. Sem reconstrução generativa ou novos detalhes artificiais.
+
+Home e case usam `object-fit: cover`: a imagem preenche a janela, com recorte proporcional e link ao arquivo integral. Os manifestos anteriores documentam a versão antiga e permanecem intactos. O relato escolar e a autoria coletiva são atribuídos ao usuário; não demonstram contribuições Git individuais, headset validado ou resultado pedagógico medido. Fontes técnicas fixadas e provas atuais em [PHASE_G_CINEMATIC_REVIEW](PHASE_G_CINEMATIC_REVIEW.md).
+
+## Fase G — identidade e cases, 18/10/2026
+
+Avatar atual reconferido pela API pública GitHub e download: `https://avatars.githubusercontent.com/u/271389368?v=4`, PNG 460×460, 101.669 bytes, SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`. Idêntico byte a byte ao arquivo local da ilha. Ilustração usada pelo autor no perfil, sem atribuir autoria da arte ou licença adicional.
+
+`src/app/favicon.ico` contém PNGs 16/32/48; `src/app/icon.png` mede 192×192; `src/app/apple-icon.png` mede 180×180. Derivados exclusivamente por redução proporcional do avatar inteiro, transparência preservada, sem recorte/recoloração. Geração reproduzível por `node tools/generate-profile-icons.mjs`, usando Sharp instalado pelo Next fixado; o script rejeita fonte com hash diferente. Ícones BP/ anteriores removidos. Entrega somente local, sem push/deploy. Registros inferiores sobre favicon BP/ são históricos, superados por esta seção.
+
+Cases reutilizam `projectMedia`: frame M3, duas capturas Industry de 11/10 e catálogo Ateliê. Nenhuma nova imagem de projeto ou fotografia pessoal foi criada. Capturas mantêm seus limites e acesso ao arquivo integral. Fontes fixadas dos cases reconferidas em 18/10, sem reexecutar os projetos. Fotos pessoais/contextos e permissão de publicação proeminente das imagens/marca do Ateliê permanecem pendentes.
+
+## Museu, kord e Clawd — revisão de 17/10/2026
 
 Frame integral do vídeo do museu aos 10s, screenshot real da execução local do kord, mascote Clawd via Lobe Icons e ícones Unity/C#/HTML/CSS/JavaScript via Devicon. Fontes fixadas, autoria, licenças, hashes e limites em [PHASE_F_PROJECTS](PHASE_F_PROJECTS.md) e [assets.json](project-expansion-review/assets.json). Museu sem contribuição Git atribuída a Bruno; kord é marca fictícia acadêmica. Uso local solicitado, sem publicação. O PNG Claude anterior foi preservado e não é usado pelo componente.
 

@@ -1,0 +1,118 @@
+{
+  "checks": {
+    "build-transition-fix": {
+      "name": "build-transition-fix",
+      "args": ["node_modules/next/dist/bin/next", "build"],
+      "code": 0,
+      "elapsedMs": 16355,
+      "timestamp": "2026-10-25T13:43:31.507Z"
+    },
+    "lint-transition-fix": {
+      "name": "lint-transition-fix",
+      "args": ["node_modules/eslint/bin/eslint.js", ".", "--max-warnings=0"],
+      "code": 0,
+      "elapsedMs": 5987,
+      "timestamp": "2026-10-25T13:43:56.604Z"
+    },
+    "unit-transition-fix": {
+      "name": "unit-transition-fix",
+      "args": ["node_modules/vitest/vitest.mjs", "run"],
+      "code": 0,
+      "elapsedMs": 3539,
+      "timestamp": "2026-10-25T13:44:00.215Z"
+    },
+    "firefox-fixed-repeated": {
+      "name": "firefox-fixed-repeated",
+      "args": [
+        "node_modules/@playwright/test/cli.js",
+        "test",
+        "--config",
+        ".audit/phase-h-resolution/original.config.mjs",
+        "section-transitions.spec.ts",
+        "--grep",
+        "supporting sections.*1440px",
+        "--project=firefox",
+        "--repeat-each=20",
+        "--workers=2",
+        "--reporter=line"
+      ],
+      "code": 0,
+      "elapsedMs": 74232,
+      "timestamp": "2026-10-25T13:45:53.955Z"
+    },
+    "webkit-menu-repeated": {
+      "name": "webkit-menu-repeated",
+      "args": [
+        "node_modules/@playwright/test/cli.js",
+        "test",
+        "--config",
+        ".audit/phase-h-resolution/original.config.mjs",
+        "responsive.spec.ts",
+        "--grep",
+        "home and open capsule fit 320px",
+        "--project=webkit",
+        "--repeat-each=3",
+        "--workers=1",
+        "--reporter=json"
+      ],
+      "code": 0,
+      "elapsedMs": 13642,
+      "timestamp": "2026-10-25T14:10:56.227Z"
+    },
+    "lint-test-sync": {
+      "name": "lint-test-sync",
+      "args": ["node_modules/eslint/bin/eslint.js", ".", "--max-warnings=0"],
+      "code": 0,
+      "elapsedMs": 15369,
+      "timestamp": "2026-10-25T14:11:11.670Z"
+    },
+    "strict-test-sync": {
+      "name": "strict-test-sync",
+      "args": ["node_modules/typescript/bin/tsc", "--noEmit"],
+      "code": 0,
+      "elapsedMs": 3748,
+      "timestamp": "2026-10-25T14:11:15.488Z"
+    },
+    "format-global": {
+      "name": "format-global",
+      "args": ["node_modules/prettier/bin/prettier.cjs", "--check", "."],
+      "code": 1,
+      "elapsedMs": 6157,
+      "timestamp": "2026-10-25T14:11:22.234Z"
+    }
+  },
+  "webkitMenu": {
+    "startTime": "2026-10-25T14:10:43.095Z",
+    "duration": 13112.770999999999,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "historicalFormatFiles": [
+    ".impeccable/design.json",
+    "docs/hero-review/finish-review.md",
+    "docs/hero-review/lighthouse-environment.json",
+    "docs/hero-review/lighthouse-summary.json",
+    "docs/hero-review/results.json",
+    "docs/intro-review/lighthouse-environment.json",
+    "docs/intro-review/lighthouse-summary.json",
+    "docs/intro-review/results.json",
+    "docs/PHASE_D_REVIEW.md",
+    "docs/PHASE_E_REVIEW.md",
+    "docs/PHASE_F_GAP_ANALYSIS.md",
+    "docs/PHASE_F_REVIEW.md",
+    "docs/scroll-gap-review/navigation-bug.json",
+    "docs/scroll-integration-review/recordings.json",
+    "docs/scroll-integration-review/verification.json",
+    "docs/scroll-transitions-review/browser.json",
+    "docs/scroll-transitions-review/manifest.json",
+    "docs/story-correction-review/recordings.json",
+    "docs/story-correction-review/results.json",
+    "docs/story-correction-review/verification.json",
+    "docs/story-review/capture-results.json",
+    "docs/story-review/deployment-check.json",
+    "docs/story-review/motion-samples.json",
+    "docs/story-review/wide-short-results.json"
+  ]
+}

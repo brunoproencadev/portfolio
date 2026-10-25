@@ -19,7 +19,10 @@ test("Atelie preview is bounded and retains a direct link to the entire capture"
     .boundingBox();
   expect(preview!.height).toBeLessThanOrEqual(620);
   await page.locator("#titulo-atelie-ingrid-xavier").focus();
-  await page.getByRole("link", { name: "Abrir captura completa" }).click();
+  await page
+    .getByRole("article", { name: "Ateliê Ingrid Xavier" })
+    .getByRole("link", { name: "Abrir captura completa" })
+    .click();
   await expect(page).toHaveURL(
     /\/images\/projects\/atelie-ingrid\/catalog\.webp$/,
   );

@@ -1,0 +1,415 @@
+.case-page {
+  position: relative;
+  isolation: isolate;
+  overflow-x: clip;
+}
+.case-page::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: 164px;
+  z-index: 5;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+  mask-image: linear-gradient(#000, transparent);
+}
+.case-page .case-header {
+  position: absolute;
+  z-index: 10;
+  inset: 32px auto auto 50%;
+  transform: translateX(-50%);
+  width: min(420px, calc(100% - 32px));
+  min-height: 60px;
+  padding: 8px 16px;
+  gap: 12px;
+  border-radius: 30px;
+  background: #202024;
+}
+.case-header .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.875rem;
+  letter-spacing: -0.02em;
+}
+.case-header .wordmark img {
+  border-radius: 50%;
+}
+.case-back {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.case-back:hover {
+  background: #282434;
+}
+.case-back svg,
+.case-next-project svg,
+.case-media figcaption svg {
+  flex-shrink: 0;
+}
+.case-scroll-cue svg {
+  transform: rotate(180deg);
+}
+.case-intro .button-link,
+.case-media figcaption .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.case-page .case-main {
+  padding-top: 0;
+}
+.case-scene {
+  position: relative;
+}
+.case-scene-stage {
+  position: relative;
+  overflow: clip;
+}
+.case-opening {
+  position: relative;
+  padding-top: 152px;
+  padding-bottom: 72px;
+}
+.case-page .case-intro {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin-inline: auto;
+  text-align: center;
+}
+.case-category {
+  color: var(--accent);
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+.case-page .case-intro h1 {
+  margin-block: 24px;
+  font-size: clamp(2.75rem, 6.5vw, 6rem);
+  line-height: 1.03;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+  overflow-wrap: normal;
+}
+.case-intro .large-copy {
+  max-width: 58ch;
+  margin-inline: auto;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+.case-intro .tag-list,
+.case-intro .link-row {
+  justify-content: center;
+}
+.case-page .case-intro .tag-list {
+  margin-block: 24px;
+}
+.case-scroll-cue {
+  display: none;
+}
+.case-light {
+  position: absolute;
+  pointer-events: none;
+  top: 160px;
+  left: -10%;
+  width: 120%;
+  height: 650px;
+  opacity: 0.7;
+}
+.case-light svg {
+  width: 100%;
+  height: 100%;
+}
+.case-page .case-media {
+  position: relative;
+  margin-block: 64px 0;
+}
+.case-page .case-media .project-window {
+  border-color: #716782;
+  box-shadow:
+    0 0 72px #8b5cf622,
+    0 40px 90px #0009;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.case-page .case-media-window {
+  height: auto;
+  max-height: 62svh;
+  border-radius: 0;
+}
+.case-page .case-media-cover {
+  aspect-ratio: 16 / 9;
+  max-height: none;
+  overflow: hidden;
+}
+.case-page .case-media-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.case-page .case-media figcaption {
+  font-size: 0.8125rem;
+  gap: 8px 20px;
+}
+.case-page .case-media figcaption p {
+  max-width: 72ch;
+}
+.case-body {
+  position: relative;
+  z-index: 2;
+  background: #111116;
+  box-shadow: 0 -40px 90px #0005;
+  padding-top: 24px;
+}
+.case-page .case-status {
+  display: grid;
+  gap: 12px;
+  border-top: 0;
+  padding-block: 32px;
+  font-size: 0.875rem;
+}
+.case-page .case-status strong {
+  font-weight: 500;
+}
+.case-page .case-section {
+  padding-block: 64px;
+  border-top: 0;
+}
+.case-chapter h2 {
+  margin-top: 20px;
+  max-width: 10ch;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+.case-page .case-section h2 {
+  font-size: clamp(2.25rem, 4vw, 3.75rem);
+}
+.case-copy {
+  min-width: 0;
+  font-size: 1.0625rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+.case-copy .case-lead {
+  color: var(--foreground);
+  font-size: clamp(1.25rem, 2vw, 1.625rem);
+  line-height: 1.6;
+}
+.case-copy h3 {
+  color: var(--foreground);
+  font-weight: 500;
+}
+.case-page .case-list {
+  margin-top: 0;
+  padding-left: 24px;
+}
+.case-page .case-list li {
+  padding-left: 8px;
+}
+.case-page .case-list li + li {
+  margin-top: 28px;
+}
+.case-page .case-list li::marker {
+  color: var(--accent);
+}
+.case-page .case-architecture {
+  margin-top: 40px;
+}
+.case-credits {
+  border-top: 1px solid var(--divider);
+  margin-top: 40px;
+  padding-top: 28px;
+}
+.case-credits h3 {
+  font-size: 0.875rem;
+}
+.case-credits ul {
+  display: flex;
+  gap: 8px 24px;
+  flex-wrap: wrap;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+.case-page .case-diagram {
+  margin-top: 48px;
+  background: #08090d;
+  border-radius: 16px;
+}
+.case-page .case-diagram figcaption {
+  padding: 24px;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+.case-page .case-sources {
+  margin-block: 32px;
+}
+.case-page .case-sources a {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 18px;
+  border-bottom: 1px solid var(--divider);
+  text-decoration: none;
+}
+.case-page .case-sources a:hover {
+  color: var(--foreground);
+}
+.case-author-note {
+  margin-top: 24px;
+}
+.case-page .contact-passage {
+  background: #111116;
+}
+.case-page .case-other-projects {
+  display: grid;
+  gap: 0;
+  border: 0;
+  padding-block: 72px 96px;
+}
+.case-page .case-other-projects > p {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  margin-bottom: 48px;
+}
+.case-other-projects em {
+  color: var(--accent);
+  font-style: normal;
+}
+.case-next-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-block: 28px;
+  border-top: 1px solid var(--divider);
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  text-decoration: none;
+}
+.case-next-project:hover {
+  color: var(--accent);
+}
+.case-next-project > span:last-child {
+  color: var(--accent);
+}
+@media (min-width: 900px) {
+  .case-page .case-status {
+    grid-template-columns: 5fr 7fr;
+    gap: 64px;
+  }
+  .case-page .case-section {
+    grid-template-columns: 5fr 7fr;
+    gap: 64px;
+    padding-block: 96px;
+  }
+}
+@media (min-width: 1100px) and (min-height: 800px) and (prefers-reduced-motion: no-preference) {
+  [data-case-enhanced] .case-scene {
+    height: 200svh;
+  }
+  [data-case-enhanced] .case-scene-stage {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+  }
+  [data-case-enhanced] .case-opening {
+    height: 100%;
+    padding-top: clamp(136px, 17svh, 210px);
+    padding-bottom: 0;
+  }
+  [data-case-enhanced] .case-intro {
+    max-width: 1050px;
+  }
+  [data-case-enhanced] .case-scroll-cue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 32px;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+  [data-case-enhanced] .case-light {
+    top: 20svh;
+    height: 75svh;
+  }
+  [data-case-enhanced] .case-scene .case-media {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: min(1180px, 100%);
+    margin: 0;
+  }
+  [data-case-enhanced] .case-media-window {
+    max-height: 62svh;
+  }
+  [data-case-enhanced] .case-media-cover {
+    height: 60svh;
+    aspect-ratio: auto;
+  }
+  [data-case-enhanced] .case-chapter {
+    position: sticky;
+    top: 96px;
+    align-self: start;
+  }
+}
+@media (max-width: 599px) {
+  .case-page .case-header {
+    top: 16px;
+    padding-inline: 12px;
+  }
+  .case-header .wordmark {
+    gap: 8px;
+    font-size: 0.8125rem;
+  }
+  .case-back {
+    padding-inline: 16px;
+    gap: 12px;
+  }
+  .case-opening {
+    padding-top: 120px;
+    padding-bottom: 48px;
+  }
+  .case-page .case-intro {
+    text-align: left;
+  }
+  .case-page .case-intro h1 {
+    font-size: clamp(2.5rem, 11vw, 3.75rem);
+  }
+  .case-intro .tag-list,
+  .case-intro .link-row {
+    justify-content: flex-start;
+  }
+  .case-light {
+    top: 260px;
+    height: 420px;
+    width: 180%;
+    left: -40%;
+    opacity: 0.4;
+  }
+  .case-page .case-media {
+    margin-top: 48px;
+  }
+  .case-page .case-media figcaption {
+    display: block;
+  }
+  .case-page .case-media .window-bar {
+    font-size: 0.625rem;
+    gap: 12px;
+  }
+  .case-page .case-section {
+    padding-block: 48px;
+  }
+  .case-chapter h2 {
+    max-width: 14ch;
+  }
+}

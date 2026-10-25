@@ -59,10 +59,9 @@ test("four real projects keep their order, links and full width through forward 
     "marca fictícia",
   );
   await expect(
-    page.locator(
-      "a[href='/projetos/museu-arte-moderna'], a[href='/projetos/kord']",
-    ),
-  ).toHaveCount(0);
+    page.getByRole("link", { name: "Ler case de Museu de Arte Moderna" }),
+  ).toHaveAttribute("href", "/projetos/museu-arte-moderna");
+  await expect(page.locator("a[href='/projetos/kord']")).toHaveCount(0);
 });
 
 test("Clawd stays above the RoboSense frame and centered at supported desktop sizes", async ({
@@ -139,10 +138,9 @@ for (const mode of ["no-js", "reduced"] as const) {
       const band = page.locator(".story-band").nth(i);
       await band.locator("h3").scrollIntoViewIfNeeded();
       await expect(band.locator("h3")).toBeInViewport({ ratio: 1 });
-      await expect(band.locator(".work-links a")).toHaveAttribute(
-        "href",
-        /^https:\/\/github\.com\//,
-      );
+      await expect(
+        band.getByRole("link", { name: `Ver repositório de ${names[i]}` }),
+      ).toHaveAttribute("href", /^https:\/\/github\.com\//);
       await band.locator("figure img").scrollIntoViewIfNeeded();
       await expect
         .poll(() =>

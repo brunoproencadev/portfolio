@@ -1,0 +1,255 @@
+
+node : [WebServer] (node:56380) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+At line:2 char:1
++ node node_modules/@playwright/test/cli.js test tests/e2e/cases.spec.t ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([WebServer] (no... env being set.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 102 tests using 2 workers
+
+
+
+(node:63632) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:76096) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/102] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › museu-arte-moderna stages the real capture, reverses and releases live reduced motion
+[2/102] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › robosense-lab stages the real capture, reverses and releases live reduced motion
+[3/102] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › industry-week-senai stages the real capture, reverses and releases live reduced motion
+[4/102] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion
+[5/102] [chromium] › tests\e2e\case-motion.spec.ts:56:1 › case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow
+[6/102] [chromium] › tests\e2e\case-motion.spec.ts:84:1 › direct fragments and failed scripts preserve the museum narrative and original capture
+[7/102] [chromium] › tests\e2e\case-motion.spec.ts:132:1 › keyboard reading started before hydration takes precedence over a late motion import
+[8/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 320px
+[9/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 375px
+[10/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 768px
+[11/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px
+[12/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 320px
+[13/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 375px
+[14/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 768px
+[15/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px
+[16/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 320px
+[17/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 375px
+[18/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 768px
+[19/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 1440px
+[20/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 320px
+[21/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 375px
+[22/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 768px
+[23/102] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px
+[24/102] [chromium] › tests\e2e\cases.spec.ts:111:1 › cases and navigation remain available without JavaScript
+[25/102] [chromium] › tests\e2e\cases.spec.ts:154:1 › case text, sources and navigation survive failed media and reduced motion
+[26/102] [chromium] › tests\e2e\cases.spec.ts:190:1 › unknown slugs and inherited names return useful HTTP 404 pages
+[27/102] [chromium] › tests\e2e\cases.spec.ts:214:1 › client navigation discards home motion and does not replay the intro
+[28/102] [chromium] › tests\e2e\home.spec.ts:29:1 › projects show sources and limits and all internal links resolve
+[29/102] [chromium] › tests\e2e\project-expansion.spec.ts:23:1 › four real projects keep their order, links and full width through forward and reverse navigation
+[30/102] [chromium] › tests\e2e\refinement.spec.ts:12:1 › content order, consolidated details, tool icons and contact match the requested composition
+[31/102] [chromium] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+[32/102] [chromium] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in no-js flow
+[33/102] [chromium] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in reduced flow
+[34/102] [chromium] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in hash flow
+  1) [chromium] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('.story-stage a')
+    Expected: 13
+    Received: 14
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('.story-stage a') with timeout 5000ms
+      - waiting for locator('.story-stage a')
+        14 × locator resolved to 14 elements
+           - unexpected value "14"
+
+
+      43 |     "Museu de Arte Moderna",
+      44 |   );
+    > 45 |   await expect(page.locator(".story-stage a")).toHaveCount(13);
+         |                                                ^
+      46 |   const first = await page.locator(".story-window").boundingBox();
+      47 |   await progress(page, start, 0.5);
+      48 |   await expect.poll(x).toBeLessThan(-50);
+        at D:\projects\portifolio\tests\e2e\storytelling.spec.ts:45:48
+
+    Error Context: test-results\storytelling-one-bounded-s-a9934-es-backgrounds-and-reverses-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\storytelling-one-bounded-s-a9934-es-backgrounds-and-reverses-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\storytelling-one-bounded-s-a9934-es-backgrounds-and-reverses-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:28088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[35/102] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › robosense-lab stages the real capture, reverses and releases live reduced motion
+(node:75600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[36/102] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › museu-arte-moderna stages the real capture, reverses and releases live reduced motion
+[37/102] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › industry-week-senai stages the real capture, reverses and releases live reduced motion
+[38/102] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion
+[39/102] [firefox] › tests\e2e\case-motion.spec.ts:56:1 › case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow
+[40/102] [firefox] › tests\e2e\case-motion.spec.ts:84:1 › direct fragments and failed scripts preserve the museum narrative and original capture
+[41/102] [firefox] › tests\e2e\case-motion.spec.ts:132:1 › keyboard reading started before hydration takes precedence over a late motion import
+[42/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 320px
+[43/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 375px
+[44/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 768px
+[45/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px
+[46/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 320px
+[47/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 375px
+[48/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 768px
+[49/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px
+[50/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 320px
+[51/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 375px
+[52/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 768px
+[53/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 1440px
+[54/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 320px
+[55/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 375px
+[56/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 768px
+[57/102] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px
+[58/102] [firefox] › tests\e2e\cases.spec.ts:111:1 › cases and navigation remain available without JavaScript
+[59/102] [firefox] › tests\e2e\cases.spec.ts:154:1 › case text, sources and navigation survive failed media and reduced motion
+[60/102] [firefox] › tests\e2e\cases.spec.ts:190:1 › unknown slugs and inherited names return useful HTTP 404 pages
+[61/102] [firefox] › tests\e2e\cases.spec.ts:214:1 › client navigation discards home motion and does not replay the intro
+[62/102] [firefox] › tests\e2e\home.spec.ts:29:1 › projects show sources and limits and all internal links resolve
+[63/102] [firefox] › tests\e2e\project-expansion.spec.ts:23:1 › four real projects keep their order, links and full width through forward and reverse navigation
+[64/102] [firefox] › tests\e2e\refinement.spec.ts:12:1 › content order, consolidated details, tool icons and contact match the requested composition
+[65/102] [firefox] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+[66/102] [firefox] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in no-js flow
+[67/102] [firefox] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in reduced flow
+[68/102] [firefox] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in hash flow
+  2) [firefox] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('.story-stage a')
+    Expected: 13
+    Received: 14
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('.story-stage a') with timeout 5000ms
+      - waiting for locator('.story-stage a')
+        14 × locator resolved to 14 elements
+           - unexpected value "14"
+
+
+      43 |     "Museu de Arte Moderna",
+      44 |   );
+    > 45 |   await expect(page.locator(".story-stage a")).toHaveCount(13);
+         |                                                ^
+      46 |   const first = await page.locator(".story-window").boundingBox();
+      47 |   await progress(page, start, 0.5);
+      48 |   await expect.poll(x).toBeLessThan(-50);
+        at D:\projects\portifolio\tests\e2e\storytelling.spec.ts:45:48
+
+    Error Context: test-results\storytelling-one-bounded-s-a9934-es-backgrounds-and-reverses-firefox\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\storytelling-one-bounded-s-a9934-es-backgrounds-and-reverses-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\storytelling-one-bounded-s-a9934-es-backgrounds-and-reverses-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:75332) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[69/102] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › robosense-lab stages the real capture, reverses and releases live reduced motion
+(node:73252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[70/102] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › museu-arte-moderna stages the real capture, reverses and releases live reduced motion
+[71/102] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › industry-week-senai stages the real capture, reverses and releases live reduced motion
+[72/102] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion
+[73/102] [webkit] › tests\e2e\case-motion.spec.ts:56:1 › case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow
+[74/102] [webkit] › tests\e2e\case-motion.spec.ts:84:1 › direct fragments and failed scripts preserve the museum narrative and original capture
+[75/102] [webkit] › tests\e2e\case-motion.spec.ts:132:1 › keyboard reading started before hydration takes precedence over a late motion import
+[76/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 320px
+[77/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 375px
+[78/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 768px
+[79/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px
+[80/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 320px
+[81/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 375px
+[82/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 768px
+[83/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px
+[84/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 320px
+[85/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 375px
+[86/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 768px
+[87/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 1440px
+[88/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 320px
+[89/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 375px
+[90/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 768px
+[91/102] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px
+[92/102] [webkit] › tests\e2e\cases.spec.ts:111:1 › cases and navigation remain available without JavaScript
+[93/102] [webkit] › tests\e2e\cases.spec.ts:154:1 › case text, sources and navigation survive failed media and reduced motion
+[94/102] [webkit] › tests\e2e\cases.spec.ts:190:1 › unknown slugs and inherited names return useful HTTP 404 pages
+[95/102] [webkit] › tests\e2e\cases.spec.ts:214:1 › client navigation discards home motion and does not replay the intro
+[96/102] [webkit] › tests\e2e\home.spec.ts:29:1 › projects show sources and limits and all internal links resolve
+[97/102] [webkit] › tests\e2e\project-expansion.spec.ts:23:1 › four real projects keep their order, links and full width through forward and reverse navigation
+[98/102] [webkit] › tests\e2e\refinement.spec.ts:12:1 › content order, consolidated details, tool icons and contact match the requested composition
+[99/102] [webkit] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+[100/102] [webkit] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in no-js flow
+[101/102] [webkit] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in reduced flow
+  3) [webkit] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('.story-stage a')
+    Expected: 13
+    Received: 14
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('.story-stage a') with timeout 5000ms
+      - waiting for locator('.story-stage a')
+        14 × locator resolved to 14 elements
+           - unexpected value "14"
+
+
+      43 |     "Museu de Arte Moderna",
+      44 |   );
+    > 45 |   await expect(page.locator(".story-stage a")).toHaveCount(13);
+         |                                                ^
+      46 |   const first = await page.locator(".story-window").boundingBox();
+      47 |   await progress(page, start, 0.5);
+      48 |   await expect.poll(x).toBeLessThan(-50);
+        at D:\projects\portifolio\tests\e2e\storytelling.spec.ts:45:48
+
+    Error Context: test-results\storytelling-one-bounded-s-a9934-es-backgrounds-and-reverses-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\storytelling-one-bounded-s-a9934-es-backgrounds-and-reverses-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\storytelling-one-bounded-s-a9934-es-backgrounds-and-reverses-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:65308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[102/102] [webkit] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in hash flow
+  3 failed
+    [chromium] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+    [firefox] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+    [webkit] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+  99 passed (2.0m)

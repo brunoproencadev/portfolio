@@ -1,3 +1,9 @@
+## Cases e ícones G — 2026-10-18
+
+`getCaseStudy` combina dados editoriais existentes com `projectMedia` e a data de reconferência das fontes. As três rotas permanecem SSG; o componente de página mostra capturas reais com Next Image antes do contexto, mantém originais/legendas e apresenta diagramas na arquitetura. Catálogo longo usa overflow nativo em região nomeada/focável; leitura e recuperação não dependem de animação/JS. `.case-page` limita Manrope/neutros-violeta ao case; não altera o owner de F.
+
+Ícones seguem as convenções estáticas do Next: `favicon.ico`, `icon.png`, `apple-icon.png`. `tools/generate-profile-icons.mjs` usa o Sharp já instalado pelo Next, valida SHA do avatar e reduz proporcionalmente, sem dependência nova nem request externo em runtime. Proveniência/limites em PHASE_G_REVIEW/MEDIA_ASSETS. F aprovada; G disponível para avaliação com fotografias e inspeção humana da aba pendentes. H/I/push/deploy não autorizados nesta fase.
+
 ## Continuidade F e faixas — 2026-10-17
 
 Contrato vigente deste incremento: [PHASE_F_TRANSITIONS](PHASE_F_TRANSITIONS.md). HomeMotion carrega o scroll em qualquer viewport sem reduced motion. `home-reveals` mantém o único pin horizontal e delega as seções de apoio a `section-transitions`; seus contextos são revertidos juntos. Contato/footer ficam fora dos seletores. O hero compacto só recebe movimento quando o owner cinematográfico não é elegível, preservando a separação de propriedades da intro e da navbar.

@@ -23,7 +23,7 @@ test("content order, consolidated details, tool icons and contact match the requ
     "CompetênciasAtual",
     "ContatoAtual",
   ]);
-  await expect(page.locator("main a[href^='/projetos/']")).toHaveCount(3);
+  await expect(page.locator("main a[href^='/projetos/']")).toHaveCount(4);
   for (const band of await page.locator(".story-band").all()) {
     await band.locator("h3").focus();
     await expect(band.locator(".work-evidence")).toContainText("Fonte");

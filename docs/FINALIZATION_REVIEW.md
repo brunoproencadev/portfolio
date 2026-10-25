@@ -1,0 +1,29 @@
+# Finalização autorizada — revisão de 25/10/2026
+
+Plano `857207f`, implementação dos ícones `d9430f4`. O usuário aceitou o visual final, decidiu não incluir fotografias pessoais/contexto, solicitou ícones maiores/nítidos e confirmou “GitHub, main e publicação na Vercel”. Essas decisões substituem as pendências históricas correspondentes. H03 continua em acompanhamento; autorização de entrega não é prova de atendimento da meta.
+
+## Ícones e avatar
+
+O arquivo GitHub original460×460, SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`, permanece intacto. O gerador existente remove somente margem transparente, conserva proporção e aplica borda de segurança; o favicon passa a conter16/32/48/64px, com PNG192 e Apple180. Não houve redesenho, recoloração, upscale generativo ou detalhes pessoais inventados. A comparação em tamanho nativo mostra melhor aproveitamento dos pixels disponíveis; o tamanho do espaço da aba continua definido pelo browser.
+
+O avatar no “o” passa de0,85em para1,1em, cerca de29% maior; a indicação de imagem passa de64px para112px com dimensões128×128. Em DPR2 o browser requisitou256px, suficiente para o maior tamanho CSS de cerca de105,3px. Desktop1440/mobile375 foram inspecionados; posição do nome estável, transparência, ciclo de1s e reduced motion preservados.18/18 E2E focados avatar/SEO nos três motores, nove unitários, lint e build/strict PASS na árvore de trabalho. Essa prova não substitui a validação isolada do commit descrita abaixo.
+
+## H03 e fluidez
+
+Duas sondas diagnósticas ABBA foram executadas sobre o mesmo build, com interceptação idêntica nos controles. Substituir startReveals por um stub não atingiu a meta; os imports e o restante da aplicação permaneceram, portanto a sonda não mede remoção total da biblioteca. Alterar somente a dica de decoding da imagem RoboSense de async para sync também não trouxe ganho suficiente. A interceptação modifica o custo de transporte; não comparar esses números diretamente com navegações normais. Nenhuma dessas alterações foi aplicada ao produto, nenhum tempo ou endpoint de animação foi reduzido.
+
+Durante a suíte isolada com dois workers, o usuário relatou scroll com menos quadros. A árvore dos processos QA foi encerrada; o usuário confirmou “Sim, voltou à fluidez anterior”. Isso apoia disputa de CPU/GPU da máquina, sem evidência de uma regressão mantida na aplicação. A tentativa foi registrada como interrompida, não como suíte aprovada. A retomada usa um worker e prioridade BelowNormal; não executar benchmarks ou outros checks pesados simultaneamente à revisão manual do usuário. Fluidez aceita é requisito, não moeda de troca por LCP.
+
+## Fonte do release e validação
+
+Foi criado um worktree de validação isolado em `D:\projects\portifolio-release-check`, detached em `d9430f4`, com instalação limpa do lockfile. Nenhuma das quatro edições locais preexistentes foi incorporada; elas permanecem no workspace original, verificadas por hashes. [Fonte e validação do release](finalization-review/release-validation.json): build/strict, lint, nove unitários e formato global PASS; **400 E2E PASS/5 SKIP**, zero falhas/retries, nos três motores, em uma rodada completa serial. Não substituir esse resultado pelo log parcial da tentativa interrompida. Auditorias de runtime e completa zero vulnerabilidades. Peers exit0, nenhum inválido e seis avisos extraneous conhecidos de WASM opcional; não declarar árvore sem avisos.
+
+Três Lighthouse mobile diretos da home sobre esse build limpo, sem testes/builds concorrentes: nota87/88/89, LCP3514/3391/3392ms e TBT214,5/191/183,5ms. Medianas: **88/LCP3392ms/TBT191ms/CLS0,0389**; acessibilidade/boas práticas100, SEO66 pelo noindex local deliberado. [Série e ambiente](finalization-review/local-performance.json). H03 não passou; não atribuir ganho aos ícones nem às sondas rejeitadas. Cases e INP não foram remedidos nesta finalização. [Comandos e logs](finalization-review/verification.json), [evidências visuais](finalization-review/visual.json), [manifesto](finalization-review/manifest.json).
+
+## Git e publicação
+
+A branch foi enviada até `d9430f4`; [PR1](https://github.com/brunoproencadev/portfolio/pull/1) foi aberto como rascunho com42 commits desde main, preservando o histórico. A validação isolada está concluída; o commit documental acrescenta somente as provas/decisões, sem mudar o runtime validado. Próximo passo autorizado é concluir a integração e a publicação do SHA de main; não são consideradas executadas por este registro de pré-publicação.
+
+Vercel CLI65.2.0 autenticada, conta/team/projeto/domínio conferidos. Projeto `brunoproencasilva`, Node24.x, framework Next, domínio `brunoproencasilva.vercel.app` verificado. O vínculo ainda exibe o nome antigo myportifolio, mas o ID1412563281 coincide com brunoproencadev/portfolio no GitHub. SITE_URL aponta à origem correta; SITE_INDEXABLE=true em Production e false em Preview. Nenhuma variável foi alterada.
+
+Rollback anterior à entrega: deployment `dpl_6FxjM8rjeehB3bAeWJrG212ABmTL`, READY, SHA `aa70f4c73008f85731e4f45e528ac2c7f8737d0f`, URL `brunoproencasilva-1dt4yfh0s-bps-a015.vercel.app`. Não reutilizar o deployment histórico de11/10 como se fosse o atual. A publicação explícita usará o SHA integrado via [API de deployments](https://vercel.com/docs/rest-api/deployments/create-a-new-deployment), sem upload das edições locais e sem reativar deploy Git automático de main/redesign.

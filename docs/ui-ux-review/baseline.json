@@ -1,0 +1,46 @@
+{
+  "fit": [
+    {
+      "name": "Museu de Arte Moderna",
+      "band": 624,
+      "copy": 496.109375,
+      "visual": 376.046875,
+      "links": -63.890625
+    },
+    {
+      "name": "Industry Week SENAI",
+      "band": 624,
+      "copy": 402.546875,
+      "visual": 332.046875,
+      "links": -110.734375
+    },
+    {
+      "name": "Ateliê Ingrid Xavier",
+      "band": 624,
+      "copy": 451.328125,
+      "visual": 395.234375,
+      "links": -86.34375
+    },
+    {
+      "name": "kord",
+      "band": 624,
+      "copy": 451.328125,
+      "visual": 332.046875,
+      "links": -86.34375
+    }
+  ],
+  "reduced": {
+    "before": {
+      "x": 614.59375,
+      "y": 222.375,
+      "width": 421.390625,
+      "height": 39.421875
+    },
+    "after": {
+      "x": 614.59375,
+      "y": 4061.25,
+      "width": 421.390625,
+      "height": 39.421875
+    }
+  }
+}

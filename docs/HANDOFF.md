@@ -1,4 +1,122 @@
-# Estado vigente — F aprovada e integração GitHub autorizada, 2026-10-18
+# Estado vigente — release validado, publicação autorizada, 25/10/2026
+
+O usuário aceitou o visual final, retirou fotografias pessoais/contexto do escopo, pediu ícones maiores/nítidos e confirmou “GitHub, main e publicação na Vercel”. Plano `857207f`, ícones `d9430f4`; [revisão vigente](FINALIZATION_REVIEW.md). Isso supera os gates históricos de aceite visual/fotos/autorização de entrega; H03 continua aberta e não foi declarada aprovada.
+
+Favicon com melhor ocupação e entradas16/32/48/64; avatar do “o” cerca de29% maior, com fonte adequada a DPR2 e arte original intacta.18/18 E2E específicos e capturas desktop/mobile/native-size conferidos. No worktree isolado detached d9430f4, sem as quatro edições locais: npm ci, build/strict, lint, nove unitários e formato PASS; **400 E2E PASS/5 SKIP**, zero falhas/retries, nos três motores em uma rodada serial completa. Auditorias runtime/completa zero; peers exit0 sem inválidos, seis avisos opcionais conhecidos. Provas em finalization-review.
+
+QA paralelo foi encerrado após relato de queda de quadros; usuário confirmou recuperação do scroll. A lógica das animações não recebeu mudança experimental. Usar um worker e prioridade BelowNormal quando o usuário revisa a UI neste PC; não disputar recursos com benchmarks/checks concorrentes. A retomada serial passou. Quatro alterações anteriores intactas por hashes e fora do release, workspace original preservado.
+
+H03 atual do release limpo: home mediana nota88/LCP3392ms/TBT191ms/CLS0,0389, três Lighthouse sem concorrência; meta ainda não atingida. Sondas ABBA de stub startReveals e decoding sync não justificaram alteração de produto; dados instrumentados não são comparáveis às navegações diretas. Cases/INP não remedidos. Não trocar fluidez por pontuação.
+
+Branch enviada, PR1 em https://github.com/brunoproencadev/portfolio/pull/1; integração/publicação ainda não executadas neste registro. Vercel autenticada, projeto/domínio/repoId/variáveis conferidos; rollback atual dpl_6FxjM8rjeehB3bAeWJrG212ABmTL, SHA aa70f4c73008f85731e4f45e528ac2c7f8737d0f. Próximo passo: concluir PR e publicar o SHA integrado pela API Git, excluindo arquivos locais, validar domínio e registrar deployment. Git deploy automático continua bloqueado; autorização é para esta entrega explícita. Registros inferiores são históricos quando conflitarem.
+
+# Histórico — seleção/título e formato resolvidos, 25/10/2026
+
+Continuidade autorizada por “Pode continuar”, plano `38cc257`. Pedidos posteriores priorizaram bloquear seleção de texto e retirar a caixa de foco do título: `a7034e9` aplica CSS global de seleção e remove somente o outline do h1 do hero; links/botões conservam foco visível. [Relatório vigente](COMPLETION_REVIEW.md). Preview http://127.0.0.1:3117/.
+
+Validação: build/strict PASS,15 verificações de arraste nas cinco rotas/três motores, seis verificações de foco/reload e captura inspecionada. Teste existente de teclado/reduced motion:2 PASS/1 SKIP histórico WebKit/Windows, sem falhas/retries. A caixa foi reproduzida com foco programático/teclado; o clique comum não a reproduziu nos headless. Não atribuir causa confirmada de restauração do browser. Foco do título não interativo foi preservado, seu outline foi suprimido por pedido explícito.
+
+`b0f52c4` normaliza24 arquivos históricos, prova JSON/AST equivalente e atualiza dez referências de hash/bytes em seis manifestos.29 arquivos no commit; formato global agora PASS. [Linhagem e provas](completion-review/format-preservation.json), sem mudança de resultados/imagens. Quatro edições preexistentes intactas por SHA256 e fora dos commits.
+
+H03 continua aberta. Controle desta retomada, antes dos pedidos CSS: nota84/LCP3540ms/TBT307ms, três execuções. Sondas de dois frames89/LCP3221 e idle87/LCP3445 retiradas; séries exploratórias não comprovam ganho causal nem atingem a meta. Ensaio com servidor antigo invalidado por erros de recursos; logs preservados. `home-motion.tsx` restaurado byte a byte ao blob db9095e; nenhuma alteração experimental de coreografia/agendamento conservada. Não são métricas do build CSS final; cases/INP não remedidos.
+
+I permanece preparada localmente, com autorização Ateliê resolvida. Próximo trabalho técnico: reduzir custo de renderização/inicialização sem retirar a coreografia aprovada. Aceite humano, favicon em aba, compartilhamento real, fotos/contexto, hardware/leitor de tela e INP continuam delimitados. Build noindex e deploy Git main/redesign bloqueado; sem push/merge/deploy. SHA documental por `git log -1 -- docs/HANDOFF.md`. Registros inferiores de formato24 pendente foram superados; H03 não foi dispensada.
+
+# Histórico — I preparada para revisão, 25/10/2026
+
+I autorizada por “Aprovado, pode dar inicio”; plano `ebaad99`, fonte `3b99eba` (OG com identidade atual, avatar exato e Manrope local). [Revisão e evidências](PHASE_I_REVIEW.md), [checklist de release/rollback](RELEASE_CHECKLIST.md). Permissão da marca/capturas Ateliê confirmada pelo usuário: “Confirmo que tenho permissão para esse uso”, registrada em MEDIA_ASSETS. Não atribuir autoria adicional nem supor fotos/contexto fornecidos.
+
+18/18 E2E SEO/assets nos perfis padrão, preview e produção simulada, três motores, zero skips/retries nas rodadas finais. Cinco rotas, metadata, ícones, headers, 404 e sitemap conferidos. Builds/strict/lint e nove unitários PASS; auditorias runtime/completa zero vulnerabilidades. Seis avisos extraneous opcionais conhecidos, sem peers inválidos; varredura de325 textos rastreados sem padrões de segredo, sem alegação de pentest. Falhas intermediárias do build/harness, correções e logs preservados no relatório. Fonte da home e testes de movimento não alterados nesta fase.
+
+Build final restaurado noindex, sitemap vazio; preview http://127.0.0.1:3117/. Quatro arquivos preexistentes intactos por SHA256 e fora dos commits. H03 segue aberta (última mediana H: nota88/LCP3412ms, não remedida nesta fase); formato global ainda falha nos mesmos24 arquivos históricos. Aceite humano, favicon em aba, compartilhamento real, Safari/hardware/leitor de tela, INP e fotos/contexto permanecem delimitados. I preparada localmente não equivale a release liberado. Nenhum push/merge/deploy ou configuração remota; deploy Git automático main/redesign continua bloqueado.
+
+Próximo gate: revisão de I e resolução/decisão dos limites antes da publicação; push, integração e deploy precisam de autorizações próprias. Não começar outra fase automaticamente. SHA do fechamento documental: `git log -1 -- docs/HANDOFF.md`. Registros inferiores de I não autorizada ou direitos Ateliê pendentes são históricos.
+
+# Histórico — transições corrigidas, H03 aberta, 25/10/2026
+
+Retomada autorizada por “Tem minha aprovação, continue”. Plano `92952eb`; correção funcional `6fd47a7`; sincronização dos testes `d2e7bf7`; [relatório vigente](PHASE_H_RESOLUTION_REVIEW.md). O refresh podia medir o trigger após aplicar a entrada de 36px/96px. immediateRender:false preserva a geometria natural; endpoints, tempos, scrub, refresh e cleanup mantidos. Uma linha de produto alterada.
+
+Prova: reprodução anterior 11 PASS/1 FAIL com scroll correto; teste original 20/20 Firefox sem instrumentação; transições 12/12 nos três motores; build/strict/lint/nove unitários PASS. Rodada completa inicial: 393 PASS/4 FAIL/5 SKIP; confirmação dos dois arquivos afetados: 15/15 PASS. 397 casos distintos aprovados entre os comandos, com cinco skips e zero retries. Não foi uma única rodada completa sem falhas. As falhas completas vieram de três expectativas do transform inicial retirado e de contraste capturado durante a abertura da cápsula. Atualizados somente os estados esperados/sincronização; as verificações funcionais e axe permanecem. A intermitência Firefox de medição deixa de ser pendência conhecida para esse mecanismo, com seu histórico preservado.
+
+H03 continua aberta: três Lighthouse diretos da home, mediana nota 88/LCP 3412ms/TBT 203ms/CLS 0,0389. Sem base pareada antiga para atribuir ganho à correção. Sondagem CSS @property rejeitada após seis execuções alternadas sem ganho; nenhum CSS alterado. Perfil CPU atual delimita custo em inicialização/medição das transições; valores amostrados não são breakdown de LCP. Cases e INP não remedidos.
+
+Browser: 20 capturas, duas comparações reduced motion e duas gravações brutas, sem overflow/pageerrors nos 22 registros. Quatro PNGs inspecionados; vídeos não reproduzidos integralmente. Quatro alterações anteriores intactas por SHA-256 e fora dos commits. Formato histórico permanece pendente; resultados finais e manifesto no relatório.
+
+Preview http://127.0.0.1:3117/. Sem push/merge/deploy ou início de I; produção não atualizada. Próximo trabalho em H: reduzir o custo de inicialização/medição das seções com prova pareada e coreografia preservada. H03, formato, fotos/contexto, direitos Ateliê, favicon em aba e validações humanas/físicas continuam abertos. I é prontidão de produção e mantém seu gate. Commit documental final por `git log -1 -- docs/HANDOFF.md`; registros abaixo são históricos quando conflitarem com este estado.
+
+# Estado vigente — segurança corrigida, H03 aberta, 25/10/2026
+
+Usuário autorizou solucionar o Next e continuar as pendências. Plano local `ae86b92`; correção `4ed77f9`; evidências `4528fdd`, manifesto `b9bcfd6`: Next/eslint-config-next 16.4.3 e patches compatíveis das ferramentas. [Relatório vigente](PHASE_H_SECURITY_REVIEW.md). Auditorias de runtime e completa: zero vulnerabilidades; npm ci, build/strict, lint e nove unitários PASS. Os 22 chunks JS/CSS coincidem byte a byte com os usados nos E2E. npm ls --all sai0 sem peers inválidos, mas conserva seis avisos extraneous de pacotes WASM opcionais após reinstalar; diagnóstico preservado.
+
+E2E:396 PASS/1 FAIL/5 SKIP em 402 casos, sem retries. Falha de transição desktop Firefox repetiu isolada; sonda geométrica normal e três repetições posteriores do teste original PASS, sem modificar teste/timeout. Total distinto397 PASS entre rodadas; intermitência sem causa isolada, não declarar rodada integral limpa. Formato global FAIL nos mesmos 24 arquivos históricos; alterados/diff-check e provas documentais conferidos no fechamento.
+
+H03:21 Lighthouse mobile. Controle final da home: mediana performance 84/LCP 3585 ms/TBT 298 ms/CLS 0,0389. Cases medidos em série anterior neste turno: performance 96/94/94/91 e LCP 2583/2513/2840/2922 ms para RoboSense/Museu/Industry/Ateliê. Experimento de alturas/invalidação das transições rejeitado: controle restaurado melhor que candidato80/LCP 3618 ms. Nenhuma mudança de movimento conservada; coreografia preservada. Não inferir causa ou ganho do patch Next dessas séries sem base pareada16.4.0. INP não medido.
+
+Browser:16 capturas e duas comparações geométricas em 1440×900/375×812, sem overflow/pageerrors nos estados registrados; quatro capturas inspecionadas e duráveis, duas gravações brutas locais sem reprodução integral. Quatro alterações anteriores preservadas por hashes e fora dos commits. Preview atual http://127.0.0.1:3117/. Nenhum push/merge/deploy ou início de I. Produção não atualizada.
+
+Próximo trabalho autorizado em H: investigar a intermitência Firefox e coletar perfil atual da home com variabilidade controlada antes de outro candidato de desempenho. H03, formato histórico, fotos/contexto, direitos Ateliê, favicon em aba e validações humanas/físicas continuam abertos. I é prontidão de produção e exige seu gate separado. Manifesto reconferido com os blobs Git em UTF-8/LF, corrigindo a diferença de hashes dos quatro logs de build inicialmente calculados com CRLF local. Commit documental final consultável por `git log -1 -- docs/HANDOFF.md`; registros seguintes são históricos quando conflitarem com este estado.
+
+# Histórico — push autorizado e enviado, 2026-10-24
+
+Usuário aprovou o ajuste do PNG e autorizou o envio por “Perfeito, muito obrigado, pode fazer o push”. Foram enviados23 commits preservando o histórico, de `6c1c768` até `32e24b5a61959f950358c4411d0caf862b459884`, incluindo os22 pendentes de G/H/UI/UX/easter egg e a proteção adicional de deploy. Branch `redesign/cinematic-portfolio`; sem merge ou atualização de `main`.
+
+`32e24b5` acrescenta `redesign/cinematic-portfolio: false` a `git.deploymentEnabled` em vercel.json, mantendo `main: false`, para separar o push autorizado da publicação não autorizada. JSON, formato e diff-check PASS. Fetch prévio confirmou0 commits remotos exclusivos/22 locais; após o envio, ls-remote confirmou o SHA remoto idêntico a HEAD. Main permaneceu em `a56426dd3016c01f2eb510acc8e068bc758dd395`. API GitHub retornou0 deployments para `32e24b5` no momento da consulta; o status agregado estava pending, sem contextos de check, não uma prova de CI executada.
+
+O GitHub informou renomeação do repositório, confirmada pela API: `brunoproencadev/portfolio`. Origin atualizado para `https://github.com/brunoproencadev/portfolio.git`; os redirecionamentos históricos não foram reescritos nos documentos. As quatro alterações sem commit continuam locais e preservadas. O commit documental deste registro será enviado à mesma branch; seu SHA é consultável por `git log -1 -- docs/HANDOFF.md`. H03, atualização de segurança Next e fase I permanecem pendentes; nenhum deploy foi solicitado.
+
+# Histórico — easter egg do nome entregue localmente, 2026-10-24
+
+Ajuste posterior solicitado: `21af82c` remove fundo/recorte circular/sombra do avatar e amplia0,65em→0,85em, preservando o PNG transparente original e o ciclo de1s. Build/strict, formato/diff-check e9/9 E2E específicos nos três motores PASS; desktop/mobile conferidos. Provas atuais em [HERO_AVATAR_REVIEW](HERO_AVATAR_REVIEW.md), seção do PNG transparente. Sem push/deploy ou atualização de dependências; quatro pendências anteriores intactas.
+
+Pedido explícito implementado em `6e9575a`: passar o mouse pelo “o” de Bruno revela o mesmo avatar da navbar em um ciclo de1000ms e devolve a letra, sem deslocar o nome. Animação nativa com reduced motion, repetição e cleanup; nome acessível preservado. [Relatório e evidências](HERO_AVATAR_REVIEW.md).
+
+75/75 E2E focados nos três motores, zero skips/retries; build/strict, lint,9 unitários, formato dos alterados e diff-check PASS. Histórico de regressão no nome acessível e duas falhas intermediárias na intro WebKit preservado no relatório. Confirmação visual desktop/mobile e duas gravações. Quatro pendências anteriores preservadas. Preview http://127.0.0.1:3116/. Sem push/deploy/I; H03 e segurança Next continuam pendentes. SHA documental consultável por `git log -1 -- docs/HERO_AVATAR_REVIEW.md`.
+
+# Histórico — refinamento de UI/UX, 2026-10-24
+
+Usuário aprovou o plano de correções de interface/movimento por “Pode fazer então, tem minha aprovação”. Plano `7fc1de6`; fonte/testes `bac97a6c7227b5ea9beb6593ff936c6d5263ff26`. [Entrega, comparação e limites](UI_UX_REFINEMENT_REVIEW.md). Posição de leitura e foco preservados ao alternar reduced motion; carrossel informa projeto atual com sublinhado/aria-current. Quatro alterações anteriores preservadas byte a byte e fora dos commits.
+
+Build/strict na confirmação, lint e 9 unitários PASS. Produção completa: 387 PASS, cinco skips históricos e um crash de worker Firefox; confirmação isolada 1/1 PASS, cobrindo 388 casos distintos entre os dois comandos. Nove novos casos de regressão incluídos. Não declarar rodada única sem falhas. Formato global ainda falha em 24 arquivos históricos; alterados/diff-check PASS. 23 capturas e duas gravações finais; título em 259,984→259,531→259,984px no ciclo de preferência, foco mantido.
+
+H03 continua aberta: três Lighthouse mobile atuais da home, mediana performance84/LCP3522ms/TBT285ms/CLS0,0389. Perfil de CPU sem causa isolada para otimização; nenhuma alegação de ganho ou comparação causal com o baseline histórico. Cases/INP não remedidos.
+
+Next 16.4.0 sinalizou vulnerabilidade no build; npm audit de runtime confirmou crítica e indicou 16.4.3. Atualização apresentada em pergunta separada, ainda sem autorização/aplicação neste fechamento. Não publicar. Preview atual http://127.0.0.1:3116/. Avaliação visual humana, segurança e H03 permanecem pendentes; I/push/deploy não autorizados. O SHA deste fechamento documental é consultável em `git log -1 -- docs/UI_UX_REFINEMENT_REVIEW.md`.
+
+# Histórico — Fase H em QA, 2026-10-18
+
+H autorizada por “Dê início a fase H”, retomada por “Dê continuidade”. [Relatório vigente](PHASE_H_REVIEW.md). Esta rodada de QA foi registrada; **H continua aberta por desempenho**, sem autorização de I/push/deploy. As afirmações abaixo de H não iniciada são históricas. Próximo trabalho dentro de H: isolar o custo de inicialização de JavaScript/layout e medir uma solução que preserve a coreografia aprovada.
+
+Commits: `d6a17f0` — plano H; `7a27a28` — alvos do carrossel ≥44px, expectativa cover e zoom dos quatro cases; `cbb81bc910d043b64d938b940d93e09c4ea1ac42` — relatório, histórico de falhas, métricas e evidências duráveis desta retomada. O commit documental de sincronização é consultável por `git log -1 -- docs/HANDOFF.md`, sem autorreferência.
+
+Reconfirmação atual: build/strict/lint PASS; 9/9 unitários; **379 E2E aprovados, cinco skips justificados, zero falhas/retries**, em 384 casos Chromium/Firefox/WebKit. Timeout inicial do teste unitário de lint registrado, seguido de confirmação isolada sem alterar timeout. Formato global FAIL nos mesmos 24 arquivos preexistentes; arquivos desta entrega e diff-check PASS. Artefatos, links e hashes verificados.
+
+Lighthouse mobile: três navegações por cada uma das cinco rotas, sem build/testes concorrentes. Performance home 87; cases 95–97. LCP mediano 3,440s/2,594s/2,537s/2,801s/2,817s para home/RoboSense/Museu/Industry/Ateliê, todos acima de 2,5s. CLS 0,0389 na home e zero nos cases; acessibilidade/boas práticas 100; SEO 66 pelo noindex deliberado. INP não medido. `inlineCss` piorou a mediana local e foi retirado; nenhum ajuste de produto conservado nesta retomada. Não remover movimento para perseguir pontuação.
+
+Quatro alterações de entrada preservadas byte a byte e fora dos novos commits: `docs/PHASE_H_PLAN.md`, `src/components/projects/case-capture.tsx`, `src/components/sections/hero-project.tsx`, `tests/e2e/refinement.spec.ts`. Snapshot em `.audit/phase-h/continuation-baseline`, hashes em `docs/phase-h-review/source-fingerprints.json`. As provas cobrem a árvore completa com essas pendências, não somente HEAD limpo. Não houve inclusão indireta do conteúdo delas nos commits documentais.
+
+Preview local restaurado: http://127.0.0.1:3115/. Novas capturas de menu/foco/zoom e resultados em `docs/phase-h-review`; traces/Lighthouse completos em `.audit/phase-h`. Sem novos vídeos de coreografia, Safari físico, leitor de tela ou prova de campo. Fotos/contexto, direitos Ateliê e favicon em aba seguem pendentes. I tratará SEO, segurança, proveniência e checklist de produção e exige confirmação explícita separada; não iniciar automaticamente.
+
+# Estado vigente — cases cinematográficos G, 2026-10-18
+
+G ampliada pelo pedido de aplicar estética/scroll da home aos cases e adicionar o Museu. Continuidade concluída localmente para avaliação; plano prévio `e06b414`, imagem `452cb71`, cases/motion/testes `32dfe49`. Quatro cases, captura do Museu recuperada em2340×1080 e preenchimento cover com acesso integral. [Relatório vigente](PHASE_G_CINEMATIC_REVIEW.md).
+
+Validação: build/strict/lint,9/9 unitários,99/102 E2E de confirmação mais3/3 corrigidos nos três engines; SEO6/6 anterior aprovado. Histórico completo de falhas e limites no relatório/VERIFICATION.72 estados visuais, overflow/pageerrors0 e axe0 nos nove estados examinados.13 arquivos pendentes do mesmo pedido foram preservados em snapshot e consolidados. Sem push/deploy. Preview http://127.0.0.1:3112/projetos/museu-arte-moderna.
+
+Este fechamento documental registra provas, decisões e SHAs; consultar seu SHA com `git log -1 -- docs/PHASE_G_CINEMATIC_REVIEW.md`, sem autorreferência. G aguarda avaliação do usuário; fotos/contexto, favicon visível e direitos Ateliê mantêm os limites anteriores. H é QA completo/performance e não foi iniciada; exige autorização explícita. Os estados seguintes são históricos.
+
+# Estado vigente — G implementada para avaliação, 2026-10-18
+
+O usuário autorizou G por “dê sequência com a fase G”. [Relatório](PHASE_G_REVIEW.md): três cases com capturas reais, leitura alinhada à identidade B, diagramas junto da arquitetura, fontes fixadas reconferidas e favicon/PNG/Apple derivados do avatar GitHub exato. Sobre/home/coreografia F preservados. Fotografias pessoais/eventos continuam sem originais/contexto; o usuário perguntou sua finalidade e recebeu explicação, sem confirmar dispensa. Nenhuma nova foto presumida.
+
+Commits locais: `6c1c768` — plano e decisões; `161b6a4` — ícones/proveniência/gerador/regressões; `aee6ea7` — cases, mídia e leitura. Este fechamento documental reúne o relatório e as provas; consultar seu SHA por `git log -1 -- docs/PHASE_G_REVIEW.md`, evitando autorreferência.
+
+Validação: build/strict/lint,8/8 unitários e60/60 E2E Chromium/Firefox/WebKit, sem skips/retries. Nove estados visuais/42 capturas e duas gravações de confirmação; zero overflow/pageerrors/axe nos estados examinados. Formato dos arquivos alterados passa; check global falha em24 arquivos preexistentes, preservados. Histórico de crashes sandbox e expectativas corrigidas em VERIFICATION. WebKit/Windows usa foco explícito no novo teste de link, sem comprovar Tab nativo. Inspeção da aba visível, fotos/contextos, direitos de destaque Ateliê e métricas de campo continuam pendentes. Não declarar G01/G03 integralmente aceitos.
+
+Revisão independente pediu somente alinhamento de PRODUCT/DESIGN; corrigido pelo documenter. Verdict posterior `ship` cobre apenas persistence corrigida, sem substituir aceite visual/perceptual ou liberar a próxima fase. Evidências/documentos e seus links/hashes conferidos.
+
+Revisão local: http://127.0.0.1:3110/projetos/robosense-lab. Browser/provas em `docs/phase-g-review`; WebMs locais em `.audit/phase-g/video-confirm`. Nenhum push/deploy desta fase. Próximo gate: avaliação G e autorização explícita de H para QA completo/performance, com decisão sobre as pendências. Não iniciar H/I automaticamente; gate vem das instruções AGENTS.md do usuário.
+
+# Histórico — F aprovada e integração GitHub autorizada, 2026-10-18
 
 O usuário aprovou expressamente F: “Perfeito, a fase F finalmente está adequada”, e pediu enviar os commits ao GitHub e fazê-los contar no histórico de contribuições. Os sete commits locais até `75dde1671c97527c6b71ce0043e4281c90893b15` foram enviados e o remoto foi atualizado de `b966e4b` para esse SHA. A API autenticada confirmou: repositório privado `brunoproencadev/myportifolio`, não fork, branch padrão `main`, e autor GitHub `brunoproencadev` para o e-mail utilizado em todos os56 commits de `main..75dde16`.
 

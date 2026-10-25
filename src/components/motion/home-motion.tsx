@@ -21,9 +21,11 @@ export function HomeMotion() {
     let destination: HTMLElement | undefined;
     let timer = 0;
     let initialFrame = 0;
+    let readingFrame = 0;
     let interacted = false;
     const cancel = () => {
       clearTimeout(timer);
+      cancelAnimationFrame(readingFrame);
       destination = undefined;
     };
     const topFor = (target: HTMLElement) => {
@@ -127,6 +129,64 @@ export function HomeMotion() {
       effects?.revert();
       effects = undefined;
     };
+    const readingPosition = () => {
+      if (scrollY === 0) return;
+      const candidates = Array.from(
+        root.querySelectorAll<HTMLElement>(
+          ".project-copy, .about-copy, h2, h3, .skill-row",
+        ),
+      );
+      const focused = document.activeElement;
+      if (focused instanceof HTMLElement && root.contains(focused))
+        candidates.unshift(focused);
+      const element = candidates.find((candidate) => {
+        const box = candidate.getBoundingClientRect();
+        if (
+          box.bottom <= 112 ||
+          box.top >= innerHeight ||
+          box.right <= 0 ||
+          box.left >= innerWidth
+        )
+          return false;
+        const x = Math.max(0, Math.min(innerWidth - 1, box.x + box.width / 2));
+        const y = Math.max(
+          113,
+          Math.min(innerHeight - 1, box.y + box.height / 2),
+        );
+        // Ignore a sticky project covered by About, or an offscreen slide.
+        return candidate.contains(document.elementFromPoint(x, y));
+      });
+      if (element)
+        return {
+          element,
+          top: element.getBoundingClientRect().top,
+          focused:
+            focused instanceof HTMLElement && element.contains(focused)
+              ? focused
+              : undefined,
+        };
+    };
+    const restoreReadingPosition = (
+      position: ReturnType<typeof readingPosition>,
+    ) => {
+      if (!position) return;
+      cancelAnimationFrame(readingFrame);
+      // Restore after ScrollTrigger has finished resetting its saved scroll.
+      readingFrame = requestAnimationFrame(() => {
+        if (disposed) return;
+        const carouselTop = effects?.scrollTop(position.element);
+        if (carouselTop !== undefined)
+          scrollTo({ top: carouselTop, behavior: "instant" });
+        effects?.settle();
+        scrollBy({
+          top: position.element.getBoundingClientRect().top - position.top,
+          behavior: "instant",
+        });
+        effects?.settle();
+        if (document.activeElement === document.body)
+          position.focused?.focus({ preventScroll: true });
+      });
+    };
     const pagehide = () => {
       hidden = true;
       interrupt();
@@ -138,8 +198,11 @@ export function HomeMotion() {
     };
     const preference = () => {
       const target = destination;
-      if (reduced.matches) release();
-      else load();
+      if (reduced.matches) {
+        const position = readingPosition();
+        release();
+        restoreReadingPosition(position);
+      } else load();
       if (target) navigate(target, false);
     };
     function load() {
@@ -148,13 +211,9 @@ export function HomeMotion() {
       void import("./home-reveals")
         .then(({ startReveals }) => {
           if (disposed || hidden || reduced.matches) return;
-          const anchor = Array.from(
-            root!.querySelectorAll<HTMLElement>("h2, h3, .skill-row"),
-          ).find((element) => element.getBoundingClientRect().bottom > 112);
-          const before = anchor?.getBoundingClientRect().top;
+          const position = readingPosition();
           effects = startReveals(root!);
-          if (anchor && before !== undefined && scrollY > 0)
-            scrollBy(0, anchor.getBoundingClientRect().top - before);
+          restoreReadingPosition(position);
           alignInitialHash();
         })
         .catch(release)

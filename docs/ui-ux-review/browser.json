@@ -1,0 +1,299 @@
+[
+  {
+    "width": 1440,
+    "id": "sobre",
+    "scrollY": 2867,
+    "overflow": false,
+    "current": "Sobre",
+    "rects": [
+      {
+        "id": "titulo-robosense-lab",
+        "y": 152
+      },
+      {
+        "id": "sobre",
+        "y": 76.15625
+      },
+      {
+        "id": "projetos",
+        "y": 902.8908081054688
+      },
+      {
+        "id": "competencias",
+        "y": 6403.953125
+      },
+      {
+        "id": "contato",
+        "y": 8134.40625
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "id": "projetos",
+    "scrollY": 3658,
+    "overflow": false,
+    "current": "Projetos",
+    "rects": [
+      {
+        "id": "titulo-robosense-lab",
+        "y": -558
+      },
+      {
+        "id": "sobre",
+        "y": -746.84375
+      },
+      {
+        "id": "projetos",
+        "y": 99.546875
+      },
+      {
+        "id": "competencias",
+        "y": 5612.953125
+      },
+      {
+        "id": "contato",
+        "y": 7343.40625
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "id": "competencias",
+    "scrollY": 9159,
+    "overflow": false,
+    "current": "Competências",
+    "rects": [
+      {
+        "id": "titulo-robosense-lab",
+        "y": -6059
+      },
+      {
+        "id": "sobre",
+        "y": -6247.84375
+      },
+      {
+        "id": "projetos",
+        "y": -5433.453125
+      },
+      {
+        "id": "competencias",
+        "y": 39.953125
+      },
+      {
+        "id": "contato",
+        "y": 1842.40625
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "id": "contato",
+    "scrollY": 10725,
+    "overflow": false,
+    "current": "Contato",
+    "rects": [
+      {
+        "id": "titulo-robosense-lab",
+        "y": -7625
+      },
+      {
+        "id": "sobre",
+        "y": -7813.84375
+      },
+      {
+        "id": "projetos",
+        "y": -6999.453125
+      },
+      {
+        "id": "competencias",
+        "y": -1558.046875
+      },
+      {
+        "id": "contato",
+        "y": 276.40625
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "transition": {
+      "before": 259.984375,
+      "reduced": 259.53125,
+      "restored": 259.984375,
+      "focused": true
+    }
+  },
+  {
+    "width": 1440,
+    "slug": "robosense-lab",
+    "errors": [],
+    "overflow": false,
+    "enhanced": true
+  },
+  {
+    "width": 1440,
+    "slug": "museu-arte-moderna",
+    "errors": [],
+    "overflow": false,
+    "enhanced": true
+  },
+  {
+    "width": 1440,
+    "slug": "industry-week-senai",
+    "errors": [],
+    "overflow": false,
+    "enhanced": true
+  },
+  {
+    "width": 1440,
+    "slug": "atelie-ingrid-xavier",
+    "errors": [],
+    "overflow": false,
+    "enhanced": true
+  },
+  {
+    "width": 375,
+    "id": "sobre",
+    "scrollY": 1822,
+    "overflow": false,
+    "current": "Sobre",
+    "rects": [
+      {
+        "id": "titulo-robosense-lab",
+        "y": 168
+      },
+      {
+        "id": "sobre",
+        "y": 76.171875
+      },
+      {
+        "id": "projetos",
+        "y": 965.287353515625
+      },
+      {
+        "id": "competencias",
+        "y": 6069.546875
+      },
+      {
+        "id": "contato",
+        "y": 8181.46875
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "id": "projetos",
+    "scrollY": 2675,
+    "overflow": false,
+    "current": "Projetos",
+    "rects": [
+      {
+        "id": "titulo-robosense-lab",
+        "y": -624.71875
+      },
+      {
+        "id": "sobre",
+        "y": -792.828125
+      },
+      {
+        "id": "projetos",
+        "y": 79.015625
+      },
+      {
+        "id": "competencias",
+        "y": 5216.546875
+      },
+      {
+        "id": "contato",
+        "y": 7328.46875
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "id": "competencias",
+    "scrollY": 7780,
+    "overflow": false,
+    "current": "Competências",
+    "rects": [
+      {
+        "id": "titulo-robosense-lab",
+        "y": -5729.71875
+      },
+      {
+        "id": "sobre",
+        "y": -5897.828125
+      },
+      {
+        "id": "projetos",
+        "y": -5041.984375
+      },
+      {
+        "id": "competencias",
+        "y": 79.546875
+      },
+      {
+        "id": "contato",
+        "y": 2223.46875
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "id": "contato",
+    "scrollY": 9855,
+    "overflow": false,
+    "current": "Contato",
+    "rects": [
+      {
+        "id": "titulo-robosense-lab",
+        "y": -7804.71875
+      },
+      {
+        "id": "sobre",
+        "y": -7972.828125
+      },
+      {
+        "id": "projetos",
+        "y": -7116.984375
+      },
+      {
+        "id": "competencias",
+        "y": -2011.453125
+      },
+      {
+        "id": "contato",
+        "y": 148.46875
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "slug": "robosense-lab",
+    "errors": [],
+    "overflow": false,
+    "enhanced": false
+  },
+  {
+    "width": 375,
+    "slug": "museu-arte-moderna",
+    "errors": [],
+    "overflow": false,
+    "enhanced": false
+  },
+  {
+    "width": 375,
+    "slug": "industry-week-senai",
+    "errors": [],
+    "overflow": false,
+    "enhanced": false
+  },
+  {
+    "width": 375,
+    "slug": "atelie-ingrid-xavier",
+    "errors": [],
+    "overflow": false,
+    "enhanced": false
+  }
+]

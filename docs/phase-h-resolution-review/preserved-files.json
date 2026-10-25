@@ -1,0 +1,22 @@
+[
+  {
+    "file": "docs/PHASE_H_PLAN.md",
+    "sha256": "2D8C9EDFD49803E05EBBFE35617F2C0DA87ED5708B5D4BE731B381A9E84AF21C",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/projects/case-capture.tsx",
+    "sha256": "A2A6F857A589BE98DF1DAF353B1A136728994064D87A7429F7EF74591693587B",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/sections/hero-project.tsx",
+    "sha256": "0F2B85556AC0A2D38B0AAD582AA7E83C3759AA3847D0BEB2A715ACAD52B59DAA",
+    "unchanged": true
+  },
+  {
+    "file": "tests/e2e/refinement.spec.ts",
+    "sha256": "1015BF7060CD5C25CB76A6B74EC35A0AFC229203A09EFC33788F74C73548D9EF",
+    "unchanged": true
+  }
+]

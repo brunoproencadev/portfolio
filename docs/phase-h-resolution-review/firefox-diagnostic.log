@@ -1,0 +1,44 @@
+
+Running 8 tests using 1 worker
+
+(node:2932) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/8] .audit\phase-h-resolution\diagnostic.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:19464) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[2/8] .audit\phase-h-resolution\diagnostic.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:35516) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[3/8] .audit\phase-h-resolution\diagnostic.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:34872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[4/8] .audit\phase-h-resolution\diagnostic.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:31792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[5/8] .audit\phase-h-resolution\diagnostic.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:31172) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[6/8] .audit\phase-h-resolution\diagnostic.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:4288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[7/8] .audit\phase-h-resolution\diagnostic.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+(node:33752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[8/8] .audit\phase-h-resolution\diagnostic.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+  8 passed (49.1s)

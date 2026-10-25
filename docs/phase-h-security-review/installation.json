@@ -1,0 +1,45 @@
+{
+  "cleanInstall": {
+    "name": "npm-ci",
+    "args": ["C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js", "ci"],
+    "code": 0,
+    "elapsedMs": 231844,
+    "timestamp": "2026-10-25T13:03:48.292Z"
+  },
+  "build": {
+    "name": "build-final",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 20015,
+    "timestamp": "2026-10-25T13:04:21.346Z"
+  },
+  "lint": {
+    "name": "lint-ci",
+    "args": ["node_modules/eslint/bin/eslint.js", ".", "--max-warnings=0"],
+    "code": 0,
+    "elapsedMs": 15649,
+    "timestamp": "2026-10-25T13:04:46.410Z"
+  },
+  "unit": {
+    "name": "unit-ci",
+    "args": ["node_modules/vitest/vitest.mjs", "run"],
+    "code": 0,
+    "elapsedMs": 6938,
+    "timestamp": "2026-10-25T13:04:53.444Z"
+  },
+  "clientChunks": {
+    "testedChunks": 22,
+    "identical": true
+  },
+  "dependencyTree": {
+    "exitCode": 0,
+    "problems": [
+      "extraneous: @emnapi/core@1.10.0 D:\\projects\\portifolio\\node_modules\\@emnapi\\core",
+      "extraneous: @emnapi/runtime@1.11.3 D:\\projects\\portifolio\\node_modules\\@emnapi\\runtime",
+      "extraneous: @emnapi/wasi-threads@1.2.1 D:\\projects\\portifolio\\node_modules\\@emnapi\\wasi-threads",
+      "extraneous: @img/sharp-wasm32@0.35.5 D:\\projects\\portifolio\\node_modules\\@img\\sharp-wasm32",
+      "extraneous: @napi-rs/wasm-runtime@1.2.5 D:\\projects\\portifolio\\node_modules\\@napi-rs\\wasm-runtime",
+      "extraneous: @tybys/wasm-util@0.10.4 D:\\projects\\portifolio\\node_modules\\@tybys\\wasm-util"
+    ]
+  }
+}

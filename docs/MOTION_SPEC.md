@@ -1,3 +1,9 @@
+## Extensão G — storyboard implementado,18/10/2026
+
+[Plano anterior à implementação](PHASE_G_CINEMATIC_PLAN.md), [comparação e limites](PHASE_G_CINEMATIC_REVIEW.md); fonte32dfe49. Quatro cases usam cena desktop≥1100×800/no-preference200svh sticky nativo. Intro y−48/opacity0 até34%; luz sai; mídia y65vh/scale0.65/opacity0→y0/scale1/opacity1 entre15–65%, hold até fim, scrub0.4s. Pointer events da mídia somente ao terminar entrada; teclado sempre pode optar por leitura normal. Corpo cobre a cena, raio32→0; texto y48→0 entre top90% e48%, sem opacity ocultando leitura. Faixas reutilizam owner da home; nenhum Motion controla as propriedades GSAP.
+
+Reduced em execução, viewport compacto/baixo, no-JS/import falho e foco/hash deixam fluxo normal; foco antes da hidratação bloqueia enhancement tardio. Pagehide/pageshow, resize e desmontagem limpam/reconciliam contextos/listeners/import pendente. Reversível; sem interceptação de wheel/touch. Valores e sequência provados em testes e pranchas, sem certificar percepção/dispositivo físico.
+
 ## Estado vigente F — entrada atrasada no carrossel, 2026-10-18
 
 Fonte `f2cb592`: somente os grupos `.story-visual .tool-popups` recebem o surgimento do RoboSense (y28/scale0,55/opacity0 → y0/scale1/opacity1, `back.out(2.6)`) com atraso240ms após o IO detectar a imagem, duração650ms e stagger45ms. Saída do viewport restaura o início; reentrada repete uma vez, sem loop. Reduced/no-JS restauram visibilidade; aba oculta encerra a animação; observer/listener/tweens têm cleanup e callback tardio é ignorado. A timeline e o fallback do RoboSense permanecem como no incremento anterior. Nota de estudos desloca24px com opacidade integral para conservar contraste na borda inferior. [Provas e decisões](PHASE_F_COMPETENCIES.md).

@@ -203,8 +203,8 @@
     },
     {
       "file": "verification.json",
-      "bytes": 4058,
-      "sha256": "cf15051a8eb9dc2a4a5a72ae2dad3f0ea0c6888102255ec9057d2dc1e1eac9d8"
+      "bytes": 3610,
+      "sha256": "92b049214c212c667b97098c02dd32852d887c59b4416de48f1a7c34aa7600e3"
     }
   ]
 }

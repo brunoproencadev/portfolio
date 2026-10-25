@@ -1,4 +1,16 @@
-# Preparação de publicação — Fase 8
+# Preparação de publicação — estado em25/10/2026
+
+Fase I preparada localmente para revisão: plano `ebaad99`, fonte `3b99eba`, [revisão/provas](PHASE_I_REVIEW.md), [checklist vigente de release e rollback](RELEASE_CHECKLIST.md). Cinco rotas, OG atual com avatar/Manrope/violeta, permissões Ateliê confirmadas, três perfis SEO com18/18 E2E e auditorias zero. Build local final noindex; deploy Git main/redesign continua bloqueado. Nenhuma publicação do redesign foi executada ou autorizada nesta fase.
+
+H03, formato histórico e validações humanas/físicas impedem tratar o preparo como release liberado. Antes de publicar, reconfirmar projeto/domínio Vercel, SHA aprovado, ambiente e deployment de retorno. A consulta HTTP pública200 não identifica a versão implantada. Registros abaixo são históricos: descrições de BP/, apenas três cases e segurança/I pendentes foram superadas localmente; a produção de2026-10-11 não foi atualizada por esta fase.
+
+# Histórico — preparação de publicação da Fase 8
+
+## Push do redesign sem deploy — 2026-10-24
+
+Usuário aceitou o avatar PNG e autorizou apenas o push. Histórico enviado à branch `redesign/cinematic-portfolio` até `32e24b5`; main não foi atualizada. A configuração `git.deploymentEnabled` passou a bloquear tanto `main` quanto `redesign/cinematic-portfolio`, impedindo que o push autorizado dispare o deploy Git dessas branches, conforme a [configuração oficial Vercel](https://vercel.com/docs/project-configuration/git-configuration). As demais branches não foram alteradas. A afirmação anterior de previews habilitados permanece histórica para a branch de redesign.
+
+O GitHub confirmou o repositório renomeado `brunoproencadev/portfolio`; origin foi atualizado. API de deployments retornou0 registros para o SHA enviado na consulta; status agregado pending sem contextos não comprova uma execução de CI. Este fechamento documental será enviado à mesma branch. Não houve ação de deploy/merge nesta rodada; H03 e correção de segurança Next continuam pendentes, e fase I/publicação exigem aprovação própria.
 
 ## Integração GitHub da fase F — 2026-10-18
 
