@@ -1,5 +1,11 @@
 # Estado vigente — produção atualizada e verificada, 25/10/2026
 
+## README profissional — entrega local, 25/10/2026
+
+Pedido atual: README profissional e atrativo, com planejamento antes de executar. Plano apresentado e aprovado por “Aprovado”; incremento concluído em `ce0e294` (`docs(readme): apresenta portfólio e execução do projeto`). Apresentação em português com captura real existente, projetos, tecnologias, instalação/configuração, estrutura, verificações e créditos. Estado publicado substitui referências antigas a A/B; o histórico segue nos documentos internos. Repositório confirmado público pelo GitHub CLI.
+
+Prettier nos três documentos alterados, 13 destinos locais, sete scripts npm, cinco rotas HTTP200, PNG2880×1800 e `git diff --check` aprovados. As quatro edições anteriores foram preservadas por SHA256 e excluídas do commit. Detalhes em [VERIFICATION](VERIFICATION.md). Sem novo build/E2E/Lighthouse ou validação da renderização no GitHub; nenhum código, animação ou asset alterado. Commit local, sem push ou deploy nesta entrega documental. H03 permanece aberta e a preferência por fluidez continua vigente. Próxima retomada de desempenho deve seguir o escopo já autorizado, sem interpretar o README como fechamento de H03.
+
 Entrega final desta rodada em https://brunoproencasilva.vercel.app: PR2 integrado, main abbf7a3ced78ef91b0ecda6cc1f6cd5541b7dc0b, deployment dpl_DYtwkccWuqUkQZmWpgFs5qXypQre READY/alias atribuído. Runtime0a53503, publicado via GitSource do SHA exato, sem upload da árvore local. [Resumo/provas](FINALIZATION_REVIEW.md). Cinco rotas/SEO/sitemap/ícones por SHA/404/HTTPS conferidos, imagens reais200, browser desktop/mobile sem overflow/pageerrors e densidade responsiva confirmada. Logs de build concluídos e amostra runtime error/fatal cinco minutos sem registros.
 
 H03 final da rodada: produção mediana95/LCP2517ms/TBT190/CLS0,0389, três execuções preservadas; a mediana não passou2,5s. Local88/LCP3419, cases/INP não remedidos. Não encerrar H03 por arredondamento, pela melhor execução ou por autorização de publicar. Recursos do avatar mobile foram reduzidos sem mudar animações/scroll ou o tamanho ampliado. Rollback imediato f9bd0cf/dpl_F9HSH5KotxomfkDPk17Mfsjc18vq; anterior aa70f4c/dpl_6FxjM8rjeehB3bAeWJrG212ABmTL. Git deploy automático continua bloqueado.
