@@ -1,0 +1,33 @@
+[
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap",
+    "finalUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap",
+    "status": 200,
+    "contentType": "text/css; charset=utf-8",
+    "timestamp": "2026-10-25T15:24:17.123Z",
+    "sha256": "2398c6281d3268083d330c9437d9fb30a9a4f627a086e54033285d3ba9d3f8f0"
+  },
+  {
+    "url": "https://api.github.com/users/brunoproencadev",
+    "finalUrl": "https://api.github.com/users/brunoproencadev",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "timestamp": "2026-10-25T15:24:17.346Z",
+    "sha256": "e048389588488c6aa908a2b06b6d6fcfc4a1d41aae5a518e5b9d43ffa7a94a3e"
+  },
+  {
+    "url": "https://avatars.githubusercontent.com/u/271389368?v=4",
+    "status": 200,
+    "bytes": 101669,
+    "sha256": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672",
+    "localSha256": "a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672"
+  },
+  {
+    "url": "https://brunoproencasilva.vercel.app/",
+    "finalUrl": "https://brunoproencasilva.vercel.app/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "timestamp": "2026-10-25T15:24:18.020Z",
+    "sha256": "f467f66e62873dbf7d7145370226b52661d9ee15323aa1d419c65b6b40f62506"
+  }
+]

@@ -1,3 +1,13 @@
+## Fase I — OG e autorização Ateliê, 25/10/2026
+
+O usuário confirmou expressamente a permissão para destacar a marca e as capturas do Ateliê Ingrid Xavier no portfólio: “Confirmo que tenho permissão para esse uso”. Isso resolve a pendência específica de autorização registrada em G; não atribui ao usuário autoria da marca/fotografias nem confirma um deployment do Ateliê. Fotografias pessoais/eventos continuam sem originais/contexto e não foram adicionadas.
+
+A OG legada BP/ e verde foi substituída por composição da identidade atual, dados existentes do perfil e avatar exato, sem nova imagem pessoal. A API pública GitHub e o download em25/10 confirmaram o mesmo PNG460×460/101.669bytes e SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`; [consulta atual](phase-i-review/external-checks.json). Não inferir autoria/licença adicional da ilustração.
+
+A fonte de interface WOFF2 permanece intacta. A OG usa TTF estáticos400/500 da mesma família Manrope, versão Google Fonts v20, porque ImageResponse não aceita WOFF2. [URLs, pesos, bytes e hashes](phase-i-review/fonts.json). Aquisição via CSS oficial Google Fonts e fontes.gstatic.com; a licença OFL obtida do repositório oficial tem texto idêntico a src/fonts/OFL.txt. Nenhuma família, pacote ou dependência nova. TTFs são lidos localmente e rastreados pelo build; não há fetch externo para renderizar a OG em produção.
+
+Registros inferiores de autorização Ateliê pendente ou OG BP/ são históricos. Compartilhamento em plataformas reais e aparência do favicon em aba visível continuam dependentes de verificação própria.
+
 ## Avatar no easter egg do nome — 24/10/2026
 
 Uso solicitado pelo usuário: ao passar o mouse pelo “o” de Bruno, revelar o avatar por um ciclo de1s. Reutilizado o mesmo leão exato da navbar, `public/images/profile/github-avatar.png`,460×460/101.669bytes, SHA256 `a31a9eb6f741a092ac97494565cc6b720f503cdbaa01d815b0aaf72a2ebf9672`, reconferido nesta rodada. Sem arquivo novo ou alteração da imagem; não é fotografia facial. Origem pública já registrada abaixo: avatar GitHub do usuário. [Implementação, provas e limites](HERO_AVATAR_REVIEW.md). Pedido autoriza o uso local, sem nova publicação.
