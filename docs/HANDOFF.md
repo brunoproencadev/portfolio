@@ -1,4 +1,16 @@
-# Estado vigente — seleção/título e formato resolvidos, 25/10/2026
+# Estado vigente — release validado, publicação autorizada, 25/10/2026
+
+O usuário aceitou o visual final, retirou fotografias pessoais/contexto do escopo, pediu ícones maiores/nítidos e confirmou “GitHub, main e publicação na Vercel”. Plano `857207f`, ícones `d9430f4`; [revisão vigente](FINALIZATION_REVIEW.md). Isso supera os gates históricos de aceite visual/fotos/autorização de entrega; H03 continua aberta e não foi declarada aprovada.
+
+Favicon com melhor ocupação e entradas16/32/48/64; avatar do “o” cerca de29% maior, com fonte adequada a DPR2 e arte original intacta.18/18 E2E específicos e capturas desktop/mobile/native-size conferidos. No worktree isolado detached d9430f4, sem as quatro edições locais: npm ci, build/strict, lint, nove unitários e formato PASS; **400 E2E PASS/5 SKIP**, zero falhas/retries, nos três motores em uma rodada serial completa. Auditorias runtime/completa zero; peers exit0 sem inválidos, seis avisos opcionais conhecidos. Provas em finalization-review.
+
+QA paralelo foi encerrado após relato de queda de quadros; usuário confirmou recuperação do scroll. A lógica das animações não recebeu mudança experimental. Usar um worker e prioridade BelowNormal quando o usuário revisa a UI neste PC; não disputar recursos com benchmarks/checks concorrentes. A retomada serial passou. Quatro alterações anteriores intactas por hashes e fora do release, workspace original preservado.
+
+H03 atual do release limpo: home mediana nota88/LCP3392ms/TBT191ms/CLS0,0389, três Lighthouse sem concorrência; meta ainda não atingida. Sondas ABBA de stub startReveals e decoding sync não justificaram alteração de produto; dados instrumentados não são comparáveis às navegações diretas. Cases/INP não remedidos. Não trocar fluidez por pontuação.
+
+Branch enviada, PR1 em https://github.com/brunoproencadev/portfolio/pull/1; integração/publicação ainda não executadas neste registro. Vercel autenticada, projeto/domínio/repoId/variáveis conferidos; rollback atual dpl_6FxjM8rjeehB3bAeWJrG212ABmTL, SHA aa70f4c73008f85731e4f45e528ac2c7f8737d0f. Próximo passo: concluir PR e publicar o SHA integrado pela API Git, excluindo arquivos locais, validar domínio e registrar deployment. Git deploy automático continua bloqueado; autorização é para esta entrega explícita. Registros inferiores são históricos quando conflitarem.
+
+# Histórico — seleção/título e formato resolvidos, 25/10/2026
 
 Continuidade autorizada por “Pode continuar”, plano `38cc257`. Pedidos posteriores priorizaram bloquear seleção de texto e retirar a caixa de foco do título: `a7034e9` aplica CSS global de seleção e remove somente o outline do h1 do hero; links/botões conservam foco visível. [Relatório vigente](COMPLETION_REVIEW.md). Preview http://127.0.0.1:3117/.
 

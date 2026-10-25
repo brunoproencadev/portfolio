@@ -1,4 +1,12 @@
-# Verificação vigente — seleção, título e formato, 25/10/2026
+# Verificação vigente — commit isolado do release, 25/10/2026
+
+Plano `857207f`, fonte `d9430f4`; [revisão](FINALIZATION_REVIEW.md), [prova isolada](finalization-review/release-validation.json). npm ci no lockfile, build/strict, lint, nove unitários e formato PASS. **400 E2E PASS/5 SKIP**, zero falhas/retries, uma rodada completa com um worker/BelowNormal nos três motores. Os cinco skips são históricos. Tentativa anterior de dois workers interrompida após sobrecarga percebida pelo usuário; recuperação confirmada, sem mudança de lógica de animação. Não apresentar log parcial como aprovação.
+
+Auditorias runtime/completa zero vulnerabilidades; peers exit0, sem inválidos e seis avisos extraneous opcionais conhecidos. Quatro edições locais não entram no SHA e permanecem intactas.18 testes específicos adicionais na árvore original e capturas avatar desktop/mobile/ícones em tamanho nativo passam; ícones derivam da mesma arte, sem detalhes gerados. Aceite visual humano concedido e fotos retiradas do escopo por decisão do usuário.
+
+H03 sobre o build limpo, três execuções diretas sem concorrência: mediana88/LCP3392/TBT191/CLS0,0389, fora da meta. [Configuração e valores](finalization-review/local-performance.json). Sondas ABBA adicionais retiradas/diagnósticas, sem mudança conservada. Sem nova medição de cases/INP. Publicação autorizada e preparação Vercel conferida; integração/deployment ainda não executados neste registro. [Manifesto](finalization-review/manifest.json). Estados inferiores de aceite/fotos/autorização pendentes foram superados.
+
+# Histórico — seleção, título e formato, 25/10/2026
 
 Plano `38cc257`, CSS `a7034e9`, normalização `b0f52c4`. [Revisão](COMPLETION_REVIEW.md), [comandos/logs](completion-review/verification.json). Build/strict e formato do CSS PASS.15 verificações de arraste nas cinco rotas/três motores; seis de foco/reload e links com outline visível; captura posterior inspecionada. Teste existente teclado/reduced motion:2 PASS/1 SKIP histórico WebKit/Windows, zero falhas/retries. Sem prova física ou rodada sem JS; tentativas interrompidas das sondas estão identificadas.
 

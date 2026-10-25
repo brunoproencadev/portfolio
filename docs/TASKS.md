@@ -1,5 +1,14 @@
 # Tarefas e gate atual
 
+## Estado vigente — entrega autorizada e validada, 25/10/2026
+
+- [x] Aceite visual final do usuário; fotografias pessoais/contexto retirados do escopo. Publicação GitHub/main/Vercel explicitamente autorizada.
+- [x] `857207f`/`d9430f4`: ícones com maior ocupação, ICO64 adicional e avatar1,1em com densidade correta.18/18 E2E focados e comparação visual inspecionada.
+- [x] Release limpo isolado d9430f4: npm ci, build/strict/lint/nove unitários/formato PASS;400 E2E PASS/5 SKIP, zero falhas/retries. Auditorias zero; quatro edições locais preservadas e excluídas. [Revisão](FINALIZATION_REVIEW.md).
+- [x] Confirmar recuperação de fluidez após parar QA paralelo; retomada com um worker/BelowNormal aprovada nos testes. Nenhuma mudança experimental no scroll mantida.
+- [ ] Concluir PR1/main e publicar SHA integrado, com rollback identificado e conferência do domínio. Autorização já concedida, sem repetir pedido.
+- [ ] H03 continua: home88/LCP3392ms; não declarar meta aprovada por publicação. Cases/INP não remedidos; hardware/leitor de tela mantêm limites anteriores.
+
 ## Estado vigente — pedidos de interação e formato, 25/10/2026
 
 - [x] Plano `38cc257`; `a7034e9`: seleção de texto bloqueada nas cinco rotas e outline removido somente do título do hero, mantendo foco de links/botões.

@@ -1,0 +1,4 @@
+{"index":0,"mode":"async","documents":1,"score":80,"lcp":3971.5617348429005,"tbt":295,"cls":0.03888213851761847,"timestamp":"2026-10-25T18:24:35.677Z"}
+{"index":1,"mode":"sync","documents":1,"score":81,"lcp":3968.8337348293408,"tbt":284,"cls":0.03888213851761847,"timestamp":"2026-10-25T18:24:46.403Z"}
+{"index":2,"mode":"sync","documents":1,"score":72,"lcp":4213.371016623791,"tbt":528,"cls":0.03888213851761847,"timestamp":"2026-10-25T18:24:56.321Z"}
+{"index":3,"mode":"async","documents":1,"score":83,"lcp":3891.9777348427383,"tbt":243.49999999999977,"cls":0.03888213851761847,"timestamp":"2026-10-25T18:25:07.039Z"}

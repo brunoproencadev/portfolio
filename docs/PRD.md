@@ -1,5 +1,7 @@
 # PRD — Bruno Proença Silva
 
+Decisão25/10/2026 — usuário aceita o visual final, decide não incluir fotografias pessoais/eventos e respectivos contextos, pede favicon/avatar maiores/nítidos e autoriza expressamente GitHub, main e publicação na Vercel. Ícones atendidos em d9430f4; validação isolada em FINALIZATION_REVIEW. Fluidez do scroll aprovado é requisito explícito: não sacrificá-la por LCP. H03 permanece em acompanhamento e não é encerrada pela autorização de entrega; metas R07/R11 continuam registradas.
+
 Pedido25/10/2026 — usuário solicitou bloquear seleção de texto no site e retirar a caixa de foco do título após atualizar/clicar. Implementação CSS `a7034e9`: seleção desabilitada globalmente e outline suprimido somente no h1 do hero, mantendo navegação/foco visível de links e botões. Provas e limites em COMPLETION_REVIEW. Formato histórico resolvido em `b0f52c4`; H03 permanece aberta e publicação não autorizada.
 
 Atualização25/10/2026 — I autorizada por “Aprovado, pode dar inicio” e preparada para revisão em PHASE_I_REVIEW. SEO, segurança, proveniência e checklist local validados; a autorização específica de marca/capturas Ateliê foi confirmada pelo usuário. H03/metas de desempenho e validações humanas continuam abertas. Não houve autorização ou execução de publicação; RELEASE_CHECKLIST rege o próximo gate. Registros inferiores de I não autorizada são históricos.

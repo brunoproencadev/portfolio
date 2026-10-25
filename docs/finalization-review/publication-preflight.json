@@ -1,0 +1,48 @@
+{
+  "project": {
+    "id": "prj_GYDuYFk2oqnCA4cQLnhrT401G4tU",
+    "name": "brunoproencasilva",
+    "accountId": "team_MCANXHnWYW3ssWJcAby1UceD",
+    "framework": "nextjs",
+    "nodeVersion": "24.x",
+    "git": {
+      "type": "github",
+      "org": "brunoproencadev",
+      "repo": "myportifolio",
+      "repoId": 1412563281,
+      "productionBranch": "main"
+    }
+  },
+  "rollback": {
+    "id": "dpl_6FxjM8rjeehB3bAeWJrG212ABmTL",
+    "url": "brunoproencasilva-1dt4yfh0s-bps-a015.vercel.app",
+    "target": "production",
+    "readyState": "READY",
+    "createdAt": 1792282327906,
+    "sha": "aa70f4c73008f85731e4f45e528ac2c7f8737d0f",
+    "ref": "main"
+  },
+  "publicationEnvironment": [
+    {
+      "key": "SITE_URL",
+      "target": ["production", "preview"],
+      "value": "https://brunoproencasilva.vercel.app"
+    },
+    {
+      "key": "SITE_INDEXABLE",
+      "target": ["production"],
+      "value": "true"
+    },
+    {
+      "key": "SITE_INDEXABLE",
+      "target": ["preview"],
+      "value": "false"
+    }
+  ],
+  "domains": [
+    {
+      "name": "brunoproencasilva.vercel.app",
+      "verified": true
+    }
+  ]
+}

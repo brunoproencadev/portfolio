@@ -2,6 +2,8 @@
 
 Preparação da fase I, não autorização de publicação. Branch `redesign/cinematic-portfolio`, plano `ebaad99`, fonte `3b99eba`; [provas e limites](PHASE_I_REVIEW.md). A publicação histórica de2026-10-11 em LAUNCH não comprova a publicação deste redesign.
 
+Decisão vigente25/10: usuário aceitou o visual final, retirou fotos pessoais/contexto do escopo e confirmou “GitHub, main e publicação na Vercel”. Plano857207f, fonte d9430f4, [validação isolada completa](FINALIZATION_REVIEW.md). A autorização agora está concedida; o parágrafo anterior registra o limite de I naquele momento. H03 permanece aberta e não é declarada aprovada pela entrega autorizada. Testes locais de browser usam um worker/BelowNormal para não prejudicar a revisão manual do usuário.
+
 Continuidade25/10: `a7034e9` atende seleção/título, `b0f52c4` resolve formato histórico com hashes atualizados; [revisão e limites atuais](COMPLETION_REVIEW.md). H03 não passou; sondas de agendamento retiradas, sem alteração de coreografia.
 
 ## Preparado localmente
@@ -17,9 +19,9 @@ Continuidade25/10: `a7034e9` atende seleção/título, `b0f52c4` resolve formato
 
 - [ ] Resolver H03 (home fora das metas nota≥90/LCP≤2500ms), preservando coreografia e produzindo comparação pareada; INP de campo continua sem prova. Preparação de I não dispensa H.
 - [x] Normalizar os24 arquivos históricos com prova JSON/AST equivalente e atualizar dez hashes/tamanhos em seis manifestos; formato global PASS, linhagem preservada em completion-review/format-preservation.json (`b0f52c4`).
-- [ ] Concluir aceite visual humano e favicon em aba visível; registrar limites Safari, aparelhos físicos e leitor de tela. Fotografias/contexto ainda não fornecidos não podem ser tratados como conteúdo validado.
-- [ ] Revisar I. Autorizar explicitamente push, eventual integração e deploy/indexação; não inferir uma autorização da outra. Conferir a árvore com as quatro alterações locais antes de definir o SHA exato do release.
-- [ ] No projeto Vercel, reconfirmar conta, vínculo do repositório atual `brunoproencadev/portfolio` e domínio `brunoproencasilva.vercel.app`. O HTTP200 público desta fase não comprova essa associação. Registrar deployment de retorno antes de alterar produção.
+- [x] Aceite visual final concedido; ícones maiores conferidos por HTTP/decodificação e comparação em tamanho nativo no browser. Barra de abas do sistema/Safari físico/leitor de tela não capturados; não alegar essas provas. Fotos pessoais/contexto excluídos do lançamento por decisão do usuário.
+- [x] GitHub/main/Vercel explicitamente autorizados pelo usuário. Release d9430f4 validado em worktree limpo sem as quatro edições locais, preservadas por hashes. Não repetir pedido de autorização já concedida.
+- [x] Conta/projeto/domínio Vercel confirmados por API autenticada; repoId1412563281 coincide com brunoproencadev/portfolio, embora o vínculo exiba o nome antigo. Origem correta, Production indexable=true/Preview=false. Rollback READY dpl_6FxjM8rjeehB3bAeWJrG212ABmTL registrado antes da entrega.
 
 ## Execução futura, somente após autorização
 

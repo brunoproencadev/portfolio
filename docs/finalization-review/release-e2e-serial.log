@@ -1,0 +1,425 @@
+[WebServer] (node:55084) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 405 tests using 1 worker
+
+(node:53376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/405] [chromium] › tests\e2e\carousel-arrival.spec.ts:4:3 › carousel tools follow the image, replay and release at 1440px
+[2/405] [chromium] › tests\e2e\carousel-arrival.spec.ts:4:3 › carousel tools follow the image, replay and release at 375px
+[3/405] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › robosense-lab stages the real capture, reverses and releases live reduced motion
+[4/405] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › museu-arte-moderna stages the real capture, reverses and releases live reduced motion
+[5/405] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › industry-week-senai stages the real capture, reverses and releases live reduced motion
+[6/405] [chromium] › tests\e2e\case-motion.spec.ts:11:3 › atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion
+[7/405] [chromium] › tests\e2e\case-motion.spec.ts:56:1 › case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow
+[8/405] [chromium] › tests\e2e\case-motion.spec.ts:84:1 › direct fragments and failed scripts preserve the museum narrative and original capture
+[9/405] [chromium] › tests\e2e\case-motion.spec.ts:132:1 › keyboard reading started before hydration takes precedence over a late motion import
+[10/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 320px
+[11/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 375px
+[12/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 768px
+[13/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px
+[14/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 320px
+[15/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 375px
+[16/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 768px
+[17/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px
+[18/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 320px
+[19/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 375px
+[20/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 768px
+[21/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 1440px
+[22/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 320px
+[23/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 375px
+[24/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 768px
+[25/405] [chromium] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px
+[26/405] [chromium] › tests\e2e\cases.spec.ts:111:1 › cases and navigation remain available without JavaScript
+[27/405] [chromium] › tests\e2e\cases.spec.ts:154:1 › case text, sources and navigation survive failed media and reduced motion
+[28/405] [chromium] › tests\e2e\cases.spec.ts:190:1 › unknown slugs and inherited names return useful HTTP 404 pages
+[29/405] [chromium] › tests\e2e\cases.spec.ts:214:1 › client navigation discards home motion and does not replay the intro
+[30/405] [chromium] › tests\e2e\error.spec.ts:5:3 › failed server navigation offers safe keyboard recovery via retry
+[31/405] [chromium] › tests\e2e\error.spec.ts:5:3 › failed server navigation offers safe keyboard recovery via home
+[32/405] [chromium] › tests\e2e\foundation.spec.ts:4:1 › foundation serves accessible preview content without runtime errors
+[33/405] [chromium] › tests\e2e\foundation.spec.ts:29:1 › server content remains available without JavaScript
+[34/405] [chromium] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 320px with reduced motion
+[35/405] [chromium] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 375px with reduced motion
+[36/405] [chromium] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 768px with reduced motion
+[37/405] [chromium] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 1440px with reduced motion
+[38/405] [chromium] › tests\e2e\hero-avatar.spec.ts:15:1 › hover swaps only the o for one second without moving the name, then replays
+[39/405] [chromium] › tests\e2e\hero-avatar.spec.ts:69:1 › reduced motion fades only and a live preference change clears the effect
+[40/405] [chromium] › tests\e2e\hero-avatar.spec.ts:90:1 › an unavailable avatar keeps the letter and full identity readable
+[41/405] [chromium] › tests\e2e\hero-avatar.spec.ts:107:1 › the enlarged avatar requests enough pixels on a dense display
+[42/405] [chromium] › tests\e2e\hero-tools.spec.ts:9:1 › real tools enter after the approved handoff, stay outside media and reverse
+[43/405] [chromium] › tests\e2e\hero-tools.spec.ts:69:1 › live reduced motion restores accessible tool names and the entire media in normal flow
+[44/405] [chromium] › tests\e2e\hero.spec.ts:3:1 › hero keeps the name, actions and luminous edge separate at every size
+[45/405] [chromium] › tests\e2e\hero.spec.ts:55:1 › hero reveals title lines before support and actions, then restores static styles
+[46/405] [chromium] › tests\e2e\hero.spec.ts:98:1 › font failure leaves readable identity and functional actions
+[47/405] [chromium] › tests\e2e\home.spec.ts:7:3 › identity and primary action fit the first fold at 375px
+[48/405] [chromium] › tests\e2e\home.spec.ts:7:3 › identity and primary action fit the first fold at 1440px
+[49/405] [chromium] › tests\e2e\home.spec.ts:29:1 › projects show sources and limits and all internal links resolve
+[50/405] [chromium] › tests\e2e\intro.spec.ts:24:1 › handwriting advances one stroke at a time, pauses, and lifts to reveal the hero
+[51/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › wheel cancels the curtain at 400ms without a late replay
+[52/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › touch cancels the curtain at 400ms without a late replay
+[53/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › hash cancels the curtain at 400ms without a late replay
+[54/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › pagehide cancels the curtain at 400ms without a late replay
+[55/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › pointer cancels the curtain at 400ms without a late replay
+[56/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › navigation focus cancels the curtain at 400ms without a late replay
+[57/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › reduced cancels the curtain at 400ms without a late replay
+[58/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › wheel cancels the curtain at 1200ms without a late replay
+[59/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › touch cancels the curtain at 1200ms without a late replay
+[60/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › hash cancels the curtain at 1200ms without a late replay
+[61/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › pagehide cancels the curtain at 1200ms without a late replay
+[62/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › pointer cancels the curtain at 1200ms without a late replay
+[63/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › navigation focus cancels the curtain at 1200ms without a late replay
+[64/405] [chromium] › tests\e2e\intro.spec.ts:71:5 › reduced cancels the curtain at 1200ms without a late replay
+[65/405] [chromium] › tests\e2e\intro.spec.ts:102:1 › watchdog removes a stalled timeline independently of animation frames
+[66/405] [chromium] › tests\e2e\intro.spec.ts:114:1 › server markup leaves the greeting hidden with JavaScript disabled
+[67/405] [chromium] › tests\e2e\island-motion.spec.ts:13:1 › one surface interpolates dimensions with a stable center and unscaled avatar
+[68/405] [chromium] › tests\e2e\island-motion.spec.ts:74:1 › reversal responds during motion and exiting links are immediately inert
+[69/405] [chromium] › tests\e2e\island-motion.spec.ts:98:1 › keyboard focus and runtime reduced motion finish clipped transitions immediately
+[70/405] [chromium] › tests\e2e\island-motion.spec.ts:124:1 › outside pointer resolves panel focus without taking the destination focus
+[71/405] [chromium] › tests\e2e\island-motion.spec.ts:139:1 › a failed animation still exposes every destination
+[72/405] [chromium] › tests\e2e\lower-scroll.spec.ts:12:1 › Atelie preview is bounded and retains a direct link to the entire capture
+[73/405] [chromium] › tests\e2e\lower-scroll.spec.ts:38:1 › focusing lower content then wheeling preserves layout and keeps focus below navigation
+[74/405] [chromium] › tests\e2e\lower-scroll.spec.ts:67:1 › About stays readable in its reading range and releases on reduced motion
+[75/405] [chromium] › tests\e2e\lower-scroll.spec.ts:80:1 › lower sections keep the same grid when anchor navigation resumes
+[76/405] [chromium] › tests\e2e\motion.spec.ts:21:1 › greeting and hero entrance complete within 2s, keeps content available and does not replay
+[77/405] [chromium] › tests\e2e\motion.spec.ts:56:1 › reveal chunk failure leaves sections and keyboard navigation usable
+[78/405] [chromium] › tests\e2e\motion.spec.ts:82:1 › initial reduced motion avoids animation chunks and capsule motion
+[79/405] [chromium] › tests\e2e\motion.spec.ts:105:1 › keyboard skip and Escape cancel without trapping or losing focus
+[80/405] [chromium] › tests\e2e\motion.spec.ts:129:1 › denied storage does not stop the intro from completing
+[81/405] [chromium] › tests\e2e\motion.spec.ts:150:1 › failed animation chunk restores the static page
+[82/405] [chromium] › tests\e2e\motion.spec.ts:165:1 › independent 2.2s timeout rejects a late animation import
+[83/405] [chromium] › tests\e2e\motion.spec.ts:195:1 › direct hashes and live reduced motion bypass or cancel the intro
+[84/405] [chromium] › tests\e2e\navigation.spec.ts:4:1 › disclosure follows keyboard order and Escape returns focus
+[85/405] [chromium] › tests\e2e\navigation.spec.ts:40:1 › outside click and leaving focus close without stealing the new focus
+[86/405] [chromium] › tests\e2e\navigation.spec.ts:68:1 › pointer opening keeps Escape available and returns focus to the toggle
+[87/405] [chromium] › tests\e2e\navigation.spec.ts:83:3 › section selection, hash and context work at 375px
+[88/405] [chromium] › tests\e2e\navigation.spec.ts:83:3 › section selection, hash and context work at 1440px
+[89/405] [chromium] › tests\e2e\navigation.spec.ts:122:1 › navigation links remain usable without JavaScript
+[90/405] [chromium] › tests\e2e\project-expansion.spec.ts:23:1 › four real projects keep their order, links and full width through forward and reverse navigation
+[91/405] [chromium] › tests\e2e\project-expansion.spec.ts:67:1 › Clawd stays above the RoboSense frame and centered at supported desktop sizes
+[92/405] [chromium] › tests\e2e\project-expansion.spec.ts:98:1 › popup arrival overshoots once and live reduced motion clears its transforms
+[93/405] [chromium] › tests\e2e\project-expansion.spec.ts:126:3 › new projects are legible and have real media in no-js mobile flow
+[94/405] [chromium] › tests\e2e\project-expansion.spec.ts:126:3 › new projects are legible and have real media in reduced mobile flow
+[95/405] [chromium] › tests\e2e\refinement.spec.ts:12:1 › content order, consolidated details, tool icons and contact match the requested composition
+[96/405] [chromium] › tests\e2e\refinement.spec.ts:57:1 › keyboard focus brings each carousel link into view without removing its pin
+[97/405] [chromium] › tests\e2e\refinement.spec.ts:76:1 › a cancelled native smooth scroll still brings the focused destination into view
+[98/405] [chromium] › tests\e2e\refinement.spec.ts:96:1 › hover opens navigation and preserves the scene forwards and backwards
+[99/405] [chromium] › tests\e2e\refinement.spec.ts:133:1 › direct skills navigation starts at the first row and every paragraph remains readable
+[100/405] [chromium] › tests\e2e\refinement.spec.ts:162:1 › ribbons repeat equal groups continuously and respect reduced motion without a control
+[101/405] [chromium] › tests\e2e\refinement.spec.ts:207:1 › short desktops fall back to natural content height without clipped project text
+[102/405] [chromium] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 320px with accessible targets
+[103/405] [chromium] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 375px with accessible targets
+[104/405] [chromium] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 768px with accessible targets
+[105/405] [chromium] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 1440px with accessible targets
+[106/405] [chromium] › tests\e2e\responsive.spec.ts:78:1 › panel survives resizing and scrolls in short landscape viewports
+[107/405] [chromium] › tests\e2e\responsive.spec.ts:101:1 › reduced motion updates immediately and keyboard focus stays visible
+[108/405] [chromium] › tests\e2e\responsive.spec.ts:147:1 › real Chromium zoom at 200 percent keeps navigation and content usable
+[109/405] [chromium] › tests\e2e\robo-handoff.spec.ts:12:1 › RoboSense recedes before its text and restores on reverse scroll
+[110/405] [chromium] › tests\e2e\robo-handoff.spec.ts:43:3 › About covers the reading section with a flattening top edge at 1440px
+[111/405] [chromium] › tests\e2e\robo-handoff.spec.ts:43:3 › About covers the reading section with a flattening top edge at 375px
+[112/405] [chromium] › tests\e2e\robo-handoff.spec.ts:106:1 › Claude Code is present in every project; left blur belongs only to the horizontal carousel
+[113/405] [chromium] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+[114/405] [chromium] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 375px
+[115/405] [chromium] › tests\e2e\section-transitions.spec.ts:93:1 › crossed ribbons loop, react to both scroll directions and stop offscreen or on reduced motion
+[116/405] [chromium] › tests\e2e\section-transitions.spec.ts:160:1 › page lifecycle releases motion and restores without duplicate pins
+[117/405] [chromium] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[118/405] [chromium] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+[119/405] [chromium] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+[120/405] [chromium] › tests\e2e\storytelling.spec.ts:70:3 › scene releases on reduced with every image and link available
+[121/405] [chromium] › tests\e2e\storytelling.spec.ts:70:3 › scene releases on pagehide with every image and link available
+[122/405] [chromium] › tests\e2e\storytelling.spec.ts:95:1 › resize removes pin on narrow or short windows and restores desktop safely
+[123/405] [chromium] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in no-js flow
+[124/405] [chromium] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in reduced flow
+[125/405] [chromium] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in hash flow
+[126/405] [chromium] › tests\e2e\storytelling.spec.ts:185:1 › pinned media stays below navigation in wide short viewports
+[127/405] [chromium] › tests\e2e\storytelling.spec.ts:214:1 › mobile receives section transitions while only desktop pins the project track
+[128/405] [chromium] › tests\e2e\storytelling.spec.ts:244:3 › cta navigation keeps the scene and reaches its destination
+[129/405] [chromium] › tests\e2e\storytelling.spec.ts:244:3 › menu navigation keeps the scene and reaches its destination
+[130/405] [chromium] › tests\e2e\storytelling.spec.ts:244:3 › direct-hash navigation keeps the scene and reaches its destination
+[131/405] [chromium] › tests\e2e\storytelling.spec.ts:285:1 › live preference and BFCache restore one scene without accumulating pins
+[132/405] [chromium] › tests\e2e\storytelling.spec.ts:305:1 › content focus keeps scene geometry and keyboard restores the approved hero
+[133/405] [chromium] › tests\e2e\ui-refinement.spec.ts:13:3 › live reduced motion preserves the current project with focus true
+[134/405] [chromium] › tests\e2e\ui-refinement.spec.ts:13:3 › live reduced motion preserves the current project with focus false
+[135/405] [chromium] › tests\e2e\ui-refinement.spec.ts:37:1 › carousel announces the current project, reverses, and clears its state in linear flow
+(node:43572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[136/405] [firefox] › tests\e2e\carousel-arrival.spec.ts:4:3 › carousel tools follow the image, replay and release at 1440px
+[137/405] [firefox] › tests\e2e\carousel-arrival.spec.ts:4:3 › carousel tools follow the image, replay and release at 375px
+[138/405] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › robosense-lab stages the real capture, reverses and releases live reduced motion
+[139/405] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › museu-arte-moderna stages the real capture, reverses and releases live reduced motion
+[140/405] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › industry-week-senai stages the real capture, reverses and releases live reduced motion
+[141/405] [firefox] › tests\e2e\case-motion.spec.ts:11:3 › atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion
+[142/405] [firefox] › tests\e2e\case-motion.spec.ts:56:1 › case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow
+[143/405] [firefox] › tests\e2e\case-motion.spec.ts:84:1 › direct fragments and failed scripts preserve the museum narrative and original capture
+[144/405] [firefox] › tests\e2e\case-motion.spec.ts:132:1 › keyboard reading started before hydration takes precedence over a late motion import
+[145/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 320px
+[146/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 375px
+[147/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 768px
+[148/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px
+[149/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 320px
+[150/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 375px
+[151/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 768px
+[152/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px
+[153/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 320px
+[154/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 375px
+[155/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 768px
+[156/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 1440px
+[157/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 320px
+[158/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 375px
+[159/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 768px
+[160/405] [firefox] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px
+[161/405] [firefox] › tests\e2e\cases.spec.ts:111:1 › cases and navigation remain available without JavaScript
+[162/405] [firefox] › tests\e2e\cases.spec.ts:154:1 › case text, sources and navigation survive failed media and reduced motion
+[163/405] [firefox] › tests\e2e\cases.spec.ts:190:1 › unknown slugs and inherited names return useful HTTP 404 pages
+[164/405] [firefox] › tests\e2e\cases.spec.ts:214:1 › client navigation discards home motion and does not replay the intro
+[165/405] [firefox] › tests\e2e\error.spec.ts:5:3 › failed server navigation offers safe keyboard recovery via retry
+[166/405] [firefox] › tests\e2e\error.spec.ts:5:3 › failed server navigation offers safe keyboard recovery via home
+[167/405] [firefox] › tests\e2e\foundation.spec.ts:4:1 › foundation serves accessible preview content without runtime errors
+[168/405] [firefox] › tests\e2e\foundation.spec.ts:29:1 › server content remains available without JavaScript
+[169/405] [firefox] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 320px with reduced motion
+[170/405] [firefox] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 375px with reduced motion
+[171/405] [firefox] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 768px with reduced motion
+[172/405] [firefox] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 1440px with reduced motion
+[173/405] [firefox] › tests\e2e\hero-avatar.spec.ts:15:1 › hover swaps only the o for one second without moving the name, then replays
+[174/405] [firefox] › tests\e2e\hero-avatar.spec.ts:69:1 › reduced motion fades only and a live preference change clears the effect
+[175/405] [firefox] › tests\e2e\hero-avatar.spec.ts:90:1 › an unavailable avatar keeps the letter and full identity readable
+[176/405] [firefox] › tests\e2e\hero-avatar.spec.ts:107:1 › the enlarged avatar requests enough pixels on a dense display
+[177/405] [firefox] › tests\e2e\hero-tools.spec.ts:9:1 › real tools enter after the approved handoff, stay outside media and reverse
+[178/405] [firefox] › tests\e2e\hero-tools.spec.ts:69:1 › live reduced motion restores accessible tool names and the entire media in normal flow
+[179/405] [firefox] › tests\e2e\hero.spec.ts:3:1 › hero keeps the name, actions and luminous edge separate at every size
+[180/405] [firefox] › tests\e2e\hero.spec.ts:55:1 › hero reveals title lines before support and actions, then restores static styles
+[181/405] [firefox] › tests\e2e\hero.spec.ts:98:1 › font failure leaves readable identity and functional actions
+[182/405] [firefox] › tests\e2e\home.spec.ts:7:3 › identity and primary action fit the first fold at 375px
+[183/405] [firefox] › tests\e2e\home.spec.ts:7:3 › identity and primary action fit the first fold at 1440px
+[184/405] [firefox] › tests\e2e\home.spec.ts:29:1 › projects show sources and limits and all internal links resolve
+[185/405] [firefox] › tests\e2e\intro.spec.ts:24:1 › handwriting advances one stroke at a time, pauses, and lifts to reveal the hero
+[186/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › wheel cancels the curtain at 400ms without a late replay
+[187/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › touch cancels the curtain at 400ms without a late replay
+[188/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › hash cancels the curtain at 400ms without a late replay
+[189/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › pagehide cancels the curtain at 400ms without a late replay
+[190/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › pointer cancels the curtain at 400ms without a late replay
+[191/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › navigation focus cancels the curtain at 400ms without a late replay
+[192/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › reduced cancels the curtain at 400ms without a late replay
+[193/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › wheel cancels the curtain at 1200ms without a late replay
+[194/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › touch cancels the curtain at 1200ms without a late replay
+[195/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › hash cancels the curtain at 1200ms without a late replay
+[196/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › pagehide cancels the curtain at 1200ms without a late replay
+[197/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › pointer cancels the curtain at 1200ms without a late replay
+[198/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › navigation focus cancels the curtain at 1200ms without a late replay
+[199/405] [firefox] › tests\e2e\intro.spec.ts:71:5 › reduced cancels the curtain at 1200ms without a late replay
+[200/405] [firefox] › tests\e2e\intro.spec.ts:102:1 › watchdog removes a stalled timeline independently of animation frames
+[201/405] [firefox] › tests\e2e\intro.spec.ts:114:1 › server markup leaves the greeting hidden with JavaScript disabled
+[202/405] [firefox] › tests\e2e\island-motion.spec.ts:13:1 › one surface interpolates dimensions with a stable center and unscaled avatar
+[203/405] [firefox] › tests\e2e\island-motion.spec.ts:74:1 › reversal responds during motion and exiting links are immediately inert
+[204/405] [firefox] › tests\e2e\island-motion.spec.ts:98:1 › keyboard focus and runtime reduced motion finish clipped transitions immediately
+[205/405] [firefox] › tests\e2e\island-motion.spec.ts:124:1 › outside pointer resolves panel focus without taking the destination focus
+[206/405] [firefox] › tests\e2e\island-motion.spec.ts:139:1 › a failed animation still exposes every destination
+[207/405] [firefox] › tests\e2e\lower-scroll.spec.ts:12:1 › Atelie preview is bounded and retains a direct link to the entire capture
+[208/405] [firefox] › tests\e2e\lower-scroll.spec.ts:38:1 › focusing lower content then wheeling preserves layout and keeps focus below navigation
+[209/405] [firefox] › tests\e2e\lower-scroll.spec.ts:67:1 › About stays readable in its reading range and releases on reduced motion
+[210/405] [firefox] › tests\e2e\lower-scroll.spec.ts:80:1 › lower sections keep the same grid when anchor navigation resumes
+[211/405] [firefox] › tests\e2e\motion.spec.ts:21:1 › greeting and hero entrance complete within 2s, keeps content available and does not replay
+[212/405] [firefox] › tests\e2e\motion.spec.ts:56:1 › reveal chunk failure leaves sections and keyboard navigation usable
+[213/405] [firefox] › tests\e2e\motion.spec.ts:82:1 › initial reduced motion avoids animation chunks and capsule motion
+[214/405] [firefox] › tests\e2e\motion.spec.ts:105:1 › keyboard skip and Escape cancel without trapping or losing focus
+[215/405] [firefox] › tests\e2e\motion.spec.ts:129:1 › denied storage does not stop the intro from completing
+[216/405] [firefox] › tests\e2e\motion.spec.ts:150:1 › failed animation chunk restores the static page
+[217/405] [firefox] › tests\e2e\motion.spec.ts:165:1 › independent 2.2s timeout rejects a late animation import
+[218/405] [firefox] › tests\e2e\motion.spec.ts:195:1 › direct hashes and live reduced motion bypass or cancel the intro
+[219/405] [firefox] › tests\e2e\navigation.spec.ts:4:1 › disclosure follows keyboard order and Escape returns focus
+[220/405] [firefox] › tests\e2e\navigation.spec.ts:40:1 › outside click and leaving focus close without stealing the new focus
+[221/405] [firefox] › tests\e2e\navigation.spec.ts:68:1 › pointer opening keeps Escape available and returns focus to the toggle
+[222/405] [firefox] › tests\e2e\navigation.spec.ts:83:3 › section selection, hash and context work at 375px
+[223/405] [firefox] › tests\e2e\navigation.spec.ts:83:3 › section selection, hash and context work at 1440px
+[224/405] [firefox] › tests\e2e\navigation.spec.ts:122:1 › navigation links remain usable without JavaScript
+[225/405] [firefox] › tests\e2e\project-expansion.spec.ts:23:1 › four real projects keep their order, links and full width through forward and reverse navigation
+[226/405] [firefox] › tests\e2e\project-expansion.spec.ts:67:1 › Clawd stays above the RoboSense frame and centered at supported desktop sizes
+[227/405] [firefox] › tests\e2e\project-expansion.spec.ts:98:1 › popup arrival overshoots once and live reduced motion clears its transforms
+[228/405] [firefox] › tests\e2e\project-expansion.spec.ts:126:3 › new projects are legible and have real media in no-js mobile flow
+[229/405] [firefox] › tests\e2e\project-expansion.spec.ts:126:3 › new projects are legible and have real media in reduced mobile flow
+[230/405] [firefox] › tests\e2e\refinement.spec.ts:12:1 › content order, consolidated details, tool icons and contact match the requested composition
+[231/405] [firefox] › tests\e2e\refinement.spec.ts:57:1 › keyboard focus brings each carousel link into view without removing its pin
+[232/405] [firefox] › tests\e2e\refinement.spec.ts:76:1 › a cancelled native smooth scroll still brings the focused destination into view
+[233/405] [firefox] › tests\e2e\refinement.spec.ts:96:1 › hover opens navigation and preserves the scene forwards and backwards
+[234/405] [firefox] › tests\e2e\refinement.spec.ts:133:1 › direct skills navigation starts at the first row and every paragraph remains readable
+[235/405] [firefox] › tests\e2e\refinement.spec.ts:162:1 › ribbons repeat equal groups continuously and respect reduced motion without a control
+[236/405] [firefox] › tests\e2e\refinement.spec.ts:207:1 › short desktops fall back to natural content height without clipped project text
+[237/405] [firefox] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 320px with accessible targets
+[238/405] [firefox] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 375px with accessible targets
+[239/405] [firefox] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 768px with accessible targets
+[240/405] [firefox] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 1440px with accessible targets
+[241/405] [firefox] › tests\e2e\responsive.spec.ts:78:1 › panel survives resizing and scrolls in short landscape viewports
+[242/405] [firefox] › tests\e2e\responsive.spec.ts:101:1 › reduced motion updates immediately and keyboard focus stays visible
+[243/405] [firefox] › tests\e2e\responsive.spec.ts:147:1 › real Chromium zoom at 200 percent keeps navigation and content usable
+[244/405] [firefox] › tests\e2e\robo-handoff.spec.ts:12:1 › RoboSense recedes before its text and restores on reverse scroll
+[245/405] [firefox] › tests\e2e\robo-handoff.spec.ts:43:3 › About covers the reading section with a flattening top edge at 1440px
+[246/405] [firefox] › tests\e2e\robo-handoff.spec.ts:43:3 › About covers the reading section with a flattening top edge at 375px
+[247/405] [firefox] › tests\e2e\robo-handoff.spec.ts:106:1 › Claude Code is present in every project; left blur belongs only to the horizontal carousel
+[248/405] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+[249/405] [firefox] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 375px
+[250/405] [firefox] › tests\e2e\section-transitions.spec.ts:93:1 › crossed ribbons loop, react to both scroll directions and stop offscreen or on reduced motion
+[251/405] [firefox] › tests\e2e\section-transitions.spec.ts:160:1 › page lifecycle releases motion and restores without duplicate pins
+[252/405] [firefox] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[253/405] [firefox] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+[254/405] [firefox] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+[255/405] [firefox] › tests\e2e\storytelling.spec.ts:70:3 › scene releases on reduced with every image and link available
+[256/405] [firefox] › tests\e2e\storytelling.spec.ts:70:3 › scene releases on pagehide with every image and link available
+[257/405] [firefox] › tests\e2e\storytelling.spec.ts:95:1 › resize removes pin on narrow or short windows and restores desktop safely
+[258/405] [firefox] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in no-js flow
+[259/405] [firefox] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in reduced flow
+[260/405] [firefox] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in hash flow
+[261/405] [firefox] › tests\e2e\storytelling.spec.ts:185:1 › pinned media stays below navigation in wide short viewports
+[262/405] [firefox] › tests\e2e\storytelling.spec.ts:214:1 › mobile receives section transitions while only desktop pins the project track
+[263/405] [firefox] › tests\e2e\storytelling.spec.ts:244:3 › cta navigation keeps the scene and reaches its destination
+[264/405] [firefox] › tests\e2e\storytelling.spec.ts:244:3 › menu navigation keeps the scene and reaches its destination
+[265/405] [firefox] › tests\e2e\storytelling.spec.ts:244:3 › direct-hash navigation keeps the scene and reaches its destination
+[266/405] [firefox] › tests\e2e\storytelling.spec.ts:285:1 › live preference and BFCache restore one scene without accumulating pins
+[267/405] [firefox] › tests\e2e\storytelling.spec.ts:305:1 › content focus keeps scene geometry and keyboard restores the approved hero
+[268/405] [firefox] › tests\e2e\ui-refinement.spec.ts:13:3 › live reduced motion preserves the current project with focus true
+[269/405] [firefox] › tests\e2e\ui-refinement.spec.ts:13:3 › live reduced motion preserves the current project with focus false
+[270/405] [firefox] › tests\e2e\ui-refinement.spec.ts:37:1 › carousel announces the current project, reverses, and clears its state in linear flow
+(node:52500) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[271/405] [webkit] › tests\e2e\carousel-arrival.spec.ts:4:3 › carousel tools follow the image, replay and release at 1440px
+[272/405] [webkit] › tests\e2e\carousel-arrival.spec.ts:4:3 › carousel tools follow the image, replay and release at 375px
+[273/405] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › robosense-lab stages the real capture, reverses and releases live reduced motion
+[274/405] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › museu-arte-moderna stages the real capture, reverses and releases live reduced motion
+[275/405] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › industry-week-senai stages the real capture, reverses and releases live reduced motion
+[276/405] [webkit] › tests\e2e\case-motion.spec.ts:11:3 › atelie-ingrid-xavier stages the real capture, reverses and releases live reduced motion
+[277/405] [webkit] › tests\e2e\case-motion.spec.ts:56:1 › case lifecycle and resizing do not accumulate enhancement; focus restores the reading flow
+[278/405] [webkit] › tests\e2e\case-motion.spec.ts:84:1 › direct fragments and failed scripts preserve the museum narrative and original capture
+[279/405] [webkit] › tests\e2e\case-motion.spec.ts:132:1 › keyboard reading started before hydration takes precedence over a late motion import
+[280/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 320px
+[281/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 375px
+[282/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 768px
+[283/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › robosense-lab renders a complete accessible case at 1440px
+[284/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 320px
+[285/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 375px
+[286/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 768px
+[287/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › museu-arte-moderna renders a complete accessible case at 1440px
+[288/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 320px
+[289/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 375px
+[290/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 768px
+[291/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › industry-week-senai renders a complete accessible case at 1440px
+[292/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 320px
+[293/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 375px
+[294/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 768px
+[295/405] [webkit] › tests\e2e\cases.spec.ts:7:5 › atelie-ingrid-xavier renders a complete accessible case at 1440px
+[296/405] [webkit] › tests\e2e\cases.spec.ts:111:1 › cases and navigation remain available without JavaScript
+[297/405] [webkit] › tests\e2e\cases.spec.ts:154:1 › case text, sources and navigation survive failed media and reduced motion
+[298/405] [webkit] › tests\e2e\cases.spec.ts:190:1 › unknown slugs and inherited names return useful HTTP 404 pages
+[299/405] [webkit] › tests\e2e\cases.spec.ts:214:1 › client navigation discards home motion and does not replay the intro
+[300/405] [webkit] › tests\e2e\error.spec.ts:5:3 › failed server navigation offers safe keyboard recovery via retry
+[301/405] [webkit] › tests\e2e\error.spec.ts:5:3 › failed server navigation offers safe keyboard recovery via home
+[302/405] [webkit] › tests\e2e\foundation.spec.ts:4:1 › foundation serves accessible preview content without runtime errors
+[303/405] [webkit] › tests\e2e\foundation.spec.ts:29:1 › server content remains available without JavaScript
+[304/405] [webkit] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 320px with reduced motion
+[305/405] [webkit] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 375px with reduced motion
+[306/405] [webkit] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 768px with reduced motion
+[307/405] [webkit] › tests\e2e\foundation.spec.ts:49:3 › foundation fits 1440px with reduced motion
+[308/405] [webkit] › tests\e2e\hero-avatar.spec.ts:15:1 › hover swaps only the o for one second without moving the name, then replays
+[309/405] [webkit] › tests\e2e\hero-avatar.spec.ts:69:1 › reduced motion fades only and a live preference change clears the effect
+[310/405] [webkit] › tests\e2e\hero-avatar.spec.ts:90:1 › an unavailable avatar keeps the letter and full identity readable
+[311/405] [webkit] › tests\e2e\hero-avatar.spec.ts:107:1 › the enlarged avatar requests enough pixels on a dense display
+[312/405] [webkit] › tests\e2e\hero-tools.spec.ts:9:1 › real tools enter after the approved handoff, stay outside media and reverse
+[313/405] [webkit] › tests\e2e\hero-tools.spec.ts:69:1 › live reduced motion restores accessible tool names and the entire media in normal flow
+[314/405] [webkit] › tests\e2e\hero.spec.ts:3:1 › hero keeps the name, actions and luminous edge separate at every size
+[315/405] [webkit] › tests\e2e\hero.spec.ts:55:1 › hero reveals title lines before support and actions, then restores static styles
+[316/405] [webkit] › tests\e2e\hero.spec.ts:98:1 › font failure leaves readable identity and functional actions
+[317/405] [webkit] › tests\e2e\home.spec.ts:7:3 › identity and primary action fit the first fold at 375px
+[318/405] [webkit] › tests\e2e\home.spec.ts:7:3 › identity and primary action fit the first fold at 1440px
+[319/405] [webkit] › tests\e2e\home.spec.ts:29:1 › projects show sources and limits and all internal links resolve
+[320/405] [webkit] › tests\e2e\intro.spec.ts:24:1 › handwriting advances one stroke at a time, pauses, and lifts to reveal the hero
+[321/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › wheel cancels the curtain at 400ms without a late replay
+[322/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › touch cancels the curtain at 400ms without a late replay
+[323/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › hash cancels the curtain at 400ms without a late replay
+[324/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › pagehide cancels the curtain at 400ms without a late replay
+[325/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › pointer cancels the curtain at 400ms without a late replay
+[326/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › navigation focus cancels the curtain at 400ms without a late replay
+[327/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › reduced cancels the curtain at 400ms without a late replay
+[328/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › wheel cancels the curtain at 1200ms without a late replay
+[329/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › touch cancels the curtain at 1200ms without a late replay
+[330/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › hash cancels the curtain at 1200ms without a late replay
+[331/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › pagehide cancels the curtain at 1200ms without a late replay
+[332/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › pointer cancels the curtain at 1200ms without a late replay
+[333/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › navigation focus cancels the curtain at 1200ms without a late replay
+[334/405] [webkit] › tests\e2e\intro.spec.ts:71:5 › reduced cancels the curtain at 1200ms without a late replay
+[335/405] [webkit] › tests\e2e\intro.spec.ts:102:1 › watchdog removes a stalled timeline independently of animation frames
+[336/405] [webkit] › tests\e2e\intro.spec.ts:114:1 › server markup leaves the greeting hidden with JavaScript disabled
+[337/405] [webkit] › tests\e2e\island-motion.spec.ts:13:1 › one surface interpolates dimensions with a stable center and unscaled avatar
+[338/405] [webkit] › tests\e2e\island-motion.spec.ts:74:1 › reversal responds during motion and exiting links are immediately inert
+[339/405] [webkit] › tests\e2e\island-motion.spec.ts:98:1 › keyboard focus and runtime reduced motion finish clipped transitions immediately
+[340/405] [webkit] › tests\e2e\island-motion.spec.ts:124:1 › outside pointer resolves panel focus without taking the destination focus
+[341/405] [webkit] › tests\e2e\island-motion.spec.ts:139:1 › a failed animation still exposes every destination
+[342/405] [webkit] › tests\e2e\lower-scroll.spec.ts:12:1 › Atelie preview is bounded and retains a direct link to the entire capture
+[343/405] [webkit] › tests\e2e\lower-scroll.spec.ts:38:1 › focusing lower content then wheeling preserves layout and keeps focus below navigation
+[344/405] [webkit] › tests\e2e\lower-scroll.spec.ts:67:1 › About stays readable in its reading range and releases on reduced motion
+[345/405] [webkit] › tests\e2e\lower-scroll.spec.ts:80:1 › lower sections keep the same grid when anchor navigation resumes
+[346/405] [webkit] › tests\e2e\motion.spec.ts:21:1 › greeting and hero entrance complete within 2s, keeps content available and does not replay
+[347/405] [webkit] › tests\e2e\motion.spec.ts:56:1 › reveal chunk failure leaves sections and keyboard navigation usable
+[348/405] [webkit] › tests\e2e\motion.spec.ts:82:1 › initial reduced motion avoids animation chunks and capsule motion
+[349/405] [webkit] › tests\e2e\motion.spec.ts:105:1 › keyboard skip and Escape cancel without trapping or losing focus
+[350/405] [webkit] › tests\e2e\motion.spec.ts:129:1 › denied storage does not stop the intro from completing
+[351/405] [webkit] › tests\e2e\motion.spec.ts:150:1 › failed animation chunk restores the static page
+[352/405] [webkit] › tests\e2e\motion.spec.ts:165:1 › independent 2.2s timeout rejects a late animation import
+[353/405] [webkit] › tests\e2e\motion.spec.ts:195:1 › direct hashes and live reduced motion bypass or cancel the intro
+[354/405] [webkit] › tests\e2e\navigation.spec.ts:4:1 › disclosure follows keyboard order and Escape returns focus
+[355/405] [webkit] › tests\e2e\navigation.spec.ts:40:1 › outside click and leaving focus close without stealing the new focus
+[356/405] [webkit] › tests\e2e\navigation.spec.ts:68:1 › pointer opening keeps Escape available and returns focus to the toggle
+[357/405] [webkit] › tests\e2e\navigation.spec.ts:83:3 › section selection, hash and context work at 375px
+[358/405] [webkit] › tests\e2e\navigation.spec.ts:83:3 › section selection, hash and context work at 1440px
+[359/405] [webkit] › tests\e2e\navigation.spec.ts:122:1 › navigation links remain usable without JavaScript
+[360/405] [webkit] › tests\e2e\project-expansion.spec.ts:23:1 › four real projects keep their order, links and full width through forward and reverse navigation
+[361/405] [webkit] › tests\e2e\project-expansion.spec.ts:67:1 › Clawd stays above the RoboSense frame and centered at supported desktop sizes
+[362/405] [webkit] › tests\e2e\project-expansion.spec.ts:98:1 › popup arrival overshoots once and live reduced motion clears its transforms
+[363/405] [webkit] › tests\e2e\project-expansion.spec.ts:126:3 › new projects are legible and have real media in no-js mobile flow
+[364/405] [webkit] › tests\e2e\project-expansion.spec.ts:126:3 › new projects are legible and have real media in reduced mobile flow
+[365/405] [webkit] › tests\e2e\refinement.spec.ts:12:1 › content order, consolidated details, tool icons and contact match the requested composition
+[366/405] [webkit] › tests\e2e\refinement.spec.ts:57:1 › keyboard focus brings each carousel link into view without removing its pin
+[367/405] [webkit] › tests\e2e\refinement.spec.ts:76:1 › a cancelled native smooth scroll still brings the focused destination into view
+[368/405] [webkit] › tests\e2e\refinement.spec.ts:96:1 › hover opens navigation and preserves the scene forwards and backwards
+[369/405] [webkit] › tests\e2e\refinement.spec.ts:133:1 › direct skills navigation starts at the first row and every paragraph remains readable
+[370/405] [webkit] › tests\e2e\refinement.spec.ts:162:1 › ribbons repeat equal groups continuously and respect reduced motion without a control
+[371/405] [webkit] › tests\e2e\refinement.spec.ts:207:1 › short desktops fall back to natural content height without clipped project text
+[372/405] [webkit] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 320px with accessible targets
+[373/405] [webkit] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 375px with accessible targets
+[374/405] [webkit] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 768px with accessible targets
+[375/405] [webkit] › tests\e2e\responsive.spec.ts:16:3 › home and open capsule fit 1440px with accessible targets
+[376/405] [webkit] › tests\e2e\responsive.spec.ts:78:1 › panel survives resizing and scrolls in short landscape viewports
+[377/405] [webkit] › tests\e2e\responsive.spec.ts:101:1 › reduced motion updates immediately and keyboard focus stays visible
+[378/405] [webkit] › tests\e2e\responsive.spec.ts:147:1 › real Chromium zoom at 200 percent keeps navigation and content usable
+[379/405] [webkit] › tests\e2e\robo-handoff.spec.ts:12:1 › RoboSense recedes before its text and restores on reverse scroll
+[380/405] [webkit] › tests\e2e\robo-handoff.spec.ts:43:3 › About covers the reading section with a flattening top edge at 1440px
+[381/405] [webkit] › tests\e2e\robo-handoff.spec.ts:43:3 › About covers the reading section with a flattening top edge at 375px
+[382/405] [webkit] › tests\e2e\robo-handoff.spec.ts:106:1 › Claude Code is present in every project; left blur belongs only to the horizontal carousel
+[383/405] [webkit] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 1440px
+[384/405] [webkit] › tests\e2e\section-transitions.spec.ts:16:3 › supporting sections animate reversibly and contact stays natural at 375px
+[385/405] [webkit] › tests\e2e\section-transitions.spec.ts:93:1 › crossed ribbons loop, react to both scroll directions and stop offscreen or on reduced motion
+[386/405] [webkit] › tests\e2e\section-transitions.spec.ts:160:1 › page lifecycle releases motion and restores without duplicate pins
+[387/405] [webkit] › tests\e2e\seo.spec.ts:13:1 › metadata, crawler policy and sitemap agree across all public routes
+[388/405] [webkit] › tests\e2e\seo.spec.ts:71:1 › native metadata assets have the expected formats and dimensions
+[389/405] [webkit] › tests\e2e\storytelling.spec.ts:30:1 › one bounded scene moves projects horizontally, changes backgrounds and reverses
+[390/405] [webkit] › tests\e2e\storytelling.spec.ts:70:3 › scene releases on reduced with every image and link available
+[391/405] [webkit] › tests\e2e\storytelling.spec.ts:70:3 › scene releases on pagehide with every image and link available
+[392/405] [webkit] › tests\e2e\storytelling.spec.ts:95:1 › resize removes pin on narrow or short windows and restores desktop safely
+[393/405] [webkit] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in no-js flow
+[394/405] [webkit] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in reduced flow
+[395/405] [webkit] › tests\e2e\storytelling.spec.ts:125:3 › authentic media load with proportions intact in hash flow
+[396/405] [webkit] › tests\e2e\storytelling.spec.ts:185:1 › pinned media stays below navigation in wide short viewports
+[397/405] [webkit] › tests\e2e\storytelling.spec.ts:214:1 › mobile receives section transitions while only desktop pins the project track
+[398/405] [webkit] › tests\e2e\storytelling.spec.ts:244:3 › cta navigation keeps the scene and reaches its destination
+[399/405] [webkit] › tests\e2e\storytelling.spec.ts:244:3 › menu navigation keeps the scene and reaches its destination
+[400/405] [webkit] › tests\e2e\storytelling.spec.ts:244:3 › direct-hash navigation keeps the scene and reaches its destination
+[401/405] [webkit] › tests\e2e\storytelling.spec.ts:285:1 › live preference and BFCache restore one scene without accumulating pins
+[402/405] [webkit] › tests\e2e\storytelling.spec.ts:305:1 › content focus keeps scene geometry and keyboard restores the approved hero
+[403/405] [webkit] › tests\e2e\ui-refinement.spec.ts:13:3 › live reduced motion preserves the current project with focus true
+[404/405] [webkit] › tests\e2e\ui-refinement.spec.ts:13:3 › live reduced motion preserves the current project with focus false
+[405/405] [webkit] › tests\e2e\ui-refinement.spec.ts:37:1 › carousel announces the current project, reverses, and clears its state in linear flow
+  5 skipped
+  400 passed (14.1m)

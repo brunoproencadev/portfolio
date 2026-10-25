@@ -1,0 +1,8 @@
+
+ RUN  v4.1.12 D:/projects/portifolio
+
+
+ Test Files  6 passed (6)
+      Tests  9 passed (9)
+   Start at  15:26:48
+   Duration  4.76s (transform 236ms, setup 0ms, import 1.87s, tests 3.01s, environment 1ms)

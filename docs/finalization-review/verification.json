@@ -1,0 +1,155 @@
+[
+  {
+    "name": "release-build",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 13612,
+    "timestamp": "2026-10-25T18:38:26.104Z"
+  },
+  {
+    "name": "release-e2e",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      ".audit/finalization/qa.config.mjs",
+      "--workers=2"
+    ],
+    "code": 1,
+    "elapsedMs": 258067,
+    "timestamp": "2026-10-25T18:42:44.252Z"
+  },
+  {
+    "name": "release-e2e-serial",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      ".audit/finalization/qa.config.mjs",
+      "--workers=1"
+    ],
+    "code": 0,
+    "elapsedMs": 844108,
+    "timestamp": "2026-10-25T18:59:37.643Z"
+  },
+  {
+    "name": "release-lint",
+    "args": ["node_modules/eslint/bin/eslint.js", ".", "--max-warnings=0"],
+    "code": 0,
+    "elapsedMs": 8339,
+    "timestamp": "2026-10-25T18:59:59.843Z"
+  },
+  {
+    "name": "release-unit",
+    "args": ["node_modules/vitest/vitest.mjs", "run"],
+    "code": 0,
+    "elapsedMs": 3522,
+    "timestamp": "2026-10-25T19:00:03.433Z"
+  },
+  {
+    "name": "release-format",
+    "args": ["node_modules/prettier/bin/prettier.cjs", "--check", "."],
+    "code": 0,
+    "elapsedMs": 5539,
+    "timestamp": "2026-10-25T19:00:09.035Z"
+  },
+  {
+    "name": "audit-runtime",
+    "args": [
+      "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+      "audit",
+      "--omit=dev",
+      "--json"
+    ],
+    "code": 0,
+    "elapsedMs": 1449,
+    "timestamp": "2026-10-25T19:00:10.554Z"
+  },
+  {
+    "name": "audit-all",
+    "args": [
+      "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+      "audit",
+      "--json"
+    ],
+    "code": 0,
+    "elapsedMs": 1426,
+    "timestamp": "2026-10-25T19:00:12.043Z"
+  },
+  {
+    "name": "peers",
+    "args": [
+      "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+      "ls",
+      "--all",
+      "--json"
+    ],
+    "code": 0,
+    "elapsedMs": 1123,
+    "timestamp": "2026-10-25T19:00:13.228Z"
+  },
+  {
+    "name": "release-lighthouse",
+    "args": [".audit/finalization/measure.mjs", "release-control"],
+    "code": 0,
+    "elapsedMs": 35210,
+    "timestamp": "2026-10-25T19:03:32.545Z"
+  },
+  {
+    "name": "build-icons",
+    "args": ["node_modules/next/dist/bin/next", "build"],
+    "code": 0,
+    "elapsedMs": 9240,
+    "timestamp": "2026-10-25T18:27:32.311Z"
+  },
+  {
+    "name": "e2e-icons",
+    "args": [
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      ".audit/finalization/qa.config.mjs",
+      "tests/e2e/hero-avatar.spec.ts",
+      "tests/e2e/seo.spec.ts",
+      "--workers=1"
+    ],
+    "code": 0,
+    "elapsedMs": 34607,
+    "timestamp": "2026-10-25T18:29:00.185Z"
+  },
+  {
+    "name": "lint-icons",
+    "args": ["node_modules/eslint/bin/eslint.js", ".", "--max-warnings=0"],
+    "code": 0,
+    "elapsedMs": 10877,
+    "timestamp": "2026-10-25T18:26:47.537Z"
+  },
+  {
+    "name": "unit-icons-all",
+    "args": ["node_modules/vitest/vitest.mjs", "run"],
+    "code": 0,
+    "elapsedMs": 5484,
+    "timestamp": "2026-10-25T18:26:53.388Z"
+  },
+  {
+    "name": "visual-icons",
+    "args": [".audit/finalization/visual.mjs"],
+    "code": 0,
+    "elapsedMs": 2284,
+    "timestamp": "2026-10-25T18:30:16.314Z"
+  },
+  {
+    "name": "isolate-reveals",
+    "args": [".audit/finalization/probe.mjs"],
+    "code": 0,
+    "elapsedMs": 45212,
+    "timestamp": "2026-10-25T18:21:00.039Z"
+  },
+  {
+    "name": "decode-probe",
+    "args": [".audit/finalization/decode-probe.mjs"],
+    "code": 0,
+    "elapsedMs": 45854,
+    "timestamp": "2026-10-25T18:25:17.500Z"
+  }
+]

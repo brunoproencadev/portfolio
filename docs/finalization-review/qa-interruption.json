@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-25T18:42:44.307Z",
+  "source": "user report of lower scroll frame rate",
+  "action": "Stopped owned two-worker release QA process tree; do not treat partial log as a passing suite.",
+  "driverPid": 49128,
+  "result": "interrupted",
+  "motionSourceChanged": false,
+  "userConfirmation": "Sim, voltou à fluidez anterior",
+  "conclusion": "User-confirmed recovery after background QA stopped; resource contention supported, not an application motion change.",
+  "followUp": "Single browser worker at below-normal process priority; no concurrent benchmark/build."
+}
