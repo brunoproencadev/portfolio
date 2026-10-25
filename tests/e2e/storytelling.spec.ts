@@ -316,12 +316,11 @@ test("content focus keeps scene geometry and keyboard restores the approved hero
         ),
     )
     .toBeGreaterThan(1);
-  for (const selector of [".about-copy"]) {
-    await expect(page.locator(selector).first()).toHaveAttribute(
-      "style",
-      /transform/,
-    );
-  }
+  await expect(page.locator(".about-copy")).toHaveAttribute(
+    "data-section-motion",
+    "true",
+  );
+  await expect(page.locator(".about-copy")).toHaveCSS("transform", "none");
   await page.locator(".skill-row .text-link").first().focus();
   await expect(page.locator(".skill-row .text-link").first()).toBeInViewport();
   await expect(page.locator(".pin-spacer")).toHaveCount(1);

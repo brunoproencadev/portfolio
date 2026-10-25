@@ -19,9 +19,11 @@ for (const width of [320, 375, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/");
     await page.getByRole("button", { name: "Menu", exact: true }).click();
+    await expect(page.locator(".capsule")).toHaveAttribute("data-open", "true");
     await expect(page.locator(".capsule")).not.toHaveAttribute(
       "data-animating",
     );
+    await expect(page.locator(".capsule-note")).toHaveCSS("opacity", "1");
     if (width >= 1100)
       await expect(page.locator(".story-enhanced")).toHaveCount(1);
     await expectNoOverflow(page);
@@ -52,6 +54,7 @@ for (const width of [320, 375, 768, 1440]) {
       path: testInfo.outputPath(`menu-open-${width}.png`),
     });
     await page.getByRole("button", { name: "Fechar", exact: true }).click();
+    await expect(page.locator(".capsule")).not.toHaveAttribute("data-open");
     await expect(page.locator(".capsule")).not.toHaveAttribute(
       "data-animating",
     );
