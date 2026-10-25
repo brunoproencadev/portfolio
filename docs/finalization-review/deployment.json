@@ -1,0 +1,23 @@
+{
+  "id": "dpl_DYtwkccWuqUkQZmWpgFs5qXypQre",
+  "url": "brunoproencasilva-jcx4dlnz6-bps-a015.vercel.app",
+  "state": "READY",
+  "target": "production",
+  "sha": "abbf7a3ced78ef91b0ecda6cc1f6cd5541b7dc0b",
+  "gitSource": {
+    "type": "github",
+    "repoId": 1412563281,
+    "ref": "main",
+    "sha": "abbf7a3ced78ef91b0ecda6cc1f6cd5541b7dc0b"
+  },
+  "alias": [
+    "brunoproencasilva.vercel.app",
+    "brunoproencasilva-bps-a015.vercel.app",
+    "brunoproencasilva-git-main-bps-a015.vercel.app"
+  ],
+  "aliasAssigned": true,
+  "aliasError": null,
+  "createdAt": 1792957534304,
+  "ready": 1792957562231,
+  "timestamp": "2026-10-25T19:47:51.625Z"
+}

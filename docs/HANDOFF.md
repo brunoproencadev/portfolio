@@ -1,4 +1,10 @@
-# Estado vigente — produção publicada, ajuste responsivo validado, 25/10/2026
+# Estado vigente — produção atualizada e verificada, 25/10/2026
+
+Entrega final desta rodada em https://brunoproencasilva.vercel.app: PR2 integrado, main abbf7a3ced78ef91b0ecda6cc1f6cd5541b7dc0b, deployment dpl_DYtwkccWuqUkQZmWpgFs5qXypQre READY/alias atribuído. Runtime0a53503, publicado via GitSource do SHA exato, sem upload da árvore local. [Resumo/provas](FINALIZATION_REVIEW.md). Cinco rotas/SEO/sitemap/ícones por SHA/404/HTTPS conferidos, imagens reais200, browser desktop/mobile sem overflow/pageerrors e densidade responsiva confirmada. Logs de build concluídos e amostra runtime error/fatal cinco minutos sem registros.
+
+H03 final da rodada: produção mediana95/LCP2517ms/TBT190/CLS0,0389, três execuções preservadas; a mediana não passou2,5s. Local88/LCP3419, cases/INP não remedidos. Não encerrar H03 por arredondamento, pela melhor execução ou por autorização de publicar. Recursos do avatar mobile foram reduzidos sem mudar animações/scroll ou o tamanho ampliado. Rollback imediato f9bd0cf/dpl_F9HSH5KotxomfkDPk17Mfsjc18vq; anterior aa70f4c/dpl_6FxjM8rjeehB3bAeWJrG212ABmTL. Git deploy automático continua bloqueado.
+
+Aceite visual final, exclusão de fotos/contexto e autorizações GitHub/main/Vercel já concedidos. Base integral d9430f4:400 E2E PASS/5 SKIP; delta0a53503:24/24, build/strict/lint PASS. Quatro edições anteriores seguem intactas/excluídas. O usuário confirmou retorno da fluidez após interromper QA paralelo; futuras validações locais usam um worker/BelowNormal e não disputam recursos com sua revisão manual. Fonte do scroll não sofreu alteração experimental. Próximo trabalho: H03 com prova controlada e fluidez preservada; limites físicos/leitor de tela e INP não foram convertidos em aceites. Estados abaixo registram etapas anteriores.
 
 O usuário aceitou o visual final, retirou fotografias pessoais/contexto do escopo, pediu ícones maiores/nítidos e confirmou “GitHub, main e publicação na Vercel”. Plano `857207f`, ícones `d9430f4`; [revisão vigente](FINALIZATION_REVIEW.md). Isso supera os gates históricos de aceite visual/fotos/autorização de entrega; H03 continua aberta e não foi declarada aprovada.
 

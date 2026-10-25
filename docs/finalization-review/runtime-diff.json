@@ -1,0 +1,9 @@
+{
+  "before": "f9bd0cf",
+  "after": "abbf7a3",
+  "applicationFilesChanged": ["src/components/sections/hero-avatar-letter.tsx"],
+  "motionChanged": false,
+  "navigationChanged": false,
+  "cssGeometryChanged": false,
+  "change": "Responsive source-size hint only"
+}

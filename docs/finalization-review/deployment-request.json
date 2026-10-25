@@ -1,0 +1,11 @@
+{
+  "name": "brunoproencasilva",
+  "project": "prj_GYDuYFk2oqnCA4cQLnhrT401G4tU",
+  "target": "production",
+  "gitSource": {
+    "type": "github",
+    "repoId": 1412563281,
+    "ref": "main",
+    "sha": "abbf7a3ced78ef91b0ecda6cc1f6cd5541b7dc0b"
+  }
+}

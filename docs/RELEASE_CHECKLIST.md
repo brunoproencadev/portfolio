@@ -4,6 +4,8 @@ Preparação da fase I, não autorização de publicação. Branch `redesign/cin
 
 Decisão vigente25/10: usuário aceitou o visual final, retirou fotos pessoais/contexto do escopo e confirmou “GitHub, main e publicação na Vercel”. Plano857207f, fonte d9430f4, [validação isolada completa](FINALIZATION_REVIEW.md). A autorização agora está concedida; o parágrafo anterior registra o limite de I naquele momento. H03 permanece aberta e não é declarada aprovada pela entrega autorizada. Testes locais de browser usam um worker/BelowNormal para não prejudicar a revisão manual do usuário.
 
+Entrega executada: PRs1/2 integrados, main abbf7a3/runtime0a53503 e produção dpl_DYtwkccWuqUkQZmWpgFs5qXypQre READY. [Validação no destino e rollback](finalization-review/publication-summary.json). Cinco rotas/SEO/ícones/HTTPS e browser conferidos; o checklist de execução abaixo foi aplicado. H03 segue aberta (público95/LCP2517, local3419), sem dispensar a meta. Git deploy automático main/redesign permanece bloqueado.
+
 Continuidade25/10: `a7034e9` atende seleção/título, `b0f52c4` resolve formato histórico com hashes atualizados; [revisão e limites atuais](COMPLETION_REVIEW.md). H03 não passou; sondas de agendamento retiradas, sem alteração de coreografia.
 
 ## Preparado localmente

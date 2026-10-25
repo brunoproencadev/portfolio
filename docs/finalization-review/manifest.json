@@ -1,6 +1,7 @@
 {
-  "timestamp": "2026-10-25T19:40:36.996Z",
-  "validatedRuntime": "d9430f4a55fa6e6c83124ad3724c0c5dd9be7f23",
+  "timestamp": "2026-10-25T20:03:01.168Z",
+  "validatedRuntime": "0a535039801259717e91b33754744a4a3988799d",
+  "fullRegressionBaseline": "d9430f4a55fa6e6c83124ad3724c0c5dd9be7f23",
   "artifacts": [
     {
       "file": "docs/finalization-review/audit-all.json",
@@ -48,6 +49,16 @@
       "sha256": "f6a284cf94b3267db20e4f9080159f69f026027233ca290a482ed1a05563533c"
     },
     {
+      "file": "docs/finalization-review/deployment-request.json",
+      "bytes": 252,
+      "sha256": "9cf34c17d6143bf57bf0a4286355496c468e6cbad36288aff698731852a0c13f"
+    },
+    {
+      "file": "docs/finalization-review/deployment.json",
+      "bytes": 647,
+      "sha256": "980542cf319bf35b40d281dfea615e900c9880a82bbc7f65de8548196d9561e3"
+    },
+    {
       "file": "docs/finalization-review/e2e-icons.log",
       "bytes": 3012,
       "sha256": "1b37caf7033179ab5d465acd84c4c5942cd1e090a2fe31d99d6b7e34479e121a"
@@ -56,6 +67,11 @@
       "file": "docs/finalization-review/favicon-comparison.png",
       "bytes": 83420,
       "sha256": "eea9ed31485465632793e515fae8167eb766f4792cafb54190f49984a0472ff2"
+    },
+    {
+      "file": "docs/finalization-review/final-build.log",
+      "bytes": 4512,
+      "sha256": "a7e689b6497e3eca7aa404dc09afcf5277ac1853435c4e75d283a00269b1fdb8"
     },
     {
       "file": "docs/finalization-review/icons-e2e.json",
@@ -103,6 +119,26 @@
       "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
     },
     {
+      "file": "docs/finalization-review/live-avatar-1440.png",
+      "bytes": 578415,
+      "sha256": "12d48d0f7fe2c7ba1e12c3312b2437e417866f4f2f42fa11b2cc15cd6bf61911"
+    },
+    {
+      "file": "docs/finalization-review/live-avatar-375.png",
+      "bytes": 382690,
+      "sha256": "71608aa06361f48b484297371601c820bc9d5d22ffa03995efa1919921b66c36"
+    },
+    {
+      "file": "docs/finalization-review/live-browser.json",
+      "bytes": 842,
+      "sha256": "f0912a92886ccab10707d6a471eabe1960d8f5993020602bedb1fdb64fd6e901"
+    },
+    {
+      "file": "docs/finalization-review/live.json",
+      "bytes": 7617,
+      "sha256": "38ce52f5d5b7d04249e3ff89dff639f794ef56484a684dd09726cc96baa0e7d0"
+    },
+    {
       "file": "docs/finalization-review/local-performance.json",
       "bytes": 3323,
       "sha256": "0e84d1b70543483bf00353b94cac41fea16aa2042f8667c7277c42f62f571373"
@@ -123,9 +159,24 @@
       "sha256": "6ef1cf3d3f276032a6d55b635448e4c3e52a35438c3421798c0271dba76a94b6"
     },
     {
+      "file": "docs/finalization-review/public-network.json",
+      "bytes": 2035,
+      "sha256": "5343933ab0c7eb79864294029e25ddbdcfe8821aad9e5a2a20323c08af1413ef"
+    },
+    {
+      "file": "docs/finalization-review/public-performance.json",
+      "bytes": 3303,
+      "sha256": "a459e9bb17dd007fdb724158d219596af0baa012418f13a353d9079ec8980c88"
+    },
+    {
       "file": "docs/finalization-review/publication-preflight.json",
       "bytes": 1125,
       "sha256": "c2c908ec8e9ed84fe4c8b4ea20aed11468ddac6d270afd794f57eee31290c049"
+    },
+    {
+      "file": "docs/finalization-review/publication-summary.json",
+      "bytes": 961,
+      "sha256": "0fb6751ec7fbf6ed06d123289e8a3b9ad81a3748523dbc52de4173b8fb2e936e"
     },
     {
       "file": "docs/finalization-review/qa-interruption.json",
@@ -231,6 +282,16 @@
       "file": "docs/finalization-review/responsive-validation.json",
       "bytes": 686,
       "sha256": "4f6d47ca330aa8a8d64094597f5222abc8682ff54552cfe643b273d6cba6f038"
+    },
+    {
+      "file": "docs/finalization-review/runtime-diff.json",
+      "bytes": 264,
+      "sha256": "4a479177249ef6868657d195bc3bcf8ee231a59d4d5063967d55890fce35d87d"
+    },
+    {
+      "file": "docs/finalization-review/runtime-logs.json",
+      "bytes": 562,
+      "sha256": "4b5c897bccf80575ac4334c146bcab62a1209604b566dc6f82e0964acbd2423e"
     },
     {
       "file": "docs/finalization-review/source-fingerprints.json",
