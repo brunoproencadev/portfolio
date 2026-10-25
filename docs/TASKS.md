@@ -1,5 +1,17 @@
 # Tarefas e gate atual
 
+## Estado vigente — medição das transições, 25/10/2026
+
+- [x] Plano `92952eb`, fonte `6fd47a7`: immediateRender:false impede que a entrada contamine a medição; coreografia/tempos/cleanup mantidos. [Revisão](PHASE_H_RESOLUTION_REVIEW.md).
+- [x] Reprodução Firefox 11 PASS/1 FAIL com scroll correto; após correção, teste original 20/20 e transições 12/12 PASS, build/strict/lint/nove unitários PASS.
+- [x] Testes `d2e7bf7`: geometria natural fora da tela e cápsula estável antes do contraste, mantendo foco/pin/axe/timeouts. Rodada completa inicial: 393 PASS/4 FAIL/5 SKIP; confirmação dos dois arquivos afetados: 15/15 PASS. 397 casos distintos aprovados entre os comandos, com cinco skips e zero retries. Não foi uma única rodada completa sem falhas.
+- [x] Browser com saída/reversão:20 capturas e duas comparações, sem overflow/pageerror nos 22 registros; quatro arquivos anteriores intactos.
+- [x] Sondagem CSS rejeitada sem editar produto; perfil CPU separado, sem extrapolar causalidade.
+- [ ] H03: nota 88/LCP 3412ms, fora de nota≥90/LCP≤2500ms. Cases e INP não remedidos; foco seguinte em inicialização/medição das seções com prova pareada.
+- [ ] Formato histórico, provas humanas/físicas, fotos/contexto, direitos Ateliê, favicon em aba e gates de I/publicação permanecem. Sem push/deploy.
+
+Registros abaixo são históricos quando conflitarem com este estado; a intermitência de medição Firefox foi corrigida e reconfirmada.
+
 ## Estado vigente — retomada H em25/10/2026
 
 - [x] Autorização de correção Next e continuidade; plano `ae86b92`, dependências `4ed77f9`, [relatório atual](PHASE_H_SECURITY_REVIEW.md).

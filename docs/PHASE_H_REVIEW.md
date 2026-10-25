@@ -1,3 +1,9 @@
+# Atualização H — medição das transições, 25/10/2026
+
+[Revisão vigente](PHASE_H_RESOLUTION_REVIEW.md), plano `92952eb`, fonte `6fd47a7`, testes `d2e7bf7`. Corrigida a medição contaminada pelo estado de entrada, mantendo coreografia/tempos. Teste original 20/20 Firefox e transições 12/12 PASS; build/strict/lint/nove unitários PASS. Rodada completa inicial: 393 PASS/4 FAIL/5 SKIP; confirmação dos dois arquivos afetados: 15/15 PASS. 397 casos distintos aprovados entre os comandos, com cinco skips e zero retries. Não foi uma única rodada completa sem falhas. Histórico completo preservado.
+
+H03 segue aberta: nota 88/LCP 3412ms/TBT 203ms, sem série pareada causal. Sondagem CSS sem ganho descartada; nenhum CSS alterado. Quatro arquivos anteriores intactos; formato e provas humanas/físicas pendentes. Sem push/deploy/I. Registros seguintes são históricos.
+
 # Atualização H — 25/10/2026
 
 [Relatório vigente da retomada](PHASE_H_SECURITY_REVIEW.md), fonte `4ed77f9`, plano `ae86b92`. Segurança Next/ferramentas corrigida localmente, auditorias completas zero; npm ci/build/strict/lint/nove unitários PASS. E2E 396 PASS/1 FAIL/5 SKIP e confirmação inicial FAIL, depois3/3 PASS, sem alterar teste/timeout. Intermitência Firefox permanece registrada.

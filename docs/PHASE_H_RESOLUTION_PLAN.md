@@ -14,3 +14,7 @@ O código instalado de GSAP 3.15 em ScrollTrigger.js, linhas 1319–1325, reapli
 4. Validar build/strict/lint/unitários e regressões pertinentes; comparar capturas desktop/mobile. Registrar histórico de falhas, métricas, limitações, hashes e decisões. Commits locais atômicos, staging explícito. H03 só fecha com LCP≤2500ms/performance≥90; TBT não comprova INP.
 
 Fontes: [GSAP fromTo](<https://gsap.com/docs/v3/GSAP/gsap.fromTo()/>), [refresh](<https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.refresh()/>), [benchmark CSS @property](https://web.dev/blog/at-property-performance). O candidato anterior de retirar invalidação/medir alturas foi rejeitado; não será reapresentado como ganho.
+
+## Resultado
+
+Fonte `6fd47a7`, testes `d2e7bf7`: medição corrigida, teste original 20/20 Firefox e transições 12/12 PASS; build/strict/lint/nove unitários aprovados. Rodada completa inicial: 393 PASS/4 FAIL/5 SKIP; confirmação dos dois arquivos afetados: 15/15 PASS. 397 casos distintos aprovados entre os comandos, com cinco skips e zero retries. Não foi uma única rodada completa sem falhas. Sondagem CSS descartada; H03 segue aberta, nota 88/LCP 3412ms, sem ganho causal declarado. Evidências e limites em [PHASE_H_RESOLUTION_REVIEW](PHASE_H_RESOLUTION_REVIEW.md).

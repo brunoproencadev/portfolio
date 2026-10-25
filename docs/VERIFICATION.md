@@ -1,3 +1,11 @@
+# Verificação vigente — medição das transições, 25/10/2026
+
+Fonte `6fd47a7`, plano `92952eb`, testes `d2e7bf7`; [revisão](PHASE_H_RESOLUTION_REVIEW.md). Build/strict/lint/nove unitários PASS. Reprodução anterior 11 PASS/1 FAIL com scroll correto; teste original 20/20 Firefox e transições 12/12 PASS após correção. [E2E](phase-h-resolution-review/e2e.json): Rodada completa inicial: 393 PASS/4 FAIL/5 SKIP; confirmação dos dois arquivos afetados: 15/15 PASS. 397 casos distintos aprovados entre os comandos, com cinco skips e zero retries. Não foi uma única rodada completa sem falhas. Expectativas/sincronização corrigidas sem desabilitar axe ou aumentar timeouts.
+
+[H03](phase-h-resolution-review/performance.json): três Lighthouse diretos da home, nota 88/LCP 3412ms/TBT 203ms/CLS 0,0389 na mediana, ainda fora da meta. Sem série pareada antiga para ganho causal; sondagem CSS alternada rejeitada sem editar produto. Perfil CPU atual identifica trabalho em startReveals/transições, não breakdown de LCP. Cases/INP não remedidos.
+
+[Browser](phase-h-resolution-review/browser.json):20 capturas e duas comparações reduced motion, sem overflow/pageerrors nos 22 registros; quatro capturas inspecionadas, vídeos locais sem playback integral. Quatro pendências anteriores preservadas por hashes. Formato/links/manifesto reconferidos no fechamento; formato global histórico pendente. Sem push/deploy/I, produção não atualizada.
+
 # Verificação vigente — segurança e retomada H, 25/10/2026
 
 Fonte `4ed77f9`, plano `ae86b92`; [relatório e limites](PHASE_H_SECURITY_REVIEW.md). npm ci/build/strict/lint e 9 unitários PASS; auditorias de runtime/completa zero vulnerabilidades. [Instalação e22 chunks idênticos](phase-h-security-review/installation.json). npm ls --all exit0 sem peers inválidos, seis avisos extraneous opcionais WASM preservados. Formato dos alterados/diff-check conferidos no fechamento; global FAIL nos 24 arquivos históricos.

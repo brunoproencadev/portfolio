@@ -1,0 +1,190 @@
+{
+  "browser": "156.0.8078.4",
+  "cpuThrottle": 4,
+  "viewport": {
+    "width": 412,
+    "height": 823
+  },
+  "frames": [
+    {
+      "name": "",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 5316,
+      "ownMs": 1.586,
+      "totalMs": 153.59199999999993,
+      "source": "atches||(l=!0,e.A(17961).then(({startReveals:e})=>{if(o||s||a.matches)return;let n=k();t=e(i),S(n),w()}).catch(T).finally(()=>{l=!1}))}return a.addEventListener(\"change\",j),document.addEvent"
+    },
+    {
+      "name": "",
+      "file": "2c6r0l_u-1t63.js",
+      "line": 0,
+      "column": 195,
+      "ownMs": 0,
+      "totalMs": 152.00599999999991,
+      "source": "e.s([\"startReveals\",0,function(e){let o,i,n;t.e.registerPlugin(r.ScrollTrigger);let s=t.e.matchMedia();try{let a,c;s.add(\"(min-width: 1100px) and (min-height: 800px) and (prefers-reduced-mot"
+    },
+    {
+      "name": "",
+      "file": "2c6r0l_u-1t63.js",
+      "line": 0,
+      "column": 1866,
+      "ownMs": 1.603,
+      "totalMs": 87.04599999999998,
+      "source": "uced-motion: no-preference)\"},r=>{let o=!!r.conditions?.wide,i=[],n=e.querySelector(\".robo-about-passage\"),s=n?.querySelector(\".work-robo\"),a=n?.querySelector(\".about-surface\");n&&s&&a&&(n.c"
+    },
+    {
+      "name": "",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 28259,
+      "ownMs": 0,
+      "totalMs": 33.66400000000001,
+      "source": "m_h.js\"].map(t=>e.l(t))).then(()=>t(80766)))},57778,e=>{e.v(t=>Promise.all([\"static/chunks/22uy6kpsh10b_.js\",\"static/chunks/394ceu8hxos50.js\"].map(t=>e.l(t))).then(()=>t(58513)))},59012,e=>{"
+    },
+    {
+      "name": "",
+      "file": "2c6r0l_u-1t63.js",
+      "line": 0,
+      "column": 118,
+      "ownMs": 0,
+      "totalMs": 33.66400000000001,
+      "source": "nt.currentScript:void 0,80766,e=>{\"use strict\";var t=e.i(89970),r=e.i(83495);e.s([\"startReveals\",0,function(e){let o,i,n;t.e.registerPlugin(r.ScrollTrigger);let s=t.e.matchMedia();try{let a,"
+    },
+    {
+      "name": "",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 7827,
+      "ownMs": 0,
+      "totalMs": 14.393999999999998,
+      "source": "r(\"change\",u),e.A(57778).then(({startIntro:e})=>{!c&&(t=e(s,u),c||(i.hidden=!1))}).catch(u),u},[]),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(\"div\",{ref:o,className:\"intro-curtain\",\"aria-hid"
+    },
+    {
+      "name": "",
+      "file": "2c6r0l_u-1t63.js",
+      "line": 0,
+      "column": 4296,
+      "ownMs": 0,
+      "totalMs": 14.322000000000001,
+      "source": "px) and (min-height: 800px)\"},r=>{if(!r.conditions?.motion)return;let o=r.conditions.hero?\".story-visual .tool-popups\":\".tool-popups\",i=new Map,n=!0,s=new IntersectionObserver(e=>{if(n)for(l"
+    },
+    {
+      "name": "c",
+      "file": "2c6r0l_u-1t63.js",
+      "line": 0,
+      "column": 2410,
+      "ownMs": 3.216,
+      "totalMs": 12.745000000000001,
+      "source": ".offsetHeight-48)})}}));let c=(r,n)=>{for(let s of e.querySelectorAll(r)){i.push(s),s.dataset.sectionMotion=\"true\";let e=t.e.timeline({scrollTrigger:{trigger:s,start:\"top bottom\",end:\"bottom"
+    },
+    {
+      "name": "IntersectionObserver.threshold",
+      "file": "2c6r0l_u-1t63.js",
+      "line": 0,
+      "column": 4442,
+      "ownMs": 0,
+      "totalMs": 9.831999999999999,
+      "source": "!0,s=new IntersectionObserver(e=>{if(n)for(let t of e){let e=i.get(t.target);if(!e)continue;let{tween:r,carousel:o}=e;t.isIntersecting&&!document.hidden?r.restart(o):r.progress(+!o).pause()}"
+    },
+    {
+      "name": "",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 20076,
+      "ownMs": 4.977,
+      "totalMs": 9.829999999999998,
+      "source": ")(null),(0,i.useLayoutEffect)(()=>{let n=e.current,i=n?.querySelector(\".capsule-heading\"),r=n?.querySelector(\".capsule-panel\");if(!a||!n||!i||!r)return;let o=[...r.querySelectorAll(\"li, .cap"
+    },
+    {
+      "name": "",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 2561,
+      "ownMs": 1.646,
+      "totalMs": 6.383,
+      "source": ")(null);return(0,n.useEffect)(()=>{let t,n,i=r.current?.closest(\"main\");if(!i)return;let a=matchMedia(\"(prefers-reduced-motion: reduce)\"),o=!1,s=!1,l=!1,d=0,c=0,u=0,h=!1,m=()=>{clearTimeout("
+    },
+    {
+      "name": "u",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 6806,
+      "ownMs": 0,
+      "totalMs": 4.8919999999999995,
+      "source": "||scrollY>0)return;let c=!1,u=()=>{c||(c=!0,clearTimeout(f),i.hidden=!0,t?.(),n.removeEventListener(\"click\",u),document.removeEventListener(\"keydown\",h),document.removeEventListener(\"focusin"
+    },
+    {
+      "name": "p",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 21293,
+      "ownMs": 0,
+      "totalMs": 4.853,
+      "source": "ach(e=>e.stop()),l=[],g()}},p=()=>m(!0),f=e=>{e.target instanceof Node&&r.contains(e.target)&&p()},v=new ResizeObserver(()=>{!n.hasAttribute(\"data-animating\")&&n.hasAttribute(\"data-open\")&&i"
+    },
+    {
+      "name": "m",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 20358,
+      "ownMs": 3.284,
+      "totalMs": 4.853,
+      "source": ".forEach(e=>e.stop()),l=[]},m=(e=!1)=>{let t=n.hasAttribute(\"data-open\"),a=n.getBoundingClientRect();h();let m=d;n.dataset.animating=\"true\",n.style.removeProperty(\"width\"),n.style.removeProp"
+    },
+    {
+      "name": "r",
+      "file": "2c6r0l_u-1t63.js",
+      "line": 0,
+      "column": 2735,
+      "ownMs": 4.761,
+      "totalMs": 4.761,
+      "source": "tive=String(e.isActive)}}}),r=()=>.3*innerHeight/(innerHeight+s.offsetHeight),a=()=>96/(innerHeight+s.offsetHeight);e.fromTo(s,{\"--section-opacity\":.18,...n},{immediateRender:!1,\"--section-o"
+    },
+    {
+      "name": "",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 8810,
+      "ownMs": 1.512,
+      "totalMs": 4.74,
+      "source": ":\"Pular intro\"})]})}])},52493,e=>{let t;var n=e.i(43476),i=e.i(71645);let a=[{slug:\"museu-arte-moderna\",name:\"Museu de Arte Moderna\",category:\"Museu virtual\",summary:\"Um museu em realidade v"
+    },
+    {
+      "name": "P",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 5268,
+      "ownMs": 0,
+      "totalMs": 4.737,
+      "source": "lse P();e&&g(e,!1)};function P(){o||s||l||t||a.matches||(l=!0,e.A(17961).then(({startReveals:e})=>{if(o||s||a.matches)return;let n=k();t=e(i),S(n),w()}).catch(T).finally(()=>{l=!1}))}return "
+    },
+    {
+      "name": "",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 28122,
+      "ownMs": 0,
+      "totalMs": 4.737,
+      "source": "()=>t(20697)))},17961,e=>{e.v(t=>Promise.all([\"static/chunks/2c6r0l_u-1t63.js\",\"static/chunks/394ceu8hxos50.js\",\"static/chunks/2p2jd75im6m_h.js\"].map(t=>e.l(t))).then(()=>t(80766)))},57778,e"
+    },
+    {
+      "name": "",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 28242,
+      "ownMs": 0,
+      "totalMs": 4.737,
+      "source": "chunks/2p2jd75im6m_h.js\"].map(t=>e.l(t))).then(()=>t(80766)))},57778,e=>{e.v(t=>Promise.all([\"static/chunks/22uy6kpsh10b_.js\",\"static/chunks/394ceu8hxos50.js\"].map(t=>e.l(t))).then(()=>t(585"
+    },
+    {
+      "name": "",
+      "file": "3ci3srs4613hw.js",
+      "line": 0,
+      "column": 6482,
+      "ownMs": 0,
+      "totalMs": 3.364,
+      "source": "oad\",w)}},[]),(0,n.useEffect)(()=>{let t,n=r.current,i=o.current,s=n?.closest(\"main\");if(!n||!i||!s)return;let l=matchMedia(\"(prefers-reduced-motion: reduce)\"),d=a;a=!0;try{d||=\"true\"===sess"
+    }
+  ]
+}

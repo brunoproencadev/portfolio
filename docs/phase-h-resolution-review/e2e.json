@@ -1,0 +1,444 @@
+{
+  "initial": {
+    "startTime": "2026-10-25T13:58:14.002Z",
+    "duration": 472104.304,
+    "expected": 393,
+    "skipped": 5,
+    "unexpected": 4,
+    "flaky": 0
+  },
+  "confirmation": {
+    "startTime": "2026-10-25T14:08:32.728Z",
+    "duration": 34276.884,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "coverage": {
+    "total": 402,
+    "passed": 397,
+    "skipped": 5,
+    "failed": 0
+  },
+  "initialFailures": [
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "webkit",
+      "status": "unexpected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "failed",
+          "duration": 2287,
+          "retry": 0,
+          "error": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 58\n\n- Array []\n+ Array [\n+   Object {\n+     \"description\": \"Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\",\n+     \"help\": \"Elements must meet minimum color contrast ratio thresholds\",\n+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright\",\n+     \"id\": \"color-contrast\",\n+     \"impact\": \"serious\",\n+     \"nodes\": Array [\n+       Object {\n+         \"all\": Array [],\n+         \"any\": Array [\n+           Object {\n+             \"data\": Object {\n+               \"bgColor\": \"#202024\",\n+               \"contrastRatio\": 1.48,\n+               \"expectedContrastRatio\": \"4.5:1\",\n+               \"fgColor\": \"#3d3c43\",\n+               \"fontSize\": \"9.0pt (12px)\",\n+               \"fontWeight\": \"normal\",\n+               \"messageKey\": null,\n+             },\n+             \"id\": \"color-contrast\",\n+             \"impact\": \"serious\",\n+             \"message\": \"Element has insufficient color contrast of 1.48 (foreground color: #3d3c43, background color: #202024, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1\",\n+             \"relatedNodes\": Array [\n+               Object {\n+                 \"html\": \"<nav class=\\\"capsule rYcpWq_className\\\" aria-label=\\\"Navegação principal\\\" data-enhanced=\\\"true\\\" style=\\\"border-radius: 30px; width: 288px; height: 60px;\\\" data-motion-ready=\\\"true\\\" data-open=\\\"true\\\" data-animating=\\\"true\\\">\",\n+                 \"target\": Array [\n+                   \".capsule\",\n+                 ],\n+               },\n+             ],\n+           },\n+         ],\n+         \"failureSummary\": \"Fix any of the following:\n+   Element has insufficient color contrast of 1.48 (foreground color: #3d3c43, background color: #202024, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1\",\n+         \"html\": \"<p class=\\\"capsule-note\\\" style=\\\"opacity: 0; transform: translateY(8px);\\\">Desenvolvedor em formação<!-- -->. Software, visão e robótica.</p>\",\n+         \"impact\": \"serious\",\n+         \"none\": Array [],\n+         \"target\": Array [\n+           \".capsule-note\",\n+         ],\n+       },\n+     ],\n+     \"tags\": Array [\n+       \"cat.color\",\n+       \"wcag2aa\",\n+       \"wcag143\",\n+       \"TTv5\",\n+       \"TT13.c\",\n+       \"EN-301-549\",\n+       \"EN-9.1.4.3\",\n+       \"ACT\",\n+       \"RGAAv4\",\n+       \"RGAA-3.2.1\",\n+     ],\n+   },\n+ ]"
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "content focus keeps scene geometry and keyboard restores the approved hero",
+      "project": "chromium",
+      "status": "unexpected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "failed",
+          "duration": 5563,
+          "retry": 0,
+          "error": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator: locator('.about-copy').first()\nExpected pattern: /transform/\nReceived string:  \"\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('.about-copy').first() with timeout 5000ms\n  - waiting for locator('.about-copy').first()\n    14 × locator resolved to <div class=\"about-copy\" data-section-motion=\"true\" data-section-active=\"undefined\">…</div>\n       - unexpected value \"\"\n"
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "content focus keeps scene geometry and keyboard restores the approved hero",
+      "project": "firefox",
+      "status": "unexpected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "failed",
+          "duration": 6302,
+          "retry": 0,
+          "error": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator: locator('.about-copy').first()\nExpected pattern: /transform/\nReceived string:  \"\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('.about-copy').first() with timeout 5000ms\n  - waiting for locator('.about-copy').first()\n    14 × locator resolved to <div class=\"about-copy\" data-section-motion=\"true\" data-section-active=\"undefined\">…</div>\n       - unexpected value \"\"\n"
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "content focus keeps scene geometry and keyboard restores the approved hero",
+      "project": "webkit",
+      "status": "unexpected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "failed",
+          "duration": 6126,
+          "retry": 0,
+          "error": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator: locator('.about-copy').first()\nExpected pattern: /transform/\nReceived string:  \"\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('.about-copy').first() with timeout 5000ms\n  - waiting for locator('.about-copy').first()\n    14 × locator resolved to <div class=\"about-copy\" data-section-motion=\"true\" data-section-active=\"undefined\">…</div>\n       - unexpected value \"\"\n"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "file": "navigation.spec.ts",
+      "title": "disclosure follows keyboard order and Escape returns focus",
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+            "line": 8,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 141,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "outside click and leaving focus close without stealing the new focus",
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+            "line": 44,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 177,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Native zoom uses a Chromium extension.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+            "line": 147,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 1,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "reduced motion updates immediately and keyboard focus stays visible",
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+            "line": 102,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 144,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Native zoom uses a Chromium extension.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+            "line": 147,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 1,
+          "retry": 0
+        }
+      ]
+    }
+  ],
+  "confirmationCases": [
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4637,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 375px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3582,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 768px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6177,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 1440px with accessible targets",
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 7565,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5789,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 375px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5228,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 768px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3257,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 1440px with accessible targets",
+      "project": "firefox",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4434,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 320px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3826,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 375px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3218,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 768px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2824,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "home and open capsule fit 1440px with accessible targets",
+      "project": "webkit",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4542,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "content focus keeps scene geometry and keyboard restores the approved hero",
+      "project": "chromium",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 646,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "content focus keeps scene geometry and keyboard restores the approved hero",
+      "project": "firefox",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1258,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "storytelling.spec.ts",
+      "title": "content focus keeps scene geometry and keyboard restores the approved hero",
+      "project": "webkit",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1150,
+          "retry": 0
+        }
+      ]
+    }
+  ]
+}

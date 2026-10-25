@@ -1,3 +1,15 @@
+# Estado vigente — transições corrigidas, H03 aberta, 25/10/2026
+
+Retomada autorizada por “Tem minha aprovação, continue”. Plano `92952eb`; correção funcional `6fd47a7`; sincronização dos testes `d2e7bf7`; [relatório vigente](PHASE_H_RESOLUTION_REVIEW.md). O refresh podia medir o trigger após aplicar a entrada de 36px/96px. immediateRender:false preserva a geometria natural; endpoints, tempos, scrub, refresh e cleanup mantidos. Uma linha de produto alterada.
+
+Prova: reprodução anterior 11 PASS/1 FAIL com scroll correto; teste original 20/20 Firefox sem instrumentação; transições 12/12 nos três motores; build/strict/lint/nove unitários PASS. Rodada completa inicial: 393 PASS/4 FAIL/5 SKIP; confirmação dos dois arquivos afetados: 15/15 PASS. 397 casos distintos aprovados entre os comandos, com cinco skips e zero retries. Não foi uma única rodada completa sem falhas. As falhas completas vieram de três expectativas do transform inicial retirado e de contraste capturado durante a abertura da cápsula. Atualizados somente os estados esperados/sincronização; as verificações funcionais e axe permanecem. A intermitência Firefox de medição deixa de ser pendência conhecida para esse mecanismo, com seu histórico preservado.
+
+H03 continua aberta: três Lighthouse diretos da home, mediana nota 88/LCP 3412ms/TBT 203ms/CLS 0,0389. Sem base pareada antiga para atribuir ganho à correção. Sondagem CSS @property rejeitada após seis execuções alternadas sem ganho; nenhum CSS alterado. Perfil CPU atual delimita custo em inicialização/medição das transições; valores amostrados não são breakdown de LCP. Cases e INP não remedidos.
+
+Browser: 20 capturas, duas comparações reduced motion e duas gravações brutas, sem overflow/pageerrors nos 22 registros. Quatro PNGs inspecionados; vídeos não reproduzidos integralmente. Quatro alterações anteriores intactas por SHA-256 e fora dos commits. Formato histórico permanece pendente; resultados finais e manifesto no relatório.
+
+Preview http://127.0.0.1:3117/. Sem push/merge/deploy ou início de I; produção não atualizada. Próximo trabalho em H: reduzir o custo de inicialização/medição das seções com prova pareada e coreografia preservada. H03, formato, fotos/contexto, direitos Ateliê, favicon em aba e validações humanas/físicas continuam abertos. I é prontidão de produção e mantém seu gate. Commit documental final por `git log -1 -- docs/HANDOFF.md`; registros abaixo são históricos quando conflitarem com este estado.
+
 # Estado vigente — segurança corrigida, H03 aberta, 25/10/2026
 
 Usuário autorizou solucionar o Next e continuar as pendências. Plano local `ae86b92`; correção `4ed77f9`; evidências `4528fdd`, manifesto `b9bcfd6`: Next/eslint-config-next 16.4.3 e patches compatíveis das ferramentas. [Relatório vigente](PHASE_H_SECURITY_REVIEW.md). Auditorias de runtime e completa: zero vulnerabilidades; npm ci, build/strict, lint e nove unitários PASS. Os 22 chunks JS/CSS coincidem byte a byte com os usados nos E2E. npm ls --all sai0 sem peers inválidos, mas conserva seis avisos extraneous de pacotes WASM opcionais após reinstalar; diagnóstico preservado.
