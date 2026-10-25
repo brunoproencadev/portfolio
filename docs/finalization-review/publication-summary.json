@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-25T19:57:48.140Z",
+  "url": "https://brunoproencasilva.vercel.app",
+  "deploymentId": "dpl_DYtwkccWuqUkQZmWpgFs5qXypQre",
+  "sourceSha": "abbf7a3ced78ef91b0ecda6cc1f6cd5541b7dc0b",
+  "validatedRuntime": "0a535039801259717e91b33754744a4a3988799d",
+  "baselineFullSuite": {
+    "source": "d9430f4",
+    "passed": 400,
+    "skipped": 5
+  },
+  "responsiveSuite": {
+    "source": "0a53503",
+    "passed": 24,
+    "skipped": 0
+  },
+  "publicMedians": {
+    "performance": 95,
+    "lcp": 2517.4139999999998,
+    "tbt": 190,
+    "cls": 0.03888213851761847
+  },
+  "h03Closed": false,
+  "reason": "Public median LCP remains above2500ms; local laboratory median3419ms. No passing claim or cherry-picking.",
+  "rollback": {
+    "id": "dpl_F9HSH5KotxomfkDPk17Mfsjc18vq",
+    "url": "brunoproencasilva-q961hn6jt-bps-a015.vercel.app",
+    "target": "production",
+    "readyState": "READY",
+    "sha": "f9bd0cfa92b41b5fe0bb6dc4ec71c161c6913bce"
+  }
+}

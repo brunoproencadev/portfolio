@@ -8,7 +8,8 @@
 - [x] Confirmar recuperação de fluidez após parar QA paralelo; retomada com um worker/BelowNormal aprovada nos testes. Nenhuma mudança experimental no scroll mantida.
 - [x] PR1/main f9bd0cf e produção READY dpl_F9HSH5KotxomfkDPk17Mfsjc18vq; cinco rotas/SEO/ícones/HTTPS e browser conferidos. Autorização já concedida, sem repetir pedido.
 - [x] `0a53503`: sizes responsivo, uma requisição mobile a menos/7976bytes poupados,24/24 E2E e densidade suficiente, sem mudar tamanho visual ou scroll.
-- [ ] Integrar/publicar o ajuste responsivo e registrar as provas finais. H03 permanece aberta; localhost88/LCP3419 e primeira série pública93/LCP2547.
+- [x] PR2/main abbf7a3 e produção READY dpl_DYtwkccWuqUkQZmWpgFs5qXypQre; ajuste responsivo publicado, cinco rotas/SEO/ícones/HTTPS/browser conferidos e provas finais registradas.
+- [ ] H03 permanece aberta: localhost88/LCP3419, última série pública95/LCP2517. A mediana pública ainda não atende2,5s; não escolher somente o melhor resultado.
 - [ ] H03 continua: home88/LCP3392ms; não declarar meta aprovada por publicação. Cases/INP não remedidos; hardware/leitor de tela mantêm limites anteriores.
 
 ## Estado vigente — pedidos de interação e formato, 25/10/2026

@@ -1,5 +1,11 @@
 # Finalização autorizada — revisão de 25/10/2026
 
+**Entrega vigente:** https://brunoproencasilva.vercel.app, deployment `dpl_DYtwkccWuqUkQZmWpgFs5qXypQre` READY, SHA de main `abbf7a3ced78ef91b0ecda6cc1f6cd5541b7dc0b`, [PR2](https://github.com/brunoproencadev/portfolio/pull/2) integrado. Runtime validado0a53503, sem as quatro edições locais preservadas. [Resumo final](finalization-review/publication-summary.json), [deployment](finalization-review/deployment.json), [HTTP](finalization-review/live.json) e [browser](finalization-review/live-browser.json). Abaixo, a publicação inicial e as provas da evolução permanecem identificadas.
+
+Última série pública de três execuções: performance95/95/94, LCP2474/2517/2526ms; mediana **95/LCP2517ms/TBT190ms/CLS0,0389**, acessibilidade/boas práticas/SEO100. [Série completa](finalization-review/public-performance.json). Uma execução ficou abaixo de2,5s, mas a mediana não; **H03 não foi encerrada**. O laboratório local também permanece fora da meta (3419ms). Não repetir até obter um resultado favorável nem atribuir causalidade à diferença entre séries sequenciais/ambientes. [Rede pública](finalization-review/public-network.json) confirma um pedido de avatar a menos nesse perfil; os tamanhos do nome/ícone e as rotinas de animação/scroll não mudaram.
+
+Cinco rotas, metadados/indexação, sitemap, imagens reais dos projetos, ícones por SHA256,404, HTTPS e cabeçalhos conferidos. Desktop/mobile sem overflow/pageerrors, fonte responsiva publicada confirmada e pixels suficientes para DPR2. Build remoto concluído e [logs de build](finalization-review/final-build.log) preservados; consulta [runtime error/fatal](finalization-review/runtime-logs.json) na janela de cinco minutos retornou zero registros, sem atestar monitoramento contínuo. Rollback imediato: entrega inicial f9bd0cf/dpl_F9HSH5KotxomfkDPk17Mfsjc18vq; cadeia anterior permanece no preflight. Deploy Git automático continua bloqueado. Aceite visual/fotos/autorizações estão resolvidos; H03, INP e provas físicas/leitor de tela mantêm os limites declarados.
+
 Plano `857207f`, implementação dos ícones `d9430f4`. O usuário aceitou o visual final, decidiu não incluir fotografias pessoais/contexto, solicitou ícones maiores/nítidos e confirmou “GitHub, main e publicação na Vercel”. Essas decisões substituem as pendências históricas correspondentes. H03 continua em acompanhamento; autorização de entrega não é prova de atendimento da meta.
 
 ## Publicação inicial e correção responsiva
@@ -12,7 +18,7 @@ O trace revelou dois downloads do mesmo avatar no mobile:96px para a navbar e256
 
 Build/strict e lint PASS; **24/24 E2E** avatar/SEO nos três motores, incluindo densidade em320/375/1440px. [Fonte e escopo da validação](finalization-review/responsive-validation.json), [resultados](finalization-review/responsive-e2e.json), [browser](finalization-review/responsive-browser.json) e [mobile inspecionado](finalization-review/responsive-avatar-375.png). Os arquivos testados foram conferidos por hash antes/depois do commit e o worktree ficou limpo em0a53503. A prova integral400/5 continua vinculada à base d9430f4; não foi repetida inteira por uma alteração na indicação de imagem. As rotinas de animação/scroll e a geometria CSS não mudaram.
 
-Lighthouse local após esse ajuste: mediana88/LCP3419ms/TBT191,5ms/CLS0,0389, sem ganho de LCP comprovado. [Série](finalization-review/responsive-local-performance.json). O ajuste foi conservado pela redução determinística de requisição/bytes com densidade suficiente, não por uma alegação de ganho de pontuação. Próximo passo autorizado: integrar e publicar essa correção, validar o destino e manter H03 aberta enquanto a meta não estiver provada.
+Lighthouse local após esse ajuste: mediana88/LCP3419ms/TBT191,5ms/CLS0,0389, sem ganho de LCP comprovado. [Série](finalization-review/responsive-local-performance.json). O ajuste foi conservado pela redução determinística de requisição/bytes com densidade suficiente, não por uma alegação de ganho de pontuação. Integrado/publicado conforme a entrega vigente acima; H03 segue aberta.
 
 ## Ícones e avatar
 

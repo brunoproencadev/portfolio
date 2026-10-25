@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-10-25T19:48:09.793Z",
+  "rows": [
+    {
+      "viewportWidth": 1440,
+      "width": 105.328125,
+      "source": "https://brunoproencasilva.vercel.app/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=256&q=75",
+      "sourceWidth": 256,
+      "density": 2,
+      "opacity": "1",
+      "titleStable": true,
+      "titleOutline": "none",
+      "userSelect": "none",
+      "pageErrors": [],
+      "overflow": false
+    },
+    {
+      "viewportWidth": 375,
+      "width": 43.3125,
+      "source": "https://brunoproencasilva.vercel.app/_next/image?url=%2Fimages%2Fprofile%2Fgithub-avatar.png&w=96&q=75",
+      "sourceWidth": 96,
+      "density": 2,
+      "opacity": "1",
+      "titleStable": true,
+      "titleOutline": "none",
+      "userSelect": "none",
+      "pageErrors": [],
+      "overflow": false
+    }
+  ]
+}

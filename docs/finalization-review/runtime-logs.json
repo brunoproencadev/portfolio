@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-10-25T19:50:34.734Z",
+  "deploymentId": "dpl_DYtwkccWuqUkQZmWpgFs5qXypQre",
+  "query": "level:error OR level:fatal",
+  "window": "5m",
+  "lines": [
+    {
+      "type": "summary",
+      "recordsReturned": 0,
+      "timeRange": {
+        "start": "2026-10-25T19:45:32.778Z",
+        "end": "2026-10-25T19:50:32.778Z"
+      },
+      "pagination": {
+        "hasMore": false,
+        "next": null
+      },
+      "excludedIntervals": []
+    }
+  ],
+  "limit": 100,
+  "note": "Sampled query only; not proof of continuous error-free operation."
+}
