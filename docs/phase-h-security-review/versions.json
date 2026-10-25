@@ -1,0 +1,7 @@
+{
+  "next": "16.4.3",
+  "eslintConfigNext": "16.4.3",
+  "vitest": "4.1.12",
+  "sharp": "0.35.5",
+  "node": "v24.15.0"
+}

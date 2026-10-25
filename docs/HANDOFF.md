@@ -1,4 +1,16 @@
-# Estado vigente — push autorizado e enviado, 2026-10-24
+# Estado vigente — segurança corrigida, H03 aberta, 25/10/2026
+
+Usuário autorizou solucionar o Next e continuar as pendências. Plano local `ae86b92`; correção `4ed77f9`: Next/eslint-config-next 16.4.3 e patches compatíveis das ferramentas. [Relatório vigente](PHASE_H_SECURITY_REVIEW.md). Auditorias de runtime e completa: zero vulnerabilidades; npm ci, build/strict, lint e nove unitários PASS. Os 22 chunks JS/CSS coincidem byte a byte com os usados nos E2E. npm ls --all sai0 sem peers inválidos, mas conserva seis avisos extraneous de pacotes WASM opcionais após reinstalar; diagnóstico preservado.
+
+E2E:396 PASS/1 FAIL/5 SKIP em 402 casos, sem retries. Falha de transição desktop Firefox repetiu isolada; sonda geométrica normal e três repetições posteriores do teste original PASS, sem modificar teste/timeout. Total distinto397 PASS entre rodadas; intermitência sem causa isolada, não declarar rodada integral limpa. Formato global FAIL nos mesmos 24 arquivos históricos; alterados/diff-check e provas documentais conferidos no fechamento.
+
+H03:21 Lighthouse mobile. Controle final da home: mediana performance 84/LCP 3585 ms/TBT 298 ms/CLS 0,0389. Cases medidos em série anterior neste turno: performance 96/94/94/91 e LCP 2583/2513/2840/2922 ms para RoboSense/Museu/Industry/Ateliê. Experimento de alturas/invalidação das transições rejeitado: controle restaurado melhor que candidato80/LCP 3618 ms. Nenhuma mudança de movimento conservada; coreografia preservada. Não inferir causa ou ganho do patch Next dessas séries sem base pareada16.4.0. INP não medido.
+
+Browser:16 capturas e duas comparações geométricas em 1440×900/375×812, sem overflow/pageerrors nos estados registrados; quatro capturas inspecionadas e duráveis, duas gravações brutas locais sem reprodução integral. Quatro alterações anteriores preservadas por hashes e fora dos commits. Preview atual http://127.0.0.1:3117/. Nenhum push/merge/deploy ou início de I. Produção não atualizada.
+
+Próximo trabalho autorizado em H: investigar a intermitência Firefox e coletar perfil atual da home com variabilidade controlada antes de outro candidato de desempenho. H03, formato histórico, fotos/contexto, direitos Ateliê, favicon em aba e validações humanas/físicas continuam abertos. I é prontidão de produção e exige seu gate separado. Commit documental consultável por `git log -1 -- docs/PHASE_H_SECURITY_REVIEW.md`; registros seguintes são históricos quando conflitarem com este estado.
+
+# Histórico — push autorizado e enviado, 2026-10-24
 
 Usuário aprovou o ajuste do PNG e autorizou o envio por “Perfeito, muito obrigado, pode fazer o push”. Foram enviados23 commits preservando o histórico, de `6c1c768` até `32e24b5a61959f950358c4411d0caf862b459884`, incluindo os22 pendentes de G/H/UI/UX/easter egg e a proteção adicional de deploy. Branch `redesign/cinematic-portfolio`; sem merge ou atualização de `main`.
 

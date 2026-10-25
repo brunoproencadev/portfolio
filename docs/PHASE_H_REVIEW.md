@@ -1,3 +1,9 @@
+# Atualização H — 25/10/2026
+
+[Relatório vigente da retomada](PHASE_H_SECURITY_REVIEW.md), fonte `4ed77f9`, plano `ae86b92`. Segurança Next/ferramentas corrigida localmente, auditorias completas zero; npm ci/build/strict/lint/nove unitários PASS. E2E 396 PASS/1 FAIL/5 SKIP e confirmação inicial FAIL, depois3/3 PASS, sem alterar teste/timeout. Intermitência Firefox permanece registrada.
+
+H03 continua aberta: controle final home84/LCP 3585 ms/TBT 298 ms; cases LCP 2583/2513/2840/2922 ms. Experimento de refresh rejeitado após controle restaurado melhor; nenhuma mudança de movimento conservada.24 falhas históricas de formato e limites humanos/físicos mantidos. Quatro alterações anteriores intactas; sem push/deploy/I. Provas e decisões atuais no relatório vinculado; medições abaixo pertencem às rodadas históricas.
+
 # Fase H — QA completo, com performance pendente
 
 18/10/2026. Autorização registrada em [PHASE_H_PLAN](PHASE_H_PLAN.md): “Dê início a fase H”; retomada por “Dê continuidade”. Base `7a27a28b2f8cfd487ae83bb6ca284bc692cdc674`, branch `redesign/cinematic-portfolio`, workspace `D:/projects/portifolio`.

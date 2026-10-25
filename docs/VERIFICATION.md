@@ -1,3 +1,13 @@
+# Verificação vigente — segurança e retomada H, 25/10/2026
+
+Fonte `4ed77f9`, plano `ae86b92`; [relatório e limites](PHASE_H_SECURITY_REVIEW.md). npm ci/build/strict/lint e 9 unitários PASS; auditorias de runtime/completa zero vulnerabilidades. [Instalação e22 chunks idênticos](phase-h-security-review/installation.json). npm ls --all exit0 sem peers inválidos, seis avisos extraneous opcionais WASM preservados. Formato dos alterados/diff-check conferidos no fechamento; global FAIL nos 24 arquivos históricos.
+
+[E2E 402 casos](phase-h-security-review/e2e.json):396 PASS/1 FAIL/5 SKIP, zero retries; falha desktop Firefox repetiu na primeira confirmação. Sonda geométrica normal, três repetições posteriores do teste original PASS sem alterações.397 aprovações distintas entre comandos; não declarar rodada integral sem falhas. Causa da intermitência permanece aberta.
+
+[21 Lighthouse mobile](phase-h-security-review/performance.json), sem builds/testes concorrentes. Controle final home84/LCP 3585 ms/TBT 298 ms/CLS 0,0389; cases96/94/94/91, LCP 2583/2513/2840/2922 ms. Candidato de refresh rejeitado:80/LCP 3618 ms contra controle melhor. Builds PASS, fonte restaurada e22 chunks novamente idênticos; nenhuma alteração de animação conservada, sem repetição integral da suíte após rejeitar o candidato. H03 continua aberta; não atribuir diferenças ao patch Next sem base antiga pareada; sem INP.
+
+Browser real:16 capturas e duas comparações de leitura em 1440×900/375×812, sem overflow/pageerrors nos estados registrados; quatro PNGs inspecionados e duráveis. Duas gravações brutas locais, não reproduzidas integralmente. [Fonte e quatro pendências preservadas](phase-h-security-review/source-fingerprints.json). Nenhum push/merge/deploy/I; produção não atualizada. Registros seguintes são históricos.
+
 ## Push GitHub — 2026-10-24
 
 Autorização explícita do usuário após aceitar o ajuste do PNG. Fetch prévio:0 commits remotos exclusivos/22 locais. Commit adicional `32e24b5` limita deploy Git automático da branch de redesign, preservando o bloqueio da main; JSON, formato e diff-check PASS. Push de23 commits para `redesign/cinematic-portfolio` concluído, sem squash/force/merge. ls-remote: branch em `32e24b5a61959f950358c4411d0caf862b459884`, idêntica a HEAD; main em `a56426dd3016c01f2eb510acc8e068bc758dd395`, inalterada. API GitHub:0 deployments para esse SHA na consulta, status pending/sem contextos; não declarar CI/deploy executados.

@@ -1,0 +1,129 @@
+{
+  "files": [
+    {
+      "file": "1440-about.png",
+      "bytes": 117820,
+      "sha256": "d4307cec24f26fba7cd1b3bb35bc94cec1500166af24219fb9e9f23ec5354a5e"
+    },
+    {
+      "file": "1440-home.png",
+      "bytes": 208467,
+      "sha256": "b87f867126c4c38be2b929f7e571ac28c1377100f51ef9e79143704ba4a76036"
+    },
+    {
+      "file": "375-home.png",
+      "bytes": 119107,
+      "sha256": "382b4c90a8eedc9102724d5cd5daa62164ec1a97e1e7a5b21d940f85de6ed58f"
+    },
+    {
+      "file": "375-museu-arte-moderna.png",
+      "bytes": 112946,
+      "sha256": "f06808671d785140170f39ee8ecd8769364ff653611c7d374ca9a6740df5558b"
+    },
+    {
+      "file": "audit-all-final.json",
+      "bytes": 365,
+      "sha256": "2d8fd5976bab7eaad5325ce59c70bd4ff0905d624e3b045d681a831eb28c2155"
+    },
+    {
+      "file": "audit-runtime-final.json",
+      "bytes": 365,
+      "sha256": "2d8fd5976bab7eaad5325ce59c70bd4ff0905d624e3b045d681a831eb28c2155"
+    },
+    {
+      "file": "browser.json",
+      "bytes": 3011,
+      "sha256": "7b8868ec246ac43c346b30a040564c37de7d86cb07e1bab827e091192226667b"
+    },
+    {
+      "file": "build-final.log",
+      "bytes": 1268,
+      "sha256": "f9ad387705d9de14cb4645ce9b4ef2cde5a39e6a3871361ebbf199cec4b334dc"
+    },
+    {
+      "file": "build-patched.log",
+      "bytes": 1273,
+      "sha256": "bc8fad7f2cd80a879478897feb17c6df279d9c8658cc3fda15e73c2987c0f0d2"
+    },
+    {
+      "file": "build-refresh-candidate.log",
+      "bytes": 1272,
+      "sha256": "fabca286f3f78cc8832ba539b931ceadf0d78c6ba19307d38e8f07690196875a"
+    },
+    {
+      "file": "build-restored.log",
+      "bytes": 1270,
+      "sha256": "28850eb52b12cbed207ba5588756a42d4b46b42db73d3221ee6590bc9f7afcad"
+    },
+    {
+      "file": "e2e.json",
+      "bytes": 5070,
+      "sha256": "d02071c46338d041d64562442ede198dd189a36347d8cc7170c6096479a35ee1"
+    },
+    {
+      "file": "format-global.log",
+      "bytes": 1181,
+      "sha256": "4306b9c32293cd2ca54f47480943d7bc10bab3bf15a40f68c81cbc34cfccdc21"
+    },
+    {
+      "file": "http.json",
+      "bytes": 230,
+      "sha256": "6842b214980519469e47df2defaf958ad641542903db2ec40c0e934d63939823"
+    },
+    {
+      "file": "installation.json",
+      "bytes": 1541,
+      "sha256": "1032eac3f6b7702f37b331f40a67d296eb3c11f4e82b563e66dcda85a7c2bff2"
+    },
+    {
+      "file": "lint-ci.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "lint-final.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "npm-ci.log",
+      "bytes": 281,
+      "sha256": "9996eaec6b20810b9f6e9ca65981962da04f95b9f8f9af581b38ff0c54101a35"
+    },
+    {
+      "file": "performance.json",
+      "bytes": 18455,
+      "sha256": "7722deff559d66710bbff37a51b6af9eac8441540f7d739045177cb79504d01d"
+    },
+    {
+      "file": "preserved-files.json",
+      "bytes": 647,
+      "sha256": "6ef1cf3d3f276032a6d55b635448e4c3e52a35438c3421798c0271dba76a94b6"
+    },
+    {
+      "file": "restored-chunks.json",
+      "bytes": 46,
+      "sha256": "7e23ba3a30d0f755444f928861e0676cf94237c446cd7c39db801010ebd6f63a"
+    },
+    {
+      "file": "source-fingerprints.json",
+      "bytes": 1252,
+      "sha256": "0317efecb829267bf76107de7137cdebaad7cbee745f4f79d54bbf47182cdb91"
+    },
+    {
+      "file": "unit-ci.log",
+      "bytes": 206,
+      "sha256": "a3308962a7b816018064ca905fb77a6fff8d02c0528b26aff9f1d7d07b3a146b"
+    },
+    {
+      "file": "unit-final.log",
+      "bytes": 206,
+      "sha256": "e30d666e1a8595870061af2ffd1b336ef2b4eedd645648e3acdb020d96e86842"
+    },
+    {
+      "file": "versions.json",
+      "bytes": 120,
+      "sha256": "887aae38f6c93996739fe91990d01ada8b48f7279ae99ca6ac55cfc658741c51"
+    }
+  ]
+}

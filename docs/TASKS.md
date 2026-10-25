@@ -1,5 +1,18 @@
 # Tarefas e gate atual
 
+## Estado vigente — retomada H em25/10/2026
+
+- [x] Autorização de correção Next e continuidade; plano `ae86b92`, dependências `4ed77f9`, [relatório atual](PHASE_H_SECURITY_REVIEW.md).
+- [x] Next/eslint-config-next16.4.3 e correções compatíveis de Vitest/mocker/fast-uri/zod. Auditorias de runtime e completa com zero vulnerabilidades; nenhuma versão maior ou dependência direta nova.
+- [x] npm ci/build/strict/lint/nove unitários PASS;22 chunks JS/CSS byte a byte iguais aos testados. Árvore sem peers inválidos; seis avisos extraneous opcionais WASM registrados.
+- [x] E2E completo396 PASS/1 FAIL/5 SKIP e confirmações documentadas;16 capturas desktop/mobile, sem overflow/pageerror nos estados registrados. Quatro alterações anteriores intactas e fora dos commits.
+- [x] H03:21 Lighthouse, experimento delimitado de refresh rejeitado após controle restaurado melhor. Nenhuma mudança de movimento conservada.
+- [ ] Investigar intermitência de reversão Firefox: duas falhas e três confirmações posteriores PASS, sem aumentar timeout/alterar teste; causa não isolada.
+- [ ] H03: home final performance84/LCP3585ms; cases LCP2583/2513/2840/2922ms, todos fora da meta≤2500ms. Perfil atual com variabilidade controlada antes de outro candidato. INP segue sem prova própria.
+- [ ] Formato global:24 arquivos históricos. Fotos/contexto, direitos Ateliê, favicon em aba, validações humanas/físicas e fase I/publicação continuam com gates próprios. Nenhum novo push/deploy autorizado.
+
+Os registros abaixo são históricos quando conflitarem com este estado; a segurança local deixou de ser pendente.
+
 ## Push autorizado — 24/10/2026
 
 - [x] Aceite do ajuste do PNG e autorização explícita “Perfeito, muito obrigado, pode fazer o push”. Enviados23 commits até `32e24b5`, mantendo histórico e branch `redesign/cinematic-portfolio`; sem merge/main.

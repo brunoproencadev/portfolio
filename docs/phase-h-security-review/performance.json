@@ -1,0 +1,649 @@
+{
+  "decision": "candidate-rejected-restored-source",
+  "reason": "Restored control is faster than the candidate; no consistent improvement demonstrated.",
+  "series": [
+    {
+      "label": "patched-baseline",
+      "machine": {
+        "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+        "platform": "win32",
+        "release": "10.0.26300",
+        "memory": 29953048576,
+        "node": "v24.15.0"
+      },
+      "lighthouse": "13.5.0",
+      "config": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1471.5,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "rows": [
+        {
+          "route": "/",
+          "run": 1,
+          "score": 77,
+          "lcp": 3752.6474,
+          "tbt": 474.5,
+          "cls": 0.03888213851761847,
+          "fcp": 917.8236999999999,
+          "scores": {
+            "performance": 77,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:05:35.092Z",
+          "warnings": []
+        },
+        {
+          "route": "/",
+          "run": 2,
+          "score": 61,
+          "lcp": 4370.2518,
+          "tbt": 1080.5,
+          "cls": 0.03888213851761847,
+          "fcp": 934.6259,
+          "scores": {
+            "performance": 61,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:05:47.620Z",
+          "warnings": []
+        },
+        {
+          "route": "/",
+          "run": 3,
+          "score": 80,
+          "lcp": 3642.156,
+          "tbt": 407,
+          "cls": 0,
+          "fcp": 911.578,
+          "scores": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:06:02.507Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/robosense-lab",
+          "run": 1,
+          "score": 96,
+          "lcp": 2582.92805,
+          "tbt": 114,
+          "cls": 0,
+          "fcp": 912.6187,
+          "scores": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:06:15.657Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/robosense-lab",
+          "run": 2,
+          "score": 97,
+          "lcp": 2554.709,
+          "tbt": 87,
+          "cls": 0,
+          "fcp": 911.806,
+          "scores": {
+            "performance": 97,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:06:26.293Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/robosense-lab",
+          "run": 3,
+          "score": 94,
+          "lcp": 2638.2786000000006,
+          "tbt": 172,
+          "cls": 0,
+          "fcp": 910.8524,
+          "scores": {
+            "performance": 94,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:06:36.096Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/museu-arte-moderna",
+          "run": 1,
+          "score": 93,
+          "lcp": 2680.50195,
+          "tbt": 211,
+          "cls": 0,
+          "fcp": 913.0012999999999,
+          "scores": {
+            "performance": 93,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:06:45.287Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/museu-arte-moderna",
+          "run": 2,
+          "score": 94,
+          "lcp": 2510.8691500000004,
+          "tbt": 194,
+          "cls": 0,
+          "fcp": 911.2461000000001,
+          "scores": {
+            "performance": 94,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:06:54.994Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/museu-arte-moderna",
+          "run": 3,
+          "score": 94,
+          "lcp": 2513.00365,
+          "tbt": 200,
+          "cls": 0,
+          "fcp": 908.6691000000001,
+          "scores": {
+            "performance": 94,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:07:04.495Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/industry-week-senai",
+          "run": 1,
+          "score": 94,
+          "lcp": 2825.6843,
+          "tbt": 100.5,
+          "cls": 0,
+          "fcp": 1490.4562,
+          "scores": {
+            "performance": 94,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:07:14.458Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/industry-week-senai",
+          "run": 2,
+          "score": 94,
+          "lcp": 2905.0454499999996,
+          "tbt": 148,
+          "cls": 0,
+          "fcp": 910.0302999999999,
+          "scores": {
+            "performance": 94,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:07:24.102Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/industry-week-senai",
+          "run": 3,
+          "score": 95,
+          "lcp": 2839.6142,
+          "tbt": 109.5,
+          "cls": 0,
+          "fcp": 913.7428,
+          "scores": {
+            "performance": 95,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:07:33.244Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "run": 1,
+          "score": 93,
+          "lcp": 2921.8839,
+          "tbt": 159,
+          "cls": 0,
+          "fcp": 1467.9226,
+          "scores": {
+            "performance": 93,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:07:42.494Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "run": 2,
+          "score": 91,
+          "lcp": 2917.8408000000004,
+          "tbt": 220,
+          "cls": 0,
+          "fcp": 915.2272,
+          "scores": {
+            "performance": 91,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:07:52.751Z",
+          "warnings": []
+        },
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "run": 3,
+          "score": 84,
+          "lcp": 3160.18885,
+          "tbt": 363,
+          "cls": 0,
+          "fcp": 923.1259,
+          "scores": {
+            "performance": 84,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:08:02.370Z",
+          "warnings": []
+        }
+      ],
+      "medians": [
+        {
+          "route": "/",
+          "score": 77,
+          "lcp": 3752.6474,
+          "tbt": 474.5,
+          "cls": 0.03888213851761847
+        },
+        {
+          "route": "/projetos/robosense-lab",
+          "score": 96,
+          "lcp": 2582.92805,
+          "tbt": 114,
+          "cls": 0
+        },
+        {
+          "route": "/projetos/museu-arte-moderna",
+          "score": 94,
+          "lcp": 2513.00365,
+          "tbt": 200,
+          "cls": 0
+        },
+        {
+          "route": "/projetos/industry-week-senai",
+          "score": 94,
+          "lcp": 2839.6142,
+          "tbt": 109.5,
+          "cls": 0
+        },
+        {
+          "route": "/projetos/atelie-ingrid-xavier",
+          "score": 91,
+          "lcp": 2921.8839,
+          "tbt": 220,
+          "cls": 0
+        }
+      ]
+    },
+    {
+      "label": "refresh-candidate",
+      "machine": {
+        "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+        "platform": "win32",
+        "release": "10.0.26300",
+        "memory": 29953048576,
+        "node": "v24.15.0"
+      },
+      "lighthouse": "13.5.0",
+      "config": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "benchmarkIndex": 1783.5,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "rows": [
+        {
+          "route": "/",
+          "run": 1,
+          "score": 83,
+          "lcp": 3508.5595999999996,
+          "tbt": 334.5,
+          "cls": 0.03888213851761847,
+          "fcp": 912.7798,
+          "scores": {
+            "performance": 83,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:09:38.405Z",
+          "warnings": []
+        },
+        {
+          "route": "/",
+          "run": 2,
+          "score": 71,
+          "lcp": 3866.7512,
+          "tbt": 582.8122000000001,
+          "cls": 0.03888213851761847,
+          "fcp": 919.3756000000002,
+          "scores": {
+            "performance": 71,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:09:49.473Z",
+          "warnings": []
+        },
+        {
+          "route": "/",
+          "run": 3,
+          "score": 80,
+          "lcp": 3618.0553999999993,
+          "tbt": 394.5,
+          "cls": 0.03888213851761847,
+          "fcp": 917.5277000000001,
+          "scores": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:10:01.433Z",
+          "warnings": []
+        }
+      ],
+      "medians": [
+        {
+          "route": "/",
+          "score": 80,
+          "lcp": 3618.0553999999993,
+          "tbt": 394.5,
+          "cls": 0.03888213851761847
+        }
+      ]
+    },
+    {
+      "label": "restored-control",
+      "machine": {
+        "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+        "platform": "win32",
+        "release": "10.0.26300",
+        "memory": 29953048576,
+        "node": "v24.15.0"
+      },
+      "lighthouse": "13.5.0",
+      "config": {
+        "output": "json",
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "benchmarkIndex": 2176.5,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "rows": [
+        {
+          "route": "/",
+          "run": 1,
+          "score": 87,
+          "lcp": 3499.7591999999995,
+          "tbt": 226,
+          "cls": 0.03888213851761847,
+          "fcp": 915.8796,
+          "scores": {
+            "performance": 87,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:11:54.713Z",
+          "warnings": []
+        },
+        {
+          "route": "/",
+          "run": 2,
+          "score": 84,
+          "lcp": 3590.8978000000006,
+          "tbt": 298,
+          "cls": 0.03888213851761847,
+          "fcp": 909.4489000000001,
+          "scores": {
+            "performance": 84,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:12:05.748Z",
+          "warnings": []
+        },
+        {
+          "route": "/",
+          "run": 3,
+          "score": 82,
+          "lcp": 3584.871,
+          "tbt": 353.5,
+          "cls": 0.03888213851761847,
+          "fcp": 916.9355,
+          "scores": {
+            "performance": 82,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 66
+          },
+          "timestamp": "2026-10-25T13:12:16.612Z",
+          "warnings": []
+        }
+      ],
+      "medians": [
+        {
+          "route": "/",
+          "score": 84,
+          "lcp": 3584.871,
+          "tbt": 298,
+          "cls": 0.03888213851761847
+        }
+      ]
+    }
+  ]
+}

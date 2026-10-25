@@ -1,0 +1,192 @@
+{
+  "stats": {
+    "startTime": "2026-10-25T12:46:35.473Z",
+    "duration": 497801.25899999996,
+    "expected": 396,
+    "skipped": 5,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "projects": {
+    "chromium": {
+      "total": 134,
+      "passed": 134,
+      "failed": 0,
+      "skipped": 0
+    },
+    "firefox": {
+      "total": 134,
+      "passed": 132,
+      "failed": 1,
+      "skipped": 1
+    },
+    "webkit": {
+      "total": 134,
+      "passed": 130,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "failed": [
+    {
+      "file": "section-transitions.spec.ts",
+      "title": "supporting sections animate reversibly and contact stays natural at 1440px",
+      "project": "firefox",
+      "status": "unexpected",
+      "expectedStatus": "passed",
+      "annotations": [],
+      "results": [
+        {
+          "status": "failed",
+          "duration": 5582,
+          "retry": 0,
+          "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m-10\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "file": "navigation.spec.ts",
+      "title": "disclosure follows keyboard order and Escape returns focus",
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+            "line": 8,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 404,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "navigation.spec.ts",
+      "title": "outside click and leaving focus close without stealing the new focus",
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\navigation.spec.ts",
+            "line": 44,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 535,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "firefox",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Native zoom uses a Chromium extension.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+            "line": 147,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 1,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "reduced motion updates immediately and keyboard focus stays visible",
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Windows WebKit skips native links on Tab even in plain HTML; see docs/QA_PHASE7.md.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+            "line": 102,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 185,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "responsive.spec.ts",
+      "title": "real Chromium zoom at 200 percent keeps navigation and content usable",
+      "project": "webkit",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "annotations": [
+        {
+          "type": "skip",
+          "description": "Native zoom uses a Chromium extension.",
+          "location": {
+            "file": "D:\\projects\\portifolio\\tests\\e2e\\responsive.spec.ts",
+            "line": 147,
+            "column": 8
+          }
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "duration": 1,
+          "retry": 0
+        }
+      ]
+    }
+  ],
+  "firstConfirmation": {
+    "startTime": "2026-10-25T12:55:39.017Z",
+    "duration": 11399.256,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "repeatedConfirmation": {
+    "startTime": "2026-10-25T12:59:07.317Z",
+    "duration": 27533.628999999997,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "errors": []
+}

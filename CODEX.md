@@ -1,5 +1,7 @@
 # Continuidade
 
+Atualização 2026-10-25 — segurança autorizada e corrigida localmente em `4ed77f9`, plano `ae86b92`; relatório docs/PHASE_H_SECURITY_REVIEW.md. Next/eslint-config-next16.4.3 e patches compatíveis das ferramentas; auditorias runtime/completa zero, npm ci/build/strict/lint/nove unitários PASS. E2E396 PASS/1 FAIL/5 SKIP; confirmação inicial FAIL e três repetições posteriores PASS, intermitência Firefox preservada. H03 continua aberta: controle home84/LCP3585ms; experimento de refresh descartado. Quatro pendências anteriores preservadas, sem push/deploy/I. Registros inferiores de segurança aguardando autorização são históricos.
+
 Atualização 2026-10-24 — usuário aceitou o PNG e autorizou push.23 commits enviados até `32e24b5` à branch redesign/cinematic-portfolio; main inalterada. vercel.json agora bloqueia deploy Git automático da main e do redesign. Repositório renomeado confirmado: brunoproencadev/portfolio, origin atualizado. Fechamento documental enviado na mesma branch; detalhes/provas em HANDOFF/VERIFICATION. Quatro alterações sem commit permanecem locais. H03 e segurança Next seguem pendentes; fase I/publicação exigem aprovação própria.
 
 Atualização 2026-10-24 — refinamento do avatar solicitado: `21af82c`, PNG transparente sem fundo/recorte/sombra, tamanho0,85em. Build/strict e9 E2E específicos passam; capturas atuais em docs/HERO_AVATAR_REVIEW.md. Ciclo de1s preservado. Sem push/deploy; segurança Next e H03 continuam pendentes.

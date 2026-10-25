@@ -1,0 +1,11 @@
+{
+  "home": 200,
+  "noindex": true,
+  "headers": {
+    "x-content-type-options": "nosniff",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-frame-options": "DENY"
+  },
+  "notFound": 404,
+  "optimizedImage": 200
+}
